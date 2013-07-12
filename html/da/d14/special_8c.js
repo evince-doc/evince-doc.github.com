@@ -1,0 +1,25 @@
+var special_8c =
+[
+    [ "_DviSpecial", "d6/d9d/struct__DviSpecial.html", "d6/d9d/struct__DviSpecial" ],
+    [ "IS_PREFIX_DELIMITER", "da/d14/special_8c.html#ae87964109ddd692df8ab9c40dbdf392b", null ],
+    [ "NSPECIALS", "da/d14/special_8c.html#ae507847fd15d90496c9c31acf7e22208", null ],
+    [ "SPECIAL", "da/d14/special_8c.html#ada17be56b06f6b81a6d156588f718db0", null ],
+    [ "DviSpecial", "da/d14/special_8c.html#a39455963da0e2a10ffda7c81c654cd90", null ],
+    [ "find_special_prefix", "da/d14/special_8c.html#ae6ae69cfbf0849751bca8b8ce3e4c154", null ],
+    [ "mdvi_do_special", "da/d14/special_8c.html#a22ce399eda6977e0e7c373096eb9804d", null ],
+    [ "mdvi_flush_specials", "da/d14/special_8c.html#ab8fee51183038adde7ee0abca02ee50a", null ],
+    [ "mdvi_register_special", "da/d14/special_8c.html#a619d1ef8eca9bb5375ec5a043d0d709c", null ],
+    [ "mdvi_unregister_special", "da/d14/special_8c.html#a3c1e69fac88d47c49922c131d579b82d", null ],
+    [ "register_builtin_specials", "da/d14/special_8c.html#a6912991c8c05c0986d7f3f4cf8edbb65", null ],
+    [ "sp_layer", "da/d14/special_8c.html#aeddd364eb30059d46278f82132f0bdb5", null ],
+    [ "SPECIAL", "da/d14/special_8c.html#a869244b203e3be73bbf99eafbd38f925", null ],
+    [ "SPECIAL", "da/d14/special_8c.html#a5ac513dc64a38d58e9ff983f4d3d56d7", null ],
+    [ "SPECIAL", "da/d14/special_8c.html#ad8dbce681f366042dc41ecd8d26a621c", null ],
+    [ "builtins", "da/d14/special_8c.html#a1b4d307070e19d7e28ae0e2442463614", null ],
+    [ "handler", "da/d14/special_8c.html#ab7325ca26998ed4516ad54b02ca22c0d", null ],
+    [ "label", "da/d14/special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7", null ],
+    [ "prefix", "da/d14/special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f", null ],
+    [ "regex", "da/d14/special_8c.html#a9f3c1102da0931dd8a0fa03a94b3a335", null ],
+    [ "registered_builtins", "da/d14/special_8c.html#aab773fcdf5b0cc214ed41989dae048b0", null ],
+    [ "specials", "da/d14/special_8c.html#ab09f760b9b71ecd629cf2d91f6eb0492", null ]
+];
