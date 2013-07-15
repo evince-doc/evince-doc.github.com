@@ -1,9 +1,0 @@
-digraph "evince-master/libmisc" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_3280676015dea8927551146fc343f431 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="evince-master" fontname="Helvetica", fontsize="10", URL="dir_3280676015dea8927551146fc343f431.html"]
-  dir_08b887202959c421d24191eda7d5b732 [shape=box, label="libmisc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_08b887202959c421d24191eda7d5b732.html"];
-  }
-}
