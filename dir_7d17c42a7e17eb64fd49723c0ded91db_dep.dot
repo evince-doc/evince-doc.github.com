@@ -1,0 +1,9 @@
+digraph "evince-master/backend/dvi/mdvi-lib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_86543262924fc2b5518a210f39a4df54 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="dvi" fontname="Helvetica", fontsize="10", URL="dir_86543262924fc2b5518a210f39a4df54.html"]
+  dir_7d17c42a7e17eb64fd49723c0ded91db [shape=box, label="mdvi-lib", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7d17c42a7e17eb64fd49723c0ded91db.html"];
+  }
+}

@@ -1,0 +1,9 @@
+digraph "evince-master/cut-n-paste/smclient" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_66798fc8659e7daf0e5247fc7505c5a3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="cut-n-paste" fontname="Helvetica", fontsize="10", URL="dir_66798fc8659e7daf0e5247fc7505c5a3.html"]
+  dir_fad19fa22c20ef303bc712affc457b32 [shape=box, label="smclient", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_fad19fa22c20ef303bc712affc457b32.html"];
+  }
+}

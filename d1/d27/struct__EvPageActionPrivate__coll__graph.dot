@@ -1,0 +1,26 @@
+digraph "_EvPageActionPrivate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="_EvPageActionPrivate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" doc_model" ,fontname="Helvetica"];
+  Node2 [label="_EvDocumentModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d24/struct__EvDocumentModel.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" document" ,fontname="Helvetica"];
+  Node3 [label="_EvDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d02/struct__EvDocument.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" priv" ,fontname="Helvetica"];
+  Node4 [label="_EvDocumentPrivate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/da7/struct__EvDocumentPrivate.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" page_sizes" ,fontname="Helvetica"];
+  Node5 [label="_EvPageSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/dec/struct__EvPageSize.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" synctex_scanner" ,fontname="Helvetica"];
+  Node6 [label="__synctex_scanner_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/ddd/struct____synctex__scanner__t.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" input\nsheet\nlists_of_friends" ,fontname="Helvetica"];
+  Node7 [label="_synctex_node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d4f/struct__synctex__node.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" implementation" ,fontname="Helvetica"];
+  Node8 [label="_synctex_info_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/da8/union__synctex__info__t.html"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" class" ,fontname="Helvetica"];
+  Node9 [label="__synctex_class_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dd6/struct____synctex__class__t.html"];
+  Node7 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sibling\nchild\nnew\nnext_hbox\nparent\nfriend" ,fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" info" ,fontname="Helvetica"];
+  Node6 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" scanner" ,fontname="Helvetica"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" class" ,fontname="Helvetica"];
+}

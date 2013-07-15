@@ -1,0 +1,9 @@
+digraph "evince-master/test" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3280676015dea8927551146fc343f431 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="evince-master" fontname="Helvetica", fontsize="10", URL="dir_3280676015dea8927551146fc343f431.html"]
+  dir_a6bad009a4e2c89bf4ec3636b694bcc6 [shape=box, label="test", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a6bad009a4e2c89bf4ec3636b694bcc6.html"];
+  }
+}

@@ -1,0 +1,44 @@
+digraph "_DviContext"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="_DviContext",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fontmap\ncurrfont\nfonts" ,fontname="Helvetica"];
+  Node2 [label="_DviFontRef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d83/struct__DviFontRef.html"];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref" ,fontname="Helvetica"];
+  Node3 [label="_DviFont",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/db7/struct__DviFont.html"];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" subfonts" ,fontname="Helvetica"];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prev\nnext" ,fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" search" ,fontname="Helvetica"];
+  Node4 [label="_DviFontSearch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d69/struct__DviFontSearch.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" info" ,fontname="Helvetica"];
+  Node5 [label="_DviFontInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/da4/struct__DviFontInfo.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" curr" ,fontname="Helvetica"];
+  Node6 [label="_DviFontClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d4a/struct__DviFontClass.html"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" info" ,fontname="Helvetica"];
+  Node6 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prev\nnext" ,fontname="Helvetica"];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" chars" ,fontname="Helvetica"];
+  Node7 [label="_DviFontChar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d43/struct__DviFontChar.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" shrunk\nglyph\ngrey" ,fontname="Helvetica"];
+  Node8 [label="_DviGlyph",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d5e/struct__DviGlyph.html"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" glyph_data" ,fontname="Helvetica"];
+  Node9 [label="BITMAP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/df2/structBITMAP.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" color_stack" ,fontname="Helvetica"];
+  Node10 [label="_DviColorPair",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d14/struct__DviColorPair.html"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" device" ,fontname="Helvetica"];
+  Node11 [label="_DviDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d0f/struct__DviDevice.html"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" params" ,fontname="Helvetica"];
+  Node12 [label="_DviParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d23/struct__DviParams.html"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" paper" ,fontname="Helvetica"];
+  Node13 [label="_DviPaper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d64/struct__DviPaper.html"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stack\npos" ,fontname="Helvetica"];
+  Node14 [label="_DviState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/da9/struct__DviState.html"];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buffer" ,fontname="Helvetica"];
+  Node15 [label="_DviBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/dca/struct__DviBuffer.html"];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pagesel" ,fontname="Helvetica"];
+  Node16 [label="_DviPageSpec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d03/struct__DviPageSpec.html"];
+  Node17 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ranges" ,fontname="Helvetica"];
+  Node17 [label="_DviRange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d60/struct__DviRange.html"];
+}
