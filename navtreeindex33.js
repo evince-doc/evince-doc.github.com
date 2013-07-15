@@ -1,5 +1,8 @@
 var NAVTREEINDEX33 =
 {
+"df/d26/synctex__parser__local_8h_source.html":[7,0,0,1,2,2],
+"df/d32/structDviFontMapInfo.html":[6,0,311],
+"df/d32/structDviFontMapInfo.html#a08fdd7b5d39f3b49988b5bc269b35244":[6,0,311,0],
 "df/d32/structDviFontMapInfo.html#a3658435108a44250c4f4977a66340f38":[6,0,311,1],
 "df/d32/structDviFontMapInfo.html#a56bbd7452820c4a4a8672e5d23a44638":[6,0,311,3],
 "df/d32/structDviFontMapInfo.html#a7ba1d0dfd2f94fdb411e683c07b903e0":[6,0,311,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX33 =
 "df/d8c/synctex__parser_8c.html#a4c9f81b509373e360cfc480cdf1922a7":[7,0,0,1,2,0,99],
 "df/d8c/synctex__parser_8c.html#a4dbb9e0a79238065e4c81ee96efe0a9e":[7,0,0,1,2,0,256],
 "df/d8c/synctex__parser_8c.html#a4dbef4e290dab90d51369540ad2e6f7f":[7,0,0,1,2,0,235],
-"df/d8c/synctex__parser_8c.html#a4ffd45e24fabfd771cf495754e4d173a":[7,0,0,1,2,0,126],
-"df/d8c/synctex__parser_8c.html#a503c2652263fa2de9dcdf561faa3f8eb":[7,0,0,1,2,0,193],
-"df/d8c/synctex__parser_8c.html#a512a28c28249d7452bdf8332f27b683f":[7,0,0,1,2,0,133],
-"df/d8c/synctex__parser_8c.html#a51a71dfd2f66a3012f3872cebaf701b7":[7,0,0,1,2,0,270]
+"df/d8c/synctex__parser_8c.html#a4ffd45e24fabfd771cf495754e4d173a":[7,0,0,1,2,0,126]
 };

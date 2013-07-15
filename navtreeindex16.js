@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"d7/dba/dviopcodes_8h.html#a4cbe3a799e7e79b1741bb78e7a5a9ce3":[7,0,0,0,2,0,10,25],
 "d7/dba/dviopcodes_8h.html#a521a6370aae2662c6e050041b0e5df12":[7,0,0,0,2,0,10,49],
 "d7/dba/dviopcodes_8h.html#a55e4261afc583af6e35c6fefa687aeac":[7,0,0,0,2,0,10,47],
 "d7/dba/dviopcodes_8h.html#a5616e9ae6a9adcdda455a302c1413c06":[7,0,0,0,2,0,10,52],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "d8/d3e/ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c":[7,0,0,4,29,291],
 "d8/d3e/ev-view_8c.html#a0a8aec01a703b8516769b914050b2537":[7,0,0,4,29,95],
 "d8/d3e/ev-view_8c.html#a0aa49647f69f0c9b773ced02c1d0a2de":[7,0,0,4,29,283],
-"d8/d3e/ev-view_8c.html#a0b0ae7e0d7ed977e6593576139807892":[7,0,0,4,29,165],
-"d8/d3e/ev-view_8c.html#a0c4ed488c1a6ebdc8a1b6814a603a58f":[7,0,0,4,29,232]
+"d8/d3e/ev-view_8c.html#a0b0ae7e0d7ed977e6593576139807892":[7,0,0,4,29,165]
 };

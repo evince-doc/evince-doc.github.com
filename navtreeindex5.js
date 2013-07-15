@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"d2/d7a/ev-document-fonts_8h.html#a05589fbab0657f08285ebdfe93f5ec9eaf6c9821745df68dc93be857a33df6b45":[7,0,0,2,20,9],
 "d2/d7a/ev-document-fonts_8h.html#a4bb782da05c9ba3d043fc5bb8ee8b917":[7,0,0,2,20,5],
 "d2/d7a/ev-document-fonts_8h.html#a6cc1ab42e39d43679ebd5fc426d8329c":[7,0,0,2,20,3],
 "d2/d7a/ev-document-fonts_8h.html#a85861ba77f28d57881e48556017041b0":[7,0,0,2,20,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "d3/d21/struct__PdfDocument.html#af33ea29e936a7d8c86a00b2a7ee99412":[6,0,282,9],
 "d3/d24/struct__EvWindowClass.html":[6,0,269],
 "d3/d24/struct__EvWindowClass.html#a99715edba19ef67861872efd0cc810d2":[6,0,269,0],
-"d3/d25/ev-daemon_8c.html":[7,0,0,7,10],
-"d3/d25/ev-daemon_8c.html#a068ae78d1af388e9df78c53e78061c17":[7,0,0,7,10,12]
+"d3/d25/ev-daemon_8c.html":[7,0,0,7,10]
 };

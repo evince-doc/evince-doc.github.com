@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"d9/d5d/ev-link-dest_8h.html#a40fcc5bb5faec439946421916dc21fbe":[7,0,0,2,57,12],
 "d9/d5d/ev-link-dest_8h.html#a47c89e763dee87f6b2fefaef81861318":[7,0,0,2,57,26],
 "d9/d5d/ev-link-dest_8h.html#a4eca68d3119bc519e70449d7864cc5fc":[7,0,0,2,57,7],
 "d9/d5d/ev-link-dest_8h.html#a5ecb1e08af0137253ebcfc806b039797":[7,0,0,2,57,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "d9/db7/struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437":[6,0,25,5],
 "d9/db7/struct__EvProgressMessageAreaClass.html":[6,0,217],
 "d9/db7/struct__EvProgressMessageAreaClass.html#ac3bc670bdc14ef71baa4a21772a2a7ca":[6,0,217,0],
-"d9/db8/struct__EvSidebarAttachmentsPrivate.html":[6,0,238],
-"d9/db8/struct__EvSidebarAttachmentsPrivate.html#a3b22553fb6fc66cf9ae969e957e5d673":[6,0,238,2]
+"d9/db8/struct__EvSidebarAttachmentsPrivate.html":[6,0,238]
 };

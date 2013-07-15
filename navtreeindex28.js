@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"dd/d22/struct__EvWindowPrivate.html#aa7b0b393d55556b8bc1e21fd0978fe0e":[6,0,270,21],
 "dd/d22/struct__EvWindowPrivate.html#aafbb555546215af3ee52ce65502e399d":[6,0,270,62],
 "dd/d22/struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c":[6,0,270,5],
 "dd/d22/struct__EvWindowPrivate.html#abe4a6e93a44c6f208d121b500069b2ba":[6,0,270,23],
@@ -104,11 +105,11 @@ var NAVTREEINDEX28 =
 "dd/d40/ev-debug_8c.html":[7,0,0,2,9],
 "dd/d40/ev-debug_8c_source.html":[7,0,0,2,9],
 "dd/d44/ev-history_8c.html":[7,0,0,7,19],
-"dd/d44/ev-history_8c.html#a05ff75d4b9e1fae646302978818d7ce9":[7,0,0,7,19,24],
 "dd/d44/ev-history_8c.html#a08116582639828c2b47a3268a3dd6d9a":[7,0,0,7,19,11],
 "dd/d44/ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c":[7,0,0,7,19,30],
 "dd/d44/ev-history_8c.html#a0eefa2ba53f53f2ab775fec9e4ee4dc3":[7,0,0,7,19,26],
 "dd/d44/ev-history_8c.html#a37727baf22c65fef4a1ba786991ec2da":[7,0,0,7,19,17],
+"dd/d44/ev-history_8c.html#a3eabd7d54758ed949c31e6b89f9ebfcf":[7,0,0,7,19,24],
 "dd/d44/ev-history_8c.html#a4474c181d218a8b3a1b6d7680330dccc":[7,0,0,7,19,22],
 "dd/d44/ev-history_8c.html#a4e5024ca89ab0fc9394e26dcc1f65930":[7,0,0,7,19,29],
 "dd/d44/ev-history_8c.html#a5c90a5deb4f02b85186843f2e6b40aed":[7,0,0,7,19,12],
@@ -234,8 +235,8 @@ var NAVTREEINDEX28 =
 "dd/d78/ev-link_8c.html#ad9705b0eba08826d9c2c55af33409a38":[7,0,0,2,58,14],
 "dd/d78/ev-link_8c.html#afa2976704cbb99e848648ac82837bd5d":[7,0,0,2,58,11],
 "dd/d78/ev-link_8c_source.html":[7,0,0,2,58],
-"dd/d7c/namespacetest5.html":[5,0,5],
 "dd/d7c/namespacetest5.html":[6,0,5],
+"dd/d7c/namespacetest5.html":[5,0,5],
 "dd/d7f/struct__EvBookmark.html":[6,0,73],
 "dd/d7f/struct__EvBookmark.html#a8d69d86dababb2ee5db2adfe3585c4f5":[6,0,73,1],
 "dd/d7f/struct__EvBookmark.html#aa2fb944394772eac33502d0ed60ef476":[6,0,73,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "dd/d7f/struct__EvJobThumbnail.html#afbb24fe415c1d45e499590027e48211d":[6,0,162,1],
 "dd/d80/struct__EvSidebarBookmarksClass.html":[6,0,240],
 "dd/d80/struct__EvSidebarBookmarksClass.html#a43c7b0c0b94e2eed80303cc1616a7067":[6,0,240,1],
-"dd/d80/struct__EvSidebarBookmarksClass.html#a504e83d787761ed80beb2e381d0d4af1":[6,0,240,0],
-"dd/d85/ev-zoom-action_8h.html":[7,0,0,7,70]
+"dd/d80/struct__EvSidebarBookmarksClass.html#a504e83d787761ed80beb2e381d0d4af1":[6,0,240,0]
 };

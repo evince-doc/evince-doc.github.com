@@ -341,7 +341,7 @@ var searchData=
   ['synctex_5fmean_5fline',['SYNCTEX_MEAN_LINE',['../df/d8c/synctex__parser_8c.html#a7b2b383961595d89e49900250eab6f0b',1,'synctex_parser.c']]],
   ['synctex_5fmean_5fline_5fidx',['SYNCTEX_MEAN_LINE_IDX',['../df/d8c/synctex__parser_8c.html#a2146f8467ec2ada1f05735385f17fa0c',1,'synctex_parser.c']]],
   ['synctex_5fmsg_5fsend',['SYNCTEX_MSG_SEND',['../df/d8c/synctex__parser_8c.html#a60a01fbbebdf3210fc39324aef7a0533',1,'synctex_parser.c']]],
-  ['synctex_5fname',['SYNCTEX_NAME',['../df/d8c/synctex__parser_8c.html#a28afc2255158c14f2a2fbf497da99b06',1,'SYNCTEX_NAME():&#160;synctex_parser.c'],['../df/d8c/synctex__parser_8c.html#a06d86333a0938a0b6e3bf0895696596d',1,'synctex_name():&#160;synctex_parser.c']]],
+  ['synctex_5fname',['synctex_name',['../df/d8c/synctex__parser_8c.html#a06d86333a0938a0b6e3bf0895696596d',1,'synctex_name():&#160;synctex_parser.c'],['../df/d8c/synctex__parser_8c.html#a28afc2255158c14f2a2fbf497da99b06',1,'SYNCTEX_NAME():&#160;synctex_parser.c']]],
   ['synctex_5fname_5fidx',['SYNCTEX_NAME_IDX',['../df/d8c/synctex__parser_8c.html#aaee635711c42e9eed742ef1155514c59',1,'synctex_parser.c']]],
   ['synctex_5fnext_5fhbox',['SYNCTEX_NEXT_hbox',['../df/d8c/synctex__parser_8c.html#a5c0f0fbfd48ebb652c3d5ec8c25ad872',1,'synctex_parser.c']]],
   ['synctex_5fnext_5fresult',['synctex_next_result',['../df/d8c/synctex__parser_8c.html#a3572d323fcab00f6638f81d073961826',1,'synctex_next_result(synctex_scanner_t scanner):&#160;synctex_parser.c'],['../d7/d31/synctex__parser_8h.html#a3572d323fcab00f6638f81d073961826',1,'synctex_next_result(synctex_scanner_t scanner):&#160;synctex_parser.c']]],

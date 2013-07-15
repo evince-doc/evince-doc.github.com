@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d3/de6/struct__EvWindow.html#a2aee900cf1d55d7fab56c4212dc167af":[6,0,268,0],
 "d3/ded/ev-toolbar_8c.html":[7,0,0,7,59],
 "d3/ded/ev-toolbar_8c.html#a13ee6c19027a61f928b5375a5922a75d":[7,0,0,7,59,16],
 "d3/ded/ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061":[7,0,0,7,59,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d4/d4b/eggsmclient-xsmp_8c.html#afc8e27fc9a2dc86341a3c0c5ae2809da":[7,0,0,1,1,5,45],
 "d4/d4b/eggsmclient-xsmp_8c_source.html":[7,0,0,1,1,5],
 "d4/d4c/ev-window_8h.html":[7,0,0,7,66],
-"d4/d4c/ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f":[7,0,0,7,66,9],
-"d4/d4c/ev-window_8h.html#a0bd60e18924cd8da86d7d0f04bd9d530":[7,0,0,7,66,7]
+"d4/d4c/ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f":[7,0,0,7,66,9]
 };

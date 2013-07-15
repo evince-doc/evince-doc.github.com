@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"d6/d8d/structEggDesktopFile.html#ac4bb7cef3d47023667fc5269213191b9":[6,0,312,5],
 "d6/d95/struct__EvDocumentFormsInterface.html":[6,0,87],
 "d6/d95/struct__EvDocumentFormsInterface.html#a01231f31434eb96bb302406df09bd157":[6,0,87,11],
 "d6/d95/struct__EvDocumentFormsInterface.html#a0d5d05c3ce205620aa219149e5c96f84":[6,0,87,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "d6/dc7/ev-jobs_8c.html#a8867e67ed2da4fd6489c00981694ff3a":[7,0,0,4,6,64],
 "d6/dc7/ev-jobs_8c.html#a8f253ec4c291dc0133b879334ad7e6c4":[7,0,0,4,6,71],
 "d6/dc7/ev-jobs_8c.html#a91c41c7707b35e06a6cbadb3d1d03610":[7,0,0,4,6,113],
-"d6/dc7/ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba":[7,0,0,4,6,48],
-"d6/dc7/ev-jobs_8c.html#a93b05732dcbbd7640765fb334ce871b9":[7,0,0,4,6,102]
+"d6/dc7/ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba":[7,0,0,4,6,48]
 };

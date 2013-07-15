@@ -21,6 +21,7 @@ var ev_history_8h =
     [ "ev_history_go_back", "dd/d9c/ev-history_8h.html#a660104227681a00a5c83bfbdd61249a5", null ],
     [ "ev_history_go_forward", "dd/d9c/ev-history_8h.html#a733374484d99c78146c7452a93c151b4", null ],
     [ "ev_history_go_to_link", "dd/d9c/ev-history_8h.html#a4474c181d218a8b3a1b6d7680330dccc", null ],
+    [ "ev_history_is_frozen", "dd/d9c/ev-history_8h.html#a3eabd7d54758ed949c31e6b89f9ebfcf", null ],
     [ "ev_history_new", "dd/d9c/ev-history_8h.html#ac3d84b2d32a1e2f970703a43de096b10", null ],
     [ "ev_history_thaw", "dd/d9c/ev-history_8h.html#a6d5764a99490117f0f88f7eb80b86848", null ]
 ];

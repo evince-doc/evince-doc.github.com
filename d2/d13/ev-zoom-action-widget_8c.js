@@ -10,6 +10,7 @@ var ev_zoom_action_widget_8c =
     [ "N_COLUMNS", "d2/d13/ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caac70d28409ca79aa291cc0e58244f1fe4", null ],
     [ "combo_activated_cb", "d2/d13/ev-zoom-action-widget_8c.html#af7b7094ed9fb4152c8efb20e73a1048f", null ],
     [ "combo_changed_cb", "d2/d13/ev-zoom-action-widget_8c.html#afdd64d282ac099f104492961f069c735", null ],
+    [ "combo_focus_out_cb", "d2/d13/ev-zoom-action-widget_8c.html#a2791f30372260d3bf38249a6b3cdd634", null ],
     [ "combo_format_entry_text", "d2/d13/ev-zoom-action-widget_8c.html#afb9c646d539ece4374d5b88881143966", null ],
     [ "document_changed_cb", "d2/d13/ev-zoom-action-widget_8c.html#a1d1db1d36348a84735688dab75dc7176", null ],
     [ "ev_zoom_action_widget_class_init", "d2/d13/ev-zoom-action-widget_8c.html#a6fa6eb4f62f97bb3b309d1d6c3466fb0", null ],

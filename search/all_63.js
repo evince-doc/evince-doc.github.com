@@ -80,6 +80,7 @@ var searchData=
   ['combo_5factivated_5fcb',['combo_activated_cb',['../d2/d13/ev-zoom-action-widget_8c.html#af7b7094ed9fb4152c8efb20e73a1048f',1,'ev-zoom-action-widget.c']]],
   ['combo_5fchanged_5fcb',['combo_changed_cb',['../d2/d13/ev-zoom-action-widget_8c.html#afdd64d282ac099f104492961f069c735',1,'ev-zoom-action-widget.c']]],
   ['combo_5fchanged_5fhandler',['combo_changed_handler',['../df/d9e/struct__EvZoomActionWidgetPrivate.html#a13d258cd172bd7b7b5b651afceed9c82',1,'_EvZoomActionWidgetPrivate']]],
+  ['combo_5ffocus_5fout_5fcb',['combo_focus_out_cb',['../d2/d13/ev-zoom-action-widget_8c.html#a2791f30372260d3bf38249a6b3cdd634',1,'ev-zoom-action-widget.c']]],
   ['combo_5fformat_5fentry_5ftext',['combo_format_entry_text',['../d2/d13/ev-zoom-action-widget_8c.html#afb9c646d539ece4374d5b88881143966',1,'ev-zoom-action-widget.c']]],
   ['comicbookdecompresscommand',['ComicBookDecompressCommand',['../db/dbd/structComicBookDecompressCommand.html',1,'']]],
   ['comicbookdecompresstype',['ComicBookDecompressType',['../d2/dee/comics-document_8c.html#af40458a768dbbfcedefd3c17e83aeeb7',1,'comics-document.c']]],

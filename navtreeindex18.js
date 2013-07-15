@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"d8/d3e/ev-view_8c.html#af46b9e420038a7ba7c6bd271d47c39d2":[7,0,0,4,29,226],
 "d8/d3e/ev-view_8c.html#af493e724a37d3e687eaabe72b0b01967":[7,0,0,4,29,101],
 "d8/d3e/ev-view_8c.html#af4c66a12e3dd928175a7c057083d7fd8":[7,0,0,4,29,60],
 "d8/d3e/ev-view_8c.html#af51d374635b49a10eb30711e9a5909c1":[7,0,0,4,29,46],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "d8/dd1/structEvTransitionAnimation.html#ae186541ce5477968d19f8b666963c183":[6,0,323,0],
 "d8/dd6/struct__EvZoomActionClass.html":[6,0,273],
 "d8/dd6/struct__EvZoomActionClass.html#ab11996324d27fb5aa9ac92088fbcc90a":[6,0,273,0],
-"d8/dd7/structEvViewSelection.html":[6,0,330],
-"d8/dd7/structEvViewSelection.html#a08554f383a484a050099cd904883f736":[6,0,330,3]
+"d8/dd7/structEvViewSelection.html":[6,0,330]
 };

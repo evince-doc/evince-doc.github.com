@@ -3,7 +3,7 @@ var searchData=
   ['uchar',['Uchar',['../d2/d6f/sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2',1,'sysdeps.h']]],
   ['ui_5fhints',['ui_hints',['../dd/d53/struct__EvDocumentInfo.html#a5cf65e376128562782ea6e759e180b6f',1,'_EvDocumentInfo']]],
   ['ui_5fmanager',['ui_manager',['../de/db1/struct__EvPreviewerWindow.html#a52da2ffde1768aae263f415ea3a1d1f1',1,'_EvPreviewerWindow::ui_manager()'],['../d9/dec/struct__EvSidebarBookmarksPrivate.html#a18af5165a46b8f62ae2eeeb856b0e825',1,'_EvSidebarBookmarksPrivate::ui_manager()'],['../dd/d22/struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d',1,'_EvWindowPrivate::ui_manager()']]],
-  ['uint',['UINT',['../d2/d6f/sysdeps_8h.html#a72f3b9c93d14360be2ab10b2cd7f55ec',1,'UINT():&#160;sysdeps.h'],['../d2/d6f/sysdeps_8h.html#a4840c4503b7d10cea5e08416eb3716f1',1,'Uint():&#160;sysdeps.h']]],
+  ['uint',['Uint',['../d2/d6f/sysdeps_8h.html#a4840c4503b7d10cea5e08416eb3716f1',1,'Uint():&#160;sysdeps.h'],['../d2/d6f/sysdeps_8h.html#a72f3b9c93d14360be2ab10b2cd7f55ec',1,'UINT():&#160;sysdeps.h']]],
   ['uint8',['Uint8',['../d2/d6f/sysdeps_8h.html#af84840501dec18061d18a68c162a8fa2',1,'sysdeps.h']]],
   ['ulong',['Ulong',['../d2/d6f/sysdeps_8h.html#ae896befe19461ac700776e254bb8d34d',1,'sysdeps.h']]],
   ['undefined',['undefined',['../de/d70/dviread_8c.html#ab2def108e6646106fe32200a4015f695',1,'dviread.c']]],

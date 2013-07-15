@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"dc/d54/ev-document-transition_8h_source.html":[7,0,0,2,39],
 "dc/d57/struct__EvMessageArea.html":[6,0,185],
 "dc/d57/struct__EvMessageArea.html#a1e92ba8342cff1027ea5f0eb1dcd74f8":[6,0,185,0],
 "dc/d57/struct__EvMessageArea.html#aba29ce322f83d5f5b12d4bee0b3e1ba4":[6,0,185,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "dd/d22/struct__EvWindowPrivate.html#a93c65c18b354c4b35359c73de5f083f6":[6,0,270,68],
 "dd/d22/struct__EvWindowPrivate.html#a9533d726d289aa7472543c243a0ec563":[6,0,270,1],
 "dd/d22/struct__EvWindowPrivate.html#a9b90a112405e805b5dc73a2a89766cb1":[6,0,270,59],
-"dd/d22/struct__EvWindowPrivate.html#a9e2476367ff83bb7a86e3deb3e5cfc47":[6,0,270,17],
-"dd/d22/struct__EvWindowPrivate.html#aa7b0b393d55556b8bc1e21fd0978fe0e":[6,0,270,21]
+"dd/d22/struct__EvWindowPrivate.html#a9e2476367ff83bb7a86e3deb3e5cfc47":[6,0,270,17]
 };

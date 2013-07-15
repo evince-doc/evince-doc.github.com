@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"d9/dfb/sp-epsf_8c.html#add7754528eeb00584945e550e03535ca":[7,0,0,0,2,0,28,13],
 "d9/dfb/sp-epsf_8c.html#ade81df2a17fb48f429cd1b3696eca774":[7,0,0,0,2,0,28,17],
 "d9/dfb/sp-epsf_8c.html#ae2728699e9d12c7aa8b00a6d23bbe5ef":[7,0,0,0,2,0,28,11],
 "d9/dfb/sp-epsf_8c.html#aeb447a7da70893212e1e61e6086c6e80":[7,0,0,0,2,0,28,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "da/da4/struct__EvAnnotationWindow.html#aa78b9167d0190a7ba5ae533a9a91f5ac":[6,0,64,9],
 "da/da4/struct__EvAnnotationWindow.html#ab2c383d4ec1518883360c6042162e52f":[6,0,64,12],
 "da/da4/struct__EvAnnotationWindow.html#ab6ad3e9c18dd73eb5dbaf50c8dcb5d31":[6,0,64,10],
-"da/da4/struct__EvAnnotationWindow.html#ac76616380599ba4ce8606c076c42956c":[6,0,64,6],
-"da/da4/struct__EvAnnotationWindow.html#acf30b17ba49f5527ec862fe22bfb3719":[6,0,64,0]
+"da/da4/struct__EvAnnotationWindow.html#ac76616380599ba4ce8606c076c42956c":[6,0,64,6]
 };

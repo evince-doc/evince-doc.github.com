@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"d3/d25/ev-daemon_8c.html#a068ae78d1af388e9df78c53e78061c17":[7,0,0,7,10,12],
 "d3/d25/ev-daemon_8c.html#a0e72d2f453cb1011f84bdc1134125487":[7,0,0,7,10,17],
 "d3/d25/ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19":[7,0,0,7,10,14],
 "d3/d25/ev-daemon_8c.html#a27ba5e59476c9bf4fc41281d8a3331f7":[7,0,0,7,10,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d3/d7c/ev-module_8h.html#af1bbc39f5ee319816be5dafe4f46fc5c":[7,0,0,2,64,8],
 "d3/d7c/ev-module_8h_source.html":[7,0,0,2,64],
 "d3/d81/struct__EggSMClientWin32.html":[6,0,51],
-"d3/d81/struct__EggSMClientWin32.html#a8eb6407e1f16847026beb49aa44303e3":[6,0,51,0],
-"d3/d81/struct__EggSMClientWin32.html#a9722f4630fd0d2f951d5bb0abbb89d82":[6,0,51,4]
+"d3/d81/struct__EggSMClientWin32.html#a8eb6407e1f16847026beb49aa44303e3":[6,0,51,0]
 };

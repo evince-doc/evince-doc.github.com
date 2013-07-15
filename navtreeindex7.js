@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"d3/d81/struct__EggSMClientWin32.html#a9722f4630fd0d2f951d5bb0abbb89d82":[6,0,51,4],
 "d3/d81/struct__EggSMClientWin32.html#a9fdb22e1624355183167db6b4f7581f3":[6,0,51,2],
 "d3/d81/struct__EggSMClientWin32.html#ab8337102bbfd8d293df770b5b8749da4":[6,0,51,1],
 "d3/d81/struct__EggSMClientWin32.html#ae4682d952e28a2401ebe230fc15e482c":[6,0,51,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "d3/de3/ev-sidebar-bookmarks_8c.html#afd550d94061b5ce576489ddb8b6add7a":[7,0,0,7,47,25],
 "d3/de3/ev-sidebar-bookmarks_8c_source.html":[7,0,0,7,47],
 "d3/de6/struct__EvWindow.html":[6,0,268],
-"d3/de6/struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf":[6,0,268,1],
-"d3/de6/struct__EvWindow.html#a2aee900cf1d55d7fab56c4212dc167af":[6,0,268,0]
+"d3/de6/struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf":[6,0,268,1]
 };

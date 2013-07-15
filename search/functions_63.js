@@ -17,6 +17,7 @@ var searchData=
   ['close_5ffd_5fcb',['close_fd_cb',['../d5/d42/ev-file-helpers_8c.html#af88aba8becc1621023ef00bcee797dd0',1,'ev-file-helpers.c']]],
   ['combo_5factivated_5fcb',['combo_activated_cb',['../d2/d13/ev-zoom-action-widget_8c.html#af7b7094ed9fb4152c8efb20e73a1048f',1,'ev-zoom-action-widget.c']]],
   ['combo_5fchanged_5fcb',['combo_changed_cb',['../d2/d13/ev-zoom-action-widget_8c.html#afdd64d282ac099f104492961f069c735',1,'ev-zoom-action-widget.c']]],
+  ['combo_5ffocus_5fout_5fcb',['combo_focus_out_cb',['../d2/d13/ev-zoom-action-widget_8c.html#a2791f30372260d3bf38249a6b3cdd634',1,'ev-zoom-action-widget.c']]],
   ['combo_5fformat_5fentry_5ftext',['combo_format_entry_text',['../d2/d13/ev-zoom-action-widget_8c.html#afb9c646d539ece4374d5b88881143966',1,'ev-zoom-action-widget.c']]],
   ['comics_5fcheck_5fdecompress_5fcommand',['comics_check_decompress_command',['../d2/dee/comics-document_8c.html#ab623e4ff09fbdb9f04ce14f2d0b7927a',1,'comics-document.c']]],
   ['comics_5fdecompress_5ftemp_5fdir',['comics_decompress_temp_dir',['../d2/dee/comics-document_8c.html#abf2c6aca220b4594f1583998f8eb8100',1,'comics-document.c']]],
