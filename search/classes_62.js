@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['badtitleentry',['BadTitleEntry',['../df/d91/structBadTitleEntry.html',1,'']]],
-  ['bbox',['BBox',['../df/d10/structBBox.html',1,'']]],
-  ['bitmap',['BITMAP',['../df/df2/structBITMAP.html',1,'']]],
-  ['buffer',['Buffer',['../d6/d3a/structBuffer.html',1,'']]]
+  ['badtitleentry',['BadTitleEntry',['../structBadTitleEntry.html',1,'']]],
+  ['bbox',['BBox',['../structBBox.html',1,'']]],
+  ['bitmap',['BITMAP',['../structBITMAP.html',1,'']]],
+  ['buffer',['Buffer',['../structBuffer.html',1,'']]]
 ];

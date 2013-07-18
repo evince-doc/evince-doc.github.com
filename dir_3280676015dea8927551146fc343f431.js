@@ -10,6 +10,6 @@ var dir_3280676015dea8927551146fc343f431 =
     [ "shell", "dir_03d4a7bd78ff53a92be90255bc24db97.html", "dir_03d4a7bd78ff53a92be90255bc24db97" ],
     [ "test", "dir_a6bad009a4e2c89bf4ec3636b694bcc6.html", "dir_a6bad009a4e2c89bf4ec3636b694bcc6" ],
     [ "thumbnailer", "dir_7ec16c17d8d415e842eab6a6c267dc07.html", "dir_7ec16c17d8d415e842eab6a6c267dc07" ],
-    [ "evince-document.h", "d9/d80/evince-document_8h.html", "d9/d80/evince-document_8h" ],
-    [ "evince-view.h", "d7/df8/evince-view_8h.html", "d7/df8/evince-view_8h" ]
+    [ "evince-document.h", "evince-document_8h.html", "evince-document_8h" ],
+    [ "evince-view.h", "evince-view_8h.html", "evince-view_8h" ]
 ];

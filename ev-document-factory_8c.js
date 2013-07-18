@@ -1,0 +1,25 @@
+var ev_document_factory_8c =
+[
+    [ "BACKEND_DATA_KEY", "ev-document-factory_8c.html#af2d78270829dd7088ac35dcf515e058e", null ],
+    [ "_ev_document_factory_init", "ev-document-factory_8c.html#a048bcfeaa4b9146397a1913f6d315976", null ],
+    [ "_ev_document_factory_shutdown", "ev-document-factory_8c.html#a43237071dcbe6d36aefb06f4297a5170", null ],
+    [ "ev_backends_manager_get_all_types_info", "ev-document-factory_8c.html#a50939de52d3b4089d7477b851d8c2c7a", null ],
+    [ "ev_backends_manager_get_document", "ev-document-factory_8c.html#a3e3fe897312e6727d5e32f9ba053f795", null ],
+    [ "ev_backends_manager_get_document_module_name", "ev-document-factory_8c.html#ad20820f68c588443400ae5b31f612596", null ],
+    [ "ev_backends_manager_get_document_type_info", "ev-document-factory_8c.html#a14166cac83e92ea08df56400a5434042", null ],
+    [ "ev_document_factory_add_filters", "ev-document-factory_8c.html#a56ece238a098ed19abacb4fde8cebc1b", null ],
+    [ "ev_document_factory_get_document", "ev-document-factory_8c.html#af3895601021aead454ebfc697e66252a", null ],
+    [ "ev_document_factory_get_document_for_gfile", "ev-document-factory_8c.html#a8ca2d1ea82bdac59bbc1c790fba2176e", null ],
+    [ "ev_document_factory_get_document_for_stream", "ev-document-factory_8c.html#a2665383bbea34471a5f55c972a8ee977", null ],
+    [ "ev_document_factory_new_document_for_mime_type", "ev-document-factory_8c.html#aec5e9fc6bbc52685ddd69e06e9d80ea5", null ],
+    [ "ev_document_factory_new_document_for_mime_type", "ev-document-factory_8c.html#a93f2ae56bce1324fadaf76ccd9ea839e", null ],
+    [ "file_filter_add_mime_types", "ev-document-factory_8c.html#ae1137cf676082c703df0369b382f83ad", null ],
+    [ "free_uncompressed_uri", "ev-document-factory_8c.html#a4e5a61b57882a18144fa8d4072a28506", null ],
+    [ "get_backend_info_for_document", "ev-document-factory_8c.html#ac477a66e54396e67f8c80718948ca2be", null ],
+    [ "get_backend_info_for_mime_type", "ev-document-factory_8c.html#a977ee7554decd67a251f786e772e8b17", null ],
+    [ "get_compression_from_mime_type", "ev-document-factory_8c.html#adef77bf2a24e0135899523c74c3a6bd2", null ],
+    [ "new_document_for_uri", "ev-document-factory_8c.html#abc8ca4e29720bef98cb2bfd9c1103f88", null ],
+    [ "ev_backends_dir", "ev-document-factory_8c.html#a1841c1886d6bac5cdc50ceab9f9a204b", null ],
+    [ "ev_backends_list", "ev-document-factory_8c.html#ac21706aa5fbb4183a31117ffd12dd218", null ],
+    [ "ev_module_hash", "ev-document-factory_8c.html#a208e78c2360f5bcedacee469421572dd", null ]
+];

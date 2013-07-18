@@ -1,0 +1,26 @@
+var xps_document_8c =
+[
+    [ "_XPSDocument", "struct__XPSDocument.html", "struct__XPSDocument" ],
+    [ "_XPSDocumentClass", "struct__XPSDocumentClass.html", "struct__XPSDocumentClass" ],
+    [ "build_tree", "xps-document_8c.html#a664a3e0a922232d07fd8a6f4b9fae164", null ],
+    [ "EV_BACKEND_REGISTER_WITH_CODE", "xps-document_8c.html#ab373684ea3e0f08b96f091d809bdf31f", null ],
+    [ "link_action_from_target", "xps-document_8c.html#a1cfc342c4a39b189d189d1340fc5b586", null ],
+    [ "xps_document_class_init", "xps-document_8c.html#a90671ad9fd2d0bd0a7da21f45c6fb827", null ],
+    [ "xps_document_dispose", "xps-document_8c.html#a0eff5298ef7f1eaab401a43a398dc642", null ],
+    [ "xps_document_document_links_iface_init", "xps-document_8c.html#aa152f31b300ac386d950d7d40eb61993", null ],
+    [ "xps_document_document_print_iface_init", "xps-document_8c.html#ab71bed1cb4a83c2194051ac756be80a9", null ],
+    [ "xps_document_get_backend_info", "xps-document_8c.html#a96c180d0fd52631361588b5527f5f70f", null ],
+    [ "xps_document_get_info", "xps-document_8c.html#a1717d1c11aba4a25c9b609b6dcc15b89", null ],
+    [ "xps_document_get_n_pages", "xps-document_8c.html#a3916957e71652cff360cdbeb6707b4ed", null ],
+    [ "xps_document_get_page", "xps-document_8c.html#a8f0e2491e0101cc2f890066e26881cfc", null ],
+    [ "xps_document_get_page_size", "xps-document_8c.html#ad9455419e0c27981691abe28383abe81", null ],
+    [ "xps_document_links_find_link_dest", "xps-document_8c.html#a17d369a867b66917b661d7edd9ad0c89", null ],
+    [ "xps_document_links_find_link_page", "xps-document_8c.html#a92ab28cf474d3a6ac44a666da1ee82ff", null ],
+    [ "xps_document_links_get_links", "xps-document_8c.html#a50e6cab9a0d466c18a5a432b13bdb460", null ],
+    [ "xps_document_links_get_links_model", "xps-document_8c.html#a21d02681ecebe7d14476bff3c523753e", null ],
+    [ "xps_document_links_has_document_links", "xps-document_8c.html#abd241273bf9deec2f005761128903eea", null ],
+    [ "xps_document_load", "xps-document_8c.html#a09fab556708123aa2f01bb464647e1da", null ],
+    [ "xps_document_print_print_page", "xps-document_8c.html#a3f05ddf86e28d9d375d6afd0c3775ded", null ],
+    [ "xps_document_render", "xps-document_8c.html#a4a740ea28751590f540e6dbd5290fe83", null ],
+    [ "xps_document_save", "xps-document_8c.html#af26c3139ad350dc90fa03f17273473ff", null ]
+];
