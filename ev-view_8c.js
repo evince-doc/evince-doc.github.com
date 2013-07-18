@@ -275,7 +275,7 @@ var ev_view_8c =
     [ "on_adjustment_value_changed", "ev-view_8c.html#a5694180f5acfbecd2da6a7ff40f1b3bc", null ],
     [ "position_caret_cursor_at_doc_point", "ev-view_8c.html#a16951fada911c9e9fe24655da60908cc", null ],
     [ "position_caret_cursor_at_location", "ev-view_8c.html#a975cebaedbcda309f13262335bb68e38", null ],
-    [ "position_caret_cursor_for_event", "ev-view_8c.html#a48cb6f50173db9c8e1f1dccd80969e34", null ],
+    [ "position_caret_cursor_for_event", "ev-view_8c.html#a17563aba8da777e124059b090f8878c1", null ],
     [ "scroll_to_point", "ev-view_8c.html#a1df1a28d473a9f1ce61fe9a5004137d2", null ],
     [ "selection_free", "ev-view_8c.html#a4cca562156fb244f02d642596d3ac9ba", null ],
     [ "selection_scroll_timeout_cb", "ev-view_8c.html#a6791e50fff4ec30b48492eed058f1a55", null ],

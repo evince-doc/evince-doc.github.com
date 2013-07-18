@@ -246,7 +246,7 @@ var searchData=
   ['position',['position',['../struct__DjvuTextLink.html#a624d450bb268252bf2a73466614db255',1,'_DjvuTextLink']]],
   ['position_5fcaret_5fcursor_5fat_5fdoc_5fpoint',['position_caret_cursor_at_doc_point',['../ev-view_8c.html#a16951fada911c9e9fe24655da60908cc',1,'ev-view.c']]],
   ['position_5fcaret_5fcursor_5fat_5flocation',['position_caret_cursor_at_location',['../ev-view_8c.html#a975cebaedbcda309f13262335bb68e38',1,'ev-view.c']]],
-  ['position_5fcaret_5fcursor_5ffor_5fevent',['position_caret_cursor_for_event',['../ev-view_8c.html#a48cb6f50173db9c8e1f1dccd80969e34',1,'ev-view.c']]],
+  ['position_5fcaret_5fcursor_5ffor_5fevent',['position_caret_cursor_for_event',['../ev-view_8c.html#a17563aba8da777e124059b090f8878c1',1,'ev-view.c']]],
   ['pow2',['pow2',['../util_8c.html#a0c5ecb3f927aa55002830822f25daba3',1,'util.c']]],
   ['pre_5fcache_5fsize',['PRE_CACHE_SIZE',['../ev-page-cache_8c.html#a18748f9f5cb2306e03adbc66b3983d8e',1,'ev-page-cache.c']]],
   ['pre_5fmagnification',['pre_magnification',['../struct____synctex__scanner__t.html#ab830f0b6d8d83da0eb582b353fa0eed1',1,'__synctex_scanner_t']]],
