@@ -735,430 +735,498 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8c_source.html','')
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;}</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="keyword">static</span> gchar *</div>
-<div class="line"><a name="l00630"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1">  630</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1">ev_view_accessible_get_selection</a> (AtkText *text,</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                  gint     selection_num,</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                  gint    *start_pos,</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                  gint    *end_pos)</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00630"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#af02d211fedd86fb5cbfb3e1249622d7d">  630</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#af02d211fedd86fb5cbfb3e1249622d7d">get_selection_bounds</a> (<a class="code" href="struct__EvView.html">EvView</a>          *view,</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;              <a class="code" href="structEvViewSelection.html">EvViewSelection</a> *selection,</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;              gint            *start_offset,</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;              gint            *end_offset)</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;{</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    GtkWidget *widget;</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    GtkTextBuffer *buffer;</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    GtkTextIter start, end;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    gchar *retval = NULL;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <span class="comment">/* State is defunct */</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">if</span> (selection_num != 0)</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    buffer = <a class="code" href="ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae">ev_view_accessible_get_text_buffer</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (text), <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget));</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordflow">if</span> (!buffer)</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    gtk_text_buffer_get_selection_bounds (buffer, &amp;start, &amp;end);</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    *start_pos = gtk_text_iter_get_offset (&amp;start);</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    *end_pos = gtk_text_iter_get_offset (&amp;end);</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="keywordflow">if</span> (*start_pos != *end_pos)</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        retval = gtk_text_buffer_get_text (buffer, &amp;start, &amp;end, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    cairo_rectangle_int_t rect;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    gint start, end;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordflow">if</span> (!selection-&gt;<a class="code" href="structEvViewSelection.html#a0fb5b864e9121207318639123fde0a64">covered_region</a> || cairo_region_is_empty (selection-&gt;<a class="code" href="structEvViewSelection.html#a0fb5b864e9121207318639123fde0a64">covered_region</a>))</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    cairo_region_get_rectangle (selection-&gt;<a class="code" href="structEvViewSelection.html#a0fb5b864e9121207318639123fde0a64">covered_region</a>, 0, &amp;rect);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    start = <a class="code" href="ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a> (view,</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                                   selection-&gt;<a class="code" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>,</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                                   rect.x / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>,</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;                                   (rect.y + (rect.height / 2)) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordflow">if</span> (start == -1)</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    cairo_region_get_rectangle (selection-&gt;<a class="code" href="structEvViewSelection.html#a0fb5b864e9121207318639123fde0a64">covered_region</a>,</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                    cairo_region_num_rectangles (selection-&gt;<a class="code" href="structEvViewSelection.html#a0fb5b864e9121207318639123fde0a64">covered_region</a>) - 1,</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                    &amp;rect);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    end = <a class="code" href="ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a> (view,</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                                 selection-&gt;<a class="code" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>,</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                                 (rect.x + rect.width) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>,</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                                 (rect.y + (rect.height / 2)) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="keywordflow">if</span> (end == -1)</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;}</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    *start_offset = start;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    *end_offset = end;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00663"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ab1285399b762802d075c7aae9bed4955">  663</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ab1285399b762802d075c7aae9bed4955">ev_view_accessible_add_selection</a> (AtkText *text,</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                  gint     start_pos,</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                  gint     end_pos)</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;{</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    GtkWidget *widget;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    GtkTextBuffer *buffer;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    GtkTextIter pos_itr;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    GtkTextIter start, end;</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    gint select_start, select_end;</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        <span class="comment">/* State is defunct */</span></div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    buffer = <a class="code" href="ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae">ev_view_accessible_get_text_buffer</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (text), <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget));</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <span class="keywordflow">if</span> (!buffer)</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    gtk_text_buffer_get_selection_bounds (buffer, &amp;start, &amp;end);</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    select_start = gtk_text_iter_get_offset (&amp;start);</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    select_end = gtk_text_iter_get_offset (&amp;end);</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="comment">/* If there is already a selection, then don&#39;t allow</span></div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="comment">     * another to be added</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <span class="keywordflow">if</span> (select_start == select_end) {</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, start_pos);</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;selection_bound&quot;</span>, &amp;pos_itr);</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, end_pos);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;insert&quot;</span>, &amp;pos_itr);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    }</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;}</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00703"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a39cd44452125b056a196ca4ac46ea905">  703</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a39cd44452125b056a196ca4ac46ea905">ev_view_accessible_remove_selection</a> (AtkText *text,</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                     gint     selection_num)</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;{</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    GtkWidget *widget;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    GtkTextBuffer *buffer;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    GtkTextMark *cursor_mark;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    GtkTextIter cursor_itr;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    GtkTextIter start, end;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    gint select_start, select_end;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        <span class="comment">/* State is defunct */</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;}</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="keyword">static</span> gchar *</div>
+<div class="line"><a name="l00666"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1">  666</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1">ev_view_accessible_get_selection</a> (AtkText *text,</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                  gint     selection_num,</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                  gint    *start_pos,</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                  gint    *end_pos)</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;{</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    GtkWidget *widget;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <a class="code" href="struct__EvView.html">EvView</a>    *view;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    gchar *selected_text = NULL;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    gchar *normalized_text = NULL;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    GList *l;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    *start_pos = -1;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    *end_pos = -1;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <span class="comment">/* State is defunct */</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keywordflow">if</span> (selection_num != 0)</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    view = <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (view-&gt;<a class="code" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>) || !view-&gt;<a class="code" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>)</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keywordflow">for</span> (l = view-&gt;<a class="code" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>; l != NULL; l = l-&gt;next) {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <a class="code" href="structEvViewSelection.html">EvViewSelection</a> *selection = (<a class="code" href="structEvViewSelection.html">EvViewSelection</a> *)l-&gt;data;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        gint start, end;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        if (selection-&gt;<a class="code" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a> != view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>)</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-view-accessible_8c.html#af02d211fedd86fb5cbfb3e1249622d7d">get_selection_bounds</a> (view, selection, &amp;start, &amp;end) &amp;&amp; start != end) {</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            <a class="code" href="struct__EvPage.html">EvPage</a> *page;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;            page = <a class="code" href="ev-document_8c.html#ad67d3d41cd55132a88bc4d6189d019d9">ev_document_get_page</a> (view-&gt;<a class="code" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>, selection-&gt;<a class="code" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>);</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;            <a class="code" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;            selected_text = <a class="code" href="ev-selection_8c.html#ac39332ff575e99d10d047dd143348c6b">ev_selection_get_selected_text</a> (<a class="code" href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a> (view-&gt;<a class="code" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>),</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                                    page,</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                                    selection-&gt;<a class="code" href="structEvViewSelection.html#a08554f383a484a050099cd904883f736">style</a>,</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                                    &amp;(selection-&gt;<a class="code" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>));</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            <a class="code" href="ev-document_8c.html#aae33adc478ec91a4569bee55327e9e5f">ev_document_doc_mutex_unlock</a> ();</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;            g_object_unref (page);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            *start_pos = start;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            *end_pos = end;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        }</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    buffer = <a class="code" href="ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae">ev_view_accessible_get_text_buffer</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (text), <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget));</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="keywordflow">if</span> (!buffer)</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    gtk_text_buffer_get_selection_bounds(buffer, &amp;start, &amp;end);</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    select_start = gtk_text_iter_get_offset(&amp;start);</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    select_end = gtk_text_iter_get_offset(&amp;end);</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    }</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keywordflow">if</span> (selected_text) {</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        normalized_text = g_utf8_normalize (selected_text, -1, G_NORMALIZE_NFKC);</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        g_free (selected_text);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    }</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordflow">if</span> (select_start != select_end) {</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="comment">/* Setting the start &amp; end of the selected region</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="comment">         * to the caret position turns off the selection.</span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        cursor_mark = gtk_text_buffer_get_insert (buffer);</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        gtk_text_buffer_get_iter_at_mark (buffer, &amp;cursor_itr, cursor_mark);</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;selection_bound&quot;</span>, &amp;cursor_itr);</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    }</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;}</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00742"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#abf70fafa4704f797cf96b705dcf42abc">  742</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#abf70fafa4704f797cf96b705dcf42abc">ev_view_accessible_set_selection</a> (AtkText *text,</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                  gint     selection_num,</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                  gint     start_pos,</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                  gint     end_pos)</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;{</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    GtkWidget *widget;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    GtkTextBuffer *buffer;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    GtkTextIter pos_itr;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    GtkTextIter start, end;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    gint select_start, select_end;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="comment">/* State is defunct */</span></div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    buffer = <a class="code" href="ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae">ev_view_accessible_get_text_buffer</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (text), <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget));</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordflow">if</span> (!buffer)</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    gtk_text_buffer_get_selection_bounds(buffer, &amp;start, &amp;end);</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    select_start = gtk_text_iter_get_offset(&amp;start);</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    select_end = gtk_text_iter_get_offset(&amp;end);</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordflow">return</span> normalized_text;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;}</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00731"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ab1285399b762802d075c7aae9bed4955">  731</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ab1285399b762802d075c7aae9bed4955">ev_view_accessible_add_selection</a> (AtkText *text,</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                  gint     start_pos,</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                  gint     end_pos)</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;{</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    GtkWidget *widget;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    GtkTextBuffer *buffer;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    GtkTextIter pos_itr;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    GtkTextIter start, end;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    gint select_start, select_end;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        <span class="comment">/* State is defunct */</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    buffer = <a class="code" href="ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae">ev_view_accessible_get_text_buffer</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (text), <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget));</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="keywordflow">if</span> (!buffer)</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    gtk_text_buffer_get_selection_bounds (buffer, &amp;start, &amp;end);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    select_start = gtk_text_iter_get_offset (&amp;start);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    select_end = gtk_text_iter_get_offset (&amp;end);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="comment">/* If there is already a selection, then don&#39;t allow</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="comment">     * another to be added</span></div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordflow">if</span> (select_start == select_end) {</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, start_pos);</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;selection_bound&quot;</span>, &amp;pos_itr);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, end_pos);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;insert&quot;</span>, &amp;pos_itr);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    }</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordflow">if</span> (select_start != select_end) {</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, start_pos);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;selection_bound&quot;</span>, &amp;pos_itr);</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, end_pos);</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;insert&quot;</span>, &amp;pos_itr);</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    }</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;}</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00780"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a09a709e8b7c7e763ffe3669dd42a9b3b">  780</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a09a709e8b7c7e763ffe3669dd42a9b3b">ev_view_accessible_text_iface_init</a> (AtkTextIface * iface)</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;{</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    iface-&gt;get_text = <a class="code" href="ev-view-accessible_8c.html#a1d69ef34ec7e8de7939a2275f2c30b72">ev_view_accessible_get_text</a>;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    iface-&gt;get_character_at_offset = <a class="code" href="ev-view-accessible_8c.html#adf89d9015a8e36ceebf63c3761490361">ev_view_accessible_get_character_at_offset</a>;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    iface-&gt;get_text_before_offset = <a class="code" href="ev-view-accessible_8c.html#a1bf8fe96527c2c58fdee29e78e9de77c">ev_view_accessible_get_text_before_offset</a>;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    iface-&gt;get_text_at_offset = <a class="code" href="ev-view-accessible_8c.html#a5effb33a6e77e7ff65736fcd028645f6">ev_view_accessible_get_text_at_offset</a>;</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    iface-&gt;get_text_after_offset = <a class="code" href="ev-view-accessible_8c.html#a82b4b17f181c4614569f51f0652fa848">ev_view_accessible_get_text_after_offset</a>;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    iface-&gt;get_caret_offset = <a class="code" href="ev-view-accessible_8c.html#add7612d02188bb2c60cd55d4702724d5">ev_view_accessible_get_caret_offset</a>;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    iface-&gt;set_caret_offset = <a class="code" href="ev-view-accessible_8c.html#a8ca9338a4da62d5e891ae613dca7fcd2">ev_view_accessible_set_caret_offset</a>;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    iface-&gt;get_character_count = <a class="code" href="ev-view-accessible_8c.html#a1d844f14bb3d665f4ae92ba1667b56c0">ev_view_accessible_get_character_count</a>;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    iface-&gt;get_n_selections = <a class="code" href="ev-view-accessible_8c.html#a1c38d2ac043a6160afd296fba5457d7c">ev_view_accessible_get_n_selections</a>;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    iface-&gt;get_selection = <a class="code" href="ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1">ev_view_accessible_get_selection</a>;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    iface-&gt;add_selection = <a class="code" href="ev-view-accessible_8c.html#ab1285399b762802d075c7aae9bed4955">ev_view_accessible_add_selection</a>;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    iface-&gt;remove_selection = <a class="code" href="ev-view-accessible_8c.html#a39cd44452125b056a196ca4ac46ea905">ev_view_accessible_remove_selection</a>;</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    iface-&gt;set_selection = <a class="code" href="ev-view-accessible_8c.html#abf70fafa4704f797cf96b705dcf42abc">ev_view_accessible_set_selection</a>;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    iface-&gt;get_run_attributes = <a class="code" href="ev-view-accessible_8c.html#af02351ab0f5428ec90ba13b16f166fc6">ev_view_accessible_get_run_attributes</a>;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    iface-&gt;get_default_attributes = <a class="code" href="ev-view-accessible_8c.html#aa36cb61c097b3be6edebc7b55660b1ee">ev_view_accessible_get_default_attributes</a>;</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    iface-&gt;get_character_extents = <a class="code" href="ev-view-accessible_8c.html#a07a16540c7cfecab8b011f3c61f59cdf">ev_view_accessible_get_character_extents</a>;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    iface-&gt;get_offset_at_point = <a class="code" href="ev-view-accessible_8c.html#aaf0917787336df3a122f9393d2273ab9">ev_view_accessible_get_offset_at_point</a>;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;}</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00802"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67">  802</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67">ev_view_accessible_idle_do_action</a> (gpointer data)</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;{</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (data)-&gt;priv;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;}</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00771"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a39cd44452125b056a196ca4ac46ea905">  771</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a39cd44452125b056a196ca4ac46ea905">ev_view_accessible_remove_selection</a> (AtkText *text,</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                     gint     selection_num)</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;{</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    GtkWidget *widget;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    GtkTextBuffer *buffer;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    GtkTextMark *cursor_mark;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    GtkTextIter cursor_itr;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    GtkTextIter start, end;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    gint select_start, select_end;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        <span class="comment">/* State is defunct */</span></div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    buffer = <a class="code" href="ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae">ev_view_accessible_get_text_buffer</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (text), <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget));</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keywordflow">if</span> (!buffer)</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    gtk_text_buffer_get_selection_bounds(buffer, &amp;start, &amp;end);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    select_start = gtk_text_iter_get_offset(&amp;start);</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    select_end = gtk_text_iter_get_offset(&amp;end);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordflow">if</span> (select_start != select_end) {</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="comment">/* Setting the start &amp; end of the selected region</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="comment">         * to the caret position turns off the selection.</span></div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        cursor_mark = gtk_text_buffer_get_insert (buffer);</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        gtk_text_buffer_get_iter_at_mark (buffer, &amp;cursor_itr, cursor_mark);</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;selection_bound&quot;</span>, &amp;cursor_itr);</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    }</div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <a class="code" href="ev-view_8c.html#ab508decb6ec537488156e4034a148bc2">ev_view_scroll</a> (<a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (gtk_accessible_get_widget (GTK_ACCESSIBLE (data))),</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;                    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e">idle_scroll</a>,</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;                    <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac1ccb5883ac74627e6434cb88d755985">action_idle_handler</a> = 0;</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;}</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00814"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a24f6ca288ab99d6b535095659d754166">  814</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a24f6ca288ab99d6b535095659d754166">ev_view_accessible_action_do_action</a> (AtkAction *action,</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                     gint       i)</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;{</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (action)-&gt;priv;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <span class="keywordflow">if</span> (gtk_accessible_get_widget (GTK_ACCESSIBLE (action)) == NULL)</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;}</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00810"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#abf70fafa4704f797cf96b705dcf42abc">  810</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#abf70fafa4704f797cf96b705dcf42abc">ev_view_accessible_set_selection</a> (AtkText *text,</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                  gint     selection_num,</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                  gint     start_pos,</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                  gint     end_pos)</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;{</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    GtkWidget *widget;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    GtkTextBuffer *buffer;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    GtkTextIter pos_itr;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    GtkTextIter start, end;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    gint select_start, select_end;</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac1ccb5883ac74627e6434cb88d755985">action_idle_handler</a>)</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="keywordflow">switch</span> (i) {</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609a27b7ddcfdb7e37f273d319451f642da6">ACTION_SCROLL_UP</a>:</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e">idle_scroll</a> = GTK_SCROLL_PAGE_BACKWARD;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609acbed98e0a19d9cc6cc75278f34654314">ACTION_SCROLL_DOWN</a>:</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e">idle_scroll</a> = GTK_SCROLL_PAGE_FORWARD;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    }</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac1ccb5883ac74627e6434cb88d755985">action_idle_handler</a> = g_idle_add (<a class="code" href="ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67">ev_view_accessible_idle_do_action</a>,</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                                            action);</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;}</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;<span class="keyword">static</span> gint</div>
-<div class="line"><a name="l00841"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ac1db8c95cdadb52375fe0e024eaa08de">  841</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ac1db8c95cdadb52375fe0e024eaa08de">ev_view_accessible_action_get_n_actions</a> (AtkAction *action)</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;{</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;}</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l00847"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a7fed7c6ab492f1067e19dcd7a26377b5">  847</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a7fed7c6ab492f1067e19dcd7a26377b5">ev_view_accessible_action_get_description</a> (AtkAction *action,</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                       gint       i)</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (text));</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="comment">/* State is defunct */</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    buffer = <a class="code" href="ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae">ev_view_accessible_get_text_buffer</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (text), <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget));</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="keywordflow">if</span> (!buffer)</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    gtk_text_buffer_get_selection_bounds(buffer, &amp;start, &amp;end);</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    select_start = gtk_text_iter_get_offset(&amp;start);</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    select_end = gtk_text_iter_get_offset(&amp;end);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    <span class="keywordflow">if</span> (select_start != select_end) {</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, start_pos);</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;selection_bound&quot;</span>, &amp;pos_itr);</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        gtk_text_buffer_get_iter_at_offset (buffer, &amp;pos_itr, end_pos);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        gtk_text_buffer_move_mark_by_name (buffer, <span class="stringliteral">&quot;insert&quot;</span>, &amp;pos_itr);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;}</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00848"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a09a709e8b7c7e763ffe3669dd42a9b3b">  848</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a09a709e8b7c7e763ffe3669dd42a9b3b">ev_view_accessible_text_iface_init</a> (AtkTextIface * iface)</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;{</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (action)-&gt;priv;</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>)</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i])</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i];</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-view-accessible_8c.html#a45e64cb48c6b81096f0eca3724af2d5e">ev_view_accessible_action_descriptions</a>[i];</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;}</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l00862"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#af10b3c64eef8076c9017b27968fcfec3">  862</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#af10b3c64eef8076c9017b27968fcfec3">ev_view_accessible_action_get_name</a> (AtkAction *action,</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                    gint       i)</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;{</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>)</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-view-accessible_8c.html#ab34ced330f07ce061094962531cbf75d">ev_view_accessible_action_names</a>[i];</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;}</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00872"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#af36af78d1e6983ca44c32026c367f3b9">  872</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#af36af78d1e6983ca44c32026c367f3b9">ev_view_accessible_action_set_description</a> (AtkAction   *action,</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                       gint         i,</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                       <span class="keyword">const</span> gchar *description)</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;{</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (action)-&gt;priv;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    gchar *old_description;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>)</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    old_description = priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i];</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i] = g_strdup (description);</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    g_free (old_description);</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;}</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00890"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#af266358d54bd7f7f55a21aca4ecdaeca">  890</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#af266358d54bd7f7f55a21aca4ecdaeca">ev_view_accessible_action_iface_init</a> (AtkActionIface * iface)</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;{</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    iface-&gt;do_action = <a class="code" href="ev-view-accessible_8c.html#a24f6ca288ab99d6b535095659d754166">ev_view_accessible_action_do_action</a>;</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    iface-&gt;get_n_actions = <a class="code" href="ev-view-accessible_8c.html#ac1db8c95cdadb52375fe0e024eaa08de">ev_view_accessible_action_get_n_actions</a>;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    iface-&gt;get_description = <a class="code" href="ev-view-accessible_8c.html#a7fed7c6ab492f1067e19dcd7a26377b5">ev_view_accessible_action_get_description</a>;</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    iface-&gt;get_name = <a class="code" href="ev-view-accessible_8c.html#af10b3c64eef8076c9017b27968fcfec3">ev_view_accessible_action_get_name</a>;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    iface-&gt;set_description = <a class="code" href="ev-view-accessible_8c.html#af36af78d1e6983ca44c32026c367f3b9">ev_view_accessible_action_set_description</a>;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;}</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;<span class="keyword">static</span> GHashTable *</div>
-<div class="line"><a name="l00900"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ab7c9adf983cc65cf96a4317cb514dafb">  900</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ab7c9adf983cc65cf96a4317cb514dafb">ev_view_accessible_get_links</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible,</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                  <a class="code" href="struct__EvView.html">EvView</a>           *view)</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;{</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    <span class="keywordflow">if</span> (view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a> == priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a712db9bc094b9dc0887217752935fa45">current_page</a> &amp;&amp; priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>)</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    iface-&gt;get_text = <a class="code" href="ev-view-accessible_8c.html#a1d69ef34ec7e8de7939a2275f2c30b72">ev_view_accessible_get_text</a>;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    iface-&gt;get_character_at_offset = <a class="code" href="ev-view-accessible_8c.html#adf89d9015a8e36ceebf63c3761490361">ev_view_accessible_get_character_at_offset</a>;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    iface-&gt;get_text_before_offset = <a class="code" href="ev-view-accessible_8c.html#a1bf8fe96527c2c58fdee29e78e9de77c">ev_view_accessible_get_text_before_offset</a>;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    iface-&gt;get_text_at_offset = <a class="code" href="ev-view-accessible_8c.html#a5effb33a6e77e7ff65736fcd028645f6">ev_view_accessible_get_text_at_offset</a>;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    iface-&gt;get_text_after_offset = <a class="code" href="ev-view-accessible_8c.html#a82b4b17f181c4614569f51f0652fa848">ev_view_accessible_get_text_after_offset</a>;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    iface-&gt;get_caret_offset = <a class="code" href="ev-view-accessible_8c.html#add7612d02188bb2c60cd55d4702724d5">ev_view_accessible_get_caret_offset</a>;</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    iface-&gt;set_caret_offset = <a class="code" href="ev-view-accessible_8c.html#a8ca9338a4da62d5e891ae613dca7fcd2">ev_view_accessible_set_caret_offset</a>;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    iface-&gt;get_character_count = <a class="code" href="ev-view-accessible_8c.html#a1d844f14bb3d665f4ae92ba1667b56c0">ev_view_accessible_get_character_count</a>;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    iface-&gt;get_n_selections = <a class="code" href="ev-view-accessible_8c.html#a1c38d2ac043a6160afd296fba5457d7c">ev_view_accessible_get_n_selections</a>;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    iface-&gt;get_selection = <a class="code" href="ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1">ev_view_accessible_get_selection</a>;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    iface-&gt;add_selection = <a class="code" href="ev-view-accessible_8c.html#ab1285399b762802d075c7aae9bed4955">ev_view_accessible_add_selection</a>;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    iface-&gt;remove_selection = <a class="code" href="ev-view-accessible_8c.html#a39cd44452125b056a196ca4ac46ea905">ev_view_accessible_remove_selection</a>;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    iface-&gt;set_selection = <a class="code" href="ev-view-accessible_8c.html#abf70fafa4704f797cf96b705dcf42abc">ev_view_accessible_set_selection</a>;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    iface-&gt;get_run_attributes = <a class="code" href="ev-view-accessible_8c.html#af02351ab0f5428ec90ba13b16f166fc6">ev_view_accessible_get_run_attributes</a>;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    iface-&gt;get_default_attributes = <a class="code" href="ev-view-accessible_8c.html#aa36cb61c097b3be6edebc7b55660b1ee">ev_view_accessible_get_default_attributes</a>;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    iface-&gt;get_character_extents = <a class="code" href="ev-view-accessible_8c.html#a07a16540c7cfecab8b011f3c61f59cdf">ev_view_accessible_get_character_extents</a>;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    iface-&gt;get_offset_at_point = <a class="code" href="ev-view-accessible_8c.html#aaf0917787336df3a122f9393d2273ab9">ev_view_accessible_get_offset_at_point</a>;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;}</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00870"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67">  870</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67">ev_view_accessible_idle_do_action</a> (gpointer data)</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;{</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (data)-&gt;priv;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    <a class="code" href="ev-view_8c.html#ab508decb6ec537488156e4034a148bc2">ev_view_scroll</a> (<a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (gtk_accessible_get_widget (GTK_ACCESSIBLE (data))),</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e">idle_scroll</a>,</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                    <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac1ccb5883ac74627e6434cb88d755985">action_idle_handler</a> = 0;</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;}</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00882"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a24f6ca288ab99d6b535095659d754166">  882</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a24f6ca288ab99d6b535095659d754166">ev_view_accessible_action_do_action</a> (AtkAction *action,</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                     gint       i)</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;{</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (action)-&gt;priv;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="keywordflow">if</span> (gtk_accessible_get_widget (GTK_ACCESSIBLE (action)) == NULL)</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac1ccb5883ac74627e6434cb88d755985">action_idle_handler</a>)</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keywordflow">switch</span> (i) {</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609a27b7ddcfdb7e37f273d319451f642da6">ACTION_SCROLL_UP</a>:</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e">idle_scroll</a> = GTK_SCROLL_PAGE_BACKWARD;</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609acbed98e0a19d9cc6cc75278f34654314">ACTION_SCROLL_DOWN</a>:</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e">idle_scroll</a> = GTK_SCROLL_PAGE_FORWARD;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    }</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac1ccb5883ac74627e6434cb88d755985">action_idle_handler</a> = g_idle_add (<a class="code" href="ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67">ev_view_accessible_idle_do_action</a>,</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                                            action);</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;}</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a712db9bc094b9dc0887217752935fa45">current_page</a> = view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>)</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        g_hash_table_destroy (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>);</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a> = g_hash_table_new_full (g_direct_hash,</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                         g_direct_equal,</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                         NULL,</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                         (GDestroyNotify)g_object_unref);</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;}</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;<span class="keyword">static</span> AtkHyperlink *</div>
-<div class="line"><a name="l00920"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">  920</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">ev_view_accessible_get_link</a> (AtkHypertext *hypertext,</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                 gint          link_index)</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;{</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    GtkWidget        *widget;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    <a class="code" href="struct__EvView.html">EvView</a>           *view;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    GHashTable       *links;</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a>    *link_mapping;</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    gint              n_links;</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    <a class="code" href="struct__EvMapping.html">EvMapping</a>        *mapping;</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    <a class="code" href="struct__EvLinkAccessible.html">EvLinkAccessible</a> *atk_link;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (hypertext));</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;        <span class="comment">/* State is defunct */</span></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="keyword">static</span> gint</div>
+<div class="line"><a name="l00909"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ac1db8c95cdadb52375fe0e024eaa08de">  909</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ac1db8c95cdadb52375fe0e024eaa08de">ev_view_accessible_action_get_n_actions</a> (AtkAction *action)</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;{</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;}</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l00915"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a7fed7c6ab492f1067e19dcd7a26377b5">  915</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a7fed7c6ab492f1067e19dcd7a26377b5">ev_view_accessible_action_get_description</a> (AtkAction *action,</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                       gint       i)</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;{</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (action)-&gt;priv;</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>)</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i])</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i];</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-view-accessible_8c.html#a45e64cb48c6b81096f0eca3724af2d5e">ev_view_accessible_action_descriptions</a>[i];</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;}</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l00930"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#af10b3c64eef8076c9017b27968fcfec3">  930</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#af10b3c64eef8076c9017b27968fcfec3">ev_view_accessible_action_get_name</a> (AtkAction *action,</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                    gint       i)</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;{</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>)</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    view = <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget);</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    links = <a class="code" href="ev-view-accessible_8c.html#ab7c9adf983cc65cf96a4317cb514dafb">ev_view_accessible_get_links</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (hypertext), view);</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    atk_link = g_hash_table_lookup (links, GINT_TO_POINTER (link_index));</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    <span class="keywordflow">if</span> (atk_link)</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    link_mapping = <a class="code" href="ev-page-cache_8c.html#a736acbec8cb3572509f117011bb6927b">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="keywordflow">if</span> (!link_mapping)</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-view-accessible_8c.html#ab34ced330f07ce061094962531cbf75d">ev_view_accessible_action_names</a>[i];</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;}</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00940"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#af36af78d1e6983ca44c32026c367f3b9">  940</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#af36af78d1e6983ca44c32026c367f3b9">ev_view_accessible_action_set_description</a> (AtkAction   *action,</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                       gint         i,</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                       <span class="keyword">const</span> gchar *description)</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;{</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (action)-&gt;priv;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    gchar *old_description;</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= <a class="code" href="ev-view-accessible_8c.html#a458e651af6690959efa2afb96be7d609ab200c2448192c350db7584f8a180e783">LAST_ACTION</a>)</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    n_links = <a class="code" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    mapping = <a class="code" href="ev-mapping-list_8c.html#a5ce59fff70c3c67a5d861e7fffcc669b">ev_mapping_list_nth</a> (link_mapping, n_links - link_index - 1);</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    atk_link = <a class="code" href="ev-link-accessible_8c.html#a6c05a72471e8257fbc7a546e578dff4e">ev_link_accessible_new</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (hypertext),</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;                       <a class="code" href="ev-link_8h.html#adb5e3be89ec30ae611d2e760f35f7bd7">EV_LINK</a> (mapping-&gt;<a class="code" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">data</a>),</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;                       &amp;mapping-&gt;<a class="code" href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">area</a>);</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;    g_hash_table_insert (links, GINT_TO_POINTER (link_index), atk_link);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    old_description = priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i];</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#aaa31d7bb1768d100f1710a46a9e02a65">action_descriptions</a>[i] = g_strdup (description);</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    g_free (old_description);</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;}</div>
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;}</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="keyword">static</span> gint</div>
-<div class="line"><a name="l00961"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d">  961</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d">ev_view_accessible_get_n_links</a> (AtkHypertext *hypertext)</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;{</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    GtkWidget     *widget;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <a class="code" href="struct__EvView.html">EvView</a>        *view;</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a> *link_mapping;</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00958"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#af266358d54bd7f7f55a21aca4ecdaeca">  958</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#af266358d54bd7f7f55a21aca4ecdaeca">ev_view_accessible_action_iface_init</a> (AtkActionIface * iface)</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;{</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    iface-&gt;do_action = <a class="code" href="ev-view-accessible_8c.html#a24f6ca288ab99d6b535095659d754166">ev_view_accessible_action_do_action</a>;</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    iface-&gt;get_n_actions = <a class="code" href="ev-view-accessible_8c.html#ac1db8c95cdadb52375fe0e024eaa08de">ev_view_accessible_action_get_n_actions</a>;</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    iface-&gt;get_description = <a class="code" href="ev-view-accessible_8c.html#a7fed7c6ab492f1067e19dcd7a26377b5">ev_view_accessible_action_get_description</a>;</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    iface-&gt;get_name = <a class="code" href="ev-view-accessible_8c.html#af10b3c64eef8076c9017b27968fcfec3">ev_view_accessible_action_get_name</a>;</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    iface-&gt;set_description = <a class="code" href="ev-view-accessible_8c.html#af36af78d1e6983ca44c32026c367f3b9">ev_view_accessible_action_set_description</a>;</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;}</div>
 <div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (hypertext));</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        <span class="comment">/* State is defunct */</span></div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    view = <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget);</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;<span class="keyword">static</span> GHashTable *</div>
+<div class="line"><a name="l00968"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ab7c9adf983cc65cf96a4317cb514dafb">  968</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ab7c9adf983cc65cf96a4317cb514dafb">ev_view_accessible_get_links</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible,</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;                  <a class="code" href="struct__EvView.html">EvView</a>           *view)</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;{</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>* priv = accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>;</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <span class="keywordflow">if</span> (view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a> == priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a712db9bc094b9dc0887217752935fa45">current_page</a> &amp;&amp; priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>)</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;        <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>;</div>
 <div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    link_mapping = <a class="code" href="ev-page-cache_8c.html#a736acbec8cb3572509f117011bb6927b">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a712db9bc094b9dc0887217752935fa45">current_page</a> = view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>;</div>
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <span class="keywordflow">return</span> link_mapping ? <a class="code" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping) : 0;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;}</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="keyword">static</span> gint</div>
-<div class="line"><a name="l00982"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ae3be6e7354c72c30ea5559a4e717300b">  982</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ae3be6e7354c72c30ea5559a4e717300b">ev_view_accessible_get_link_index</a> (AtkHypertext *hypertext,</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;                   gint          offset)</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;{</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    guint i;</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>)</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;        g_hash_table_destroy (priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>);</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a> = g_hash_table_new_full (g_direct_hash,</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;                         g_direct_equal,</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;                         NULL,</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;                         (GDestroyNotify)g_object_unref);</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a8e9e0a178d49cd90ec11b1347653fcb1">links</a>;</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;}</div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d">ev_view_accessible_get_n_links</a> (hypertext); i++) {</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;        AtkHyperlink *hyperlink;</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        gint          start_index, end_index;</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;        hyperlink = <a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">ev_view_accessible_get_link</a> (hypertext, i);</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;        start_index = atk_hyperlink_get_start_index (hyperlink);</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;        end_index = atk_hyperlink_get_end_index (hyperlink);</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        <span class="keywordflow">if</span> (start_index &lt;= offset &amp;&amp; end_index &gt;= offset)</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;            <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    }</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="keyword">static</span> AtkHyperlink *</div>
+<div class="line"><a name="l00988"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">  988</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">ev_view_accessible_get_link</a> (AtkHypertext *hypertext,</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;                 gint          link_index)</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;{</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    GtkWidget        *widget;</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <a class="code" href="struct__EvView.html">EvView</a>           *view;</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    GHashTable       *links;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a>    *link_mapping;</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    gint              n_links;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <a class="code" href="struct__EvMapping.html">EvMapping</a>        *mapping;</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    <a class="code" href="struct__EvLinkAccessible.html">EvLinkAccessible</a> *atk_link;</div>
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;}</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l01003"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a8b31a8ec1e4ec33c076163f900beb358"> 1003</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a8b31a8ec1e4ec33c076163f900beb358">ev_view_accessible_hypertext_iface_init</a> (AtkHypertextIface *iface)</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;{</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    iface-&gt;get_link = <a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">ev_view_accessible_get_link</a>;</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    iface-&gt;get_n_links = <a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d">ev_view_accessible_get_n_links</a>;</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    iface-&gt;get_link_index = <a class="code" href="ev-view-accessible_8c.html#ae3be6e7354c72c30ea5559a4e717300b">ev_view_accessible_get_link_index</a>;</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;}</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (hypertext));</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;        <span class="comment">/* State is defunct */</span></div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    view = <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget);</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;    links = <a class="code" href="ev-view-accessible_8c.html#ab7c9adf983cc65cf96a4317cb514dafb">ev_view_accessible_get_links</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (hypertext), view);</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l01011"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a3971913de2f146f31712fe9c4a8d86f8"> 1011</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a3971913de2f146f31712fe9c4a8d86f8">ev_view_accessible_cursor_moved</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;                 gint page,</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;                 gint offset,</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;                 <a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible)</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;{</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    g_signal_emit_by_name (accessible, <span class="stringliteral">&quot;text-caret-moved&quot;</span>, offset);</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;}</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l01020"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a9ac879c1f79e36f9c393a8ccd8bbbe7b"> 1020</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a9ac879c1f79e36f9c393a8ccd8bbbe7b">ev_view_accessible_selection_changed</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;                      <a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible)</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;{</div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;    g_signal_emit_by_name (accessible, <span class="stringliteral">&quot;text-selection-changed&quot;</span>);</div>
-<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;}</div>
-<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;</div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;AtkObject *</div>
-<div class="line"><a name="l01027"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a6f000f2ced1e1216e1752eb726c32b6b"> 1027</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a6f000f2ced1e1216e1752eb726c32b6b">ev_view_accessible_new</a> (GtkWidget *widget)</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;{</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;    AtkObject *accessible;</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (widget), NULL);</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;    accessible = g_object_new (<a class="code" href="ev-view-accessible_8h.html#a6ead0f8fc5ac85a15d87b0257b101217">EV_TYPE_VIEW_ACCESSIBLE</a>, NULL);</div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    atk_object_initialize (accessible, widget);</div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;</div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    g_signal_connect (widget, <span class="stringliteral">&quot;cursor-moved&quot;</span>,</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;              G_CALLBACK (<a class="code" href="ev-view-accessible_8c.html#a3971913de2f146f31712fe9c4a8d86f8">ev_view_accessible_cursor_moved</a>),</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;              accessible);</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;    g_signal_connect (widget, <span class="stringliteral">&quot;selection-changed&quot;</span>,</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;              G_CALLBACK (<a class="code" href="ev-view-accessible_8c.html#a9ac879c1f79e36f9c393a8ccd8bbbe7b">ev_view_accessible_selection_changed</a>),</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;              accessible);</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;    <span class="keywordflow">return</span> accessible;</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;}</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    atk_link = g_hash_table_lookup (links, GINT_TO_POINTER (link_index));</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="keywordflow">if</span> (atk_link)</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    link_mapping = <a class="code" href="ev-page-cache_8c.html#a736acbec8cb3572509f117011bb6927b">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    <span class="keywordflow">if</span> (!link_mapping)</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    n_links = <a class="code" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping);</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    mapping = <a class="code" href="ev-mapping-list_8c.html#a5ce59fff70c3c67a5d861e7fffcc669b">ev_mapping_list_nth</a> (link_mapping, n_links - link_index - 1);</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;    atk_link = <a class="code" href="ev-link-accessible_8c.html#a6c05a72471e8257fbc7a546e578dff4e">ev_link_accessible_new</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (hypertext),</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;                       <a class="code" href="ev-link_8h.html#adb5e3be89ec30ae611d2e760f35f7bd7">EV_LINK</a> (mapping-&gt;<a class="code" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">data</a>),</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;                       &amp;mapping-&gt;<a class="code" href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">area</a>);</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;    g_hash_table_insert (links, GINT_TO_POINTER (link_index), atk_link);</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;    <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;}</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;<span class="keyword">static</span> gint</div>
+<div class="line"><a name="l01029"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d"> 1029</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d">ev_view_accessible_get_n_links</a> (AtkHypertext *hypertext)</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;{</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;    GtkWidget     *widget;</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;    <a class="code" href="struct__EvView.html">EvView</a>        *view;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;    <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a> *link_mapping;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;    widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (hypertext));</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    <span class="keywordflow">if</span> (widget == NULL)</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;        <span class="comment">/* State is defunct */</span></div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    view = <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (widget);</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;    link_mapping = <a class="code" href="ev-page-cache_8c.html#a736acbec8cb3572509f117011bb6927b">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
 <div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;    <span class="keywordflow">return</span> link_mapping ? <a class="code" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping) : 0;</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;}</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;<span class="keyword">static</span> gint</div>
+<div class="line"><a name="l01050"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#ae3be6e7354c72c30ea5559a4e717300b"> 1050</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#ae3be6e7354c72c30ea5559a4e717300b">ev_view_accessible_get_link_index</a> (AtkHypertext *hypertext,</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;                   gint          offset)</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;{</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    guint i;</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d">ev_view_accessible_get_n_links</a> (hypertext); i++) {</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;        AtkHyperlink *hyperlink;</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        gint          start_index, end_index;</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;        hyperlink = <a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">ev_view_accessible_get_link</a> (hypertext, i);</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;        start_index = atk_hyperlink_get_start_index (hyperlink);</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;        end_index = atk_hyperlink_get_end_index (hyperlink);</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;        <span class="keywordflow">if</span> (start_index &lt;= offset &amp;&amp; end_index &gt;= offset)</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;            <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;    }</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;}</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l01071"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a8b31a8ec1e4ec33c076163f900beb358"> 1071</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a8b31a8ec1e4ec33c076163f900beb358">ev_view_accessible_hypertext_iface_init</a> (AtkHypertextIface *iface)</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;{</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    iface-&gt;get_link = <a class="code" href="ev-view-accessible_8c.html#a6a9fcfa0aedd8824d294435bff7f1095">ev_view_accessible_get_link</a>;</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    iface-&gt;get_n_links = <a class="code" href="ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d">ev_view_accessible_get_n_links</a>;</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;    iface-&gt;get_link_index = <a class="code" href="ev-view-accessible_8c.html#ae3be6e7354c72c30ea5559a4e717300b">ev_view_accessible_get_link_index</a>;</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;}</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l01079"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a3971913de2f146f31712fe9c4a8d86f8"> 1079</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a3971913de2f146f31712fe9c4a8d86f8">ev_view_accessible_cursor_moved</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;                 gint page,</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;                 gint offset,</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                 <a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible)</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;{</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    g_signal_emit_by_name (accessible, <span class="stringliteral">&quot;text-caret-moved&quot;</span>, offset);</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;}</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l01088"></a><span class="lineno"><a class="code" href="ev-view-accessible_8c.html#a9ac879c1f79e36f9c393a8ccd8bbbe7b"> 1088</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a9ac879c1f79e36f9c393a8ccd8bbbe7b">ev_view_accessible_selection_changed</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;                      <a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible)</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;{</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    g_signal_emit_by_name (accessible, <span class="stringliteral">&quot;text-selection-changed&quot;</span>);</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;}</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;AtkObject *</div>
+<div class="line"><a name="l01095"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a6f000f2ced1e1216e1752eb726c32b6b"> 1095</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a6f000f2ced1e1216e1752eb726c32b6b">ev_view_accessible_new</a> (GtkWidget *widget)</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;{</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;    AtkObject *accessible;</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (widget), NULL);</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    accessible = g_object_new (<a class="code" href="ev-view-accessible_8h.html#a6ead0f8fc5ac85a15d87b0257b101217">EV_TYPE_VIEW_ACCESSIBLE</a>, NULL);</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    atk_object_initialize (accessible, widget);</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    g_signal_connect (widget, <span class="stringliteral">&quot;cursor-moved&quot;</span>,</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;              G_CALLBACK (<a class="code" href="ev-view-accessible_8c.html#a3971913de2f146f31712fe9c4a8d86f8">ev_view_accessible_cursor_moved</a>),</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;              accessible);</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;    g_signal_connect (widget, <span class="stringliteral">&quot;selection-changed&quot;</span>,</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;              G_CALLBACK (<a class="code" href="ev-view-accessible_8c.html#a9ac879c1f79e36f9c393a8ccd8bbbe7b">ev_view_accessible_selection_changed</a>),</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;              accessible);</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;    <span class="keywordflow">return</span> accessible;</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;}</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8c.html">ev-view-accessible.c</a></li>
-    <li class="footer">Generated on Fri Jul 19 2013 13:18:45 for Evince by
+    <li class="footer">Generated on Fri Jul 19 2013 13:48:00 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

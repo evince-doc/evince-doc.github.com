@@ -44,6 +44,7 @@ var ev_view_8c =
       [ "EV_VIEW_FIND_NEXT", "ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10aca3bcd1bec3d101640a969c309af92bdd9", null ],
       [ "EV_VIEW_FIND_PREV", "ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10aca856b96a01eac0324eb4b00e56dddc23b", null ]
     ] ],
+    [ "_ev_view_get_caret_cursor_offset_at_doc_point", "ev-view_8c.html#ab0025a68ff63a643f533fe51249c9faf", null ],
     [ "_ev_view_get_selection_colors", "ev-view_8c.html#a60b52ce8d5e2aa3cb26fb9678cbcc558", null ],
     [ "_ev_view_transform_doc_point_to_view_point", "ev-view_8c.html#a3b05fea97420f6f5da941c85b21615cf", null ],
     [ "_ev_view_transform_doc_rect_to_view_rect", "ev-view_8c.html#a8c882e0b7ddf3bf5a611d981a155e4e6", null ],

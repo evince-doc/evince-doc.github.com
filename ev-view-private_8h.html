@@ -193,6 +193,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8c882e0b7ddf3bf5a611d981a155e4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b52ce8d5e2aa3cb26fb9678cbcc558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#a60b52ce8d5e2aa3cb26fb9678cbcc558">_ev_view_get_selection_colors</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, GdkRGBA *bg_color, GdkRGBA *fg_color)</td></tr>
 <tr class="separator:a60b52ce8d5e2aa3cb26fb9678cbcc558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0025a68ff63a643f533fe51249c9faf"><td class="memItemLeft" align="right" valign="top">gint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, gint page, gdouble doc_x, gdouble doc_y)</td></tr>
+<tr class="separator:ab0025a68ff63a643f533fe51249c9faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a6d7420fbc2a33a8b7eaaae40e844cba5"></a>
@@ -254,6 +256,130 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ab0025a68ff63a643f533fe51249c9faf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gint _ev_view_get_caret_cursor_offset_at_doc_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble&#160;</td>
+          <td class="paramname"><em>doc_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble&#160;</td>
+          <td class="paramname"><em>doc_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l04214">4214</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l04218"></a><span class="lineno"> 4218</span>&#160;{</div>
+<div class="line"><a name="l04219"></a><span class="lineno"> 4219</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *areas = NULL;</div>
+<div class="line"><a name="l04220"></a><span class="lineno"> 4220</span>&#160;    guint        n_areas = 0;</div>
+<div class="line"><a name="l04221"></a><span class="lineno"> 4221</span>&#160;    gint         offset = -1;</div>
+<div class="line"><a name="l04222"></a><span class="lineno"> 4222</span>&#160;    gint         first_line_offset;</div>
+<div class="line"><a name="l04223"></a><span class="lineno"> 4223</span>&#160;    gint         last_line_offset = -1;</div>
+<div class="line"><a name="l04224"></a><span class="lineno"> 4224</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *rect;</div>
+<div class="line"><a name="l04225"></a><span class="lineno"> 4225</span>&#160;    guint        i;</div>
+<div class="line"><a name="l04226"></a><span class="lineno"> 4226</span>&#160;</div>
+<div class="line"><a name="l04227"></a><span class="lineno"> 4227</span>&#160;    <a class="code" href="ev-page-cache_8c.html#a98caf2933580b49cdc02e62761021156">ev_page_cache_get_text_layout</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, page, &amp;areas, &amp;n_areas);</div>
+<div class="line"><a name="l04228"></a><span class="lineno"> 4228</span>&#160;    <span class="keywordflow">if</span> (!areas)</div>
+<div class="line"><a name="l04229"></a><span class="lineno"> 4229</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l04230"></a><span class="lineno"> 4230</span>&#160;</div>
+<div class="line"><a name="l04231"></a><span class="lineno"> 4231</span>&#160;    i = 0;</div>
+<div class="line"><a name="l04232"></a><span class="lineno"> 4232</span>&#160;    <span class="keywordflow">while</span> (i &lt; n_areas &amp;&amp; offset == -1) {</div>
+<div class="line"><a name="l04233"></a><span class="lineno"> 4233</span>&#160;        rect = areas + i;</div>
+<div class="line"><a name="l04234"></a><span class="lineno"> 4234</span>&#160;</div>
+<div class="line"><a name="l04235"></a><span class="lineno"> 4235</span>&#160;        first_line_offset = -1;</div>
+<div class="line"><a name="l04236"></a><span class="lineno"> 4236</span>&#160;        <span class="keywordflow">while</span> (doc_y &gt;= rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> &amp;&amp; doc_y &lt;= rect-&gt;y2) {</div>
+<div class="line"><a name="l04237"></a><span class="lineno"> 4237</span>&#160;            <span class="keywordflow">if</span> (first_line_offset == -1) {</div>
+<div class="line"><a name="l04238"></a><span class="lineno"> 4238</span>&#160;                <span class="keywordflow">if</span> (doc_x &lt;= rect-&gt;x1) {</div>
+<div class="line"><a name="l04239"></a><span class="lineno"> 4239</span>&#160;                    <span class="comment">/* Location is before the start of the line */</span></div>
+<div class="line"><a name="l04240"></a><span class="lineno"> 4240</span>&#160;                    <span class="keywordflow">if</span> (last_line_offset != -1) {</div>
+<div class="line"><a name="l04241"></a><span class="lineno"> 4241</span>&#160;                        <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *last = areas + last_line_offset;</div>
+<div class="line"><a name="l04242"></a><span class="lineno"> 4242</span>&#160;                        gint         dx1, dx2;</div>
+<div class="line"><a name="l04243"></a><span class="lineno"> 4243</span>&#160;</div>
+<div class="line"><a name="l04244"></a><span class="lineno"> 4244</span>&#160;                        <span class="comment">/* If there&#39;s a previous line, check distances */</span></div>
+<div class="line"><a name="l04245"></a><span class="lineno"> 4245</span>&#160;</div>
+<div class="line"><a name="l04246"></a><span class="lineno"> 4246</span>&#160;                        dx1 = doc_x - last-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
+<div class="line"><a name="l04247"></a><span class="lineno"> 4247</span>&#160;                        dx2 = rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - doc_x;</div>
+<div class="line"><a name="l04248"></a><span class="lineno"> 4248</span>&#160;</div>
+<div class="line"><a name="l04249"></a><span class="lineno"> 4249</span>&#160;                        <span class="keywordflow">if</span> (dx1 &lt; dx2)</div>
+<div class="line"><a name="l04250"></a><span class="lineno"> 4250</span>&#160;                            offset = last_line_offset;</div>
+<div class="line"><a name="l04251"></a><span class="lineno"> 4251</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l04252"></a><span class="lineno"> 4252</span>&#160;                            offset = i;</div>
+<div class="line"><a name="l04253"></a><span class="lineno"> 4253</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l04254"></a><span class="lineno"> 4254</span>&#160;                        offset = i;</div>
+<div class="line"><a name="l04255"></a><span class="lineno"> 4255</span>&#160;                    }</div>
+<div class="line"><a name="l04256"></a><span class="lineno"> 4256</span>&#160;</div>
+<div class="line"><a name="l04257"></a><span class="lineno"> 4257</span>&#160;                    last_line_offset = i + 1;</div>
+<div class="line"><a name="l04258"></a><span class="lineno"> 4258</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l04259"></a><span class="lineno"> 4259</span>&#160;                }</div>
+<div class="line"><a name="l04260"></a><span class="lineno"> 4260</span>&#160;                first_line_offset = i;</div>
+<div class="line"><a name="l04261"></a><span class="lineno"> 4261</span>&#160;            }</div>
+<div class="line"><a name="l04262"></a><span class="lineno"> 4262</span>&#160;            last_line_offset = i + 1;</div>
+<div class="line"><a name="l04263"></a><span class="lineno"> 4263</span>&#160;</div>
+<div class="line"><a name="l04264"></a><span class="lineno"> 4264</span>&#160;            <span class="keywordflow">if</span> (doc_x &gt;= rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> &amp;&amp; doc_x &lt;= rect-&gt;x2) {</div>
+<div class="line"><a name="l04265"></a><span class="lineno"> 4265</span>&#160;                <span class="comment">/* Location is inside the line. Position the caret before</span></div>
+<div class="line"><a name="l04266"></a><span class="lineno"> 4266</span>&#160;<span class="comment">                 * or after the character, depending on whether the point</span></div>
+<div class="line"><a name="l04267"></a><span class="lineno"> 4267</span>&#160;<span class="comment">                 * falls within the left or right half of the bounding box.</span></div>
+<div class="line"><a name="l04268"></a><span class="lineno"> 4268</span>&#160;<span class="comment">                 */</span></div>
+<div class="line"><a name="l04269"></a><span class="lineno"> 4269</span>&#160;                <span class="keywordflow">if</span> (doc_x &lt;= rect-&gt;x1 + (rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) / 2)</div>
+<div class="line"><a name="l04270"></a><span class="lineno"> 4270</span>&#160;                    offset = i;</div>
+<div class="line"><a name="l04271"></a><span class="lineno"> 4271</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l04272"></a><span class="lineno"> 4272</span>&#160;                    offset = i + 1;</div>
+<div class="line"><a name="l04273"></a><span class="lineno"> 4273</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l04274"></a><span class="lineno"> 4274</span>&#160;            }</div>
+<div class="line"><a name="l04275"></a><span class="lineno"> 4275</span>&#160;</div>
+<div class="line"><a name="l04276"></a><span class="lineno"> 4276</span>&#160;            i++;</div>
+<div class="line"><a name="l04277"></a><span class="lineno"> 4277</span>&#160;            rect = areas + i;</div>
+<div class="line"><a name="l04278"></a><span class="lineno"> 4278</span>&#160;        }</div>
+<div class="line"><a name="l04279"></a><span class="lineno"> 4279</span>&#160;</div>
+<div class="line"><a name="l04280"></a><span class="lineno"> 4280</span>&#160;        <span class="keywordflow">if</span> (first_line_offset == -1)</div>
+<div class="line"><a name="l04281"></a><span class="lineno"> 4281</span>&#160;            i++;</div>
+<div class="line"><a name="l04282"></a><span class="lineno"> 4282</span>&#160;    }</div>
+<div class="line"><a name="l04283"></a><span class="lineno"> 4283</span>&#160;</div>
+<div class="line"><a name="l04284"></a><span class="lineno"> 4284</span>&#160;    <span class="keywordflow">if</span> (last_line_offset == -1)</div>
+<div class="line"><a name="l04285"></a><span class="lineno"> 4285</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l04286"></a><span class="lineno"> 4286</span>&#160;</div>
+<div class="line"><a name="l04287"></a><span class="lineno"> 4287</span>&#160;    <span class="keywordflow">if</span> (offset == -1)</div>
+<div class="line"><a name="l04288"></a><span class="lineno"> 4288</span>&#160;        offset = last_line_offset;</div>
+<div class="line"><a name="l04289"></a><span class="lineno"> 4289</span>&#160;</div>
+<div class="line"><a name="l04290"></a><span class="lineno"> 4290</span>&#160;    <span class="keywordflow">return</span> offset;</div>
+<div class="line"><a name="l04291"></a><span class="lineno"> 4291</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_ab0025a68ff63a643f533fe51249c9faf_icgraph.svg" width="1200" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a60b52ce8d5e2aa3cb26fb9678cbcc558"></a>
 <div class="memitem">
 <div class="memproto">
@@ -284,27 +410,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l05638">5638</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l05641"></a><span class="lineno"> 5641</span>&#160;{</div>
-<div class="line"><a name="l05642"></a><span class="lineno"> 5642</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
-<div class="line"><a name="l05643"></a><span class="lineno"> 5643</span>&#160;    GtkStateFlags    state;</div>
-<div class="line"><a name="l05644"></a><span class="lineno"> 5644</span>&#160;    GtkStyleContext *context;</div>
-<div class="line"><a name="l05645"></a><span class="lineno"> 5645</span>&#160;</div>
-<div class="line"><a name="l05646"></a><span class="lineno"> 5646</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
-<div class="line"><a name="l05647"></a><span class="lineno"> 5647</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
-<div class="line"><a name="l05648"></a><span class="lineno"> 5648</span>&#160;</div>
-<div class="line"><a name="l05649"></a><span class="lineno"> 5649</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
-<div class="line"><a name="l05650"></a><span class="lineno"> 5650</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
-<div class="line"><a name="l05651"></a><span class="lineno"> 5651</span>&#160;</div>
-<div class="line"><a name="l05652"></a><span class="lineno"> 5652</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
-<div class="line"><a name="l05653"></a><span class="lineno"> 5653</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
-<div class="line"><a name="l05654"></a><span class="lineno"> 5654</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l05653">5653</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l05656"></a><span class="lineno"> 5656</span>&#160;{</div>
+<div class="line"><a name="l05657"></a><span class="lineno"> 5657</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
+<div class="line"><a name="l05658"></a><span class="lineno"> 5658</span>&#160;    GtkStateFlags    state;</div>
+<div class="line"><a name="l05659"></a><span class="lineno"> 5659</span>&#160;    GtkStyleContext *context;</div>
+<div class="line"><a name="l05660"></a><span class="lineno"> 5660</span>&#160;</div>
+<div class="line"><a name="l05661"></a><span class="lineno"> 5661</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
+<div class="line"><a name="l05662"></a><span class="lineno"> 5662</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
+<div class="line"><a name="l05663"></a><span class="lineno"> 5663</span>&#160;</div>
+<div class="line"><a name="l05664"></a><span class="lineno"> 5664</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
+<div class="line"><a name="l05665"></a><span class="lineno"> 5665</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
+<div class="line"><a name="l05666"></a><span class="lineno"> 5666</span>&#160;</div>
+<div class="line"><a name="l05667"></a><span class="lineno"> 5667</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
+<div class="line"><a name="l05668"></a><span class="lineno"> 5668</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
+<div class="line"><a name="l05669"></a><span class="lineno"> 5669</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a60b52ce8d5e2aa3cb26fb9678cbcc558_icgraph.svg" width="2867" height="891"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -396,11 +522,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;    view_point-&gt;y = view_y + page_area.y + border.top;</div>
 <div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a3b05fea97420f6f5da941c85b21615cf_icgraph.svg" width="1182" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -500,11 +626,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    view_rect-&gt;height = (gint)(h * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5);</div>
 <div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a8c882e0b7ddf3bf5a611d981a155e4e6_icgraph.svg" width="1915" height="1160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -560,11 +686,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    *doc_point_y = (double) (view_point-&gt;y - page_area-&gt;y) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>;</div>
 <div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_ae0e760f53072cc44dc1b1757a49081b5_icgraph.svg" width="1251" height="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -616,11 +742,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> + (<span class="keywordtype">double</span>) view_rect-&gt;height / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>;</div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_af8afb6d25a68959e8f5dc74a09fce477_icgraph.svg" width="1280" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -692,11 +818,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;        *page_height = (rotation == 0 || rotation == 180) ? height : width;</div>
 <div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_af51d374635b49a10eb30711e9a5909c1_icgraph.svg" width="1774" height="1347"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -710,7 +836,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-private_8h.html">ev-view-private.h</a></li>
-    <li class="footer">Generated on Fri Jul 19 2013 13:19:05 for Evince by
+    <li class="footer">Generated on Fri Jul 19 2013 13:48:19 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

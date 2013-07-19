@@ -1,5 +1,8 @@
 var NAVTREEINDEX33 =
 {
+"struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094":[6,0,270,33],
+"struct__EvWindowPrivate.html#aff131fe66e7958b30e64bc28d64288a6":[6,0,270,20],
+"struct__EvWindowTitle.html":[6,0,271],
 "struct__EvWindowTitle.html#a72d608b3d6b3be8498702bbadb180011":[6,0,271,2],
 "struct__EvWindowTitle.html#aa32529b87dfc58ee523221ecbd55a1dd":[6,0,271,0],
 "struct__EvWindowTitle.html#abd3fdc5b7291439d176b09133dceabd9":[6,0,271,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX33 =
 "synctex__parser_8c.html#a15bdd3747e9ec50a6fce8f2a71ab6b03":[7,0,0,1,2,0,220],
 "synctex__parser_8c.html#a172bbbc66256348ab6c2f977134a03e2":[7,0,0,1,2,0,70],
 "synctex__parser_8c.html#a18cec6f1980602f214afb6bdf2b8c348":[7,0,0,1,2,0,239],
-"synctex__parser_8c.html#a18f9ac2920ea32f1fc3a52b9c72ad9ca":[7,0,0,1,2,0,269],
-"synctex__parser_8c.html#a1bfb062d863d622ef4e9bdaa6bb065cd":[7,0,0,1,2,0,215],
-"synctex__parser_8c.html#a1db1b7f692f2e9bb4122fbd49e95908b":[7,0,0,1,2,0,148],
-"synctex__parser_8c.html#a1f88acaec0a713bd3c3a745a99922dc1":[7,0,0,1,2,0,253]
+"synctex__parser_8c.html#a18f9ac2920ea32f1fc3a52b9c72ad9ca":[7,0,0,1,2,0,269]
 };

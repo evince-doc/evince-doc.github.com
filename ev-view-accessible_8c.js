@@ -45,6 +45,7 @@ var ev_view_accessible_8c =
     [ "ev_view_accessible_text_iface_init", "ev-view-accessible_8c.html#a09a709e8b7c7e763ffe3669dd42a9b3b", null ],
     [ "G_DEFINE_TYPE_WITH_CODE", "ev-view-accessible_8c.html#ab2bb16a5b8362fbe091b4e8fb6fe0d5c", null ],
     [ "get_run_attributes", "ev-view-accessible_8c.html#a274c2a4509fa2c641f972ffeb7298802", null ],
+    [ "get_selection_bounds", "ev-view-accessible_8c.html#af02d211fedd86fb5cbfb3e1249622d7d", null ],
     [ "ev_view_accessible_action_descriptions", "ev-view-accessible_8c.html#a45e64cb48c6b81096f0eca3724af2d5e", null ],
     [ "ev_view_accessible_action_names", "ev-view-accessible_8c.html#ab34ced330f07ce061094962531cbf75d", null ]
 ];

@@ -94,6 +94,7 @@ var searchData=
   ['get_5fscale_5ffor_5fpage',['get_scale_for_page',['../ev-sidebar-thumbnails_8c.html#a9d63a7b44d209ae546b7aeef64f819f0',1,'ev-sidebar-thumbnails.c']]],
   ['get_5fscreen_5fdpi',['get_screen_dpi',['../ev-annotation-window_8c.html#af92f40031a52f8beae1734b57ae698f1',1,'get_screen_dpi(EvAnnotationWindow *window):&#160;ev-annotation-window.c'],['../ev-previewer-window_8c.html#a6909209a02cc20fb567b0549858f4e2f',1,'get_screen_dpi(EvPreviewerWindow *window):&#160;ev-previewer-window.c'],['../ev-window_8c.html#ab2e74bd5c00e287161ac1ad9f614cd9a',1,'get_screen_dpi(EvWindow *window):&#160;ev-window.c']]],
   ['get_5fselected_5ftext',['get_selected_text',['../struct__EvSelectionInterface.html#a887dda13a78e9e9da7d4e72bc831aa52',1,'_EvSelectionInterface::get_selected_text()'],['../ev-view_8c.html#ab7ac19fd5a561a7257a654cb2966a4a4',1,'get_selected_text():&#160;ev-view.c']]],
+  ['get_5fselection_5fbounds',['get_selection_bounds',['../ev-view-accessible_8c.html#af02d211fedd86fb5cbfb3e1249622d7d',1,'ev-view-accessible.c']]],
   ['get_5fselection_5fcolors',['get_selection_colors',['../ev-pixbuf-cache_8c.html#a332f75bfe4ad30a21878d591b7a6ecfd',1,'ev-pixbuf-cache.c']]],
   ['get_5fselection_5fregion',['get_selection_region',['../struct__EvSelectionInterface.html#ab78fee59e357729b699d975a0a9ed7c3',1,'_EvSelectionInterface']]],
   ['get_5fsettings_5fkey_5ffor_5fdirectory',['get_settings_key_for_directory',['../ev-window_8c.html#a6b4c71751d9682cb3aaa3e27ba51ceed',1,'ev-window.c']]],
