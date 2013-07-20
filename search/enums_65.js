@@ -42,7 +42,6 @@ var searchData=
   ['evtransitioneffecttype',['EvTransitionEffectType',['../ev-transition-effect_8h.html#ad307eb65ed10bb9ab98a866ff0f1b59d',1,'ev-transition-effect.h']]],
   ['evviewcursor',['EvViewCursor',['../ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bf',1,'ev-view-cursor.h']]],
   ['evviewfinddirection',['EvViewFindDirection',['../ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10ac',1,'ev-view.c']]],
-  ['evviewselectionmode',['EvViewSelectionMode',['../ev-view_8h.html#a3f81d3f8c37388b73e21c9f0f8934f06',1,'ev-view.h']]],
   ['evwindowpagemode',['EvWindowPageMode',['../ev-window_8c.html#a4c5954daa150ebce59e691b805987ea4',1,'ev-window.c']]],
   ['evwindowrunmode',['EvWindowRunMode',['../ev-window_8h.html#af078888885ecae68b98b740c05c406d6',1,'ev-window.h']]],
   ['evwindowtitletype',['EvWindowTitleType',['../ev-window-title_8h.html#a8762464a03e5b5a9ce6627755ab2af67',1,'ev-window-title.h']]]

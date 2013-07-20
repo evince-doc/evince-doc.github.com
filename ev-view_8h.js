@@ -5,10 +5,6 @@ var ev_view_8h =
     [ "EV_VIEW", "ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285", null ],
     [ "EvView", "ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18", null ],
     [ "EvViewClass", "ev-view_8h.html#a894aafa5c6d3a23eb9daddd6d5fd112e", null ],
-    [ "EvViewSelectionMode", "ev-view_8h.html#a3f81d3f8c37388b73e21c9f0f8934f06", [
-      [ "EV_VIEW_SELECTION_TEXT", "ev-view_8h.html#a3f81d3f8c37388b73e21c9f0f8934f06a908c954743e730d04f58836e85b8dcf6", null ],
-      [ "EV_VIEW_SELECTION_RECTANGLE", "ev-view_8h.html#a3f81d3f8c37388b73e21c9f0f8934f06ac9c3cce43ed2be2496d3e31598568c08", null ]
-    ] ],
     [ "ev_view_autoscroll_start", "ev-view_8h.html#a6057c02ba21d898d3e20d091cf642050", null ],
     [ "ev_view_autoscroll_stop", "ev-view_8h.html#a1fe12716987095c8e5993acf1fcab0f4", null ],
     [ "ev_view_begin_add_annotation", "ev-view_8h.html#aa49963d34c4251df044c3d7422e2965b", null ],

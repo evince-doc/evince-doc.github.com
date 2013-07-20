@@ -30,7 +30,6 @@ var searchData=
   ['selection_5fchanged_5fid',['selection_changed_id',['../struct__EvSidebarAnnotationsPrivate.html#a993426914c21e67a460746ab6ce2edc5',1,'_EvSidebarAnnotationsPrivate']]],
   ['selection_5fid',['selection_id',['../struct__EvFindSidebarPrivate.html#ae32f6a6c25c0d21d293e2ea76b3789da',1,'_EvFindSidebarPrivate::selection_id()'],['../struct__EvSidebarLinksPrivate.html#aa230d783611dd99cfd2fd214ede39df3',1,'_EvSidebarLinksPrivate::selection_id()']]],
   ['selection_5finfo',['selection_info',['../struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259',1,'_EvView']]],
-  ['selection_5fmode',['selection_mode',['../struct__EvView.html#a98dc67a49b5ef03c32aea6f0ea3182e4',1,'_EvView']]],
   ['selection_5fpoints',['selection_points',['../struct__EvJobRender.html#a90fac5df70f7b5f1f9573cf8945a57b4',1,'_EvJobRender::selection_points()'],['../struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d',1,'_CacheJobInfo::selection_points()']]],
   ['selection_5fregion',['selection_region',['../struct__EvJobRender.html#a75b90ad8179f2e427bf43757b52b318c',1,'_EvJobRender::selection_region()'],['../struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d',1,'_CacheJobInfo::selection_region()']]],
   ['selection_5fregion_5fpoints',['selection_region_points',['../struct__CacheJobInfo.html#a4fcb3e37c95ccff4a7a5f5857f6dc7f0',1,'_CacheJobInfo']]],

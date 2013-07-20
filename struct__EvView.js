@@ -56,7 +56,6 @@ var struct__EvView =
     [ "scroll_x", "struct__EvView.html#ab01c9b78f1eb4aaa2df288223a8b861d", null ],
     [ "scroll_y", "struct__EvView.html#afc7d973e82c9d56691a9c4242ad6fd16", null ],
     [ "selection_info", "struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259", null ],
-    [ "selection_mode", "struct__EvView.html#a98dc67a49b5ef03c32aea6f0ea3182e4", null ],
     [ "selection_scroll_id", "struct__EvView.html#aff39640210b007a8ecb07bde95da266e", null ],
     [ "selection_update_id", "struct__EvView.html#af5682a326f7914290cdd7f775ea96991", null ],
     [ "sizing_mode", "struct__EvView.html#ad83f29e7d9247a66a1ce58aaae7c8764", null ],

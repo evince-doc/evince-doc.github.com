@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"structColorCache.html#a7aeaf8cda29cbe142fae19a8a446121b":[6,0,304,4],
-"structColorCache.html#a98fc96e020e4684efc7ffebc519aa6a8":[6,0,304,1],
 "structColorCache.html#adca0f3b5c84a68bc51223497866bc8e7":[6,0,304,3],
 "structColorCache.html#adec207a4d45ea409abc719192d4092ac":[6,0,304,5],
 "structComicBookDecompressCommand.html":[6,0,305],
@@ -249,5 +247,7 @@ var NAVTREEINDEX26 =
 "struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[6,0,12,2],
 "struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821":[6,0,12,8],
 "struct__ComicsDocumentClass.html":[6,0,13],
-"struct__ComicsDocumentClass.html#a644ae0682e2f9d46d8426a66a2cb74a3":[6,0,13,0]
+"struct__ComicsDocumentClass.html#a644ae0682e2f9d46d8426a66a2cb74a3":[6,0,13,0],
+"struct__DjvuDocument.html":[6,0,14],
+"struct__DjvuDocument.html#a23aa53059c94ac3cedb152b5deba3335":[6,0,14,5]
 };
