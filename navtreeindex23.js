@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"fontmap_8c.html":[7,0,0,0,2,0,14],
 "fontmap_8c.html#a0902d5a25ec1639f9e2ce39e0593d084":[7,0,0,0,2,0,14,15],
 "fontmap_8c.html#a179b2a0fdf9ca0f8bb2fca0d5c47f142":[7,0,0,0,2,0,14,46],
 "fontmap_8c.html#a1a44a1e85d7cd6bacab08febea33cb75":[7,0,0,0,2,0,14,10],
@@ -223,8 +224,8 @@ var NAVTREEINDEX23 =
 "gimpcellrenderertoggle_8h.html#ab0bc5ec82299112b8e02760e87a61e03":[7,0,0,1,0,1,6],
 "gimpcellrenderertoggle_8h.html#ad4322375e2a08293579ad6bbcd2d61ee":[7,0,0,1,0,1,10],
 "gimpcellrenderertoggle_8h_source.html":[7,0,0,1,0,1],
-"globals.html":[7,1,0,0],
 "globals.html":[7,1,0],
+"globals.html":[7,1,0,0],
 "globals_0x61.html":[7,1,0,1],
 "globals_0x62.html":[7,1,0,2],
 "globals_0x63.html":[7,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "globals_0x75.html":[7,1,0,21],
 "globals_0x76.html":[7,1,0,22],
 "globals_0x77.html":[7,1,0,23],
-"globals_0x78.html":[7,1,0,24],
-"globals_0x79.html":[7,1,0,25]
+"globals_0x78.html":[7,1,0,24]
 };

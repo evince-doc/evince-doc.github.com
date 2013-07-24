@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvSidebarPrivate.html#a418692e682bb8ab96c52631d6232adcf":[6,0,250,2],
 "struct__EvSidebarPrivate.html#a4aecf96cadb4a2cac05f47520e2ec858":[6,0,250,3],
 "struct__EvSidebarPrivate.html#a5e1bd86a0177b8a8e7d2b67935e80b51":[6,0,250,6],
 "struct__EvSidebarPrivate.html#a6098ec32d6ec07d5bbf2dc50171afaa3":[6,0,250,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "struct__EvWindowPrivate.html#af9bf750f033c3d5cb94443c6f9b9b0d6":[6,0,270,71],
 "struct__EvWindowPrivate.html#afbcf102f6f7a7df5f0c9109bd69ec9c3":[6,0,270,0],
 "struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094":[6,0,270,33],
-"struct__EvWindowPrivate.html#aff131fe66e7958b30e64bc28d64288a6":[6,0,270,20],
-"struct__EvWindowTitle.html":[6,0,271]
+"struct__EvWindowPrivate.html#aff131fe66e7958b30e64bc28d64288a6":[6,0,270,20]
 };

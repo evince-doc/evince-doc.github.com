@@ -41,6 +41,7 @@ var ev_document_8c =
     [ "ev_document_info_copy", "ev-document_8c.html#aef10774d89f67e3086d5185e34b33a89", null ],
     [ "ev_document_info_free", "ev-document_8c.html#a050f707eac3e98fa62aebf097cbe048e", null ],
     [ "ev_document_init", "ev-document_8c.html#a0c7bf235bc4ec0af6b5974270bc26b7d", null ],
+    [ "ev_document_initialize_synctex", "ev-document_8c.html#a0a906766de9b2efc72404a09eaf23051", null ],
     [ "ev_document_is_page_size_uniform", "ev-document_8c.html#afaeebc9a2dee44f42ac79819f175de28", null ],
     [ "ev_document_license_copy", "ev-document_8c.html#a19fcd80506087afcfef9b6f8d224853c", null ],
     [ "ev_document_license_free", "ev-document_8c.html#acacd3c784d5ba10599e50ede4f84a80e", null ],
