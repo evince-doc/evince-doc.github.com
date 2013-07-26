@@ -177,38 +177,39 @@ $(document).ready(function(){initNavTree('ev-window_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="struct__EvWindowClass.html#a99715edba19ef67861872efd0cc810d2">   68</a></span>&#160;    GtkApplicationWindowClass <a class="code" href="struct__EvWindowClass.html#a99715edba19ef67861872efd0cc810d2">base_class</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;GType       <a class="code" href="ev-window_8h.html#aedb92311f8c69fea726df6551b735538">ev_window_get_type</a>          (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;GtkWidget      *<a class="code" href="ev-window_8c.html#a1fdd586cd4cc9562201386f2103ce422">ev_window_new</a>                   (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;const <span class="keywordtype">char</span>     *<a class="code" href="ev-window_8c.html#ae513dc48a56676eacd7bb66d95d6ce25">ev_window_get_uri</a>               (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-window_8c.html#a9083be0813a4b83cdcd8b6b62b51bc56">ev_window_open_uri</a>          (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                 const <span class="keywordtype">char</span>     *uri,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                 <a class="code" href="ev-link-dest_8h.html#a22a02983ecd30b97b3058686690d5dee">EvLinkDest</a>     *dest,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                 <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6">EvWindowRunMode</a> mode,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                 const gchar    *search_string);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-window_8c.html#ae9f09db2e536bf396299bc94aaa79c7b">ev_window_open_document</a>         (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                 <a class="code" href="struct__EvDocument.html">EvDocument</a>     *document,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                 <a class="code" href="ev-link-dest_8h.html#a22a02983ecd30b97b3058686690d5dee">EvLinkDest</a>     *dest,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                 <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6">EvWindowRunMode</a> mode,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                 const gchar    *search_string);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;gboolean    <a class="code" href="ev-window_8c.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf">ev_window_is_empty</a>          (const <a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-window_8c.html#aefe505e39a44bb8fb27599e10fc7a3c4">ev_window_print_range</a>           (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                 <span class="keywordtype">int</span>             first_page,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                 <span class="keywordtype">int</span>         last_page);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;const gchar    *<a class="code" href="ev-window_8c.html#aa4c4958da41d46c7c0a8be8144c73991">ev_window_get_dbus_object_path</a>  (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;GtkUIManager   *<a class="code" href="ev-window_8c.html#a201834318dc0c9c21446c48a3edff6a4">ev_window_get_ui_manager</a>        (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;GtkActionGroup *<a class="code" href="ev-window_8c.html#a382e1b848a1069280e61b33106b52791">ev_window_get_main_action_group</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;GType       <a class="code" href="ev-window_8h.html#aedb92311f8c69fea726df6551b735538">ev_window_get_type</a>                   (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;GtkWidget      *<a class="code" href="ev-window_8c.html#a1fdd586cd4cc9562201386f2103ce422">ev_window_new</a>                            (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;const <span class="keywordtype">char</span>     *<a class="code" href="ev-window_8c.html#ae513dc48a56676eacd7bb66d95d6ce25">ev_window_get_uri</a>                        (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-window_8c.html#a9083be0813a4b83cdcd8b6b62b51bc56">ev_window_open_uri</a>                   (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                          const <span class="keywordtype">char</span>     *uri,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                          <a class="code" href="ev-link-dest_8h.html#a22a02983ecd30b97b3058686690d5dee">EvLinkDest</a>     *dest,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                          <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6">EvWindowRunMode</a> mode,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                          const gchar    *search_string);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-window_8c.html#ae9f09db2e536bf396299bc94aaa79c7b">ev_window_open_document</a>                  (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                          <a class="code" href="struct__EvDocument.html">EvDocument</a>     *document,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                          <a class="code" href="ev-link-dest_8h.html#a22a02983ecd30b97b3058686690d5dee">EvLinkDest</a>     *dest,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                          <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6">EvWindowRunMode</a> mode,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                          const gchar    *search_string);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;gboolean    <a class="code" href="ev-window_8c.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf">ev_window_is_empty</a>                   (const <a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-window_8c.html#aefe505e39a44bb8fb27599e10fc7a3c4">ev_window_print_range</a>                    (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                          <span class="keywordtype">int</span>             first_page,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                          <span class="keywordtype">int</span>        last_page);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;const gchar    *<a class="code" href="ev-window_8c.html#aa4c4958da41d46c7c0a8be8144c73991">ev_window_get_dbus_object_path</a>           (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;GtkUIManager   *<a class="code" href="ev-window_8c.html#a201834318dc0c9c21446c48a3edff6a4">ev_window_get_ui_manager</a>                 (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;GtkActionGroup *<a class="code" href="ev-window_8c.html#a382e1b848a1069280e61b33106b52791">ev_window_get_main_action_group</a>          (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;GtkActionGroup *<a class="code" href="ev-window_8c.html#a20828b7723433b3ac9ac831531ae6d77">ev_window_get_zoom_selector_action_group</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a>       *ev_window);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !EV_WINDOW_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !EV_WINDOW_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-window_8h.html">ev-window.h</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:06 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:05 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

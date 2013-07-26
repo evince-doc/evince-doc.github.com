@@ -11,7 +11,6 @@ var searchData=
   ['max_5fscale',['max_scale',['../struct__EvDocumentModel.html#ac9ed04004c623d5a6624d322238c124b',1,'_EvDocumentModel']]],
   ['max_5fsize',['max_size',['../struct__EvPixbufCache.html#adfb44393b7b22648b9b2854813f3f483',1,'_EvPixbufCache']]],
   ['max_5fwidth',['max_width',['../struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d',1,'_EvDocumentPrivate']]],
-  ['max_5fzoom',['max_zoom',['../struct__EvZoomActionPrivate.html#a12691d8e19fb0eb50a51e1d9506260ec',1,'_EvZoomActionPrivate']]],
   ['maxkernamt',['maxKernAmt',['../structTrackKernData.html#a2afaf37eff72ce82344487d501c056c3',1,'TrackKernData']]],
   ['maxpageheight',['maxPageHeight',['../struct__TIFF2PSContext.html#a9002a685f1e8b945aec43648b5f34044',1,'_TIFF2PSContext']]],
   ['maxptsize',['maxPtSize',['../structTrackKernData.html#a5807db989d1817bbfd4fd663965440f1',1,'TrackKernData']]],

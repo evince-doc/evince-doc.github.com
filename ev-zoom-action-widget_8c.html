@@ -107,21 +107,21 @@ $(document).ready(function(){initNavTree('ev-zoom-action-widget_8c.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ev-zoom-action-widget.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;config.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-zoom-action-widget_8h_source.html">ev-zoom-action-widget.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ev-zoom-action_8h_source.html">ev-zoom-action.h</a>&quot;</code><br/>
 <code>#include &lt;glib/gi18n.h&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ev-zoom-action-widget.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c__incl.svg" width="4294" height="987"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c__incl.svg" width="4418" height="971"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -134,22 +134,15 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9b8009d1634ee8e5aefc5ccca911984b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a9b8009d1634ee8e5aefc5ccca911984b">EV_ZOOM_FIT_PAGE</a>&#160;&#160;&#160;(-3.0)</td></tr>
-<tr class="separator:a9b8009d1634ee8e5aefc5ccca911984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4188607613d47a9dd7fed9be8d96f2ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a4188607613d47a9dd7fed9be8d96f2ff">EV_ZOOM_FIT_WIDTH</a>&#160;&#160;&#160;(-4.0)</td></tr>
-<tr class="separator:a4188607613d47a9dd7fed9be8d96f2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9240ca0269a9acda9d6eaf78353e296b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a9240ca0269a9acda9d6eaf78353e296b">EV_ZOOM_SEPARATOR</a>&#160;&#160;&#160;(-5.0)</td></tr>
-<tr class="separator:a9240ca0269a9acda9d6eaf78353e296b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a002b2f4894492820fe708b1b7e7c5e70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>&#160;&#160;&#160;0.000001</td></tr>
 <tr class="separator:a002b2f4894492820fe708b1b7e7c5e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a70ad55be767ca0a42c9150d24618e4ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caa658268753d26e20db642708403b7e96c">TEXT_COLUMN</a>, 
-<a class="el" href="ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caa697f4e890c94d0552e0fd754e9463072">IS_SEPARATOR_COLUMN</a>, 
-<a class="el" href="ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caac70d28409ca79aa291cc0e58244f1fe4">N_COLUMNS</a>
+<tr class="memitem:a1b70d876770ccff427513794d6b0b2a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ev-zoom-action-widget_8c.html#a1b70d876770ccff427513794d6b0b2a7ac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>, 
+<a class="el" href="ev-zoom-action-widget_8c.html#a1b70d876770ccff427513794d6b0b2a7a7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a>
  }</td></tr>
-<tr class="separator:a70ad55be767ca0a42c9150d24618e4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1b70d876770ccff427513794d6b0b2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -161,42 +154,38 @@ Functions</h2></td></tr>
 <tr class="separator:a134e59c742b3d821e0cb8c094609386d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d1db1d36348a84735688dab75dc7176"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a1d1db1d36348a84735688dab75dc7176">document_changed_cb</a> (<a class="el" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *model, GParamSpec *pspec, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
 <tr class="separator:a1d1db1d36348a84735688dab75dc7176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdd64d282ac099f104492961f069c735"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#afdd64d282ac099f104492961f069c735">combo_changed_cb</a> (GtkComboBox *combo, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
-<tr class="separator:afdd64d282ac099f104492961f069c735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b7094ed9fb4152c8efb20e73a1048f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#af7b7094ed9fb4152c8efb20e73a1048f">combo_activated_cb</a> (GtkEntry *entry, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
-<tr class="separator:af7b7094ed9fb4152c8efb20e73a1048f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2791f30372260d3bf38249a6b3cdd634"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a2791f30372260d3bf38249a6b3cdd634">combo_focus_out_cb</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
-<tr class="separator:a2791f30372260d3bf38249a6b3cdd634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb9c646d539ece4374d5b88881143966"><td class="memItemLeft" align="right" valign="top">static gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#afb9c646d539ece4374d5b88881143966">combo_format_entry_text</a> (GtkComboBox *combo, const gchar *path, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
-<tr class="separator:afb9c646d539ece4374d5b88881143966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7414818d07f7d0659d15b5ea98239dd7"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a7414818d07f7d0659d15b5ea98239dd7">row_is_separator</a> (GtkTreeModel *model, GtkTreeIter *iter, gpointer data)</td></tr>
-<tr class="separator:a7414818d07f7d0659d15b5ea98239dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4842081f1192bba8af51ccbf1431413"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#af4842081f1192bba8af51ccbf1431413">ev_zoom_action_widget_finalize</a> (GObject *object)</td></tr>
-<tr class="separator:af4842081f1192bba8af51ccbf1431413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0350aecf915a3b775b05e48a08f345ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a0350aecf915a3b775b05e48a08f345ed">fill_combo_model</a> (GtkListStore *model, guint max_level)</td></tr>
-<tr class="separator:a0350aecf915a3b775b05e48a08f345ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6079d465ac93212a601022df7caed17e"><td class="memItemLeft" align="right" valign="top">static gint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a6079d465ac93212a601022df7caed17e">get_max_zoom_level_label</a> (void)</td></tr>
-<tr class="separator:a6079d465ac93212a601022df7caed17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5bd7c204b3fff88a5977b86fef4160"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#aab5bd7c204b3fff88a5977b86fef4160">entry_activated_cb</a> (GtkEntry *entry, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:aab5bd7c204b3fff88a5977b86fef4160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea20a8b456c68dae20bc2ef69fb1c5d7"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#aea20a8b456c68dae20bc2ef69fb1c5d7">focus_out_cb</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:aea20a8b456c68dae20bc2ef69fb1c5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bc9eb4be34dc44bc604c0ab58edf82"><td class="memItemLeft" align="right" valign="top">static gint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a63bc9eb4be34dc44bc604c0ab58edf82">get_max_zoom_level_label</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:a63bc9eb4be34dc44bc604c0ab58edf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad596799294fe86b37daf9187fd01e0a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#ad596799294fe86b37daf9187fd01e0a2">popup_menu_show_cb</a> (GtkWidget *widget, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:ad596799294fe86b37daf9187fd01e0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3f9f3d966ce071a79201a24c4ed3e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#acc3f9f3d966ce071a79201a24c4ed3e8">popup_menu_hide_cb</a> (GtkWidget *widget, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:acc3f9f3d966ce071a79201a24c4ed3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0ea208c42bba297505d5ec4c8baf7e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a0c0ea208c42bba297505d5ec4c8baf7e">popup_menu_detached</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control, GtkWidget *popup)</td></tr>
+<tr class="separator:a0c0ea208c42bba297505d5ec4c8baf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b3eb82e1622a7530ac80c40be4829a"><td class="memItemLeft" align="right" valign="top">static GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a30b3eb82e1622a7530ac80c40be4829a">get_popup</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:a30b3eb82e1622a7530ac80c40be4829a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4714cd141876a4685c76056d9812df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#acc4714cd141876a4685c76056d9812df">menu_position_below</a> (GtkMenu *menu, gint *x, gint *y, gint *push_in, gpointer user_data)</td></tr>
+<tr class="separator:acc4714cd141876a4685c76056d9812df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0a91d674eba7aca88139d18ce03886"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a3f0a91d674eba7aca88139d18ce03886">entry_icon_press_callback</a> (GtkEntry *entry, GtkEntryIconPosition icon_pos, GdkEventButton *event, <a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:a3f0a91d674eba7aca88139d18ce03886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35436526fec2f4dd427882911b3ca479"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a35436526fec2f4dd427882911b3ca479">setup_initial_entry_size</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:a35436526fec2f4dd427882911b3ca479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c7826c76143688f837f38bbbe41dcb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#ad4c7826c76143688f837f38bbbe41dcb">ev_zoom_action_widget_init</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
 <tr class="separator:ad4c7826c76143688f837f38bbbe41dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801e65d0915104eec8ee8617c74e3810"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a801e65d0915104eec8ee8617c74e3810">ev_zoom_action_widget_get_property</a> (GObject *object, guint prop_id, GValue *value, GParamSpec *pspec)</td></tr>
+<tr class="separator:a801e65d0915104eec8ee8617c74e3810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa6eb4f62f97bb3b309d1d6c3466fb0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a6fa6eb4f62f97bb3b309d1d6c3466fb0">ev_zoom_action_widget_class_init</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a3ca832d180ba2b817a4a11bfd5ea1e5b">EvZoomActionWidgetClass</a> *klass)</td></tr>
 <tr class="separator:a6fa6eb4f62f97bb3b309d1d6c3466fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d04ea9a108f17290c004426029ad1d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a9d04ea9a108f17290c004426029ad1d7">ev_zoom_action_widget_set_model</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control, <a class="el" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *model)</td></tr>
 <tr class="separator:a9d04ea9a108f17290c004426029ad1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0552c5dfbaeb2765c76f69280233322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#af0552c5dfbaeb2765c76f69280233322">ev_zoom_action_widget_set_max_zoom_level</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control, float max_zoom)</td></tr>
-<tr class="separator:af0552c5dfbaeb2765c76f69280233322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1221291e04ce14dae4a458409c69c152"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a1221291e04ce14dae4a458409c69c152">ev_zoom_action_widget_get_combo_box</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
-<tr class="separator:a1221291e04ce14dae4a458409c69c152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:af0c6773614a9745b49c66d425ce18968"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:aaa9e40339360cc42ca8f48b2cd7e80c6"><td class="memItemLeft" >&#160;&#160;&#160;const gchar *&#160;&#160;&#160;<a class="el" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a></td></tr>
-<tr class="separator:aaa9e40339360cc42ca8f48b2cd7e80c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc67400fd47e69bac35f44cc9383c03"><td class="memItemLeft" >&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="ev-zoom-action-widget_8c.html#a450c3ab9b94a4663caad892b7193b547">level</a></td></tr>
-<tr class="separator:abfc67400fd47e69bac35f44cc9383c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c6773614a9745b49c66d425ce18968"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a> []</td></tr>
-<tr class="separator:af0c6773614a9745b49c66d425ce18968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fb86b9aea062960e64cbcaeaf6979d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#ae1fb86b9aea062960e64cbcaeaf6979d">ev_zoom_action_widget_set_window</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control, <a class="el" href="ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f">EvWindow</a> *<a class="el" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</td></tr>
+<tr class="separator:ae1fb86b9aea062960e64cbcaeaf6979d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e6821e5f897cded17349b23e4d11eb"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-zoom-action-widget_8c.html#a42e6821e5f897cded17349b23e4d11eb">ev_zoom_action_widget_get_entry</a> (<a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *control)</td></tr>
+<tr class="separator:a42e6821e5f897cded17349b23e4d11eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a002b2f4894492820fe708b1b7e7c5e70"></a>
@@ -209,54 +198,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00070">70</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9b8009d1634ee8e5aefc5ccca911984b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EV_ZOOM_FIT_PAGE&#160;&#160;&#160;(-3.0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00034">34</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4188607613d47a9dd7fed9be8d96f2ff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EV_ZOOM_FIT_WIDTH&#160;&#160;&#160;(-4.0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00035">35</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9240ca0269a9acda9d6eaf78353e296b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EV_ZOOM_SEPARATOR&#160;&#160;&#160;(-5.0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00036">36</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00044">44</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a70ad55be767ca0a42c9150d24618e4ca"></a>
+<a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -266,264 +213,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a70ad55be767ca0a42c9150d24618e4caa658268753d26e20db642708403b7e96c"></a>TEXT_COLUMN</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7ac37dda0da1a44e10c0504afeeb863f3c"></a>PROP_0</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a70ad55be767ca0a42c9150d24618e4caa697f4e890c94d0552e0fd754e9463072"></a>IS_SEPARATOR_COLUMN</em>&nbsp;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a70ad55be767ca0a42c9150d24618e4caac70d28409ca79aa291cc0e58244f1fe4"></a>N_COLUMNS</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7a7536978525fac3495f70dfa3a0b09dbe"></a>PROP_POPUP_SHOWN</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00061">61</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;     {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39a658268753d26e20db642708403b7e96c">TEXT_COLUMN</a>,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caa697f4e890c94d0552e0fd754e9463072">IS_SEPARATOR_COLUMN</a>,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39ac70d28409ca79aa291cc0e58244f1fe4">N_COLUMNS</a></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00028">28</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;     {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af7b7094ed9fb4152c8efb20e73a1048f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void combo_activated_cb </td>
-          <td>(</td>
-          <td class="paramtype">GtkEntry *&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
-          <td class="paramname"><em>control</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00156">156</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        GdkScreen   *screen;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">double</span>       zoom_perc;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">float</span>        zoom;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">const</span> gchar *text = gtk_entry_get_text (entry);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        gchar       *end_ptr = NULL;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (!text || text[0] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        zoom_perc = g_strtod (text, &amp;end_ptr);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">if</span> (end_ptr &amp;&amp; end_ptr[0] != <span class="charliteral">&#39;\0&#39;</span> &amp;&amp; end_ptr[0] != <span class="charliteral">&#39;%&#39;</span>) {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        screen = gtk_widget_get_screen (GTK_WIDGET (control));</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        zoom = zoom_perc / 100.;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="ev-document-model_8c.html#af1bebf4a5b99684b79eda74a09c25775">ev_document_model_set_sizing_mode</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>, <a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a10449bcf74b94d588f876734f2c00565">EV_SIZING_FREE</a>);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="ev-document-model_8c.html#a42846d9f61bd4f9b1a6b4eccb4fa27fd">ev_document_model_set_scale</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>,</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                     zoom * <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (screen) / 72.0);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
-</div><!-- fragment -->
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_af7b7094ed9fb4152c8efb20e73a1048f_icgraph.svg" width="392" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="afdd64d282ac099f104492961f069c735"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void combo_changed_cb </td>
-          <td>(</td>
-          <td class="paramtype">GtkComboBox *&#160;</td>
-          <td class="paramname"><em>combo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
-          <td class="paramname"><em>control</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00127">127</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        gint         index;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordtype">float</span>        zoom;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5">EvSizingMode</a> mode;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        index = gtk_combo_box_get_active (combo);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">if</span> (index == -1)</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        zoom = <a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[index].level;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">if</span> (zoom == <a class="code" href="ev-zoom-action-widget_8c.html#a9b8009d1634ee8e5aefc5ccca911984b">EV_ZOOM_FIT_PAGE</a>)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                mode = <a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a8e95315100c606ec6ee143a0b56fdd77">EV_SIZING_FIT_PAGE</a>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (zoom == <a class="code" href="ev-zoom-action-widget_8c.html#a4188607613d47a9dd7fed9be8d96f2ff">EV_ZOOM_FIT_WIDTH</a>)</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                mode = <a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5af0918597e0016e797f7886d0601b1c6b">EV_SIZING_FIT_WIDTH</a>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                mode = <a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a10449bcf74b94d588f876734f2c00565">EV_SIZING_FREE</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="ev-document-model_8c.html#af1bebf4a5b99684b79eda74a09c25775">ev_document_model_set_sizing_mode</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>, mode);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">if</span> (mode == <a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a10449bcf74b94d588f876734f2c00565">EV_SIZING_FREE</a>) {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                GdkScreen *screen = gtk_widget_get_screen (GTK_WIDGET (control));</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <a class="code" href="ev-document-model_8c.html#a42846d9f61bd4f9b1a6b4eccb4fa27fd">ev_document_model_set_scale</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                             zoom * <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (screen) / 72.0);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
-</div><!-- fragment -->
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_afdd64d282ac099f104492961f069c735_icgraph.svg" width="390" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a2791f30372260d3bf38249a6b3cdd634"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static gboolean combo_focus_out_cb </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
-          <td class="paramname"><em>control</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00184">184</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;{</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
-</div><!-- fragment -->
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a2791f30372260d3bf38249a6b3cdd634_icgraph.svg" width="398" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="afb9c646d539ece4374d5b88881143966"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static gchar* combo_format_entry_text </td>
-          <td>(</td>
-          <td class="paramtype">GtkComboBox *&#160;</td>
-          <td class="paramname"><em>combo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const gchar *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
-          <td class="paramname"><em>control</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00192">192</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        GtkWidget *entry = gtk_bin_get_child (GTK_BIN (combo));</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> g_strdup (gtk_entry_get_text (GTK_ENTRY (entry)));</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
-</div><!-- fragment -->
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_afb9c646d539ece4374d5b88881143966_icgraph.svg" width="422" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a1d1db1d36348a84735688dab75dc7176"></a>
 <div class="memitem">
 <div class="memproto">
@@ -562,20 +266,163 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00116">116</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model))</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00090">90</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a1d1db1d36348a84735688dab75dc7176_icgraph.svg" width="987" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a1d1db1d36348a84735688dab75dc7176_icgraph.svg" width="966" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aab5bd7c204b3fff88a5977b86fef4160"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void entry_activated_cb </td>
+          <td>(</td>
+          <td class="paramtype">GtkEntry *&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00101">101</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        GdkScreen   *screen;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">double</span>       zoom_perc;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">float</span>        zoom;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">const</span> gchar *text = gtk_entry_get_text (entry);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        gchar       *end_ptr = NULL;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (!text || text[0] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        zoom_perc = g_strtod (text, &amp;end_ptr);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (end_ptr &amp;&amp; end_ptr[0] != <span class="charliteral">&#39;\0&#39;</span> &amp;&amp; end_ptr[0] != <span class="charliteral">&#39;%&#39;</span>) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        screen = gtk_widget_get_screen (GTK_WIDGET (control));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        zoom = zoom_perc / 100.;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="ev-document-model_8c.html#af1bebf4a5b99684b79eda74a09c25775">ev_document_model_set_sizing_mode</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>, <a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a10449bcf74b94d588f876734f2c00565">EV_SIZING_FREE</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="ev-document-model_8c.html#a42846d9f61bd4f9b1a6b4eccb4fa27fd">ev_document_model_set_scale</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                     zoom * <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (screen) / 72.0);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_aab5bd7c204b3fff88a5977b86fef4160_icgraph.svg" width="382" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f0a91d674eba7aca88139d18ce03886"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void entry_icon_press_callback </td>
+          <td>(</td>
+          <td class="paramtype">GtkEntry *&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkEntryIconPosition&#160;</td>
+          <td class="paramname"><em>icon_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GdkEventButton *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00279">279</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;{</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        GtkWidget *menu;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">if</span> (!control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1c3b387bbdd7764a43f71b44c9edee87">window</a> || event-&gt;button != GDK_BUTTON_PRIMARY)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        menu = <a class="code" href="ev-zoom-action-widget_8c.html#a30b3eb82e1622a7530ac80c40be4829a">get_popup</a> (control);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        gtk_widget_set_size_request (menu,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                     gtk_widget_get_allocated_width (GTK_WIDGET (control)),</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                     -1);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        gtk_menu_popup (GTK_MENU (menu), NULL, NULL,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                        <a class="code" href="ev-zoom-action-widget_8c.html#acc4714cd141876a4685c76056d9812df">menu_position_below</a>, control,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                        event-&gt;button, event-&gt;time);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a3f0a91d674eba7aca88139d18ce03886_icgraph.svg" width="427" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -604,18 +451,59 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00305">305</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        GObjectClass *object_class = G_OBJECT_CLASS (klass);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        object_class-&gt;finalize = <a class="code" href="ev-zoom-action-widget_8c.html#af4842081f1192bba8af51ccbf1431413">ev_zoom_action_widget_finalize</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        g_type_class_add_private (object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvZoomActionWidgetPrivate.html">EvZoomActionWidgetPrivate</a>));</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00359">359</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        GObjectClass *object_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        object_class-&gt;get_property = <a class="code" href="ev-zoom-action-widget_8c.html#a801e65d0915104eec8ee8617c74e3810">ev_zoom_action_widget_get_property</a>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        g_object_class_install_property (object_class,</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                         <a class="code" href="ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a>,</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                                         g_param_spec_boolean (<span class="stringliteral">&quot;popup-shown&quot;</span>,</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                                                               <span class="stringliteral">&quot;Popup shown&quot;</span>,</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                                               <span class="stringliteral">&quot;Whether the zoom control&#39;s dropdown is shown&quot;</span>,</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                                                               <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                                                               G_PARAM_READABLE | G_PARAM_STATIC_STRINGS));</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        g_type_class_add_private (object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvZoomActionWidgetPrivate.html">EvZoomActionWidgetPrivate</a>));</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="af4842081f1192bba8af51ccbf1431413"></a>
+<a class="anchor" id="a42e6821e5f897cded17349b23e4d11eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWidget* ev_zoom_action_widget_get_entry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00424">424</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-zoom-action-widget_8h.html#a5e1a75b5a347d639c98e2b8a8299fdf0">EV_IS_ZOOM_ACTION_WIDGET</a> (control), NULL);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">return</span> control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a42e6821e5f897cded17349b23e4d11eb_icgraph.svg" width="563" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a801e65d0915104eec8ee8617c74e3810"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -623,11 +511,33 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void ev_zoom_action_widget_finalize </td>
+          <td class="memname">static void ev_zoom_action_widget_get_property </td>
           <td>(</td>
           <td class="paramtype">GObject *&#160;</td>
-          <td class="paramname"><em>object</em>)</td><td></td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">guint&#160;</td>
+          <td class="paramname"><em>prop_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GValue *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GParamSpec *&#160;</td>
+          <td class="paramname"><em>pspec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -637,54 +547,25 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00214">214</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="struct__EvZoomActionWidget.html">EvZoomActionWidget</a> *control = <a class="code" href="ev-zoom-action-widget_8h.html#a595660f80532bfb0b9e600e3d1abcc97">EV_ZOOM_ACTION_WIDGET</a> (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a9d04ea9a108f17290c004426029ad1d7">ev_zoom_action_widget_set_model</a> (control, NULL);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        G_OBJECT_CLASS (ev_zoom_action_widget_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00342">342</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;{</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <a class="code" href="struct__EvZoomActionWidget.html">EvZoomActionWidget</a> *control = <a class="code" href="ev-zoom-action-widget_8h.html#a595660f80532bfb0b9e600e3d1abcc97">EV_ZOOM_ACTION_WIDGET</a> (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a>:</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                g_value_set_boolean (value, control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#ad0f556aba5db5cc1362e7c0d04ec9168">popup_shown</a>);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                G_OBJECT_WARN_INVALID_PROPERTY_ID (<span class="keywordtype">object</span>, prop_id, pspec);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;         }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_af4842081f1192bba8af51ccbf1431413_icgraph.svg" width="390" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a1221291e04ce14dae4a458409c69c152"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GtkWidget* ev_zoom_action_widget_get_combo_box </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
-          <td class="paramname"><em>control</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00379">379</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;{</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-zoom-action-widget_8h.html#a5e1a75b5a347d639c98e2b8a8299fdf0">EV_IS_ZOOM_ACTION_WIDGET</a> (control), NULL);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">return</span> control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div>
-</div><!-- fragment -->
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a1221291e04ce14dae4a458409c69c152_icgraph.svg" width="563" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a801e65d0915104eec8ee8617c74e3810_icgraph.svg" width="390" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -713,113 +594,39 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00258">258</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <a class="code" href="struct__EvZoomActionWidgetPrivate.html">EvZoomActionWidgetPrivate</a> *priv;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        GtkWidget                 *entry;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        GtkWidget                 *vbox;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        GtkListStore              *store;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE (control, <a class="code" href="ev-zoom-action-widget_8h.html#a1b3bcca4d038bbdf2587679894e7a495">EV_TYPE_ZOOM_ACTION_WIDGET</a>, <a class="code" href="struct__EvZoomActionWidgetPrivate.html">EvZoomActionWidgetPrivate</a>);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        priv = control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        store = gtk_list_store_new (<a class="code" href="ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39ac70d28409ca79aa291cc0e58244f1fe4">N_COLUMNS</a>, G_TYPE_STRING, G_TYPE_BOOLEAN);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a0350aecf915a3b775b05e48a08f345ed">fill_combo_model</a> (store, G_N_ELEMENTS (<a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>));</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a> = gtk_combo_box_new_with_model_and_entry (GTK_TREE_MODEL (store));</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        gtk_combo_box_set_focus_on_click (GTK_COMBO_BOX (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        gtk_combo_box_set_entry_text_column (GTK_COMBO_BOX (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>), <a class="code" href="ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39a658268753d26e20db642708403b7e96c">TEXT_COLUMN</a>);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        gtk_combo_box_set_row_separator_func (GTK_COMBO_BOX (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>),</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                              (GtkTreeViewRowSeparatorFunc)<a class="code" href="ev-zoom-action-widget_8c.html#a7414818d07f7d0659d15b5ea98239dd7">row_is_separator</a>,</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                              NULL, NULL);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        g_object_unref (store);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        entry = gtk_bin_get_child (GTK_BIN (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>));</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        gtk_entry_set_width_chars (GTK_ENTRY (entry), <a class="code" href="ev-zoom-action-widget_8c.html#a6079d465ac93212a601022df7caed17e">get_max_zoom_level_label</a> ());</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        gtk_box_pack_start (GTK_BOX (vbox), priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        gtk_widget_show (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        gtk_container_add (GTK_CONTAINER (control), vbox);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        gtk_widget_show (vbox);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a13d258cd172bd7b7b5b651afceed9c82">combo_changed_handler</a> =</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>, <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                  G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#afdd64d282ac099f104492961f069c735">combo_changed_cb</a>),</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                  control);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>, <span class="stringliteral">&quot;format-entry-text&quot;</span>,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#afb9c646d539ece4374d5b88881143966">combo_format_entry_text</a>),</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                          control);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        g_signal_connect (entry, <span class="stringliteral">&quot;activate&quot;</span>,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#af7b7094ed9fb4152c8efb20e73a1048f">combo_activated_cb</a>),</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                          control);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        g_signal_connect_swapped (entry, <span class="stringliteral">&quot;focus-out-event&quot;</span>,</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                  G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a2791f30372260d3bf38249a6b3cdd634">combo_focus_out_cb</a>),</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                  control);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00308">308</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="struct__EvZoomActionWidgetPrivate.html">EvZoomActionWidgetPrivate</a> *priv;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        GtkWidget                 *vbox;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE (control, <a class="code" href="ev-zoom-action-widget_8h.html#a1b3bcca4d038bbdf2587679894e7a495">EV_TYPE_ZOOM_ACTION_WIDGET</a>, <a class="code" href="struct__EvZoomActionWidgetPrivate.html">EvZoomActionWidgetPrivate</a>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        priv = control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a> = gtk_entry_new ();</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        gtk_entry_set_icon_from_icon_name (GTK_ENTRY (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>),</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                           GTK_ENTRY_ICON_SECONDARY,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                           <span class="stringliteral">&quot;go-down-symbolic&quot;</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        gtk_box_pack_start (GTK_BOX (vbox), priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        gtk_widget_show (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        gtk_container_add (GTK_CONTAINER (control), vbox);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        gtk_widget_show (vbox);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>, <span class="stringliteral">&quot;icon-press&quot;</span>,</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a3f0a91d674eba7aca88139d18ce03886">entry_icon_press_callback</a>),</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                          control);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>, <span class="stringliteral">&quot;activate&quot;</span>,</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#aab5bd7c204b3fff88a5977b86fef4160">entry_activated_cb</a>),</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                          control);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        g_signal_connect_swapped (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>, <span class="stringliteral">&quot;focus-out-event&quot;</span>,</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                  G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#aea20a8b456c68dae20bc2ef69fb1c5d7">focus_out_cb</a>),</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                  control);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        g_idle_add ((GSourceFunc)<a class="code" href="ev-zoom-action-widget_8c.html#a35436526fec2f4dd427882911b3ca479">setup_initial_entry_size</a>, control);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="af0552c5dfbaeb2765c76f69280233322"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ev_zoom_action_widget_set_max_zoom_level </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
-          <td class="paramname"><em>control</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_zoom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00352">352</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <a class="code" href="struct__EvZoomActionWidgetPrivate.html">EvZoomActionWidgetPrivate</a> *priv;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        GtkListStore              *model;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        guint                      max_level_index = 3;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        guint                      i;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        g_return_if_fail (<a class="code" href="ev-zoom-action-widget_8h.html#a5e1a75b5a347d639c98e2b8a8299fdf0">EV_IS_ZOOM_ACTION_WIDGET</a> (control));</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        priv = control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">for</span> (i = 3; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>); i++, max_level_index++) {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[i].<a class="code" href="ev-zoom-action-widget_8c.html#a450c3ab9b94a4663caad892b7193b547">level</a> &gt; max_zoom)</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        g_signal_handler_block (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>, priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a13d258cd172bd7b7b5b651afceed9c82">combo_changed_handler</a>);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        model = GTK_LIST_STORE (gtk_combo_box_get_model (GTK_COMBO_BOX (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>)));</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        gtk_list_store_clear (model);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a0350aecf915a3b775b05e48a08f345ed">fill_combo_model</a> (model, max_level_index);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        g_signal_handler_unblock (priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>, priv-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a13d258cd172bd7b7b5b651afceed9c82">combo_changed_handler</a>);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;}</div>
-</div><!-- fragment -->
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_af0552c5dfbaeb2765c76f69280233322_icgraph.svg" width="758" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a9d04ea9a108f17290c004426029ad1d7"></a>
@@ -846,47 +653,91 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00315">315</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        g_return_if_fail (<a class="code" href="ev-zoom-action-widget_8h.html#a5e1a75b5a347d639c98e2b8a8299fdf0">EV_IS_ZOOM_ACTION_WIDGET</a> (control));</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">if</span> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a> == model)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">if</span> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                g_object_remove_weak_pointer (G_OBJECT (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>),</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                                              (gpointer)&amp;control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                g_signal_handlers_disconnect_by_func (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>,</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                                      G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a134e59c742b3d821e0cb8c094609386d">zoom_changed_cb</a>),</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                                      control);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a> = model;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">if</span> (!model)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        g_object_add_weak_pointer (G_OBJECT (model),</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                   (gpointer)&amp;control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model)) {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#af8e3e2b808821d16b2204c04459f0226">ev_zoom_action_widget_set_zoom_level</a> (control, 1.);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        g_signal_connect (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a1d1db1d36348a84735688dab75dc7176">document_changed_cb</a>),</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                          control);</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        g_signal_connect (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>, <span class="stringliteral">&quot;notify::scale&quot;</span>,</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a134e59c742b3d821e0cb8c094609386d">zoom_changed_cb</a>),</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                          control);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00377">377</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        g_return_if_fail (<a class="code" href="ev-zoom-action-widget_8h.html#a5e1a75b5a347d639c98e2b8a8299fdf0">EV_IS_ZOOM_ACTION_WIDGET</a> (control));</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">if</span> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a> == model)</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordflow">if</span> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>) {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                g_object_remove_weak_pointer (G_OBJECT (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>),</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                                              (gpointer)&amp;control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                g_signal_handlers_disconnect_by_func (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>,</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                                                      G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a134e59c742b3d821e0cb8c094609386d">zoom_changed_cb</a>),</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                                                      control);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        }</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a> = model;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">if</span> (!model)</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        g_object_add_weak_pointer (G_OBJECT (model),</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                                   (gpointer)&amp;control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model)) {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                <a class="code" href="ev-zoom-action-widget_8c.html#af8e3e2b808821d16b2204c04459f0226">ev_zoom_action_widget_set_zoom_level</a> (control, 1.);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        g_signal_connect (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a1d1db1d36348a84735688dab75dc7176">document_changed_cb</a>),</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                          control);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        g_signal_connect (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>, <span class="stringliteral">&quot;notify::scale&quot;</span>,</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#a134e59c742b3d821e0cb8c094609386d">zoom_changed_cb</a>),</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                          control);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a9d04ea9a108f17290c004426029ad1d7_icgraph.svg" width="779" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a9d04ea9a108f17290c004426029ad1d7_icgraph.svg" width="758" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1fb86b9aea062960e64cbcaeaf6979d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_zoom_action_widget_set_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f">EvWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00414">414</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">if</span> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1c3b387bbdd7764a43f71b44c9edee87">window</a> == window)</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1c3b387bbdd7764a43f71b44c9edee87">window</a> = <a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_ae1fb86b9aea062960e64cbcaeaf6979d_icgraph.svg" width="758" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -925,35 +776,35 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00073">73</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        GtkWidget *entry = gtk_bin_get_child (GTK_BIN (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108">combo</a>));</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        gchar     *zoom_str;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">float</span>      zoom_perc;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        guint      i;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">for</span> (i = 3; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>); i++) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">if</span> (ABS (zoom - <a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[i].<a class="code" href="ev-zoom-action-widget_8c.html#a450c3ab9b94a4663caad892b7193b547">level</a>) &lt; <a class="code" href="ev-zoom-action-widget_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                        gtk_entry_set_text (GTK_ENTRY (entry), <a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[i].<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        zoom_perc = zoom * 100.;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (ABS ((gint)zoom_perc - zoom_perc) &lt; 0.001)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                zoom_str = g_strdup_printf (<span class="stringliteral">&quot;%d%%&quot;</span>, (gint)zoom_perc);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                zoom_str = g_strdup_printf (<span class="stringliteral">&quot;%.2f%%&quot;</span>, zoom_perc);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        gtk_entry_set_text (GTK_ENTRY (entry), zoom_str);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        g_free (zoom_str);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00047">47</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        gchar *zoom_str;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">float</span>  zoom_perc;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        guint  i;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">for</span> (i = 3; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span> (ABS (zoom - <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>) &lt; <a class="code" href="ev-zoom-action-widget_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        gtk_entry_set_text (GTK_ENTRY (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                            <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].name);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        zoom_perc = zoom * 100.;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (ABS ((gint)zoom_perc - zoom_perc) &lt; 0.001)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                zoom_str = g_strdup_printf (<span class="stringliteral">&quot;%d%%&quot;</span>, (gint)zoom_perc);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                zoom_str = g_strdup_printf (<span class="stringliteral">&quot;%.2f%%&quot;</span>, zoom_perc);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        gtk_entry_set_text (GTK_ENTRY (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>), zoom_str);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        g_free (zoom_str);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_af8e3e2b808821d16b2204c04459f0226_icgraph.svg" width="1438" height="290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_af8e3e2b808821d16b2204c04459f0226_icgraph.svg" width="1416" height="258"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -982,28 +833,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00098">98</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">float</span>      zoom = <a class="code" href="ev-document-model_8c.html#ab45242418dc00e1a1e8c407cd52ad781">ev_document_model_get_scale</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        GdkScreen *screen = gtk_widget_get_screen (GTK_WIDGET (control));</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        zoom *= 72.0 / <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (screen);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#af8e3e2b808821d16b2204c04459f0226">ev_zoom_action_widget_set_zoom_level</a> (control, zoom);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00072">72</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">float</span>      zoom = <a class="code" href="ev-document-model_8c.html#ab45242418dc00e1a1e8c407cd52ad781">ev_document_model_get_scale</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1d6450394e20aff1172e61bf423064ff">model</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        GdkScreen *screen = gtk_widget_get_screen (GTK_WIDGET (control));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        zoom *= 72.0 / <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (screen);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#af8e3e2b808821d16b2204c04459f0226">ev_zoom_action_widget_set_zoom_level</a> (control, zoom);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a4637bc2ad60e7f50b6c449e1fb9ff21b_icgraph.svg" width="1224" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a4637bc2ad60e7f50b6c449e1fb9ff21b_icgraph.svg" width="1203" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0350aecf915a3b775b05e48a08f345ed"></a>
+<a class="anchor" id="aea20a8b456c68dae20bc2ef69fb1c5d7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1011,21 +862,11 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void fill_combo_model </td>
+          <td class="memname">static gboolean focus_out_cb </td>
           <td>(</td>
-          <td class="paramtype">GtkListStore *&#160;</td>
-          <td class="paramname"><em>model</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>)</td><td></td>
           <td></td>
-          <td class="paramtype">guint&#160;</td>
-          <td class="paramname"><em>max_level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1035,34 +876,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00224">224</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        guint i;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; max_level; i++) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                GtkTreeIter iter;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                gtk_list_store_append (model, &amp;iter);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                gtk_list_store_set (model, &amp;iter,</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                    <a class="code" href="ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39a658268753d26e20db642708403b7e96c">TEXT_COLUMN</a>, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[i].<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>),</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                    <a class="code" href="ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caa697f4e890c94d0552e0fd754e9463072">IS_SEPARATOR_COLUMN</a>, <a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[i].name == NULL,</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                    -1);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00129">129</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a0350aecf915a3b775b05e48a08f345ed_icgraph.svg" width="955" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_aea20a8b456c68dae20bc2ef69fb1c5d7_icgraph.svg" width="350" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a6079d465ac93212a601022df7caed17e"></a>
+<a class="anchor" id="a63bc9eb4be34dc44bc604c0ab58edf82"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1072,8 +905,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static gint get_max_zoom_level_label </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">)</td><td></td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
@@ -1084,35 +917,41 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00241">241</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;{</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        gint i;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        gint width = 0;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>); i++) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <span class="keywordtype">int</span> length;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                length = <a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[i].name ? strlen (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action-widget_8c.html#af0c6773614a9745b49c66d425ce18968">zoom_levels</a>[i].<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)) : 0;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <span class="keywordflow">if</span> (length &gt; width)</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                        width = length;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> width;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00137">137</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        GList *actions, *l;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        gint   width = 0;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        actions = gtk_action_group_list_actions (<a class="code" href="ev-window_8c.html#a20828b7723433b3ac9ac831531ae6d77">ev_window_get_zoom_selector_action_group</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1c3b387bbdd7764a43f71b44c9edee87">window</a>));</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">for</span> (l = actions; l; l = g_list_next (l)) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                GtkAction *action = (GtkAction *)l-&gt;data;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordtype">int</span>        length;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                length = g_utf8_strlen (gtk_action_get_label (action), -1);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <span class="keywordflow">if</span> (length &gt; width)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        width = length;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        g_list_free (actions);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="comment">/* Count the toggle size as one character more */</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> width + 1;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a6079d465ac93212a601022df7caed17e_icgraph.svg" width="395" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a63bc9eb4be34dc44bc604c0ab58edf82_icgraph.svg" width="603" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a7414818d07f7d0659d15b5ea98239dd7"></a>
+<a class="anchor" id="a30b3eb82e1622a7530ac80c40be4829a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1120,22 +959,91 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static gboolean row_is_separator </td>
+          <td class="memname">static GtkWidget* get_popup </td>
           <td>(</td>
-          <td class="paramtype">GtkTreeModel *&#160;</td>
-          <td class="paramname"><em>model</em>, </td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00196">196</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        GtkUIManager *ui_manager;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        GtkWidget    *toplevel;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">if</span> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a>)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">return</span> control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        ui_manager = <a class="code" href="ev-window_8c.html#a201834318dc0c9c21446c48a3edff6a4">ev_window_get_ui_manager</a> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a1c3b387bbdd7764a43f71b44c9edee87">window</a>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a> = gtk_ui_manager_get_widget (ui_manager, <span class="stringliteral">&quot;/ZoomSelectorPopup&quot;</span>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        gtk_menu_attach_to_widget (GTK_MENU (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a>), GTK_WIDGET (control),</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                                   (GtkMenuDetachFunc)<a class="code" href="ev-zoom-action-widget_8c.html#a0c0ea208c42bba297505d5ec4c8baf7e">popup_menu_detached</a>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        toplevel = gtk_widget_get_toplevel (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        g_signal_connect (toplevel, <span class="stringliteral">&quot;show&quot;</span>,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#ad596799294fe86b37daf9187fd01e0a2">popup_menu_show_cb</a>),</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                          control);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        g_signal_connect (toplevel, <span class="stringliteral">&quot;hide&quot;</span>,</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action-widget_8c.html#acc3f9f3d966ce071a79201a24c4ed3e8">popup_menu_hide_cb</a>),</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                          control);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">return</span> control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a30b3eb82e1622a7530ac80c40be4829a_icgraph.svg" width="560" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc4714cd141876a4685c76056d9812df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void menu_position_below </td>
+          <td>(</td>
+          <td class="paramtype">GtkMenu *&#160;</td>
+          <td class="paramname"><em>menu</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GtkTreeIter *&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
+          <td class="paramtype">gint *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint *&#160;</td>
+          <td class="paramname"><em>push_in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">gpointer&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1150,21 +1058,269 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00202">202</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        gboolean is_sep;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        gtk_tree_model_get (model, iter, <a class="code" href="ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caa697f4e890c94d0552e0fd754e9463072">IS_SEPARATOR_COLUMN</a>, &amp;is_sep, -1);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> is_sep;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00220">220</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <a class="code" href="struct__EvZoomActionWidget.html">EvZoomActionWidget</a> *control;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        GtkWidget          *widget;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        GtkAllocation       child_allocation;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        GtkRequisition      req;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        GdkScreen          *screen;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        gint                monitor_num;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        GdkRectangle        monitor;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        gint                sx = 0, sy = 0;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        control = <a class="code" href="ev-zoom-action-widget_8h.html#a595660f80532bfb0b9e600e3d1abcc97">EV_ZOOM_ACTION_WIDGET</a> (user_data);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        widget = GTK_WIDGET (control);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        gtk_widget_get_allocation (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>, &amp;child_allocation);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">if</span> (!gtk_widget_get_has_window (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>)) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                sx += child_allocation.x;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                sy += child_allocation.y;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        gdk_window_get_root_coords (gtk_widget_get_window (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>),</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                    sx, sy, &amp;sx, &amp;sy);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        gtk_widget_get_preferred_size (GTK_WIDGET (menu), &amp;req, NULL);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_direction (widget) == GTK_TEXT_DIR_LTR)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                *x = sx;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                *x = sx + child_allocation.width - req.width;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        *y = sy;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        screen = gtk_widget_get_screen (widget);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        monitor_num = gdk_screen_get_monitor_at_window (screen,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                                        gtk_widget_get_window (widget));</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        gdk_screen_get_monitor_workarea (screen, monitor_num, &amp;monitor);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">if</span> (*x &lt; monitor.x)</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                *x = monitor.x;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*x + req.width &gt; monitor.x + monitor.width)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                *x = monitor.x + monitor.width - req.width;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (monitor.y + monitor.height - *y - child_allocation.height &gt;= req.height)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                *y += child_allocation.height;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*y - monitor.y &gt;= req.height)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                *y -= req.height;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (monitor.y + monitor.height - *y - child_allocation.height &gt; *y - monitor.y)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                *y += child_allocation.height;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                *y -= req.height;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        *push_in = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_acc4714cd141876a4685c76056d9812df_icgraph.svg" width="627" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c0ea208c42bba297505d5ec4c8baf7e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void popup_menu_detached </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>popup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00176">176</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        GtkWidget *toplevel;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span> (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a> != popup)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        toplevel = gtk_widget_get_toplevel (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        g_signal_handlers_disconnect_by_func (toplevel,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                                              <a class="code" href="ev-zoom-action-widget_8c.html#ad596799294fe86b37daf9187fd01e0a2">popup_menu_show_cb</a>,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                              control);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        g_signal_handlers_disconnect_by_func (toplevel,</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                              <a class="code" href="ev-zoom-action-widget_8c.html#acc3f9f3d966ce071a79201a24c4ed3e8">popup_menu_hide_cb</a>,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                              control);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#abb05cb71b02bf90712ab517f9713c954">popup</a> = NULL;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a7414818d07f7d0659d15b5ea98239dd7_icgraph.svg" width="374" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a0c0ea208c42bba297505d5ec4c8baf7e_icgraph.svg" width="771" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc3f9f3d966ce071a79201a24c4ed3e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void popup_menu_hide_cb </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00168">168</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#ad0f556aba5db5cc1362e7c0d04ec9168">popup_shown</a> = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        g_object_notify (G_OBJECT (control), <span class="stringliteral">&quot;popup-shown&quot;</span>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_acc3f9f3d966ce071a79201a24c4ed3e8_icgraph.svg" width="974" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad596799294fe86b37daf9187fd01e0a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void popup_menu_show_cb </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00160">160</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#ad0f556aba5db5cc1362e7c0d04ec9168">popup_shown</a> = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        g_object_notify (G_OBJECT (control), <span class="stringliteral">&quot;popup-shown&quot;</span>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_ad596799294fe86b37daf9187fd01e0a2_icgraph.svg" width="979" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a35436526fec2f4dd427882911b3ca479"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gboolean setup_initial_entry_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-zoom-action-widget_8h.html#a1ec37167ffa97052d63f5979c1583154">EvZoomActionWidget</a> *&#160;</td>
+          <td class="paramname"><em>control</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00300">300</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        gtk_entry_set_width_chars (GTK_ENTRY (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>),</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                   <a class="code" href="ev-zoom-action-widget_8c.html#a63bc9eb4be34dc44bc604c0ab58edf82">get_max_zoom_level_label</a> (control));</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a35436526fec2f4dd427882911b3ca479_icgraph.svg" width="408" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1209,81 +1365,21 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00108">108</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00082">82</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="ev-zoom-action-widget_8c.html#a4637bc2ad60e7f50b6c449e1fb9ff21b">ev_zoom_action_widget_update_zoom_level</a> (control);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a134e59c742b3d821e0cb8c094609386d_icgraph.svg" width="960" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-zoom-action-widget_8c_a134e59c742b3d821e0cb8c094609386d_icgraph.svg" width="939" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a450c3ab9b94a4663caad892b7193b547"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float level</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00040">40</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7ba8c993f973b5168e57f9538b46699d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const gchar* name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-zoom-action-widget_8c_source.html#l00039">39</a> of file <a class="el" href="ev-zoom-action-widget_8c_source.html">ev-zoom-action-widget.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af0c6773614a9745b49c66d425ce18968"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct { ... }   zoom_levels[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;Fit Page&quot;</span>),  <a class="code" href="ev-zoom-action-widget_8c.html#a9b8009d1634ee8e5aefc5ccca911984b">EV_ZOOM_FIT_PAGE</a>  },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;Fit Width&quot;</span>), <a class="code" href="ev-zoom-action-widget_8c.html#a4188607613d47a9dd7fed9be8d96f2ff">EV_ZOOM_FIT_WIDTH</a> },</div>
-<div class="line">        { NULL,            <a class="code" href="ev-zoom-action-widget_8c.html#a9240ca0269a9acda9d6eaf78353e296b">EV_ZOOM_SEPARATOR</a> },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;50%&quot;</span>), 0.5 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;70%&quot;</span>), 0.7071067811 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;85%&quot;</span>), 0.8408964152 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;100%&quot;</span>), 1.0 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;125%&quot;</span>), 1.1892071149 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;150%&quot;</span>), 1.4142135623 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;175%&quot;</span>), 1.6817928304 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;200%&quot;</span>), 2.0 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;300%&quot;</span>), 2.8284271247 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;400%&quot;</span>), 4.0 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;800%&quot;</span>), 8.0 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;1600%&quot;</span>), 16.0 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;3200%&quot;</span>), 32.0 },</div>
-<div class="line">        { N_(<span class="stringliteral">&quot;6400%&quot;</span>), 64.0 }</div>
-<div class="line">}</div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -1292,7 +1388,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-zoom-action-widget_8c.html">ev-zoom-action-widget.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:26 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:14 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

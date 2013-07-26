@@ -269,7 +269,7 @@ Functions</h2></td></tr>
 <tr class="separator:a6ccd08a1c253f6ee647757f00fbc1a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3d4112c94920e9b40729952a709563"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-poppler_8cc.html#a6f3d4112c94920e9b40729952a709563">font_type_to_string</a> (PopplerFontType type)</td></tr>
 <tr class="separator:a6f3d4112c94920e9b40729952a709563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0bf3aa77acd536b4272160a9c72cf40"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-poppler_8cc.html#af0bf3aa77acd536b4272160a9c72cf40">is_standard_font</a> (const gchar *<a class="el" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, PopplerFontType type)</td></tr>
+<tr class="memitem:af0bf3aa77acd536b4272160a9c72cf40"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-poppler_8cc.html#af0bf3aa77acd536b4272160a9c72cf40">is_standard_font</a> (const gchar *<a class="el" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, PopplerFontType type)</td></tr>
 <tr class="separator:af0bf3aa77acd536b4272160a9c72cf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab388ba5d36a31c201f3ddf387690fe81"><td class="memItemLeft" align="right" valign="top">static const gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-poppler_8cc.html#ab388ba5d36a31c201f3ddf387690fe81">pdf_document_fonts_get_fonts_summary</a> (<a class="el" href="ev-document-fonts_8h.html#acfd0bc1594bde537855491c237dc9e5d">EvDocumentFonts</a> *document_fonts)</td></tr>
 <tr class="separator:ab388ba5d36a31c201f3ddf387690fe81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1100,7 +1100,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l02881"></a><span class="lineno"> 2881</span>&#160;        time_t   utime;</div>
 <div class="line"><a name="l02882"></a><span class="lineno"> 2882</span>&#160;        gchar   *modified;</div>
 <div class="line"><a name="l02883"></a><span class="lineno"> 2883</span>&#160;        gchar   *contents;</div>
-<div class="line"><a name="l02884"></a><span class="lineno"> 2884</span>&#160;        gchar   *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l02884"></a><span class="lineno"> 2884</span>&#160;        gchar   *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l02885"></a><span class="lineno"> 2885</span>&#160;        GdkColor color;</div>
 <div class="line"><a name="l02886"></a><span class="lineno"> 2886</span>&#160;</div>
 <div class="line"><a name="l02887"></a><span class="lineno"> 2887</span>&#160;        contents = poppler_annot_get_contents (poppler_annot);</div>
@@ -1894,7 +1894,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (base_14_subst_fonts); i++) {</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;        <span class="keywordflow">if</span> (g_str_equal (<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, base_14_subst_fonts[i]))</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;        <span class="keywordflow">if</span> (g_str_equal (<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, base_14_subst_fonts[i]))</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    }</div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
@@ -2034,7 +2034,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l03059"></a><span class="lineno"> 3059</span>&#160;    gdouble          height;</div>
 <div class="line"><a name="l03060"></a><span class="lineno"> 3060</span>&#160;    PopplerColor     poppler_color;</div>
 <div class="line"><a name="l03061"></a><span class="lineno"> 3061</span>&#160;    GdkColor         color;</div>
-<div class="line"><a name="l03062"></a><span class="lineno"> 3062</span>&#160;    gchar           *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l03062"></a><span class="lineno"> 3062</span>&#160;    gchar           *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l03063"></a><span class="lineno"> 3063</span>&#160;</div>
 <div class="line"><a name="l03064"></a><span class="lineno"> 3064</span>&#160;    pdf_document = <a class="code" href="ev-poppler_8h.html#a5491239946a6f5c6b245526748e6c1ef">PDF_DOCUMENT</a> (document_annotations);</div>
 <div class="line"><a name="l03065"></a><span class="lineno"> 3065</span>&#160;    page = <a class="code" href="ev-annotation_8c.html#a8d01a24003632562250deacd1fd410b0">ev_annotation_get_page</a> (annot);</div>
@@ -2246,7 +2246,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l02996"></a><span class="lineno"> 2996</span>&#160;</div>
 <div class="line"><a name="l02997"></a><span class="lineno"> 2997</span>&#160;        <span class="comment">/* Make sure annot has a unique name */</span></div>
 <div class="line"><a name="l02998"></a><span class="lineno"> 2998</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-annotation_8c.html#aecfaca916e36f9999af16a7dcbc35af5">ev_annotation_get_name</a> (ev_annot)) {</div>
-<div class="line"><a name="l02999"></a><span class="lineno"> 2999</span>&#160;            gchar *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a> = g_strdup_printf (<span class="stringliteral">&quot;annot-%d-%d&quot;</span>, page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, i);</div>
+<div class="line"><a name="l02999"></a><span class="lineno"> 2999</span>&#160;            gchar *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a> = g_strdup_printf (<span class="stringliteral">&quot;annot-%d-%d&quot;</span>, page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, i);</div>
 <div class="line"><a name="l03000"></a><span class="lineno"> 3000</span>&#160;</div>
 <div class="line"><a name="l03001"></a><span class="lineno"> 3001</span>&#160;            <a class="code" href="ev-annotation_8c.html#a8b18063fb26e22fecf5eb9343747fe06">ev_annotation_set_name</a> (ev_annot, name);</div>
 <div class="line"><a name="l03002"></a><span class="lineno"> 3002</span>&#160;            g_free (name);</div>
@@ -3670,7 +3670,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;</div>
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <span class="keywordflow">do</span> {</div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;        GtkTreeIter list_iter;</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        PopplerFontType type;</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *type_str;</div>
 <div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *embedded;</div>
@@ -7998,7 +7998,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_84e2aa76b1453f8a5599fb6e12c6cb43.html">pdf</a></li><li class="navelem"><a class="el" href="ev-poppler_8cc.html">ev-poppler.cc</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:07 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:06 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

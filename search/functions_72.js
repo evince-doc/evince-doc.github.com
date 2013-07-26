@@ -15,6 +15,5 @@ var searchData=
   ['render_5fpixbuf_5fsize_5fprepared_5fcb',['render_pixbuf_size_prepared_cb',['../comics-document_8c.html#abd3e3e8e0e64d4d2d743c68645bf2ca2',1,'comics-document.c']]],
   ['reset_5fprogress_5fidle',['reset_progress_idle',['../ev-window_8c.html#abc2edb074fc3daf0c27af79081f089c9',1,'ev-window.c']]],
   ['row_5factivated_5fcallback',['row_activated_callback',['../ev-sidebar-links_8c.html#a7c779a52b17ae313f0d1bdb4af0f4cb2',1,'ev-sidebar-links.c']]],
-  ['row_5fis_5fseparator',['row_is_separator',['../ev-zoom-action-widget_8c.html#a7414818d07f7d0659d15b5ea98239dd7',1,'ev-zoom-action-widget.c']]],
   ['run_5ftest',['run_test',['../namespacetest-print-combinations.html#acb09e6299ff2e0616b312de0237d2512',1,'test-print-combinations']]]
 ];

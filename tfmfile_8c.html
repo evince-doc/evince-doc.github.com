@@ -158,7 +158,7 @@ Functions</h2></td></tr>
 <tr class="separator:a8ade1e0b46fbb9772b4f3c2b7ace9321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4bd769e17a54ca278b7943f1874194"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmfile_8c.html#acf4bd769e17a54ca278b7943f1874194">ofm_load_file</a> (const char *filename, <a class="el" href="mdvi_8h.html#a0d4368e80b8d5b5cbd4ddc97e5412f44">TFMInfo</a> *info)</td></tr>
 <tr class="separator:acf4bd769e17a54ca278b7943f1874194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b8589a97ffaf5aff69957b74c298ca3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmfile_8c.html#a8b8589a97ffaf5aff69957b74c298ca3">lookup_font_metrics</a> (const char *<a class="el" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, int *type)</td></tr>
+<tr class="memitem:a8b8589a97ffaf5aff69957b74c298ca3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmfile_8c.html#a8b8589a97ffaf5aff69957b74c298ca3">lookup_font_metrics</a> (const char *<a class="el" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, int *type)</td></tr>
 <tr class="separator:a8b8589a97ffaf5aff69957b74c298ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9830f5de9a1d3e08863e19fd05eed9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mdvi_8h.html#a0d4368e80b8d5b5cbd4ddc97e5412f44">TFMInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tfmfile_8c.html#aa9830f5de9a1d3e08863e19fd05eed9e">get_font_metrics</a> (const char *short_name, int type, const char *filename)</td></tr>
 <tr class="separator:aa9830f5de9a1d3e08863e19fd05eed9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -419,11 +419,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfabed28fd6f3b3c9f39bf1d51cbe54c57d">DviFontAny</a>:</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3351aa6080e0acb46a944af7d5782f7c">DviFontTFM</a>:</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            file = kpse_find_tfm(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            file = kpse_find_tfm(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                        *type = <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3351aa6080e0acb46a944af7d5782f7c">DviFontTFM</a>;</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa5050adb6da4c31f1d91310d21d5a63a8">DviFontOFM</a>: {</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            file = kpse_find_ofm(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            file = kpse_find_ofm(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;            <span class="comment">/* we may have gotten a TFM back */</span></div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;            <span class="keywordflow">if</span>(file != NULL) {</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">char</span> *ext = <a class="code" href="files_8c.html#a4a3af7c4ce1ff34e171925d9f08bf234">file_extension</a>(file);</div>
@@ -434,13 +434,13 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        }</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;<span class="preprocessor">#ifdef WITH_AFM_FILES</span></div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">case</span> <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa47547406975ad98a80675b7a05e46bea">DviFontAFM</a>:</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            file = kpse_find_file(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, kpse_afm_format, 0);</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            file = kpse_find_file(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, kpse_afm_format, 0);</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            <span class="keywordflow">break</span>;  </div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfabed28fd6f3b3c9f39bf1d51cbe54c57d">DviFontAny</a>:</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            file = kpse_find_file(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, kpse_afm_format, 0);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            file = kpse_find_file(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, kpse_afm_format, 0);</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            *type = <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa47547406975ad98a80675b7a05e46bea">DviFontAFM</a>;</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <span class="keywordflow">if</span>(file == NULL) {</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                file = kpse_find_tfm(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                file = kpse_find_tfm(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                *type = <a class="code" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3351aa6080e0acb46a944af7d5782f7c">DviFontTFM</a>;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            }</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -1141,7 +1141,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="tfmfile_8c.html">tfmfile.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:06 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:06 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

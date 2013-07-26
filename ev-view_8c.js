@@ -220,6 +220,7 @@ var ev_view_8c =
     [ "ev_view_size_request_single_page", "ev-view_8c.html#af7d032dc3decae939147a4e88cf51e0f", null ],
     [ "ev_view_sizing_mode_changed_cb", "ev-view_8c.html#a242c7195fb895d1e08e2076d8ca154ab", null ],
     [ "ev_view_style_updated", "ev-view_8c.html#a8bec86179b637038f89d2b7c8d97e28b", null ],
+    [ "ev_view_supports_caret_navigation", "ev-view_8c.html#a4c42acdf6c13434a1c99764b14ee747f", null ],
     [ "ev_view_synctex_backward_search", "ev-view_8c.html#a763a3d35f7c807ab3193fb34e9ece574", null ],
     [ "ev_view_update_primary_selection", "ev-view_8c.html#ae61d9f23f04b8ae652acc20762f7ab1b", null ],
     [ "ev_view_window_child_move", "ev-view_8c.html#abc94b1c229e5ffc9c1b44dd689642156", null ],

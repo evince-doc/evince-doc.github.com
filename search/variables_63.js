@@ -40,8 +40,6 @@ var searchData=
   ['color_5fstack',['color_stack',['../struct__DviContext.html#a273e436bc24c5c5d696f4768fe9ac9d5',1,'_DviContext']]],
   ['color_5ftop',['color_top',['../struct__DviContext.html#a6e5f8875b2a6ead3d849f8a9fc6db242',1,'_DviContext']]],
   ['comb',['comb',['../struct__EvFormFieldText.html#ab4fe72e33f1e5c55acb23d07a8f5cf87',1,'_EvFormFieldText']]],
-  ['combo',['combo',['../struct__EvZoomActionWidgetPrivate.html#a7a1498ec093b58dd4fcdaa739d6ae108',1,'_EvZoomActionWidgetPrivate']]],
-  ['combo_5fchanged_5fhandler',['combo_changed_handler',['../struct__EvZoomActionWidgetPrivate.html#a13d258cd172bd7b7b5b651afceed9c82',1,'_EvZoomActionWidgetPrivate']]],
   ['command_5fusage',['command_usage',['../struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682',1,'_ComicsDocument']]],
   ['command_5fusage_5fdef',['command_usage_def',['../comics-document_8c.html#a3f810655214ff237438be23c2e75e301',1,'comics-document.c']]],
   ['commit_5fon_5fsel_5fchange',['commit_on_sel_change',['../struct__EvFormFieldChoice.html#ab8abe3288913fb509a24d0c2365d8487',1,'_EvFormFieldChoice']]],

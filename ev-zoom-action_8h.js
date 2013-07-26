@@ -13,6 +13,9 @@ var ev_zoom_action_8h =
     [ "EvZoomActionPrivate", "ev-zoom-action_8h.html#a53849cbdaca378cbd40eca57e52cf462", null ],
     [ "ev_zoom_action_get_popup_shown", "ev-zoom-action_8h.html#a3d0ad6565b1c5a1d0907a68304c848fc", null ],
     [ "ev_zoom_action_get_type", "ev-zoom-action_8h.html#acbbe87bec98ac61ab535475304d2ea15", null ],
-    [ "ev_zoom_action_set_max_zoom_level", "ev-zoom-action_8h.html#adf3eb6935fb6698741b6ccdcae6fe691", null ],
-    [ "ev_zoom_action_set_model", "ev-zoom-action_8h.html#a96d8c7265046313c0439ed22f876bda5", null ]
+    [ "ev_zoom_action_set_model", "ev-zoom-action_8h.html#a96d8c7265046313c0439ed22f876bda5", null ],
+    [ "ev_zoom_action_set_window", "ev-zoom-action_8h.html#aa90b5c0dc15ade373d320e53c82ea1fb", null ],
+    [ "level", "ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547", null ],
+    [ "name", "ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d", null ],
+    [ "zoom_levels", "ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c", null ]
 ];

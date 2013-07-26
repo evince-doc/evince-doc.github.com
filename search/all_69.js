@@ -58,7 +58,6 @@ var searchData=
   ['is_5fprefix_5fdelimiter',['IS_PREFIX_DELIMITER',['../special_8c.html#ae87964109ddd692df8ab9c40dbdf392b',1,'special.c']]],
   ['is_5fread_5fonly',['is_read_only',['../struct__EvFormField.html#aa89a3c2152176fb9ac3b8c1a5aaf15e9',1,'_EvFormField']]],
   ['is_5frich_5ftext',['is_rich_text',['../struct__EvFormFieldText.html#aaef52a5257556cbb648fc085286a333a',1,'_EvFormFieldText']]],
-  ['is_5fseparator_5fcolumn',['IS_SEPARATOR_COLUMN',['../ev-zoom-action-widget_8c.html#a70ad55be767ca0a42c9150d24618e4caa697f4e890c94d0552e0fd754e9463072',1,'ev-zoom-action-widget.c']]],
   ['is_5fstandard_5ffont',['is_standard_font',['../ev-poppler_8cc.html#af0bf3aa77acd536b4272160a9c72cf40',1,'ev-poppler.cc']]],
   ['isccittcompression',['isCCITTCompression',['../tiff2ps_8c.html#aae3aba0db67ce59004d38642f320e5e6',1,'tiff2ps.c']]],
   ['isfixedpitch',['isFixedPitch',['../structGlobalFontInfo.html#a57a51fafb29ae8edcfedd918cdaed010',1,'GlobalFontInfo']]],

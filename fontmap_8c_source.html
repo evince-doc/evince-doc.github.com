@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="fontmap_8c.html#ab9dbf0c18e6eab49f3cfa57500c9edd8">ps_init_default_paths</a> <a class="code" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span>  <a class="code" href="fontmap_8c.html#a6c70f3616bf8a32f54ae621878bc09b4">mdvi_set_default_encoding</a> <a class="code" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span>  <a class="code" href="fontmap_8c.html#a6c70f3616bf8a32f54ae621878bc09b4">mdvi_set_default_encoding</a> <a class="code" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>));</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span>  <a class="code" href="fontmap_8c.html#aeecb0660bdc088feeaad0e18bc197f3e">mdvi_init_fontmaps</a> <a class="code" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<span class="keywordtype">void</span>));</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">/* </span></div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    FILE    *in;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> curr;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">char</span>    *line;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="struct__PSFontMap.html#afe03d7461e2ade2e54eee3afd00269a8">next</a>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">struct </span>stat st;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">if</span>(*name == <span class="charliteral">&#39;/&#39;</span>)</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            name++;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        enc-&gt;<a class="code" href="struct__DviEncoding.html#a1bf5f143c2c75b6f107852698447eb25">vector</a>[curr] = <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        enc-&gt;<a class="code" href="struct__DviEncoding.html#a1bf5f143c2c75b6f107852698447eb25">vector</a>[curr] = <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="comment">/* add it to the hash table */</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="common_8h.html#aedf9a4cdd75e574d55f252e31d2ec453">STREQ</a>(name, <span class="stringliteral">&quot;.notdef&quot;</span>)) {</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <a class="code" href="hash_8c.html#a2cd0a4f7f0a383028f1c7c0129f86b32">mdvi_hash_add</a>(&amp;enc-&gt;<a class="code" href="struct__DviEncoding.html#a30de27617b25990b8d138ae7d03b843a">nametab</a>, <a class="code" href="hash_8h.html#a05bd946c3a35bcba7a6774c53668354c">MDVI_KEY</a>(name), </div>
@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="fontmap_8c.html#abf3eac40f13173bb8c7ac3a695fada1b">  201</a></span>&#160;<span class="keyword">static</span> <a class="code" href="struct__DviEncoding.html">DviEncoding</a> *<a class="code" href="fontmap_8c.html#abf3eac40f13173bb8c7ac3a695fada1b">find_encoding</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="fontmap_8c.html#abf3eac40f13173bb8c7ac3a695fada1b">  201</a></span>&#160;<span class="keyword">static</span> <a class="code" href="struct__DviEncoding.html">DviEncoding</a> *<a class="code" href="fontmap_8c.html#abf3eac40f13173bb8c7ac3a695fada1b">find_encoding</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="struct__DviEncoding.html">DviEncoding</a> *)(encodings.<a class="code" href="structListHead.html#a0cc9a65fb26615f40dd8309dee79e435">count</a> ? </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="hash_8c.html#abd73c54f09d18f75283d39c3fba91153">mdvi_hash_lookup</a>(&amp;enctable, <a class="code" href="hash_8h.html#a05bd946c3a35bcba7a6774c53668354c">MDVI_KEY</a>(name)) : NULL);</div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="code" href="struct__DviEncoding.html">DviEncoding</a> *enc;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    FILE    *in;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">char</span>    *filename;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="structDstring.html">Dstring</a> input;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">char</span>    *line;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordtype">long</span>    offset;</div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">return</span> enc;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno"><a class="code" href="fontmap_8c.html#a8892811a9884accef216698593bcc078">  360</a></span>&#160;<a class="code" href="struct__DviEncoding.html">DviEncoding</a> *<a class="code" href="fontmap_8c.html#a8892811a9884accef216698593bcc078">mdvi_request_encoding</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="code" href="fontmap_8c.html#a8892811a9884accef216698593bcc078">  360</a></span>&#160;<a class="code" href="struct__DviEncoding.html">DviEncoding</a> *<a class="code" href="fontmap_8c.html#a8892811a9884accef216698593bcc078">mdvi_request_encoding</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="struct__DviEncoding.html">DviEncoding</a> *enc = <a class="code" href="fontmap_8c.html#abf3eac40f13173bb8c7ac3a695fada1b">find_encoding</a>(name);</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
@@ -510,7 +510,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <a class="code" href="hash_8c.html#ac97349f720f27e6f15ecd3ae7f59ee2b">mdvi_hash_reset</a>(&amp;enc-&gt;<a class="code" href="struct__DviEncoding.html#a30de27617b25990b8d138ae7d03b843a">nametab</a>, 1); <span class="comment">/* we&#39;ll reuse it */</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="code" href="fontmap_8c.html#a1ff8e60e97d61920348b08ebc325e990">  404</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontmap_8c.html#a1ff8e60e97d61920348b08ebc325e990">mdvi_encode_glyph</a>(<a class="code" href="struct__DviEncoding.html">DviEncoding</a> *enc, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="code" href="fontmap_8c.html#a1ff8e60e97d61920348b08ebc325e990">  404</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontmap_8c.html#a1ff8e60e97d61920348b08ebc325e990">mdvi_encode_glyph</a>(<a class="code" href="struct__DviEncoding.html">DviEncoding</a> *enc, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;{</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordtype">void</span>    *data;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    </div>
@@ -787,7 +787,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    default_encoding = <a class="code" href="fontmap_8c.html#a9506895d17a40d41cd13e6cc6a4c261a">tex_text_encoding</a>;</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;}</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
-<div class="line"><a name="l00681"></a><span class="lineno"><a class="code" href="fontmap_8c.html#a6c70f3616bf8a32f54ae621878bc09b4">  681</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span>  <a class="code" href="fontmap_8c.html#a6c70f3616bf8a32f54ae621878bc09b4">mdvi_set_default_encoding</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
+<div class="line"><a name="l00681"></a><span class="lineno"><a class="code" href="fontmap_8c.html#a6c70f3616bf8a32f54ae621878bc09b4">  681</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span>  <a class="code" href="fontmap_8c.html#a6c70f3616bf8a32f54ae621878bc09b4">mdvi_set_default_encoding</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;{</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    <a class="code" href="struct__DviEncoding.html">DviEncoding</a> *enc, *old;</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
@@ -928,7 +928,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <span class="keywordflow">return</span> 0;   </div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;}</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
-<div class="line"><a name="l00822"></a><span class="lineno"><a class="code" href="fontmap_8c.html#af7e14e7b62b4344e3f769b2ff0c9366e">  822</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontmap_8c.html#af7e14e7b62b4344e3f769b2ff0c9366e">mdvi_add_fontmap_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *fullpath)</div>
+<div class="line"><a name="l00822"></a><span class="lineno"><a class="code" href="fontmap_8c.html#af7e14e7b62b4344e3f769b2ff0c9366e">  822</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontmap_8c.html#af7e14e7b62b4344e3f769b2ff0c9366e">mdvi_add_fontmap_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *fullpath)</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;{</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <a class="code" href="struct__DviFontMapEnt.html">DviFontMapEnt</a> *ent;</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    </div>
@@ -1006,7 +1006,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <a class="code" href="fontmap_8c.html#a253369a3d4c2c9469eb915287688c6d3">psinitialized</a> = 1;</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;}</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
-<div class="line"><a name="l00900"></a><span class="lineno"><a class="code" href="fontmap_8c.html#abfebb73b9b4875f2f76c1f0ef28d3def">  900</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontmap_8c.html#abfebb73b9b4875f2f76c1f0ef28d3def">mdvi_ps_read_fontmap</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
+<div class="line"><a name="l00900"></a><span class="lineno"><a class="code" href="fontmap_8c.html#abfebb73b9b4875f2f76c1f0ef28d3def">  900</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontmap_8c.html#abfebb73b9b4875f2f76c1f0ef28d3def">mdvi_ps_read_fontmap</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;{</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    <span class="keywordtype">char</span>    *fullname;</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    FILE    *in;</div>
@@ -1029,7 +1029,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    <a class="code" href="util_8c.html#ac0cdad74cd5c719209fe28a8331a543b">dstring_init</a>(&amp;dstr);</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    </div>
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    <span class="keywordflow">while</span>((line = <a class="code" href="files_8c.html#a371bf3425509ae5cc79d195d89b128b7">dgets</a>(&amp;dstr, in)) != NULL) {</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        <span class="keywordtype">char</span>    *mapname;</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *ext;</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        <a class="code" href="struct__PSFontMap.html">PSFontMap</a> *ps;</div>
@@ -1292,7 +1292,7 @@ $(document).ready(function(){initNavTree('fontmap_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="fontmap_8c.html">fontmap.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:04 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:03 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a>, <span class="keywordtype">char</span> *arg)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">int</span>  has_arg;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">char</span> *value;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    } keys[] = {</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">double</span>  value[<a class="code" href="sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23">NKEYS</a>];</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a>   present[<a class="code" href="sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23">NKEYS</a>];</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="structBuffer.html">Buffer</a>  buffer;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">double</span>  originx;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">double</span>  originy;</div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html','');});
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span>(ptr == name)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    *ptr++ = 0;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    filename = <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    filename = <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">/* reset values to defaults */</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">for</span>(i = 0; i &lt; <a class="code" href="sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23">NKEYS</a>; i++) {</div>
@@ -422,7 +422,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="sp-epsf_8c.html">sp-epsf.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:04 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:03 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

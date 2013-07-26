@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('fontsrch_8c_source.html','');});
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="fontsrch_8c.html#a577062f3ed75b671a561a23a019da26d">  133</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontsrch_8c.html#a577062f3ed75b671a561a23a019da26d">mdvi_unregister_font_type</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <span class="keywordtype">int</span> klass)</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="fontsrch_8c.html#a577062f3ed75b671a561a23a019da26d">  133</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fontsrch_8c.html#a577062f3ed75b671a561a23a019da26d">mdvi_unregister_font_type</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <span class="keywordtype">int</span> klass)</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="struct__DviFontClass.html">DviFontClass</a> *fc;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">int</span> k;</div>
@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('fontsrch_8c_source.html','');});
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="code" href="fontsrch_8c.html#a86eed5608690c7662550636a289581ea">  169</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span> *<a class="code" href="fontsrch_8c.html#a86eed5608690c7662550636a289581ea">lookup_font</a>(<a class="code" href="struct__DviFontClass.html">DviFontClass</a> *ptr, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <a class="code" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *h, <a class="code" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *v)</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="code" href="fontsrch_8c.html#a86eed5608690c7662550636a289581ea">  169</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span> *<a class="code" href="fontsrch_8c.html#a86eed5608690c7662550636a289581ea">lookup_font</a>(<a class="code" href="struct__DviFontClass.html">DviFontClass</a> *ptr, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <a class="code" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *h, <a class="code" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *v)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">char</span>    *filename;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('fontsrch_8c_source.html','');});
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="struct__DviFontClass.html">DviFontClass</a> *ptr;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="struct__DviFontClass.html">DviFontClass</a> *last;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">char</span>    *filename = NULL;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a>  hdpi, vdpi;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span>(search-&gt;<a class="code" href="struct__DviFontSearch.html#a3fcf145e91fda9a1b659d31d2ad4685e">id</a> &lt; 0)</div>
@@ -355,7 +355,7 @@ $(document).ready(function(){initNavTree('fontsrch_8c_source.html','');});
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span>(filename != NULL) {</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#a3fcf145e91fda9a1b659d31d2ad4685e">id</a> = k-1;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#ae47190f8a008a5a4ff76633cebebf9a8">curr</a> = ptr;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#ac2c0b1cb23e46a3a68b7bfc187c9c7ce">actual_name</a> = <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#ac2c0b1cb23e46a3a68b7bfc187c9c7ce">actual_name</a> = <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#a0dc92b792e57a0df42682748d7db9625">actual_hdpi</a> = hdpi;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#a237971897476b1fe7fdcb2d80e0f8ccb">actual_vdpi</a> = vdpi;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#a9c6b50939115048384aa24dd4f23a5f3">info</a> = &amp;ptr-&gt;<a class="code" href="struct__DviFontClass.html#a53e1aba5fec0140ee925da623a7dfc9f">info</a>;</div>
@@ -404,7 +404,7 @@ $(document).ready(function(){initNavTree('fontsrch_8c_source.html','');});
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            search-&gt;<a class="code" href="struct__DviFontSearch.html#a3fcf145e91fda9a1b659d31d2ad4685e">id</a> = MAX_CLASS - 1;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#ae47190f8a008a5a4ff76633cebebf9a8">curr</a> = ptr;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#ac2c0b1cb23e46a3a68b7bfc187c9c7ce">actual_name</a> = <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#ac2c0b1cb23e46a3a68b7bfc187c9c7ce">actual_name</a> = <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#a0dc92b792e57a0df42682748d7db9625">actual_hdpi</a> = hdpi;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#a237971897476b1fe7fdcb2d80e0f8ccb">actual_vdpi</a> = vdpi;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        search-&gt;<a class="code" href="struct__DviFontSearch.html#a9c6b50939115048384aa24dd4f23a5f3">info</a> = &amp;ptr-&gt;<a class="code" href="struct__DviFontClass.html#a53e1aba5fec0140ee925da623a7dfc9f">info</a>;</div>
@@ -427,7 +427,7 @@ $(document).ready(function(){initNavTree('fontsrch_8c_source.html','');});
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;}</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">/* called by `font_reference&#39; to do the initial lookup */</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno"><a class="code" href="fontsrch_8c.html#ab12b7f8f08365eac7e2a990cac458320">  321</a></span>&#160;<a class="code" href="struct__DviFont.html">DviFont</a> *<a class="code" href="fontsrch_8c.html#ab12b7f8f08365eac7e2a990cac458320">mdvi_add_font</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, Int32 sum,</div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="code" href="fontsrch_8c.html#ab12b7f8f08365eac7e2a990cac458320">  321</a></span>&#160;<a class="code" href="struct__DviFont.html">DviFont</a> *<a class="code" href="fontsrch_8c.html#ab12b7f8f08365eac7e2a990cac458320">mdvi_add_font</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, Int32 sum,</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">int</span> hdpi, <span class="keywordtype">int</span> vdpi, Int32 scale)</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;{</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="struct__DviFont.html">DviFont</a> *font;</div>
@@ -484,7 +484,7 @@ $(document).ready(function(){initNavTree('fontsrch_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="fontsrch_8c.html">fontsrch.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:04 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:03 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

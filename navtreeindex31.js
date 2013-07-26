@@ -1,5 +1,16 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvPageActionWidget.html#a2e8bc83f8b41671a2094e11a85f1252e":[6,0,198,2],
+"struct__EvPageActionWidget.html#a3186127c5570568ce424c15ee85d82e6":[6,0,198,1],
+"struct__EvPageActionWidget.html#a4c2da39cf1dbef42953deaaf27a5497b":[6,0,198,6],
+"struct__EvPageActionWidget.html#a5acd35fa19d68deaea892b4f186d757b":[6,0,198,0],
+"struct__EvPageActionWidget.html#a6af5f82ae9a14d15ddde3a62f246c756":[6,0,198,7],
+"struct__EvPageActionWidget.html#a8df30baf5212aa0338bbf0e0d8315c20":[6,0,198,5],
+"struct__EvPageActionWidgetClass.html":[6,0,199],
+"struct__EvPageActionWidgetClass.html#a7b98d47c6e4939842fb59159dae77087":[6,0,199,1],
+"struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e":[6,0,199,0],
+"struct__EvPageCache.html":[6,0,200],
+"struct__EvPageCache.html#a24832ed8354520e9c9a94e4e25014723":[6,0,200,6],
 "struct__EvPageCache.html#a914077049de90d432a29ba5a1fec5e09":[6,0,200,4],
 "struct__EvPageCache.html#ac4d480263699bc3533ec4ab0e3cd0462":[6,0,200,1],
 "struct__EvPageCache.html#ad159b7d6a7aa42027ad6c1118d97b414":[6,0,200,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvSidebarLinksPrivate.html#a4faa4762616255c2be223d9cda0c1d46":[6,0,248,5],
 "struct__EvSidebarLinksPrivate.html#a5f4a2ead74e09c4758bf59fcba0d366d":[6,0,248,7],
 "struct__EvSidebarLinksPrivate.html#a7304adbdaf01c10a08d972513dc2650d":[6,0,248,4],
-"struct__EvSidebarLinksPrivate.html#a92d5abb02e47b877f446a1dca1b2c050":[6,0,248,2],
-"struct__EvSidebarLinksPrivate.html#a9fe956ba44bba7d247af95997de0b674":[6,0,248,0],
-"struct__EvSidebarLinksPrivate.html#aa230d783611dd99cfd2fd214ede39df3":[6,0,248,6],
-"struct__EvSidebarLinksPrivate.html#ad8604082bb9264eb5a57f4947dd4c3e7":[6,0,248,1],
-"struct__EvSidebarLinksPrivate.html#aff42dfbce5cc37c852a83fa2b0132148":[6,0,248,3],
-"struct__EvSidebarPageInterface.html":[6,0,249],
-"struct__EvSidebarPageInterface.html#a5b21d8fe38496a2c10b6e0486a4434f8":[6,0,249,0],
-"struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1":[6,0,249,3],
-"struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0":[6,0,249,2],
-"struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58":[6,0,249,1],
-"struct__EvSidebarPrivate.html":[6,0,250],
-"struct__EvSidebarPrivate.html#a20e6a735e8c8bf3f08ebdebba70420a1":[6,0,250,0]
+"struct__EvSidebarLinksPrivate.html#a92d5abb02e47b877f446a1dca1b2c050":[6,0,248,2]
 };

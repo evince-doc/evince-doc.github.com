@@ -27,6 +27,7 @@ var ev_window_8h =
     [ "ev_window_get_type", "ev-window_8h.html#aedb92311f8c69fea726df6551b735538", null ],
     [ "ev_window_get_ui_manager", "ev-window_8h.html#a201834318dc0c9c21446c48a3edff6a4", null ],
     [ "ev_window_get_uri", "ev-window_8h.html#ae513dc48a56676eacd7bb66d95d6ce25", null ],
+    [ "ev_window_get_zoom_selector_action_group", "ev-window_8h.html#a20828b7723433b3ac9ac831531ae6d77", null ],
     [ "ev_window_is_empty", "ev-window_8h.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf", null ],
     [ "ev_window_new", "ev-window_8h.html#a1fdd586cd4cc9562201386f2103ce422", null ],
     [ "ev_window_open_document", "ev-window_8h.html#ae9f09db2e536bf396299bc94aaa79c7b", null ],

@@ -13,7 +13,7 @@ var searchData=
   ['end_5fpage',['end_page',['../struct__EvFileExporterInterface.html#aeb5e8b672125f0368b31f88e497dd3f7',1,'_EvFileExporterInterface::end_page()'],['../struct__EvPageCache.html#ac4d480263699bc3533ec4ab0e3cd0462',1,'_EvPageCache::end_page()'],['../struct__EvPixbufCache.html#a8356ba055837b87fcb5d8c24215d383a',1,'_EvPixbufCache::end_page()'],['../struct__EvView.html#a5481c6c51d16d1b1597e29bf97ae7086',1,'_EvView::end_page()'],['../struct__EvSidebarThumbnailsPrivate.html#a954ff2aae2d2337b2ffbe37bd65ad934',1,'_EvSidebarThumbnailsPrivate::end_page()']]],
   ['end_5fsession',['end_session',['../struct__EggSMClientClass.html#a79609778e84f059f010cbbaf7e113e32',1,'_EggSMClientClass']]],
   ['entries',['entries',['../struct__DviFontMap.html#ab28bfcd1caaa946a6a4086f97b00fad8',1,'_DviFontMap::entries()'],['../ev-window_8c.html#a3fdeb81a156568bd633f229568819bf8',1,'entries():&#160;ev-window.c']]],
-  ['entry',['entry',['../struct__EvPageActionWidget.html#a2e8bc83f8b41671a2094e11a85f1252e',1,'_EvPageActionWidget']]],
+  ['entry',['entry',['../struct__EvPageActionWidget.html#a2e8bc83f8b41671a2094e11a85f1252e',1,'_EvPageActionWidget::entry()'],['../struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973',1,'_EvZoomActionWidgetPrivate::entry()']]],
   ['epp_5ftype',['epp_type',['../ev-properties-main_8c.html#a679e42eb5a1e3c1767a0408a61bdbe06',1,'ev-properties-main.c']]],
   ['error',['error',['../struct__EvJob.html#a17cb644f7ad9d1bfe43240599a3d4e53',1,'_EvJob']]],
   ['ev_5fbackends_5fdir',['ev_backends_dir',['../ev-document-factory_8c.html#a1841c1886d6bac5cdc50ceab9f9a204b',1,'ev-document-factory.c']]],

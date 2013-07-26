@@ -261,7 +261,7 @@ Functions</h2></td></tr>
 <tr class="separator:a879a92b786a4af4bfa395533cd176f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92bba4b264f815c7677f4a6b53239773"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="mdvi_8h.html#a4ec72e628e9d07dae4903cfa134119be">DviFontRef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a92bba4b264f815c7677f4a6b53239773">define_font</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int op)</td></tr>
 <tr class="separator:a92bba4b264f815c7677f4a6b53239773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a182bfe28b827b43f1295ccf8fa573da2"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a182bfe28b827b43f1295ccf8fa573da2">opendvi</a> (const char *<a class="el" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</td></tr>
+<tr class="memitem:a182bfe28b827b43f1295ccf8fa573da2"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a182bfe28b827b43f1295ccf8fa573da2">opendvi</a> (const char *<a class="el" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</td></tr>
 <tr class="separator:a182bfe28b827b43f1295ccf8fa573da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34210163f07cd578e650310b6a811366"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a34210163f07cd578e650310b6a811366">mdvi_reload</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="mdvi_8h.html#a3990f59d2e42a5fdd1ee1f009d754f99">DviParams</a> *np)</td></tr>
 <tr class="separator:a34210163f07cd578e650310b6a811366"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -695,7 +695,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">int</span> hdpi;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordtype">int</span> vdpi;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">int</span> n;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="struct__DviFontRef.html">DviFontRef</a> *ref;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    </div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    arg = <a class="code" href="dviread_8c.html#a004611ccb20c3c85b7c8b230d8fd3c9e">dugetn</a>(dvi, op - <a class="code" href="dviopcodes_8h.html#a6740017932eb44abc7aa509996c00043">DVI_FNT_DEF1</a> + 1);</div>
@@ -3758,17 +3758,17 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordtype">int</span> len;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordtype">char</span>    *file;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    </div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    len = strlen(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    len = strlen(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="comment">/* if file ends with .dvi and it exists, that&#39;s it */</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">if</span>(len &gt;= 4 &amp;&amp; <a class="code" href="common_8h.html#aedf9a4cdd75e574d55f252e31d2ec453">STREQ</a>(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>+len-4, <span class="stringliteral">&quot;.dvi&quot;</span>)) {</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <a class="code" href="common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code" href="common_8h.html#a994ae84c1392a4b3d510d86392159637">DBG_DVI</a>|<a class="code" href="common_8h.html#a9fd9df1119b53e05a48f76d49ac72a44">DBG_FILES</a>, <span class="stringliteral">&quot;opendvi: Trying `%s&#39;\n&quot;</span>, <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>));</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">if</span>(access(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, R_OK) == 0)</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="util_8c.html#a4ae7622edf8bcc460370292831a319d0">mdvi_strdup</a>(<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">if</span>(len &gt;= 4 &amp;&amp; <a class="code" href="common_8h.html#aedf9a4cdd75e574d55f252e31d2ec453">STREQ</a>(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>+len-4, <span class="stringliteral">&quot;.dvi&quot;</span>)) {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <a class="code" href="common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code" href="common_8h.html#a994ae84c1392a4b3d510d86392159637">DBG_DVI</a>|<a class="code" href="common_8h.html#a9fd9df1119b53e05a48f76d49ac72a44">DBG_FILES</a>, <span class="stringliteral">&quot;opendvi: Trying `%s&#39;\n&quot;</span>, <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>));</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">if</span>(access(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, R_OK) == 0)</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="util_8c.html#a4ae7622edf8bcc460370292831a319d0">mdvi_strdup</a>(<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        </div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="comment">/* try appending .dvi */</span></div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    file = <a class="code" href="util_8c.html#a8dabe6220971562f98f90c6e028b173d">mdvi_malloc</a>(len + 5);</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    strcpy(file, <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    strcpy(file, <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    strcpy(file+len, <span class="stringliteral">&quot;.dvi&quot;</span>);</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <a class="code" href="common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code" href="common_8h.html#a994ae84c1392a4b3d510d86392159637">DBG_DVI</a>|<a class="code" href="common_8h.html#a9fd9df1119b53e05a48f76d49ac72a44">DBG_FILES</a>, <span class="stringliteral">&quot;opendvi: Trying `%s&#39;\n&quot;</span>, file));</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordflow">if</span>(access(file, R_OK) == 0)</div>
@@ -4528,7 +4528,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="dviread_8c.html">dviread.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:06 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:06 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -41,6 +41,7 @@ var ev_view_8h =
     [ "ev_view_set_model", "ev-view_8h.html#a9fece6b2092f4e88751504f349f9d979", null ],
     [ "ev_view_set_page_cache_size", "ev-view_8h.html#a026f9468b065fb1c6d1a0aa8bbfe3b2e", null ],
     [ "ev_view_show_cursor", "ev-view_8h.html#af091740db5de01330541f99414c1b1a2", null ],
+    [ "ev_view_supports_caret_navigation", "ev-view_8h.html#a4c42acdf6c13434a1c99764b14ee747f", null ],
     [ "ev_view_zoom_in", "ev-view_8h.html#aac1ce83ac501de6e8d018e06c69fa9b8", null ],
     [ "ev_view_zoom_out", "ev-view_8h.html#a15f0eb308bff776931875e5002390df9", null ]
 ];

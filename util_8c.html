@@ -144,9 +144,9 @@ Functions</h2></td></tr>
 <tr class="separator:aaf6d2d57a2dfa902e9ec0ec629597fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96e1c34c652cff88bb5c3369679387bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a96e1c34c652cff88bb5c3369679387bf">mdvi_set_logstream</a> (FILE *file)</td></tr>
 <tr class="separator:a96e1c34c652cff88bb5c3369679387bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e7fc7ab3f01e9c7db487ee9003fe33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a52e7fc7ab3f01e9c7db487ee9003fe33">mdvi_set_loglevel</a> (int <a class="el" href="ev-zoom-action-widget_8c.html#a450c3ab9b94a4663caad892b7193b547">level</a>)</td></tr>
+<tr class="memitem:a52e7fc7ab3f01e9c7db487ee9003fe33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a52e7fc7ab3f01e9c7db487ee9003fe33">mdvi_set_loglevel</a> (int <a class="el" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>)</td></tr>
 <tr class="separator:a52e7fc7ab3f01e9c7db487ee9003fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b880a8709078370e165087d36d64d87"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a7b880a8709078370e165087d36d64d87">vputlog</a> (int <a class="el" href="ev-zoom-action-widget_8c.html#a450c3ab9b94a4663caad892b7193b547">level</a>, const char *head, const char *format, va_list ap)</td></tr>
+<tr class="memitem:a7b880a8709078370e165087d36d64d87"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a7b880a8709078370e165087d36d64d87">vputlog</a> (int <a class="el" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>, const char *head, const char *format, va_list ap)</td></tr>
 <tr class="separator:a7b880a8709078370e165087d36d64d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18bd939565204c67daf8514c44acfb49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a18bd939565204c67daf8514c44acfb49">__debug</a> (int mask, const char *format,...)</td></tr>
 <tr class="separator:a18bd939565204c67daf8514c44acfb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1230,7 +1230,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> old = <a class="code" href="util_8c.html#a6adf37807d531d03bbd0f6ffecd17a0a">_mdvi_log_level</a>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="util_8c.html#a6adf37807d531d03bbd0f6ffecd17a0a">_mdvi_log_level</a> = <a class="code" href="ev-zoom-action-widget_8c.html#a450c3ab9b94a4663caad892b7193b547">level</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="util_8c.html#a6adf37807d531d03bbd0f6ffecd17a0a">_mdvi_log_level</a> = <a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> old;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 </div><!-- fragment -->
@@ -1697,7 +1697,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="util_8c_source.html#l00051">51</a> of file <a class="el" href="util_8c_source.html">util.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="util_8c.html#ab25a3625a8efbaa3d81ef27bbb51c9c5">logfile</a> != NULL &amp;&amp; <a class="code" href="util_8c.html#a6adf37807d531d03bbd0f6ffecd17a0a">_mdvi_log_level</a> &gt;= <a class="code" href="ev-zoom-action-widget_8c.html#a450c3ab9b94a4663caad892b7193b547">level</a>) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="util_8c.html#ab25a3625a8efbaa3d81ef27bbb51c9c5">logfile</a> != NULL &amp;&amp; <a class="code" href="util_8c.html#a6adf37807d531d03bbd0f6ffecd17a0a">_mdvi_log_level</a> &gt;= <a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span>(head != NULL)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            fprintf(<a class="code" href="util_8c.html#ab25a3625a8efbaa3d81ef27bbb51c9c5">logfile</a>, <span class="stringliteral">&quot;%s: &quot;</span>, head);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        vfprintf(<a class="code" href="util_8c.html#ab25a3625a8efbaa3d81ef27bbb51c9c5">logfile</a>, format, ap);</div>
@@ -1870,7 +1870,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="util_8c.html">util.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:06 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:06 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

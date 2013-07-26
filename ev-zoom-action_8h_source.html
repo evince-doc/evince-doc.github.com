@@ -134,47 +134,69 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8h_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="evince-document_8h.html">evince-document.h</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="evince-view_8h.html">evince-view.h</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;G_BEGIN_DECLS</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-window_8h.html">ev-window.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#ae323f599646676ba8f0852eb442ae64c">   30</a></span>&#160;<span class="preprocessor">#define EV_TYPE_ZOOM_ACTION            (ev_zoom_action_get_type ())</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_ZOOM_ACTION(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), EV_TYPE_ZOOM_ACTION, EvZoomAction))</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a0420458aa0d0d2ce3c2de673dc76771a">   32</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_IS_ZOOM_ACTION(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EV_TYPE_ZOOM_ACTION))</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#aeed62747ad01eadb1a7bcc17f6a9fce0">   33</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_ZOOM_ACTION_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), EV_TYPE_ZOOM_ACTION, EvZoomActionClass))</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a0f90a2e82ddcd409dc4821163cc83566">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_IS_ZOOM_ACTION_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((obj), EV_TYPE_ZOOM_ACTION))</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a2455c64a54e0125b353df7d3f75f76c5">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_ZOOM_ACTION_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS((obj), EV_TYPE_ZOOM_ACTION, EvZoomActionClass))</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a8d36ddc28273ba11d91a243015922ae7">   37</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvZoomAction.html">_EvZoomAction</a>        <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a54af85cabd22632bf9736d1ddf1ad5bb">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvZoomActionClass.html">_EvZoomActionClass</a>   <a class="code" href="struct__EvZoomActionClass.html">EvZoomActionClass</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a53849cbdaca378cbd40eca57e52cf462">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvZoomActionPrivate.html">_EvZoomActionPrivate</a> <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="struct__EvZoomAction.html">   41</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvZoomAction.html">_EvZoomAction</a> {</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="struct__EvZoomAction.html#a2f97dc8e5a62074a14298bb207645126">   42</a></span>&#160;        GtkAction <a class="code" href="struct__EvZoomAction.html#a2f97dc8e5a62074a14298bb207645126">parent</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">   44</a></span>&#160;        <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a> *<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="struct__EvZoomActionClass.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvZoomActionClass.html">_EvZoomActionClass</a> {</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="struct__EvZoomActionClass.html#ab11996324d27fb5aa9ac92088fbcc90a">   48</a></span>&#160;        GtkActionClass <a class="code" href="struct__EvZoomActionClass.html#ab11996324d27fb5aa9ac92088fbcc90a">parent_class</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;GType    <a class="code" href="ev-zoom-action_8h.html#acbbe87bec98ac61ab535475304d2ea15">ev_zoom_action_get_type</a>           (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;G_BEGIN_DECLS</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#ae323f599646676ba8f0852eb442ae64c">   32</a></span>&#160;<span class="preprocessor">#define EV_TYPE_ZOOM_ACTION            (ev_zoom_action_get_type ())</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">   33</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_ZOOM_ACTION(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), EV_TYPE_ZOOM_ACTION, EvZoomAction))</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a0420458aa0d0d2ce3c2de673dc76771a">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_IS_ZOOM_ACTION(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EV_TYPE_ZOOM_ACTION))</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#aeed62747ad01eadb1a7bcc17f6a9fce0">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_ZOOM_ACTION_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), EV_TYPE_ZOOM_ACTION, EvZoomActionClass))</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a0f90a2e82ddcd409dc4821163cc83566">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_IS_ZOOM_ACTION_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((obj), EV_TYPE_ZOOM_ACTION))</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a2455c64a54e0125b353df7d3f75f76c5">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_ZOOM_ACTION_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS((obj), EV_TYPE_ZOOM_ACTION, EvZoomActionClass))</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a8d36ddc28273ba11d91a243015922ae7">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvZoomAction.html">_EvZoomAction</a>        <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a54af85cabd22632bf9736d1ddf1ad5bb">   40</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvZoomActionClass.html">_EvZoomActionClass</a>   <a class="code" href="struct__EvZoomActionClass.html">EvZoomActionClass</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a53849cbdaca378cbd40eca57e52cf462">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvZoomActionPrivate.html">_EvZoomActionPrivate</a> <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="struct__EvZoomAction.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvZoomAction.html">_EvZoomAction</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="struct__EvZoomAction.html#a2f97dc8e5a62074a14298bb207645126">   44</a></span>&#160;        GtkAction <a class="code" href="struct__EvZoomAction.html#a2f97dc8e5a62074a14298bb207645126">parent</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">   46</a></span>&#160;        <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a> *<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="struct__EvZoomActionClass.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvZoomActionClass.html">_EvZoomActionClass</a> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="struct__EvZoomActionClass.html#ab11996324d27fb5aa9ac92088fbcc90a">   50</a></span>&#160;        GtkActionClass <a class="code" href="struct__EvZoomActionClass.html#ab11996324d27fb5aa9ac92088fbcc90a">parent_class</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span>     <a class="code" href="ev-zoom-action_8c.html#a96d8c7265046313c0439ed22f876bda5">ev_zoom_action_set_model</a>          (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>    *action,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                            <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;gboolean <a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a>    (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>    *action);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span>     <a class="code" href="ev-zoom-action_8c.html#adf3eb6935fb6698741b6ccdcae6fe691">ev_zoom_action_set_max_zoom_level</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>    *action,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                            <span class="keywordtype">float</span>            max_zoom);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">   54</a></span>&#160;        <span class="keyword">const</span> gchar *<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">   55</a></span>&#160;        <span class="keywordtype">float</span>        <a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[] = {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        { <span class="stringliteral">&quot;50%&quot;</span>, 0.5 },</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        { <span class="stringliteral">&quot;70%&quot;</span>, 0.7071067811 },</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        { <span class="stringliteral">&quot;85%&quot;</span>, 0.8408964152 },</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        { <span class="stringliteral">&quot;100%&quot;</span>, 1.0 },</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        { <span class="stringliteral">&quot;125%&quot;</span>, 1.1892071149 },</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        { <span class="stringliteral">&quot;150%&quot;</span>, 1.4142135623 },</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        { <span class="stringliteral">&quot;175%&quot;</span>, 1.6817928304 },</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        { <span class="stringliteral">&quot;200%&quot;</span>, 2.0 },</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        { <span class="stringliteral">&quot;300%&quot;</span>, 2.8284271247 },</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        { <span class="stringliteral">&quot;400%&quot;</span>, 4.0 },</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        { <span class="stringliteral">&quot;800%&quot;</span>, 8.0 },</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        { <span class="stringliteral">&quot;1600%&quot;</span>, 16.0 },</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        { <span class="stringliteral">&quot;3200%&quot;</span>, 32.0 },</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        { <span class="stringliteral">&quot;6400%&quot;</span>, 64.0 }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;GType    <a class="code" href="ev-zoom-action_8h.html#acbbe87bec98ac61ab535475304d2ea15">ev_zoom_action_get_type</a>        (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span>     <a class="code" href="ev-zoom-action_8c.html#a96d8c7265046313c0439ed22f876bda5">ev_zoom_action_set_model</a>       (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>    *action,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                         <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;gboolean <a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>    *action);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span>     <a class="code" href="ev-zoom-action_8c.html#aa90b5c0dc15ade373d320e53c82ea1fb">ev_zoom_action_set_window</a>      (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a>    *action,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                         <a class="code" href="struct__EvWindow.html">EvWindow</a>        *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-zoom-action_8h.html">ev-zoom-action.h</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:06 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:05 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -251,7 +251,7 @@ Functions</h2></td></tr>
 <tr class="separator:ab6d531903349d6b01191778e67525816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecfaca916e36f9999af16a7dcbc35af5"><td class="memItemLeft" align="right" valign="top">const gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8h.html#aecfaca916e36f9999af16a7dcbc35af5">ev_annotation_get_name</a> (<a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot)</td></tr>
 <tr class="separator:aecfaca916e36f9999af16a7dcbc35af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b18063fb26e22fecf5eb9343747fe06"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8h.html#a8b18063fb26e22fecf5eb9343747fe06">ev_annotation_set_name</a> (<a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot, const gchar *<a class="el" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</td></tr>
+<tr class="memitem:a8b18063fb26e22fecf5eb9343747fe06"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8h.html#a8b18063fb26e22fecf5eb9343747fe06">ev_annotation_set_name</a> (<a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot, const gchar *<a class="el" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>)</td></tr>
 <tr class="separator:a8b18063fb26e22fecf5eb9343747fe06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e3c0931df6e5eb308175a0affb6bbd2"><td class="memItemLeft" align="right" valign="top">const gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8h.html#a7e3c0931df6e5eb308175a0affb6bbd2">ev_annotation_get_modified</a> (<a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot)</td></tr>
 <tr class="separator:a7e3c0931df6e5eb308175a0affb6bbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2186,12 +2186,12 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;{</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-annotation_8h.html#a80338d2664e81fde3ecc9923375b47cc">EV_IS_ANNOTATION</a> (annot), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordflow">if</span> (g_strcmp0 (annot-&gt;<a class="code" href="struct__EvAnnotation.html#a7fd5eded34b0fa1a26b871e04b945bd4">name</a>, <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) == 0)</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordflow">if</span> (g_strcmp0 (annot-&gt;<a class="code" href="struct__EvAnnotation.html#a7fd5eded34b0fa1a26b871e04b945bd4">name</a>, <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) == 0)</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">if</span> (annot-&gt;<a class="code" href="struct__EvAnnotation.html#a7fd5eded34b0fa1a26b871e04b945bd4">name</a>)</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        g_free (annot-&gt;<a class="code" href="struct__EvAnnotation.html#a7fd5eded34b0fa1a26b871e04b945bd4">name</a>);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    annot-&gt;<a class="code" href="struct__EvAnnotation.html#a7fd5eded34b0fa1a26b871e04b945bd4">name</a> = <a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a> ? g_strdup (<a class="code" href="ev-zoom-action-widget_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) : NULL;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    annot-&gt;<a class="code" href="struct__EvAnnotation.html#a7fd5eded34b0fa1a26b871e04b945bd4">name</a> = <a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a> ? g_strdup (<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) : NULL;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    g_object_notify (G_OBJECT (annot), <span class="stringliteral">&quot;name&quot;</span>);</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
@@ -2485,7 +2485,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-annotation_8h.html">ev-annotation.h</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 12:13:10 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 16:29:08 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

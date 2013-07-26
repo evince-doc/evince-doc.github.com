@@ -2,6 +2,7 @@ var struct__EvWindowPrivate =
 [
     [ "action_group", "struct__EvWindowPrivate.html#afbcf102f6f7a7df5f0c9109bd69ec9c3", null ],
     [ "annot", "struct__EvWindowPrivate.html#a9533d726d289aa7472543c243a0ec563", null ],
+    [ "ask_caret_navigation_check", "struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe", null ],
     [ "attach_list", "struct__EvWindowPrivate.html#a2a2a2714cefa31573971203929c308ca", null ],
     [ "attachment_popup", "struct__EvWindowPrivate.html#ac524b0fb82b7643de50a2d19fd84f810", null ],
     [ "attachment_popup_action_group", "struct__EvWindowPrivate.html#af2e13dc11e5cce3217659961deb622ec", null ],
@@ -73,5 +74,6 @@ var struct__EvWindowPrivate =
     [ "view_box", "struct__EvWindowPrivate.html#ac38a25c3ca22a91b9a229721f3e4c1a3", null ],
     [ "view_popup", "struct__EvWindowPrivate.html#af9bf750f033c3d5cb94443c6f9b9b0d6", null ],
     [ "view_popup_action_group", "struct__EvWindowPrivate.html#a3030ebad0f35c97e35420a63b703b102", null ],
-    [ "window_mode", "struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa", null ]
+    [ "window_mode", "struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa", null ],
+    [ "zoom_selector_popup_action_group", "struct__EvWindowPrivate.html#a4bd51d1ee7b20d5117e1f3d43d3a9005", null ]
 ];

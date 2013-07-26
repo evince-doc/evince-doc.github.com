@@ -1,5 +1,16 @@
 var NAVTREEINDEX26 =
 {
+"structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40":[6,0,303,5],
+"structCharMetricInfo.html#a3b203ccd0888008f4b525b30030b6ab0":[6,0,303,3],
+"structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f":[6,0,303,4],
+"structCharMetricInfo.html#adb8e4767e585371e2f929149d7c223c7":[6,0,303,1],
+"structCharMetricInfo.html#ae4510ed299356e805c66dbfe5dd86202":[6,0,303,0],
+"structCharMetricInfo.html#af80521649706b11528a0614168d0d32f":[6,0,303,2],
+"structColorCache.html":[6,0,304],
+"structColorCache.html#a111ea19e43540ec296a5c2f98a241ad4":[6,0,304,2],
+"structColorCache.html#a3237323ce2df1f3e43f91c2edf29736a":[6,0,304,0],
+"structColorCache.html#a4867b2fedfd8f2240a500ceb44dd1814":[6,0,304,6],
+"structColorCache.html#a7aeaf8cda29cbe142fae19a8a446121b":[6,0,304,4],
 "structColorCache.html#a98fc96e020e4684efc7ffebc519aa6a8":[6,0,304,1],
 "structColorCache.html#adca0f3b5c84a68bc51223497866bc8e7":[6,0,304,3],
 "structColorCache.html#adec207a4d45ea409abc719192d4092ac":[6,0,304,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX26 =
 "struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0":[6,0,12,10],
 "struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d":[6,0,12,5],
 "struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644":[6,0,12,11],
-"struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c":[6,0,12,0],
-"struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba":[6,0,12,3],
-"struct__ComicsDocument.html#a853bc7317f785565fc74d501dcdd622f":[6,0,12,9],
-"struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488":[6,0,12,4],
-"struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa":[6,0,12,6],
-"struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3":[6,0,12,1],
-"struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[6,0,12,7],
-"struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[6,0,12,2],
-"struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821":[6,0,12,8],
-"struct__ComicsDocumentClass.html":[6,0,13],
-"struct__ComicsDocumentClass.html#a644ae0682e2f9d46d8426a66a2cb74a3":[6,0,13,0],
-"struct__DjvuDocument.html":[6,0,14]
+"struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c":[6,0,12,0]
 };

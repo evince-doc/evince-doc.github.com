@@ -1,5 +1,16 @@
 var NAVTREEINDEX28 =
 {
+"struct__DviParams.html#aee9c02c1013ee6efe5daba29751f2c13":[6,0,39,0],
+"struct__DviParams.html#af0df0901f69152acb4b532a1a30a727c":[6,0,39,6],
+"struct__DviParams.html#af2026f8f5ca01859b74c4d9879e85fd7":[6,0,39,17],
+"struct__DviParams.html#afd4e66c34a287595f07749481f9d687b":[6,0,39,8],
+"struct__DviRange.html":[6,0,40],
+"struct__DviRange.html#a099dbfb073172ade4fad0ecb057036db":[6,0,40,0],
+"struct__DviRange.html#a17042775bf41dee1228bf4a4b8fa0399":[6,0,40,1],
+"struct__DviRange.html#a66ee64cc835e21470312fa74d0dc3839":[6,0,40,3],
+"struct__DviRange.html#abea2cbd25127d0025523f87001ee8669":[6,0,40,2],
+"struct__DviSpecial.html":[6,0,41],
+"struct__DviSpecial.html#a00a4195b0212a6eb4bec3a0a043b57e4":[6,0,41,1],
 "struct__DviSpecial.html#a1f873a69e536cbc944eb8dcc5c36d7fe":[6,0,41,4],
 "struct__DviSpecial.html#a36945273f27aeb35462d3e1c7b25a7bf":[6,0,41,3],
 "struct__DviSpecial.html#a3952a63a1cc449998edb79c35bb00cd1":[6,0,41,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX28 =
 "struct__EvDocumentFindInterface.html#adfda937150532b7905a62f571ed40aa8":[6,0,85,0],
 "struct__EvDocumentFontsInterface.html":[6,0,86],
 "struct__EvDocumentFontsInterface.html#a463c3047dfd86c5e6c530adbf4c56605":[6,0,86,2],
-"struct__EvDocumentFontsInterface.html#a7749501e1dbc2be0c39bb61339da8e84":[6,0,86,1],
-"struct__EvDocumentFontsInterface.html#aa0770c6b68c3cb030b0e5ae69cdcc83f":[6,0,86,4],
-"struct__EvDocumentFontsInterface.html#ac63bd44aa4344d8aee53c2502cce38cd":[6,0,86,0],
-"struct__EvDocumentFontsInterface.html#ad463ad4eb8960d8696477df117c8507d":[6,0,86,3],
-"struct__EvDocumentFormsInterface.html":[6,0,87],
-"struct__EvDocumentFormsInterface.html#a01231f31434eb96bb302406df09bd157":[6,0,87,11],
-"struct__EvDocumentFormsInterface.html#a0d5d05c3ce205620aa219149e5c96f84":[6,0,87,14],
-"struct__EvDocumentFormsInterface.html#a11706a6ef95ac8765e2133ffb93187c0":[6,0,87,2],
-"struct__EvDocumentFormsInterface.html#a24fcb7b99a3e8b0cb3174f396e0e1592":[6,0,87,9],
-"struct__EvDocumentFormsInterface.html#a57b2ee03ccc1245ee30adc6ecb333025":[6,0,87,1],
-"struct__EvDocumentFormsInterface.html#a596e140b6aa0e728d618c61cc7a7b468":[6,0,87,10],
-"struct__EvDocumentFormsInterface.html#a59f4386a62f09257bf4336c2ec8d1b55":[6,0,87,4]
+"struct__EvDocumentFontsInterface.html#a7749501e1dbc2be0c39bb61339da8e84":[6,0,86,1]
 };

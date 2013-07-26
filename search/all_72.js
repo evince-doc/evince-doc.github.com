@@ -63,7 +63,6 @@ var searchData=
   ['round',['ROUND',['../common_8h.html#a40383559ec63c966285f8c983e039eeb',1,'ROUND():&#160;common.h'],['../pk_8c.html#a40383559ec63c966285f8c983e039eeb',1,'ROUND():&#160;pk.c']]],
   ['row_5factivated_5fcallback',['row_activated_callback',['../ev-sidebar-links_8c.html#a7c779a52b17ae313f0d1bdb4af0f4cb2',1,'ev-sidebar-links.c']]],
   ['row_5factivated_5fid',['row_activated_id',['../struct__EvSidebarLinksPrivate.html#a4faa4762616255c2be223d9cda0c1d46',1,'_EvSidebarLinksPrivate']]],
-  ['row_5fis_5fseparator',['row_is_separator',['../ev-zoom-action-widget_8c.html#a7414818d07f7d0659d15b5ea98239dd7',1,'ev-zoom-action-widget.c']]],
   ['rule_5fround',['rule_round',['../mdvi_8h.html#a8dd031ba7daa3be51e2fe2def9f3a462',1,'mdvi.h']]],
   ['run',['run',['../struct__EvJobClass.html#a1d71270f4c411717b224f83dd6141027',1,'_EvJobClass::run()'],['../struct__EvPrintOperationClass.html#a34151c018ac48e9d52307a06a0d4cd31',1,'_EvPrintOperationClass::run()']]],
   ['run_5fmode',['run_mode',['../struct__EvJob.html#ab1c83fd5270289f99eb54b856e16a0c2',1,'_EvJob']]],

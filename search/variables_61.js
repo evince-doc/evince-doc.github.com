@@ -47,6 +47,7 @@ var searchData=
   ['ascii85breaklen',['ascii85breaklen',['../struct__TIFF2PSContext.html#ad43c4898fb369c8dea6f6637a2959d17',1,'_TIFF2PSContext']]],
   ['ascii85buf',['ascii85buf',['../struct__TIFF2PSContext.html#a59524110c517d280110890dadcf46d90',1,'_TIFF2PSContext']]],
   ['ascii85count',['ascii85count',['../struct__TIFF2PSContext.html#a418f2233dc9509edc57181f888044948',1,'_TIFF2PSContext']]],
+  ['ask_5fcaret_5fnavigation_5fcheck',['ask_caret_navigation_check',['../struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe',1,'_EvWindowPrivate']]],
   ['attach_5flist',['attach_list',['../struct__EvWindowPrivate.html#a2a2a2714cefa31573971203929c308ca',1,'_EvWindowPrivate']]],
   ['attachment',['attachment',['../struct__EvAnnotationAttachment.html#a4f899bf7f8fbcd38064ccfcdf2fb102c',1,'_EvAnnotationAttachment']]],
   ['attachment_5fpopup',['attachment_popup',['../struct__EvWindowPrivate.html#ac524b0fb82b7643de50a2d19fd84f810',1,'_EvWindowPrivate']]],
