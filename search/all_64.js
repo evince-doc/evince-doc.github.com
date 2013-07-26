@@ -118,7 +118,7 @@ var searchData=
   ['djvu_5fselection_5fget_5fselection_5fregion',['djvu_selection_get_selection_region',['../djvu-document_8c.html#a5848def91d43fba04f67fcc0f42e11b2',1,'djvu-document.c']]],
   ['djvu_5fselection_5fiface_5finit',['djvu_selection_iface_init',['../djvu-document_8c.html#aed573b59083aac4b94b715fc5e81a3eb',1,'djvu-document.c']]],
   ['djvu_5fselection_5ftext',['DJVU_SELECTION_TEXT',['../djvu-text-page_8h.html#ae8af52b890bde4369e7e16bb23127e67a240d2459b7d3139b1726026369bc4271',1,'djvu-text-page.h']]],
-  ['djvu_5ftext_5fcopy',['djvu_text_copy',['../djvu-document_8c.html#a223f03eb759a6580c27e2eee49a45790',1,'djvu-document.c']]],
+  ['djvu_5ftext_5fcopy',['djvu_text_copy',['../djvu-document_8c.html#a08632b4be1a4c467f13db3fcc924cc9d',1,'djvu-document.c']]],
   ['djvu_5ftext_5fpage_5fappend_5ftext',['djvu_text_page_append_text',['../djvu-text-page_8c.html#a55afe6a880fabbc4b9dff20af41f29ca',1,'djvu-text-page.c']]],
   ['djvu_5ftext_5fpage_5fbox',['djvu_text_page_box',['../djvu-text-page_8c.html#acae9aff0b269d5b281a62c290a3a0519',1,'djvu-text-page.c']]],
   ['djvu_5ftext_5fpage_5fcopy',['djvu_text_page_copy',['../djvu-text-page_8c.html#a462c8d98b8c90efa5bd358a92c4cd077',1,'djvu_text_page_copy(DjvuTextPage *page, EvRectangle *rectangle):&#160;djvu-text-page.c'],['../djvu-text-page_8h.html#a462c8d98b8c90efa5bd358a92c4cd077',1,'djvu_text_page_copy(DjvuTextPage *page, EvRectangle *rectangle):&#160;djvu-text-page.c']]],

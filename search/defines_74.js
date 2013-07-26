@@ -13,6 +13,6 @@ var searchData=
   ['tiff_5ftype_5fdocument',['TIFF_TYPE_DOCUMENT',['../tiff-document_8h.html#acfb2cc19f9a6aacd52eee676f8f052ac',1,'tiff-document.h']]],
   ['toolbar_5fresource_5fpath',['TOOLBAR_RESOURCE_PATH',['../ev-window_8c.html#a839692a2bb48b740cf2f2a8c098f8e85',1,'ev-window.c']]],
   ['transform',['TRANSFORM',['../fontmap_8c.html#af351c91a4f809da8df37f5511aa7bac1',1,'fontmap.c']]],
-  ['true',['TRUE',['../afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;afmparse.h'],['../synctex__parser__utils_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;synctex_parser_utils.h']]],
+  ['true',['TRUE',['../afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'afmparse.h']]],
   ['typename',['TYPENAME',['../font_8c.html#a5177a7bfa3d69f8a586206055772e847',1,'TYPENAME():&#160;font.c'],['../tfm_8c.html#a5177a7bfa3d69f8a586206055772e847',1,'TYPENAME():&#160;tfm.c']]]
 ];

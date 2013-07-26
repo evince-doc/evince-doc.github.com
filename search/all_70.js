@@ -193,7 +193,6 @@ var searchData=
   ['pendingscroll',['PendingScroll',['../ev-view-private_8h.html#a1aa0a9871663aa009306de68b639510f',1,'ev-view-private.h']]],
   ['permissions',['permissions',['../struct__EvDocumentInfo.html#ad8a963857d068cbdf17508c0bcb468eb',1,'_EvDocumentInfo']]],
   ['photometric',['photometric',['../struct__TIFF2PSContext.html#afa67823b4da0a28fb4c7ce6aa4863b19',1,'_TIFF2PSContext']]],
-  ['photoshopbanner',['PhotoshopBanner',['../tiff2ps_8c.html#ac17b567dc16efc4abc76f432eeea83c6',1,'tiff2ps.c']]],
   ['pieces',['pieces',['../structCompCharData.html#a5046b0be727ebc058986cb0920cac36c',1,'CompCharData']]],
   ['pixbuf',['pixbuf',['../struct__GimpCellRendererToggle.html#a2be5ba4036ea2a1544dd7d5a5079c60b',1,'_GimpCellRendererToggle::pixbuf()'],['../struct__EvImagePrivate.html#afcc989abcadbeb1d440e29c40a01dcbe',1,'_EvImagePrivate::pixbuf()']]],
   ['pixbuf_5fcache',['pixbuf_cache',['../struct__EvView.html#a5c5b1c61e09eeeecd6efb61dbe335e86',1,'_EvView']]],

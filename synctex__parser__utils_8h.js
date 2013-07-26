@@ -1,6 +1,5 @@
 var synctex__parser__utils_8h =
 [
-    [ "FALSE", "synctex__parser__utils_8h.html#aa93f0eb578d23995850d61f7d61c55c1", null ],
     [ "synctex_ADD_QUOTES", "synctex__parser__utils_8h.html#a4f123df83b5a97f62fa48731d36b4d3e", null ],
     [ "SYNCTEX_ARE_PATH_CHARACTERS_EQUAL", "synctex__parser__utils_8h.html#a92af0c7b2c9b5b26530b47118aed62a1", null ],
     [ "synctex_bool_t", "synctex__parser__utils_8h.html#aaa22ec91f0bc05d946ebf387daf9184e", null ],
@@ -12,7 +11,6 @@ var synctex__parser__utils_8h =
     [ "SYNCTEX_IS_PATH_SEPARATOR", "synctex__parser__utils_8h.html#ac009a442aeb9cc9e95babccc24197922", null ],
     [ "synctex_NO", "synctex__parser__utils_8h.html#a913570648d1bea87078321a1257fa781", null ],
     [ "synctex_YES", "synctex__parser__utils_8h.html#aefe95728c055ef228ea9bdecb0bf3a80", null ],
-    [ "TRUE", "synctex__parser__utils_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d", null ],
     [ "synctex_io_mode_t", "synctex__parser__utils_8h.html#ad718db474a9acf904031706fbffd84be", null ],
     [ "synctex_compress_mode_t", "synctex__parser__utils_8h.html#a86a58b986a8145c804683f7462ead7c4", [
       [ "synctex_compress_mode_none", "synctex__parser__utils_8h.html#a86a58b986a8145c804683f7462ead7c4a82ba715b8c4938575eb70d629b72ec64", null ],

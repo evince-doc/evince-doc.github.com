@@ -143,8 +143,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7f86ad1104d4f48e5c2113d02fcdc87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd50f21b4ce51db35ae04f74e445d486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-properties-dialog_8c.html#acd50f21b4ce51db35ae04f74e445d486">ev_properties_dialog_set_document</a> (<a class="el" href="ev-properties-dialog_8h.html#a245dcfa0f0afb54881ea86b53d78c65a">EvPropertiesDialog</a> *properties, const gchar *uri, <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
 <tr class="separator:acd50f21b4ce51db35ae04f74e445d486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c0010495001bae3259533a1f85389e0"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-properties-dialog_8c.html#a8c0010495001bae3259533a1f85389e0">ev_properties_dialog_new</a> ()</td></tr>
-<tr class="separator:a8c0010495001bae3259533a1f85389e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70579e8e84faa5bcdd960f90e84d858a"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-properties-dialog_8c.html#a70579e8e84faa5bcdd960f90e84d858a">ev_properties_dialog_new</a> (void)</td></tr>
+<tr class="separator:a70579e8e84faa5bcdd960f90e84d858a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a46102e3d789254c78de89281a7e26d96"></a>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a8c0010495001bae3259533a1f85389e0"></a>
+<a class="anchor" id="a70579e8e84faa5bcdd960f90e84d858a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-properties-dialog_8c_a8c0010495001bae3259533a1f85389e0_icgraph.svg" width="382" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-properties-dialog_8c_a70579e8e84faa5bcdd960f90e84d858a_icgraph.svg" width="382" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -310,7 +310,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-document-fonts_8h.html#af80db25be0f35902323c8382d3e7b225">EV_IS_DOCUMENT_FONTS</a> (document)) {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (properties-&gt;fonts_page == NULL) {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Fonts&quot;</span>));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            properties-&gt;fonts_page = <a class="code" href="ev-properties-fonts_8c.html#a39f21d723ac07cb60301d4df41df032a">ev_properties_fonts_new</a> ();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            properties-&gt;fonts_page = <a class="code" href="ev-properties-fonts_8c.html#acc6ded718a4a56f788939a798f4b2126">ev_properties_fonts_new</a> ();</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            gtk_notebook_append_page (GTK_NOTEBOOK (properties-&gt;notebook),</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                          properties-&gt;fonts_page, label);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            gtk_widget_show (properties-&gt;fonts_page);</div>
@@ -352,7 +352,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-properties-dialog_8c.html">ev-properties-dialog.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 16:29:12 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 20:45:36 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

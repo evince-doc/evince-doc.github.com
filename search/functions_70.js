@@ -102,7 +102,6 @@ var searchData=
   ['pdf_5fselection_5fget_5fselection_5fregion',['pdf_selection_get_selection_region',['../ev-poppler_8cc.html#af66c2b733064cbc958538f0a6ec4ea4f',1,'ev-poppler.cc']]],
   ['pdf_5fselection_5fiface_5finit',['pdf_selection_iface_init',['../ev-poppler_8cc.html#a69ee8b8d5304dfc2a21a63329036dbc1',1,'ev-poppler.cc']]],
   ['pdf_5fselection_5frender_5fselection',['pdf_selection_render_selection',['../ev-poppler_8cc.html#a896e9d2c708a96be9cc62a11ac2f4ed6',1,'ev-poppler.cc']]],
-  ['photoshopbanner',['PhotoshopBanner',['../tiff2ps_8c.html#ac17b567dc16efc4abc76f432eeea83c6',1,'tiff2ps.c']]],
   ['pk_5ffont_5fget_5fglyph',['pk_font_get_glyph',['../pk_8c.html#a15fe44d1374b28b8308373f9285d7448',1,'pk.c']]],
   ['pk_5fget_5fnyb',['pk_get_nyb',['../pk_8c.html#a2f9bbb636a1b7502fdf1bfcc60332ba3',1,'pk.c']]],
   ['pk_5fload_5ffont',['pk_load_font',['../pk_8c.html#abb6df923ec4bb5eee9beacbdccf2d933',1,'pk.c']]],

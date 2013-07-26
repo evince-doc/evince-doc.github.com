@@ -35,7 +35,7 @@ var djvu_document_8c =
     [ "djvu_selection_get_selection_rects", "djvu-document_8c.html#a4613edd75e4ba18ef5ce4fa7bdfb716e", null ],
     [ "djvu_selection_get_selection_region", "djvu-document_8c.html#a5848def91d43fba04f67fcc0f42e11b2", null ],
     [ "djvu_selection_iface_init", "djvu-document_8c.html#aed573b59083aac4b94b715fc5e81a3eb", null ],
-    [ "djvu_text_copy", "djvu-document_8c.html#a223f03eb759a6580c27e2eee49a45790", null ],
+    [ "djvu_text_copy", "djvu-document_8c.html#a08632b4be1a4c467f13db3fcc924cc9d", null ],
     [ "djvu_wait_for_message", "djvu-document_8c.html#ab7a729a5800143cc4ea974711ab42c5e", null ],
     [ "document_get_page_size", "djvu-document_8c.html#a9b139e47dbbb99e84799eae3c77523f7", null ],
     [ "EV_BACKEND_REGISTER_WITH_CODE", "djvu-document_8c.html#abe648060b87e166a6b71b444aeaf4be1", null ],

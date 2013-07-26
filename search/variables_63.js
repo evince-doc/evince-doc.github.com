@@ -22,7 +22,7 @@ var searchData=
   ['child',['child',['../struct____synctex__class__t.html#ace25029406ca336f39872a8b77564748',1,'__synctex_class_t']]],
   ['children',['children',['../struct__EvView.html#aceddb80e1dc4e112033b650f38fa552c',1,'_EvView']]],
   ['chrome',['chrome',['../struct__EvWindowPrivate.html#abe9128f9496a33a0cb6c56e3d8310058',1,'_EvWindowPrivate']]],
-  ['class',['class',['../struct__synctex__node.html#aaec7a3e6468120aa3648a22776026754',1,'_synctex_node::class()'],['../struct____synctex__scanner__t.html#a5313be691a11d7f4c4dc3dfa18adb010',1,'__synctex_scanner_t::class()'],['../structsynctex__node__sheet__t.html#a92dce0512cdf937f3c790743f444ef53',1,'synctex_node_sheet_t::class()']]],
+  ['class',['class',['../struct__synctex__node.html#a46dbe73756d0ea08474584f727459707',1,'_synctex_node::class()'],['../struct____synctex__scanner__t.html#a5313be691a11d7f4c4dc3dfa18adb010',1,'__synctex_scanner_t::class()'],['../structsynctex__node__sheet__t.html#a289d56fa323e16a695932c355eb83cc0',1,'synctex_node_sheet_t::class()']]],
   ['clicked',['clicked',['../struct__GimpCellRendererToggleClass.html#a8758087698c0d3c92bdf3a2e5f7bd2a0',1,'_GimpCellRendererToggleClass']]],
   ['client_5fid',['client_id',['../struct__EggSMClientXSMP.html#a3a0c982d63cafb5b5c16b2a5d90b726f',1,'_EggSMClientXSMP']]],
   ['close',['close',['../struct__EggFindBarClass.html#a4d3a8c60c8ad510e8c6c129bdd17d3a4',1,'_EggFindBarClass']]],

@@ -242,37 +242,36 @@ $(document).ready(function(){initNavTree('ev-backend-info_8c_source.html','');})
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">while</span> ((dirent = g_dir_read_name (dir))) {</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                <a class="code" href="ev-backend-info_8h.html#a88009840ec126eeb9bca3a130851563b">EvBackendInfo</a> *info;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                gchar         *file;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                GError        *error = NULL;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordflow">if</span> (!g_str_has_suffix (dirent, <a class="code" href="ev-backend-info_8c.html#ad9274346df49b05c1a2cfc71facf63da">EV_BACKENDS_EXTENSION</a>))</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                file = g_build_filename (path, dirent, NULL);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                info = <a class="code" href="ev-backend-info_8c.html#a37667190ec08ffc8e145b68a95b0dc4b">_ev_backend_info_new_from_file</a> (file, &amp;error);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="keywordflow">if</span> (error != NULL) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                        g_warning (<span class="stringliteral">&quot;Failed to load backend info from &#39;%s&#39;: %s\n&quot;</span>,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                   file, error-&gt;message);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        g_error_free (error);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                g_free (file);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="keywordflow">if</span> (info == NULL)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                list = g_list_prepend (list, info);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        g_dir_close (dir);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">return</span> list;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">if</span> (!g_str_has_suffix (dirent, <a class="code" href="ev-backend-info_8c.html#ad9274346df49b05c1a2cfc71facf63da">EV_BACKENDS_EXTENSION</a>))</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                file = g_build_filename (path, dirent, NULL);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                info = <a class="code" href="ev-backend-info_8c.html#a37667190ec08ffc8e145b68a95b0dc4b">_ev_backend_info_new_from_file</a> (file, &amp;error);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">if</span> (error != NULL) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                        g_warning (<span class="stringliteral">&quot;Failed to load backend info from &#39;%s&#39;: %s\n&quot;</span>,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                   file, error-&gt;message);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        g_clear_error (&amp;error);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                g_free (file);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">if</span> (info == NULL)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                list = g_list_prepend (list, info);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        g_dir_close (dir);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span> list;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-backend-info_8c.html">ev-backend-info.c</a></li>
-    <li class="footer">Generated on Fri Jul 26 2013 16:29:04 for Evince by
+    <li class="footer">Generated on Fri Jul 26 2013 20:45:17 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

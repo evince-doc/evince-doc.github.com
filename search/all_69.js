@@ -26,6 +26,7 @@ var searchData=
   ['image_5fmapping',['image_mapping',['../struct__EvJobPageData.html#a35baece3ce2c16dd0c06f029fae12f50',1,'_EvJobPageData::image_mapping()'],['../struct__EvPageCacheData.html#ac5d835b6dc82042eab5e7c6d40c41b87',1,'_EvPageCacheData::image_mapping()']]],
   ['image_5fsave_5fdialog_5fresponse_5fcb',['image_save_dialog_response_cb',['../ev-window_8c.html#acfb40ae5b19b529ffa0963343864013f',1,'ev-window.c']]],
   ['imagedndinfo',['ImageDNDInfo',['../structImageDNDInfo.html',1,'']]],
+  ['imageop',['IMAGEOP',['../tiff2ps_8c.html#a7a4ff90fc95f80c6383aa5df21ba98ab',1,'tiff2ps.c']]],
   ['implementation',['implementation',['../struct__synctex__node.html#a90104714ec188d99a3e914363b67e7f1',1,'_synctex_node::implementation()'],['../structsynctex__node__sheet__t.html#a676d15581587febbd5493958c7cc2b1f',1,'synctex_node_sheet_t::implementation()']]],
   ['in',['in',['../struct__DviFont.html#aca6eace6b1df935146b75f3f2e77aa7c',1,'_DviFont::in()'],['../struct__DviContext.html#a5c2f30ed6c2fbdce3c551b4a44e0e65f',1,'_DviContext::in()']]],
   ['in_5fdrag',['in_drag',['../structDragInfo.html#a2ebab2c57acf1ce487039afcd1761c53',1,'DragInfo::in_drag()'],['../structSelectionInfo.html#a31ca6869df26f2ac3b7db3d814764e1f',1,'SelectionInfo::in_drag()'],['../structImageDNDInfo.html#ababbd0d48187d10e8678f453acf9a744',1,'ImageDNDInfo::in_drag()']]],

@@ -128,7 +128,6 @@ var searchData=
   ['synctex_5fclass_5fvbox',['synctex_class_vbox',['../synctex__parser_8c.html#a89fd3cd7be5dc02766b824805161b8ea',1,'synctex_parser.c']]],
   ['synctex_5fclass_5fvoid_5fvbox',['synctex_class_void_vbox',['../synctex__parser_8c.html#adad50e5c92ccceb8a6719f1a9a22bd17',1,'synctex_parser.c']]],
   ['synctex_5fdeclare_5fchar_5foffset',['SYNCTEX_DECLARE_CHAR_OFFSET',['../struct____synctex__scanner__t.html#a1a0c4a6727f9f7c373a854d9912b46c5',1,'__synctex_scanner_t']]],
-  ['synctex_5fdeclare_5fcharindex',['SYNCTEX_DECLARE_CHARINDEX',['../struct__synctex__node.html#a77573cc1e7436cc1a3dc356f7752cbd6',1,'_synctex_node::SYNCTEX_DECLARE_CHARINDEX()'],['../structsynctex__node__sheet__t.html#a2268642069ea888ceee4e1b563a9b28e',1,'synctex_node_sheet_t::SYNCTEX_DECLARE_CHARINDEX()']]],
   ['synctex_5finput_5ft',['synctex_input_t',['../synctex__parser_8c.html#a08e8c1c2b4e1046c6b2d6855d2838125',1,'synctex_parser.c']]],
   ['synctex_5fnode_5fhbox_5ft',['synctex_node_hbox_t',['../synctex__parser_8c.html#aef8b14f5cc3e40e6386f2cb102a70f1e',1,'synctex_parser.c']]],
   ['synctex_5fnode_5fmedium_5ft',['synctex_node_medium_t',['../synctex__parser_8c.html#adac15c233680f0df9ac52b846929a9e7',1,'synctex_parser.c']]],
