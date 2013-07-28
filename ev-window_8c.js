@@ -315,6 +315,7 @@ var ev_window_8c =
     [ "update_toggle_find_action", "ev-window_8c.html#ac160e4235a248da668430a45c52426d8", null ],
     [ "view_actions_focus_in_cb", "ev-window_8c.html#aa885b511ae1077d92b326837b50068f3", null ],
     [ "view_annot_added", "ev-window_8c.html#a2d18bd2ab3a1e0d7fdd81ec6f9effd8c", null ],
+    [ "view_caret_cursor_moved_cb", "ev-window_8c.html#af97c49a1ec1e9f8d22735609290d83cd", null ],
     [ "view_external_link_cb", "ev-window_8c.html#a9535fb2486ec1ce7f6840a2e4d961058", null ],
     [ "view_handle_link_cb", "ev-window_8c.html#a5941b7bfb2cbc96bf56da5387c7a4b7c", null ],
     [ "view_is_loading_changed_cb", "ev-window_8c.html#a3df44c11e60a1f646a221ca8b3b986b2", null ],

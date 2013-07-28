@@ -173,6 +173,7 @@ var searchData=
   ['cursor_5fgo_5fto_5fpage_5fend',['cursor_go_to_page_end',['../ev-view_8c.html#a48f30b206a85a436ee4f2ae2ead8dbe8',1,'ev-view.c']]],
   ['cursor_5fgo_5fto_5fpage_5fstart',['cursor_go_to_page_start',['../ev-view_8c.html#af8333e1d1568e329714bb9e3847ba560',1,'ev-view.c']]],
   ['cursor_5fgo_5fto_5fprevious_5fpage',['cursor_go_to_previous_page',['../ev-view_8c.html#ae257cb05be68b56eeae88ce23c4f2e6e',1,'ev-view.c']]],
+  ['cursor_5fis_5fin_5fvisible_5fpage',['cursor_is_in_visible_page',['../ev-view_8c.html#a691f0db8c7f2b66ded75e4dcf7a727a8',1,'ev-view.c']]],
   ['cursor_5fline_5foffset',['cursor_line_offset',['../struct__EvView.html#a3e1c24e80b40b6ed0284663b0d7f6696',1,'_EvView']]],
   ['cursor_5foff_5fmultiplier',['CURSOR_OFF_MULTIPLIER',['../ev-view_8c.html#a226485a540de86ba8676ec0aaa05e980',1,'ev-view.c']]],
   ['cursor_5foffset',['cursor_offset',['../struct__EvView.html#a674071b2fb11ae2c6027e53524318b19',1,'_EvView']]],

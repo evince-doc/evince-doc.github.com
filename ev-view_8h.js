@@ -36,6 +36,7 @@ var ev_view_8h =
     [ "ev_view_reload", "ev-view_8h.html#aad79f884575dd1d0d005c7144f88f2e1", null ],
     [ "ev_view_scroll", "ev-view_8h.html#ab508decb6ec537488156e4034a148bc2", null ],
     [ "ev_view_select_all", "ev-view_8h.html#a5117bfa1532fd619165ed0715a71b9b4", null ],
+    [ "ev_view_set_caret_cursor_position", "ev-view_8h.html#ad252527b78bb0905ab35216ca2ac3a70", null ],
     [ "ev_view_set_caret_navigation_enabled", "ev-view_8h.html#af968df50ffca1525bf5c4242cd7569c7", null ],
     [ "ev_view_set_loading", "ev-view_8h.html#a5f0955a4dbd557a9de3361f658a8ba24", null ],
     [ "ev_view_set_model", "ev-view_8h.html#a9fece6b2092f4e88751504f349f9d979", null ],

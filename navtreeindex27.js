@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0":[6,0,12,10],
+"struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d":[6,0,12,5],
+"struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644":[6,0,12,11],
+"struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c":[6,0,12,0],
 "struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba":[6,0,12,3],
 "struct__ComicsDocument.html#a853bc7317f785565fc74d501dcdd622f":[6,0,12,9],
 "struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488":[6,0,12,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "struct__DviParams.html#a652321310308d5dd705087c6f1b2a6d9":[6,0,39,11],
 "struct__DviParams.html#a714ceb7f93f2ca63f44558f2e822fe9c":[6,0,39,15],
 "struct__DviParams.html#a772fc274414e7728029835f41981a8dc":[6,0,39,10],
-"struct__DviParams.html#a8dc406cbe8e8c46ff3ed821a0743d2ec":[6,0,39,16],
-"struct__DviParams.html#aaab2140613ee64f9fc59141ba2509950":[6,0,39,9],
-"struct__DviParams.html#ac4765f2437899478e1d4f36d5f338138":[6,0,39,19],
-"struct__DviParams.html#ac505875a9cdf697248bb85dfd292cc41":[6,0,39,12],
-"struct__DviParams.html#ad4ee1ca974231a8671b1e8926b21e300":[6,0,39,18]
+"struct__DviParams.html#a8dc406cbe8e8c46ff3ed821a0743d2ec":[6,0,39,16]
 };

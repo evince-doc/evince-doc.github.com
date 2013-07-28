@@ -16,6 +16,7 @@ var searchData=
   ['view_5factions_5ffocus_5fin_5fcb',['view_actions_focus_in_cb',['../ev-window_8c.html#aa885b511ae1077d92b326837b50068f3',1,'ev-window.c']]],
   ['view_5fannot_5fadded',['view_annot_added',['../ev-window_8c.html#a2d18bd2ab3a1e0d7fdd81ec6f9effd8c',1,'ev-window.c']]],
   ['view_5fbox',['view_box',['../struct__EvWindowPrivate.html#ac38a25c3ca22a91b9a229721f3e4c1a3',1,'_EvWindowPrivate']]],
+  ['view_5fcaret_5fcursor_5fmoved_5fcb',['view_caret_cursor_moved_cb',['../ev-window_8c.html#af97c49a1ec1e9f8d22735609290d83cd',1,'ev-window.c']]],
   ['view_5fexternal_5flink_5fcb',['view_external_link_cb',['../ev-window_8c.html#a9535fb2486ec1ce7f6840a2e4d961058',1,'ev-window.c']]],
   ['view_5ffocus_5fchanged',['view_focus_changed',['../ev-previewer-window_8c.html#a8647a6f2915f6a3f0ef303a38ea9db2f',1,'ev-previewer-window.c']]],
   ['view_5fhandle_5flink_5fcb',['view_handle_link_cb',['../ev-window_8c.html#a5941b7bfb2cbc96bf56da5387c7a4b7c',1,'ev-window.c']]],

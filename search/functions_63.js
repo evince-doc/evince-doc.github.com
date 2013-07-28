@@ -62,5 +62,6 @@ var searchData=
   ['cursor_5fgo_5fto_5fpage_5fend',['cursor_go_to_page_end',['../ev-view_8c.html#a48f30b206a85a436ee4f2ae2ead8dbe8',1,'ev-view.c']]],
   ['cursor_5fgo_5fto_5fpage_5fstart',['cursor_go_to_page_start',['../ev-view_8c.html#af8333e1d1568e329714bb9e3847ba560',1,'ev-view.c']]],
   ['cursor_5fgo_5fto_5fprevious_5fpage',['cursor_go_to_previous_page',['../ev-view_8c.html#ae257cb05be68b56eeae88ce23c4f2e6e',1,'ev-view.c']]],
+  ['cursor_5fis_5fin_5fvisible_5fpage',['cursor_is_in_visible_page',['../ev-view_8c.html#a691f0db8c7f2b66ded75e4dcf7a727a8',1,'ev-view.c']]],
   ['cursor_5fshould_5fblink',['cursor_should_blink',['../ev-view_8c.html#a9e2e01ff1630f50fdb89b8747e52a0de',1,'ev-view.c']]]
 ];

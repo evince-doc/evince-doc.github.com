@@ -1,5 +1,9 @@
 var NAVTREEINDEX26 =
 {
+"structBuffer.html#a24e94f119f4b386771c78cf37aaff41b":[6,0,302,2],
+"structBuffer.html#ab017cc01197319698565f0eab23148ea":[6,0,302,1],
+"structBuffer.html#aeec1fd4af0ddf6765b0187466d4361b8":[6,0,302,0],
+"structCharMetricInfo.html":[6,0,303],
 "structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40":[6,0,303,5],
 "structCharMetricInfo.html#a3b203ccd0888008f4b525b30030b6ab0":[6,0,303,3],
 "structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f":[6,0,303,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX26 =
 "struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322":[6,0,11,0],
 "struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d":[6,0,11,6],
 "struct__CacheJobInfo.html#ae5e58f1b1a94f0e2c26c49f697d4d601":[6,0,11,8],
-"struct__ComicsDocument.html":[6,0,12],
-"struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0":[6,0,12,10],
-"struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d":[6,0,12,5],
-"struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644":[6,0,12,11],
-"struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c":[6,0,12,0]
+"struct__ComicsDocument.html":[6,0,12]
 };
