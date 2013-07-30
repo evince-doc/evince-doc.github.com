@@ -561,11 +561,11 @@ $(document).ready(function(){initNavTree('tiff-document_8c_source.html','');});
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">/* postscript exporter implementation */</span></div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00454"></a><span class="lineno"><a class="code" href="tiff-document_8c.html#a3f4d5a0e8b4094047e46feb88a3829ec">  454</a></span>&#160;<a class="code" href="tiff-document_8c.html#a3f4d5a0e8b4094047e46feb88a3829ec">tiff_document_file_exporter_begin</a> (<a class="code" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a>        *exporter,</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                   <a class="code" href="structEvFileExporterContext.html">EvFileExporterContext</a> *fc)</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                   <a class="code" href="struct__EvFileExporterContext.html">EvFileExporterContext</a> *fc)</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;{</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (exporter);</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> = <a class="code" href="tiff2ps_8c.html#a3732c51227030d6f564af6a3c460c5c8">tiff2ps_context_new</a>(fc-&gt;<a class="code" href="structEvFileExporterContext.html#a876dd34419a746fb882c5da009930198">filename</a>);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> = <a class="code" href="tiff2ps_8c.html#a3732c51227030d6f564af6a3c460c5c8">tiff2ps_context_new</a>(fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;}</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -621,7 +621,7 @@ $(document).ready(function(){initNavTree('tiff-document_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_f91c0c2ccd1873d3fde0d38a68adb014.html">tiff</a></li><li class="navelem"><a class="el" href="tiff-document_8c.html">tiff-document.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 10:05:11 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 12:13:13 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

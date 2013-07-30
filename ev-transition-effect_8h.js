@@ -1,15 +1,15 @@
 var ev_transition_effect_8h =
 [
-    [ "EvTransitionEffect", "structEvTransitionEffect.html", "structEvTransitionEffect" ],
-    [ "EvTransitionEffectClass", "structEvTransitionEffectClass.html", "structEvTransitionEffectClass" ],
+    [ "_EvTransitionEffect", "struct__EvTransitionEffect.html", "struct__EvTransitionEffect" ],
+    [ "_EvTransitionEffectClass", "struct__EvTransitionEffectClass.html", "struct__EvTransitionEffectClass" ],
     [ "EV_IS_TRANSITION_EFFECT", "ev-transition-effect_8h.html#a01a7594959ad9de8438183904cdb7953", null ],
     [ "EV_IS_TRANSITION_EFFECT_CLASS", "ev-transition-effect_8h.html#a5228fbd429d38b7697c689eb2ed34ae8", null ],
     [ "EV_TRANSITION_EFFECT", "ev-transition-effect_8h.html#a6e4f4b772d9e45f5e3184cb7c7a8b63d", null ],
     [ "EV_TRANSITION_EFFECT_CLASS", "ev-transition-effect_8h.html#a62b9b695947911fbff9b07f7aea7a505", null ],
     [ "EV_TRANSITION_EFFECT_GET_CLASS", "ev-transition-effect_8h.html#abcfb94c4111e14ed10b6b07f1634d82b", null ],
     [ "EV_TYPE_TRANSITION_EFFECT", "ev-transition-effect_8h.html#a976a858f182f18b52e56f025ed53df3c", null ],
-    [ "EvTransitionEffect", "ev-transition-effect_8h.html#a31b7a049378340f4c82b44bb0b5e68b9", null ],
-    [ "EvTransitionEffectClass", "ev-transition-effect_8h.html#a25c592380ca8161e6c9af1ec5d40ac9c", null ],
+    [ "EvTransitionEffect", "ev-transition-effect_8h.html#a8dfada7c051aad566ae5db16e94f9b63", null ],
+    [ "EvTransitionEffectClass", "ev-transition-effect_8h.html#a6f8d702202839f96e621817d2ab3fec8", null ],
     [ "EvTransitionEffectAlignment", "ev-transition-effect_8h.html#a884fd00d90c151cc03bc13d9cc8f916e", [
       [ "EV_TRANSITION_ALIGNMENT_HORIZONTAL", "ev-transition-effect_8h.html#a884fd00d90c151cc03bc13d9cc8f916ea886d9221eff3618025710b22ba57b72a", null ],
       [ "EV_TRANSITION_ALIGNMENT_VERTICAL", "ev-transition-effect_8h.html#a884fd00d90c151cc03bc13d9cc8f916eaff77e31d1d3e633334d74c493bba4839", null ]

@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"ev-history_8c.html#aed4d109064ec4adcb80c3c90254efc1b":[7,0,0,7,19,9],
+"ev-history_8c.html#af21da833d54e421dcecfd7aab92a70bd":[7,0,0,7,19,7],
 "ev-history_8c.html#af3557438d34951a04dfe83a450ed5c08":[7,0,0,7,19,13],
 "ev-history_8c_source.html":[7,0,0,7,19],
 "ev-history_8h.html":[7,0,0,7,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "ev-jobs_8h.html#a187774d974c607d19c4ef962aeff81c4":[7,0,0,4,7,163],
 "ev-jobs_8h.html#a1a7e871c51e4ba6bae06f44a7dce51c2":[7,0,0,4,7,69],
 "ev-jobs_8h.html#a1adaba586f0af7cb5fa00d079b45b311":[7,0,0,4,7,175],
-"ev-jobs_8h.html#a1db5112ec5a904dfb1d2a95381e45a09":[7,0,0,4,7,93],
-"ev-jobs_8h.html#a206c6031298dc794cce983ad0fb69539":[7,0,0,4,7,110],
-"ev-jobs_8h.html#a217ff48a4e8bc8e25fd1fe1963578098":[7,0,0,4,7,130]
+"ev-jobs_8h.html#a1db5112ec5a904dfb1d2a95381e45a09":[7,0,0,4,7,93]
 };

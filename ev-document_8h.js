@@ -1,6 +1,6 @@
 var ev_document_8h =
 [
-    [ "EvPoint", "structEvPoint.html", "structEvPoint" ],
+    [ "_EvPoint", "struct__EvPoint.html", "struct__EvPoint" ],
     [ "_EvDocumentBackendInfo", "struct__EvDocumentBackendInfo.html", "struct__EvDocumentBackendInfo" ],
     [ "_EvDocument", "struct__EvDocument.html", "struct__EvDocument" ],
     [ "_EvDocumentClass", "struct__EvDocumentClass.html", "struct__EvDocumentClass" ],
@@ -26,6 +26,7 @@ var ev_document_8h =
     [ "EvDocumentClass", "ev-document_8h.html#a748a508982230ec60caa5cdaa13a6c38", null ],
     [ "EvDocumentPrivate", "ev-document_8h.html#a6d32a60a6e8e3fd3eec59be3cd9ab7e4", null ],
     [ "EvMapping", "ev-document_8h.html#ad16f94ff147b1427a11eedbf4dbe6991", null ],
+    [ "EvPoint", "ev-document_8h.html#a8d870c6ad1238fae7c5c803b5b79e958", null ],
     [ "EvRectangle", "ev-document_8h.html#af8db5b0424c937f5cb5fee739ce7244b", null ],
     [ "EvSourceLink", "ev-document_8h.html#a3b1e601017bbd5766a23621f2ec75a25", null ],
     [ "EvDocumentError", "ev-document_8h.html#a29a831b439bb922d443986244f8c3247", [

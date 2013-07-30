@@ -1,11 +1,12 @@
 var ev_pixbuf_cache_8h =
 [
-    [ "EvViewSelection", "structEvViewSelection.html", "structEvViewSelection" ],
+    [ "_EvViewSelection", "struct__EvViewSelection.html", "struct__EvViewSelection" ],
     [ "EV_IS_PIXBUF_CACHE", "ev-pixbuf-cache_8h.html#a66518808252f701f9a3cf8f27e68eee5", null ],
     [ "EV_PIXBUF_CACHE", "ev-pixbuf-cache_8h.html#a1c3dd089736be1b3e12f5a8be8e723e4", null ],
     [ "EV_TYPE_PIXBUF_CACHE", "ev-pixbuf-cache_8h.html#ac87b181224bdb8c5078bb01edcdae223", null ],
     [ "EvPixbufCache", "ev-pixbuf-cache_8h.html#aa805a49fd4e4295276bb9799b4773471", null ],
     [ "EvPixbufCacheClass", "ev-pixbuf-cache_8h.html#a95893a3263bea26def1840d5792127b4", null ],
+    [ "EvViewSelection", "ev-pixbuf-cache_8h.html#ad05a5f89c2379d311eabadd00ef79de9", null ],
     [ "ev_pixbuf_cache_clear", "ev-pixbuf-cache_8h.html#a78a8701b4ed7c195432fb3252ceb9ba8", null ],
     [ "ev_pixbuf_cache_get_selection_list", "ev-pixbuf-cache_8h.html#a9fe4e370a2a6d59c968d422ef9c28b18", null ],
     [ "ev_pixbuf_cache_get_selection_region", "ev-pixbuf-cache_8h.html#a0b0950297864246fabf8fa1de3b45d6b", null ],

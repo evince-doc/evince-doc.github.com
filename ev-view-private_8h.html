@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <tr class="separator:ae0e760f53072cc44dc1b1757a49081b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8afb6d25a68959e8f5dc74a09fce477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#af8afb6d25a68959e8f5dc74a09fce477">_ev_view_transform_view_rect_to_doc_rect</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, GdkRectangle *view_rect, GdkRectangle *page_area, <a class="el" href="ev-document_8h.html#af8db5b0424c937f5cb5fee739ce7244b">EvRectangle</a> *doc_rect)</td></tr>
 <tr class="separator:af8afb6d25a68959e8f5dc74a09fce477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b05fea97420f6f5da941c85b21615cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#a3b05fea97420f6f5da941c85b21615cf">_ev_view_transform_doc_point_to_view_point</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, int page, <a class="el" href="structEvPoint.html">EvPoint</a> *doc_point, GdkPoint *view_point)</td></tr>
+<tr class="memitem:a3b05fea97420f6f5da941c85b21615cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#a3b05fea97420f6f5da941c85b21615cf">_ev_view_transform_doc_point_to_view_point</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, int page, <a class="el" href="ev-document_8h.html#a8d870c6ad1238fae7c5c803b5b79e958">EvPoint</a> *doc_point, GdkPoint *view_point)</td></tr>
 <tr class="separator:a3b05fea97420f6f5da941c85b21615cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c882e0b7ddf3bf5a611d981a155e4e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, int page, <a class="el" href="ev-document_8h.html#af8db5b0424c937f5cb5fee739ce7244b">EvRectangle</a> *doc_rect, GdkRectangle *view_rect)</td></tr>
 <tr class="separator:a8c882e0b7ddf3bf5a611d981a155e4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,7 +457,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structEvPoint.html">EvPoint</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="ev-document_8h.html#a8d870c6ad1238fae7c5c803b5b79e958">EvPoint</a> *&#160;</td>
           <td class="paramname"><em>doc_point</em>, </td>
         </tr>
         <tr>
@@ -482,32 +482,32 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;</div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    <span class="keywordflow">switch</span> (view-&gt;<a class="code" href="struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83">rotation</a>) {</div>
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;    <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        x = doc_point-&gt;<a class="code" href="structEvPoint.html#ac414b9554b5ee13f1a1e14c9b64402c6">x</a>;</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        y = doc_point-&gt;<a class="code" href="structEvPoint.html#a91678631c3b3dbbf6fe753153ce827b1">y</a>;</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        x = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        y = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;    <span class="keywordflow">case</span> 90: {</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        gdouble width;</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;</div>
 <div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, NULL);</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;        x = width - doc_point-&gt;<a class="code" href="structEvPoint.html#a91678631c3b3dbbf6fe753153ce827b1">y</a>;</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        y = doc_point-&gt;<a class="code" href="structEvPoint.html#ac414b9554b5ee13f1a1e14c9b64402c6">x</a>;</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;        x = width - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        y = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    }</div>
 <div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    <span class="keywordflow">case</span> 180: {</div>
 <div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        gdouble width, height;</div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;</div>
 <div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, &amp;height);</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        x = width - doc_point-&gt;<a class="code" href="structEvPoint.html#ac414b9554b5ee13f1a1e14c9b64402c6">x</a>;</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        y = height - doc_point-&gt;<a class="code" href="structEvPoint.html#a91678631c3b3dbbf6fe753153ce827b1">y</a>;</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        x = width - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        y = height - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;    }</div>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;    <span class="keywordflow">case</span> 270: {</div>
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        gdouble height;</div>
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;</div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, NULL, &amp;height);</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        x = doc_point-&gt;<a class="code" href="structEvPoint.html#a91678631c3b3dbbf6fe753153ce827b1">y</a>;</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        y = height - doc_point-&gt;<a class="code" href="structEvPoint.html#ac414b9554b5ee13f1a1e14c9b64402c6">x</a>;</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        x = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        y = height - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;    }</div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -836,7 +836,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-private_8h.html">ev-view-private.h</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 10:05:16 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 12:13:20 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

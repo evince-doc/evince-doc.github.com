@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 <tr class="separator:acee962811e47be6242249f81461a1370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b9e1eaea669eb908cae9c131e9eb93a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-spectre_8c.html#a0b9e1eaea669eb908cae9c131e9eb93a">ps_document_class_init</a> (<a class="el" href="ev-spectre_8h.html#a51ed4f8e1b3a06802fa05615fff3d877">PSDocumentClass</a> *klass)</td></tr>
 <tr class="separator:a0b9e1eaea669eb908cae9c131e9eb93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb563b00d083d4a86583d28fa8d53af"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-spectre_8c.html#adbb563b00d083d4a86583d28fa8d53af">ps_document_file_exporter_begin</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="structEvFileExporterContext.html">EvFileExporterContext</a> *fc)</td></tr>
+<tr class="memitem:adbb563b00d083d4a86583d28fa8d53af"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-spectre_8c.html#adbb563b00d083d4a86583d28fa8d53af">ps_document_file_exporter_begin</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="ev-file-exporter_8h.html#af9b68d3f969b177257541647daf9c5e2">EvFileExporterContext</a> *fc)</td></tr>
 <tr class="separator:adbb563b00d083d4a86583d28fa8d53af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3875784eb7b02fe6d1760c0ea011c0cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-spectre_8c.html#a3875784eb7b02fe6d1760c0ea011c0cd">ps_document_file_exporter_do_page</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc)</td></tr>
 <tr class="separator:a3875784eb7b02fe6d1760c0ea011c0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,7 +369,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structEvFileExporterContext.html">EvFileExporterContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="ev-file-exporter_8h.html#af9b68d3f969b177257541647daf9c5e2">EvFileExporterContext</a> *&#160;</td>
           <td class="paramname"><em>fc</em>&#160;</td>
         </tr>
         <tr>
@@ -392,7 +392,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span> (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>)</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        spectre_exporter_free (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">switch</span> (fc-&gt;<a class="code" href="structEvFileExporterContext.html#a32d431d58898e9cf2535435a5bbf2b66">format</a>) {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">switch</span> (fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#a873c9e3e6d30f53495c3db6442df90aa">format</a>) {</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ev-file-exporter_8h.html#a1d013ab13dc7a3b12302726538c44f5ea1e93824125713f1336c75100e2d8e55c">EV_FILE_FORMAT_PS</a>:</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a> =</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                spectre_exporter_new (ps-&gt;<a class="code" href="struct__PSDocument.html#a086dcb960ec2d7c16008d10e3eaef207">doc</a>,</div>
@@ -407,7 +407,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            g_assert_not_reached ();</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    spectre_exporter_begin (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>, fc-&gt;<a class="code" href="structEvFileExporterContext.html#a876dd34419a746fb882c5da009930198">filename</a>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    spectre_exporter_begin (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>, fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1252,7 +1252,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_eaf7f042df72726804915beedf8d811d.html">ps</a></li><li class="navelem"><a class="el" href="ev-spectre_8c.html">ev-spectre.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 10:05:13 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 12:13:16 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

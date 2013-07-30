@@ -54,7 +54,7 @@ var searchData=
   ['dual_5fheight_5fto_5fpage',['dual_height_to_page',['../struct__EvHeightToPageCache.html#a3ab2ae3856ea28b7db0d3a5ed6d3ff6d',1,'_EvHeightToPageCache']]],
   ['dual_5fpage',['dual_page',['../struct__EvDocumentModel.html#a2f2cacb8083d4a910932ff2f3d15160c',1,'_EvDocumentModel']]],
   ['dual_5fpage_5fodd_5fleft',['dual_page_odd_left',['../struct__EvDocumentModel.html#a4920162a0d8782c368033c3ffe409057',1,'_EvDocumentModel']]],
-  ['duplex',['duplex',['../structEvFileExporterContext.html#a18382d50caf40375b60e8603661c6b36',1,'EvFileExporterContext']]],
+  ['duplex',['duplex',['../struct__EvFileExporterContext.html#a0ccc2886da014756e23b60e680466236',1,'_EvFileExporterContext']]],
   ['duplexpreamble',['DuplexPreamble',['../tiff2ps_8c.html#aee105c6d702b3adf4ea28e7969d19400',1,'tiff2ps.c']]],
   ['duration',['duration',['../structEvTransitionEffectPrivate.html#a825bfc82da30a0b41e21620a24ccdb22',1,'EvTransitionEffectPrivate::duration()'],['../structEvTimelinePriv.html#abb715d2b9be4908dbe5c2175de4f4e01',1,'EvTimelinePriv::duration()']]],
   ['dvi_5fcommands',['dvi_commands',['../dviread_8c.html#a3ccbe33bcd1444fb556dc0ec43d4798e',1,'dviread.c']]],

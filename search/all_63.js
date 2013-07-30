@@ -129,7 +129,7 @@ var searchData=
   ['copy_5fjob_5fto_5fjob_5finfo',['copy_job_to_job_info',['../ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f',1,'ev-pixbuf-cache.c']]],
   ['count',['count',['../structListHead.html#a0cc9a65fb26615f40dd8309dee79e435',1,'ListHead::count()'],['../struct____synctex__scanner__t.html#aa09bf8eca2508d26805b53e173ecfd65',1,'__synctex_scanner_t::count()']]],
   ['counter',['counter',['../namespacetest-print-combinations.html#a661c2c3d7a7986b20031dff928f731db',1,'test-print-combinations']]],
-  ['covered_5fregion',['covered_region',['../structEvViewSelection.html#a0fb5b864e9121207318639123fde0a64',1,'EvViewSelection']]],
+  ['covered_5fregion',['covered_region',['../struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc',1,'_EvViewSelection']]],
   ['cr',['cr',['../structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76',1,'DviCairoDevice::cr()'],['../struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7',1,'_EvJobPrint::cr()']]],
   ['create_5fblur_5ffilter',['create_blur_filter',['../ev-utils_8c.html#a94c637579ac9aef3ef422ddd85f6c69a',1,'ev-utils.c']]],
   ['create_5ffile_5ffrom_5furi_5ffor_5fformat',['create_file_from_uri_for_format',['../ev-window_8c.html#a9b91a8d01af0f6950d8513d95ff73464',1,'ev-window.c']]],

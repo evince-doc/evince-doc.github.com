@@ -470,14 +470,14 @@ $(document).ready(function(){initNavTree('ev-spectre_8c_source.html','');});
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">/* EvFileExporterIface */</span></div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno"><a class="code" href="ev-spectre_8c.html#adbb563b00d083d4a86583d28fa8d53af">  363</a></span>&#160;<a class="code" href="ev-spectre_8c.html#adbb563b00d083d4a86583d28fa8d53af">ps_document_file_exporter_begin</a> (<a class="code" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a>        *exporter,</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                 <a class="code" href="structEvFileExporterContext.html">EvFileExporterContext</a> *fc)</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                 <a class="code" href="struct__EvFileExporterContext.html">EvFileExporterContext</a> *fc)</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;{</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <a class="code" href="struct__PSDocument.html">PSDocument</a> *ps = <a class="code" href="ev-spectre_8h.html#a677104d56b5e8a6a660c012a40a5874a">PS_DOCUMENT</a> (exporter);</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span> (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>)</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        spectre_exporter_free (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">switch</span> (fc-&gt;<a class="code" href="structEvFileExporterContext.html#a32d431d58898e9cf2535435a5bbf2b66">format</a>) {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">switch</span> (fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#a873c9e3e6d30f53495c3db6442df90aa">format</a>) {</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ev-file-exporter_8h.html#a1d013ab13dc7a3b12302726538c44f5ea1e93824125713f1336c75100e2d8e55c">EV_FILE_FORMAT_PS</a>:</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a> =</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                spectre_exporter_new (ps-&gt;<a class="code" href="struct__PSDocument.html#a086dcb960ec2d7c16008d10e3eaef207">doc</a>,</div>
@@ -492,7 +492,7 @@ $(document).ready(function(){initNavTree('ev-spectre_8c_source.html','');});
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            g_assert_not_reached ();</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    spectre_exporter_begin (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>, fc-&gt;<a class="code" href="structEvFileExporterContext.html#a876dd34419a746fb882c5da009930198">filename</a>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    spectre_exporter_begin (ps-&gt;<a class="code" href="struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db">exporter</a>, fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;}</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -537,7 +537,7 @@ $(document).ready(function(){initNavTree('ev-spectre_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_eaf7f042df72726804915beedf8d811d.html">ps</a></li><li class="navelem"><a class="el" href="ev-spectre_8c.html">ev-spectre.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 10:05:11 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 12:13:13 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

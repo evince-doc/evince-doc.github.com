@@ -53,7 +53,7 @@ var searchData=
   ['copies',['copies',['../namespacetest-print-combinations.html#ae5265252efeb08f9b001a424e76eedd2',1,'test-print-combinations']]],
   ['count',['count',['../structListHead.html#a0cc9a65fb26615f40dd8309dee79e435',1,'ListHead::count()'],['../struct____synctex__scanner__t.html#aa09bf8eca2508d26805b53e173ecfd65',1,'__synctex_scanner_t::count()']]],
   ['counter',['counter',['../namespacetest-print-combinations.html#a661c2c3d7a7986b20031dff928f731db',1,'test-print-combinations']]],
-  ['covered_5fregion',['covered_region',['../structEvViewSelection.html#a0fb5b864e9121207318639123fde0a64',1,'EvViewSelection']]],
+  ['covered_5fregion',['covered_region',['../struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc',1,'_EvViewSelection']]],
   ['cr',['cr',['../structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76',1,'DviCairoDevice::cr()'],['../struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7',1,'_EvJobPrint::cr()']]],
   ['create_5fimage',['create_image',['../struct__DviDevice.html#adbd79d3ba7190df76fbe7190ac30b3b3',1,'_DviDevice']]],
   ['creation_5fdate',['creation_date',['../struct__EvDocumentInfo.html#a75e628bfa7b21b6002fb97dcee2d8f19',1,'_EvDocumentInfo']]],

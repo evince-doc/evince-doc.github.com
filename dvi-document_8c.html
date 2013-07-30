@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <tr class="separator:a44eaa226fe719118fe1423c5e2023ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf967b166fda15a0d5cab8bdfa4fc107"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvi-document_8c.html#aaf967b166fda15a0d5cab8bdfa4fc107">dvi_document_class_init</a> (<a class="el" href="dvi-document_8c.html#ab6e9afbde8202d31a763fba8ca092ab2">DviDocumentClass</a> *klass)</td></tr>
 <tr class="separator:aaf967b166fda15a0d5cab8bdfa4fc107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabce2b05b370d3f32af896e10799bf8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvi-document_8c.html#aabce2b05b370d3f32af896e10799bf8f">dvi_document_file_exporter_begin</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="structEvFileExporterContext.html">EvFileExporterContext</a> *fc)</td></tr>
+<tr class="memitem:aabce2b05b370d3f32af896e10799bf8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvi-document_8c.html#aabce2b05b370d3f32af896e10799bf8f">dvi_document_file_exporter_begin</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="ev-file-exporter_8h.html#af9b68d3f969b177257541647daf9c5e2">EvFileExporterContext</a> *fc)</td></tr>
 <tr class="separator:aabce2b05b370d3f32af896e10799bf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdaaad32399b67b4a2a4cb7049649b4a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvi-document_8c.html#afdaaad32399b67b4a2a4cb7049649b4a">dvi_document_file_exporter_do_page</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc)</td></tr>
 <tr class="separator:afdaaad32399b67b4a2a4cb7049649b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,7 +474,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structEvFileExporterContext.html">EvFileExporterContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="ev-file-exporter_8h.html#af9b68d3f969b177257541647daf9c5e2">EvFileExporterContext</a> *&#160;</td>
           <td class="paramname"><em>fc</em>&#160;</td>
         </tr>
         <tr>
@@ -496,7 +496,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (dvi_document-&gt;<a class="code" href="struct__DviDocument.html#afb0059916a0355b8696474bdbf473212">exporter_filename</a>)</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        g_free (dvi_document-&gt;<a class="code" href="struct__DviDocument.html#afb0059916a0355b8696474bdbf473212">exporter_filename</a>);   </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    dvi_document-&gt;<a class="code" href="struct__DviDocument.html#afb0059916a0355b8696474bdbf473212">exporter_filename</a> = g_strdup (fc-&gt;<a class="code" href="structEvFileExporterContext.html#a876dd34419a746fb882c5da009930198">filename</a>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    dvi_document-&gt;<a class="code" href="struct__DviDocument.html#afb0059916a0355b8696474bdbf473212">exporter_filename</a> = g_strdup (fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    </div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (dvi_document-&gt;<a class="code" href="struct__DviDocument.html#a9f8a2ef0d310ff90873e84ef6bb7ac9e">exporter_opts</a>) {</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        g_string_free (dvi_document-&gt;<a class="code" href="struct__DviDocument.html#a9f8a2ef0d310ff90873e84ef6bb7ac9e">exporter_opts</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
@@ -1482,7 +1482,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dvi-document_8c.html">dvi-document.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 10:05:12 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 12:13:15 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

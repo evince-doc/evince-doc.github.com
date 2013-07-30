@@ -818,13 +818,13 @@ $(document).ready(function(){initNavTree('djvu-document_8c_source.html','');});
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="comment">/* EvFileExporterIface */</span></div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00711"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a26060cce59faf6951dc3eede39b195dc">  711</a></span>&#160;<a class="code" href="djvu-document_8c.html#a26060cce59faf6951dc3eede39b195dc">djvu_document_file_exporter_begin</a> (<a class="code" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a>        *exporter,</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                   <a class="code" href="structEvFileExporterContext.html">EvFileExporterContext</a> *fc)</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                   <a class="code" href="struct__EvFileExporterContext.html">EvFileExporterContext</a> *fc)</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;{</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <a class="code" href="struct__DjvuDocument.html">DjvuDocument</a> *djvu_document = <a class="code" href="djvu-document_8h.html#afc02651ec035062bc9c09dba2b8300e7">DJVU_DOCUMENT</a> (exporter);</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    </div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="keywordflow">if</span> (djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a>)</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        g_free (djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a>);    </div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a> = g_strdup (fc-&gt;<a class="code" href="structEvFileExporterContext.html#a876dd34419a746fb882c5da009930198">filename</a>);</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a> = g_strdup (fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    g_string_assign (djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#a34943233231251f9da01c851cfaff486">opts</a>, <span class="stringliteral">&quot;-page=&quot;</span>);</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;}</div>
@@ -989,7 +989,7 @@ $(document).ready(function(){initNavTree('djvu-document_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_7f6fea2249a761309a503a3fea81b58a.html">djvu</a></li><li class="navelem"><a class="el" href="djvu-document_8c.html">djvu-document.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 10:05:10 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 12:13:13 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

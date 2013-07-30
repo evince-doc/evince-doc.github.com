@@ -9,7 +9,7 @@ var searchData=
   ['watch_5fid',['watch_id',['../structEvDoc.html#a3658554dd787ab53ff6e6613e03c3ef8',1,'EvDoc']]],
   ['web_5fstatement',['web_statement',['../struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641',1,'_EvDocumentLicense']]],
   ['weight',['weight',['../structGlobalFontInfo.html#a06ae98179cd0917834e0a629cff13d7b',1,'GlobalFontInfo']]],
-  ['white',['white',['../ev-view-presentation_8c.html#a003ae2837cf4da075d1ee603d41abeaa',1,'white():&#160;ev-view-presentation.c'],['../gf_8c.html#a87b537f5fa5c109d3c05c13d6b18f382',1,'WHITE():&#160;gf.c']]],
+  ['white',['WHITE',['../gf_8c.html#a87b537f5fa5c109d3c05c13d6b18f382',1,'WHITE():&#160;gf.c'],['../ev-view-presentation_8c.html#a003ae2837cf4da075d1ee603d41abeaa',1,'white():&#160;ev-view-presentation.c']]],
   ['whole_5fwords_5fonly',['whole_words_only',['../struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188',1,'_EggFindBarPrivate']]],
   ['whole_5fwords_5fonly_5fenabled',['whole_words_only_enabled',['../struct__EggFindBarPrivate.html#a0d65596eaf85ee7a9c9043ac54238540',1,'_EggFindBarPrivate']]],
   ['whole_5fwords_5fonly_5ftoggled_5fcallback',['whole_words_only_toggled_callback',['../eggfindbar_8c.html#a844373dd6d08fd707eca0436d69ef6e7',1,'eggfindbar.c']]],

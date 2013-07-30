@@ -6,7 +6,7 @@ var searchData=
   ['recent_5faction_5fgroup',['recent_action_group',['../struct__EvWindowPrivate.html#adb6cfbc1e7aaee3fb092e3c06353f466',1,'_EvWindowPrivate']]],
   ['recent_5fmanager',['recent_manager',['../struct__EvWindowPrivate.html#a834a49301b6f3b2551257784171f384f',1,'_EvWindowPrivate']]],
   ['recent_5fui_5fid',['recent_ui_id',['../struct__EvWindowPrivate.html#a56787859c33132063ff9ee75c305807e',1,'_EvWindowPrivate']]],
-  ['rect',['rect',['../struct__EvAnnotationWindow.html#a9308d541cb04cc83f080c582e91dd068',1,'_EvAnnotationWindow::rect()'],['../structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f',1,'EvViewSelection::rect()']]],
+  ['rect',['rect',['../struct__EvAnnotationWindow.html#a9308d541cb04cc83f080c582e91dd068',1,'_EvAnnotationWindow::rect()'],['../struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc',1,'_EvViewSelection::rect()']]],
   ['rectangle',['rectangle',['../structEvAnnotationMarkupProps.html#a56a1562f8be08682a37a0ef5af35a16b',1,'EvAnnotationMarkupProps']]],
   ['rectangular',['rectangular',['../structEvTransitionEffectPrivate.html#ab195df807c639aca2cb0bb01375d0658',1,'EvTransitionEffectPrivate']]],
   ['ref',['ref',['../struct__DviFontRef.html#a7054aad30286553e48126964d8111257',1,'_DviFontRef']]],

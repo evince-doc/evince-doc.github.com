@@ -219,7 +219,7 @@ var searchData=
   ['dummy_5fdraw_5fglyph',['dummy_draw_glyph',['../dviread_8c.html#ad691ae021bc80df5489593e879077d2e',1,'dviread.c']]],
   ['dummy_5fdraw_5frule',['dummy_draw_rule',['../dviread_8c.html#a9a8a4f1c34e1a10291a34ec076d379a6',1,'dviread.c']]],
   ['dummy_5ffree_5fimage',['dummy_free_image',['../dviread_8c.html#a4b8e066db4a8ae0bfd2b159081bcc5c9',1,'dviread.c']]],
-  ['duplex',['duplex',['../structEvFileExporterContext.html#a18382d50caf40375b60e8603661c6b36',1,'EvFileExporterContext']]],
+  ['duplex',['duplex',['../struct__EvFileExporterContext.html#a0ccc2886da014756e23b60e680466236',1,'_EvFileExporterContext']]],
   ['duplexpreamble',['DuplexPreamble',['../tiff2ps_8c.html#aee105c6d702b3adf4ea28e7969d19400',1,'tiff2ps.c']]],
   ['duration',['duration',['../structEvTransitionEffectPrivate.html#a825bfc82da30a0b41e21620a24ccdb22',1,'EvTransitionEffectPrivate::duration()'],['../structEvTimelinePriv.html#abb715d2b9be4908dbe5c2175de4f4e01',1,'EvTimelinePriv::duration()']]],
   ['dvi_2ddocument_2ec',['dvi-document.c',['../dvi-document_8c.html',1,'']]],

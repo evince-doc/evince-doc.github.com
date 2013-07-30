@@ -220,7 +220,7 @@ Functions</h2></td></tr>
 <tr class="separator:a4d2c6e7ae535815806f5b4ce0dd30750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f90a28dc64b42ec0389fd9a83b24f8"><td class="memItemLeft" align="right" valign="top">static gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#a23f90a28dc64b42ec0389fd9a83b24f8">djvu_document_text_get_text</a> (<a class="el" href="ev-document-text_8h.html#a3cd531e6b6be726f41c5356646bb976e">EvDocumentText</a> *selection, <a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *page)</td></tr>
 <tr class="separator:a23f90a28dc64b42ec0389fd9a83b24f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26060cce59faf6951dc3eede39b195dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#a26060cce59faf6951dc3eede39b195dc">djvu_document_file_exporter_begin</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="structEvFileExporterContext.html">EvFileExporterContext</a> *fc)</td></tr>
+<tr class="memitem:a26060cce59faf6951dc3eede39b195dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#a26060cce59faf6951dc3eede39b195dc">djvu_document_file_exporter_begin</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="ev-file-exporter_8h.html#af9b68d3f969b177257541647daf9c5e2">EvFileExporterContext</a> *fc)</td></tr>
 <tr class="separator:a26060cce59faf6951dc3eede39b195dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bc9257eadb3306324272ced50a0aee1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#a6bc9257eadb3306324272ced50a0aee1">djvu_document_file_exporter_do_page</a> (<a class="el" href="ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d">EvFileExporter</a> *exporter, <a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc)</td></tr>
 <tr class="separator:a6bc9257eadb3306324272ced50a0aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,7 +446,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structEvFileExporterContext.html">EvFileExporterContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="ev-file-exporter_8h.html#af9b68d3f969b177257541647daf9c5e2">EvFileExporterContext</a> *&#160;</td>
           <td class="paramname"><em>fc</em>&#160;</td>
         </tr>
         <tr>
@@ -468,7 +468,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    </div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="keywordflow">if</span> (djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a>)</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        g_free (djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a>);    </div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a> = g_strdup (fc-&gt;<a class="code" href="structEvFileExporterContext.html#a876dd34419a746fb882c5da009930198">filename</a>);</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#afe0f3b121d69bdd67560c2e22a92f310">ps_filename</a> = g_strdup (fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    g_string_assign (djvu_document-&gt;<a class="code" href="struct__DjvuDocument.html#a34943233231251f9da01c851cfaff486">opts</a>, <span class="stringliteral">&quot;-page=&quot;</span>);</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;}</div>
@@ -2514,7 +2514,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_7f6fea2249a761309a503a3fea81b58a.html">djvu</a></li><li class="navelem"><a class="el" href="djvu-document_8c.html">djvu-document.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 10:05:12 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 12:13:15 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

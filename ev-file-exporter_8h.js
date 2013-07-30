@@ -1,6 +1,6 @@
 var ev_file_exporter_8h =
 [
-    [ "EvFileExporterContext", "structEvFileExporterContext.html", "structEvFileExporterContext" ],
+    [ "_EvFileExporterContext", "struct__EvFileExporterContext.html", "struct__EvFileExporterContext" ],
     [ "_EvFileExporterInterface", "struct__EvFileExporterInterface.html", "struct__EvFileExporterInterface" ],
     [ "EV_FILE_EXPORTER", "ev-file-exporter_8h.html#a41be135ffa8b149b29fbb2d259c74635", null ],
     [ "EV_FILE_EXPORTER_GET_IFACE", "ev-file-exporter_8h.html#a7749c17d47fb463cd7eb27b60aa7492f", null ],
@@ -9,6 +9,7 @@ var ev_file_exporter_8h =
     [ "EV_IS_FILE_EXPORTER_IFACE", "ev-file-exporter_8h.html#ad7471b09dfabbbc437d10e2d3d48cb4e", null ],
     [ "EV_TYPE_FILE_EXPORTER", "ev-file-exporter_8h.html#acfdad5d48f5fd4eef16229ecba1bfff1", null ],
     [ "EvFileExporter", "ev-file-exporter_8h.html#a6b2318310518b675ce89e454a67b799d", null ],
+    [ "EvFileExporterContext", "ev-file-exporter_8h.html#af9b68d3f969b177257541647daf9c5e2", null ],
     [ "EvFileExporterInterface", "ev-file-exporter_8h.html#a71e768cee4a094a659b2db67dc49d28a", null ],
     [ "EvFileExporterCapabilities", "ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8", [
       [ "EV_FILE_EXPORTER_CAN_PAGE_SET", "ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8adf0faacc828e5c2b5fdfe3f5353651e6", null ],
