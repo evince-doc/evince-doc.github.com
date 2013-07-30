@@ -1,8 +1,11 @@
 var ev_view_8h =
 [
     [ "EV_IS_VIEW", "ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865", null ],
+    [ "EV_IS_VIEW_CLASS", "ev-view_8h.html#a9cba911bebb5e78edef2a067e8b2c120", null ],
     [ "EV_TYPE_VIEW", "ev-view_8h.html#a2928972fe332f9fd27225da48868acc0", null ],
     [ "EV_VIEW", "ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285", null ],
+    [ "EV_VIEW_CLASS", "ev-view_8h.html#ae77afc40ca32a39e282961b5ae1ab6bd", null ],
+    [ "EV_VIEW_GET_CLASS", "ev-view_8h.html#a77c526d9652147bef1c30400930c87dc", null ],
     [ "EvView", "ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18", null ],
     [ "EvViewClass", "ev-view_8h.html#a894aafa5c6d3a23eb9daddd6d5fd112e", null ],
     [ "ev_view_autoscroll_start", "ev-view_8h.html#a6057c02ba21d898d3e20d091cf642050", null ],

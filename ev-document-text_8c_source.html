@@ -178,24 +178,24 @@ $(document).ready(function(){initNavTree('ev-document-text_8c_source.html','');}
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> iface-&gt;<a class="code" href="struct__EvDocumentTextInterface.html#adfc833822a5e5e9078fdef17cb2330e8">get_text_mapping</a> (document_text, page);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;PangoAttrList *</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="ev-document-text_8h.html#a33e773516a86e5793e54c8902eb34fb9">   73</a></span>&#160;<a class="code" href="ev-document-text_8c.html#a33e773516a86e5793e54c8902eb34fb9">ev_document_text_get_text_attrs</a> (<a class="code" href="ev-document-text_8h.html#a3cd531e6b6be726f41c5356646bb976e">EvDocumentText</a> *document_text,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                 <a class="code" href="struct__EvPage.html">EvPage</a>         *page)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="struct__EvDocumentTextInterface.html">EvDocumentTextInterface</a> *iface = <a class="code" href="ev-document-text_8h.html#af66de69af9f838880523323b95216162">EV_DOCUMENT_TEXT_GET_IFACE</a> (document_text);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (!iface-&gt;<a class="code" href="struct__EvDocumentTextInterface.html#a5581734f8b29189a33fd6280edfeb87c">get_text_attrs</a>)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> iface-&gt;<a class="code" href="struct__EvDocumentTextInterface.html#a5581734f8b29189a33fd6280edfeb87c">get_text_attrs</a> (document_text, page);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;PangoAttrList *</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="ev-document-text_8h.html#a33e773516a86e5793e54c8902eb34fb9">   84</a></span>&#160;<a class="code" href="ev-document-text_8c.html#a33e773516a86e5793e54c8902eb34fb9">ev_document_text_get_text_attrs</a> (<a class="code" href="ev-document-text_8h.html#a3cd531e6b6be726f41c5356646bb976e">EvDocumentText</a> *document_text,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                 <a class="code" href="struct__EvPage.html">EvPage</a>         *page)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="struct__EvDocumentTextInterface.html">EvDocumentTextInterface</a> *iface = <a class="code" href="ev-document-text_8h.html#af66de69af9f838880523323b95216162">EV_DOCUMENT_TEXT_GET_IFACE</a> (document_text);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (!iface-&gt;<a class="code" href="struct__EvDocumentTextInterface.html#a5581734f8b29189a33fd6280edfeb87c">get_text_attrs</a>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> iface-&gt;<a class="code" href="struct__EvDocumentTextInterface.html#a5581734f8b29189a33fd6280edfeb87c">get_text_attrs</a> (document_text, page);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document-text_8c.html">ev-document-text.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 12:13:14 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 18:37:11 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

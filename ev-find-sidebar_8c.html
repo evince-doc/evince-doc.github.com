@@ -1164,12 +1164,12 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a> = 0;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-jobs_8c.html#aff3360cc8da865f38ffd95de1b0db7d7">ev_job_find_has_results</a> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)) {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (<a class="code" href="ev-jobs_8h.html#a8de86fd7bf500d1f0304e70cf6bbaecd">EV_JOB</a> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)))</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (<a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)))</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                        g_clear_object (&amp;priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>);</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        document = <a class="code" href="ev-jobs_8h.html#a8de86fd7bf500d1f0304e70cf6bbaecd">EV_JOB</a> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)-&gt;document;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        document = <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)-&gt;document;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        model = gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>));</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordflow">do</span> {</div>
@@ -1243,7 +1243,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                g_free (areas);</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        } <span class="keywordflow">while</span> (current_page != priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a21218d53b1877d573879a4f65692645d">job_current_page</a>);</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (<a class="code" href="ev-jobs_8h.html#a8de86fd7bf500d1f0304e70cf6bbaecd">EV_JOB</a> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)) &amp;&amp; priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a39b379efc772d30e1775976b1aa61975">current_page</a> == priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>) {</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (<a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)) &amp;&amp; priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a39b379efc772d30e1775976b1aa61975">current_page</a> == priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>) {</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                gint index = 0;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                gint i;</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
@@ -1473,7 +1473,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-find-sidebar_8c.html">ev-find-sidebar.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 12:13:22 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 18:37:20 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

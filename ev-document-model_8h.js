@@ -1,7 +1,10 @@
 var ev_document_model_8h =
 [
     [ "EV_DOCUMENT_MODEL", "ev-document-model_8h.html#a79ccc679af564dcb82040625d1fb52f1", null ],
+    [ "EV_DOCUMENT_MODEL_CLASS", "ev-document-model_8h.html#a01b7b9e8e21df9847b8cbbeeac21e8f3", null ],
+    [ "EV_DOCUMENT_MODEL_GET_CLASS", "ev-document-model_8h.html#aa19f3a112f34e43a1d5601f3e2affb95", null ],
     [ "EV_IS_DOCUMENT_MODEL", "ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4", null ],
+    [ "EV_IS_DOCUMENT_MODEL_CLASS", "ev-document-model_8h.html#a172756eada229c5968160534834a612e", null ],
     [ "EV_TYPE_DOCUMENT_MODEL", "ev-document-model_8h.html#a8fb246bf23bde49e9edcca57a6c83f2a", null ],
     [ "EvDocumentModel", "ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d", null ],
     [ "EvDocumentModelClass", "ev-document-model_8h.html#a13c9659fc80c08227730eee79e55efb9", null ],

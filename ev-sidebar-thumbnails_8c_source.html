@@ -465,7 +465,7 @@ $(document).ready(function(){initNavTree('ev-sidebar-thumbnails_8c_source.html',
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">if</span> (job) {</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            g_signal_handlers_disconnect_by_func (job, <a class="code" href="ev-sidebar-thumbnails_8c.html#a9246ad14337dcb65f0f3e30c5248e982">thumbnail_job_completed_callback</a>, sidebar_thumbnails);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="ev-jobs_8c.html#a3d29a0151f777cef7b568d8359f7acea">ev_job_cancel</a> (<a class="code" href="ev-jobs_8h.html#a8de86fd7bf500d1f0304e70cf6bbaecd">EV_JOB</a> (job));</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="ev-jobs_8c.html#a3d29a0151f777cef7b568d8359f7acea">ev_job_cancel</a> (<a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job));</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            g_object_unref (job);</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        }</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
@@ -531,7 +531,7 @@ $(document).ready(function(){initNavTree('ev-sidebar-thumbnails_8c_source.html',
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            job = <a class="code" href="ev-jobs_8c.html#ab7dc8b237cbca031d7b621ba1d8701e1">ev_job_thumbnail_new</a> (priv-&gt;<a class="code" href="struct__EvSidebarThumbnailsPrivate.html#a6489016792c26922f3b03ba0ad764d19">document</a>,</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                            page, priv-&gt;<a class="code" href="struct__EvSidebarThumbnailsPrivate.html#a2fddd1250aa359a7e3dab95475dd2bd7">rotation</a>,</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                            <a class="code" href="ev-sidebar-thumbnails_8c.html#a9d63a7b44d209ae546b7aeef64f819f0">get_scale_for_page</a> (sidebar_thumbnails, page));</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                        <a class="code" href="ev-jobs_8c.html#a91c41c7707b35e06a6cbadb3d1d03610">ev_job_thumbnail_set_has_frame</a> (<a class="code" href="ev-jobs_8h.html#a048deb06625d04c2075965ea99562971">EV_JOB_THUMBNAIL</a> (job), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                        <a class="code" href="ev-jobs_8c.html#a91c41c7707b35e06a6cbadb3d1d03610">ev_job_thumbnail_set_has_frame</a> (<a class="code" href="ev-jobs_8h.html#af177d3f1b0a03856741a9fca063a7661">EV_JOB_THUMBNAIL</a> (job), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            g_object_set_data_full (G_OBJECT (job), <span class="stringliteral">&quot;tree_iter&quot;</span>,</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                        gtk_tree_iter_copy (&amp;iter),</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                        (GDestroyNotify) gtk_tree_iter_free);</div>
@@ -541,7 +541,7 @@ $(document).ready(function(){initNavTree('ev-sidebar-thumbnails_8c_source.html',
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            gtk_list_store_set (priv-&gt;<a class="code" href="struct__EvSidebarThumbnailsPrivate.html#aaf424d0cfe194eeb5713bbf0c227fb24">list_store</a>, &amp;iter,</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                        <a class="code" href="ev-sidebar-thumbnails_8c.html#aa618c4d8c29ef4efe6f10c741fb1f47aa73e096a1a883c600477ec0260b9378db">COLUMN_JOB</a>, job,</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                        -1);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (<a class="code" href="ev-jobs_8h.html#a8de86fd7bf500d1f0304e70cf6bbaecd">EV_JOB</a> (job), <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a8e7a3b2d16f006fa56e810c5b3874ccc">EV_JOB_PRIORITY_HIGH</a>);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (<a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job), <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a8e7a3b2d16f006fa56e810c5b3874ccc">EV_JOB_PRIORITY_HIGH</a>);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            </div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            <span class="comment">/* The queue and the list own a ref to the job now */</span></div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            g_object_unref (job);</div>
@@ -1082,7 +1082,7 @@ $(document).ready(function(){initNavTree('ev-sidebar-thumbnails_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-thumbnails_8c.html">ev-sidebar-thumbnails.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 12:13:14 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 18:37:12 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

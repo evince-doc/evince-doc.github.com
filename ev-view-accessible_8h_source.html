@@ -135,39 +135,42 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8h_source.html','')
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __EV_VIEW_ACCESSIBLE_H__</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;gtk/gtk-a11y.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a6ead0f8fc5ac85a15d87b0257b101217">   30</a></span>&#160;<span class="preprocessor">#define EV_TYPE_VIEW_ACCESSIBLE      (ev_view_accessible_get_type ())</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_VIEW_ACCESSIBLE(obj)      (G_TYPE_CHECK_INSTANCE_CAST ((obj), EV_TYPE_VIEW_ACCESSIBLE, EvViewAccessible))</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">   32</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_IS_VIEW_ACCESSIBLE(obj)   (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EV_TYPE_VIEW_ACCESSIBLE))</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a5f753ae10cb7f541522f754dac41bd6e">   34</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvViewAccessible.html">_EvViewAccessible</a>        <a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a98de719b76675d320edb9cea81081e56">   35</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvViewAccessibleClass.html">_EvViewAccessibleClass</a>   <a class="code" href="struct__EvViewAccessibleClass.html">EvViewAccessibleClass</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#aed0a3bfd2cab256b58039a9f5555670c">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvViewAccessiblePrivate.html">_EvViewAccessiblePrivate</a> <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="struct__EvViewAccessible.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvViewAccessible.html">_EvViewAccessible</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="struct__EvViewAccessible.html#af3230e51a90ef5f9ffd51b09f6d68195">   40</a></span>&#160;    GtkContainerAccessible <a class="code" href="struct__EvViewAccessible.html#af3230e51a90ef5f9ffd51b09f6d68195">parent</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">   42</a></span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a> *<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="struct__EvViewAccessibleClass.html">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvViewAccessibleClass.html">_EvViewAccessibleClass</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="struct__EvViewAccessibleClass.html#a360f54427cbd653b50cfa8ba5de33f47">   47</a></span>&#160;    GtkContainerAccessibleClass <a class="code" href="struct__EvViewAccessibleClass.html#a360f54427cbd653b50cfa8ba5de33f47">parent_class</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;GType      <a class="code" href="ev-view-accessible_8h.html#aa5a343e2203c6e21dea71bcd37bed4bf">ev_view_accessible_get_type</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;AtkObject *<a class="code" href="ev-view-accessible_8c.html#a6f000f2ced1e1216e1752eb726c32b6b">ev_view_accessible_new</a>      (GtkWidget *widget);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* __EV_VIEW_ACCESSIBLE_H__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-document-model_8h.html">ev-document-model.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a6ead0f8fc5ac85a15d87b0257b101217">   31</a></span>&#160;<span class="preprocessor">#define EV_TYPE_VIEW_ACCESSIBLE      (ev_view_accessible_get_type ())</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">   32</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_VIEW_ACCESSIBLE(obj)      (G_TYPE_CHECK_INSTANCE_CAST ((obj), EV_TYPE_VIEW_ACCESSIBLE, EvViewAccessible))</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">   33</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_IS_VIEW_ACCESSIBLE(obj)   (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EV_TYPE_VIEW_ACCESSIBLE))</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a5f753ae10cb7f541522f754dac41bd6e">   35</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvViewAccessible.html">_EvViewAccessible</a>        <a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a98de719b76675d320edb9cea81081e56">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvViewAccessibleClass.html">_EvViewAccessibleClass</a>   <a class="code" href="struct__EvViewAccessibleClass.html">EvViewAccessibleClass</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#aed0a3bfd2cab256b58039a9f5555670c">   37</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvViewAccessiblePrivate.html">_EvViewAccessiblePrivate</a> <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="struct__EvViewAccessible.html">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvViewAccessible.html">_EvViewAccessible</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="struct__EvViewAccessible.html#af3230e51a90ef5f9ffd51b09f6d68195">   41</a></span>&#160;    GtkContainerAccessible <a class="code" href="struct__EvViewAccessible.html#af3230e51a90ef5f9ffd51b09f6d68195">parent</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">   43</a></span>&#160;    <a class="code" href="struct__EvViewAccessiblePrivate.html">EvViewAccessiblePrivate</a> *<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="struct__EvViewAccessibleClass.html">   46</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvViewAccessibleClass.html">_EvViewAccessibleClass</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="struct__EvViewAccessibleClass.html#a360f54427cbd653b50cfa8ba5de33f47">   48</a></span>&#160;    GtkContainerAccessibleClass <a class="code" href="struct__EvViewAccessibleClass.html#a360f54427cbd653b50cfa8ba5de33f47">parent_class</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;GType      <a class="code" href="ev-view-accessible_8h.html#aa5a343e2203c6e21dea71bcd37bed4bf">ev_view_accessible_get_type</a>  (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;AtkObject *<a class="code" href="ev-view-accessible_8c.html#a6f000f2ced1e1216e1752eb726c32b6b">ev_view_accessible_new</a>       (GtkWidget *widget);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-view-accessible_8c.html#a2285e940b9609cafe9b04fb39a1636dc">ev_view_accessible_set_model</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                     <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a>  *model);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* __EV_VIEW_ACCESSIBLE_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8h.html">ev-view-accessible.h</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 12:13:14 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 18:37:12 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

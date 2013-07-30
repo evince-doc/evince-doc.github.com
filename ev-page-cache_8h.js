@@ -1,7 +1,10 @@
 var ev_page_cache_8h =
 [
     [ "EV_IS_PAGE_CACHE", "ev-page-cache_8h.html#aa6e6f38cedb168efeb3b5cc10d018e4c", null ],
+    [ "EV_IS_PAGE_CACHE_CLASS", "ev-page-cache_8h.html#ae3eb06ceeb225cd3c855f343360279c7", null ],
     [ "EV_PAGE_CACHE", "ev-page-cache_8h.html#af580630a0e595c72e03286f23e4391e9", null ],
+    [ "EV_PAGE_CACHE_CLASS", "ev-page-cache_8h.html#afa9eb0213f1e3d51ca4ea85c4170f98f", null ],
+    [ "EV_PAGE_CACHE_GET_CLASS", "ev-page-cache_8h.html#aab13b2c74ed4c0aaf1a563f56fd1b621", null ],
     [ "EV_TYPE_PAGE_CACHE", "ev-page-cache_8h.html#ab60018f54cfc6af2e747e7a5d818996d", null ],
     [ "EvPageCache", "ev-page-cache_8h.html#ae0a6f5b5b809d282143d6701b6bcc33f", null ],
     [ "EvPageCacheClass", "ev-page-cache_8h.html#a96c04358c16dc3ec1cf9290aa05161f1", null ],

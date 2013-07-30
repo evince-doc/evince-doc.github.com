@@ -1,9 +1,10 @@
 var ev_print_operation_8h =
 [
-    [ "EV_IS_PRINT_OPERATION", "ev-print-operation_8h.html#a6b47e0bed183212fb19248436b733272", null ],
-    [ "EV_PRINT_OPERATION", "ev-print-operation_8h.html#a1db1467b07b376fa63dcc6fc4c80a571", null ],
+    [ "EV_IS_PRINT_OPERATION", "ev-print-operation_8h.html#a78ecab5322a4a4cbfeaaebfb284619bd", null ],
+    [ "EV_IS_PRINT_OPERATION_CLASS", "ev-print-operation_8h.html#a470d2343c72e791a9e185019a67bc972", null ],
+    [ "EV_PRINT_OPERATION", "ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5", null ],
     [ "EV_PRINT_OPERATION_CLASS", "ev-print-operation_8h.html#a35ef4a289bbea83a2ca8e81a826e6ab8", null ],
-    [ "EV_PRINT_OPERATION_GET_CLASS", "ev-print-operation_8h.html#a809970ec5955dc7018c8692270b92bdc", null ],
+    [ "EV_PRINT_OPERATION_GET_CLASS", "ev-print-operation_8h.html#ae16dcef32fbe84d4702dc78a9b7bfc53", null ],
     [ "EV_TYPE_PRINT_OPERATION", "ev-print-operation_8h.html#a5acbc03389b0620e6218a3e814536d09", null ],
     [ "EvPrintOperation", "ev-print-operation_8h.html#abf62d4e670ad39601312aefd31d17931", null ],
     [ "EvPrintOperationClass", "ev-print-operation_8h.html#afb6fdacba2c4fe5215b86f537f150bc5", null ],

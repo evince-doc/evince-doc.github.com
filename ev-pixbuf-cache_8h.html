@@ -464,7 +464,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    <span class="comment">/* If we have a running job, we just return what we have under the</span></div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;<span class="comment">     * assumption that it&#39;ll be updated later and we can scale it as need</span></div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;<span class="comment">     * be */</span></div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp; <a class="code" href="ev-jobs_8h.html#add315f9ee445ff35198a1263a312758d">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;include_selection)</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp; <a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;include_selection)</div>
 <div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> &amp;&amp; !cairo_region_is_empty(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>) ?</div>
 <div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;                        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> : NULL;</div>
 <div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;</div>
@@ -560,7 +560,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    <span class="comment">/* If we have a running job, we just return what we have under the</span></div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;<span class="comment">     * assumption that it&#39;ll be updated later and we can scale it as need</span></div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;<span class="comment">     * be */</span></div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp; <a class="code" href="ev-jobs_8h.html#add315f9ee445ff35198a1263a312758d">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;include_selection)</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp; <a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;include_selection)</div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;        <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180">selection</a>;</div>
 <div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;</div>
 <div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;    <span class="comment">/* Now, lets see if we need to resize the image.  If we do, we clear the</span></div>
@@ -655,8 +655,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    <span class="comment">/* We don&#39;t need to wait for the idle to handle the callback */</span></div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <a class="code" href="ev-jobs_8h.html#add315f9ee445ff35198a1263a312758d">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;page_ready) {</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f">copy_job_to_job_info</a> (<a class="code" href="ev-jobs_8h.html#add315f9ee445ff35198a1263a312758d">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>), job_info, pixbuf_cache);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;page_ready) {</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f">copy_job_to_job_info</a> (<a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>), job_info, pixbuf_cache);</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        g_signal_emit (pixbuf_cache, <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#a0ed680fdb405e7195d9f14032851eebbad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>], 0, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786">region</a>);</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    }</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;</div>
@@ -1194,7 +1194,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-pixbuf-cache_8h.html">ev-pixbuf-cache.h</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 12:13:19 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 18:37:18 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

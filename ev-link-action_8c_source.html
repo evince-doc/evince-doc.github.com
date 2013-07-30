@@ -556,50 +556,50 @@ $(document).ready(function(){initNavTree('ev-link-action_8c_source.html','');});
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                         NULL));</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;}</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;gboolean</div>
-<div class="line"><a name="l00483"></a><span class="lineno"><a class="code" href="ev-link-action_8h.html#aa463ae729b4c8e283aa5c2111276146a">  483</a></span>&#160;<a class="code" href="ev-link-action_8c.html#aa463ae729b4c8e283aa5c2111276146a">ev_link_action_equal</a> (<a class="code" href="ev-link-action_8h.html#a1b9b4cf94e3e2ef4821f5badb79f472c">EvLinkAction</a> *a,</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                      <a class="code" href="ev-link-action_8h.html#a1b9b4cf94e3e2ef4821f5badb79f472c">EvLinkAction</a> *b)</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;{</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-link-action_8h.html#a8f6fd7e5a264fa36f434f7274d7fd658">EV_IS_LINK_ACTION</a> (a), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-link-action_8h.html#a8f6fd7e5a264fa36f434f7274d7fd658">EV_IS_LINK_ACTION</a> (b), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keywordflow">if</span> (a == b)</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <span class="keywordflow">if</span> (a-&gt;priv-&gt;type != b-&gt;priv-&gt;type)</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keywordflow">switch</span> (a-&gt;priv-&gt;type) {</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a732da72728cc86b5058ec03aea40f6c5">EV_LINK_ACTION_TYPE_GOTO_DEST</a>:</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="ev-link-dest_8c.html#a1d8a247632a60781103db6ec4a6d231e">ev_link_dest_equal</a> (a-&gt;priv-&gt;dest, b-&gt;priv-&gt;dest);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a9f767201d6e7dfdf23db923a323792ba">EV_LINK_ACTION_TYPE_GOTO_REMOTE</a>:</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="ev-link-dest_8c.html#a1d8a247632a60781103db6ec4a6d231e">ev_link_dest_equal</a> (a-&gt;priv-&gt;dest, b-&gt;priv-&gt;dest) &amp;&amp;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                        !g_strcmp0 (a-&gt;priv-&gt;filename, b-&gt;priv-&gt;filename);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;gboolean</div>
+<div class="line"><a name="l00494"></a><span class="lineno"><a class="code" href="ev-link-action_8h.html#aa463ae729b4c8e283aa5c2111276146a">  494</a></span>&#160;<a class="code" href="ev-link-action_8c.html#aa463ae729b4c8e283aa5c2111276146a">ev_link_action_equal</a> (<a class="code" href="ev-link-action_8h.html#a1b9b4cf94e3e2ef4821f5badb79f472c">EvLinkAction</a> *a,</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                      <a class="code" href="ev-link-action_8h.html#a1b9b4cf94e3e2ef4821f5badb79f472c">EvLinkAction</a> *b)</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;{</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-link-action_8h.html#a8f6fd7e5a264fa36f434f7274d7fd658">EV_IS_LINK_ACTION</a> (a), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-link-action_8h.html#a8f6fd7e5a264fa36f434f7274d7fd658">EV_IS_LINK_ACTION</a> (b), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        <span class="keywordflow">if</span> (a == b)</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a64241e362318b36f4ad576ee6b38a5a0">EV_LINK_ACTION_TYPE_EXTERNAL_URI</a>:</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                <span class="keywordflow">return</span> !g_strcmp0 (a-&gt;priv-&gt;uri, b-&gt;priv-&gt;uri);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="keywordflow">if</span> (a-&gt;priv-&gt;type != b-&gt;priv-&gt;type)</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057ae39dd1c73a41a3a14d897e431c64ab86">EV_LINK_ACTION_TYPE_LAUNCH</a>:</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                <span class="keywordflow">return</span> !g_strcmp0 (a-&gt;priv-&gt;filename, b-&gt;priv-&gt;filename) &amp;&amp;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                        !g_strcmp0 (a-&gt;priv-&gt;params, b-&gt;priv-&gt;params);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keywordflow">switch</span> (a-&gt;priv-&gt;type) {</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a732da72728cc86b5058ec03aea40f6c5">EV_LINK_ACTION_TYPE_GOTO_DEST</a>:</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="ev-link-dest_8c.html#a1d8a247632a60781103db6ec4a6d231e">ev_link_dest_equal</a> (a-&gt;priv-&gt;dest, b-&gt;priv-&gt;dest);</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a0114499e8e5ef32b3aaa04822c4e0ccb">EV_LINK_ACTION_TYPE_NAMED</a>:</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                <span class="keywordflow">return</span> !g_strcmp0 (a-&gt;priv-&gt;name, b-&gt;priv-&gt;name);</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        }</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a9f767201d6e7dfdf23db923a323792ba">EV_LINK_ACTION_TYPE_GOTO_REMOTE</a>:</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="ev-link-dest_8c.html#a1d8a247632a60781103db6ec4a6d231e">ev_link_dest_equal</a> (a-&gt;priv-&gt;dest, b-&gt;priv-&gt;dest) &amp;&amp;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                        !g_strcmp0 (a-&gt;priv-&gt;filename, b-&gt;priv-&gt;filename);</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a64241e362318b36f4ad576ee6b38a5a0">EV_LINK_ACTION_TYPE_EXTERNAL_URI</a>:</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                <span class="keywordflow">return</span> !g_strcmp0 (a-&gt;priv-&gt;uri, b-&gt;priv-&gt;uri);</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;}</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057ae39dd1c73a41a3a14d897e431c64ab86">EV_LINK_ACTION_TYPE_LAUNCH</a>:</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                <span class="keywordflow">return</span> !g_strcmp0 (a-&gt;priv-&gt;filename, b-&gt;priv-&gt;filename) &amp;&amp;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                        !g_strcmp0 (a-&gt;priv-&gt;params, b-&gt;priv-&gt;params);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a0114499e8e5ef32b3aaa04822c4e0ccb">EV_LINK_ACTION_TYPE_NAMED</a>:</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                <span class="keywordflow">return</span> !g_strcmp0 (a-&gt;priv-&gt;name, b-&gt;priv-&gt;name);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-link-action_8c.html">ev-link-action.c</a></li>
-    <li class="footer">Generated on Tue Jul 30 2013 12:13:14 for Evince by
+    <li class="footer">Generated on Tue Jul 30 2013 18:37:12 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

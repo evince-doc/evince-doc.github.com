@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['page_20index',['page index',['../a.html',1,'']]],
   ['p7zip',['P7ZIP',['../comics-document_8c.html#af40458a768dbbfcedefd3c17e83aeeb7a4c74a4bce9fa72467aab096f3c5bdfed',1,'comics-document.c']]],
   ['p_5fall',['P_ALL',['../afmparse_8h.html#a26b749d3a74e5845386a8fa5597579a7',1,'afmparse.h']]],
   ['p_5fc',['P_C',['../afmparse_8h.html#ae00597328874555d852fcc641ce61e22',1,'afmparse.h']]],
@@ -18,7 +17,7 @@ var searchData=
   ['page_5fcache_5flen',['PAGE_CACHE_LEN',['../ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b',1,'ev-pixbuf-cache.c']]],
   ['page_5fcache_5fsize_5fchanged',['page_cache_size_changed',['../ev-window_8c.html#a1c4a47eb3ffe13b716331eb66b596e5b',1,'ev-window.c']]],
   ['page_5fchanged',['page_changed',['../struct__EvDocumentModelClass.html#aab469e4b893063321a307ad8587611c3',1,'_EvDocumentModelClass::page_changed()'],['../ev-document-model_8c.html#a7ff5f2dff38e7639981794c43dc9167ba54b3c40a7172a9ea3011f3b45a8450cf',1,'PAGE_CHANGED():&#160;ev-document-model.c']]],
-  ['page_5fchanged_5fcb',['page_changed_cb',['../ev-page-action-widget_8c.html#a7b35fa9dba9d98df3f0d53210da86293',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-history_8c.html#a4e5024ca89ab0fc9394e26dcc1f65930',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvHistory *history):&#160;ev-history.c'],['../ev-sidebar-thumbnails_8c.html#acca28ecfc7059f0365d53be3a7f9b5d5',1,'page_changed_cb(EvSidebarThumbnails *sidebar, gint old_page, gint new_page):&#160;ev-sidebar-thumbnails.c']]],
+  ['page_5fchanged_5fcb',['page_changed_cb',['../ev-page-action-widget_8c.html#a7b35fa9dba9d98df3f0d53210da86293',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-view-accessible_8c.html#ac3b3b8499a3baca2c583c801b4cd273f',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvViewAccessible *accessible):&#160;ev-view-accessible.c'],['../ev-history_8c.html#a4e5024ca89ab0fc9394e26dcc1f65930',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvHistory *history):&#160;ev-history.c'],['../ev-sidebar-thumbnails_8c.html#acca28ecfc7059f0365d53be3a7f9b5d5',1,'page_changed_cb(EvSidebarThumbnails *sidebar, gint old_page, gint new_page):&#160;ev-sidebar-thumbnails.c']]],
   ['page_5fchanged_5fhandler_5fid',['page_changed_handler_id',['../struct__EvHistoryPrivate.html#a273cfe7bfe8fb853d8adb8d3fc7bb177',1,'_EvHistoryPrivate']]],
   ['page_5fchanged_5fid',['page_changed_id',['../struct__EvSidebarLinksPrivate.html#a7304adbdaf01c10a08d972513dc2650d',1,'_EvSidebarLinksPrivate']]],
   ['page_5fcolumn',['PAGE_COLUMN',['../ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39acebfe1e1ba71692b7abde0f8a7fc9bcc',1,'ev-find-sidebar.c']]],

@@ -67,7 +67,7 @@ var searchData=
   ['currbyte',['currbyte',['../structpkread.html#a94dfb8b81d1082ea263eb7f7644d21f8',1,'pkread']]],
   ['current',['current',['../struct__EvHistoryPrivate.html#a42648c828c41885f26534d9bbd0ebf45',1,'_EvHistoryPrivate']]],
   ['current_5fjob',['current_job',['../struct__EvView.html#a4fbab6fb948f3fa3deb0e5e770530087',1,'_EvView']]],
-  ['current_5fpage',['current_page',['../struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f',1,'_EvJobFind::current_page()'],['../struct__EvViewAccessiblePrivate.html#a712db9bc094b9dc0887217752935fa45',1,'_EvViewAccessiblePrivate::current_page()'],['../struct__EvViewPresentation.html#a25af432737beac10ebb7f9180c14ed55',1,'_EvViewPresentation::current_page()'],['../struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61',1,'_EvView::current_page()'],['../struct__EvFindSidebarPrivate.html#a39b379efc772d30e1775976b1aa61975',1,'_EvFindSidebarPrivate::current_page()']]],
+  ['current_5fpage',['current_page',['../struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f',1,'_EvJobFind::current_page()'],['../struct__EvViewPresentation.html#a25af432737beac10ebb7f9180c14ed55',1,'_EvViewPresentation::current_page()'],['../struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61',1,'_EvView::current_page()'],['../struct__EvFindSidebarPrivate.html#a39b379efc772d30e1775976b1aa61975',1,'_EvFindSidebarPrivate::current_page()']]],
   ['current_5fsurface',['current_surface',['../struct__EvViewPresentation.html#aef69171031e41fd355203437a647fa89',1,'_EvViewPresentation']]],
   ['currfont',['currfont',['../struct__DviContext.html#a52e0ca7e9256095716396831d37f0ca3',1,'_DviContext']]],
   ['currpage',['currpage',['../struct__DviContext.html#a5d6a9b4b6f2149ebb91b2561d67a71da',1,'_DviContext']]],
