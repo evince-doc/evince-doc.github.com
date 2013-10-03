@@ -1,5 +1,15 @@
 var NAVTREEINDEX33 =
 {
+"struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe":[6,0,279,2],
+"struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3":[6,0,279,27],
+"struct__EvWindowPrivate.html#a0fcf90a8e2385fcb8430b06cc1fa3ec7":[6,0,279,40],
+"struct__EvWindowPrivate.html#a1066fa9e9305466a5a4121481a91aa4b":[6,0,279,7],
+"struct__EvWindowPrivate.html#a1661a0fdbbe3ca825479fe483a79866f":[6,0,279,46],
+"struct__EvWindowPrivate.html#a1e3b0ea10182fffc59e462310d03f992":[6,0,279,15],
+"struct__EvWindowPrivate.html#a22220ddd73502e450597d59e89c74a23":[6,0,279,65],
+"struct__EvWindowPrivate.html#a2460e2bc96977f197d4d297c55b087fe":[6,0,279,20],
+"struct__EvWindowPrivate.html#a29deab483e36630fad2b53d386284c2a":[6,0,279,30],
+"struct__EvWindowPrivate.html#a2a2a2714cefa31573971203929c308ca":[6,0,279,3],
 "struct__EvWindowPrivate.html#a2ad2bfe37a8bc7663b3c2b5e75fbb395":[6,0,279,57],
 "struct__EvWindowPrivate.html#a3030ebad0f35c97e35420a63b703b102":[6,0,279,73],
 "struct__EvWindowPrivate.html#a338f0ad420f5bed5155a8c50d241b886":[6,0,279,33],
@@ -239,15 +249,5 @@ var NAVTREEINDEX33 =
 "struct____synctex__updater__t.html":[6,0,10],
 "struct____synctex__updater__t.html#a1de70c5930356a900a1d2abe4255b8d4":[6,0,10,2],
 "struct____synctex__updater__t.html#a32167da63c7a9787f6af3a06150afcf4":[6,0,10,1],
-"struct____synctex__updater__t.html#a46b15c92f83b585176dc0b39bce363c3":[6,0,10,3],
-"struct____synctex__updater__t.html#ae675c2ae1794c2f15d7a492253bb38e5":[6,0,10,4],
-"struct____synctex__updater__t_1_1__flags.html":[6,0,10,0],
-"struct____synctex__updater__t_1_1__flags.html#a7f827bf39798bea0e45acf68573b038d":[6,0,10,0,0],
-"struct____synctex__updater__t_1_1__flags.html#aa2305297befe75aa440a913f1814af30":[6,0,10,0,1],
-"struct__synctex__node.html":[6,0,297],
-"struct__synctex__node.html#a46dbe73756d0ea08474584f727459707":[6,0,297,0],
-"struct__synctex__node.html#a90104714ec188d99a3e914363b67e7f1":[6,0,297,1],
-"struct__t__ligature.html":[6,0,298],
-"struct__t__ligature.html#a55a1e9e074395caa0d50d7ae6650f8f7":[6,0,298,2],
-"struct__t__ligature.html#a8fd51233f839326ea23717828a91a5d7":[6,0,298,1]
+"struct____synctex__updater__t.html#a46b15c92f83b585176dc0b39bce363c3":[6,0,10,3]
 };

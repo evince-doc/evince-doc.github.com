@@ -75,6 +75,7 @@ var searchData=
   ['document_5fmodified_5fconfirmation_5fdialog_5fresponse',['document_modified_confirmation_dialog_response',['../ev-window_8c.html#a878d5a2118b3ac594c2e7f37b886838a',1,'ev-window.c']]],
   ['draw_5fbox',['draw_box',['../dviread_8c.html#a9dd8bde60a5665cd713672e9f4214d6e',1,'dviread.c']]],
   ['draw_5fcaret_5fcursor',['draw_caret_cursor',['../ev-view_8c.html#a4083c6f51b63cfd1596d159fdc07d01d',1,'ev-view.c']]],
+  ['draw_5ffocus',['draw_focus',['../ev-view_8c.html#ae40b4514377175f23c45e4c387115605',1,'ev-view.c']]],
   ['draw_5fone_5fpage',['draw_one_page',['../ev-view_8c.html#ae896af4e2e5c1437eff5b15a1dc24d6e',1,'ev-view.c']]],
   ['draw_5fpage_5ffinish_5fidle',['draw_page_finish_idle',['../ev-print-operation_8c.html#ac4449618e7b3a82ff012c62fe4eb48da',1,'ev-print-operation.c']]],
   ['draw_5frubberband',['draw_rubberband',['../ev-view_8c.html#a92517078c6541db0d58e0c5563c0bc2f',1,'ev-view.c']]],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"ev-properties-fonts_8h.html#ad766cfbf1b3b50876d2f823c56a56510":[7,0,0,7,40,1],
+"ev-properties-fonts_8h_source.html":[7,0,0,7,40],
 "ev-properties-license_8c.html":[7,0,0,7,41],
 "ev-properties-license_8c.html#a053cf110fbad3b15d5bae51d5a97daf0":[7,0,0,7,41,2],
 "ev-properties-license_8c.html#a34ccfeb0be28206714bd3dc0208d7e2c":[7,0,0,7,41,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "ev-sidebar-bookmarks_8c.html#ad4f6fd171a0e608e16357c78ecc7b972":[7,0,0,7,47,15],
 "ev-sidebar-bookmarks_8c.html#ad9068596e12c770b7ae454a2cfa5bd54":[7,0,0,7,47,31],
 "ev-sidebar-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260abf7866167c9f740bdacaa103a372b335":[7,0,0,7,47,2],
-"ev-sidebar-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260ac37dda0da1a44e10c0504afeeb863f3c":[7,0,0,7,47,1],
-"ev-sidebar-bookmarks_8c.html#ae09aa5ed02f0eb81f29b41fc4050f570":[7,0,0,7,47,13],
-"ev-sidebar-bookmarks_8c.html#ae43952c55e5fd203f8886036e520e77d":[7,0,0,7,47,17]
+"ev-sidebar-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260ac37dda0da1a44e10c0504afeeb863f3c":[7,0,0,7,47,1]
 };

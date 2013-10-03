@@ -30,7 +30,6 @@ var searchData=
   ['fix_5fafter_5fhorizontal',['fix_after_horizontal',['../dviread_8c.html#af175428585fced4e4614b49454c9ecfe',1,'dviread.c']]],
   ['fix_5fbroken_5fstate',['fix_broken_state',['../eggsmclient-xsmp_8c.html#a6b4615c5308e3eec18d407374117e537',1,'eggsmclient-xsmp.c']]],
   ['flush_5ffont_5fmetrics',['flush_font_metrics',['../tfmfile_8c.html#a6ed5a56e7f44f4233787e4bd6d84cefb',1,'tfmfile.c']]],
-  ['focus_5fannotation',['focus_annotation',['../ev-view_8c.html#a1056657523c9c84bbec3cc83a54689b0',1,'focus_annotation(EvView *view, cairo_t *cr, int page, GdkRectangle *clip):&#160;ev-view.c'],['../ev-view_8c.html#a03a9dbcf3956ab887c11c61cb1f85a0b',1,'focus_annotation(EvView *view, cairo_t *cr, gint page, GdkRectangle *clip):&#160;ev-view.c']]],
   ['focus_5fout_5fcb',['focus_out_cb',['../ev-page-action-widget_8c.html#ac40977c0fde1b3b517106e3e7b212951',1,'focus_out_cb(EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-zoom-action-widget_8c.html#aea20a8b456c68dae20bc2ef69fb1c5d7',1,'focus_out_cb(EvZoomActionWidget *control):&#160;ev-zoom-action-widget.c']]],
   ['font_5fcell_5fdata_5ffunc',['font_cell_data_func',['../ev-properties-fonts_8c.html#ab359ddba27c60f82cb6eee88cdddf7b0',1,'ev-properties-fonts.c']]],
   ['font_5fdrop_5fchain',['font_drop_chain',['../font_8c.html#a14859190bd83a64d49bab48e68a9d31f',1,'font.c']]],

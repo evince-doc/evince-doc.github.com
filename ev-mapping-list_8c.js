@@ -3,6 +3,7 @@ var ev_mapping_list_8c =
     [ "_EvMappingList", "struct__EvMappingList.html", "struct__EvMappingList" ],
     [ "ev_mapping_list_find", "ev-mapping-list_8c.html#afdb093bbda0330990955ebcffe92aff2", null ],
     [ "ev_mapping_list_find_custom", "ev-mapping-list_8c.html#a39197972e989744f855f0604fa182bba", null ],
+    [ "ev_mapping_list_get", "ev-mapping-list_8c.html#a30e0f69bd2c507f04cd86442647c95a6", null ],
     [ "ev_mapping_list_get_data", "ev-mapping-list_8c.html#a4781fd6d2269eb736cc9bcf28c823af4", null ],
     [ "ev_mapping_list_get_list", "ev-mapping-list_8c.html#a6e94068d05a91df4f401c9211c346759", null ],
     [ "ev_mapping_list_get_page", "ev-mapping-list_8c.html#afc07e8fc8bdb230925f48e5702c00d1f", null ],

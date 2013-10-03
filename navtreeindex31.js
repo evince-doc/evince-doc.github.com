@@ -1,5 +1,14 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvMessageAreaPrivate.html#af38039adde3962f23e687cd9ad6b7e5e":[6,0,188,0],
+"struct__EvMetadata.html":[6,0,189],
+"struct__EvMetadata.html#a1dd669f61ce747c15d8a22bced511873":[6,0,189,1],
+"struct__EvMetadata.html#a2c153026e90e27bd832d762b14399b60":[6,0,189,0],
+"struct__EvMetadata.html#aebc19339308c1ad2790fab4e7e64948b":[6,0,189,2],
+"struct__EvMetadataClass.html":[6,0,190],
+"struct__EvMetadataClass.html#a1312b8e3ad8542054bc3641cefdd4873":[6,0,190,0],
+"struct__EvModule.html":[6,0,191],
+"struct__EvModule.html#a230f4907a251619354b5f6553be1bd26":[6,0,191,1],
 "struct__EvModule.html#a40bca56209fca732179db81d26278826":[6,0,191,4],
 "struct__EvModule.html#a647523b9f395ab4a1f5ba0b3584a6e89":[6,0,191,0],
 "struct__EvModule.html#a8821c12eda1ed48841f43f54741313a7":[6,0,191,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvSidebarAttachmentsClass.html#addf91566e0c5ae009428f12c8927b64b":[6,0,239,0],
 "struct__EvSidebarAttachmentsPrivate.html":[6,0,240],
 "struct__EvSidebarAttachmentsPrivate.html#a3b22553fb6fc66cf9ae969e957e5d673":[6,0,240,2],
-"struct__EvSidebarAttachmentsPrivate.html#a691f3d7a759ec09d782575922a405987":[6,0,240,3],
-"struct__EvSidebarAttachmentsPrivate.html#a7280c6799f7d80415925c8273400ecc7":[6,0,240,0],
-"struct__EvSidebarAttachmentsPrivate.html#aa364a06eacb41b49e10d13c3ff0814dc":[6,0,240,1],
-"struct__EvSidebarBookmarks.html":[6,0,241],
-"struct__EvSidebarBookmarks.html#a143c03b92a687e9a80af26b328d947de":[6,0,241,0],
-"struct__EvSidebarBookmarks.html#adeb2a19409d7bdb5a0f7764a3bb488a5":[6,0,241,1],
-"struct__EvSidebarBookmarksClass.html":[6,0,242],
-"struct__EvSidebarBookmarksClass.html#a43c7b0c0b94e2eed80303cc1616a7067":[6,0,242,1],
-"struct__EvSidebarBookmarksClass.html#a504e83d787761ed80beb2e381d0d4af1":[6,0,242,0],
-"struct__EvSidebarBookmarksPrivate.html":[6,0,243]
+"struct__EvSidebarAttachmentsPrivate.html#a691f3d7a759ec09d782575922a405987":[6,0,240,3]
 };

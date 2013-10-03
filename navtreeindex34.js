@@ -1,5 +1,15 @@
 var NAVTREEINDEX34 =
 {
+"struct____synctex__updater__t.html#ae675c2ae1794c2f15d7a492253bb38e5":[6,0,10,4],
+"struct____synctex__updater__t_1_1__flags.html":[6,0,10,0],
+"struct____synctex__updater__t_1_1__flags.html#a7f827bf39798bea0e45acf68573b038d":[6,0,10,0,0],
+"struct____synctex__updater__t_1_1__flags.html#aa2305297befe75aa440a913f1814af30":[6,0,10,0,1],
+"struct__synctex__node.html":[6,0,297],
+"struct__synctex__node.html#a46dbe73756d0ea08474584f727459707":[6,0,297,0],
+"struct__synctex__node.html#a90104714ec188d99a3e914363b67e7f1":[6,0,297,1],
+"struct__t__ligature.html":[6,0,298],
+"struct__t__ligature.html#a55a1e9e074395caa0d50d7ae6650f8f7":[6,0,298,2],
+"struct__t__ligature.html#a8fd51233f839326ea23717828a91a5d7":[6,0,298,1],
 "struct__t__ligature.html#aa7488b870ebf224a5b5372a64d2f9bb7":[6,0,298,0],
 "structfontinfo.html":[6,0,332],
 "structfontinfo.html#a23417f747ec18e86491b6a78ce413934":[6,0,332,1],
@@ -146,8 +156,8 @@ var NAVTREEINDEX34 =
 "synctex__parser_8c.html#a68b44db81f044e077838608b634440ed":[7,0,0,1,2,0,196],
 "synctex__parser_8c.html#a68d11a2cb22716e7abd35cffed7d54c5":[7,0,0,1,2,0,124],
 "synctex__parser_8c.html#a6b6dc9b8b0b48e947a9df8fcd4a6aff5":[7,0,0,1,2,0,18],
-"synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[7,0,0,1,2,0,55],
 "synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[7,0,0,1,2,0,54],
+"synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[7,0,0,1,2,0,55],
 "synctex__parser_8c.html#a6c85cf5e084187eaea7fd439896dec66":[7,0,0,1,2,0,179],
 "synctex__parser_8c.html#a6e54f8b897b0065313e6100a2d0e407d":[7,0,0,1,2,0,225],
 "synctex__parser_8c.html#a6e6a7e16779fd7e7a03c73c9717bf116":[7,0,0,1,2,0,37],
@@ -239,15 +249,5 @@ var NAVTREEINDEX34 =
 "synctex__parser_8c.html#ac7b8ca5ad9ce7026a5d0be4b651a356f":[7,0,0,1,2,0,22],
 "synctex__parser_8c.html#ac8903dc05455e1bdc06ad7ade66eb4a4":[7,0,0,1,2,0,44],
 "synctex__parser_8c.html#ac8b3f70c3d6f61b3b546cb1dc0f4f536":[7,0,0,1,2,0,59],
-"synctex__parser_8c.html#ac8d0d999c2a06b9e3fb14dacaa41e220":[7,0,0,1,2,0,150],
-"synctex__parser_8c.html#ac9a25f581ab998642158d7e4f81e7c14":[7,0,0,1,2,0,237],
-"synctex__parser_8c.html#acc1bcbcf095468d2c40d546479aa0467":[7,0,0,1,2,0,199],
-"synctex__parser_8c.html#acd49605ce37d620baa1e041206bb27f7":[7,0,0,1,2,0,191],
-"synctex__parser_8c.html#ad104ad659600848e2952334be2c7d896":[7,0,0,1,2,0,96],
-"synctex__parser_8c.html#ad2494d6bce4497a1d704f536b8644446":[7,0,0,1,2,0,12],
-"synctex__parser_8c.html#ad29b3d71a9c9650652f80ccf16d382e9":[7,0,0,1,2,0,242],
-"synctex__parser_8c.html#ad45f6d1df8d8fb2f1609bbc72c816698":[7,0,0,1,2,0,100],
-"synctex__parser_8c.html#ad538ba3e6aee95091dd427e08a88eed0":[7,0,0,1,2,0,250],
-"synctex__parser_8c.html#ad5401e3051ae209e27e04befb90055d9":[7,0,0,1,2,0,219],
-"synctex__parser_8c.html#ad7c1af3278e15601db9d93c550dabe0c":[7,0,0,1,2,0,200]
+"synctex__parser_8c.html#ac8d0d999c2a06b9e3fb14dacaa41e220":[7,0,0,1,2,0,150]
 };

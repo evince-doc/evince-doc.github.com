@@ -1,5 +1,14 @@
 var NAVTREEINDEX29 =
 {
+"struct__EvDocumentAttachmentsInterface.html#adc1bd8216fc93d1a8290a46ce6fa02c9":[6,0,82,1],
+"struct__EvDocumentAttachmentsInterface.html#adcc83f422912818454b6e33081251cd9":[6,0,82,0],
+"struct__EvDocumentBackendInfo.html":[6,0,83],
+"struct__EvDocumentBackendInfo.html#a9050c2ea9e09aea2000a308635929e3c":[6,0,83,0],
+"struct__EvDocumentBackendInfo.html#ac0c7225b15de1e96adbaefc3fd124e59":[6,0,83,1],
+"struct__EvDocumentClass.html":[6,0,84],
+"struct__EvDocumentClass.html#a095a7bb9072170b8e02afa03c2be45cf":[6,0,84,2],
+"struct__EvDocumentClass.html#a1b5d325abdfb1abfec9f86b854bd1eab":[6,0,84,10],
+"struct__EvDocumentClass.html#a4a9fa47c8ea0c87c584f4f1ebaf66659":[6,0,84,6],
 "struct__EvDocumentClass.html#a51a71d3a50848e5130681e5b689c161f":[6,0,84,1],
 "struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6":[6,0,84,7],
 "struct__EvDocumentClass.html#a6758efda10d71df9247167ce4371edb0":[6,0,84,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX29 =
 "struct__EvHistoryActionWidgetPrivate.html":[6,0,125],
 "struct__EvHistoryActionWidgetPrivate.html#a45bff74d0a497c29f03cebd09cd055d3":[6,0,125,1],
 "struct__EvHistoryActionWidgetPrivate.html#a9bd8d77b8acee42e67a97eef2fd355e0":[6,0,125,0],
-"struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca":[6,0,125,2],
-"struct__EvHistoryActionWidgetPrivate.html#ad1b377090d80db4d010b96d046a4cd85":[6,0,125,3],
-"struct__EvHistoryClass.html":[6,0,126],
-"struct__EvHistoryClass.html#a6aaef3e54e3d9050e62035ba900a9ced":[6,0,126,0],
-"struct__EvHistoryClass.html#a9e8ad10e55750a9ab4a54ebbc992f58b":[6,0,126,2],
-"struct__EvHistoryClass.html#add6c647308e9da0e60c937ed4c9a3422":[6,0,126,1],
-"struct__EvHistoryPrivate.html":[6,0,127],
-"struct__EvHistoryPrivate.html#a1805854180d87d71ea7376d4f9441b1a":[6,0,127,1],
-"struct__EvHistoryPrivate.html#a273cfe7bfe8fb853d8adb8d3fc7bb177":[6,0,127,4],
-"struct__EvHistoryPrivate.html#a42648c828c41885f26534d9bbd0ebf45":[6,0,127,0]
+"struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca":[6,0,125,2]
 };
