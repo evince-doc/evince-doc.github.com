@@ -49,6 +49,7 @@ var searchData=
   ['create_5fshadow',['create_shadow',['../ev-utils_8c.html#a3f545f62d056f4f2b5c8246f4522e313',1,'ev-utils.c']]],
   ['create_5fthumbnail_5fframe',['create_thumbnail_frame',['../ev-document-misc_8c.html#abef5da09d924359a1c6782e43e9e3199',1,'ev-document-misc.c']]],
   ['create_5ftool_5fitem',['create_tool_item',['../ev-page-action_8c.html#a1bb40b6d4fb281af004c167677ec3b5d',1,'ev-page-action.c']]],
+  ['current_5fevent_5fis_5fspace_5fkey_5fpress',['current_event_is_space_key_press',['../ev-view_8c.html#a86642cbac53d8c7c4e24073d76b58850',1,'ev-view.c']]],
   ['cursor_5fbackward_5fchar',['cursor_backward_char',['../ev-view_8c.html#a3048e8b9108e878cef0eef96c83a00db',1,'ev-view.c']]],
   ['cursor_5fbackward_5fline',['cursor_backward_line',['../ev-view_8c.html#a54327ee7b784112f8bbbe9e1e50885af',1,'ev-view.c']]],
   ['cursor_5fbackward_5fword_5fstart',['cursor_backward_word_start',['../ev-view_8c.html#a4c2f54d57ea36076bda41d81acaf1d2f',1,'ev-view.c']]],

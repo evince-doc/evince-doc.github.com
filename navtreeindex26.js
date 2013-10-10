@@ -1,5 +1,10 @@
 var NAVTREEINDEX26 =
 {
+"sp-epsf_8c.html#a410e949e8e8ca8aae1805933a91c4e3c":[7,0,0,0,2,0,28,18],
+"sp-epsf_8c.html#a6556156866fcaa4a928a8882476002e0":[7,0,0,0,2,0,28,3],
+"sp-epsf_8c.html#a761113af46208ad1fbd040908ac75d58":[7,0,0,0,2,0,28,10],
+"sp-epsf_8c.html#a8a7f485573c16394fc0792a66bd02c7a":[7,0,0,0,2,0,28,1],
+"sp-epsf_8c.html#a8f83188756efa6092294fca26269025c":[7,0,0,0,2,0,28,6],
 "sp-epsf_8c.html#abaebb23ddefa1ee787fffc4f59a28390":[7,0,0,0,2,0,28,12],
 "sp-epsf_8c.html#ac51ccb923f4c4f470f00c1f9aa6e2c2b":[7,0,0,0,2,0,28,14],
 "sp-epsf_8c.html#accbc671b9a49dadd822cddd2ef6af38f":[7,0,0,0,2,0,28,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX26 =
 "structPropertyInfo.html":[6,0,342],
 "structPropertyInfo.html#a31a31edf2c26bef721d2b36db2427181":[6,0,342,0],
 "structPropertyInfo.html#af1fb797532d55ec0b9018143a6f3ee49":[6,0,342,1],
-"structSaveToBufferData.html":[6,0,343],
-"structSaveToBufferData.html#a39e2b692f6450b72a4f57fca0108f5eb":[6,0,343,1],
-"structSaveToBufferData.html#aa26c3417669b0765909439c4e2793a3a":[6,0,343,2],
-"structSaveToBufferData.html#acef3d227612571cebf20a612ae146a6e":[6,0,343,0],
-"structSelectionInfo.html":[6,0,344],
-"structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81":[6,0,344,1]
+"structSaveToBufferData.html":[6,0,343]
 };

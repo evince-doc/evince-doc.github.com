@@ -1,5 +1,10 @@
 var NAVTREEINDEX30 =
 {
+"struct__EvHistoryActionWidgetClass.html#a5710b1300f603629a87335c563f8d233":[6,0,124,0],
+"struct__EvHistoryActionWidgetPrivate.html":[6,0,125],
+"struct__EvHistoryActionWidgetPrivate.html#a45bff74d0a497c29f03cebd09cd055d3":[6,0,125,1],
+"struct__EvHistoryActionWidgetPrivate.html#a9bd8d77b8acee42e67a97eef2fd355e0":[6,0,125,0],
+"struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca":[6,0,125,2],
 "struct__EvHistoryActionWidgetPrivate.html#ad1b377090d80db4d010b96d046a4cd85":[6,0,125,3],
 "struct__EvHistoryClass.html":[6,0,126],
 "struct__EvHistoryClass.html#a6aaef3e54e3d9050e62035ba900a9ced":[6,0,126,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvMessageArea.html#a1e92ba8342cff1027ea5f0eb1dcd74f8":[6,0,186,0],
 "struct__EvMessageArea.html#aba29ce322f83d5f5b12d4bee0b3e1ba4":[6,0,186,1],
 "struct__EvMessageAreaClass.html":[6,0,187],
-"struct__EvMessageAreaClass.html#a083e6d44212f7b88ce678ecfddcfbeb5":[6,0,187,0],
-"struct__EvMessageAreaPrivate.html":[6,0,188],
-"struct__EvMessageAreaPrivate.html#a416376e26dcd54dd9a604d72a468bd18":[6,0,188,4],
-"struct__EvMessageAreaPrivate.html#a52565f0e5c41295dad5e41891e9c1442":[6,0,188,2],
-"struct__EvMessageAreaPrivate.html#a60aa5dad0c152b4ffa17867c1135639a":[6,0,188,1],
-"struct__EvMessageAreaPrivate.html#ac477dfb0fb0e8482bc8f1e69d3b77320":[6,0,188,3]
+"struct__EvMessageAreaClass.html#a083e6d44212f7b88ce678ecfddcfbeb5":[6,0,187,0]
 };

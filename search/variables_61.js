@@ -10,6 +10,7 @@ var searchData=
   ['action_5fidle_5fhandler',['action_idle_handler',['../struct__EvViewAccessiblePrivate.html#ac1ccb5883ac74627e6434cb88d755985',1,'_EvViewAccessiblePrivate']]],
   ['action_5fmenu_5fbutton',['action_menu_button',['../struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b',1,'_EvToolbarPrivate']]],
   ['action_5fsignals',['action_signals',['../ev-open-recent-action_8c.html#aa583ede36bd29b911cbc6fbd1ff15e56',1,'ev-open-recent-action.c']]],
+  ['activate',['activate',['../struct__EvViewClass.html#a137793787dfab18a906073548a1120bc',1,'_EvViewClass']]],
   ['activate_5flink',['activate_link',['../struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e',1,'_EvPageActionWidgetClass::activate_link()'],['../struct__EvPageActionClass.html#a2c964892f5e3a12593336d0a3acedff7',1,'_EvPageActionClass::activate_link()'],['../struct__EvHistoryClass.html#a6aaef3e54e3d9050e62035ba900a9ced',1,'_EvHistoryClass::activate_link()']]],
   ['activation_5flink',['activation_link',['../struct__EvFormField.html#a980049744dca9b84ed7b98fa1812df6a',1,'_EvFormField']]],
   ['actual_5fhdpi',['actual_hdpi',['../struct__DviFontSearch.html#a0dc92b792e57a0df42682748d7db9625',1,'_DviFontSearch']]],
