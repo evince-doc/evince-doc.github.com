@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['text_5fview_5fbutton_5fpress',['text_view_button_press',['../ev-annotation-window_8c.html#a3271f45ac2e68d4ab9c41567aa5251ba',1,'ev-annotation-window.c']]],
+  ['text_5fview_5fstate_5fflags_5fchanged',['text_view_state_flags_changed',['../ev-annotation-window_8c.html#ada4548ce36b31e867f1ff9104bd7befb',1,'ev-annotation-window.c']]],
   ['tfm_5ffont_5fget_5fglyph',['tfm_font_get_glyph',['../tfm_8c.html#a81d481155cb1cb8aa5d207a4ba910336',1,'tfm.c']]],
   ['tfm_5fload_5ffile',['tfm_load_file',['../tfmfile_8c.html#a6bf1d499fc3af1fd92bf6f4161f0e8ef',1,'tfmfile.c']]],
   ['tfm_5fload_5ffont',['tfm_load_font',['../tfm_8c.html#a692dfddedeb46d6da876b86e515e014f',1,'tfm.c']]],

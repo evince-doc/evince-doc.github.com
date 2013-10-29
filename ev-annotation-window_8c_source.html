@@ -367,14 +367,14 @@ $(document).ready(function(){initNavTree('ev-annotation-window_8c_source.html','
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="code" href="ev-annotation-window_8c.html#a3271f45ac2e68d4ab9c41567aa5251ba">  262</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a3271f45ac2e68d4ab9c41567aa5251ba">text_view_button_press</a> (GtkWidget          *widget,</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            GdkEventButton     *event,</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#a168b014f2a45bdded037b8ec4652761d">ev_annotation_window_grab_focus</a> (window);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="code" href="ev-annotation-window_8c.html#ada4548ce36b31e867f1ff9104bd7befb">  262</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#ada4548ce36b31e867f1ff9104bd7befb">text_view_state_flags_changed</a> (GtkWidget     *widget,</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                   GtkStateFlags  previous_flags)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    GtkStateFlags current_flags = gtk_widget_get_state_flags (widget);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span> (current_flags &amp; GTK_STATE_FLAG_BACKDROP)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (widget), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -426,8 +426,8 @@ $(document).ready(function(){initNavTree('ev-annotation-window_8c_source.html','
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    swindow = gtk_scrolled_window_new (NULL, NULL);</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    window-&gt;text_view = gtk_text_view_new ();</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (window-&gt;text_view), GTK_WRAP_WORD);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    g_signal_connect (window-&gt;text_view, <span class="stringliteral">&quot;button_press_event&quot;</span>,</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;              G_CALLBACK (<a class="code" href="ev-annotation-window_8c.html#a3271f45ac2e68d4ab9c41567aa5251ba">text_view_button_press</a>),</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    g_signal_connect (window-&gt;text_view, <span class="stringliteral">&quot;state-flags-changed&quot;</span>,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;              G_CALLBACK (<a class="code" href="ev-annotation-window_8c.html#ada4548ce36b31e867f1ff9104bd7befb">text_view_state_flags_changed</a>),</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;              window);</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    gtk_container_add (GTK_CONTAINER (swindow), window-&gt;text_view);</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    gtk_widget_show (window-&gt;text_view);</div>
@@ -601,170 +601,174 @@ $(document).ready(function(){initNavTree('ev-annotation-window_8c_source.html','
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        window-&gt;in_move = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    }</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;}</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00499"></a><span class="lineno"><a class="code" href="ev-annotation-window_8c.html#af7f85f7fa30e6d95e1b5cfb6cf448c26">  499</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#af7f85f7fa30e6d95e1b5cfb6cf448c26">ev_annotation_window_focus_out_event</a> (GtkWidget     *widget,</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                      GdkEventFocus *event)</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;{</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a> = <a class="code" href="ev-annotation-window_8h.html#a6c978c25325cbdf60837fd25f111b7d8">EV_ANNOTATION_WINDOW</a> (widget);</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#af62d5ffc6f871ffba653cab9bd2255c4">ev_annotation_window_sync_contents</a> (window);</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;}</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno"><a class="code" href="ev-annotation-window_8c.html#a75ad42fd694e659fc6a50209ee42b55b">  510</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a75ad42fd694e659fc6a50209ee42b55b">ev_annotation_window_class_init</a> (<a class="code" href="struct__EvAnnotationWindowClass.html">EvAnnotationWindowClass</a> *klass)</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;{</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    GObjectClass   *g_object_class = G_OBJECT_CLASS (klass);</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    GtkWidgetClass *gtk_widget_class = GTK_WIDGET_CLASS (klass);</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    g_object_class-&gt;constructor = <a class="code" href="ev-annotation-window_8c.html#a6614e4c343bbd6d62b9f7d96559847f1">ev_annotation_window_constructor</a>;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    g_object_class-&gt;set_property = <a class="code" href="ev-annotation-window_8c.html#ae9ef7927fdf805032a5adf07f7531fa7">ev_annotation_window_set_property</a>;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    g_object_class-&gt;dispose = <a class="code" href="ev-annotation-window_8c.html#a5ca86dd8162f08dd43efcd0fd1a0f15a">ev_annotation_window_dispose</a>;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    gtk_widget_grab_focus (window-&gt;text_view);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4">send_focus_change</a> (window-&gt;text_view, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (window-&gt;text_view), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;}</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00503"></a><span class="lineno"><a class="code" href="ev-annotation-window_8c.html#af7f85f7fa30e6d95e1b5cfb6cf448c26">  503</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#af7f85f7fa30e6d95e1b5cfb6cf448c26">ev_annotation_window_focus_out_event</a> (GtkWidget     *widget,</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                      GdkEventFocus *event)</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;{</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a> = <a class="code" href="ev-annotation-window_8h.html#a6c978c25325cbdf60837fd25f111b7d8">EV_ANNOTATION_WINDOW</a> (widget);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#af62d5ffc6f871ffba653cab9bd2255c4">ev_annotation_window_sync_contents</a> (window);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno"><a class="code" href="ev-annotation-window_8c.html#a75ad42fd694e659fc6a50209ee42b55b">  514</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a75ad42fd694e659fc6a50209ee42b55b">ev_annotation_window_class_init</a> (<a class="code" href="struct__EvAnnotationWindowClass.html">EvAnnotationWindowClass</a> *klass)</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;{</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    GObjectClass   *g_object_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    GtkWidgetClass *gtk_widget_class = GTK_WIDGET_CLASS (klass);</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    gtk_widget_class-&gt;button_press_event = <a class="code" href="ev-annotation-window_8c.html#a64fddd3473b4112332fb5a295b213247">ev_annotation_window_button_press_event</a>;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    gtk_widget_class-&gt;configure_event = <a class="code" href="ev-annotation-window_8c.html#a983b5ed4df785ab6833c5ad4fb3b0b9b">ev_annotation_window_configure_event</a>;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    gtk_widget_class-&gt;focus_in_event = <a class="code" href="ev-annotation-window_8c.html#a199457b01eda971e24b320027f763418">ev_annotation_window_focus_in_event</a>;</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    gtk_widget_class-&gt;focus_out_event = <a class="code" href="ev-annotation-window_8c.html#af7f85f7fa30e6d95e1b5cfb6cf448c26">ev_annotation_window_focus_out_event</a>;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    g_object_class_install_property (g_object_class,</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                     <a class="code" href="ev-annotation-window_8c.html#aaf8fd5f0e57d456151c951e0f3715fc4a30c76c52dfa5c30f002081357b553b9a">PROP_ANNOTATION</a>,</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                     g_param_spec_object (<span class="stringliteral">&quot;annotation&quot;</span>,</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                                  <span class="stringliteral">&quot;Annotation&quot;</span>,</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                                  <span class="stringliteral">&quot;The annotation associated to the window&quot;</span>,</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                                  <a class="code" href="ev-annotation_8h.html#accb6d824cf8d0ff16c9bd978630e306d">EV_TYPE_ANNOTATION_MARKUP</a>,</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                                  G_PARAM_WRITABLE |</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                                  G_PARAM_CONSTRUCT_ONLY |</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    g_object_class_install_property (g_object_class,</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                     <a class="code" href="ev-annotation-window_8c.html#aaf8fd5f0e57d456151c951e0f3715fc4ada8ce269c7acea6dcb71668ba9969e89">PROP_PARENT</a>,</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                     g_param_spec_object (<span class="stringliteral">&quot;parent&quot;</span>,</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                                  <span class="stringliteral">&quot;Parent&quot;</span>,</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                                  <span class="stringliteral">&quot;The parent window&quot;</span>,</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                                  GTK_TYPE_WINDOW,</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                                  G_PARAM_WRITABLE |</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                                  G_PARAM_CONSTRUCT_ONLY |</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-annotation-window_8c.html#a94798fdadfbf49a7c658ace669a1d310a929f0327e17604ce9713b2a6117bd603">CLOSED</a>] =</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        g_signal_new (<span class="stringliteral">&quot;closed&quot;</span>,</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                  G_TYPE_FROM_CLASS (g_object_class),</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                  G_STRUCT_OFFSET (<a class="code" href="struct__EvAnnotationWindowClass.html">EvAnnotationWindowClass</a>, closed),</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                  NULL, NULL,</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                  g_cclosure_marshal_VOID__VOID,</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                  G_TYPE_NONE, 0, G_TYPE_NONE);</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-annotation-window_8c.html#a94798fdadfbf49a7c658ace669a1d310ae2ce5b938a5d96737d97e2c19658e494">MOVED</a>] =</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        g_signal_new (<span class="stringliteral">&quot;moved&quot;</span>,</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                  G_TYPE_FROM_CLASS (g_object_class),</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                  G_STRUCT_OFFSET (<a class="code" href="struct__EvAnnotationWindowClass.html">EvAnnotationWindowClass</a>, moved),</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                  NULL, NULL,</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                  ev_view_marshal_VOID__INT_INT,</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                  G_TYPE_NONE, 2,</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                  G_TYPE_INT, G_TYPE_INT);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;}</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="comment">/* Public methods */</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;GtkWidget *</div>
-<div class="line"><a name="l00563"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#ad9d832dca9a724335987dbc633b2325a">  563</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#ad9d832dca9a724335987dbc633b2325a">ev_annotation_window_new</a> (<a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *annot,</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;              GtkWindow    *parent)</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;{</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    GtkWidget *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-annotation_8h.html#ab124bb356f83076315aa652c32f64f54">EV_IS_ANNOTATION_MARKUP</a> (annot), NULL);</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    g_return_val_if_fail (GTK_IS_WINDOW (parent), NULL);</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    window = g_object_new (<a class="code" href="ev-annotation-window_8h.html#a2b81bb3c2ab6af681923860370eb1565">EV_TYPE_ANNOTATION_WINDOW</a>,</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                   <span class="stringliteral">&quot;annotation&quot;</span>, annot,</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                   <span class="stringliteral">&quot;parent&quot;</span>, parent,</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                   NULL);</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;}</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *</div>
-<div class="line"><a name="l00579"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a7f7deb9882b603abad41520be8102d46">  579</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a7f7deb9882b603abad41520be8102d46">ev_annotation_window_get_annotation</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;{</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window), NULL);</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="keywordflow">return</span> window-&gt;annotation;</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;}</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a7f7a0a0361014823a8c602103891fbe9">  587</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a7f7a0a0361014823a8c602103891fbe9">ev_annotation_window_set_annotation</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>,</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;                     <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>       *annot)</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;{</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation_8h.html#a80338d2664e81fde3ecc9923375b47cc">EV_IS_ANNOTATION</a> (annot));</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="keywordflow">if</span> (annot == window-&gt;annotation)</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    g_object_unref (window-&gt;annotation);</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    window-&gt;annotation = g_object_ref (annot);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#af62d5ffc6f871ffba653cab9bd2255c4">ev_annotation_window_sync_contents</a> (window);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    g_object_notify (G_OBJECT (window), <span class="stringliteral">&quot;annotation&quot;</span>);</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;}</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;gboolean</div>
-<div class="line"><a name="l00603"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#aad6df8f62ccfeffc1203c0ff49ae0783">  603</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#aad6df8f62ccfeffc1203c0ff49ae0783">ev_annotation_window_is_open</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;{</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="keywordflow">return</span> window-&gt;is_open;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;}</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00611"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a5b46c23bcf92c08f4e59570ee011b27d">  611</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a5b46c23bcf92c08f4e59570ee011b27d">ev_annotation_window_get_rectangle</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>,</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                    <a class="code" href="struct__EvRectangle.html">EvRectangle</a>        *rect)</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;{</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    g_return_if_fail (rect != NULL);</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    *rect = window-&gt;rect;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;}</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#abe2bbec928bc69853449ced98dc87a08">  621</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#abe2bbec928bc69853449ced98dc87a08">ev_annotation_window_set_rectangle</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>,</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                    <span class="keyword">const</span> <a class="code" href="struct__EvRectangle.html">EvRectangle</a>  *rect)</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;{</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    g_return_if_fail (rect != NULL);</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    window-&gt;rect = *rect;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;}</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00631"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a168b014f2a45bdded037b8ec4652761d">  631</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a168b014f2a45bdded037b8ec4652761d">ev_annotation_window_grab_focus</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;{</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordflow">if</span> (!gtk_widget_has_focus (window-&gt;text_view)) {</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        gtk_widget_grab_focus (GTK_WIDGET (window));</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <a class="code" href="ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4">send_focus_change</a> (window-&gt;text_view, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    }</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;}</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a2a865d3cd3dfa9252cfdbe4f6daa15d9">  642</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a2a865d3cd3dfa9252cfdbe4f6daa15d9">ev_annotation_window_ungrab_focus</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;{</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordflow">if</span> (gtk_widget_has_focus (window-&gt;text_view)) {</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <a class="code" href="ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4">send_focus_change</a> (window-&gt;text_view, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    }</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    g_object_class-&gt;constructor = <a class="code" href="ev-annotation-window_8c.html#a6614e4c343bbd6d62b9f7d96559847f1">ev_annotation_window_constructor</a>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    g_object_class-&gt;set_property = <a class="code" href="ev-annotation-window_8c.html#ae9ef7927fdf805032a5adf07f7531fa7">ev_annotation_window_set_property</a>;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    g_object_class-&gt;dispose = <a class="code" href="ev-annotation-window_8c.html#a5ca86dd8162f08dd43efcd0fd1a0f15a">ev_annotation_window_dispose</a>;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    gtk_widget_class-&gt;button_press_event = <a class="code" href="ev-annotation-window_8c.html#a64fddd3473b4112332fb5a295b213247">ev_annotation_window_button_press_event</a>;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    gtk_widget_class-&gt;configure_event = <a class="code" href="ev-annotation-window_8c.html#a983b5ed4df785ab6833c5ad4fb3b0b9b">ev_annotation_window_configure_event</a>;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    gtk_widget_class-&gt;focus_in_event = <a class="code" href="ev-annotation-window_8c.html#a199457b01eda971e24b320027f763418">ev_annotation_window_focus_in_event</a>;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    gtk_widget_class-&gt;focus_out_event = <a class="code" href="ev-annotation-window_8c.html#af7f85f7fa30e6d95e1b5cfb6cf448c26">ev_annotation_window_focus_out_event</a>;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    g_object_class_install_property (g_object_class,</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                     <a class="code" href="ev-annotation-window_8c.html#aaf8fd5f0e57d456151c951e0f3715fc4a30c76c52dfa5c30f002081357b553b9a">PROP_ANNOTATION</a>,</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                     g_param_spec_object (<span class="stringliteral">&quot;annotation&quot;</span>,</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                                  <span class="stringliteral">&quot;Annotation&quot;</span>,</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                                  <span class="stringliteral">&quot;The annotation associated to the window&quot;</span>,</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                                  <a class="code" href="ev-annotation_8h.html#accb6d824cf8d0ff16c9bd978630e306d">EV_TYPE_ANNOTATION_MARKUP</a>,</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                                  G_PARAM_WRITABLE |</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                                  G_PARAM_CONSTRUCT_ONLY |</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    g_object_class_install_property (g_object_class,</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                     <a class="code" href="ev-annotation-window_8c.html#aaf8fd5f0e57d456151c951e0f3715fc4ada8ce269c7acea6dcb71668ba9969e89">PROP_PARENT</a>,</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                     g_param_spec_object (<span class="stringliteral">&quot;parent&quot;</span>,</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                                  <span class="stringliteral">&quot;Parent&quot;</span>,</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                                  <span class="stringliteral">&quot;The parent window&quot;</span>,</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                                  GTK_TYPE_WINDOW,</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                                  G_PARAM_WRITABLE |</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                                  G_PARAM_CONSTRUCT_ONLY |</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-annotation-window_8c.html#a94798fdadfbf49a7c658ace669a1d310a929f0327e17604ce9713b2a6117bd603">CLOSED</a>] =</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        g_signal_new (<span class="stringliteral">&quot;closed&quot;</span>,</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                  G_TYPE_FROM_CLASS (g_object_class),</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                  G_STRUCT_OFFSET (<a class="code" href="struct__EvAnnotationWindowClass.html">EvAnnotationWindowClass</a>, closed),</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                  NULL, NULL,</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                  g_cclosure_marshal_VOID__VOID,</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                  G_TYPE_NONE, 0, G_TYPE_NONE);</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-annotation-window_8c.html#a94798fdadfbf49a7c658ace669a1d310ae2ce5b938a5d96737d97e2c19658e494">MOVED</a>] =</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        g_signal_new (<span class="stringliteral">&quot;moved&quot;</span>,</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                  G_TYPE_FROM_CLASS (g_object_class),</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                  G_STRUCT_OFFSET (<a class="code" href="struct__EvAnnotationWindowClass.html">EvAnnotationWindowClass</a>, moved),</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                  NULL, NULL,</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                  ev_view_marshal_VOID__INT_INT,</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                  G_TYPE_NONE, 2,</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                  G_TYPE_INT, G_TYPE_INT);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;}</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="comment">/* Public methods */</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l00567"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#ad9d832dca9a724335987dbc633b2325a">  567</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#ad9d832dca9a724335987dbc633b2325a">ev_annotation_window_new</a> (<a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *annot,</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;              GtkWindow    *parent)</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;{</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    GtkWidget *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-annotation_8h.html#ab124bb356f83076315aa652c32f64f54">EV_IS_ANNOTATION_MARKUP</a> (annot), NULL);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    g_return_val_if_fail (GTK_IS_WINDOW (parent), NULL);</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    window = g_object_new (<a class="code" href="ev-annotation-window_8h.html#a2b81bb3c2ab6af681923860370eb1565">EV_TYPE_ANNOTATION_WINDOW</a>,</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                   <span class="stringliteral">&quot;annotation&quot;</span>, annot,</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                   <span class="stringliteral">&quot;parent&quot;</span>, parent,</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                   NULL);</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;}</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *</div>
+<div class="line"><a name="l00583"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a7f7deb9882b603abad41520be8102d46">  583</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a7f7deb9882b603abad41520be8102d46">ev_annotation_window_get_annotation</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;{</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window), NULL);</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keywordflow">return</span> window-&gt;annotation;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;}</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a7f7a0a0361014823a8c602103891fbe9">  591</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a7f7a0a0361014823a8c602103891fbe9">ev_annotation_window_set_annotation</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>,</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                     <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>       *annot)</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;{</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation_8h.html#a80338d2664e81fde3ecc9923375b47cc">EV_IS_ANNOTATION</a> (annot));</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keywordflow">if</span> (annot == window-&gt;annotation)</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    g_object_unref (window-&gt;annotation);</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    window-&gt;annotation = g_object_ref (annot);</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#af62d5ffc6f871ffba653cab9bd2255c4">ev_annotation_window_sync_contents</a> (window);</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    g_object_notify (G_OBJECT (window), <span class="stringliteral">&quot;annotation&quot;</span>);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;}</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;gboolean</div>
+<div class="line"><a name="l00607"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#aad6df8f62ccfeffc1203c0ff49ae0783">  607</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#aad6df8f62ccfeffc1203c0ff49ae0783">ev_annotation_window_is_open</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;{</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keywordflow">return</span> window-&gt;is_open;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;}</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00615"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a5b46c23bcf92c08f4e59570ee011b27d">  615</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a5b46c23bcf92c08f4e59570ee011b27d">ev_annotation_window_get_rectangle</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>,</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                    <a class="code" href="struct__EvRectangle.html">EvRectangle</a>        *rect)</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;{</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    g_return_if_fail (rect != NULL);</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    *rect = window-&gt;rect;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;}</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00625"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#abe2bbec928bc69853449ced98dc87a08">  625</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#abe2bbec928bc69853449ced98dc87a08">ev_annotation_window_set_rectangle</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>,</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                    <span class="keyword">const</span> <a class="code" href="struct__EvRectangle.html">EvRectangle</a>  *rect)</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;{</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    g_return_if_fail (rect != NULL);</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    window-&gt;rect = *rect;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;}</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a168b014f2a45bdded037b8ec4652761d">  635</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a168b014f2a45bdded037b8ec4652761d">ev_annotation_window_grab_focus</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;{</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordflow">if</span> (!gtk_widget_has_focus (window-&gt;text_view)) {</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        gtk_widget_grab_focus (GTK_WIDGET (window));</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        <a class="code" href="ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4">send_focus_change</a> (window-&gt;text_view, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    }</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;}</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno"><a class="code" href="ev-annotation-window_8h.html#a2a865d3cd3dfa9252cfdbe4f6daa15d9">  646</a></span>&#160;<a class="code" href="ev-annotation-window_8c.html#a2a865d3cd3dfa9252cfdbe4f6daa15d9">ev_annotation_window_ungrab_focus</a> (<a class="code" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;{</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (window));</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#af62d5ffc6f871ffba653cab9bd2255c4">ev_annotation_window_sync_contents</a> (window);</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;}</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <span class="keywordflow">if</span> (gtk_widget_has_focus (window-&gt;text_view)) {</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <a class="code" href="ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4">send_focus_change</a> (window-&gt;text_view, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    }</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#af62d5ffc6f871ffba653cab9bd2255c4">ev_annotation_window_sync_contents</a> (window);</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-annotation-window_8c.html">ev-annotation-window.c</a></li>
-    <li class="footer">Generated on Tue Oct 29 2013 09:01:41 for Evince by
+    <li class="footer">Generated on Tue Oct 29 2013 11:05:42 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

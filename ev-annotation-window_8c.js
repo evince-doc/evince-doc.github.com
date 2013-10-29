@@ -36,6 +36,6 @@ var ev_annotation_window_8c =
     [ "ev_annotation_window_ungrab_focus", "ev-annotation-window_8c.html#a2a865d3cd3dfa9252cfdbe4f6daa15d9", null ],
     [ "get_screen_dpi", "ev-annotation-window_8c.html#af92f40031a52f8beae1734b57ae698f1", null ],
     [ "send_focus_change", "ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4", null ],
-    [ "text_view_button_press", "ev-annotation-window_8c.html#a3271f45ac2e68d4ab9c41567aa5251ba", null ],
+    [ "text_view_state_flags_changed", "ev-annotation-window_8c.html#ada4548ce36b31e867f1ff9104bd7befb", null ],
     [ "signals", "ev-annotation-window_8c.html#a0a1f3b4115443be584fb31149d06f84c", null ]
 ];

@@ -40,7 +40,7 @@ var searchData=
   ['text_5fmapping',['text_mapping',['../struct__EvJobPageData.html#a3dec6fb8004ff595cfa1056274a6f0e9',1,'_EvJobPageData::text_mapping()'],['../struct__EvPageCacheData.html#a7556a2bdbba4828fe05aa10da37e4229',1,'_EvPageCacheData::text_mapping()']]],
   ['text_5fstructure',['text_structure',['../struct__DjvuTextPage.html#ac16ef01f56142930874d2429f72f4df2',1,'_DjvuTextPage']]],
   ['text_5fview',['text_view',['../struct__EvAnnotationWindow.html#a9a5587d83ed6a48609ea59eead8c1725',1,'_EvAnnotationWindow']]],
-  ['text_5fview_5fbutton_5fpress',['text_view_button_press',['../ev-annotation-window_8c.html#a3271f45ac2e68d4ab9c41567aa5251ba',1,'ev-annotation-window.c']]],
+  ['text_5fview_5fstate_5fflags_5fchanged',['text_view_state_flags_changed',['../ev-annotation-window_8c.html#ada4548ce36b31e867f1ff9104bd7befb',1,'ev-annotation-window.c']]],
   ['tf_5fbytesperrow',['tf_bytesperrow',['../struct__TIFF2PSContext.html#a9599813551ea1253347b840b50e55d89',1,'_TIFF2PSContext']]],
   ['tf_5fnumberstrips',['tf_numberstrips',['../struct__TIFF2PSContext.html#a18d3a2d510de3c84cadcf9bb9c20facb',1,'_TIFF2PSContext']]],
   ['tf_5frowsperstrip',['tf_rowsperstrip',['../struct__TIFF2PSContext.html#aa770c97e761f0180c00ad5ccc0b9702f',1,'_TIFF2PSContext']]],
