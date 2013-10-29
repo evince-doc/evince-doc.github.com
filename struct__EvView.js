@@ -22,6 +22,7 @@ var struct__EvView =
     [ "dual_even_left", "struct__EvView.html#adb0cc2d86164c184286847fc3df14cc7", null ],
     [ "end_page", "struct__EvView.html#a5481c6c51d16d1b1597e29bf97ae7086", null ],
     [ "find_job", "struct__EvView.html#afb6184ea28c35aef7c9f586567cbd03f", null ],
+    [ "find_page", "struct__EvView.html#a27518d47f65599cafb713e456f4977ec", null ],
     [ "find_pages", "struct__EvView.html#a117cefcbe74c2e7a98ac00bb22f6199b", null ],
     [ "find_result", "struct__EvView.html#a30c86248acd0188206495c0fd00e8590", null ],
     [ "focused_element", "struct__EvView.html#ade8558996c4b4ffe2d03776748c68f02", null ],

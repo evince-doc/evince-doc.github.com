@@ -173,6 +173,8 @@ Functions</h2></td></tr>
 <tr class="separator:aff38015cb256d1a001248522165dced7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b6e600ec8786dceea962cc5b86e3e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-find-sidebar_8h.html#a89b6e600ec8786dceea962cc5b86e3e4">ev_find_sidebar_start</a> (<a class="el" href="ev-find-sidebar_8h.html#a497bf5de89a2ccc3a51d7b78d049c0e5">EvFindSidebar</a> *find_sidebar, <a class="el" href="ev-jobs_8h.html#aa253e7bcf6f5ec6b70778035877980ad">EvJobFind</a> *job)</td></tr>
 <tr class="separator:a89b6e600ec8786dceea962cc5b86e3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c803cdb7f0459c23938a053bf79f980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-find-sidebar_8h.html#a6c803cdb7f0459c23938a053bf79f980">ev_find_sidebar_restart</a> (<a class="el" href="ev-find-sidebar_8h.html#a497bf5de89a2ccc3a51d7b78d049c0e5">EvFindSidebar</a> *find_sidebar, gint page)</td></tr>
+<tr class="separator:a6c803cdb7f0459c23938a053bf79f980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a7f7140d4cb8a6513d8b12b20d03a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-find-sidebar_8h.html#ae9a7f7140d4cb8a6513d8b12b20d03a8">ev_find_sidebar_update</a> (<a class="el" href="ev-find-sidebar_8h.html#a497bf5de89a2ccc3a51d7b78d049c0e5">EvFindSidebar</a> *find_sidebar)</td></tr>
 <tr class="separator:ae9a7f7140d4cb8a6513d8b12b20d03a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67dc7022a5138b12e4a37d12cf1b087d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-find-sidebar_8h.html#a67dc7022a5138b12e4a37d12cf1b087d">ev_find_sidebar_clear</a> (<a class="el" href="ev-find-sidebar_8h.html#a497bf5de89a2ccc3a51d7b78d049c0e5">EvFindSidebar</a> *find_sidebar)</td></tr>
@@ -345,13 +347,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00529">529</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;{</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        gtk_list_store_clear (GTK_LIST_STORE (gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>))));</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        g_clear_pointer (&amp;priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>, (GDestroyNotify)gtk_tree_path_free);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00568">568</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;{</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        gtk_list_store_clear (GTK_LIST_STORE (gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>))));</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        g_clear_pointer (&amp;priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>, (GDestroyNotify)gtk_tree_path_free);</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -428,25 +430,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00558">558</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;{</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        GtkTreeModel         *model;</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        GtkTreeIter           iter;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="keywordflow">if</span> (!priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>)</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        model = gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>));</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        gtk_tree_model_get_iter (model, &amp;iter, priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="keywordflow">if</span> (gtk_tree_model_iter_next (model, &amp;iter)) {</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                gtk_tree_path_next (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                gtk_tree_path_free (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a> = gtk_tree_path_new_first ();</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        }</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <a class="code" href="ev-find-sidebar_8c.html#a9c214da2778406be5cb2c9c9feaf317e">ev_find_sidebar_select_highlighted_result</a> (sidebar);</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00597">597</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;{</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        GtkTreeModel         *model;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        GtkTreeIter           iter;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <span class="keywordflow">if</span> (!priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>)</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        model = gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>));</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        gtk_tree_model_get_iter (model, &amp;iter, priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        <span class="keywordflow">if</span> (gtk_tree_model_iter_next (model, &amp;iter)) {</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                gtk_tree_path_next (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                gtk_tree_path_free (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a> = gtk_tree_path_new_first ();</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        }</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <a class="code" href="ev-find-sidebar_8c.html#a9c214da2778406be5cb2c9c9feaf317e">ev_find_sidebar_select_highlighted_result</a> (sidebar);</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -474,24 +476,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00538">538</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;{</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="keywordflow">if</span> (!priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>)</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keywordflow">if</span> (!gtk_tree_path_prev (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>)) {</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                GtkTreeModel *model;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                GtkTreeIter   iter;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                model = gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>));</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                gtk_tree_model_get_iter (model, &amp;iter, priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                <span class="keywordflow">while</span> (gtk_tree_model_iter_next (model, &amp;iter))</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                        gtk_tree_path_next (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        }</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <a class="code" href="ev-find-sidebar_8c.html#a9c214da2778406be5cb2c9c9feaf317e">ev_find_sidebar_select_highlighted_result</a> (sidebar);</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00577">577</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;{</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">if</span> (!priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>)</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keywordflow">if</span> (!gtk_tree_path_prev (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>)) {</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;                GtkTreeModel *model;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;                GtkTreeIter   iter;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;                model = gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>));</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;                gtk_tree_model_get_iter (model, &amp;iter, priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;                <span class="keywordflow">while</span> (gtk_tree_model_iter_next (model, &amp;iter))</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                        gtk_tree_path_next (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>);</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        }</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <a class="code" href="ev-find-sidebar_8c.html#a9c214da2778406be5cb2c9c9feaf317e">ev_find_sidebar_select_highlighted_result</a> (sidebar);</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -499,6 +501,69 @@ Functions</h2></td></tr>
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-find-sidebar_8h_ac7a92f76a44ec7aa5a8b96d63d324349_icgraph.svg" width="803" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c803cdb7f0459c23938a053bf79f980"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_find_sidebar_restart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-find-sidebar_8h.html#a497bf5de89a2ccc3a51d7b78d049c0e5">EvFindSidebar</a> *&#160;</td>
+          <td class="paramname"><em>find_sidebar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>page</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00527">527</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;{</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        gint                  first_match_page = -1;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        gint                  i;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">if</span> (!priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a>; i++) {</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                index = page + i;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                <span class="keywordflow">if</span> (index &gt;= priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a>)</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                        index -= priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a>;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;                <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>-&gt;<a class="code" href="struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c">pages</a>[index]) {</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                        first_match_page = index;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                }</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        }</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <span class="keywordflow">if</span> (first_match_page != -1)</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                <a class="code" href="ev-find-sidebar_8c.html#aff3bae059f169db848bd7b387c824e10">ev_find_sidebar_highlight_first_match_of_page</a> (sidebar, first_match_page);</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-find-sidebar_8h_a6c803cdb7f0459c23938a053bf79f980_icgraph.svg" width="4267" height="986"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -529,38 +594,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00488">488</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;{</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a> == job)</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a>)</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;                g_source_remove (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a>);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a> = 0;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        gtk_list_store_clear (GTK_LIST_STORE (gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>))));</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        g_clear_object (&amp;priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>);</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a> = g_object_ref (job);</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        g_signal_connect_object (job, <span class="stringliteral">&quot;updated&quot;</span>,</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-find-sidebar_8c.html#afac91a104e151bbe4d0547c5c5e6083a">find_job_updated_cb</a>),</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                                 sidebar, 0);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        g_signal_connect_object (job, <span class="stringliteral">&quot;cancelled&quot;</span>,</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-find-sidebar_8c.html#a966f4e78e907be03d03c379282df31f5">find_job_cancelled_cb</a>),</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                                 sidebar, 0);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a21218d53b1877d573879a4f65692645d">job_current_page</a> = -1;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a9aba74fd0f2150e6152131d27c61a319">first_match_page</a> = -1;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a39b379efc772d30e1775976b1aa61975">current_page</a> = job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#acf1b2ab131e292afa3002fb22e9618a4">insert_position</a> = 0;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        g_clear_pointer (&amp;priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>, (GDestroyNotify)gtk_tree_path_free);</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00498">498</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;{</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a> == job)</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a>)</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                g_source_remove (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a>);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a> = 0;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        gtk_list_store_clear (GTK_LIST_STORE (gtk_tree_view_get_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3">tree_view</a>))));</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        g_clear_object (&amp;priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>);</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a> = g_object_ref (job);</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        g_signal_connect_object (job, <span class="stringliteral">&quot;updated&quot;</span>,</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-find-sidebar_8c.html#afac91a104e151bbe4d0547c5c5e6083a">find_job_updated_cb</a>),</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                                 sidebar, 0);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        g_signal_connect_object (job, <span class="stringliteral">&quot;cancelled&quot;</span>,</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-find-sidebar_8c.html#a966f4e78e907be03d03c379282df31f5">find_job_cancelled_cb</a>),</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                                 sidebar, 0);</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a21218d53b1877d573879a4f65692645d">job_current_page</a> = -1;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a9aba74fd0f2150e6152131d27c61a319">first_match_page</a> = -1;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a39b379efc772d30e1775976b1aa61975">current_page</a> = job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#acf1b2ab131e292afa3002fb22e9618a4">insert_position</a> = 0;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        g_clear_pointer (&amp;priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b">highlighted_result</a>, (GDestroyNotify)gtk_tree_path_free);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-find-sidebar_8h_a89b6e600ec8786dceea962cc5b86e3e4_icgraph.svg" width="5699" height="987"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -582,22 +647,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00517">517</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;{</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">if</span> (!priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a> == 0)</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a> = g_idle_add ((GSourceFunc)<a class="code" href="ev-find-sidebar_8c.html#a2fcabf8b93069a9178990d5b55cff138">process_matches_idle</a>, sidebar);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-find-sidebar_8c_source.html#l00556">556</a> of file <a class="el" href="ev-find-sidebar_8c_source.html">ev-find-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;{</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <a class="code" href="struct__EvFindSidebarPrivate.html">EvFindSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <span class="keywordflow">if</span> (!priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#ad4ca6462142832007fcf6e08c795e3aa">job</a>)</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a> == 0)</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                priv-&gt;<a class="code" href="struct__EvFindSidebarPrivate.html#a6bb3d47958b35dfa38d53e9a752eee2e">process_matches_idle_id</a> = g_idle_add ((GSourceFunc)<a class="code" href="ev-find-sidebar_8c.html#a2fcabf8b93069a9178990d5b55cff138">process_matches_idle</a>, sidebar);</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-find-sidebar_8h_ae9a7f7140d4cb8a6513d8b12b20d03a8_icgraph.svg" width="5950" height="935"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -611,7 +676,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-find-sidebar_8h.html">ev-find-sidebar.h</a></li>
-    <li class="footer">Generated on Sun Oct 27 2013 21:54:19 for Evince by
+    <li class="footer">Generated on Tue Oct 29 2013 09:01:47 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

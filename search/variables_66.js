@@ -20,6 +20,7 @@ var searchData=
   ['find_5fjob',['find_job',['../struct__EvView.html#afb6184ea28c35aef7c9f586567cbd03f',1,'_EvView::find_job()'],['../struct__EvWindowPrivate.html#a1e3b0ea10182fffc59e462310d03f992',1,'_EvWindowPrivate::find_job()']]],
   ['find_5flink_5fdest',['find_link_dest',['../struct__EvDocumentLinksInterface.html#a743ef355ed53b47adf760a966bdcc08a',1,'_EvDocumentLinksInterface']]],
   ['find_5flink_5fpage',['find_link_page',['../struct__EvDocumentLinksInterface.html#adc2b22859560b1b9dfa4ac42252bc222',1,'_EvDocumentLinksInterface']]],
+  ['find_5fpage',['find_page',['../struct__EvView.html#a27518d47f65599cafb713e456f4977ec',1,'_EvView']]],
   ['find_5fpages',['find_pages',['../struct__EvView.html#a117cefcbe74c2e7a98ac00bb22f6199b',1,'_EvView']]],
   ['find_5fresult',['find_result',['../struct__EvView.html#a30c86248acd0188206495c0fd00e8590',1,'_EvView']]],
   ['find_5fsidebar',['find_sidebar',['../struct__EvWindowPrivate.html#a42af9ae7088154307c29c6d399352c21',1,'_EvWindowPrivate']]],

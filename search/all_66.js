@@ -46,6 +46,7 @@ var searchData=
   ['find_5flink_5fdest',['find_link_dest',['../struct__EvDocumentLinksInterface.html#a743ef355ed53b47adf760a966bdcc08a',1,'_EvDocumentLinksInterface']]],
   ['find_5flink_5fpage',['find_link_page',['../struct__EvDocumentLinksInterface.html#adc2b22859560b1b9dfa4ac42252bc222',1,'_EvDocumentLinksInterface']]],
   ['find_5fnext_5fidle_5fcb',['find_next_idle_cb',['../ev-window_8c.html#a2c5abd193553e0abe937dba0f7562bb0',1,'ev-window.c']]],
+  ['find_5fpage',['find_page',['../struct__EvView.html#a27518d47f65599cafb713e456f4977ec',1,'_EvView']]],
   ['find_5fpage_5fat_5flocation',['find_page_at_location',['../ev-view_8c.html#a16e9e7abf9924732579b27bbcb1a43b2',1,'ev-view.c']]],
   ['find_5fpage_5frate_5frefresh',['FIND_PAGE_RATE_REFRESH',['../ev-window_8c.html#a9284999ddb9ef5739eb97d6db2687c27',1,'ev-window.c']]],
   ['find_5fpages',['find_pages',['../struct__EvView.html#a117cefcbe74c2e7a98ac00bb22f6199b',1,'_EvView']]],

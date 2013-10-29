@@ -125,6 +125,7 @@ var ev_view_8c =
     [ "ev_view_find_get_result", "ev-view_8c.html#af86f6a8459743da48d93fed8451e2d4e", null ],
     [ "ev_view_find_next", "ev-view_8c.html#a9dcdadb4a8672331acfbd8d9d4445276", null ],
     [ "ev_view_find_previous", "ev-view_8c.html#af70c84aafc088507c77dccb1895bcec2", null ],
+    [ "ev_view_find_restart", "ev-view_8c.html#ab521bf29ade0b0c120bd94ce69179f74", null ],
     [ "ev_view_find_search_changed", "ev-view_8c.html#a3bbd25512a4068064161deaed737a173", null ],
     [ "ev_view_find_set_highlight_search", "ev-view_8c.html#a76f46ee1b38429b28d6575a90d3461ec", null ],
     [ "ev_view_find_set_result", "ev-view_8c.html#ad95bffa913795b3fa5550bab38cada05", null ],

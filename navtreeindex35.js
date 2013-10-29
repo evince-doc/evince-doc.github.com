@@ -1,5 +1,12 @@
 var NAVTREEINDEX35 =
 {
+"synctex__parser_8c.html#abeeeca0fddb595536ef45eb22dda6413":[7,0,0,1,2,0,247],
+"synctex__parser_8c.html#abf367a904d2161ccce967d83b408b9f7":[7,0,0,1,2,0,30],
+"synctex__parser_8c.html#abf415b16ee0d9432183b77e45bfa9fd6":[7,0,0,1,2,0,222],
+"synctex__parser_8c.html#abf429cea3ab8edc549b78175a4541dc7":[7,0,0,1,2,0,230],
+"synctex__parser_8c.html#abf4b00bb5ac77d692c61717d1b446a46":[7,0,0,1,2,0,79],
+"synctex__parser_8c.html#ac07a0405b66b1bf3305677b25522c58a":[7,0,0,1,2,0,167],
+"synctex__parser_8c.html#ac250cc345e5ab4bf92bc2a46b7654d85":[7,0,0,1,2,0,67],
 "synctex__parser_8c.html#ac4512a458f27df584aa7397e4ce14b15":[7,0,0,1,2,0,45],
 "synctex__parser_8c.html#ac730e561637f0ada2c925ce7f59de808":[7,0,0,1,2,0,180],
 "synctex__parser_8c.html#ac7b8ca5ad9ce7026a5d0be4b651a356f":[7,0,0,1,2,0,22],
@@ -242,12 +249,5 @@ var NAVTREEINDEX35 =
 "test7_8py.html#ae29d9724aa989d3471ef5cff2956221d":[7,0,0,8,7,0],
 "test7_8py_source.html":[7,0,0,8,7],
 "texmfcnf_8c.html":[7,0,0,0,2,7],
-"texmfcnf_8c.html#a43c97bf968a621adbd885948dd08b2dd":[7,0,0,0,2,7,0],
-"texmfcnf_8c_source.html":[7,0,0,0,2,7],
-"texmfcnf_8h.html":[7,0,0,0,2,8],
-"texmfcnf_8h.html#a773b09675517fc33d8ac9967a8a950da":[7,0,0,0,2,8,0],
-"texmfcnf_8h_source.html":[7,0,0,0,2,8],
-"tfm_8c.html":[7,0,0,0,2,0,32],
-"tfm_8c.html#a184922e3e59a69a3527e93e19e12699d":[7,0,0,0,2,0,32,2],
-"tfm_8c.html#a224734fcc0c5fdaaf97488cce3a0bd21":[7,0,0,0,2,0,32,1]
+"texmfcnf_8c.html#a43c97bf968a621adbd885948dd08b2dd":[7,0,0,0,2,7,0]
 };
