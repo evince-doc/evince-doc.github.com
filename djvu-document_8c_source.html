@@ -934,61 +934,58 @@ $(document).ready(function(){initNavTree('djvu-document_8c_source.html','');});
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <a class="code" href="djvu-document_8c.html#a9b139e47dbbb99e84799eae3c77523f7">document_get_page_size</a> (djvu_document, page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, &amp;width, &amp;height, &amp;dpi);</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keywordflow">for</span> (l = matches; l &amp;&amp; l-&gt;data; l = g_list_next (l)) {</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *r = (<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *)l-&gt;data;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        gdouble      tmp;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        gdouble tmp = r-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        tmp = r-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        </div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> *= 72.0 / dpi;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> *= 72.0 / dpi;</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        tmp = r-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = height - r-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> * 72.0 / dpi;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = height - tmp * 72.0 / dpi;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    }</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    </div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> *= 72.0 / dpi;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> *= 72.0 / dpi;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = height - r-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> * 72.0 / dpi;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        r-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = height - tmp * 72.0 / dpi;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    }</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    </div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <span class="keywordflow">return</span> matches;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;}</div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keywordflow">return</span> matches;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;}</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;<span class="keyword">static</span> <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbe">EvFindOptions</a></div>
-<div class="line"><a name="l00845"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a88ad932728c3f5ff3acdfb93ef542186">  845</a></span>&#160;<a class="code" href="djvu-document_8c.html#a88ad932728c3f5ff3acdfb93ef542186">djvu_document_find_get_supported_options</a> (<a class="code" href="ev-document-find_8h.html#acb722dbd6084ccad71567f0c45a2d964">EvDocumentFind</a> *document)</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;{</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea17677a80114b27e85d826ebd89ce40bd">EV_FIND_CASE_SENSITIVE</a>;</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;}</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00851"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a1baf06525e40d614415bf6da2bf0e04a">  851</a></span>&#160;<a class="code" href="djvu-document_8c.html#a1baf06525e40d614415bf6da2bf0e04a">djvu_document_find_iface_init</a> (<a class="code" href="struct__EvDocumentFindInterface.html">EvDocumentFindInterface</a> *iface)</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;{</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        iface-&gt;<a class="code" href="struct__EvDocumentFindInterface.html#a1f1139e1aecd8ea4be4fa9ef86fde6d0">find_text</a> = <a class="code" href="djvu-document_8c.html#a85835a919824bd3619c9ed16eb799f0c">djvu_document_find_find_text</a>;</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentFindInterface.html#a1f99dbe2fa9054048fbbb2cf8772d5da">get_supported_options</a> = <a class="code" href="djvu-document_8c.html#a88ad932728c3f5ff3acdfb93ef542186">djvu_document_find_get_supported_options</a>;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;}</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="keyword">static</span> <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a> *</div>
-<div class="line"><a name="l00858"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a3379e07eacba639a1d82578671b1c8be">  858</a></span>&#160;<a class="code" href="djvu-document_8c.html#a3379e07eacba639a1d82578671b1c8be">djvu_document_links_get_links</a> (<a class="code" href="ev-document-links_8h.html#a01c7b2f5ebb503c4267094ab36f66d35">EvDocumentLinks</a> *document_links,</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                   <a class="code" href="struct__EvPage.html">EvPage</a>          *page)</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;{</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    gdouble dpi;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    <a class="code" href="djvu-document_8c.html#a9b139e47dbbb99e84799eae3c77523f7">document_get_page_size</a> (<a class="code" href="djvu-document_8h.html#afc02651ec035062bc9c09dba2b8300e7">DJVU_DOCUMENT</a> (document_links), page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, NULL, NULL, &amp;dpi);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="djvu-links_8c.html#a02caa25371f98221660a560e76f01a1c">djvu_links_get_links</a> (document_links, page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, 72.0 / dpi);</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;}</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00868"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a98a76ee2527ffd8e8166508c931e9339">  868</a></span>&#160;<a class="code" href="djvu-document_8c.html#a98a76ee2527ffd8e8166508c931e9339">djvu_document_document_links_iface_init</a>  (<a class="code" href="struct__EvDocumentLinksInterface.html">EvDocumentLinksInterface</a> *iface)</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;{</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#a146245e7fd305a73dcdd229643e5d587">has_document_links</a> = <a class="code" href="djvu-links_8c.html#a2228c5dfe909086d0ff956b3cb0abcc7">djvu_links_has_document_links</a>;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#ae719cb518c2e8862c3720d659ada8b68">get_links_model</a> = <a class="code" href="djvu-links_8c.html#a272647b1ce94dafa2e73d64e573f7d48">djvu_links_get_links_model</a>;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#a8e90e53b9fd366f0b45cb9fe0b104f3a">get_links</a> = <a class="code" href="djvu-document_8c.html#a3379e07eacba639a1d82578671b1c8be">djvu_document_links_get_links</a>;</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#a743ef355ed53b47adf760a966bdcc08a">find_link_dest</a> = <a class="code" href="djvu-links_8c.html#aae3116ff1788aa8c4e2a20a73a3d6c81">djvu_links_find_link_dest</a>;</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#adc2b22859560b1b9dfa4ac42252bc222">find_link_page</a> = <a class="code" href="djvu-links_8c.html#a990a708aec6eae0300a4455877616e28">djvu_links_find_link_page</a>;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;}</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;<span class="keyword">static</span> <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbe">EvFindOptions</a></div>
+<div class="line"><a name="l00842"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a88ad932728c3f5ff3acdfb93ef542186">  842</a></span>&#160;<a class="code" href="djvu-document_8c.html#a88ad932728c3f5ff3acdfb93ef542186">djvu_document_find_get_supported_options</a> (<a class="code" href="ev-document-find_8h.html#acb722dbd6084ccad71567f0c45a2d964">EvDocumentFind</a> *document)</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;{</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea17677a80114b27e85d826ebd89ce40bd">EV_FIND_CASE_SENSITIVE</a>;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;}</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00848"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a1baf06525e40d614415bf6da2bf0e04a">  848</a></span>&#160;<a class="code" href="djvu-document_8c.html#a1baf06525e40d614415bf6da2bf0e04a">djvu_document_find_iface_init</a> (<a class="code" href="struct__EvDocumentFindInterface.html">EvDocumentFindInterface</a> *iface)</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;{</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        iface-&gt;<a class="code" href="struct__EvDocumentFindInterface.html#a1f1139e1aecd8ea4be4fa9ef86fde6d0">find_text</a> = <a class="code" href="djvu-document_8c.html#a85835a919824bd3619c9ed16eb799f0c">djvu_document_find_find_text</a>;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentFindInterface.html#a1f99dbe2fa9054048fbbb2cf8772d5da">get_supported_options</a> = <a class="code" href="djvu-document_8c.html#a88ad932728c3f5ff3acdfb93ef542186">djvu_document_find_get_supported_options</a>;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;}</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;<span class="keyword">static</span> <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a> *</div>
+<div class="line"><a name="l00855"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a3379e07eacba639a1d82578671b1c8be">  855</a></span>&#160;<a class="code" href="djvu-document_8c.html#a3379e07eacba639a1d82578671b1c8be">djvu_document_links_get_links</a> (<a class="code" href="ev-document-links_8h.html#a01c7b2f5ebb503c4267094ab36f66d35">EvDocumentLinks</a> *document_links,</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                   <a class="code" href="struct__EvPage.html">EvPage</a>          *page)</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;{</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    gdouble dpi;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <a class="code" href="djvu-document_8c.html#a9b139e47dbbb99e84799eae3c77523f7">document_get_page_size</a> (<a class="code" href="djvu-document_8h.html#afc02651ec035062bc9c09dba2b8300e7">DJVU_DOCUMENT</a> (document_links), page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, NULL, NULL, &amp;dpi);</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="djvu-links_8c.html#a02caa25371f98221660a560e76f01a1c">djvu_links_get_links</a> (document_links, page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, 72.0 / dpi);</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;}</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00865"></a><span class="lineno"><a class="code" href="djvu-document_8c.html#a98a76ee2527ffd8e8166508c931e9339">  865</a></span>&#160;<a class="code" href="djvu-document_8c.html#a98a76ee2527ffd8e8166508c931e9339">djvu_document_document_links_iface_init</a>  (<a class="code" href="struct__EvDocumentLinksInterface.html">EvDocumentLinksInterface</a> *iface)</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;{</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#a146245e7fd305a73dcdd229643e5d587">has_document_links</a> = <a class="code" href="djvu-links_8c.html#a2228c5dfe909086d0ff956b3cb0abcc7">djvu_links_has_document_links</a>;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#ae719cb518c2e8862c3720d659ada8b68">get_links_model</a> = <a class="code" href="djvu-links_8c.html#a272647b1ce94dafa2e73d64e573f7d48">djvu_links_get_links_model</a>;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#a8e90e53b9fd366f0b45cb9fe0b104f3a">get_links</a> = <a class="code" href="djvu-document_8c.html#a3379e07eacba639a1d82578671b1c8be">djvu_document_links_get_links</a>;</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#a743ef355ed53b47adf760a966bdcc08a">find_link_dest</a> = <a class="code" href="djvu-links_8c.html#aae3116ff1788aa8c4e2a20a73a3d6c81">djvu_links_find_link_dest</a>;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentLinksInterface.html#adc2b22859560b1b9dfa4ac42252bc222">find_link_page</a> = <a class="code" href="djvu-links_8c.html#a990a708aec6eae0300a4455877616e28">djvu_links_find_link_page</a>;</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_7f6fea2249a761309a503a3fea81b58a.html">djvu</a></li><li class="navelem"><a class="el" href="djvu-document_8c.html">djvu-document.c</a></li>
-    <li class="footer">Generated on Wed Oct 30 2013 09:49:39 for Evince by
+    <li class="footer">Generated on Wed Oct 30 2013 11:53:42 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
