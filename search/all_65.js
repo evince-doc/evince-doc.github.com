@@ -2271,7 +2271,6 @@ var searchData=
   ['ev_5ftoolbar_5finit',['ev_toolbar_init',['../ev-toolbar_8c.html#af98b26fa1173235360d55df10c93d362',1,'ev-toolbar.c']]],
   ['ev_5ftoolbar_5fnew',['ev_toolbar_new',['../ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061',1,'ev_toolbar_new(EvWindow *window):&#160;ev-toolbar.c'],['../ev-toolbar_8h.html#a245a5d581e501da3b24a81095d8ef061',1,'ev_toolbar_new(EvWindow *window):&#160;ev-toolbar.c']]],
   ['ev_5ftoolbar_5fset_5fbutton_5faction',['ev_toolbar_set_button_action',['../ev-toolbar_8c.html#af2af356ceb1e38ba7941af91f597e337',1,'ev-toolbar.c']]],
-  ['ev_5ftoolbar_5fset_5fbutton_5fimage',['ev_toolbar_set_button_image',['../ev-toolbar_8c.html#a3a0161a13287db10e065f191b4ff6eb6',1,'ev-toolbar.c']]],
   ['ev_5ftoolbar_5fset_5fproperty',['ev_toolbar_set_property',['../ev-toolbar_8c.html#ab8b98662fcaa8318b414f39e5e519e9b',1,'ev-toolbar.c']]],
   ['ev_5ftoolbars_5ffilename',['EV_TOOLBARS_FILENAME',['../ev-window_8c.html#ad86f9134a6bcf4e8245642cc00af3bb6',1,'ev-window.c']]],
   ['ev_5ftransition_5falignment_5fhorizontal',['EV_TRANSITION_ALIGNMENT_HORIZONTAL',['../ev-transition-effect_8h.html#a884fd00d90c151cc03bc13d9cc8f916ea886d9221eff3618025710b22ba57b72a',1,'ev-transition-effect.h']]],

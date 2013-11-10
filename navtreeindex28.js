@@ -1,8 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"struct__DviHashBucket.html#a8bf5bf49a884747c3c39d1d5f512ffd1":[6,0,34,3],
-"struct__DviHashBucket.html#aeaa9c1724e4fb2296015030d6f0b3ce2":[6,0,34,0],
-"struct__DviHashTable.html":[6,0,35],
 "struct__DviHashTable.html#a4e9b4ff7d7133182ac7ceea2f6eae161":[6,0,35,1],
 "struct__DviHashTable.html#a6c2d3b6d5f949f76bbcb7364a1f9fd04":[6,0,35,2],
 "struct__DviHashTable.html#a6cdd3cd639a5e9c8fd9e77d8c06b6885":[6,0,35,5],
@@ -249,5 +246,8 @@ var NAVTREEINDEX28 =
 "struct__EvDaemonApplication.html#aa50da8309c686d24bf0c37b1da4b3465":[6,0,78,2],
 "struct__EvDaemonApplication.html#ad385fcdf95322b5d94a7b8cce0584016":[6,0,78,1],
 "struct__EvDaemonApplicationClass.html":[6,0,79],
-"struct__EvDaemonApplicationClass.html#a0ff7dac8343cc0ed20ac76cb1a965c70":[6,0,79,0]
+"struct__EvDaemonApplicationClass.html#a0ff7dac8343cc0ed20ac76cb1a965c70":[6,0,79,0],
+"struct__EvDocument.html":[6,0,80],
+"struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72":[6,0,80,1],
+"struct__EvDocument.html#a5e82b9e76bd9d89602f141c02c8507f2":[6,0,80,0]
 };

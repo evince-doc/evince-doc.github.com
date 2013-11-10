@@ -1,6 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"ev-spectre_8c.html#a66b60a160b3ce039e465f0c80245ab8c":[7,0,0,0,4,0,10],
 "ev-spectre_8c.html#a6dd20413eb2851bead4ed655025049ea":[7,0,0,0,4,0,13],
 "ev-spectre_8c.html#a6fd38b7dad9290adc2aa2cc85d672eb9":[7,0,0,0,4,0,11],
 "ev-spectre_8c.html#aa26391880c45a857db2c0613f11062bd":[7,0,0,0,4,0,2],
@@ -111,15 +110,13 @@ var NAVTREEINDEX18 =
 "ev-timeline_8h.html#afd642adcf777de66472911ab7a2596d4":[7,0,0,4,19,12],
 "ev-timeline_8h_source.html":[7,0,0,4,19],
 "ev-toolbar_8c.html":[7,0,0,7,59],
-"ev-toolbar_8c.html#a13ee6c19027a61f928b5375a5922a75d":[7,0,0,7,59,16],
 "ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061":[7,0,0,7,59,12],
-"ev-toolbar_8c.html#a3a0161a13287db10e065f191b4ff6eb6":[7,0,0,7,59,14],
 "ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c":[7,0,0,7,59,5],
 "ev-toolbar_8c.html#a976e7359b740566a59db9d3be25ed825":[7,0,0,7,59,7],
 "ev-toolbar_8c.html#aa45008197ec314b3ed9a32d78a501323":[7,0,0,7,59,6],
 "ev-toolbar_8c.html#aa6d5c1a84d7a30d2c7ad798bf24d4ef9":[7,0,0,7,59,8],
 "ev-toolbar_8c.html#aaf5815fd87717edcbb98f12039d72092":[7,0,0,7,59,9],
-"ev-toolbar_8c.html#ab8b98662fcaa8318b414f39e5e519e9b":[7,0,0,7,59,15],
+"ev-toolbar_8c.html#ab8b98662fcaa8318b414f39e5e519e9b":[7,0,0,7,59,14],
 "ev-toolbar_8c.html#abe974f22edeef8189603ba75fd90ff3ca5444259366dcb8d3b0e146507c9e0174":[7,0,0,7,59,2],
 "ev-toolbar_8c.html#abe974f22edeef8189603ba75fd90ff3cac37dda0da1a44e10c0504afeeb863f3c":[7,0,0,7,59,1],
 "ev-toolbar_8c.html#ad3558a4ca391039ded68227fb981d03e":[7,0,0,7,59,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX18 =
 "ev-utils_8c.html#a7d35f401e54db3d6227a96af5a248edf":[7,0,0,7,61,9],
 "ev-utils_8c.html#a94c637579ac9aef3ef422ddd85f6c69a":[7,0,0,7,61,1],
 "ev-utils_8c.html#a9af39ac454bfcf69118dcbb76f919eac":[7,0,0,7,61,8],
-"ev-utils_8c.html#aee1d680384b5eae7018b579d7e7cb0fb":[7,0,0,7,61,4]
+"ev-utils_8c.html#aee1d680384b5eae7018b579d7e7cb0fb":[7,0,0,7,61,4],
+"ev-utils_8c.html#af3aecfc46da2c5d238c1336efcb89f12":[7,0,0,7,61,10],
+"ev-utils_8c_source.html":[7,0,0,7,61],
+"ev-utils_8h.html":[7,0,0,7,62]
 };

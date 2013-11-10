@@ -42,7 +42,6 @@ var searchData=
   ['get_5ffont_5fmetrics',['get_font_metrics',['../tfmfile_8c.html#aa9830f5de9a1d3e08863e19fd05eed9e',1,'tfmfile.c']]],
   ['get_5fform_5ffield_5fmapping_5fat_5flocation',['get_form_field_mapping_at_location',['../ev-view_8c.html#a6a9ae95feefbb990f3d4552c66d39295',1,'ev-view.c']]],
   ['get_5fgdk_5fpixbuf_5fformat_5fby_5fextension',['get_gdk_pixbuf_format_by_extension',['../ev-utils_8c.html#af3aecfc46da2c5d238c1336efcb89f12',1,'get_gdk_pixbuf_format_by_extension(const gchar *uri):&#160;ev-utils.c'],['../ev-utils_8h.html#af3aecfc46da2c5d238c1336efcb89f12',1,'get_gdk_pixbuf_format_by_extension(const gchar *uri):&#160;ev-utils.c']]],
-  ['get_5ficon_5fmargin',['get_icon_margin',['../ev-history-action-widget_8c.html#aa3d521036c0afe8cba654181e3c8e17d',1,'get_icon_margin(EvHistoryActionWidget *history_widget):&#160;ev-history-action-widget.c'],['../ev-toolbar_8c.html#a13ee6c19027a61f928b5375a5922a75d',1,'get_icon_margin(EvToolbar *ev_toolbar):&#160;ev-toolbar.c']]],
   ['get_5flabel_5ffrom_5ffilename',['get_label_from_filename',['../main_8c.html#af133125c51a962eb85c636637fecbf35',1,'main.c']]],
   ['get_5flicense_5ftext_5fwidget',['get_license_text_widget',['../ev-properties-license_8c.html#af4f9a4fd6cfa817dc8ae9beb6d8b54c9',1,'ev-properties-license.c']]],
   ['get_5flicense_5furi_5fwidget',['get_license_uri_widget',['../ev-properties-license_8c.html#aaac1a731c6722c712e72426d3b88761e',1,'ev-properties-license.c']]],

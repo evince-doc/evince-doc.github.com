@@ -58,7 +58,6 @@ var searchData=
   ['get_5fform_5ffield_5fmapping_5fat_5flocation',['get_form_field_mapping_at_location',['../ev-view_8c.html#a6a9ae95feefbb990f3d4552c66d39295',1,'ev-view.c']]],
   ['get_5fform_5ffields',['get_form_fields',['../struct__EvDocumentFormsInterface.html#a0d5d05c3ce205620aa219149e5c96f84',1,'_EvDocumentFormsInterface']]],
   ['get_5fgdk_5fpixbuf_5fformat_5fby_5fextension',['get_gdk_pixbuf_format_by_extension',['../ev-utils_8c.html#af3aecfc46da2c5d238c1336efcb89f12',1,'get_gdk_pixbuf_format_by_extension(const gchar *uri):&#160;ev-utils.c'],['../ev-utils_8h.html#af3aecfc46da2c5d238c1336efcb89f12',1,'get_gdk_pixbuf_format_by_extension(const gchar *uri):&#160;ev-utils.c']]],
-  ['get_5ficon_5fmargin',['get_icon_margin',['../ev-history-action-widget_8c.html#aa3d521036c0afe8cba654181e3c8e17d',1,'get_icon_margin(EvHistoryActionWidget *history_widget):&#160;ev-history-action-widget.c'],['../ev-toolbar_8c.html#a13ee6c19027a61f928b5375a5922a75d',1,'get_icon_margin(EvToolbar *ev_toolbar):&#160;ev-toolbar.c']]],
   ['get_5fimage',['get_image',['../struct__EvDocumentImagesInterface.html#ae7d95e7e581e4c8cfd7b2b4f2158051a',1,'_EvDocumentImagesInterface']]],
   ['get_5fimage_5fmapping',['get_image_mapping',['../struct__EvDocumentImagesInterface.html#aa7dd998f3d2950bb558d233688397dfa',1,'_EvDocumentImagesInterface']]],
   ['get_5finfo',['get_info',['../struct__EvDocumentClass.html#a095a7bb9072170b8e02afa03c2be45cf',1,'_EvDocumentClass']]],

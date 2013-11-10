@@ -363,32 +363,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-history-action-widget_8c_source.html#l00308">308</a> of file <a class="el" href="ev-history-action-widget_8c_source.html">ev-history-action-widget.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        g_return_if_fail (<a class="code" href="ev-history-action-widget_8h.html#a885e37682d643722caf2afa2aae3dc24">EV_IS_HISTORY_ACTION_WIDGET</a> (history_widget));</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">if</span> (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a> == history)</div>
+<p>Definition at line <a class="el" href="ev-history-action-widget_8c_source.html#l00296">296</a> of file <a class="el" href="ev-history-action-widget_8c_source.html">ev-history-action-widget.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        g_return_if_fail (<a class="code" href="ev-history-action-widget_8h.html#a885e37682d643722caf2afa2aae3dc24">EV_IS_HISTORY_ACTION_WIDGET</a> (history_widget));</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">if</span> (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a> == history)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span> (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>) {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                g_object_remove_weak_pointer (G_OBJECT (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>),</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                              (gpointer)&amp;history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                g_signal_handlers_disconnect_by_func (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                                      G_CALLBACK (<a class="code" href="ev-history-action-widget_8c.html#a398d1f6cb61e990947fe4621ed63f10a">history_changed_cb</a>),</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                                      history_widget);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a> = history;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">if</span> (!history)</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">if</span> (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>) {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                g_object_remove_weak_pointer (G_OBJECT (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>),</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                              (gpointer)&amp;history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                g_signal_handlers_disconnect_by_func (history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>,</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                                      G_CALLBACK (<a class="code" href="ev-history-action-widget_8c.html#a398d1f6cb61e990947fe4621ed63f10a">history_changed_cb</a>),</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                                      history_widget);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a> = history;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">if</span> (!history)</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        g_object_add_weak_pointer (G_OBJECT (history),</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                   (gpointer)&amp;history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        g_signal_connect (history, <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                          G_CALLBACK (<a class="code" href="ev-history-action-widget_8c.html#a398d1f6cb61e990947fe4621ed63f10a">history_changed_cb</a>),</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                          history_widget);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        g_object_add_weak_pointer (G_OBJECT (history),</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                   (gpointer)&amp;history_widget-&gt;<a class="code" href="struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionWidgetPrivate.html#ab5f0407e7f33d4bc54fbc97908411dca">history</a>);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        g_signal_connect (history, <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                          G_CALLBACK (<a class="code" href="ev-history-action-widget_8c.html#a398d1f6cb61e990947fe4621ed63f10a">history_changed_cb</a>),</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                          history_widget);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -408,7 +408,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-history-action-widget_8h.html">ev-history-action-widget.h</a></li>
-    <li class="footer">Generated on Tue Nov 5 2013 09:19:48 for Evince by
+    <li class="footer">Generated on Sun Nov 10 2013 12:15:07 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
