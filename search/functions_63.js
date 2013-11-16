@@ -5,6 +5,7 @@ var searchData=
   ['check_5fjob_5fsize_5fand_5funref',['check_job_size_and_unref',['../ev-pixbuf-cache_8c.html#a3e4642fa985d6ba087bf8f51fc65762a',1,'ev-pixbuf-cache.c']]],
   ['checkcmap',['checkcmap',['../tiff2ps_8c.html#abdc13cf816b2709f01144dd2536045e9',1,'tiff2ps.c']]],
   ['checkimage',['checkImage',['../tiff2ps_8c.html#a77bab26cd2a76d354f782c699c7cf84a',1,'tiff2ps.c']]],
+  ['clear_5fcache',['clear_cache',['../ev-view-accessible_8c.html#a104fd9e14291be25ac6125a6171c90f9',1,'ev-view-accessible.c']]],
   ['clear_5fcaches',['clear_caches',['../ev-view_8c.html#a2ef098c453c683e2e45f4f2cabcbd8e7',1,'ev-view.c']]],
   ['clear_5fjob_5fselection',['clear_job_selection',['../ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946',1,'ev-pixbuf-cache.c']]],
   ['clear_5flink_5fselected',['clear_link_selected',['../ev-view_8c.html#a44a5ce1bf75a26b3b50feef05310c869',1,'ev-view.c']]],

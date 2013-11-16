@@ -90,6 +90,7 @@ var searchData=
   ['preview_5fmode',['preview_mode',['../main_8c.html#a02d7d0bfb6dfabf7c9848a72bcb81cae',1,'main.c']]],
   ['previous',['previous',['../struct__EggFindBarClass.html#abfd77985ccd0b72a981b67a85106f4fc',1,'_EggFindBarClass']]],
   ['previous_5fbutton',['previous_button',['../struct__EggFindBarPrivate.html#a65348038b09853a60493ee221c28336e',1,'_EggFindBarPrivate']]],
+  ['previous_5fcursor_5fpage',['previous_cursor_page',['../struct__EvViewAccessiblePrivate.html#a406cb1ddf794e13290fedf4d7e230bf5',1,'_EvViewAccessiblePrivate']]],
   ['print_5fctx',['print_ctx',['../struct__PdfDocument.html#a3f732df9f5e956858ee3ea81ef7feafb',1,'_PdfDocument']]],
   ['print_5fdialog',['print_dialog',['../struct__EvWindowPrivate.html#ac8e2ae92922930f722737c7983c845ef',1,'_EvWindowPrivate']]],
   ['print_5fjob_5ftitle',['print_job_title',['../struct__EvPreviewerWindow.html#a5966c5ab3f7503e037f769d5313bca49',1,'_EvPreviewerWindow']]],

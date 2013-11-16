@@ -34,6 +34,7 @@ var searchData=
   ['chrome',['chrome',['../struct__EvWindowPrivate.html#abe9128f9496a33a0cb6c56e3d8310058',1,'_EvWindowPrivate']]],
   ['class',['class',['../struct__synctex__node.html#a46dbe73756d0ea08474584f727459707',1,'_synctex_node::class()'],['../struct____synctex__scanner__t.html#a5313be691a11d7f4c4dc3dfa18adb010',1,'__synctex_scanner_t::class()'],['../structsynctex__node__sheet__t.html#a289d56fa323e16a695932c355eb83cc0',1,'synctex_node_sheet_t::class()']]],
   ['clean_5fand_5fremove',['CLEAN_AND_REMOVE',['../synctex__parser__utils_8c.html#aca8f08fdb3951c01e967b8ce9a0e548a',1,'synctex_parser_utils.c']]],
+  ['clear_5fcache',['clear_cache',['../ev-view-accessible_8c.html#a104fd9e14291be25ac6125a6171c90f9',1,'ev-view-accessible.c']]],
   ['clear_5fcaches',['clear_caches',['../ev-view_8c.html#a2ef098c453c683e2e45f4f2cabcbd8e7',1,'ev-view.c']]],
   ['clear_5fjob_5fselection',['clear_job_selection',['../ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946',1,'ev-pixbuf-cache.c']]],
   ['clear_5flink_5fselected',['clear_link_selected',['../ev-view_8c.html#a44a5ce1bf75a26b3b50feef05310c869',1,'ev-view.c']]],

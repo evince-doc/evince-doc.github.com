@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"struct__EvHistoryActionWidget.html":[6,0,123],
 "struct__EvHistoryActionWidget.html#a22e8e58b718f5026e9a11b48397c04a8":[6,0,123,0],
 "struct__EvHistoryActionWidget.html#a4463368f61937e38dfd1537c6122d924":[6,0,123,1],
 "struct__EvHistoryActionWidgetClass.html":[6,0,124],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvMediaPlayerKeysClass.html":[6,0,185],
 "struct__EvMediaPlayerKeysClass.html#a3cef6e388169ef69bd92981bf49eb56a":[6,0,185,1],
 "struct__EvMediaPlayerKeysClass.html#aa1903c9d6b92167eb10d811542718e8a":[6,0,185,0],
-"struct__EvMessageArea.html":[6,0,186],
-"struct__EvMessageArea.html#a1e92ba8342cff1027ea5f0eb1dcd74f8":[6,0,186,0]
+"struct__EvMessageArea.html":[6,0,186]
 };

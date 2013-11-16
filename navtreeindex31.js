@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvMessageArea.html#a1e92ba8342cff1027ea5f0eb1dcd74f8":[6,0,186,0],
 "struct__EvMessageArea.html#aba29ce322f83d5f5b12d4bee0b3e1ba4":[6,0,186,1],
 "struct__EvMessageAreaClass.html":[6,0,187],
 "struct__EvMessageAreaClass.html#a083e6d44212f7b88ce678ecfddcfbeb5":[6,0,187,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvSidebarAnnotationsPrivate.html#a6f6f3c1e1575913e0be98e8c74722ed3":[6,0,237,4],
 "struct__EvSidebarAnnotationsPrivate.html#a90c754e358d7cec9a2ee9cf7f1a40369":[6,0,237,1],
 "struct__EvSidebarAnnotationsPrivate.html#a993426914c21e67a460746ab6ce2edc5":[6,0,237,5],
-"struct__EvSidebarAnnotationsPrivate.html#adc28c0b4ab6a70f256e6f1ce8b8cfce9":[6,0,237,0],
-"struct__EvSidebarAttachments.html":[6,0,238]
+"struct__EvSidebarAnnotationsPrivate.html#adc28c0b4ab6a70f256e6f1ce8b8cfce9":[6,0,237,0]
 };

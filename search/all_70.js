@@ -266,6 +266,7 @@ var searchData=
   ['previous',['previous',['../struct__EggFindBarClass.html#abfd77985ccd0b72a981b67a85106f4fc',1,'_EggFindBarClass::previous()'],['../eggfindbar_8c.html#a157d5577a5b2f5986037d0d09c7dc77dad9600a436d5cc272dfd53f6c45fdeca4',1,'PREVIOUS():&#160;eggfindbar.c']]],
   ['previous_5fbutton',['previous_button',['../struct__EggFindBarPrivate.html#a65348038b09853a60493ee221c28336e',1,'_EggFindBarPrivate']]],
   ['previous_5fclicked_5fcallback',['previous_clicked_callback',['../eggfindbar_8c.html#a442b6957d6d0143cb3fb5208c7b2a10f',1,'eggfindbar.c']]],
+  ['previous_5fcursor_5fpage',['previous_cursor_page',['../struct__EvViewAccessiblePrivate.html#a406cb1ddf794e13290fedf4d7e230bf5',1,'_EvViewAccessiblePrivate']]],
   ['prevmask',['PREVMASK',['../bitmap_8h.html#a34e2a4fdd1b23e034c1e050ca3ace6b0',1,'bitmap.h']]],
   ['print_5fctx',['print_ctx',['../struct__PdfDocument.html#a3f732df9f5e956858ee3ea81ef7feafb',1,'_PdfDocument']]],
   ['print_5fdialog',['print_dialog',['../struct__EvWindowPrivate.html#ac8e2ae92922930f722737c7983c845ef',1,'_EvWindowPrivate']]],
