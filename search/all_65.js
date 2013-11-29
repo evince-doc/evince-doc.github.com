@@ -2446,6 +2446,7 @@ var searchData=
   ['ev_5fview_5faccessible_5fadd_5fselection',['ev_view_accessible_add_selection',['../ev-view-accessible_8c.html#ab1285399b762802d075c7aae9bed4955',1,'ev-view-accessible.c']]],
   ['ev_5fview_5faccessible_5fclass_5finit',['ev_view_accessible_class_init',['../ev-view-accessible_8c.html#a9d60609dca4ba56d6999df6a3a25e005',1,'ev-view-accessible.c']]],
   ['ev_5fview_5faccessible_5fcursor_5fmoved',['ev_view_accessible_cursor_moved',['../ev-view-accessible_8c.html#a3971913de2f146f31712fe9c4a8d86f8',1,'ev-view-accessible.c']]],
+  ['ev_5fview_5faccessible_5fdocument_5fiface_5finit',['ev_view_accessible_document_iface_init',['../ev-view-accessible_8c.html#aa6ccfaf3191cf3d0938bc3933dcda7b7',1,'ev-view-accessible.c']]],
   ['ev_5fview_5faccessible_5ffinalize',['ev_view_accessible_finalize',['../ev-view-accessible_8c.html#ab05fa68534de387edd68c2b392a612a9',1,'ev-view-accessible.c']]],
   ['ev_5fview_5faccessible_5fget_5fcaret_5foffset',['ev_view_accessible_get_caret_offset',['../ev-view-accessible_8c.html#add7612d02188bb2c60cd55d4702724d5',1,'ev-view-accessible.c']]],
   ['ev_5fview_5faccessible_5fget_5fcharacter_5fat_5foffset',['ev_view_accessible_get_character_at_offset',['../ev-view-accessible_8c.html#adf89d9015a8e36ceebf63c3761490361',1,'ev-view-accessible.c']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72":[6,0,80,1],
 "struct__EvDocument.html#a5e82b9e76bd9d89602f141c02c8507f2":[6,0,80,0],
 "struct__EvDocumentAnnotationsInterface.html":[6,0,81],
 "struct__EvDocumentAnnotationsInterface.html#a12aae76c0154479c480a474015b2173a":[6,0,81,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "struct__EvHistoryActionClass.html":[6,0,121],
 "struct__EvHistoryActionClass.html#a08f1817018c88bd4b67d90717ff170a3":[6,0,121,0],
 "struct__EvHistoryActionPrivate.html":[6,0,122],
-"struct__EvHistoryActionPrivate.html#a8e97096ae4296e574a5fb3e8a90f1264":[6,0,122,1],
-"struct__EvHistoryActionPrivate.html#ab1fba00a89ad883ce6df1cef51548ffd":[6,0,122,0]
+"struct__EvHistoryActionPrivate.html#a8e97096ae4296e574a5fb3e8a90f1264":[6,0,122,1]
 };

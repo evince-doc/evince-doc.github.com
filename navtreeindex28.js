@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"struct__DviHashBucket.html#aeaa9c1724e4fb2296015030d6f0b3ce2":[6,0,34,0],
 "struct__DviHashTable.html":[6,0,35],
 "struct__DviHashTable.html#a4e9b4ff7d7133182ac7ceea2f6eae161":[6,0,35,1],
 "struct__DviHashTable.html#a6c2d3b6d5f949f76bbcb7364a1f9fd04":[6,0,35,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "struct__EvDaemonApplication.html#ad385fcdf95322b5d94a7b8cce0584016":[6,0,78,1],
 "struct__EvDaemonApplicationClass.html":[6,0,79],
 "struct__EvDaemonApplicationClass.html#a0ff7dac8343cc0ed20ac76cb1a965c70":[6,0,79,0],
-"struct__EvDocument.html":[6,0,80],
-"struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72":[6,0,80,1]
+"struct__EvDocument.html":[6,0,80]
 };
