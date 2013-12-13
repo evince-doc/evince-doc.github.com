@@ -10,6 +10,7 @@ var searchData=
   ['has_5fdocument_5fsecurity',['has_document_security',['../struct__EvDocumentSecurityInterface.html#aa9c9e03c75aa783548f0aeccf4634183',1,'_EvDocumentSecurityInterface']]],
   ['has_5fframe',['has_frame',['../struct__EvJobThumbnail.html#a1a98cfaddef6f3ec3f9b7aa650ad1d90',1,'_EvJobThumbnail']]],
   ['has_5flayers',['has_layers',['../struct__EvDocumentLayersInterface.html#ab7029196af71af2a1591ff38ad1fc907',1,'_EvDocumentLayersInterface']]],
+  ['has_5fmailto_5fhandler',['has_mailto_handler',['../struct__EvWindowPrivate.html#ae297c32bdce08a2da6a5fac7f8172251',1,'_EvWindowPrivate']]],
   ['has_5fname_5fowner',['has_name_owner',['../struct__EvMediaPlayerKeys.html#afaea7c987116ce049d753b8aebebb5ab',1,'_EvMediaPlayerKeys']]],
   ['has_5fparsed',['has_parsed',['../struct____synctex__scanner__t.html#a837f7c06752eaf446f5d3beb9e612ebd',1,'__synctex_scanner_t']]],
   ['has_5fpopup',['has_popup',['../structEvAnnotationMarkupProps.html#ad82cd812a59f4544370714fa0309d1d9',1,'EvAnnotationMarkupProps']]],

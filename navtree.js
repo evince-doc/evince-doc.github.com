@@ -74,9 +74,9 @@ var NAVTREEINDEX =
 "struct__EvMessageArea.html",
 "struct__EvSidebarAnnotationsPrivate.html#adc28c0b4ab6a70f256e6f1ce8b8cfce9",
 "struct__EvViewPresentationClass.html#af7464ffeee5df9ed75bf8a509780a4b1",
-"struct____synctex__scanner__t.html#a8438cc8e64fd36c7dcb54b6f3c1450dd",
-"synctex__parser_8c.html#abeeeca0fddb595536ef45eb22dda6413",
-"texmfcnf_8c_source.html"
+"struct____synctex__scanner__t.html#a837f7c06752eaf446f5d3beb9e612ebd",
+"synctex__parser_8c.html#abe889e8d76a0059dd42e2de851025234",
+"texmfcnf_8c.html#a43c97bf968a621adbd885948dd08b2dd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
