@@ -7820,72 +7820,73 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l07749"></a><span class="lineno"> 7749</span>&#160;    <a class="code" href="ev-window_8c.html#a4c07636fffdd1b4374f11eefb2459fdc">ev_window_setup_recent</a> (ev_window);</div>
 <div class="line"><a name="l07750"></a><span class="lineno"> 7750</span>&#160;</div>
 <div class="line"><a name="l07751"></a><span class="lineno"> 7751</span>&#160;    gtk_window_set_default_size (GTK_WINDOW (ev_window), 600, 600);</div>
-<div class="line"><a name="l07752"></a><span class="lineno"> 7752</span>&#160;</div>
-<div class="line"><a name="l07753"></a><span class="lineno"> 7753</span>&#160;        <a class="code" href="ev-window_8c.html#af5778827e6ff962a04a49547d083748b">ev_window_sizing_mode_changed_cb</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a900e5d47af591198f2b6a4dc75b0a76a">model</a>, NULL, ev_window);</div>
-<div class="line"><a name="l07754"></a><span class="lineno"> 7754</span>&#160;    <a class="code" href="ev-window_8c.html#a1d68f7de7cec295ced4156898bb65bb5">ev_window_setup_action_sensitivity</a> (ev_window);</div>
-<div class="line"><a name="l07755"></a><span class="lineno"> 7755</span>&#160;</div>
-<div class="line"><a name="l07756"></a><span class="lineno"> 7756</span>&#160;    <span class="comment">/* Drag and Drop */</span></div>
-<div class="line"><a name="l07757"></a><span class="lineno"> 7757</span>&#160;    gtk_drag_dest_set (GTK_WIDGET (ev_window),</div>
-<div class="line"><a name="l07758"></a><span class="lineno"> 7758</span>&#160;               GTK_DEST_DEFAULT_ALL,</div>
-<div class="line"><a name="l07759"></a><span class="lineno"> 7759</span>&#160;               NULL, 0,</div>
-<div class="line"><a name="l07760"></a><span class="lineno"> 7760</span>&#160;               GDK_ACTION_COPY);</div>
-<div class="line"><a name="l07761"></a><span class="lineno"> 7761</span>&#160;    gtk_drag_dest_add_uri_targets (GTK_WIDGET (ev_window));</div>
-<div class="line"><a name="l07762"></a><span class="lineno"> 7762</span>&#160;}</div>
-<div class="line"><a name="l07763"></a><span class="lineno"> 7763</span>&#160;</div>
-<div class="line"><a name="l07771"></a><span class="lineno"> 7771</span>&#160;GtkWidget *</div>
-<div class="line"><a name="l07772"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a1fdd586cd4cc9562201386f2103ce422"> 7772</a></span>&#160;<a class="code" href="ev-window_8c.html#a1fdd586cd4cc9562201386f2103ce422">ev_window_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l07773"></a><span class="lineno"> 7773</span>&#160;{</div>
-<div class="line"><a name="l07774"></a><span class="lineno"> 7774</span>&#160;    GtkWidget *ev_window;</div>
-<div class="line"><a name="l07775"></a><span class="lineno"> 7775</span>&#160;</div>
-<div class="line"><a name="l07776"></a><span class="lineno"> 7776</span>&#160;    ev_window = GTK_WIDGET (g_object_new (<a class="code" href="ev-window_8h.html#ab5debcb77891aaf7c25becfae88cfbd6">EV_TYPE_WINDOW</a>,</div>
-<div class="line"><a name="l07777"></a><span class="lineno"> 7777</span>&#160;                          <span class="stringliteral">&quot;type&quot;</span>, GTK_WINDOW_TOPLEVEL,</div>
-<div class="line"><a name="l07778"></a><span class="lineno"> 7778</span>&#160;                                              <span class="stringliteral">&quot;application&quot;</span>, g_application_get_default (),</div>
-<div class="line"><a name="l07779"></a><span class="lineno"> 7779</span>&#160;                          <span class="stringliteral">&quot;show-menubar&quot;</span>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
-<div class="line"><a name="l07780"></a><span class="lineno"> 7780</span>&#160;                          NULL));</div>
-<div class="line"><a name="l07781"></a><span class="lineno"> 7781</span>&#160;</div>
-<div class="line"><a name="l07782"></a><span class="lineno"> 7782</span>&#160;    <span class="keywordflow">return</span> ev_window;</div>
-<div class="line"><a name="l07783"></a><span class="lineno"> 7783</span>&#160;}</div>
-<div class="line"><a name="l07784"></a><span class="lineno"> 7784</span>&#160;</div>
-<div class="line"><a name="l07785"></a><span class="lineno"> 7785</span>&#160;<span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l07786"></a><span class="lineno"><a class="code" href="ev-window_8h.html#aa4c4958da41d46c7c0a8be8144c73991"> 7786</a></span>&#160;<a class="code" href="ev-window_8c.html#aa4c4958da41d46c7c0a8be8144c73991">ev_window_get_dbus_object_path</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
-<div class="line"><a name="l07787"></a><span class="lineno"> 7787</span>&#160;{</div>
-<div class="line"><a name="l07788"></a><span class="lineno"> 7788</span>&#160;<span class="preprocessor">#ifdef ENABLE_DBUS</span></div>
-<div class="line"><a name="l07789"></a><span class="lineno"> 7789</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;dbus_object_path;</div>
-<div class="line"><a name="l07790"></a><span class="lineno"> 7790</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l07791"></a><span class="lineno"> 7791</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l07792"></a><span class="lineno"> 7792</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l07793"></a><span class="lineno"> 7793</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l07794"></a><span class="lineno"> 7794</span>&#160;</div>
-<div class="line"><a name="l07795"></a><span class="lineno"> 7795</span>&#160;GtkUIManager *</div>
-<div class="line"><a name="l07796"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a201834318dc0c9c21446c48a3edff6a4"> 7796</a></span>&#160;<a class="code" href="ev-window_8c.html#a201834318dc0c9c21446c48a3edff6a4">ev_window_get_ui_manager</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
-<div class="line"><a name="l07797"></a><span class="lineno"> 7797</span>&#160;{</div>
-<div class="line"><a name="l07798"></a><span class="lineno"> 7798</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
-<div class="line"><a name="l07799"></a><span class="lineno"> 7799</span>&#160;</div>
-<div class="line"><a name="l07800"></a><span class="lineno"> 7800</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>;</div>
-<div class="line"><a name="l07801"></a><span class="lineno"> 7801</span>&#160;}</div>
-<div class="line"><a name="l07802"></a><span class="lineno"> 7802</span>&#160;</div>
-<div class="line"><a name="l07803"></a><span class="lineno"> 7803</span>&#160;GtkActionGroup *</div>
-<div class="line"><a name="l07804"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a382e1b848a1069280e61b33106b52791"> 7804</a></span>&#160;<a class="code" href="ev-window_8c.html#a382e1b848a1069280e61b33106b52791">ev_window_get_main_action_group</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
-<div class="line"><a name="l07805"></a><span class="lineno"> 7805</span>&#160;{</div>
-<div class="line"><a name="l07806"></a><span class="lineno"> 7806</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
-<div class="line"><a name="l07807"></a><span class="lineno"> 7807</span>&#160;</div>
-<div class="line"><a name="l07808"></a><span class="lineno"> 7808</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afbcf102f6f7a7df5f0c9109bd69ec9c3">action_group</a>;</div>
-<div class="line"><a name="l07809"></a><span class="lineno"> 7809</span>&#160;}</div>
-<div class="line"><a name="l07810"></a><span class="lineno"> 7810</span>&#160;</div>
-<div class="line"><a name="l07811"></a><span class="lineno"> 7811</span>&#160;GtkActionGroup *</div>
-<div class="line"><a name="l07812"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a20828b7723433b3ac9ac831531ae6d77"> 7812</a></span>&#160;<a class="code" href="ev-window_8c.html#a20828b7723433b3ac9ac831531ae6d77">ev_window_get_zoom_selector_action_group</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
-<div class="line"><a name="l07813"></a><span class="lineno"> 7813</span>&#160;{</div>
-<div class="line"><a name="l07814"></a><span class="lineno"> 7814</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
-<div class="line"><a name="l07815"></a><span class="lineno"> 7815</span>&#160;</div>
-<div class="line"><a name="l07816"></a><span class="lineno"> 7816</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4bd51d1ee7b20d5117e1f3d43d3a9005">zoom_selector_popup_action_group</a>;</div>
-<div class="line"><a name="l07817"></a><span class="lineno"> 7817</span>&#160;}</div>
+<div class="line"><a name="l07752"></a><span class="lineno"> 7752</span>&#160;        gtk_window_set_hide_titlebar_when_maximized (GTK_WINDOW (ev_window), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l07753"></a><span class="lineno"> 7753</span>&#160;</div>
+<div class="line"><a name="l07754"></a><span class="lineno"> 7754</span>&#160;        <a class="code" href="ev-window_8c.html#af5778827e6ff962a04a49547d083748b">ev_window_sizing_mode_changed_cb</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a900e5d47af591198f2b6a4dc75b0a76a">model</a>, NULL, ev_window);</div>
+<div class="line"><a name="l07755"></a><span class="lineno"> 7755</span>&#160;    <a class="code" href="ev-window_8c.html#a1d68f7de7cec295ced4156898bb65bb5">ev_window_setup_action_sensitivity</a> (ev_window);</div>
+<div class="line"><a name="l07756"></a><span class="lineno"> 7756</span>&#160;</div>
+<div class="line"><a name="l07757"></a><span class="lineno"> 7757</span>&#160;    <span class="comment">/* Drag and Drop */</span></div>
+<div class="line"><a name="l07758"></a><span class="lineno"> 7758</span>&#160;    gtk_drag_dest_set (GTK_WIDGET (ev_window),</div>
+<div class="line"><a name="l07759"></a><span class="lineno"> 7759</span>&#160;               GTK_DEST_DEFAULT_ALL,</div>
+<div class="line"><a name="l07760"></a><span class="lineno"> 7760</span>&#160;               NULL, 0,</div>
+<div class="line"><a name="l07761"></a><span class="lineno"> 7761</span>&#160;               GDK_ACTION_COPY);</div>
+<div class="line"><a name="l07762"></a><span class="lineno"> 7762</span>&#160;    gtk_drag_dest_add_uri_targets (GTK_WIDGET (ev_window));</div>
+<div class="line"><a name="l07763"></a><span class="lineno"> 7763</span>&#160;}</div>
+<div class="line"><a name="l07764"></a><span class="lineno"> 7764</span>&#160;</div>
+<div class="line"><a name="l07772"></a><span class="lineno"> 7772</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l07773"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a1fdd586cd4cc9562201386f2103ce422"> 7773</a></span>&#160;<a class="code" href="ev-window_8c.html#a1fdd586cd4cc9562201386f2103ce422">ev_window_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l07774"></a><span class="lineno"> 7774</span>&#160;{</div>
+<div class="line"><a name="l07775"></a><span class="lineno"> 7775</span>&#160;    GtkWidget *ev_window;</div>
+<div class="line"><a name="l07776"></a><span class="lineno"> 7776</span>&#160;</div>
+<div class="line"><a name="l07777"></a><span class="lineno"> 7777</span>&#160;    ev_window = GTK_WIDGET (g_object_new (<a class="code" href="ev-window_8h.html#ab5debcb77891aaf7c25becfae88cfbd6">EV_TYPE_WINDOW</a>,</div>
+<div class="line"><a name="l07778"></a><span class="lineno"> 7778</span>&#160;                          <span class="stringliteral">&quot;type&quot;</span>, GTK_WINDOW_TOPLEVEL,</div>
+<div class="line"><a name="l07779"></a><span class="lineno"> 7779</span>&#160;                                              <span class="stringliteral">&quot;application&quot;</span>, g_application_get_default (),</div>
+<div class="line"><a name="l07780"></a><span class="lineno"> 7780</span>&#160;                          <span class="stringliteral">&quot;show-menubar&quot;</span>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
+<div class="line"><a name="l07781"></a><span class="lineno"> 7781</span>&#160;                          NULL));</div>
+<div class="line"><a name="l07782"></a><span class="lineno"> 7782</span>&#160;</div>
+<div class="line"><a name="l07783"></a><span class="lineno"> 7783</span>&#160;    <span class="keywordflow">return</span> ev_window;</div>
+<div class="line"><a name="l07784"></a><span class="lineno"> 7784</span>&#160;}</div>
+<div class="line"><a name="l07785"></a><span class="lineno"> 7785</span>&#160;</div>
+<div class="line"><a name="l07786"></a><span class="lineno"> 7786</span>&#160;<span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l07787"></a><span class="lineno"><a class="code" href="ev-window_8h.html#aa4c4958da41d46c7c0a8be8144c73991"> 7787</a></span>&#160;<a class="code" href="ev-window_8c.html#aa4c4958da41d46c7c0a8be8144c73991">ev_window_get_dbus_object_path</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
+<div class="line"><a name="l07788"></a><span class="lineno"> 7788</span>&#160;{</div>
+<div class="line"><a name="l07789"></a><span class="lineno"> 7789</span>&#160;<span class="preprocessor">#ifdef ENABLE_DBUS</span></div>
+<div class="line"><a name="l07790"></a><span class="lineno"> 7790</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;dbus_object_path;</div>
+<div class="line"><a name="l07791"></a><span class="lineno"> 7791</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l07792"></a><span class="lineno"> 7792</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l07793"></a><span class="lineno"> 7793</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l07794"></a><span class="lineno"> 7794</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l07795"></a><span class="lineno"> 7795</span>&#160;</div>
+<div class="line"><a name="l07796"></a><span class="lineno"> 7796</span>&#160;GtkUIManager *</div>
+<div class="line"><a name="l07797"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a201834318dc0c9c21446c48a3edff6a4"> 7797</a></span>&#160;<a class="code" href="ev-window_8c.html#a201834318dc0c9c21446c48a3edff6a4">ev_window_get_ui_manager</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
+<div class="line"><a name="l07798"></a><span class="lineno"> 7798</span>&#160;{</div>
+<div class="line"><a name="l07799"></a><span class="lineno"> 7799</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
+<div class="line"><a name="l07800"></a><span class="lineno"> 7800</span>&#160;</div>
+<div class="line"><a name="l07801"></a><span class="lineno"> 7801</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>;</div>
+<div class="line"><a name="l07802"></a><span class="lineno"> 7802</span>&#160;}</div>
+<div class="line"><a name="l07803"></a><span class="lineno"> 7803</span>&#160;</div>
+<div class="line"><a name="l07804"></a><span class="lineno"> 7804</span>&#160;GtkActionGroup *</div>
+<div class="line"><a name="l07805"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a382e1b848a1069280e61b33106b52791"> 7805</a></span>&#160;<a class="code" href="ev-window_8c.html#a382e1b848a1069280e61b33106b52791">ev_window_get_main_action_group</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
+<div class="line"><a name="l07806"></a><span class="lineno"> 7806</span>&#160;{</div>
+<div class="line"><a name="l07807"></a><span class="lineno"> 7807</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
+<div class="line"><a name="l07808"></a><span class="lineno"> 7808</span>&#160;</div>
+<div class="line"><a name="l07809"></a><span class="lineno"> 7809</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afbcf102f6f7a7df5f0c9109bd69ec9c3">action_group</a>;</div>
+<div class="line"><a name="l07810"></a><span class="lineno"> 7810</span>&#160;}</div>
+<div class="line"><a name="l07811"></a><span class="lineno"> 7811</span>&#160;</div>
+<div class="line"><a name="l07812"></a><span class="lineno"> 7812</span>&#160;GtkActionGroup *</div>
+<div class="line"><a name="l07813"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a20828b7723433b3ac9ac831531ae6d77"> 7813</a></span>&#160;<a class="code" href="ev-window_8c.html#a20828b7723433b3ac9ac831531ae6d77">ev_window_get_zoom_selector_action_group</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
+<div class="line"><a name="l07814"></a><span class="lineno"> 7814</span>&#160;{</div>
+<div class="line"><a name="l07815"></a><span class="lineno"> 7815</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
+<div class="line"><a name="l07816"></a><span class="lineno"> 7816</span>&#160;</div>
+<div class="line"><a name="l07817"></a><span class="lineno"> 7817</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4bd51d1ee7b20d5117e1f3d43d3a9005">zoom_selector_popup_action_group</a>;</div>
+<div class="line"><a name="l07818"></a><span class="lineno"> 7818</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-window_8c.html">ev-window.c</a></li>
-    <li class="footer">Generated on Mon Dec 16 2013 17:40:52 for Evince by
+    <li class="footer">Generated on Wed Dec 18 2013 14:20:07 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
