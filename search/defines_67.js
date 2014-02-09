@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['g_5flog_5fdomain',['G_LOG_DOMAIN',['../ev-daemon_8c.html#a1810a09af583816ca6b4ccf01ae848f7',1,'ev-daemon.c']]],
   ['gamma_5fdiff',['GAMMA_DIFF',['../color_8c.html#a3f77cd4a3375ab16c9453d67e74f987d',1,'color.c']]],
   ['get_5fdebug_5fmask',['get_debug_mask',['../common_8h.html#ad1a96e93924de751b68ccaa270459c36',1,'common.h']]],
   ['get_5fmetrics',['get_metrics',['../mdvi_8h.html#a84005eb55536a01dd981a0c1cfa32efc',1,'mdvi.h']]],

@@ -130,28 +130,28 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;config.h&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;glib.h&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;glib/gstdio.h&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;gio/gio.h&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;fcntl.h&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;ev-daemon-gdbus-generated.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a9a2305044b720fed6c323a5341fb1d33">   35</a></span>&#160;<span class="preprocessor">#define EV_DBUS_DAEMON_NAME             &quot;org.gnome.evince.Daemon&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a32b979ad0a2315f2da04c70f7add2fdc">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_DBUS_DAEMON_INTERFACE_NAME   &quot;org.gnome.evince.Daemon&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a7a2b7a6bf8f3e15e324c96cd8138c45c">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_DBUS_DAEMON_OBJECT_PATH      &quot;/org/gnome/evince/Daemon&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a49318ab78af0b67bf272f352685fb776">   39</a></span>&#160;<span class="preprocessor">#define EV_DBUS_WINDOW_INTERFACE_NAME   &quot;org.gnome.evince.Window&quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#afafd27648c47b1de420d62ac097db1d9">   41</a></span>&#160;<span class="preprocessor">#define DAEMON_TIMEOUT (30) </span><span class="comment">/* seconds */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">   43</a></span>&#160;<span class="preprocessor">#define LOG g_printerr</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a1810a09af583816ca6b4ccf01ae848f7">   24</a></span>&#160;<span class="preprocessor">#define G_LOG_DOMAIN &quot;EvinceDaemon&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;glib.h&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;glib/gstdio.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;gio/gio.h&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;fcntl.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;ev-daemon-gdbus-generated.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a9a2305044b720fed6c323a5341fb1d33">   36</a></span>&#160;<span class="preprocessor">#define EV_DBUS_DAEMON_NAME             &quot;org.gnome.evince.Daemon&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a32b979ad0a2315f2da04c70f7add2fdc">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_DBUS_DAEMON_INTERFACE_NAME   &quot;org.gnome.evince.Daemon&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a7a2b7a6bf8f3e15e324c96cd8138c45c">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_DBUS_DAEMON_OBJECT_PATH      &quot;/org/gnome/evince/Daemon&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a49318ab78af0b67bf272f352685fb776">   40</a></span>&#160;<span class="preprocessor">#define EV_DBUS_WINDOW_INTERFACE_NAME   &quot;org.gnome.evince.Window&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#afafd27648c47b1de420d62ac097db1d9">   42</a></span>&#160;<span class="preprocessor">#define DAEMON_TIMEOUT (30) </span><span class="comment">/* seconds */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">   44</a></span>&#160;<span class="preprocessor">#define LOG g_debug</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a87837ce3741eeca52459c1c78fc6c8df">   46</a></span>&#160;<span class="preprocessor">#define EV_TYPE_DAEMON_APPLICATION              (ev_daemon_application_get_type ())</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#a2f3ffa666cc507ada582c0728aff033a">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_DAEMON_APPLICATION(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), EV_TYPE_DAEMON_APPLICATION, EvDaemonApplication))</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="ev-daemon_8c.html#afda900a5b699c3750260bf4a543ce345">   48</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_DAEMON_APPLICATION_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), EV_TYPE_DAEMON_APPLICATION, EvDaemonApplicationClass))</span></div>
@@ -244,7 +244,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                  <span class="keyword">const</span> gchar     *name_owner,</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                  gpointer         user_data)</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;Watch name&#39;%s&#39; appeared with owner &#39;%s&#39;\n&quot;</span>, name, name_owner);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;Watch name&#39;%s&#39; appeared with owner &#39;%s&#39;&quot;</span>, name, name_owner);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="struct__EvDaemonApplication.html">EvDaemonApplication</a> *application = <a class="code" href="ev-daemon_8c.html#a2f3ffa666cc507ada582c0728aff033a">EV_DAEMON_APPLICATION</a> (user_data);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    GList *l;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;Watch name&#39;%s&#39; disappeared\n&quot;</span>, name);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;Watch name&#39;%s&#39; disappeared&quot;</span>, name);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">for</span> (l = application-&gt;<a class="code" href="struct__EvDaemonApplication.html#ad385fcdf95322b5d94a7b8cce0584016">docs</a>; l != NULL; l = l-&gt;next) {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <a class="code" href="structEvDoc.html">EvDoc</a> *doc = (<a class="code" href="structEvDoc.html">EvDoc</a> *) l-&gt;data;</div>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                if (strcmp (doc-&gt;<a class="code" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">dbus_name</a>, name) != 0)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;Watch found URI &#39;%s&#39; for name; removing\n&quot;</span>, doc-&gt;<a class="code" href="structEvDoc.html#ae6d2c6cf32c2f2f81aeec671f8564bc1">uri</a>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;Watch found URI &#39;%s&#39; for name; removing&quot;</span>, doc-&gt;<a class="code" href="structEvDoc.html#ae6d2c6cf32c2f2f81aeec671f8564bc1">uri</a>);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                application-&gt;<a class="code" href="struct__EvDaemonApplication.html#ad385fcdf95322b5d94a7b8cce0584016">docs</a> = g_list_delete_link (application-&gt;<a class="code" href="struct__EvDaemonApplication.html#ad385fcdf95322b5d94a7b8cce0584016">docs</a>, l);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <a class="code" href="ev-daemon_8c.html#aab6210bbdd6a27081b179489ed8775f9">ev_doc_free</a> (doc);</div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    GList *l;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    GList *uri_invocations;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;RegisterDocument process pending invocations for URI %s\n&quot;</span>, uri);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;RegisterDocument process pending invocations for URI %s&quot;</span>, uri);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    uri_invocations = g_hash_table_lookup (application-&gt;<a class="code" href="struct__EvDaemonApplication.html#a5e7dcd396ad7d79793f3d150b04c663d">pending_invocations</a>, uri);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">for</span> (l = uri_invocations; l != NULL; l = l-&gt;next) {</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        doc = <a class="code" href="ev-daemon_8c.html#abf0297d2366544215939abc9b4acd0d3">ev_daemon_application_find_doc</a> (application, uri);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">if</span> (doc != NULL) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;RegisterDocument found owner &#39;%s&#39; for URI &#39;%s&#39;\n&quot;</span>, doc-&gt;<a class="code" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">dbus_name</a>, uri);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;RegisterDocument found owner &#39;%s&#39; for URI &#39;%s&#39;&quot;</span>, doc-&gt;<a class="code" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">dbus_name</a>, uri);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                ev_daemon_complete_register_document (<span class="keywordtype">object</span>, invocation, doc-&gt;<a class="code" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">dbus_name</a>);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
@@ -344,7 +344,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        sender = g_dbus_method_invocation_get_sender (invocation);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        connection = g_dbus_method_invocation_get_connection (invocation);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;RegisterDocument registered owner &#39;%s&#39; for URI &#39;%s&#39;\n&quot;</span>, sender, uri);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;RegisterDocument registered owner &#39;%s&#39; for URI &#39;%s&#39;&quot;</span>, sender, uri);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        doc = g_new (<a class="code" href="structEvDoc.html">EvDoc</a>, 1);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        doc-&gt;<a class="code" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">dbus_name</a> = g_strdup (sender);</div>
@@ -384,11 +384,11 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <a class="code" href="structEvDoc.html">EvDoc</a> *doc;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *sender;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;UnregisterDocument URI &#39;%s&#39;\n&quot;</span>, uri);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;UnregisterDocument URI &#39;%s&#39;&quot;</span>, uri);</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        doc = <a class="code" href="ev-daemon_8c.html#abf0297d2366544215939abc9b4acd0d3">ev_daemon_application_find_doc</a> (application, uri);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">if</span> (doc == NULL) {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;UnregisterDocument URI was not registered!\n&quot;</span>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;UnregisterDocument URI was not registered!&quot;</span>);</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                g_dbus_method_invocation_return_error_literal (invocation,</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                                               G_DBUS_ERROR,</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                                               G_DBUS_ERROR_INVALID_ARGS,</div>
@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        sender = g_dbus_method_invocation_get_sender (invocation);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (strcmp (doc-&gt;<a class="code" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">dbus_name</a>, sender) != 0) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;UnregisterDocument called by non-owner (owner &#39;%s&#39; sender &#39;%s&#39;)\n&quot;</span>,</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;UnregisterDocument called by non-owner (owner &#39;%s&#39; sender &#39;%s&#39;)&quot;</span>,</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                     doc-&gt;<a class="code" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">dbus_name</a>, sender);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                g_dbus_method_invocation_return_error_literal (invocation,</div>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="structEvDoc.html">EvDoc</a> *doc;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;FindDocument URI &#39;%s&#39; \n&quot;</span>, uri);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;FindDocument URI &#39;%s&#39;&quot;</span>, uri);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        doc = <a class="code" href="ev-daemon_8c.html#abf0297d2366544215939abc9b4acd0d3">ev_daemon_application_find_doc</a> (application, uri);</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">if</span> (doc != NULL) {</div>
@@ -464,7 +464,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                }</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;FindDocument URI &#39;%s&#39; was not registered!\n&quot;</span>, uri);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> (<span class="stringliteral">&quot;FindDocument URI &#39;%s&#39; was not registered!&quot;</span>, uri);</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="comment">// FIXME: shouldn&#39;t this return an error then?</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        ev_daemon_complete_find_document (<span class="keywordtype">object</span>, invocation, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
@@ -596,7 +596,7 @@ $(document).ready(function(){initNavTree('ev-daemon_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-daemon_8c.html">ev-daemon.c</a></li>
-    <li class="footer">Generated on Sun Feb 9 2014 19:13:51 for Evince by
+    <li class="footer">Generated on Sun Feb 9 2014 21:38:46 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

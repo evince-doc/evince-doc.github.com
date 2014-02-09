@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"ev-poppler_8cc.html#ad0bd6d66f55b5f5a03b3195da4b2f0fc":[7,0,0,0,3,0,33],
 "ev-poppler_8cc.html#ad3d9a96236773751d268afef080a34b7":[7,0,0,0,3,0,91],
 "ev-poppler_8cc.html#ad48d489311e91578239c292cc885886e":[7,0,0,0,3,0,57],
 "ev-poppler_8cc.html#ad68af3cd4547196a7e263fc8bcc1c939":[7,0,0,0,3,0,88],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "ev-properties-fonts_8h.html#a6cb48b7c699555ed0e300d14978b8056":[7,0,0,7,40,11],
 "ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d":[7,0,0,7,40,6],
 "ev-properties-fonts_8h.html#a902ba3ddf284c0b5d2d7a6544956dd38":[7,0,0,7,40,7],
-"ev-properties-fonts_8h.html#acb97f1939b51a9d6065372eba1394f9e":[7,0,0,7,40,8],
-"ev-properties-fonts_8h.html#acc6ded718a4a56f788939a798f4b2126":[7,0,0,7,40,10]
+"ev-properties-fonts_8h.html#acb97f1939b51a9d6065372eba1394f9e":[7,0,0,7,40,8]
 };
