@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"setup_8c.html":[7,0,0,0,2,0,27],
 "setup_8c.html#a6ad7b27fd8a4607f3e15dc5d0bbeb438":[7,0,0,0,2,0,27,0],
 "setup_8c_source.html":[7,0,0,0,2,0,27],
 "sp-epsf_8c.html":[7,0,0,0,2,0,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structPdfPrintContext.html#a42aff1aeaa7f93b29ce1cebac1287a18":[6,0,340,7],
 "structPdfPrintContext.html#a5599197619e4756217fdb5012af695d6":[6,0,340,3],
 "structPdfPrintContext.html#a55c06d3b1a9b7c1ab6224c41e4e14b9b":[6,0,340,6],
-"structPdfPrintContext.html#a628b4c86998b415477bee00fcb11e8a6":[6,0,340,1],
-"structPdfPrintContext.html#a7a7084deba0e7f1b7760bdcafdef0473":[6,0,340,4]
+"structPdfPrintContext.html#a628b4c86998b415477bee00fcb11e8a6":[6,0,340,1]
 };

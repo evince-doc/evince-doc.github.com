@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"structPdfPrintContext.html#a7a7084deba0e7f1b7760bdcafdef0473":[6,0,340,4],
 "structPdfPrintContext.html#a94fa5147eebf19d53f003b82f23ae25e":[6,0,340,0],
 "structPdfPrintContext.html#ac597e49c72fafbb41a37619402e42020":[6,0,340,2],
 "structPropertyInfo.html":[6,0,342],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "struct__DviGlyph.html#aba038ef683f62f8691c6ab1082ca4b5e":[6,0,33,4],
 "struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6":[6,0,33,1],
 "struct__DviHashBucket.html":[6,0,34],
-"struct__DviHashBucket.html#a67a82dbf4331834626ed45ba12cdd806":[6,0,34,1],
-"struct__DviHashBucket.html#a7089aa2ed550e45c162595c4f8db47c8":[6,0,34,2]
+"struct__DviHashBucket.html#a67a82dbf4331834626ed45ba12cdd806":[6,0,34,1]
 };

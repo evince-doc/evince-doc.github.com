@@ -50,6 +50,7 @@ var searchData=
   ['close',['close',['../struct__EggFindBarClass.html#a4d3a8c60c8ad510e8c6c129bdd17d3a4',1,'_EggFindBarClass::close()'],['../eggfindbar_8c.html#a157d5577a5b2f5986037d0d09c7dc77da685f73194ad125cbc784c3210cdb3449',1,'CLOSE():&#160;eggfindbar.c']]],
   ['close_5fafter_5fprint',['close_after_print',['../struct__EvWindowPrivate.html#a5481433a28f283b8e7f8fe431745033f',1,'_EvWindowPrivate']]],
   ['close_5fbutton',['close_button',['../struct__EvAnnotationWindow.html#a14a6dcf1a469978c950663944793dc26',1,'_EvAnnotationWindow']]],
+  ['close_5fbutton_5fclicked_5fcallback',['close_button_clicked_callback',['../eggfindbar_8c.html#a61e1e48a34f772df5838e9f22fdc56d9',1,'eggfindbar.c']]],
   ['close_5ffd_5fcb',['close_fd_cb',['../ev-file-helpers_8c.html#af88aba8becc1621023ef00bcee797dd0',1,'ev-file-helpers.c']]],
   ['closed',['closed',['../struct__EvAnnotationWindowClass.html#a5a0a70ed4e5f8d2199e0847adf92d8d8',1,'_EvAnnotationWindowClass::closed()'],['../ev-annotation-window_8c.html#a94798fdadfbf49a7c658ace669a1d310a929f0327e17604ce9713b2a6117bd603',1,'CLOSED():&#160;ev-annotation-window.c']]],
   ['cmi',['cmi',['../structFontInfo.html#a27fa607afe78ec3b7d4e48e84cb782b4',1,'FontInfo']]],

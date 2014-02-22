@@ -367,16 +367,16 @@ Functions</h2></td></tr>
 <p>egg_find_bar_enable_case_sensitive:</p>
 <p>Enable or disable the case sensitive option </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00689">689</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;{</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ada268cbaaa7ceb20ee9aa2f3043453e4">case_sensitive_enabled</a> = !!enable;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00720">720</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;{</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;  priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ada268cbaaa7ceb20ee9aa2f3043453e4">case_sensitive_enabled</a> = !!enable;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -416,16 +416,16 @@ Functions</h2></td></tr>
 <p>egg_find_bar_enable_whole_words_only:</p>
 <p>Enable or disable the whole words only option </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00757">757</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;{</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a0d65596eaf85ee7a9c9043ac54238540">whole_words_only_enabled</a> = !!enable;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00788">788</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;{</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a0d65596eaf85ee7a9c9043ac54238540">whole_words_only_enabled</a> = !!enable;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -483,19 +483,19 @@ Functions</h2></td></tr>
 <p>Returns: TRUE if it's case sensitive</p>
 <p>Since: 2.6 </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00669">669</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;{</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  g_return_val_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  if (!priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ada268cbaaa7ceb20ee9aa2f3043453e4">case_sensitive_enabled</a>)</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a4998c80c074add4b3d13bc926307d82f">case_sensitive</a>;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00700">700</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;{</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;  g_return_val_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  if (!priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ada268cbaaa7ceb20ee9aa2f3043453e4">case_sensitive_enabled</a>)</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a4998c80c074add4b3d13bc926307d82f">case_sensitive</a>;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -553,16 +553,16 @@ Functions</h2></td></tr>
 <p>Returns: the string</p>
 <p>Since: 2.6 </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00618">618</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;{</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  g_return_val_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar), NULL);</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  priv = find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> ? priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00649">649</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;{</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  g_return_val_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar), NULL);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;  priv = find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;  <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> ? priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -609,19 +609,19 @@ Functions</h2></td></tr>
 <p>Gets whether search whole words only</p>
 <p>Returns: TRUE if only whole words are searched </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00737">737</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;{</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  g_return_val_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  if (!priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a0d65596eaf85ee7a9c9043ac54238540">whole_words_only_enabled</a>)</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188">whole_words_only</a>;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00768">768</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;{</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  g_return_val_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  if (!priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a0d65596eaf85ee7a9c9043ac54238540">whole_words_only_enabled</a>)</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  <span class="keywordflow">return</span> priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188">whole_words_only</a>;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -653,14 +653,14 @@ Functions</h2></td></tr>
 <p>Returns: a newly created <a class="el" href="eggfindbar_8h.html#a7a54022ab656665cb57d89bb472b70bc">EggFindBar</a></p>
 <p>Since: 2.6 </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00536">536</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;{</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <a class="code" href="struct__EggFindBar.html">EggFindBar</a> *find_bar;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  find_bar = g_object_new (<a class="code" href="eggfindbar_8h.html#abde200075f27805567b74f362f47c2c2">EGG_TYPE_FIND_BAR</a>, NULL);</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  <span class="keywordflow">return</span> GTK_WIDGET (find_bar);</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00567">567</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;{</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  <a class="code" href="struct__EggFindBar.html">EggFindBar</a> *find_bar;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  find_bar = g_object_new (<a class="code" href="eggfindbar_8h.html#abde200075f27805567b74f362f47c2c2">EGG_TYPE_FIND_BAR</a>, NULL);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keywordflow">return</span> GTK_WIDGET (find_bar);</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -701,26 +701,26 @@ Functions</h2></td></tr>
 <p>Sets whether the search is case sensitive</p>
 <p>Since: 2.6 </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00637">637</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;{</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  g_object_freeze_notify (G_OBJECT (find_bar));</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  case_sensitive = case_sensitive != <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a4998c80c074add4b3d13bc926307d82f">case_sensitive</a> != case_sensitive)</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    {</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;      priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a4998c80c074add4b3d13bc926307d82f">case_sensitive</a> = case_sensitive;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;      g_object_notify (G_OBJECT (find_bar), <span class="stringliteral">&quot;case_sensitive&quot;</span>);</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    }</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  g_object_thaw_notify (G_OBJECT (find_bar));</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00668">668</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;{</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  g_object_freeze_notify (G_OBJECT (find_bar));</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  case_sensitive = case_sensitive != <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a4998c80c074add4b3d13bc926307d82f">case_sensitive</a> != case_sensitive)</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    {</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;      priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a4998c80c074add4b3d13bc926307d82f">case_sensitive</a> = case_sensitive;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;      g_object_notify (G_OBJECT (find_bar), <span class="stringliteral">&quot;case_sensitive&quot;</span>);</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    }</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  g_object_thaw_notify (G_OBJECT (find_bar));</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -761,57 +761,57 @@ Functions</h2></td></tr>
 <p>Sets the string that should be found/highlighted in the document. Empty string is converted to NULL.</p>
 <p>Since: 2.6 </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00554">554</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;{</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  g_object_freeze_notify (G_OBJECT (find_bar));</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  </div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> != search_string)</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    {</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      <span class="keywordtype">char</span> *old;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;      </div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;      old = priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a>;</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;      <span class="keywordflow">if</span> (search_string &amp;&amp; *search_string == <span class="charliteral">&#39;\0&#39;</span>)</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        search_string = NULL;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;      <span class="comment">/* Only update if the string has changed; setting the entry</span></div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="comment">       * will emit changed on the entry which will re-enter</span></div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="comment">       * this function, but we&#39;ll handle that fine with this</span></div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="comment">       * short-circuit.</span></div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="comment">       */</span></div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      <span class="keywordflow">if</span> ((old &amp;&amp; search_string == NULL) ||</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;          (old == NULL &amp;&amp; search_string) ||</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;          (old &amp;&amp; search_string &amp;&amp;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;           strcmp (old, search_string) != 0))</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;      gboolean not_empty;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;      </div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;          priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> = g_strdup (search_string);</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;          g_free (old);</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;          </div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;          gtk_entry_set_text (GTK_ENTRY (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a69fc79a39e040ba96688f0a67c2a27d1">find_entry</a>),</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;                              priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> ?</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                              priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> :</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                              <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;       </div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;          not_empty = (search_string == NULL) ? <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a> : <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;        </div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;          gtk_widget_set_sensitive (GTK_WIDGET (find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ab58817cb6176046f01f6c7e68c6d4eac">next_button</a>), not_empty);</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;          gtk_widget_set_sensitive (GTK_WIDGET (find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a65348038b09853a60493ee221c28336e">previous_button</a>), not_empty);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;          g_object_notify (G_OBJECT (find_bar),</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                           <span class="stringliteral">&quot;search_string&quot;</span>);</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        }</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    }</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  g_object_thaw_notify (G_OBJECT (find_bar));</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00585">585</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;{</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  g_object_freeze_notify (G_OBJECT (find_bar));</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> != search_string)</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;      <span class="keywordtype">char</span> *old;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;      </div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      old = priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a>;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;      <span class="keywordflow">if</span> (search_string &amp;&amp; *search_string == <span class="charliteral">&#39;\0&#39;</span>)</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        search_string = NULL;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;      <span class="comment">/* Only update if the string has changed; setting the entry</span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="comment">       * will emit changed on the entry which will re-enter</span></div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="comment">       * this function, but we&#39;ll handle that fine with this</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="comment">       * short-circuit.</span></div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="comment">       */</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;      <span class="keywordflow">if</span> ((old &amp;&amp; search_string == NULL) ||</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;          (old == NULL &amp;&amp; search_string) ||</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;          (old &amp;&amp; search_string &amp;&amp;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;           strcmp (old, search_string) != 0))</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        {</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;      gboolean not_empty;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;      </div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;          priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> = g_strdup (search_string);</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;          g_free (old);</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;          </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;          gtk_entry_set_text (GTK_ENTRY (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a69fc79a39e040ba96688f0a67c2a27d1">find_entry</a>),</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                              priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> ?</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                              priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac46fe384c1e6b00e3958bc5ca1e3b873">search_string</a> :</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                              <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;       </div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;          not_empty = (search_string == NULL) ? <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a> : <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;        </div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;          gtk_widget_set_sensitive (GTK_WIDGET (find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ab58817cb6176046f01f6c7e68c6d4eac">next_button</a>), not_empty);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;          gtk_widget_set_sensitive (GTK_WIDGET (find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a65348038b09853a60493ee221c28336e">previous_button</a>), not_empty);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;          g_object_notify (G_OBJECT (find_bar),</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                           <span class="stringliteral">&quot;search_string&quot;</span>);</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        }</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    }</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  g_object_thaw_notify (G_OBJECT (find_bar));</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -853,22 +853,22 @@ Functions</h2></td></tr>
 <p>: the text to display</p>
 <p>Since: 2.6 </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00780">780</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;{</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <span class="keyword">const</span> gchar *current_text;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;  </div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  current_text = gtk_label_get_text (GTK_LABEL (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a3842ce4fb8640a87120162cd58663a1f">status_label</a>));</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="keywordflow">if</span> (g_strcmp0 (current_text, text) != 0)</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;      gtk_label_set_text (GTK_LABEL (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a3842ce4fb8640a87120162cd58663a1f">status_label</a>), text);</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  g_object_set (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac722f68b6d6afa3ae7d27e1168f0bdeb">status_item</a>, <span class="stringliteral">&quot;visible&quot;</span>, text != NULL &amp;&amp; *text !=<span class="charliteral">&#39;\0&#39;</span>, NULL);</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00811">811</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;{</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <span class="keyword">const</span> gchar *current_text;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;  </div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  current_text = gtk_label_get_text (GTK_LABEL (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a3842ce4fb8640a87120162cd58663a1f">status_label</a>));</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  <span class="keywordflow">if</span> (g_strcmp0 (current_text, text) != 0)</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;      gtk_label_set_text (GTK_LABEL (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a3842ce4fb8640a87120162cd58663a1f">status_label</a>), text);</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  g_object_set (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#ac722f68b6d6afa3ae7d27e1168f0bdeb">status_item</a>, <span class="stringliteral">&quot;visible&quot;</span>, text != NULL &amp;&amp; *text !=<span class="charliteral">&#39;\0&#39;</span>, NULL);</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -908,26 +908,26 @@ Functions</h2></td></tr>
 <p>egg_find_bar_set_whole_words_only:</p>
 <p>Sets whether search whole words only </p>
 
-<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00707">707</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;{</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  g_object_freeze_notify (G_OBJECT (find_bar));</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  whole_words_only = whole_words_only != <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188">whole_words_only</a> != whole_words_only)</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    {</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;      priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188">whole_words_only</a> = whole_words_only;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;      g_object_notify (G_OBJECT (find_bar), <span class="stringliteral">&quot;whole-words-only&quot;</span>);</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    }</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;  g_object_thaw_notify (G_OBJECT (find_bar));</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;}</div>
+<p>Definition at line <a class="el" href="eggfindbar_8c_source.html#l00738">738</a> of file <a class="el" href="eggfindbar_8c_source.html">eggfindbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;{</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *priv;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  g_return_if_fail (<a class="code" href="eggfindbar_8h.html#a819e74606a12c3d33255aba59f6bce45">EGG_IS_FIND_BAR</a> (find_bar));</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  priv = (<a class="code" href="struct__EggFindBarPrivate.html">EggFindBarPrivate</a> *)find_bar-&gt;<a class="code" href="struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d">priv</a>;</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  g_object_freeze_notify (G_OBJECT (find_bar));</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  whole_words_only = whole_words_only != <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188">whole_words_only</a> != whole_words_only)</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    {</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;      priv-&gt;<a class="code" href="struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188">whole_words_only</a> = whole_words_only;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      g_object_notify (G_OBJECT (find_bar), <span class="stringliteral">&quot;whole-words-only&quot;</span>);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    }</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  g_object_thaw_notify (G_OBJECT (find_bar));</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -947,7 +947,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="eggfindbar_8h.html">eggfindbar.h</a></li>
-    <li class="footer">Generated on Wed Feb 19 2014 16:51:30 for Evince by
+    <li class="footer">Generated on Sat Feb 22 2014 10:34:00 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

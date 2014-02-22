@@ -12,6 +12,7 @@ var eggfindbar_8c =
     [ "SCROLL", "eggfindbar_8c.html#a157d5577a5b2f5986037d0d09c7dc77da0fa7d6bebaf9da084fa40612ca13d2c6", null ],
     [ "LAST_SIGNAL", "eggfindbar_8c.html#a157d5577a5b2f5986037d0d09c7dc77da0c34d85df8279641afad9e3c9b3a54ce", null ],
     [ "case_sensitive_toggled_callback", "eggfindbar_8c.html#acc9c0812dccea84af28297fbefe38500", null ],
+    [ "close_button_clicked_callback", "eggfindbar_8c.html#a61e1e48a34f772df5838e9f22fdc56d9", null ],
     [ "egg_find_bar_class_init", "eggfindbar_8c.html#a2b50e46e0705cc28e43e33c9aba9112a", null ],
     [ "egg_find_bar_emit_next", "eggfindbar_8c.html#a64aaa6406b5c9b15a5aa410baaf32082", null ],
     [ "egg_find_bar_emit_previous", "eggfindbar_8c.html#a9bf99c6ae7c58b9590339cbd04e3bb46", null ],
