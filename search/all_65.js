@@ -1013,6 +1013,7 @@ var searchData=
   ['ev_5ffind_5fcase_5fsensitive',['EV_FIND_CASE_SENSITIVE',['../ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea17677a80114b27e85d826ebd89ce40bd',1,'ev-document-find.h']]],
   ['ev_5ffind_5fdefault',['EV_FIND_DEFAULT',['../ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea325c6123fa9e097101bb82b02b85f5b5',1,'ev-document-find.h']]],
   ['ev_5ffind_5fsidebar',['EV_FIND_SIDEBAR',['../ev-find-sidebar_8h.html#ae60b7e1043838b1d1d60a9b5c923ad4a',1,'ev-find-sidebar.h']]],
+  ['ev_5ffind_5fsidebar_5factivate_5fresult_5fat_5fiter',['ev_find_sidebar_activate_result_at_iter',['../ev-find-sidebar_8c.html#a2e2f8bb5bada7825842f7e7da802f4e7',1,'ev-find-sidebar.c']]],
   ['ev_5ffind_5fsidebar_5fcancel',['ev_find_sidebar_cancel',['../ev-find-sidebar_8c.html#a4c11ab6e5af35ee2a323bfd9d68c805e',1,'ev-find-sidebar.c']]],
   ['ev_5ffind_5fsidebar_5fclass',['EV_FIND_SIDEBAR_CLASS',['../ev-find-sidebar_8h.html#a00742c2c704191cb0fd5efa07d845011',1,'ev-find-sidebar.h']]],
   ['ev_5ffind_5fsidebar_5fclass_5finit',['ev_find_sidebar_class_init',['../ev-find-sidebar_8c.html#a0e31788e55805393cf5f5dd96eb48a78',1,'ev-find-sidebar.c']]],

@@ -7,6 +7,7 @@ var ev_find_sidebar_8c =
     [ "N_COLUMNS", "ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39ac70d28409ca79aa291cc0e58244f1fe4", null ],
     [ "RESULT_ACTIVATED", "ev-find-sidebar_8c.html#afccd240f973cf154952fb917c9209719a01e040de4c34c6e23487c8844c476331", null ],
     [ "N_SIGNALS", "ev-find-sidebar_8c.html#afccd240f973cf154952fb917c9209719a1e7365ab36b084beff81fb1b96df4b11", null ],
+    [ "ev_find_sidebar_activate_result_at_iter", "ev-find-sidebar_8c.html#a2e2f8bb5bada7825842f7e7da802f4e7", null ],
     [ "ev_find_sidebar_cancel", "ev-find-sidebar_8c.html#a4c11ab6e5af35ee2a323bfd9d68c805e", null ],
     [ "ev_find_sidebar_class_init", "ev-find-sidebar_8c.html#a0e31788e55805393cf5f5dd96eb48a78", null ],
     [ "ev_find_sidebar_clear", "ev-find-sidebar_8c.html#ad2a1270e1cf4ec725a1a395730312dad", null ],
@@ -28,5 +29,6 @@ var ev_find_sidebar_8c =
     [ "process_matches_idle", "ev-find-sidebar_8c.html#a2fcabf8b93069a9178990d5b55cff138", null ],
     [ "sanitized_substring", "ev-find-sidebar_8c.html#aac1fcff102feccff9c90326416e3723d", null ],
     [ "selection_changed_callback", "ev-find-sidebar_8c.html#aa0e103a57a94cf734f43bf0a29bd4378", null ],
+    [ "sidebar_tree_button_press_cb", "ev-find-sidebar_8c.html#aa8b9c7c0be20e28dd25fdcc40d8271aa", null ],
     [ "signals", "ev-find-sidebar_8c.html#a0a1f3b4115443be584fb31149d06f84c", null ]
 ];

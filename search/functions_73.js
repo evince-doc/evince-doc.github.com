@@ -44,6 +44,7 @@ var searchData=
   ['sidebar_5flayers_5fvisibility_5fchanged',['sidebar_layers_visibility_changed',['../ev-window_8c.html#a28a0e1f97328bcdd063395acd6fe51be',1,'ev-window.c']]],
   ['sidebar_5flinks_5flink_5factivated_5fcb',['sidebar_links_link_activated_cb',['../ev-window_8c.html#a792349f6c8a462bd06e4ca50ff15ee67',1,'ev-window.c']]],
   ['sidebar_5fpage_5fmain_5fwidget_5fupdate_5fcb',['sidebar_page_main_widget_update_cb',['../ev-window_8c.html#a2b8c90c92c05c2b3ec13c5fa9b60e22d',1,'ev-window.c']]],
+  ['sidebar_5ftree_5fbutton_5fpress_5fcb',['sidebar_tree_button_press_cb',['../ev-find-sidebar_8c.html#aa8b9c7c0be20e28dd25fdcc40d8271aa',1,'ev-find-sidebar.c']]],
   ['sidebar_5fwidget_5fmodel_5fset',['sidebar_widget_model_set',['../ev-window_8c.html#a1f7c377f837afbf071476b28d3ccb522',1,'ev-window.c']]],
   ['sm_5fclient_5fosx_5fend_5fsession',['sm_client_osx_end_session',['../eggsmclient-osx_8c.html#ad59b8584b46d501645b71f954058dfac',1,'eggsmclient-osx.c']]],
   ['sm_5fclient_5fosx_5fstartup',['sm_client_osx_startup',['../eggsmclient-osx_8c.html#a54a7da6e5fd7d3c6777d17888a82cd42',1,'eggsmclient-osx.c']]],

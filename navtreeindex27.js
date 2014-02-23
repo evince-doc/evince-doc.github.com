@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structPdfPrintContext.html#a55c06d3b1a9b7c1ab6224c41e4e14b9b":[6,0,340,6],
+"structPdfPrintContext.html#a628b4c86998b415477bee00fcb11e8a6":[6,0,340,1],
 "structPdfPrintContext.html#a7a7084deba0e7f1b7760bdcafdef0473":[6,0,340,4],
 "structPdfPrintContext.html#a94fa5147eebf19d53f003b82f23ae25e":[6,0,340,0],
 "structPdfPrintContext.html#ac597e49c72fafbb41a37619402e42020":[6,0,340,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686":[6,0,33,0],
 "struct__DviGlyph.html#ab71a1f2f66995d292ab6cc3a5278aa97":[6,0,33,3],
 "struct__DviGlyph.html#aba038ef683f62f8691c6ab1082ca4b5e":[6,0,33,4],
-"struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6":[6,0,33,1],
-"struct__DviHashBucket.html":[6,0,34],
-"struct__DviHashBucket.html#a67a82dbf4331834626ed45ba12cdd806":[6,0,34,1]
+"struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6":[6,0,33,1]
 };
