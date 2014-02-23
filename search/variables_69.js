@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['icon',['icon',['../structEggDesktopFile.html#a047a701f97156dfe5344f99718dbd33f',1,'EggDesktopFile::icon()'],['../struct__EvAnnotationText.html#a4f2e1b929b7d02523021cb3355620fa4',1,'_EvAnnotationText::icon()'],['../structEvStockIcon.html#acb6633e6a8177ede0eebf954bce11978',1,'EvStockIcon::icon()'],['../struct__EvAnnotationPropertiesDialog.html#a1fca8ea3ab29a5ab6c4091a86eb27616',1,'_EvAnnotationPropertiesDialog::icon()']]],
+  ['icon',['icon',['../struct__EvAnnotationText.html#a4f2e1b929b7d02523021cb3355620fa4',1,'_EvAnnotationText::icon()'],['../structEvStockIcon.html#acb6633e6a8177ede0eebf954bce11978',1,'EvStockIcon::icon()'],['../struct__EvAnnotationPropertiesDialog.html#a1fca8ea3ab29a5ab6c4091a86eb27616',1,'_EvAnnotationPropertiesDialog::icon()']]],
   ['icon_5fcache',['icon_cache',['../struct__EvSidebarAttachmentsPrivate.html#a7280c6799f7d80415925c8273400ecc7',1,'_EvSidebarAttachmentsPrivate']]],
   ['icon_5ftheme',['icon_theme',['../struct__EvSidebarAttachmentsPrivate.html#aa364a06eacb41b49e10d13c3ff0814dc',1,'_EvSidebarAttachmentsPrivate']]],
   ['icon_5fview',['icon_view',['../struct__EvSidebarAttachmentsPrivate.html#a3b22553fb6fc66cf9ae969e957e5d673',1,'_EvSidebarAttachmentsPrivate::icon_view()'],['../struct__EvSidebarThumbnailsPrivate.html#a3306e5a58924e5ecfa50704db79ab0c9',1,'_EvSidebarThumbnailsPrivate::icon_view()']]],
   ['id',['id',['../struct__DviFontClass.html#a227a3e5b8e0b2828505f2c9eb37db2da',1,'_DviFontClass::id()'],['../struct__DviFontSearch.html#a3fcf145e91fda9a1b659d31d2ad4685e',1,'_DviFontSearch::id()'],['../struct__EvFormField.html#adc83bbd40a93ad6b970da82e9da96998',1,'_EvFormField::id()'],['../struct__EvImagePrivate.html#aa56b69b92d00486500c2a9e71e74d005',1,'_EvImagePrivate::id()']]],
-  ['idle',['idle',['../struct__EggSMClientXSMP.html#a81c5031bd8070bfb2fbe1665b119815d',1,'_EggSMClientXSMP']]],
   ['idle_5fcancelled_5fid',['idle_cancelled_id',['../struct__EvJob.html#ad299a781e4314b30d929970b4638eddd',1,'_EvJob']]],
   ['idle_5ffinished_5fid',['idle_finished_id',['../struct__EvJob.html#ac7d19aa4f1c7fe25bd1cd73b0f13b6f8',1,'_EvJob']]],
   ['idle_5fscroll',['idle_scroll',['../struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e',1,'_EvViewAccessiblePrivate']]],
@@ -27,7 +26,6 @@ var searchData=
   ['input',['input',['../struct____synctex__scanner__t.html#a507ab21e198032457f2178c943384239',1,'__synctex_scanner_t']]],
   ['insert_5fposition',['insert_position',['../struct__EvFindSidebarPrivate.html#acf1b2ab131e292afa3002fb22e9618a4',1,'_EvFindSidebarPrivate']]],
   ['int',['INT',['../union__synctex__info__t.html#a4c2a281dcceec2d9ef8c47d31d91144f',1,'_synctex_info_t']]],
-  ['interact_5ferrors',['interact_errors',['../struct__EggSMClientXSMP.html#aedfe122ef95b2707a5fbd4599910a3db',1,'_EggSMClientXSMP']]],
   ['internal_5fsize_5frequest',['internal_size_request',['../struct__EvView.html#a50e6e187363227a6f5ac19e17edb2633',1,'_EvView']]],
   ['interpolate',['interpolate',['../struct__TIFF2PSContext.html#aade503516477747f1a531aac417816cf',1,'_TIFF2PSContext']]],
   ['inverted_5fcolors',['inverted_colors',['../struct__EvDocumentModel.html#a69aea5a154fe0ae2f14e62d3eae6082a',1,'_EvDocumentModel::inverted_colors()'],['../struct__EvPixbufCache.html#a9248490f9453ece4009c27ff803b392d',1,'_EvPixbufCache::inverted_colors()'],['../struct__EvViewPresentation.html#a20ea107264f08fd4212daa4d21dc0d4b',1,'_EvViewPresentation::inverted_colors()'],['../struct__EvSidebarThumbnailsPrivate.html#a2ee3925abc720ca828ebb579f2f6d340',1,'_EvSidebarThumbnailsPrivate::inverted_colors()']]],

@@ -40,17 +40,5 @@ var searchData=
   ['xpsdocument',['XPSDocument',['../xps-document_8h.html#ae52b2712a7d52e51d44966f55e4e7238',1,'xps-document.h']]],
   ['xpsdocumentclass',['XPSDocumentClass',['../xps-document_8h.html#a11b2c2c6c58c537330b631a0f96fe2fb',1,'xps-document.h']]],
   ['xresize',['xresize',['../common_8h.html#a697791a48690414944aa62d64f305fba',1,'common.h']]],
-  ['xsmp_5fdie',['xsmp_die',['../eggsmclient-xsmp_8c.html#aec0dc907943e4a1fe0a096450ed9e977',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5finteract',['xsmp_interact',['../eggsmclient-xsmp_8c.html#ac79ef45060d59580d5666d5d11ef35a2',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fsave_5fcomplete',['xsmp_save_complete',['../eggsmclient-xsmp_8c.html#ad3a1af00dc808e3e360f92c3f7a3cd06',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fsave_5fyourself',['xsmp_save_yourself',['../eggsmclient-xsmp_8c.html#a69a6daa6a45668e057b476667a92eb2c',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fshutdown_5fcancelled',['xsmp_shutdown_cancelled',['../eggsmclient-xsmp_8c.html#a76cae51fe8a2c732346d1566e1c5a296',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fstate_5fconnection_5fclosed',['XSMP_STATE_CONNECTION_CLOSED',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9ca9d5973e566a7dff6243ec0587fb3c8bd',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fstate_5fidle',['XSMP_STATE_IDLE',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9ca3cfd7bf3de2d5e26a157c1869870f9e5',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fstate_5finteract',['XSMP_STATE_INTERACT',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9ca44386fed943f7d4b0c47a7b16e7d650c',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fstate_5finteract_5frequest',['XSMP_STATE_INTERACT_REQUEST',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9caf49b40a780ee796e2fa071ee9a194181',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fstate_5fsave_5fyourself',['XSMP_STATE_SAVE_YOURSELF',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9cab45c99089da024d93512f22900e22b64',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fstate_5fsave_5fyourself_5fdone',['XSMP_STATE_SAVE_YOURSELF_DONE',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9ca62c7d319036e4544fd39a81e2c83ba29',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fstate_5fshutdown_5fcancelled',['XSMP_STATE_SHUTDOWN_CANCELLED',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9ca2278b80fd13f4e748163a3a5fddee2bf',1,'eggsmclient-xsmp.c']]],
   ['xstradd',['xstradd',['../util_8c.html#aac3503ab350d64e72b87e52ea64b4f83',1,'util.c']]]
 ];

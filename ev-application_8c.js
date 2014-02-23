@@ -15,8 +15,6 @@ var ev_application_8c =
     [ "ev_application_get_uri", "ev-application_8c.html#af23f9cb59a31eb98ffa264deb648e5bd", null ],
     [ "ev_application_has_window", "ev-application_8c.html#a9323094b1de162f10800291c6d238da1", null ],
     [ "ev_application_init", "ev-application_8c.html#a4be5c4e8571efff673e7f984e5eb193c", null ],
-    [ "ev_application_init_session", "ev-application_8c.html#a19d214b4adaedce9a1bb18a8d2a52003", null ],
-    [ "ev_application_load_session", "ev-application_8c.html#ada7d8fb00475cb349df7adf8c39dd9ab", null ],
     [ "ev_application_migrate_config_dir", "ev-application_8c.html#af79b4c575b6e0f115a7c182f23f1baf4", null ],
     [ "ev_application_new", "ev-application_8c.html#acc2c7649771332645d0003296c38e70a", null ],
     [ "ev_application_open_uri_at_dest", "ev-application_8c.html#a7796abc7c838a4a3b088b776be96e716", null ],

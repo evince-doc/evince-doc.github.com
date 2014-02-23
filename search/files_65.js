@@ -1,15 +1,7 @@
 var searchData=
 [
-  ['eggdesktopfile_2ec',['eggdesktopfile.c',['../eggdesktopfile_8c.html',1,'']]],
-  ['eggdesktopfile_2eh',['eggdesktopfile.h',['../eggdesktopfile_8h.html',1,'']]],
   ['eggfindbar_2ec',['eggfindbar.c',['../eggfindbar_8c.html',1,'']]],
   ['eggfindbar_2eh',['eggfindbar.h',['../eggfindbar_8h.html',1,'']]],
-  ['eggsmclient_2dosx_2ec',['eggsmclient-osx.c',['../eggsmclient-osx_8c.html',1,'']]],
-  ['eggsmclient_2dprivate_2eh',['eggsmclient-private.h',['../eggsmclient-private_8h.html',1,'']]],
-  ['eggsmclient_2dwin32_2ec',['eggsmclient-win32.c',['../eggsmclient-win32_8c.html',1,'']]],
-  ['eggsmclient_2dxsmp_2ec',['eggsmclient-xsmp.c',['../eggsmclient-xsmp_8c.html',1,'']]],
-  ['eggsmclient_2ec',['eggsmclient.c',['../eggsmclient_8c.html',1,'']]],
-  ['eggsmclient_2eh',['eggsmclient.h',['../eggsmclient_8h.html',1,'']]],
   ['ev_2dannotation_2dproperties_2ddialog_2ec',['ev-annotation-properties-dialog.c',['../ev-annotation-properties-dialog_8c.html',1,'']]],
   ['ev_2dannotation_2dproperties_2ddialog_2eh',['ev-annotation-properties-dialog.h',['../ev-annotation-properties-dialog_8h.html',1,'']]],
   ['ev_2dannotation_2dwindow_2ec',['ev-annotation-window.c',['../ev-annotation-window_8c.html',1,'']]],

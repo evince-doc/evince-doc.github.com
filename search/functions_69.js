@@ -1,15 +1,7 @@
 var searchData=
 [
-  ['ice_5fconnection_5fwatch',['ice_connection_watch',['../eggsmclient-xsmp_8c.html#acc66df3c0c3e999b993c3f2501f6cbc7',1,'eggsmclient-xsmp.c']]],
-  ['ice_5ferror_5fhandler',['ice_error_handler',['../eggsmclient-xsmp_8c.html#a8e6cf4407636bc945a813c8f50512e72',1,'eggsmclient-xsmp.c']]],
-  ['ice_5finit',['ice_init',['../eggsmclient-xsmp_8c.html#afa0803173c204f6cf1e7a832338ea6ee',1,'eggsmclient-xsmp.c']]],
-  ['ice_5fio_5ferror_5fhandler',['ice_io_error_handler',['../eggsmclient-xsmp_8c.html#a59e8e4cb5dfa2376b663cb03bcf2ad25',1,'eggsmclient-xsmp.c']]],
-  ['ice_5fiochannel_5fwatch',['ice_iochannel_watch',['../eggsmclient-xsmp_8c.html#a38a45e3c27c28ed2e6d5ba435632ab0f',1,'eggsmclient-xsmp.c']]],
   ['icon_5fcache_5fupdate_5ficon',['icon_cache_update_icon',['../ev-sidebar-attachments_8c.html#ac305f828fad0c90b346b6260ebc6a47b',1,'ev-sidebar-attachments.c']]],
   ['icon_5ftheme_5fget_5fpixbuf_5ffrom_5fmime_5ftype',['icon_theme_get_pixbuf_from_mime_type',['../ev-sidebar-attachments_8c.html#aaf8ba7c97f3cc7db0ba1f15542843439',1,'ev-sidebar-attachments.c']]],
-  ['idle_5fdo_5fpending_5fevents',['idle_do_pending_events',['../eggsmclient-xsmp_8c.html#acc551b4617a086748137cf72d713ca3d',1,'eggsmclient-xsmp.c']]],
-  ['idle_5fquit_5frequested',['idle_quit_requested',['../eggsmclient-osx_8c.html#a589b77f90c3694dab8c8aee74b6bdec2',1,'eggsmclient-osx.c']]],
-  ['idle_5fwill_5fquit',['idle_will_quit',['../eggsmclient-osx_8c.html#a3381bf2d5a4f7ed9c673ac9a4b2ca18a',1,'eggsmclient-osx.c']]],
   ['image_5fsave_5fdialog_5fresponse_5fcb',['image_save_dialog_response_cb',['../ev-window_8c.html#acfb40ae5b19b529ffa0963343864013f',1,'ev-window.c']]],
   ['init_5ffont_5fclasses',['init_font_classes',['../fontsrch_8c.html#ab9a0a419084b3136c9211eeddc1b33a0',1,'fontsrch.c']]],
   ['init_5fpresentation',['init_presentation',['../ev-view-presentation_8c.html#a5ae96816a1b9dba0787f4767d2973c23',1,'ev-view-presentation.c']]],

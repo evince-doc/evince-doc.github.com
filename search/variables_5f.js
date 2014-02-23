@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['_5fegg_5freserved1',['_egg_reserved1',['../struct__EggSMClientClass.html#a919fc873a8ae1bee1d1bdfaa52e26ac8',1,'_EggSMClientClass']]],
-  ['_5fegg_5freserved2',['_egg_reserved2',['../struct__EggSMClientClass.html#a92081c49024eaa4057ccf4b5d49fad0f',1,'_EggSMClientClass']]],
-  ['_5fegg_5freserved3',['_egg_reserved3',['../struct__EggSMClientClass.html#a44762e61036ee058fbe9ac518088b4f6',1,'_EggSMClientClass']]],
-  ['_5fegg_5freserved4',['_egg_reserved4',['../struct__EggSMClientClass.html#abd3e27e0535a9a3aa3cd9ee988379346',1,'_EggSMClientClass']]],
   ['_5fgimp_5freserved1',['_gimp_reserved1',['../struct__GimpCellRendererToggleClass.html#a8b3f71003d9948e9bdf3b3d180c5651f',1,'_GimpCellRendererToggleClass']]],
   ['_5fgimp_5freserved2',['_gimp_reserved2',['../struct__GimpCellRendererToggleClass.html#a5cf97580e194362df055f48ee897ea6b',1,'_GimpCellRendererToggleClass']]],
   ['_5fgimp_5freserved3',['_gimp_reserved3',['../struct__GimpCellRendererToggleClass.html#a0c85f979a33fa871649269387fa8860e',1,'_GimpCellRendererToggleClass']]],

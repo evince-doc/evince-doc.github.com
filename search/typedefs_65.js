@@ -1,18 +1,8 @@
 var searchData=
 [
-  ['eggdesktopfile',['EggDesktopFile',['../eggdesktopfile_8h.html#a43d3d21d1ee44eb3e66fa5d94f540084',1,'eggdesktopfile.h']]],
   ['eggfindbar',['EggFindBar',['../eggfindbar_8h.html#a7a54022ab656665cb57d89bb472b70bc',1,'eggfindbar.h']]],
   ['eggfindbarclass',['EggFindBarClass',['../eggfindbar_8h.html#a625314a73f80df475a3e1f35dfd91aaa',1,'eggfindbar.h']]],
   ['eggfindbarprivate',['EggFindBarPrivate',['../eggfindbar_8h.html#af14a633018e8d93cb9404ef8422312cf',1,'eggfindbar.h']]],
-  ['eggsmclient',['EggSMClient',['../eggsmclient_8h.html#a08343d87ba0b856e1955856aed08d4f6',1,'eggsmclient.h']]],
-  ['eggsmclientclass',['EggSMClientClass',['../eggsmclient_8h.html#afc8c438796d7b718cd5f547512fd3058',1,'eggsmclient.h']]],
-  ['eggsmclientosx',['EggSMClientOSX',['../eggsmclient-osx_8c.html#a63d0aecc3c11e50d131e4e5deb66023c',1,'eggsmclient-osx.c']]],
-  ['eggsmclientosxclass',['EggSMClientOSXClass',['../eggsmclient-osx_8c.html#a815eb21f21e250868eabbddb3d94dc26',1,'eggsmclient-osx.c']]],
-  ['eggsmclientprivate',['EggSMClientPrivate',['../eggsmclient_8h.html#a96929ab26a605c1f35baa218842b14fc',1,'eggsmclient.h']]],
-  ['eggsmclientwin32',['EggSMClientWin32',['../eggsmclient-win32_8c.html#a742e4ab7fc8b85bf99a0d828c47be94b',1,'eggsmclient-win32.c']]],
-  ['eggsmclientwin32class',['EggSMClientWin32Class',['../eggsmclient-win32_8c.html#a98c374263f610dcf31e576ac7033402d',1,'eggsmclient-win32.c']]],
-  ['eggsmclientxsmp',['EggSMClientXSMP',['../eggsmclient-xsmp_8c.html#a2b28d701a0fe26a866785dec2406d3b7',1,'eggsmclient-xsmp.c']]],
-  ['eggsmclientxsmpclass',['EggSMClientXSMPClass',['../eggsmclient-xsmp_8c.html#a2e0b999b4a293cb2cb6ce3d65592b2dc',1,'eggsmclient-xsmp.c']]],
   ['evannotation',['EvAnnotation',['../ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6',1,'ev-annotation.h']]],
   ['evannotationattachment',['EvAnnotationAttachment',['../ev-annotation_8h.html#a62ff016338ee24dd92430feb96d1b437',1,'ev-annotation.h']]],
   ['evannotationattachmentclass',['EvAnnotationAttachmentClass',['../ev-annotation_8h.html#af30b62bf157c804fb16ca35404ca68ae',1,'ev-annotation.h']]],

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['effect',['effect',['../structEvTransitionAnimationPriv.html#adf9627f2d86567a2cdc28e6ad5bf94b5',1,'EvTransitionAnimationPriv']]],
-  ['egg_5fdesktop_5ffile',['egg_desktop_file',['../eggdesktopfile_8c.html#a44d9b229cf103d5eb5854b54bf1183f4',1,'eggdesktopfile.c']]],
   ['enable_5fanimations',['enable_animations',['../struct__EvViewPresentation.html#aed7e2a3cc6a91e332658d897c1123f9b',1,'_EvViewPresentation']]],
   ['encfile',['encfile',['../struct__DviFontMapEnt.html#abf8e131c0f5f6a60a2764ff104a58bbc',1,'_DviFontMapEnt']]],
   ['encoding',['encoding',['../structDviFontMapInfo.html#a08fdd7b5d39f3b49988b5bc269b35244',1,'DviFontMapInfo::encoding()'],['../struct__DviFontMapEnt.html#a8c20097421fbe04adaf1954ac1aacbad',1,'_DviFontMapEnt::encoding()']]],
@@ -11,7 +10,6 @@ var searchData=
   ['enctable_5ffile',['enctable_file',['../fontmap_8c.html#ac76fbf746bb7fe92c7fb58a3157e95e7',1,'fontmap.c']]],
   ['end',['end',['../struct__DjvuTextPage.html#a4585d6c872f0f51f24bf3f00d8feaea8',1,'_DjvuTextPage::end()'],['../struct__EvFileExporterInterface.html#a9fe72395dcdf9ab8fdc7fd78b9801e3a',1,'_EvFileExporterInterface::end()'],['../structEvPrintRange.html#afd33a5cfa3b19388ee74e4fbb5b69681',1,'EvPrintRange::end()']]],
   ['end_5fpage',['end_page',['../struct__EvFileExporterInterface.html#aeb5e8b672125f0368b31f88e497dd3f7',1,'_EvFileExporterInterface::end_page()'],['../struct__EvPageCache.html#ac4d480263699bc3533ec4ab0e3cd0462',1,'_EvPageCache::end_page()'],['../struct__EvPixbufCache.html#a8356ba055837b87fcb5d8c24215d383a',1,'_EvPixbufCache::end_page()'],['../struct__EvView.html#a5481c6c51d16d1b1597e29bf97ae7086',1,'_EvView::end_page()'],['../struct__EvSidebarThumbnailsPrivate.html#a954ff2aae2d2337b2ffbe37bd65ad934',1,'_EvSidebarThumbnailsPrivate::end_page()']]],
-  ['end_5fsession',['end_session',['../struct__EggSMClientClass.html#a79609778e84f059f010cbbaf7e113e32',1,'_EggSMClientClass']]],
   ['entries',['entries',['../struct__DviFontMap.html#ab28bfcd1caaa946a6a4086f97b00fad8',1,'_DviFontMap::entries()'],['../ev-window_8c.html#a3fdeb81a156568bd633f229568819bf8',1,'entries():&#160;ev-window.c']]],
   ['entry',['entry',['../struct__EvPageActionWidget.html#a2e8bc83f8b41671a2094e11a85f1252e',1,'_EvPageActionWidget::entry()'],['../struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973',1,'_EvZoomActionWidgetPrivate::entry()']]],
   ['epp_5ftype',['epp_type',['../ev-properties-main_8c.html#a679e42eb5a1e3c1767a0408a61bdbe06',1,'ev-properties-main.c']]],
@@ -29,9 +27,7 @@ var searchData=
   ['ev_5fpage_5flabel',['ev_page_label',['../main_8c.html#aac307a6a8e8c49e600ff965b93ecfb61',1,'main.c']]],
   ['ev_5fview_5faccessible_5faction_5fdescriptions',['ev_view_accessible_action_descriptions',['../ev-view-accessible_8c.html#a45e64cb48c6b81096f0eca3724af2d5e',1,'ev-view-accessible.c']]],
   ['ev_5fview_5faccessible_5faction_5fnames',['ev_view_accessible_action_names',['../ev-view-accessible_8c.html#ab34ced330f07ce061094962531cbf75d',1,'ev-view-accessible.c']]],
-  ['event',['event',['../struct__EggSMClientWin32.html#a8eb6407e1f16847026beb49aa44303e3',1,'_EggSMClientWin32']]],
   ['evprintscale',['EvPrintScale',['../ev-print-operation_8c.html#ad9f671c30ef3f812da594dee7a2b4e65',1,'ev-print-operation.c']]],
-  ['expecting_5finitial_5fsave_5fyourself',['expecting_initial_save_yourself',['../struct__EggSMClientXSMP.html#ad31c400c54bee9dd613e6f8601a70be6',1,'_EggSMClientXSMP']]],
   ['exporter',['exporter',['../struct__PSDocument.html#a11d932f477e20eedae762d5f3e5a65db',1,'_PSDocument']]],
   ['exporter_5ffilename',['exporter_filename',['../struct__DviDocument.html#afb0059916a0355b8696474bdbf473212',1,'_DviDocument']]],
   ['exporter_5fopts',['exporter_opts',['../struct__DviDocument.html#a9f8a2ef0d310ff90873e84ef6bb7ac9e',1,'_DviDocument']]],

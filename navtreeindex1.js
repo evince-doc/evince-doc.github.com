@@ -90,13 +90,12 @@ var NAVTREEINDEX1 =
 "dir_8afe8fb5d511b91003daab0546f13589.html":[7,0,0,2],
 "dir_8b322143158b2e883ee9175e4954824a.html":[7,0,0,4],
 "dir_8faf46932065e0d68934ee0715e31db4.html":[7,0,0,0,6],
-"dir_9a0eb316660ab3c7a56302ac61d2ed60.html":[7,0,0,1,2],
+"dir_9a0eb316660ab3c7a56302ac61d2ed60.html":[7,0,0,1,1],
 "dir_a6bad009a4e2c89bf4ec3636b694bcc6.html":[7,0,0,8],
 "dir_c43f4a3bc8028afa091a0c42a05d62c7.html":[7,0,0,5],
 "dir_df8aa77a9614fb61c4d7f3b0249f87b4.html":[7,0,0,0],
 "dir_eaf7f042df72726804915beedf8d811d.html":[7,0,0,0,4],
 "dir_f91c0c2ccd1873d3fde0d38a68adb014.html":[7,0,0,0,5],
-"dir_fad19fa22c20ef303bc712affc457b32.html":[7,0,0,1,1],
 "djvu-document-private_8h.html":[7,0,0,0,1,0],
 "djvu-document-private_8h.html#a1ff7e86b59b9fe7a2f12899dba1e07d4":[7,0,0,0,1,0,1],
 "djvu-document-private_8h.html#aece81d987f8a10511c8206746cdb5e1a":[7,0,0,0,1,0,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "dvimisc_8c_source.html":[7,0,0,0,2,0,9],
 "dviopcodes_8h.html":[7,0,0,0,2,0,10],
 "dviopcodes_8h.html#a053237302b367b1ab3720bb932f40937":[7,0,0,0,2,0,10,8],
-"dviopcodes_8h.html#a0a1571e2417f09b81fb3c4fe92b382cb":[7,0,0,0,2,0,10,14]
+"dviopcodes_8h.html#a0a1571e2417f09b81fb3c4fe92b382cb":[7,0,0,0,2,0,10,14],
+"dviopcodes_8h.html#a14e781d10c0e8c5d17b9e0b3daecb4dd":[7,0,0,0,2,0,10,56]
 };

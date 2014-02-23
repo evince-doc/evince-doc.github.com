@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['eggdesktopfileerror',['EggDesktopFileError',['../eggdesktopfile_8h.html#ab2303d2d5ca4dbbc284d76a719a1cb6c',1,'eggdesktopfile.h']]],
-  ['eggdesktopfilelaunchoption',['EggDesktopFileLaunchOption',['../eggdesktopfile_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558',1,'eggdesktopfile.h']]],
-  ['eggdesktopfiletype',['EggDesktopFileType',['../eggdesktopfile_8h.html#a478ca02e9b155dd3fcbb4fc4dcdb46c9',1,'eggdesktopfile.h']]],
-  ['eggsmclientendstyle',['EggSMClientEndStyle',['../eggsmclient_8h.html#a0d2dc9cd47c5b59e55d7f43eb3d960b6',1,'eggsmclient.h']]],
-  ['eggsmclientmode',['EggSMClientMode',['../eggsmclient_8h.html#a4fbede32b78c4fe58cf07539569d4002',1,'eggsmclient.h']]],
-  ['eggsmclientxsmpstate',['EggSMClientXSMPState',['../eggsmclient-xsmp_8c.html#ad74aaa6ffa7be2e7b0a4e05c9a3faf9c',1,'eggsmclient-xsmp.c']]],
   ['evannotationssavemask',['EvAnnotationsSaveMask',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2ba',1,'ev-document-annotations.h']]],
   ['evannotationtexticon',['EvAnnotationTextIcon',['../ev-annotation_8h.html#a25560e72664a83222e0b251b5f95efbd',1,'ev-annotation.h']]],
   ['evannotationtype',['EvAnnotationType',['../ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568',1,'ev-annotation.h']]],

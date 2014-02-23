@@ -158,44 +158,43 @@ $(document).ready(function(){initNavTree('ev-application_8h_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;GType             <a class="code" href="ev-application_8h.html#a5949ce35eca2263bfb0d74c7d1d672f9">ev_application_get_type</a>        (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>    *<a class="code" href="ev-application_8c.html#acc2c7649771332645d0003296c38e70a">ev_application_new</a>                 (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;gboolean          <a class="code" href="ev-application_8c.html#ada7d8fb00475cb349df7adf8c39dd9ab">ev_application_load_session</a>        (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#af87fe06230dbe3cdcea4b05a6334a99e">ev_application_open_window</a>         (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                              GdkScreen       *screen,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                              guint32          timestamp);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#a7796abc7c838a4a3b088b776be96e716">ev_application_open_uri_at_dest</a>    (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                              const <span class="keywordtype">char</span>      *uri,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                              GdkScreen       *screen,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                              <a class="code" href="ev-link-dest_8h.html#a22a02983ecd30b97b3058686690d5dee">EvLinkDest</a>      *dest,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                              <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6">EvWindowRunMode</a>  mode,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                              const gchar     *search_string,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                              guint32          timestamp);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#af71e48575d1baaa2471e68fa01494366">ev_application_open_uri_list</a>       (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                  GSList          *uri_list,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                              GdkScreen       *screen,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                  guint32          timestamp);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;gboolean      <a class="code" href="ev-application_8c.html#a9323094b1de162f10800291c6d238da1">ev_application_has_window</a>      (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;guint             <a class="code" href="ev-application_8c.html#aa7ef638a7f9b8b68e91f44271e37415d">ev_application_get_n_windows</a>       (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;const gchar *     <a class="code" href="ev-application_8c.html#af23f9cb59a31eb98ffa264deb648e5bd">ev_application_get_uri</a>             (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;GObject      *<a class="code" href="ev-application_8c.html#ae8ac6ca04dbc8e477137837d72bbda3e">ev_application_get_media_keys</a>      (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;const gchar      *<a class="code" href="ev-application_8c.html#ae0cdb14547177d5fb61af0bf0f3e79a6">ev_application_get_dot_dir</a>         (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                      gboolean         create);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#a1cea16ae8944ff30b06ceab32238266d">ev_application_show_help</a>           (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                      GdkScreen       *screen,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                      const <span class="keywordtype">char</span>      *topic);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !EV_APPLICATION_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#af87fe06230dbe3cdcea4b05a6334a99e">ev_application_open_window</a>         (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                              GdkScreen       *screen,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                              guint32          timestamp);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#a7796abc7c838a4a3b088b776be96e716">ev_application_open_uri_at_dest</a>    (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                              const <span class="keywordtype">char</span>      *uri,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                              GdkScreen       *screen,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                              <a class="code" href="ev-link-dest_8h.html#a22a02983ecd30b97b3058686690d5dee">EvLinkDest</a>      *dest,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                              <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6">EvWindowRunMode</a>  mode,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                              const gchar     *search_string,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                              guint32          timestamp);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#af71e48575d1baaa2471e68fa01494366">ev_application_open_uri_list</a>       (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                  GSList          *uri_list,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                              GdkScreen       *screen,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                  guint32          timestamp);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;gboolean      <a class="code" href="ev-application_8c.html#a9323094b1de162f10800291c6d238da1">ev_application_has_window</a>      (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;guint             <a class="code" href="ev-application_8c.html#aa7ef638a7f9b8b68e91f44271e37415d">ev_application_get_n_windows</a>       (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;const gchar *     <a class="code" href="ev-application_8c.html#af23f9cb59a31eb98ffa264deb648e5bd">ev_application_get_uri</a>             (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;GObject      *<a class="code" href="ev-application_8c.html#ae8ac6ca04dbc8e477137837d72bbda3e">ev_application_get_media_keys</a>      (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;const gchar      *<a class="code" href="ev-application_8c.html#ae0cdb14547177d5fb61af0bf0f3e79a6">ev_application_get_dot_dir</a>         (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                      gboolean         create);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span>              <a class="code" href="ev-application_8c.html#a1cea16ae8944ff30b06ceab32238266d">ev_application_show_help</a>           (<a class="code" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a>   *application,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                      GdkScreen       *screen,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                      const <span class="keywordtype">char</span>      *topic);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !EV_APPLICATION_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-application_8h.html">ev-application.h</a></li>
-    <li class="footer">Generated on Sun Feb 23 2014 18:12:14 for Evince by
+    <li class="footer">Generated on Sun Feb 23 2014 20:37:49 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['g_5fwin32_5fhandle_5fsource_5ffuncs',['g_win32_handle_source_funcs',['../eggsmclient-win32_8c.html#aad6fb41a197d9f15fd3092ad9999a70b',1,'eggsmclient-win32.c']]],
   ['gamma',['gamma',['../structColorCache.html#adca0f3b5c84a68bc51223497866bc8e7',1,'ColorCache::gamma()'],['../struct__DviParams.html#afd4e66c34a287595f07749481f9d687b',1,'_DviParams::gamma()']]],
   ['general_5fpage',['general_page',['../struct__EvPropertiesDialog.html#a0323ec11c914ad43c7e1936c5341d775',1,'_EvPropertiesDialog']]],
   ['generateepsf',['generateEPSF',['../struct__TIFF2PSContext.html#a56cf3e5b709fc937fcf8bc03fc88a145',1,'_TIFF2PSContext']]],
@@ -41,8 +40,6 @@ var searchData=
   ['gf_5ffont_5finfo',['gf_font_info',['../fonts_8c.html#abc92b7cd26ca8f8188f4f97a330431d5',1,'gf_font_info():&#160;gf.c'],['../gf_8c.html#abc92b7cd26ca8f8188f4f97a330431d5',1,'gf_font_info():&#160;gf.c']]],
   ['gfi',['gfi',['../structFontInfo.html#a0a48d9ee5151b0496696c115b5b2e7d9',1,'FontInfo']]],
   ['gfile',['gfile',['../struct__EvJobLoadGFile.html#a4ad705b1dde66bc0054786930900ddeb',1,'_EvJobLoadGFile']]],
-  ['global_5fclient',['global_client',['../eggsmclient_8c.html#a5bb82bae28d401bd9aca1f41254319d9',1,'eggsmclient.c']]],
-  ['global_5fclient_5fmode',['global_client_mode',['../eggsmclient_8c.html#adf7c30928472dd58ab1df019069211d7',1,'eggsmclient.c']]],
   ['glyph',['glyph',['../struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996',1,'_DviFontChar']]],
   ['glyph_5fdata',['glyph_data',['../struct__DviFontChar.html#a6fbb916082516f15b2f3c85a196a5d75',1,'_DviFontChar']]],
   ['goption_5foptions',['goption_options',['../ev-previewer_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;ev-previewer.c'],['../main_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;main.c'],['../evince-thumbnailer_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;evince-thumbnailer.c']]],

@@ -1,12 +1,12 @@
 var ev_find_sidebar_8c =
 [
     [ "_EvFindSidebarPrivate", "struct__EvFindSidebarPrivate.html", "struct__EvFindSidebarPrivate" ],
-    [ "TEXT_COLUMN", "ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39a658268753d26e20db642708403b7e96c", null ],
-    [ "PAGE_COLUMN", "ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39acebfe1e1ba71692b7abde0f8a7fc9bcc", null ],
-    [ "RESULT_COLUMN", "ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39a797f705710f0877986a4506215661fb4", null ],
-    [ "N_COLUMNS", "ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39ac70d28409ca79aa291cc0e58244f1fe4", null ],
-    [ "RESULT_ACTIVATED", "ev-find-sidebar_8c.html#afccd240f973cf154952fb917c9209719a01e040de4c34c6e23487c8844c476331", null ],
-    [ "N_SIGNALS", "ev-find-sidebar_8c.html#afccd240f973cf154952fb917c9209719a1e7365ab36b084beff81fb1b96df4b11", null ],
+    [ "TEXT_COLUMN", "ev-find-sidebar_8c.html#af715e26dfffd1f8de1c18449e2770cffa658268753d26e20db642708403b7e96c", null ],
+    [ "PAGE_COLUMN", "ev-find-sidebar_8c.html#af715e26dfffd1f8de1c18449e2770cffacebfe1e1ba71692b7abde0f8a7fc9bcc", null ],
+    [ "RESULT_COLUMN", "ev-find-sidebar_8c.html#af715e26dfffd1f8de1c18449e2770cffa797f705710f0877986a4506215661fb4", null ],
+    [ "N_COLUMNS", "ev-find-sidebar_8c.html#af715e26dfffd1f8de1c18449e2770cffac70d28409ca79aa291cc0e58244f1fe4", null ],
+    [ "RESULT_ACTIVATED", "ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39a01e040de4c34c6e23487c8844c476331", null ],
+    [ "N_SIGNALS", "ev-find-sidebar_8c.html#afb730582952b7ceec73d7dc9bf7bef39a1e7365ab36b084beff81fb1b96df4b11", null ],
     [ "ev_find_sidebar_activate_result_at_iter", "ev-find-sidebar_8c.html#a2e2f8bb5bada7825842f7e7da802f4e7", null ],
     [ "ev_find_sidebar_cancel", "ev-find-sidebar_8c.html#a4c11ab6e5af35ee2a323bfd9d68c805e", null ],
     [ "ev_find_sidebar_class_init", "ev-find-sidebar_8c.html#a0e31788e55805393cf5f5dd96eb48a78", null ],

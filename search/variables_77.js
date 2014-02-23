@@ -1,10 +1,6 @@
 var searchData=
 [
   ['w',['w',['../struct__DviGlyph.html#a642daa10b01dd9d14e3f9c653a1e4235',1,'_DviGlyph::w()'],['../struct__DviState.html#a7e5d7634b6ede9c78cd3131392910d6d',1,'_DviState::w()']]],
-  ['waiting_5fto_5femit_5fquit',['waiting_to_emit_quit',['../struct__EggSMClientXSMP.html#a25b22976d0d72eddfd0a282119265112',1,'_EggSMClientXSMP']]],
-  ['waiting_5fto_5femit_5fquit_5fcancelled',['waiting_to_emit_quit_cancelled',['../struct__EggSMClientXSMP.html#a9a6531b5f95eb36fef277d7e124e53ac',1,'_EggSMClientXSMP']]],
-  ['waiting_5fto_5fsave_5fmyself',['waiting_to_save_myself',['../struct__EggSMClientXSMP.html#ae074dfdebb8592a3e2bf33890aef395a',1,'_EggSMClientXSMP']]],
-  ['waiting_5fto_5fset_5finitial_5fproperties',['waiting_to_set_initial_properties',['../struct__EggSMClientXSMP.html#a32a96cca7e0e89868718ca4c508d014f',1,'_EggSMClientXSMP']]],
   ['wanted_5fname',['wanted_name',['../struct__DviFontSearch.html#a5c857fa5159ce72d81a6e2ab7cfe9285',1,'_DviFontSearch']]],
   ['watch_5fid',['watch_id',['../structEvDoc.html#a3658554dd787ab53ff6e6613e03c3ef8',1,'EvDoc']]],
   ['web_5fstatement',['web_statement',['../struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641',1,'_EvDocumentLicense']]],
@@ -15,7 +11,6 @@ var searchData=
   ['widget',['widget',['../structEvViewChild.html#aafbfbf57ef07076706bd118cc62dbc1a',1,'EvViewChild']]],
   ['widget_5fsignals',['widget_signals',['../ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b',1,'ev-page-action-widget.c']]],
   ['width',['width',['../structBITMAP.html#a2b72c426cabec9d895384364c657a426',1,'BITMAP::width()'],['../struct__DviFontChar.html#aa8b9a5ffa7bf026e72c94b6dfba6b825',1,'_DviFontChar::width()'],['../struct__DviPaperSpec.html#af4943d8ddd04377149af166bca763871',1,'_DviPaperSpec::width()'],['../struct__EvPageSize.html#ac8b78befcd209102c0467a62dbf8cb41',1,'_EvPageSize::width()'],['../struct__EvThumbsSize.html#a1ab6b928ee4e0cfaa5d075c79b8bd63a',1,'_EvThumbsSize::width()']]],
-  ['will_5fquit',['will_quit',['../struct__EggSMClientWin32.html#a9722f4630fd0d2f951d5bb0abbb89d82',1,'_EggSMClientWin32::will_quit()'],['../struct__EggSMClientClass.html#a73156062cb09f137906f6f4cd014c56a',1,'_EggSMClientClass::will_quit()']]],
   ['window',['window',['../structEvViewWindowChild.html#afb4c9aeb299619a2931474883469edda',1,'EvViewWindowChild::window()'],['../struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b',1,'_EvToolbarPrivate::window()'],['../struct__EvWindowTitle.html#abd3fdc5b7291439d176b09133dceabd9',1,'_EvWindowTitle::window()'],['../struct__EvZoomActionWidgetPrivate.html#a1c3b387bbdd7764a43f71b44c9edee87',1,'_EvZoomActionWidgetPrivate::window()'],['../struct__EvZoomActionPrivate.html#a07629019667d8babc859ebec6ecfdf50',1,'_EvZoomActionPrivate::window()'],['../ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387',1,'window():&#160;ev-previewer.c']]],
   ['window_5fchild_5ffocus',['window_child_focus',['../struct__EvView.html#ad5bb1734f0dbe2d9a9e88a6096274638',1,'_EvView']]],
   ['window_5fchildren',['window_children',['../struct__EvView.html#a43d7d7edef088def8542eacf1a96bb58',1,'_EvView']]],

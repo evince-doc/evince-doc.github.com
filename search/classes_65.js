@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['eggdesktopfile',['EggDesktopFile',['../structEggDesktopFile.html',1,'']]],
   ['epsfbox',['EpsfBox',['../structEpsfBox.html',1,'']]],
   ['evannotationmarkupprops',['EvAnnotationMarkupProps',['../structEvAnnotationMarkupProps.html',1,'']]],
   ['evdoc',['EvDoc',['../structEvDoc.html',1,'']]],

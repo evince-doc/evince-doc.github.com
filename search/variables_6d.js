@@ -16,7 +16,6 @@ var searchData=
   ['maxptsize',['maxPtSize',['../structTrackKernData.html#a5807db989d1817bbfd4fd663965440f1',1,'TrackKernData']]],
   ['menu',['menu',['../struct__EvSidebarPrivate.html#a418692e682bb8ab96c52631d6232adcf',1,'_EvSidebarPrivate']]],
   ['message_5farea',['message_area',['../struct__EvWindowPrivate.html#a338f0ad420f5bed5155a8c50d241b886',1,'_EvWindowPrivate']]],
-  ['message_5fevent',['message_event',['../struct__EggSMClientWin32.html#ab8337102bbfd8d293df770b5b8749da4',1,'_EggSMClientWin32']]],
   ['message_5ftype',['message_type',['../struct__EvMessageAreaPrivate.html#ac477dfb0fb0e8482bc8f1e69d3b77320',1,'_EvMessageAreaPrivate']]],
   ['messages',['messages',['../util_8c.html#ae754a74a4db95933116b65d1eee1a516',1,'util.c']]],
   ['metadata',['metadata',['../struct__EvBookmarks.html#a77641c9de6b11d2f8460ce8d02a0aadd',1,'_EvBookmarks::metadata()'],['../struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094',1,'_EvWindowPrivate::metadata()']]],

@@ -6,8 +6,6 @@ var searchData=
   ['paint_5fsurface',['paint_surface',['../ev-transition-animation_8c.html#ad03382b8a91b743cd5d5b91af2f09399',1,'ev-transition-animation.c']]],
   ['parse_5fcolor',['parse_color',['../dvi-document_8c.html#aea1916dda1fe9757db89364e15f829c1',1,'dvi-document.c']]],
   ['parse_5fepsf_5fspecial',['parse_epsf_special',['../sp-epsf_8c.html#a410e949e8e8ca8aae1805933a91c4e3c',1,'sp-epsf.c']]],
-  ['parse_5fexec',['parse_exec',['../eggdesktopfile_8c.html#acdb16dfeb7151a564abfcfc9746573fd',1,'eggdesktopfile.c']]],
-  ['parse_5flink',['parse_link',['../eggdesktopfile_8c.html#a16f1de94110e89fbc2a460b2a0f0624c',1,'eggdesktopfile.c']]],
   ['parse_5fspec',['parse_spec',['../fontmap_8c.html#a2972e999434398d01e634b43fc5ad2d3',1,'fontmap.c']]],
   ['pdf_5fdocument_5fannotations_5fadd_5fannotation',['pdf_document_annotations_add_annotation',['../ev-poppler_8cc.html#a8aa2c9e070998e3530a208c46988ca70',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fdocument_5fis_5fmodified',['pdf_document_annotations_document_is_modified',['../ev-poppler_8cc.html#a66c644172f8583f7053385d05e5d3f16',1,'ev-poppler.cc']]],
@@ -127,7 +125,6 @@ var searchData=
   ['print_5fjobs_5fconfirmation_5fdialog_5fresponse',['print_jobs_confirmation_dialog_response',['../ev-window_8c.html#ac6b4c1469c3f0f81e0b9727643a08599',1,'ev-window.c']]],
   ['print_5fsection_5fcb',['print_section_cb',['../ev-sidebar-links_8c.html#ab43ad085b32adc60e0ea55d948157b57',1,'ev-sidebar-links.c']]],
   ['print_5fusage',['print_usage',['../evince-thumbnailer_8c.html#a3aab4c0e93ff5044dae1f659cf637a50',1,'evince-thumbnailer.c']]],
-  ['process_5fice_5fmessages',['process_ice_messages',['../eggsmclient-xsmp_8c.html#ac903afe191a294cf52b3593a459084ed',1,'eggsmclient-xsmp.c']]],
   ['process_5fmatches_5fidle',['process_matches_idle',['../ev-find-sidebar_8c.html#a2fcabf8b93069a9178990d5b55cff138',1,'ev-find-sidebar.c']]],
   ['process_5fpending_5finvocations',['process_pending_invocations',['../ev-daemon_8c.html#ac87742a8a69fcb3a28fabde718b72552',1,'ev-daemon.c']]],
   ['property_5fpage_5fprovider_5fiface_5finit',['property_page_provider_iface_init',['../ev-properties-main_8c.html#acf3c1b71cb5ce181111e0a9e8768149f',1,'ev-properties-main.c']]],
@@ -162,7 +159,6 @@ var searchData=
   ['pshead',['PSHead',['../tiff2ps_8c.html#af9e6175bced36464b1546ba97e5ee8c0',1,'tiff2ps.c']]],
   ['pspage',['PSpage',['../tiff2ps_8c.html#a6ee3536353d994461cd3dcd9abdd8db1',1,'tiff2ps.c']]],
   ['pstail',['PSTail',['../tiff2ps_8c.html#af4137d1d81434f3dbb3824a7a2d95719',1,'tiff2ps.c']]],
-  ['ptrarray_5fprop',['ptrarray_prop',['../eggsmclient-xsmp_8c.html#aa2eadf3701b8a7ccfdb73ff7e4ed8bfc',1,'eggsmclient-xsmp.c']]],
   ['push',['push',['../dviread_8c.html#a6e16a5cd11eb301374376a3149f60675',1,'dviread.c']]],
   ['push_5fhandlers',['push_handlers',['../tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3',1,'tiff-document.c']]]
 ];

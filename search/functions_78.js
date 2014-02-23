@@ -19,10 +19,5 @@ var searchData=
   ['xps_5fdocument_5fprint_5fprint_5fpage',['xps_document_print_print_page',['../xps-document_8c.html#a3f05ddf86e28d9d375d6afd0c3775ded',1,'xps-document.c']]],
   ['xps_5fdocument_5frender',['xps_document_render',['../xps-document_8c.html#a4a740ea28751590f540e6dbd5290fe83',1,'xps-document.c']]],
   ['xps_5fdocument_5fsave',['xps_document_save',['../xps-document_8c.html#af26c3139ad350dc90fa03f17273473ff',1,'xps-document.c']]],
-  ['xsmp_5fdie',['xsmp_die',['../eggsmclient-xsmp_8c.html#aec0dc907943e4a1fe0a096450ed9e977',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5finteract',['xsmp_interact',['../eggsmclient-xsmp_8c.html#ac79ef45060d59580d5666d5d11ef35a2',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fsave_5fcomplete',['xsmp_save_complete',['../eggsmclient-xsmp_8c.html#ad3a1af00dc808e3e360f92c3f7a3cd06',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fsave_5fyourself',['xsmp_save_yourself',['../eggsmclient-xsmp_8c.html#a69a6daa6a45668e057b476667a92eb2c',1,'eggsmclient-xsmp.c']]],
-  ['xsmp_5fshutdown_5fcancelled',['xsmp_shutdown_cancelled',['../eggsmclient-xsmp_8c.html#a76cae51fe8a2c732346d1566e1c5a296',1,'eggsmclient-xsmp.c']]],
   ['xstradd',['xstradd',['../util_8c.html#aac3503ab350d64e72b87e52ea64b4f83',1,'util.c']]]
 ];
