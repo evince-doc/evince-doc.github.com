@@ -1,7 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"struct__EvJobLoadGFile.html":[6,0,142],
-"struct__EvJobLoadGFile.html#a1a212d8f2a25a7754686825b8b1ac1c1":[6,0,142,2],
 "struct__EvJobLoadGFile.html#a4ad705b1dde66bc0054786930900ddeb":[6,0,142,1],
 "struct__EvJobLoadGFile.html#a83faf9985b01344347ac24908debe53d":[6,0,142,0],
 "struct__EvJobLoadGFile.html#aaa64f777a20ad074aad22f764f0c65b5":[6,0,142,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX29 =
 "struct__EvPasswordViewPrivate.html#adec1cbb9b7fa8ed3d614d21afc5e7bd8":[6,0,199,4],
 "struct__EvPixbufCache.html":[6,0,200],
 "struct__EvPixbufCache.html#a1f97d2eb96a872c0575cf64ef2ccfa55":[6,0,200,4],
-"struct__EvPixbufCache.html#a3fa75f5b84954a10ef33c6ecd50d402c":[6,0,200,8]
+"struct__EvPixbufCache.html#a3fa75f5b84954a10ef33c6ecd50d402c":[6,0,200,8],
+"struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49":[6,0,200,12],
+"struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce":[6,0,200,3]
 };

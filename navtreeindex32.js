@@ -1,7 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"struct__EvZoomActionPrivate.html#af4dddb3804ec0a7b602ef540754fc76a":[6,0,274,1],
-"struct__EvZoomActionWidget.html":[6,0,275],
 "struct__EvZoomActionWidget.html#ab9642353ce0b97b3fd124106ea1497a1":[6,0,275,0],
 "struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330":[6,0,275,1],
 "struct__EvZoomActionWidgetClass.html":[6,0,276],
@@ -249,5 +247,7 @@ var NAVTREEINDEX32 =
 "synctex__parser_8c.html#a29dbafec945d9f5655c9d34e32417766":[7,0,0,1,1,0,111],
 "synctex__parser_8c.html#a2ac12d14e089293ea89e19e4e7f48b2c":[7,0,0,1,1,0,119],
 "synctex__parser_8c.html#a2aecfbd6d2abb758a754f462c8cf22aa":[7,0,0,1,1,0,248],
-"synctex__parser_8c.html#a2b712fd4dac5720df55bb855c4db605d":[7,0,0,1,1,0,178]
+"synctex__parser_8c.html#a2b712fd4dac5720df55bb855c4db605d":[7,0,0,1,1,0,178],
+"synctex__parser_8c.html#a2c4b621dae38ac5134a248303a183ef2":[7,0,0,1,1,0,74],
+"synctex__parser_8c.html#a2ceee763583070b40c7c158c9fa9894b":[7,0,0,1,1,0,156]
 };

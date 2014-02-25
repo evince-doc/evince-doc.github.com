@@ -1,7 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"evince-thumbnailer_8c.html#a3295fd6afdf6e9eae5d6f6ff252e14a5":[7,0,0,9,0,11],
-"evince-thumbnailer_8c.html#a3aab4c0e93ff5044dae1f659cf637a50":[7,0,0,9,0,8],
 "evince-thumbnailer_8c.html#a3c23f2f39e9337fb609bd7446619bc02":[7,0,0,9,0,6],
 "evince-thumbnailer_8c.html#a3e07434131971aab108bac5d0545323f":[7,0,0,9,0,9],
 "evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c":[7,0,0,9,0,15],
@@ -171,8 +169,8 @@ var NAVTREEINDEX22 =
 "functions_0x79.html":[6,2,0,24],
 "functions_0x7a.html":[6,2,0,25],
 "functions_func.html":[6,2,1],
-"functions_vars.html":[6,2,2],
 "functions_vars.html":[6,2,2,0],
+"functions_vars.html":[6,2,2],
 "functions_vars_0x61.html":[6,2,2,1],
 "functions_vars_0x62.html":[6,2,2,2],
 "functions_vars_0x63.html":[6,2,2,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX22 =
 "gimpcellrenderertoggle_8c.html#a9be16fd26bc5bd97641705fb4936ce51":[7,0,0,1,0,0,14],
 "gimpcellrenderertoggle_8c.html#a9d2c448f9e8b1e5aead8029890ab7686":[7,0,0,1,0,0,16],
 "gimpcellrenderertoggle_8c.html#aa8072c03d7a92746f60e1b5efb608d7a":[7,0,0,1,0,0,11],
-"gimpcellrenderertoggle_8c.html#aba5d3910b650246247b0002b6e0038db":[7,0,0,1,0,0,8]
+"gimpcellrenderertoggle_8c.html#aba5d3910b650246247b0002b6e0038db":[7,0,0,1,0,0,8],
+"gimpcellrenderertoggle_8c.html#abc6126af1d45847bc59afa0aa3216b04a0c34d85df8279641afad9e3c9b3a54ce":[7,0,0,1,0,0,3],
+"gimpcellrenderertoggle_8c.html#abc6126af1d45847bc59afa0aa3216b04ad37324c719e7d564128110e054a550e4":[7,0,0,1,0,0,2]
 };

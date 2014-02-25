@@ -1,7 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"tiff2ps_8c.html#aee105c6d702b3adf4ea28e7969d19400":[7,0,0,0,5,2,40],
-"tiff2ps_8c.html#aef3505cbed594ff10c4a0294598a7340":[7,0,0,0,5,2,15],
 "tiff2ps_8c.html#af0eb8f58754e312b5916d5f7c54bd4cf":[7,0,0,0,5,2,43],
 "tiff2ps_8c.html#af4137d1d81434f3dbb3824a7a2d95719":[7,0,0,0,5,2,34],
 "tiff2ps_8c.html#af9e6175bced36464b1546ba97e5ee8c0":[7,0,0,0,5,2,32],
