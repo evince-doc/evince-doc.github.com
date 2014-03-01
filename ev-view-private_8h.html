@@ -410,21 +410,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l05956">5956</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l05959"></a><span class="lineno"> 5959</span>&#160;{</div>
-<div class="line"><a name="l05960"></a><span class="lineno"> 5960</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
-<div class="line"><a name="l05961"></a><span class="lineno"> 5961</span>&#160;    GtkStateFlags    state;</div>
-<div class="line"><a name="l05962"></a><span class="lineno"> 5962</span>&#160;    GtkStyleContext *context;</div>
-<div class="line"><a name="l05963"></a><span class="lineno"> 5963</span>&#160;</div>
-<div class="line"><a name="l05964"></a><span class="lineno"> 5964</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
-<div class="line"><a name="l05965"></a><span class="lineno"> 5965</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
-<div class="line"><a name="l05966"></a><span class="lineno"> 5966</span>&#160;</div>
-<div class="line"><a name="l05967"></a><span class="lineno"> 5967</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
-<div class="line"><a name="l05968"></a><span class="lineno"> 5968</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
-<div class="line"><a name="l05969"></a><span class="lineno"> 5969</span>&#160;</div>
-<div class="line"><a name="l05970"></a><span class="lineno"> 5970</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
-<div class="line"><a name="l05971"></a><span class="lineno"> 5971</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
-<div class="line"><a name="l05972"></a><span class="lineno"> 5972</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l06023">6023</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l06026"></a><span class="lineno"> 6026</span>&#160;{</div>
+<div class="line"><a name="l06027"></a><span class="lineno"> 6027</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
+<div class="line"><a name="l06028"></a><span class="lineno"> 6028</span>&#160;    GtkStateFlags    state;</div>
+<div class="line"><a name="l06029"></a><span class="lineno"> 6029</span>&#160;    GtkStyleContext *context;</div>
+<div class="line"><a name="l06030"></a><span class="lineno"> 6030</span>&#160;</div>
+<div class="line"><a name="l06031"></a><span class="lineno"> 6031</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
+<div class="line"><a name="l06032"></a><span class="lineno"> 6032</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
+<div class="line"><a name="l06033"></a><span class="lineno"> 6033</span>&#160;</div>
+<div class="line"><a name="l06034"></a><span class="lineno"> 6034</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
+<div class="line"><a name="l06035"></a><span class="lineno"> 6035</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
+<div class="line"><a name="l06036"></a><span class="lineno"> 6036</span>&#160;</div>
+<div class="line"><a name="l06037"></a><span class="lineno"> 6037</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
+<div class="line"><a name="l06038"></a><span class="lineno"> 6038</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
+<div class="line"><a name="l06039"></a><span class="lineno"> 6039</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -836,7 +836,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-private_8h.html">ev-view-private.h</a></li>
-    <li class="footer">Generated on Fri Feb 28 2014 22:18:35 for Evince by
+    <li class="footer">Generated on Sat Mar 1 2014 12:54:32 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

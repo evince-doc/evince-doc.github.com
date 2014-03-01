@@ -92,6 +92,8 @@ var ev_view_8c =
     [ "ev_view_annotation_save_contents", "ev-view_8c.html#acd1abf9a3627a789cab19eae9c053c1c", null ],
     [ "ev_view_annotation_show_popup_window", "ev-view_8c.html#a49874272181a64b3d9baed07945a2c9c", null ],
     [ "ev_view_autoscroll_cb", "ev-view_8c.html#a282622b90b344875ef096951625ae767", null ],
+    [ "ev_view_autoscroll_pause", "ev-view_8c.html#a86774010ed0b36037d0c4a3dfa7b58cc", null ],
+    [ "ev_view_autoscroll_resume", "ev-view_8c.html#a29c9f73267a4a12636fa962b1286690a", null ],
     [ "ev_view_autoscroll_start", "ev-view_8c.html#a6057c02ba21d898d3e20d091cf642050", null ],
     [ "ev_view_autoscroll_stop", "ev-view_8c.html#a1fe12716987095c8e5993acf1fcab0f4", null ],
     [ "ev_view_begin_add_annotation", "ev-view_8c.html#aa49963d34c4251df044c3d7422e2965b", null ],
