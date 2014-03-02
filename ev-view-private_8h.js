@@ -20,7 +20,7 @@ var ev_view_private_8h =
     [ "_ev_view_get_selection_colors", "ev-view-private_8h.html#a60b52ce8d5e2aa3cb26fb9678cbcc558", null ],
     [ "_ev_view_transform_doc_point_to_view_point", "ev-view-private_8h.html#a3b05fea97420f6f5da941c85b21615cf", null ],
     [ "_ev_view_transform_doc_rect_to_view_rect", "ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6", null ],
-    [ "_ev_view_transform_view_point_to_doc_point", "ev-view-private_8h.html#ae0e760f53072cc44dc1b1757a49081b5", null ],
-    [ "_ev_view_transform_view_rect_to_doc_rect", "ev-view-private_8h.html#af8afb6d25a68959e8f5dc74a09fce477", null ],
+    [ "_ev_view_transform_view_point_to_doc_point", "ev-view-private_8h.html#a103a33e3028683b204690cc6ff66a1ed", null ],
+    [ "_ev_view_transform_view_rect_to_doc_rect", "ev-view-private_8h.html#a231b1221d672c5ee9781b519a1ae8e7d", null ],
     [ "_get_page_size_for_scale_and_rotation", "ev-view-private_8h.html#af51d374635b49a10eb30711e9a5909c1", null ]
 ];

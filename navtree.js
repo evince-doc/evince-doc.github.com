@@ -59,7 +59,7 @@ var NAVTREEINDEX =
 "ev-sidebar-layers_8c.html#a727ef86a8889fcf8f6d8204b3ededd0a",
 "ev-stock-icons_8h.html#a5221e188c25d4758467777f17f9022d3",
 "ev-view-accessible_8c.html#aac71dd9ebf16ae86e9e8a88e973c215e",
-"ev-view_8c.html#a49874272181a64b3d9baed07945a2c9c",
+"ev-view_8c.html#a478449df5ac4e09666f6286245d4cc61",
 "ev-view_8h.html#a76f46ee1b38429b28d6575a90d3461ec",
 "ev-window_8c.html#a9175c6d80c472ca965e38884bf089a34",
 "evince-thumbnailer_8c.html#a3295fd6afdf6e9eae5d6f6ff252e14a5",
