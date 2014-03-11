@@ -1755,6 +1755,7 @@ var searchData=
   ['ev_5fprint_5foperation_5fprint_5fget_5fprint_5fsettings',['ev_print_operation_print_get_print_settings',['../ev-print-operation_8c.html#af50ea2da9bad09087dc0fcdb81ca05a6',1,'ev-print-operation.c']]],
   ['ev_5fprint_5foperation_5fprint_5fget_5ftype',['ev_print_operation_print_get_type',['../ev-print-operation_8c.html#abe96b10d417bd5d4539c5efcf664f075',1,'ev-print-operation.c']]],
   ['ev_5fprint_5foperation_5fprint_5finit',['ev_print_operation_print_init',['../ev-print-operation_8c.html#a82d612adaabaa899818ba1123eea4799',1,'ev-print-operation.c']]],
+  ['ev_5fprint_5foperation_5fprint_5fpreview',['ev_print_operation_print_preview',['../ev-print-operation_8c.html#a1556b67a9bbb282b4e60dee418ca4992',1,'ev-print-operation.c']]],
   ['ev_5fprint_5foperation_5fprint_5frequest_5fpage_5fsetup',['ev_print_operation_print_request_page_setup',['../ev-print-operation_8c.html#a89943f46e0a241d2e3366c0fed92ecb6',1,'ev-print-operation.c']]],
   ['ev_5fprint_5foperation_5fprint_5frun',['ev_print_operation_print_run',['../ev-print-operation_8c.html#a0bd10d9c1735eb4f009e1a21aba038b9',1,'ev-print-operation.c']]],
   ['ev_5fprint_5foperation_5fprint_5fset_5fcurrent_5fpage',['ev_print_operation_print_set_current_page',['../ev-print-operation_8c.html#aaff1688aab18a05f933d24c82a5b86ee',1,'ev-print-operation.c']]],

@@ -49,6 +49,7 @@ var ev_print_operation_8c =
     [ "ev_print_operation_print_get_print_settings", "ev-print-operation_8c.html#af50ea2da9bad09087dc0fcdb81ca05a6", null ],
     [ "ev_print_operation_print_get_type", "ev-print-operation_8c.html#abe96b10d417bd5d4539c5efcf664f075", null ],
     [ "ev_print_operation_print_init", "ev-print-operation_8c.html#a82d612adaabaa899818ba1123eea4799", null ],
+    [ "ev_print_operation_print_preview", "ev-print-operation_8c.html#a1556b67a9bbb282b4e60dee418ca4992", null ],
     [ "ev_print_operation_print_request_page_setup", "ev-print-operation_8c.html#a89943f46e0a241d2e3366c0fed92ecb6", null ],
     [ "ev_print_operation_print_run", "ev-print-operation_8c.html#a0bd10d9c1735eb4f009e1a21aba038b9", null ],
     [ "ev_print_operation_print_set_current_page", "ev-print-operation_8c.html#aaff1688aab18a05f933d24c82a5b86ee", null ],

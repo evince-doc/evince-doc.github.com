@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"struct__DjvuDocument.html":[6,0,14],
 "struct__DjvuDocument.html#a23aa53059c94ac3cedb152b5deba3335":[6,0,14,5],
 "struct__DjvuDocument.html#a34943233231251f9da01c851cfaff486":[6,0,14,6],
 "struct__DjvuDocument.html#a40d71f61e3be6c8bc1440923f9417d8e":[6,0,14,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviRange.html#a17042775bf41dee1228bf4a4b8fa0399":[6,0,40,1],
 "struct__DviRange.html#a66ee64cc835e21470312fa74d0dc3839":[6,0,40,3],
 "struct__DviRange.html#abea2cbd25127d0025523f87001ee8669":[6,0,40,2],
-"struct__DviSpecial.html":[6,0,41],
-"struct__DviSpecial.html#a00a4195b0212a6eb4bec3a0a043b57e4":[6,0,41,1]
+"struct__DviSpecial.html":[6,0,41]
 };

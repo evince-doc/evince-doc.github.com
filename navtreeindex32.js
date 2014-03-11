@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a":[6,0,274,0],
+"struct__EvZoomActionPrivate.html#a07629019667d8babc859ebec6ecfdf50":[6,0,274,2],
 "struct__EvZoomActionPrivate.html#af4dddb3804ec0a7b602ef540754fc76a":[6,0,274,1],
 "struct__EvZoomActionWidget.html":[6,0,275],
 "struct__EvZoomActionWidget.html#ab9642353ce0b97b3fd124106ea1497a1":[6,0,275,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "synctex__parser_8c.html#a29b1cd48e4ea95bd73da74b019c04239":[7,0,0,1,1,0,174],
 "synctex__parser_8c.html#a29d49976f0f2b901a3296d467308025c":[7,0,0,1,1,0,259],
 "synctex__parser_8c.html#a29dbafec945d9f5655c9d34e32417766":[7,0,0,1,1,0,111],
-"synctex__parser_8c.html#a2ac12d14e089293ea89e19e4e7f48b2c":[7,0,0,1,1,0,119],
-"synctex__parser_8c.html#a2aecfbd6d2abb758a754f462c8cf22aa":[7,0,0,1,1,0,248],
-"synctex__parser_8c.html#a2b712fd4dac5720df55bb855c4db605d":[7,0,0,1,1,0,178]
+"synctex__parser_8c.html#a2ac12d14e089293ea89e19e4e7f48b2c":[7,0,0,1,1,0,119]
 };

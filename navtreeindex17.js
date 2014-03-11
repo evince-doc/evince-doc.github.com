@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"ev-stock-icons_8h.html#a1f60276006e3de16efc7bc12a6b16fae":[7,0,0,4,17,2],
 "ev-stock-icons_8h.html#a5221e188c25d4758467777f17f9022d3":[7,0,0,4,17,10],
 "ev-stock-icons_8h.html#a587bca5bf0b0551fefd483fba1a98542":[7,0,0,4,17,9],
 "ev-stock-icons_8h.html#a76e06a374ae4b0ec07a3d1f53af73921":[7,0,0,4,17,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "ev-view-accessible_8c.html#a9ac879c1f79e36f9c393a8ccd8bbbe7b":[7,0,0,4,22,41],
 "ev-view-accessible_8c.html#a9d60609dca4ba56d6999df6a3a25e005":[7,0,0,4,22,14],
 "ev-view-accessible_8c.html#aa36cb61c097b3be6edebc7b55660b1ee":[7,0,0,4,22,22],
-"ev-view-accessible_8c.html#aa551e20a4e1130b19e80c9f617dc457a":[7,0,0,4,22,34],
-"ev-view-accessible_8c.html#aa6ccfaf3191cf3d0938bc3933dcda7b7":[7,0,0,4,22,16]
+"ev-view-accessible_8c.html#aa551e20a4e1130b19e80c9f617dc457a":[7,0,0,4,22,34]
 };

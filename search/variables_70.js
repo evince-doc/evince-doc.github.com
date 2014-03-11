@@ -95,6 +95,7 @@ var searchData=
   ['print_5fjob_5ftitle',['print_job_title',['../struct__EvPreviewerWindow.html#a5966c5ab3f7503e037f769d5313bca49',1,'_EvPreviewerWindow']]],
   ['print_5fpage',['print_page',['../struct__EvDocumentPrintInterface.html#a6620c1f7f66d246f0818fa6a2d97d12c',1,'_EvDocumentPrintInterface']]],
   ['print_5fpage_5fsetup',['print_page_setup',['../struct__EvPreviewerWindow.html#a04d0c8a980f0bd0f56875bb75852ad6d',1,'_EvPreviewerWindow::print_page_setup()'],['../struct__EvWindowPrivate.html#a89724aaa0835e3383c3d6e2ae70b0f3d',1,'_EvWindowPrivate::print_page_setup()']]],
+  ['print_5fpreview',['print_preview',['../struct__EvPrintOperation.html#ab7ed3f87522b1f254a3151668c8ba1fc',1,'_EvPrintOperation']]],
   ['print_5fqueue',['print_queue',['../struct__EvWindowPrivate.html#aef672d65d599902669e59579e3867472',1,'_EvWindowPrivate']]],
   ['print_5fsettings',['print_settings',['../struct__EvPreviewerWindow.html#a3f9ea50daa6f942996f440c78077c4c7',1,'_EvPreviewerWindow::print_settings()'],['../struct__EvWindowPrivate.html#a5afc6de8583dc2582c7dbd65479b3a92',1,'_EvWindowPrivate::print_settings()'],['../ev-previewer_8c.html#a20cee399606cef5d4b035ff7aa255199',1,'print_settings():&#160;ev-previewer.c'],['../main_8c.html#a20cee399606cef5d4b035ff7aa255199',1,'print_settings():&#160;main.c']]],
   ['priority',['priority',['../struct__EvSchedulerJob.html#af9aefe79c614a7e32f8bd14150626740',1,'_EvSchedulerJob']]],
