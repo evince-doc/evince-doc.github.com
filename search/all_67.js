@@ -89,6 +89,7 @@ var searchData=
   ['get_5fprint_5fsettings',['get_print_settings',['../struct__EvPrintOperationClass.html#a86c0ec9d538bf04e5a131b511d94687b',1,'_EvPrintOperationClass::get_print_settings()'],['../ev-window_8c.html#a67cbe1687ef98f36179af60ae168c620',1,'get_print_settings():&#160;ev-window.c']]],
   ['get_5fprint_5fsettings_5ffile',['get_print_settings_file',['../ev-window_8c.html#a6324776b1a8ffdfe2885209bb6d95b87',1,'ev-window.c']]],
   ['get_5fprogress',['get_progress',['../struct__EvDocumentFontsInterface.html#ad463ad4eb8960d8696477df117c8507d',1,'_EvDocumentFontsInterface']]],
+  ['get_5frelevant_5fpage',['get_relevant_page',['../ev-link-accessible_8c.html#a3374bb50f09aef5c3407c797f0c8b573',1,'ev-link-accessible.c']]],
   ['get_5frun_5fattributes',['get_run_attributes',['../ev-view-accessible_8c.html#a274c2a4509fa2c641f972ffeb7298802',1,'ev-view-accessible.c']]],
   ['get_5fscale_5ffor_5fpage',['get_scale_for_page',['../ev-sidebar-thumbnails_8c.html#a9d63a7b44d209ae546b7aeef64f819f0',1,'ev-sidebar-thumbnails.c']]],
   ['get_5fscreen_5fdpi',['get_screen_dpi',['../ev-annotation-window_8c.html#af92f40031a52f8beae1734b57ae698f1',1,'get_screen_dpi(EvAnnotationWindow *window):&#160;ev-annotation-window.c'],['../ev-previewer-window_8c.html#a6909209a02cc20fb567b0549858f4e2f',1,'get_screen_dpi(EvPreviewerWindow *window):&#160;ev-previewer-window.c'],['../ev-window_8c.html#ab2e74bd5c00e287161ac1ad9f614cd9a',1,'get_screen_dpi(EvWindow *window):&#160;ev-window.c']]],

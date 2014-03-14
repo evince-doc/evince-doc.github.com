@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"special_8c.html#ad8dbce681f366042dc41ecd8d26a621c":[7,0,0,0,2,0,29,14],
 "special_8c.html#ada17be56b06f6b81a6d156588f718db0":[7,0,0,0,2,0,29,3],
 "special_8c.html#ae507847fd15d90496c9c31acf7e22208":[7,0,0,0,2,0,29,2],
 "special_8c.html#ae6ae69cfbf0849751bca8b8ce3e4c154":[7,0,0,0,2,0,29,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[6,0,12,7],
 "struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[6,0,12,2],
 "struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821":[6,0,12,8],
-"struct__ComicsDocumentClass.html":[6,0,13],
-"struct__ComicsDocumentClass.html#a644ae0682e2f9d46d8426a66a2cb74a3":[6,0,13,0]
+"struct__ComicsDocumentClass.html":[6,0,13]
 };
