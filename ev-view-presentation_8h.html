@@ -321,10 +321,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01579">1579</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;{</div>
-<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;    <span class="keywordflow">return</span> pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a25af432737beac10ebb7f9180c14ed55">current_page</a>;</div>
-<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01582">1582</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;{</div>
+<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;    <span class="keywordflow">return</span> pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a25af432737beac10ebb7f9180c14ed55">current_page</a>;</div>
+<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -352,10 +352,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01607">1607</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;{</div>
-<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;        <span class="keywordflow">return</span> pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6">rotation</a>;</div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01610">1610</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;{</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;        <span class="keywordflow">return</span> pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6">rotation</a>;</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -421,18 +421,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01562">1562</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;{</div>
-<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
-<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;    g_return_val_if_fail (current_page &lt; <a class="code" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (document), NULL);</div>
-<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;</div>
-<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-view-presentation_8h.html#aa2f394d61823d78cd6b2544b26071bff">EV_TYPE_VIEW_PRESENTATION</a>,</div>
-<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;                     <span class="stringliteral">&quot;document&quot;</span>, document,</div>
-<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;                     <span class="stringliteral">&quot;current_page&quot;</span>, current_page,</div>
-<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;                     <span class="stringliteral">&quot;rotation&quot;</span>, rotation,</div>
-<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;                     <span class="stringliteral">&quot;inverted_colors&quot;</span>, inverted_colors,</div>
-<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;                     NULL));</div>
-<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01565">1565</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;{</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;    g_return_val_if_fail (current_page &lt; <a class="code" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (document), NULL);</div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;</div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-view-presentation_8h.html#aa2f394d61823d78cd6b2544b26071bff">EV_TYPE_VIEW_PRESENTATION</a>,</div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;                     <span class="stringliteral">&quot;document&quot;</span>, document,</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;                     <span class="stringliteral">&quot;current_page&quot;</span>, current_page,</div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;                     <span class="stringliteral">&quot;rotation&quot;</span>, rotation,</div>
+<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;                     <span class="stringliteral">&quot;inverted_colors&quot;</span>, inverted_colors,</div>
+<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;                     NULL));</div>
+<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -567,25 +567,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01585">1585</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;{</div>
-<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;        <span class="keywordflow">if</span> (rotation &gt;= 360)</div>
-<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;                rotation -= 360;</div>
-<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rotation &lt; 0)</div>
-<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;                rotation += 360;</div>
-<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;</div>
-<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;        <span class="keywordflow">if</span> (pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6">rotation</a> == rotation)</div>
-<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;                <span class="keywordflow">return</span>;</div>
+<p>Definition at line <a class="el" href="ev-view-presentation_8c_source.html#l01588">1588</a> of file <a class="el" href="ev-view-presentation_8c_source.html">ev-view-presentation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;{</div>
+<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;        <span class="keywordflow">if</span> (rotation &gt;= 360)</div>
+<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;                rotation -= 360;</div>
+<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rotation &lt; 0)</div>
+<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;                rotation += 360;</div>
 <div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;</div>
-<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;        pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6">rotation</a> = rotation;</div>
-<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;        g_object_notify (G_OBJECT (pview), <span class="stringliteral">&quot;rotation&quot;</span>);</div>
-<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;        <span class="keywordflow">if</span> (pview-&gt;<a class="code" href="struct__EvViewPresentation.html#ad6699f08897a09632ca9d51399e4dfce">is_constructing</a>)</div>
-<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;</div>
-<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;        pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a1fa998a4740fdb2dac3a646d8185f2fd">scale</a> = 0;</div>
-<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;        <a class="code" href="ev-view-presentation_8c.html#a1491202a53ebda5af8eae056c2de6547">ev_view_presentation_reset_jobs</a> (pview);</div>
-<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;        <a class="code" href="ev-view-presentation_8c.html#abdff6b8221393b933dcf74f032772cde">ev_view_presentation_update_current_page</a> (pview, pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a25af432737beac10ebb7f9180c14ed55">current_page</a>);</div>
-<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;}</div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;        <span class="keywordflow">if</span> (pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6">rotation</a> == rotation)</div>
+<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;</div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;        pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6">rotation</a> = rotation;</div>
+<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;        g_object_notify (G_OBJECT (pview), <span class="stringliteral">&quot;rotation&quot;</span>);</div>
+<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;        <span class="keywordflow">if</span> (pview-&gt;<a class="code" href="struct__EvViewPresentation.html#ad6699f08897a09632ca9d51399e4dfce">is_constructing</a>)</div>
+<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;</div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;        pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a1fa998a4740fdb2dac3a646d8185f2fd">scale</a> = 0;</div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;        <a class="code" href="ev-view-presentation_8c.html#a1491202a53ebda5af8eae056c2de6547">ev_view_presentation_reset_jobs</a> (pview);</div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;        <a class="code" href="ev-view-presentation_8c.html#abdff6b8221393b933dcf74f032772cde">ev_view_presentation_update_current_page</a> (pview, pview-&gt;<a class="code" href="struct__EvViewPresentation.html#a25af432737beac10ebb7f9180c14ed55">current_page</a>);</div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -605,7 +605,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-presentation_8h.html">ev-view-presentation.h</a></li>
-    <li class="footer">Generated on Mon Mar 17 2014 12:31:33 for Evince by
+    <li class="footer">Generated on Mon Mar 17 2014 14:58:34 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
