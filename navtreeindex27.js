@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"struct__DviParams.html#af2026f8f5ca01859b74c4d9879e85fd7":[6,0,39,17],
+"struct__DviParams.html#afd4e66c34a287595f07749481f9d687b":[6,0,39,8],
 "struct__DviRange.html":[6,0,40],
 "struct__DviRange.html#a099dbfb073172ade4fad0ecb057036db":[6,0,40,0],
 "struct__DviRange.html#a17042775bf41dee1228bf4a4b8fa0399":[6,0,40,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641":[6,0,82,2],
 "struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9":[6,0,82,0],
 "struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08":[6,0,82,1],
-"struct__EvDocumentLinksInterface.html":[6,0,83],
-"struct__EvDocumentLinksInterface.html#a146245e7fd305a73dcdd229643e5d587":[6,0,83,5],
-"struct__EvDocumentLinksInterface.html#a743ef355ed53b47adf760a966bdcc08a":[6,0,83,1]
+"struct__EvDocumentLinksInterface.html":[6,0,83]
 };

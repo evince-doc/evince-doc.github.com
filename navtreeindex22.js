@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"ev-zoom-action_8h.html#aeed62747ad01eadb1a7bcc17f6a9fce0":[7,0,0,7,70,6],
+"ev-zoom-action_8h_source.html":[7,0,0,7,70],
 "evince-document_8h.html":[7,0,0,10],
 "evince-document_8h.html#a797d5388eb3b14d93874973a3f4068c4":[7,0,0,10,0],
 "evince-document_8h_source.html":[7,0,0,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "gimpcellrenderertoggle_8c.html#a09a79c62537ad3bc403c6640795071fd":[7,0,0,1,0,0,13],
 "gimpcellrenderertoggle_8c.html#a2eb4a5e683bfccdcae812d53d0541a1f":[7,0,0,1,0,0,0],
 "gimpcellrenderertoggle_8c.html#a4a2341743815b7bcd1db7dec7dff1145":[7,0,0,1,0,0,12],
-"gimpcellrenderertoggle_8c.html#a4cdecabaa2e435cc18f4dcdbb0c59430":[7,0,0,1,0,0,15],
-"gimpcellrenderertoggle_8c.html#a5147f916416de34ae15ae07402203071":[7,0,0,1,0,0,7],
-"gimpcellrenderertoggle_8c.html#a75083101fb51dc68eb2c55e605a7e745":[7,0,0,1,0,0,18]
+"gimpcellrenderertoggle_8c.html#a4cdecabaa2e435cc18f4dcdbb0c59430":[7,0,0,1,0,0,15]
 };

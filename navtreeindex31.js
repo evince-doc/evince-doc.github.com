@@ -1,5 +1,8 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvThumbsSize.html":[6,0,248],
+"struct__EvThumbsSize.html#a1ab6b928ee4e0cfaa5d075c79b8bd63a":[6,0,248,1],
+"struct__EvThumbsSize.html#a8696665100328cf1cf81f0c773491354":[6,0,248,0],
 "struct__EvThumbsSizeCache.html":[6,0,249],
 "struct__EvThumbsSizeCache.html#a6c29c3cb3c17bcad491328129a289c37":[6,0,249,3],
 "struct__EvThumbsSizeCache.html#a8b72dc53c1278a4d312506fe5eadc291":[6,0,249,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvWindowPrivate.html#aff131fe66e7958b30e64bc28d64288a6":[6,0,270,21],
 "struct__EvWindowTitle.html":[6,0,271],
 "struct__EvWindowTitle.html#a72d608b3d6b3be8498702bbadb180011":[6,0,271,2],
-"struct__EvWindowTitle.html#aa32529b87dfc58ee523221ecbd55a1dd":[6,0,271,0],
-"struct__EvWindowTitle.html#abd3fdc5b7291439d176b09133dceabd9":[6,0,271,3],
-"struct__EvWindowTitle.html#ae92dd33f6455c2ef09561fc3b48e0479":[6,0,271,1],
-"struct__EvZoomAction.html":[6,0,272]
+"struct__EvWindowTitle.html#aa32529b87dfc58ee523221ecbd55a1dd":[6,0,271,0]
 };

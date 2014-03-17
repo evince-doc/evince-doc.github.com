@@ -14,5 +14,6 @@ var struct__EvSidebarThumbnailsPrivate =
     [ "start_page", "struct__EvSidebarThumbnailsPrivate.html#ae60c63f619e75aeaf4c613fd4414077b", null ],
     [ "swindow", "struct__EvSidebarThumbnailsPrivate.html#a2261cba2d3e5ee18c149f72ceb30fa9a", null ],
     [ "tree_view", "struct__EvSidebarThumbnailsPrivate.html#a538600ff932114b71f8e1028d9ec7efb", null ],
-    [ "vadjustment", "struct__EvSidebarThumbnailsPrivate.html#a604c6e5a904475becf7eb5fea43fb6fb", null ]
+    [ "vadjustment", "struct__EvSidebarThumbnailsPrivate.html#a604c6e5a904475becf7eb5fea43fb6fb", null ],
+    [ "width", "struct__EvSidebarThumbnailsPrivate.html#acded5f3c8d64b02723360df3200c4073", null ]
 ];

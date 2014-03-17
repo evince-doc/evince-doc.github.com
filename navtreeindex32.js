@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvWindowTitle.html#abd3fdc5b7291439d176b09133dceabd9":[6,0,271,3],
+"struct__EvWindowTitle.html#ae92dd33f6455c2ef09561fc3b48e0479":[6,0,271,1],
+"struct__EvZoomAction.html":[6,0,272],
 "struct__EvZoomAction.html#a2f97dc8e5a62074a14298bb207645126":[6,0,272,0],
 "struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150":[6,0,272,1],
 "struct__EvZoomActionClass.html":[6,0,273],
@@ -246,8 +249,5 @@ var NAVTREEINDEX32 =
 "synctex__parser_8c.html#a1db1b7f692f2e9bb4122fbd49e95908b":[7,0,0,1,1,0,148],
 "synctex__parser_8c.html#a1f88acaec0a713bd3c3a745a99922dc1":[7,0,0,1,1,0,253],
 "synctex__parser_8c.html#a2146f8467ec2ada1f05735385f17fa0c":[7,0,0,1,1,0,82],
-"synctex__parser_8c.html#a217666d5440dd42c05959508475977ab":[7,0,0,1,1,0,205],
-"synctex__parser_8c.html#a22f4be53ffa2bb7f504ddc0a16fd5604":[7,0,0,1,1,0,140],
-"synctex__parser_8c.html#a2532dadee7348697e784de0ce13c4b69":[7,0,0,1,1,0,229],
-"synctex__parser_8c.html#a28afc2255158c14f2a2fbf497da99b06":[7,0,0,1,1,0,84]
+"synctex__parser_8c.html#a217666d5440dd42c05959508475977ab":[7,0,0,1,1,0,205]
 };
