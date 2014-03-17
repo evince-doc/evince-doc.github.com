@@ -369,6 +369,10 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_ev_tmp_dir()
 : <a class="el" href="ev-file-helpers_8c.html#a27596c847cd53316d938b30b99c97679">ev-file-helpers.c</a>
 </li>
+<li>_ev_view_clear_selection()
+: <a class="el" href="ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef">ev-view-private.h</a>
+, <a class="el" href="ev-view_8c.html#a451bb8751ffbcc07e73f7d82f7d106ef">ev-view.c</a>
+</li>
 <li>_ev_view_get_caret_cursor_offset_at_doc_point()
 : <a class="el" href="ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf">ev-view-private.h</a>
 , <a class="el" href="ev-view_8c.html#ab0025a68ff63a643f533fe51249c9faf">ev-view.c</a>
@@ -376,6 +380,10 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_ev_view_get_selection_colors()
 : <a class="el" href="ev-view-private_8h.html#a60b52ce8d5e2aa3cb26fb9678cbcc558">ev-view-private.h</a>
 , <a class="el" href="ev-view_8c.html#a60b52ce8d5e2aa3cb26fb9678cbcc558">ev-view.c</a>
+</li>
+<li>_ev_view_set_selection()
+: <a class="el" href="ev-view-private_8h.html#a58e08a3b11353d7b0baa0fa57af59327">ev-view-private.h</a>
+, <a class="el" href="ev-view_8c.html#a58e08a3b11353d7b0baa0fa57af59327">ev-view.c</a>
 </li>
 <li>_ev_view_transform_doc_point_to_view_point()
 : <a class="el" href="ev-view-private_8h.html#a3b05fea97420f6f5da941c85b21615cf">ev-view-private.h</a>
@@ -424,8 +432,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="synctex__parser_8c.html#a42b9043599e3475df405d8f015f7e0c8">synctex_parser.c</a>
 </li>
 <li>_synctex_base_name()
-: <a class="el" href="synctex__parser__utils_8c.html#a4cae142ef5e54d7b562a4bc86d524e5c">synctex_parser_utils.c</a>
-, <a class="el" href="synctex__parser__utils_8h.html#a4cae142ef5e54d7b562a4bc86d524e5c">synctex_parser_utils.h</a>
+: <a class="el" href="synctex__parser__utils_8h.html#a4cae142ef5e54d7b562a4bc86d524e5c">synctex_parser_utils.h</a>
+, <a class="el" href="synctex__parser__utils_8c.html#a4cae142ef5e54d7b562a4bc86d524e5c">synctex_parser_utils.c</a>
 </li>
 <li>_synctex_buffer_get_available_size()
 : <a class="el" href="synctex__parser_8c.html#a4ac63165e23341ea4daa417b3d5d64cf">synctex_parser.c</a>
@@ -434,8 +442,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="synctex__parser_8c.html#a115fbd71dc806e374e0b5bedb1857207">synctex_parser.c</a>
 </li>
 <li>_synctex_copy_with_quoting_last_path_component()
-: <a class="el" href="synctex__parser__utils_8c.html#add4b62ed70add27e810f8a98dacd9ee2">synctex_parser_utils.c</a>
-, <a class="el" href="synctex__parser__utils_8h.html#add4b62ed70add27e810f8a98dacd9ee2">synctex_parser_utils.h</a>
+: <a class="el" href="synctex__parser__utils_8h.html#add4b62ed70add27e810f8a98dacd9ee2">synctex_parser_utils.h</a>
+, <a class="el" href="synctex__parser__utils_8c.html#add4b62ed70add27e810f8a98dacd9ee2">synctex_parser_utils.c</a>
 </li>
 <li>_synctex_decode_int()
 : <a class="el" href="synctex__parser_8c.html#a726e94281020523888520014e0f9dfc1">synctex_parser.c</a>
@@ -637,8 +645,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 : <a class="el" href="synctex__parser_8c.html#a37cbdf2d03c09b2e0855b30a96bba233">synctex_parser.c</a>
 </li>
 <li>_synctex_strip_last_path_extension()
-: <a class="el" href="synctex__parser__utils_8h.html#a4be10ac1ea9a318df2da20223b8824b9">synctex_parser_utils.h</a>
-, <a class="el" href="synctex__parser__utils_8c.html#a4be10ac1ea9a318df2da20223b8824b9">synctex_parser_utils.c</a>
+: <a class="el" href="synctex__parser__utils_8c.html#a4be10ac1ea9a318df2da20223b8824b9">synctex_parser_utils.c</a>
+, <a class="el" href="synctex__parser__utils_8h.html#a4be10ac1ea9a318df2da20223b8824b9">synctex_parser_utils.h</a>
 </li>
 <li>_synctex_updater_t
 : <a class="el" href="synctex__parser_8h.html#ad019fa90e591adb64846fcda8c6df58b">synctex_parser.h</a>
@@ -649,7 +657,7 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 17 2014 07:37:41 for Evince by
+    <li class="footer">Generated on Mon Mar 17 2014 12:31:37 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

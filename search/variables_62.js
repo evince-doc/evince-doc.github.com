@@ -30,7 +30,7 @@ var searchData=
   ['bottom',['bottom',['../struct__EvLinkDestPrivate.html#a5feed9a2f4ad541bfa2dbc4ff0f3a379',1,'_EvLinkDestPrivate']]],
   ['bounding_5fbox',['bounding_box',['../struct__DjvuTextPage.html#a8b2b11f995e00090eb9cef9b5dac5e8f',1,'_DjvuTextPage']]],
   ['buckets',['buckets',['../struct__DviHashTable.html#a7dd7e8c1a7c25674224eff21e61ac765',1,'_DviHashTable']]],
-  ['buffer',['buffer',['../struct__DviContext.html#aa9c40efae0a0e49945111c911688c070',1,'_DviContext::buffer()'],['../structSaveToBufferData.html#acef3d227612571cebf20a612ae146a6e',1,'SaveToBufferData::buffer()'],['../struct__EvViewAccessiblePrivate.html#ab3b11cb40cd92d1ac219f930be1ce6b2',1,'_EvViewAccessiblePrivate::buffer()'],['../structDragInfo.html#a1ce46f64213be376accb0d737544b901',1,'DragInfo::buffer()']]],
+  ['buffer',['buffer',['../struct__DviContext.html#aa9c40efae0a0e49945111c911688c070',1,'_DviContext::buffer()'],['../structSaveToBufferData.html#acef3d227612571cebf20a612ae146a6e',1,'SaveToBufferData::buffer()'],['../structDragInfo.html#a1ce46f64213be376accb0d737544b901',1,'DragInfo::buffer()']]],
   ['buffer_5fcur',['buffer_cur',['../struct____synctex__scanner__t.html#a3ace5951a9bb76b02d0cb52a807492c1',1,'__synctex_scanner_t']]],
   ['buffer_5fend',['buffer_end',['../struct____synctex__scanner__t.html#a1bd226b12b6aaad54083ce8969273b32',1,'__synctex_scanner_t']]],
   ['buffer_5fstart',['buffer_start',['../struct____synctex__scanner__t.html#ab45b78f37503ecad42a2d59db482aa84',1,'__synctex_scanner_t']]],

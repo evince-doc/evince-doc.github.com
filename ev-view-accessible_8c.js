@@ -29,12 +29,12 @@ var ev_view_accessible_8c =
     [ "ev_view_accessible_get_n_links", "ev-view-accessible_8c.html#aebfe5dacaa3a25dccc0691a5ab0ac04d", null ],
     [ "ev_view_accessible_get_n_selections", "ev-view-accessible_8c.html#a1c38d2ac043a6160afd296fba5457d7c", null ],
     [ "ev_view_accessible_get_offset_at_point", "ev-view-accessible_8c.html#aaf0917787336df3a122f9393d2273ab9", null ],
+    [ "ev_view_accessible_get_range_for_boundary", "ev-view-accessible_8c.html#a338c15dd2f589ed5d0776203926df206", null ],
     [ "ev_view_accessible_get_run_attributes", "ev-view-accessible_8c.html#af02351ab0f5428ec90ba13b16f166fc6", null ],
     [ "ev_view_accessible_get_selection", "ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1", null ],
+    [ "ev_view_accessible_get_substring", "ev-view-accessible_8c.html#ad62fbd5c7987f01baaef57aa9bf4bea8", null ],
     [ "ev_view_accessible_get_text", "ev-view-accessible_8c.html#a1d69ef34ec7e8de7939a2275f2c30b72", null ],
     [ "ev_view_accessible_get_text_at_offset", "ev-view-accessible_8c.html#a5effb33a6e77e7ff65736fcd028645f6", null ],
-    [ "ev_view_accessible_get_text_buffer", "ev-view-accessible_8c.html#a1aabae7fba73c033781e319322c467ae", null ],
-    [ "ev_view_accessible_get_text_for_offset", "ev-view-accessible_8c.html#aa551e20a4e1130b19e80c9f617dc457a", null ],
     [ "ev_view_accessible_hypertext_iface_init", "ev-view-accessible_8c.html#a8b31a8ec1e4ec33c076163f900beb358", null ],
     [ "ev_view_accessible_idle_do_action", "ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67", null ],
     [ "ev_view_accessible_init", "ev-view-accessible_8c.html#ac3b3d69e78ddd4374d9c1fd39441fb28", null ],
@@ -50,6 +50,7 @@ var ev_view_accessible_8c =
     [ "get_run_attributes", "ev-view-accessible_8c.html#a274c2a4509fa2c641f972ffeb7298802", null ],
     [ "get_selection_bounds", "ev-view-accessible_8c.html#af02d211fedd86fb5cbfb3e1249622d7d", null ],
     [ "page_changed_cb", "ev-view-accessible_8c.html#ac3b3b8499a3baca2c583c801b4cd273f", null ],
+    [ "treat_as_soft_return", "ev-view-accessible_8c.html#a13dfe87ac48896d9a88bbdd7940ddf6a", null ],
     [ "ev_view_accessible_action_descriptions", "ev-view-accessible_8c.html#a45e64cb48c6b81096f0eca3724af2d5e", null ],
     [ "ev_view_accessible_action_names", "ev-view-accessible_8c.html#ab34ced330f07ce061094962531cbf75d", null ]
 ];

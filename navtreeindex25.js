@@ -1,5 +1,10 @@
 var NAVTREEINDEX25 =
 {
+"special_8c.html#ab09f760b9b71ecd629cf2d91f6eb0492":[7,0,0,0,2,0,29,21],
+"special_8c.html#ab7325ca26998ed4516ad54b02ca22c0d":[7,0,0,0,2,0,29,16],
+"special_8c.html#ab8fee51183038adde7ee0abca02ee50a":[7,0,0,0,2,0,29,7],
+"special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7":[7,0,0,0,2,0,29,17],
+"special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f":[7,0,0,0,2,0,29,18],
 "special_8c.html#ad8dbce681f366042dc41ecd8d26a621c":[7,0,0,0,2,0,29,14],
 "special_8c.html#ada17be56b06f6b81a6d156588f718db0":[7,0,0,0,2,0,29,3],
 "special_8c.html#ae507847fd15d90496c9c31acf7e22208":[7,0,0,0,2,0,29,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX25 =
 "struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba":[6,0,12,3],
 "struct__ComicsDocument.html#a853bc7317f785565fc74d501dcdd622f":[6,0,12,9],
 "struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488":[6,0,12,4],
-"struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa":[6,0,12,6],
-"struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3":[6,0,12,1],
-"struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[6,0,12,7],
-"struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[6,0,12,2],
-"struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821":[6,0,12,8],
-"struct__ComicsDocumentClass.html":[6,0,13]
+"struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa":[6,0,12,6]
 };

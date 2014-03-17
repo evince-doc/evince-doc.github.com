@@ -76,7 +76,7 @@ var searchData=
   ['buff_5ffree',['buff_free',['../common_8c.html#a4265551dba818120071a9671dfb84904',1,'common.c']]],
   ['buff_5fgets',['buff_gets',['../common_8c.html#a595544ff3273044e8e372a20423cbfbc',1,'common.c']]],
   ['buff_5finit',['buff_init',['../common_8c.html#a7c9d8f5974add4c981a8261294e95e5a',1,'common.c']]],
-  ['buffer',['Buffer',['../structBuffer.html',1,'Buffer'],['../struct__DviContext.html#aa9c40efae0a0e49945111c911688c070',1,'_DviContext::buffer()'],['../structSaveToBufferData.html#acef3d227612571cebf20a612ae146a6e',1,'SaveToBufferData::buffer()'],['../struct__EvViewAccessiblePrivate.html#ab3b11cb40cd92d1ac219f930be1ce6b2',1,'_EvViewAccessiblePrivate::buffer()'],['../structDragInfo.html#a1ce46f64213be376accb0d737544b901',1,'DragInfo::buffer()']]],
+  ['buffer',['Buffer',['../structBuffer.html',1,'Buffer'],['../struct__DviContext.html#aa9c40efae0a0e49945111c911688c070',1,'_DviContext::buffer()'],['../structSaveToBufferData.html#acef3d227612571cebf20a612ae146a6e',1,'SaveToBufferData::buffer()'],['../structDragInfo.html#a1ce46f64213be376accb0d737544b901',1,'DragInfo::buffer()']]],
   ['buffer_5fcur',['buffer_cur',['../struct____synctex__scanner__t.html#a3ace5951a9bb76b02d0cb52a807492c1',1,'__synctex_scanner_t']]],
   ['buffer_5fend',['buffer_end',['../struct____synctex__scanner__t.html#a1bd226b12b6aaad54083ce8969273b32',1,'__synctex_scanner_t']]],
   ['buffer_5fsize',['BUFFER_SIZE',['../ev-file-helpers_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'ev-file-helpers.c']]],

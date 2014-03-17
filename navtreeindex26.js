@@ -1,5 +1,10 @@
 var NAVTREEINDEX26 =
 {
+"struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3":[6,0,12,1],
+"struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[6,0,12,7],
+"struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[6,0,12,2],
+"struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821":[6,0,12,8],
+"struct__ComicsDocumentClass.html":[6,0,13],
 "struct__ComicsDocumentClass.html#a644ae0682e2f9d46d8426a66a2cb74a3":[6,0,13,0],
 "struct__DjvuDocument.html":[6,0,14],
 "struct__DjvuDocument.html#a23aa53059c94ac3cedb152b5deba3335":[6,0,14,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviParams.html#aee9c02c1013ee6efe5daba29751f2c13":[6,0,39,0],
 "struct__DviParams.html#af0df0901f69152acb4b532a1a30a727c":[6,0,39,6],
 "struct__DviParams.html#af2026f8f5ca01859b74c4d9879e85fd7":[6,0,39,17],
-"struct__DviParams.html#afd4e66c34a287595f07749481f9d687b":[6,0,39,8],
-"struct__DviRange.html":[6,0,40],
-"struct__DviRange.html#a099dbfb073172ade4fad0ecb057036db":[6,0,40,0],
-"struct__DviRange.html#a17042775bf41dee1228bf4a4b8fa0399":[6,0,40,1],
-"struct__DviRange.html#a66ee64cc835e21470312fa74d0dc3839":[6,0,40,3],
-"struct__DviRange.html#abea2cbd25127d0025523f87001ee8669":[6,0,40,2]
+"struct__DviParams.html#afd4e66c34a287595f07749481f9d687b":[6,0,39,8]
 };
