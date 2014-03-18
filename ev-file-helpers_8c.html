@@ -120,13 +120,13 @@ $(document).ready(function(){initNavTree('ev-file-helpers_8c.html','');});
 <code>#include &lt;glib.h&gt;</code><br/>
 <code>#include &lt;glib/gstdio.h&gt;</code><br/>
 <code>#include &lt;glib/gi18n-lib.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="ev-file-helpers_8h_source.html">ev-file-helpers.h</a>&quot;</code><br/>
+<code>#include &quot;ev-file-helpers.h&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ev-file-helpers.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-file-helpers_8c__incl.svg" width="986" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-file-helpers_8c__incl.svg" width="1012" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -177,11 +177,11 @@ Functions</h2></td></tr>
 <tr class="separator:a3d18cebef235320393581c80ac4e08ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cfdf61807a0567f5f674b578e02c7c8"><td class="memItemLeft" align="right" valign="top">gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-file-helpers_8c.html#a3cfdf61807a0567f5f674b578e02c7c8">ev_file_get_mime_type</a> (const gchar *uri, gboolean fast, GError **error)</td></tr>
 <tr class="separator:a3cfdf61807a0567f5f674b578e02c7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cfdca906277dce77c724c0f3c1d8e16"><td class="memItemLeft" align="right" valign="top">static gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-file-helpers_8c.html#a7cfdca906277dce77c724c0f3c1d8e16">compression_run</a> (const gchar *uri, <a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> type, gboolean compress, GError **error)</td></tr>
+<tr class="memitem:a7cfdca906277dce77c724c0f3c1d8e16"><td class="memItemLeft" align="right" valign="top">static gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-file-helpers_8c.html#a7cfdca906277dce77c724c0f3c1d8e16">compression_run</a> (const gchar *uri, EvCompressionType type, gboolean compress, GError **error)</td></tr>
 <tr class="separator:a7cfdca906277dce77c724c0f3c1d8e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef5616c5ddd1389438713992e14cea55"><td class="memItemLeft" align="right" valign="top">gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-file-helpers_8c.html#aef5616c5ddd1389438713992e14cea55">ev_file_uncompress</a> (const gchar *uri, <a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> type, GError **error)</td></tr>
+<tr class="memitem:aef5616c5ddd1389438713992e14cea55"><td class="memItemLeft" align="right" valign="top">gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-file-helpers_8c.html#aef5616c5ddd1389438713992e14cea55">ev_file_uncompress</a> (const gchar *uri, EvCompressionType type, GError **error)</td></tr>
 <tr class="separator:aef5616c5ddd1389438713992e14cea55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398dc5baed1e63e294c19ea7401b538a"><td class="memItemLeft" align="right" valign="top">gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-file-helpers_8c.html#a398dc5baed1e63e294c19ea7401b538a">ev_file_compress</a> (const gchar *uri, <a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> type, GError **error)</td></tr>
+<tr class="memitem:a398dc5baed1e63e294c19ea7401b538a"><td class="memItemLeft" align="right" valign="top">gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-file-helpers_8c.html#a398dc5baed1e63e294c19ea7401b538a">ev_file_compress</a> (const gchar *uri, EvCompressionType type, GError **error)</td></tr>
 <tr class="separator:a398dc5baed1e63e294c19ea7401b538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -564,7 +564,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a>&#160;</td>
+          <td class="paramtype">EvCompressionType&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -601,7 +601,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    gint   fd, pout;</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    GError *err = NULL;</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <span class="keywordflow">if</span> (type == <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca78dd187b9b72bcb16a77526547c1dc56">EV_COMPRESSION_NONE</a>)</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <span class="keywordflow">if</span> (type == EV_COMPRESSION_NONE)</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    cmd = g_find_program_in_path (<a class="code" href="ev-file-helpers_8c.html#a452276e9a25c5ad81081821bab3b1ed1">compressor_cmds</a>[type]);</div>
@@ -708,7 +708,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a>&#160;</td>
+          <td class="paramtype">EvCompressionType&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -925,7 +925,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a>&#160;</td>
+          <td class="paramtype">EvCompressionType&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -1596,7 +1596,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-file-helpers_8c.html">ev-file-helpers.c</a></li>
-    <li class="footer">Generated on Mon Mar 17 2014 22:19:31 for Evince by
+    <li class="footer">Generated on Tue Mar 18 2014 17:55:39 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

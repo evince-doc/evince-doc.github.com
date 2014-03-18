@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('ev-jobs_8c.html','');});
 <code>#include &quot;<a class="el" href="ev-file-exporter_8h_source.html">ev-file-exporter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-document-factory_8h_source.html">ev-document-factory.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-document-misc_8h_source.html">ev-document-misc.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ev-file-helpers_8h_source.html">ev-file-helpers.h</a>&quot;</code><br/>
+<code>#include &quot;ev-file-helpers.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-document-fonts_8h_source.html">ev-document-fonts.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-document-security_8h_source.html">ev-document-security.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-document-find_8h_source.html">ev-document-find.h</a>&quot;</code><br/>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('ev-jobs_8c.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-jobs_8c__incl.svg" width="4218" height="832"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-jobs_8c__incl.svg" width="4248" height="832"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -4186,7 +4186,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;    <a class="code" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
 <div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;</div>
 <div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;    ev_page = <a class="code" href="ev-document_8c.html#ad67d3d41cd55132a88bc4d6189d019d9">ev_document_get_page</a> (job-&gt;document, job_print-&gt;<a class="code" href="struct__EvJobPrint.html#ae075c21ac507c5f9d68e23dcea38fe0e">page</a>);</div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;    <a class="code" href="ev-document-print_8c.html#aaeb064c87e83154624e0d8282fbc023d">ev_document_print_print_page</a> (<a class="code" href="ev-document-print_8h.html#aa21a3cbb64450d426bbb0febe1898b67">EV_DOCUMENT_PRINT</a> (job-&gt;document),</div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;    <a class="code" href="ev-document-print_8h.html#aaeb064c87e83154624e0d8282fbc023d">ev_document_print_print_page</a> (<a class="code" href="ev-document-print_8h.html#aa21a3cbb64450d426bbb0febe1898b67">EV_DOCUMENT_PRINT</a> (job-&gt;document),</div>
 <div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;                      ev_page, job_print-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a>);</div>
 <div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;    g_object_unref (ev_page);</div>
 <div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;</div>
@@ -4932,17 +4932,17 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;<span class="comment">     * compress it again before saving</span></div>
 <div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    <span class="keywordflow">if</span> (g_object_get_data (G_OBJECT (job-&gt;document), <span class="stringliteral">&quot;uri-uncompressed&quot;</span>)) {</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;        <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> ctype = <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca78dd187b9b72bcb16a77526547c1dc56">EV_COMPRESSION_NONE</a>;</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;        EvCompressionType ctype = EV_COMPRESSION_NONE;</div>
 <div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;        <span class="keyword">const</span> gchar      *ext;</div>
 <div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;        gchar            *uri_comp;</div>
 <div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;        </div>
 <div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;        ext = g_strrstr (job_save-&gt;<a class="code" href="struct__EvJobSave.html#ab652961768e6493ccaf2b271faf9a143">document_uri</a>, <span class="stringliteral">&quot;.gz&quot;</span>);</div>
 <div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;        <span class="keywordflow">if</span> (ext &amp;&amp; g_ascii_strcasecmp (ext, <span class="stringliteral">&quot;.gz&quot;</span>) == 0)</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;            ctype = <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4cab899def0526464cae341dcf759c87f3d">EV_COMPRESSION_GZIP</a>;</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;            ctype = EV_COMPRESSION_GZIP;</div>
 <div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        </div>
 <div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        ext = g_strrstr (job_save-&gt;<a class="code" href="struct__EvJobSave.html#ab652961768e6493ccaf2b271faf9a143">document_uri</a>, <span class="stringliteral">&quot;.bz2&quot;</span>);</div>
 <div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <span class="keywordflow">if</span> (ext &amp;&amp; g_ascii_strcasecmp (ext, <span class="stringliteral">&quot;.bz2&quot;</span>) == 0)</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;            ctype = <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca323d125ff51c1bb3b36a4c6c01c8090c">EV_COMPRESSION_BZIP2</a>;</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;            ctype = EV_COMPRESSION_BZIP2;</div>
 <div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;</div>
 <div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;        uri_comp = <a class="code" href="ev-file-helpers_8c.html#a398dc5baed1e63e294c19ea7401b538a">ev_file_compress</a> (local_uri, ctype, &amp;error);</div>
 <div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;        g_free (local_uri);</div>
@@ -5507,7 +5507,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-jobs_8c.html">ev-jobs.c</a></li>
-    <li class="footer">Generated on Mon Mar 17 2014 22:19:31 for Evince by
+    <li class="footer">Generated on Tue Mar 18 2014 17:55:40 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
