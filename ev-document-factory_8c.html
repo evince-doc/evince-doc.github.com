@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('ev-document-factory_8c.html','');});
 <code>#include &lt;gtk/gtk.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="ev-backend-info_8h_source.html">ev-backend-info.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-document-factory_8h_source.html">ev-document-factory.h</a>&quot;</code><br/>
-<code>#include &quot;ev-file-helpers.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ev-file-helpers_8h_source.html">ev-file-helpers.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-module_8h_source.html">ev-module.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ev-backends-manager_8h_source.html">ev-backends-manager.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('ev-document-factory_8c.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-document-factory_8c__incl.svg" width="1448" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-document-factory_8c__incl.svg" width="1335" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -147,9 +147,9 @@ Functions</h2></td></tr>
 <tr class="separator:ac477a66e54396e67f8c80718948ca2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f2ae56bce1324fadaf76ccd9ea839e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-factory_8c.html#a93f2ae56bce1324fadaf76ccd9ea839e">ev_document_factory_new_document_for_mime_type</a> (const gchar *mime_type, GError **error)</td></tr>
 <tr class="separator:a93f2ae56bce1324fadaf76ccd9ea839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef77bf2a24e0135899523c74c3a6bd2"><td class="memItemLeft" align="right" valign="top">static EvCompressionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-factory_8c.html#adef77bf2a24e0135899523c74c3a6bd2">get_compression_from_mime_type</a> (const gchar *mime_type)</td></tr>
+<tr class="memitem:adef77bf2a24e0135899523c74c3a6bd2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-factory_8c.html#adef77bf2a24e0135899523c74c3a6bd2">get_compression_from_mime_type</a> (const gchar *mime_type)</td></tr>
 <tr class="separator:adef77bf2a24e0135899523c74c3a6bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc8ca4e29720bef98cb2bfd9c1103f88"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-factory_8c.html#abc8ca4e29720bef98cb2bfd9c1103f88">new_document_for_uri</a> (const char *uri, gboolean fast, EvCompressionType *compression, GError **error)</td></tr>
+<tr class="memitem:abc8ca4e29720bef98cb2bfd9c1103f88"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-factory_8c.html#abc8ca4e29720bef98cb2bfd9c1103f88">new_document_for_uri</a> (const char *uri, gboolean fast, <a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> *compression, GError **error)</td></tr>
 <tr class="separator:abc8ca4e29720bef98cb2bfd9c1103f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5a61b57882a18144fa8d4072a28506"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-factory_8c.html#a4e5a61b57882a18144fa8d4072a28506">free_uncompressed_uri</a> (gchar *uri_unc)</td></tr>
 <tr class="separator:a4e5a61b57882a18144fa8d4072a28506"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -509,7 +509,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">int</span> result;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    EvCompressionType compression;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> compression;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    gchar *uri_unc = NULL;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    GError *err = NULL;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
@@ -1150,7 +1150,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static EvCompressionType get_compression_from_mime_type </td>
+          <td class="memname">static <a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> get_compression_from_mime_type </td>
           <td>(</td>
           <td class="paramtype">const gchar *&#160;</td>
           <td class="paramname"><em>mime_type</em>)</td><td></td>
@@ -1170,18 +1170,18 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    gchar *p;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (!(p = g_strrstr (mime_type, <span class="stringliteral">&quot;/&quot;</span>)))</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> EV_COMPRESSION_NONE;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca78dd187b9b72bcb16a77526547c1dc56">EV_COMPRESSION_NONE</a>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (sscanf (++p, <span class="stringliteral">&quot;x-%2s%*s&quot;</span>, type) == 1) {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> (g_ascii_strcasecmp (type, <span class="stringliteral">&quot;gz&quot;</span>) == 0)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> EV_COMPRESSION_GZIP;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4cab899def0526464cae341dcf759c87f3d">EV_COMPRESSION_GZIP</a>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_ascii_strcasecmp (type, <span class="stringliteral">&quot;bz&quot;</span>) == 0)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">return</span> EV_COMPRESSION_BZIP2;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca323d125ff51c1bb3b36a4c6c01c8090c">EV_COMPRESSION_BZIP2</a>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_ascii_strcasecmp (type, <span class="stringliteral">&quot;xz&quot;</span>) == 0)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                        <span class="keywordflow">return</span> EV_COMPRESSION_LZMA;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                        <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca8c9c57a3aa20aa9757a8cd76eed21c76">EV_COMPRESSION_LZMA</a>;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> EV_COMPRESSION_NONE;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca78dd187b9b72bcb16a77526547c1dc56">EV_COMPRESSION_NONE</a>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1218,7 +1218,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EvCompressionType *&#160;</td>
+          <td class="paramtype"><a class="el" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c">EvCompressionType</a> *&#160;</td>
           <td class="paramname"><em>compression</em>, </td>
         </tr>
         <tr>
@@ -1245,7 +1245,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = NULL;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    gchar      *mime_type = NULL;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    *compression = EV_COMPRESSION_NONE;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    *compression = <a class="code" href="ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4ca78dd187b9b72bcb16a77526547c1dc56">EV_COMPRESSION_NONE</a>;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    mime_type = <a class="code" href="ev-file-helpers_8c.html#a3cfdf61807a0567f5f674b578e02c7c8">ev_file_get_mime_type</a> (uri, fast, error);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> (mime_type == NULL)</div>
@@ -1347,7 +1347,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document-factory_8c.html">ev-document-factory.c</a></li>
-    <li class="footer">Generated on Tue Mar 18 2014 17:55:38 for Evince by
+    <li class="footer">Generated on Wed Mar 19 2014 20:52:34 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
