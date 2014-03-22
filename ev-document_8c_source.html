@@ -726,339 +726,352 @@ $(document).ready(function(){initNavTree('ev-document_8c_source.html','');});
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document_8c.html#a2d64f2a0d11c1e94a70136eba0753857">_ev_document_get_thumbnail</a> (document, rc);</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;}</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l00725"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a66855da553a1fec936981bc52509bbff">  725</a></span>&#160;<a class="code" href="ev-document_8c.html#a66855da553a1fec936981bc52509bbff">ev_document_get_uri</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;{</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a82ea870f8f60eb45e9248d205b28221f">uri</a>;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;}</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l00733"></a><span class="lineno"><a class="code" href="ev-document_8h.html#aabb558196676359e12fbfd4c8b19a897">  733</a></span>&#160;<a class="code" href="ev-document_8c.html#aabb558196676359e12fbfd4c8b19a897">ev_document_get_title</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;{</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;fields_mask &amp; <a class="code" href="ev-document-info_8h.html#a532b08c05369fea051a7270eacd7f9e7a9d022959651a52ab559fbe248b1e95fb">EV_DOCUMENT_INFO_TITLE</a>) ?</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;title : NULL;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;}</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;gboolean</div>
-<div class="line"><a name="l00742"></a><span class="lineno"><a class="code" href="ev-document_8h.html#afaeebc9a2dee44f42ac79819f175de28">  742</a></span>&#160;<a class="code" href="ev-document_8c.html#afaeebc9a2dee44f42ac79819f175de28">ev_document_is_page_size_uniform</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;{</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;cairo_surface_t *</div>
+<div class="line"><a name="l00734"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a06fe6786313d7475c81692506ee98976">  734</a></span>&#160;<a class="code" href="ev-document_8c.html#a06fe6786313d7475c81692506ee98976">ev_document_get_thumbnail_surface</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a>      *document,</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;                   <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc)</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;{</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *klass = <a class="code" href="ev-document_8h.html#a3b72ea4df9a7e6feb774584591694a4c">EV_DOCUMENT_GET_CLASS</a> (document);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keywordflow">if</span> (klass-&gt;<a class="code" href="struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f">get_thumbnail_surface</a>)</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <span class="keywordflow">return</span> klass-&gt;<a class="code" href="struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f">get_thumbnail_surface</a> (document, rc);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document_8c.html#a6d5150d56d708dbbe555d737de51d68c">ev_document_render</a> (document, rc);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;}</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#ae78b7a7a5fc01dcf803364f94f6e7549">uniform</a>;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;}</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00750"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a6e8d3e6521ae35ae47f52e3dffc13e93">  750</a></span>&#160;<a class="code" href="ev-document_8c.html#a6e8d3e6521ae35ae47f52e3dffc13e93">ev_document_get_max_page_size</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document,</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                   gdouble    *width,</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                   gdouble    *height)</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;{</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordflow">if</span> (width)</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a>;</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordflow">if</span> (height)</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a>;</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;}</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno"><a class="code" href="ev-document_8h.html#af74212960ecae9796098a1b8005aec65">  763</a></span>&#160;<a class="code" href="ev-document_8c.html#af74212960ecae9796098a1b8005aec65">ev_document_get_min_page_size</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document,</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                   gdouble    *width,</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                   gdouble    *height)</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;{</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keywordflow">if</span> (width)</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2f5e7cae08e7ae92a2f9f1cccad92216">min_width</a>;</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="keywordflow">if</span> (height)</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48">min_height</a>;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;}</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;gboolean</div>
-<div class="line"><a name="l00776"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a39210764079953ab5f370f26b2750202">  776</a></span>&#160;<a class="code" href="ev-document_8c.html#a39210764079953ab5f370f26b2750202">ev_document_check_dimensions</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;{</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a> &gt; 0 &amp;&amp; document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a> &gt; 0);</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;}</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;gint</div>
-<div class="line"><a name="l00784"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a3347929866db889b1cd621e3bc13a80e">  784</a></span>&#160;<a class="code" href="ev-document_8c.html#a3347929866db889b1cd621e3bc13a80e">ev_document_get_max_label_len</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;{</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), -1);</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3876b2ce4abe50f9dd292e47076d148">max_label</a>;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;}</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l00747"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a66855da553a1fec936981bc52509bbff">  747</a></span>&#160;<a class="code" href="ev-document_8c.html#a66855da553a1fec936981bc52509bbff">ev_document_get_uri</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;{</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a82ea870f8f60eb45e9248d205b28221f">uri</a>;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;}</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l00755"></a><span class="lineno"><a class="code" href="ev-document_8h.html#aabb558196676359e12fbfd4c8b19a897">  755</a></span>&#160;<a class="code" href="ev-document_8c.html#aabb558196676359e12fbfd4c8b19a897">ev_document_get_title</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;{</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;fields_mask &amp; <a class="code" href="ev-document-info_8h.html#a532b08c05369fea051a7270eacd7f9e7a9d022959651a52ab559fbe248b1e95fb">EV_DOCUMENT_INFO_TITLE</a>) ?</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;title : NULL;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;}</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;gboolean</div>
+<div class="line"><a name="l00764"></a><span class="lineno"><a class="code" href="ev-document_8h.html#afaeebc9a2dee44f42ac79819f175de28">  764</a></span>&#160;<a class="code" href="ev-document_8c.html#afaeebc9a2dee44f42ac79819f175de28">ev_document_is_page_size_uniform</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;{</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#ae78b7a7a5fc01dcf803364f94f6e7549">uniform</a>;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;}</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00772"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a6e8d3e6521ae35ae47f52e3dffc13e93">  772</a></span>&#160;<a class="code" href="ev-document_8c.html#a6e8d3e6521ae35ae47f52e3dffc13e93">ev_document_get_max_page_size</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document,</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                   gdouble    *width,</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                   gdouble    *height)</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;{</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="keywordflow">if</span> (width)</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a>;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="keywordflow">if</span> (height)</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a>;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;}</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00785"></a><span class="lineno"><a class="code" href="ev-document_8h.html#af74212960ecae9796098a1b8005aec65">  785</a></span>&#160;<a class="code" href="ev-document_8c.html#af74212960ecae9796098a1b8005aec65">ev_document_get_min_page_size</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document,</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                   gdouble    *width,</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;                   gdouble    *height)</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;{</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;gboolean</div>
-<div class="line"><a name="l00792"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a4bd68a33d4e8d13f5dbf6f41c6ef58f9">  792</a></span>&#160;<a class="code" href="ev-document_8c.html#a4bd68a33d4e8d13f5dbf6f41c6ef58f9">ev_document_has_text_page_labels</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;{</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> != NULL;</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;}</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;gboolean</div>
-<div class="line"><a name="l00800"></a><span class="lineno"><a class="code" href="ev-document_8h.html#af5c7ab8dc3d752d18ed1ffba660c3a87">  800</a></span>&#160;<a class="code" href="ev-document_8c.html#af5c7ab8dc3d752d18ed1ffba660c3a87">ev_document_find_page_by_label</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a>  *document,</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;                <span class="keyword">const</span> gchar *page_label,</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                gint        *page_index)</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;{</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    gint i, page;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    glong value;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    gchar *endptr = NULL;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <a class="code" href="struct__EvDocumentPrivate.html">EvDocumentPrivate</a> *priv = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    g_return_val_if_fail (page_label != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    g_return_val_if_fail (page_index != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keywordflow">if</span> (width)</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2f5e7cae08e7ae92a2f9f1cccad92216">min_width</a>;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordflow">if</span> (height)</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48">min_height</a>;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;}</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;gboolean</div>
+<div class="line"><a name="l00798"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a39210764079953ab5f370f26b2750202">  798</a></span>&#160;<a class="code" href="ev-document_8c.html#a39210764079953ab5f370f26b2750202">ev_document_check_dimensions</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;{</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a> &gt; 0 &amp;&amp; document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a> &gt; 0);</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;}</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;gint</div>
+<div class="line"><a name="l00806"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a3347929866db889b1cd621e3bc13a80e">  806</a></span>&#160;<a class="code" href="ev-document_8c.html#a3347929866db889b1cd621e3bc13a80e">ev_document_get_max_label_len</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;{</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), -1);</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3876b2ce4abe50f9dd292e47076d148">max_label</a>;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;}</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        <span class="comment">/* First, look for a literal label match */</span></div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i ++) {</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            ! strcmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;            *page_index = i;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        }</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    }</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <span class="comment">/* Second, look for a match with case insensitively */</span></div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i++) {</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;            ! strcasecmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            *page_index = i;</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        }</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    }</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;gboolean</div>
+<div class="line"><a name="l00814"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a4bd68a33d4e8d13f5dbf6f41c6ef58f9">  814</a></span>&#160;<a class="code" href="ev-document_8c.html#a4bd68a33d4e8d13f5dbf6f41c6ef58f9">ev_document_has_text_page_labels</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document)</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;{</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> != NULL;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;}</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;gboolean</div>
+<div class="line"><a name="l00822"></a><span class="lineno"><a class="code" href="ev-document_8h.html#af5c7ab8dc3d752d18ed1ffba660c3a87">  822</a></span>&#160;<a class="code" href="ev-document_8c.html#af5c7ab8dc3d752d18ed1ffba660c3a87">ev_document_find_page_by_label</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a>  *document,</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                <span class="keyword">const</span> gchar *page_label,</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                gint        *page_index)</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;{</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    gint i, page;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    glong value;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    gchar *endptr = NULL;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <a class="code" href="struct__EvDocumentPrivate.html">EvDocumentPrivate</a> *priv = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>;</div>
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <span class="comment">/* Next, parse the label, and see if the number fits */</span></div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    value = strtol (page_label, &amp;endptr, 10);</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordflow">if</span> (endptr[0] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <span class="comment">/* Page number is an integer */</span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        page = MIN (G_MAXINT, value);</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="comment">/* convert from a page label to a page offset */</span></div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        page --;</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        <span class="keywordflow">if</span> (page &gt;= 0 &amp;&amp; page &lt; priv-&gt;n_pages) {</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;            *page_index = page;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        }</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    }</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;}</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;<span class="comment">/* EvSourceLink */</span></div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>, ev_source_link, <a class="code" href="ev-document_8c.html#a86a169357f30c855cf5fa37b9dfc0b29">ev_source_link_copy</a>, <a class="code" href="ev-document_8c.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev_source_link_free</a>)</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *</div>
-<div class="line"><a name="l00852"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a118f41b147870146930002f0815c338c">  852</a></span>&#160;<a class="code" href="ev-document_8c.html#a118f41b147870146930002f0815c338c">ev_source_link_new</a> (const gchar *filename,</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;            gint     line,</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            gint     col)</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;{</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (filename);</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#ac48f6422979fb999255c4a9e8e081c64">line</a> = line;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#aab823cba5648ca3e12c4a0b97f88db95">col</a> = col;</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keywordflow">return</span> link;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;}</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *</div>
-<div class="line"><a name="l00866"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a86a169357f30c855cf5fa37b9dfc0b29">  866</a></span>&#160;<a class="code" href="ev-document_8c.html#a86a169357f30c855cf5fa37b9dfc0b29">ev_source_link_copy</a> (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link)</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;{</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *copy;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    g_return_val_if_fail (page_label != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    g_return_val_if_fail (page_index != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        <span class="comment">/* First, look for a literal label match */</span></div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i ++) {</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;            ! strcmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;            *page_index = i;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        }</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="comment">/* Second, look for a match with case insensitively */</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i++) {</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;            ! strcasecmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;            *page_index = i;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        }</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    }</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="comment">/* Next, parse the label, and see if the number fits */</span></div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    value = strtol (page_label, &amp;endptr, 10);</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    <span class="keywordflow">if</span> (endptr[0] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        <span class="comment">/* Page number is an integer */</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        page = MIN (G_MAXINT, value);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;        <span class="comment">/* convert from a page label to a page offset */</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        page --;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        <span class="keywordflow">if</span> (page &gt;= 0 &amp;&amp; page &lt; priv-&gt;n_pages) {</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;            *page_index = page;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        }</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    }</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;}</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    g_return_val_if_fail (link != NULL, NULL);</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    copy = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    *copy = *link;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    copy-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    <span class="keywordflow">return</span> copy;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;}</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;<span class="comment">/* EvSourceLink */</span></div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>, ev_source_link, <a class="code" href="ev-document_8c.html#a86a169357f30c855cf5fa37b9dfc0b29">ev_source_link_copy</a>, <a class="code" href="ev-document_8c.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev_source_link_free</a>)</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *</div>
+<div class="line"><a name="l00874"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a118f41b147870146930002f0815c338c">  874</a></span>&#160;<a class="code" href="ev-document_8c.html#a118f41b147870146930002f0815c338c">ev_source_link_new</a> (const gchar *filename,</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;            gint     line,</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            gint     col)</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;{</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00881"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a031b44e907a4eb86c6e9f6bd945ae1c6">  881</a></span>&#160;<a class="code" href="ev-document_8c.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev_source_link_free</a> (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link)</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;{</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <span class="keywordflow">if</span> (link == NULL)</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    g_free (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    g_slice_free (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>, link);</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;}</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;<span class="comment">/* EvDocumentInfo */</span></div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, ev_document_info, <a class="code" href="ev-document-info_8h.html#aef10774d89f67e3086d5185e34b33a89">ev_document_info_copy</a>, <a class="code" href="ev-document-info_8h.html#a050f707eac3e98fa62aebf097cbe048e">ev_document_info_free</a>)</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *</div>
-<div class="line"><a name="l00894"></a><span class="lineno"><a class="code" href="ev-document_8c.html#aef10774d89f67e3086d5185e34b33a89">  894</a></span>&#160;<a class="code" href="ev-document-info_8h.html#aef10774d89f67e3086d5185e34b33a89">ev_document_info_copy</a> (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *info)</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;{</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *copy;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    </div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    g_return_val_if_fail (info != NULL, NULL);</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    copy = g_new0 (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, 1);</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;    copy-&gt;title = g_strdup (info-&gt;title);</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    copy-&gt;format = g_strdup (info-&gt;format);</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    copy-&gt;author = g_strdup (info-&gt;author);</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    copy-&gt;subject = g_strdup (info-&gt;subject);</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    copy-&gt;keywords = g_strdup (info-&gt;keywords);</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    copy-&gt;security = g_strdup (info-&gt;security);</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    copy-&gt;creator = g_strdup (info-&gt;creator);</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    copy-&gt;producer = g_strdup (info-&gt;producer);</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    copy-&gt;linearized = g_strdup (info-&gt;linearized);</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    </div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    copy-&gt;creation_date = info-&gt;creation_date;</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    copy-&gt;modified_date = info-&gt;modified_date;</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    copy-&gt;layout = info-&gt;layout;</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    copy-&gt;mode = info-&gt;mode;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;    copy-&gt;ui_hints = info-&gt;ui_hints;</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    copy-&gt;permissions = info-&gt;permissions;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    copy-&gt;n_pages = info-&gt;n_pages;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    copy-&gt;license = <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (info-&gt;license);</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    copy-&gt;fields_mask = info-&gt;fields_mask;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (filename);</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#ac48f6422979fb999255c4a9e8e081c64">line</a> = line;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#aab823cba5648ca3e12c4a0b97f88db95">col</a> = col;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    <span class="keywordflow">return</span> link;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;}</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *</div>
+<div class="line"><a name="l00888"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a86a169357f30c855cf5fa37b9dfc0b29">  888</a></span>&#160;<a class="code" href="ev-document_8c.html#a86a169357f30c855cf5fa37b9dfc0b29">ev_source_link_copy</a> (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link)</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;{</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *copy;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    g_return_val_if_fail (link != NULL, NULL);</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    copy = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    *copy = *link;</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    copy-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    <span class="keywordflow">return</span> copy;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;}</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00903"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a031b44e907a4eb86c6e9f6bd945ae1c6">  903</a></span>&#160;<a class="code" href="ev-document_8c.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev_source_link_free</a> (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link)</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;{</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    <span class="keywordflow">if</span> (link == NULL)</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    g_free (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    g_slice_free (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>, link);</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;}</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;<span class="comment">/* EvDocumentInfo */</span></div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, ev_document_info, <a class="code" href="ev-document-info_8h.html#aef10774d89f67e3086d5185e34b33a89">ev_document_info_copy</a>, <a class="code" href="ev-document-info_8h.html#a050f707eac3e98fa62aebf097cbe048e">ev_document_info_free</a>)</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *</div>
+<div class="line"><a name="l00916"></a><span class="lineno"><a class="code" href="ev-document_8c.html#aef10774d89f67e3086d5185e34b33a89">  916</a></span>&#160;<a class="code" href="ev-document-info_8h.html#aef10774d89f67e3086d5185e34b33a89">ev_document_info_copy</a> (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *info)</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;{</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *copy;</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    </div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    g_return_val_if_fail (info != NULL, NULL);</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    <span class="keywordflow">return</span> copy;</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;}</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00926"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a050f707eac3e98fa62aebf097cbe048e">  926</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a050f707eac3e98fa62aebf097cbe048e">ev_document_info_free</a> (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *info)</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;{</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    <span class="keywordflow">if</span> (info == NULL)</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    g_free (info-&gt;title);</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    g_free (info-&gt;format);</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    g_free (info-&gt;author);</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    g_free (info-&gt;subject);</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    g_free (info-&gt;keywords);</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    g_free (info-&gt;creator);</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    g_free (info-&gt;producer);</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    g_free (info-&gt;linearized);</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    g_free (info-&gt;security);</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (info-&gt;license);</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    copy = g_new0 (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, 1);</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    copy-&gt;title = g_strdup (info-&gt;title);</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    copy-&gt;format = g_strdup (info-&gt;format);</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    copy-&gt;author = g_strdup (info-&gt;author);</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    copy-&gt;subject = g_strdup (info-&gt;subject);</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    copy-&gt;keywords = g_strdup (info-&gt;keywords);</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    copy-&gt;security = g_strdup (info-&gt;security);</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    copy-&gt;creator = g_strdup (info-&gt;creator);</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    copy-&gt;producer = g_strdup (info-&gt;producer);</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    copy-&gt;linearized = g_strdup (info-&gt;linearized);</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    </div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    copy-&gt;creation_date = info-&gt;creation_date;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    copy-&gt;modified_date = info-&gt;modified_date;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    copy-&gt;layout = info-&gt;layout;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    copy-&gt;mode = info-&gt;mode;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    copy-&gt;ui_hints = info-&gt;ui_hints;</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    copy-&gt;permissions = info-&gt;permissions;</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    copy-&gt;n_pages = info-&gt;n_pages;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    copy-&gt;license = <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (info-&gt;license);</div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    g_free (info);</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;}</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;<span class="comment">/* EvDocumentLicense */</span></div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, ev_document_license, <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a>, <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a>)</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *</div>
-<div class="line"><a name="l00949"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a10d9a3ac4087a7d3da897b4270e2f9a3">  949</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;{</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, 1);</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;}</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *</div>
-<div class="line"><a name="l00955"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a19fcd80506087afcfef9b6f8d224853c">  955</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;{</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *new_license;</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    new_license = <a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> ();</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    copy-&gt;fields_mask = info-&gt;fields_mask;</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordflow">return</span> copy;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;}</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00948"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a050f707eac3e98fa62aebf097cbe048e">  948</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a050f707eac3e98fa62aebf097cbe048e">ev_document_info_free</a> (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *info)</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;{</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    <span class="keywordflow">if</span> (info == NULL)</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;    g_free (info-&gt;title);</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;    g_free (info-&gt;format);</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;    g_free (info-&gt;author);</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    g_free (info-&gt;subject);</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    g_free (info-&gt;keywords);</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    g_free (info-&gt;creator);</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    g_free (info-&gt;producer);</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    g_free (info-&gt;linearized);</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    g_free (info-&gt;security);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (info-&gt;license);</div>
 <div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>)</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>)</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>)</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <span class="keywordflow">return</span> new_license;</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;}</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00975"></a><span class="lineno"><a class="code" href="ev-document_8c.html#acacd3c784d5ba10599e50ede4f84a80e">  975</a></span>&#160;<a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;{</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    g_free (info);</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;}</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;<span class="comment">/* EvDocumentLicense */</span></div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, ev_document_license, <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a>, <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a>)</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *</div>
+<div class="line"><a name="l00971"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a10d9a3ac4087a7d3da897b4270e2f9a3">  971</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;{</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, 1);</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;}</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *</div>
+<div class="line"><a name="l00977"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a19fcd80506087afcfef9b6f8d224853c">  977</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;{</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *new_license;</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    g_free (license);</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;}</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l00988"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a4d87b00ddc4d36644445e1ddc8adcf33">  988</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a4d87b00ddc4d36644445e1ddc8adcf33">ev_document_license_get_text</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;{</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;}</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    new_license = <a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> ();</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>)</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>)</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>)</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;<span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l00994"></a><span class="lineno"><a class="code" href="ev-document_8c.html#aea359558e8fcdae696f70f9073438662">  994</a></span>&#160;<a class="code" href="ev-document-info_8h.html#aea359558e8fcdae696f70f9073438662">ev_document_license_get_uri</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;{</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>;</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;}</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;<span class="keyword">const</span> gchar *</div>
-<div class="line"><a name="l01000"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a0e806ffebee922acf8f2bf995450c236"> 1000</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a0e806ffebee922acf8f2bf995450c236">ev_document_license_get_web_statement</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;{</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>;</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;}</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="comment">/* EvRectangle */</span></div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, ev_rectangle, <a class="code" href="ev-document_8c.html#ac72903e5df13110ad7c02bbe9c5ad811">ev_rectangle_copy</a>, <a class="code" href="ev-document_8c.html#a004402d55f839c6e66123d88c2dc9e59">ev_rectangle_free</a>)</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *</div>
-<div class="line"><a name="l01009"></a><span class="lineno"><a class="code" href="ev-document_8h.html#ae395c10f37a6355b98838ae7e832cb75"> 1009</a></span>&#160;<a class="code" href="ev-document_8c.html#ae395c10f37a6355b98838ae7e832cb75">ev_rectangle_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;{</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;}</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *</div>
-<div class="line"><a name="l01015"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a7030e92c483d6a5e466cdf435bee0c19"> 1015</a></span>&#160;<a class="code" href="ev-document_8c.html#ac72903e5df13110ad7c02bbe9c5ad811">ev_rectangle_copy</a> (<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *rectangle)</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;{</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *new_rectangle;</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    g_return_val_if_fail (rectangle != NULL, NULL);</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    <span class="keywordflow">return</span> new_license;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;}</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00997"></a><span class="lineno"><a class="code" href="ev-document_8c.html#acacd3c784d5ba10599e50ede4f84a80e">  997</a></span>&#160;<a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;{</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    g_free (license);</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;}</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;<span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l01010"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a4d87b00ddc4d36644445e1ddc8adcf33"> 1010</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a4d87b00ddc4d36644445e1ddc8adcf33">ev_document_license_get_text</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;{</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>;</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;}</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;<span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l01016"></a><span class="lineno"><a class="code" href="ev-document_8c.html#aea359558e8fcdae696f70f9073438662"> 1016</a></span>&#160;<a class="code" href="ev-document-info_8h.html#aea359558e8fcdae696f70f9073438662">ev_document_license_get_uri</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;{</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;}</div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;    new_rectangle = g_new (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;    *new_rectangle = *rectangle;</div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;</div>
-<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;    <span class="keywordflow">return</span> new_rectangle;</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;<span class="keyword">const</span> gchar *</div>
+<div class="line"><a name="l01022"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a0e806ffebee922acf8f2bf995450c236"> 1022</a></span>&#160;<a class="code" href="ev-document-info_8h.html#a0e806ffebee922acf8f2bf995450c236">ev_document_license_get_web_statement</a> (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *license)</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;{</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>;</div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;}</div>
 <div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l01028"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a0c07b0877abae62bd11d0489b2cd7f31"> 1028</a></span>&#160;<a class="code" href="ev-document_8c.html#a004402d55f839c6e66123d88c2dc9e59">ev_rectangle_free</a> (<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *rectangle)</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;{</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;    g_free (rectangle);</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;}</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;<span class="comment">/* Compares two rects.  returns 0 if they&#39;re equal */</span></div>
-<div class="line"><a name="l01034"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70"> 1034</a></span>&#160;<span class="preprocessor">#define EPSILON 0.0000001</span></div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;gint</div>
-<div class="line"><a name="l01037"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a850cc72b0c0132355a72d5e39afbda26"> 1037</a></span>&#160;<a class="code" href="ev-document_8c.html#a850cc72b0c0132355a72d5e39afbda26">ev_rect_cmp</a> (<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *a,</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;         <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *b)</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;{</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    <span class="keywordflow">if</span> (a == b)</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;    <span class="keywordflow">if</span> (a == NULL || b == NULL)</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    <span class="keywordflow">return</span> ! ((ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>));</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;}</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;<span class="comment">/* EvRectangle */</span></div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;G_DEFINE_BOXED_TYPE (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, ev_rectangle, <a class="code" href="ev-document_8c.html#ac72903e5df13110ad7c02bbe9c5ad811">ev_rectangle_copy</a>, <a class="code" href="ev-document_8c.html#a004402d55f839c6e66123d88c2dc9e59">ev_rectangle_free</a>)</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *</div>
+<div class="line"><a name="l01031"></a><span class="lineno"><a class="code" href="ev-document_8h.html#ae395c10f37a6355b98838ae7e832cb75"> 1031</a></span>&#160;<a class="code" href="ev-document_8c.html#ae395c10f37a6355b98838ae7e832cb75">ev_rectangle_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;{</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;}</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *</div>
+<div class="line"><a name="l01037"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a7030e92c483d6a5e466cdf435bee0c19"> 1037</a></span>&#160;<a class="code" href="ev-document_8c.html#ac72903e5df13110ad7c02bbe9c5ad811">ev_rectangle_copy</a> (<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *rectangle)</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;{</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *new_rectangle;</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    g_return_val_if_fail (rectangle != NULL, NULL);</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;    new_rectangle = g_new (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;    *new_rectangle = *rectangle;</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;    <span class="keywordflow">return</span> new_rectangle;</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;}</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l01050"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a0c07b0877abae62bd11d0489b2cd7f31"> 1050</a></span>&#160;<a class="code" href="ev-document_8c.html#a004402d55f839c6e66123d88c2dc9e59">ev_rectangle_free</a> (<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *rectangle)</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;{</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    g_free (rectangle);</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;}</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;<span class="comment">/* Compares two rects.  returns 0 if they&#39;re equal */</span></div>
+<div class="line"><a name="l01056"></a><span class="lineno"><a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70"> 1056</a></span>&#160;<span class="preprocessor">#define EPSILON 0.0000001</span></div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;gint</div>
+<div class="line"><a name="l01059"></a><span class="lineno"><a class="code" href="ev-document_8h.html#a850cc72b0c0132355a72d5e39afbda26"> 1059</a></span>&#160;<a class="code" href="ev-document_8c.html#a850cc72b0c0132355a72d5e39afbda26">ev_rect_cmp</a> (<a class="code" href="struct__EvRectangle.html">EvRectangle</a> *a,</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;         <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *b)</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;{</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;    <span class="keywordflow">if</span> (a == b)</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;    <span class="keywordflow">if</span> (a == NULL || b == NULL)</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    <span class="keywordflow">return</span> ! ((ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>));</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document_8c.html">ev-document.c</a></li>
-    <li class="footer">Generated on Sat Mar 22 2014 10:07:39 for Evince by
+    <li class="footer">Generated on Sat Mar 22 2014 12:34:37 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

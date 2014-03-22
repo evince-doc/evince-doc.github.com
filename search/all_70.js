@@ -141,6 +141,7 @@ var searchData=
   ['pdf_5fdocument_5fget_5fpage_5flabel',['pdf_document_get_page_label',['../ev-poppler_8cc.html#a46d6cc5873ec2dd3154794b205665a1f',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fget_5fpage_5fsize',['pdf_document_get_page_size',['../ev-poppler_8cc.html#a0b28897a8d0368a0d68c1d0ac17b634c',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fget_5fthumbnail',['pdf_document_get_thumbnail',['../ev-poppler_8cc.html#a165863ad7f43b6b482d5d8090f4dc0d9',1,'ev-poppler.cc']]],
+  ['pdf_5fdocument_5fget_5fthumbnail_5fsurface',['pdf_document_get_thumbnail_surface',['../ev-poppler_8cc.html#ac9d8cfd8c98879805f0b86cdabff6f0d',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fget_5ftype',['pdf_document_get_type',['../ev-poppler_8h.html#ac0acff19ad1d715b6de39f034855c14c',1,'ev-poppler.h']]],
   ['pdf_5fdocument_5fhas_5fdocument_5fsecurity',['pdf_document_has_document_security',['../ev-poppler_8cc.html#ae31e181686bdd6554c30da13d478e877',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fimages_5fget_5fimage',['pdf_document_images_get_image',['../ev-poppler_8cc.html#a8d48068de2dde3ae9bb388c513dbf5f9',1,'ev-poppler.cc']]],

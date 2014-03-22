@@ -36,6 +36,7 @@ var searchData=
   ['get_5ftext_5flayout',['get_text_layout',['../struct__EvDocumentTextInterface.html#a8ce489fa9c26362db8c1b693e4a1a6bf',1,'_EvDocumentTextInterface']]],
   ['get_5ftext_5fmapping',['get_text_mapping',['../struct__EvDocumentTextInterface.html#adfc833822a5e5e9078fdef17cb2330e8',1,'_EvDocumentTextInterface']]],
   ['get_5fthumbnail',['get_thumbnail',['../struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6',1,'_EvDocumentClass']]],
+  ['get_5fthumbnail_5fsurface',['get_thumbnail_surface',['../struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f',1,'_EvDocumentClass']]],
   ['getglyph',['getglyph',['../struct__DviFontInfo.html#adcb16a2cb97759e8e7881ab87c683482',1,'_DviFontInfo']]],
   ['gf_5ffont_5finfo',['gf_font_info',['../fonts_8c.html#abc92b7cd26ca8f8188f4f97a330431d5',1,'gf_font_info():&#160;gf.c'],['../gf_8c.html#abc92b7cd26ca8f8188f4f97a330431d5',1,'gf_font_info():&#160;gf.c']]],
   ['gfi',['gfi',['../structFontInfo.html#a0a48d9ee5151b0496696c115b5b2e7d9',1,'FontInfo']]],

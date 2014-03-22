@@ -15,7 +15,7 @@ var searchData=
   ['column_5fname',['COLUMN_NAME',['../ev-sidebar-attachments_8c.html#a2f80701c36e79c0640d91c788feee0b3a4a1ecd08f0dbff454b52d14ae9285102',1,'ev-sidebar-attachments.c']]],
   ['column_5fpage',['COLUMN_PAGE',['../ev-sidebar-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a33e343af5a0f32026ffc44407dccae45',1,'ev-sidebar-bookmarks.c']]],
   ['column_5fpage_5fstring',['COLUMN_PAGE_STRING',['../ev-sidebar-thumbnails_8c.html#a68c01102755fc7d1c810bb0b0635fa90a64984b5cb09025476770099df289a9d6',1,'ev-sidebar-thumbnails.c']]],
-  ['column_5fpixbuf',['COLUMN_PIXBUF',['../ev-sidebar-thumbnails_8c.html#a68c01102755fc7d1c810bb0b0635fa90a521d82d2c765f5ff8ff55cfd06ee94de',1,'ev-sidebar-thumbnails.c']]],
+  ['column_5fsurface',['COLUMN_SURFACE',['../ev-sidebar-thumbnails_8c.html#a68c01102755fc7d1c810bb0b0635fa90aa1ee57fc854ad9521967c2e248b36998',1,'ev-sidebar-thumbnails.c']]],
   ['column_5fthumbnail_5fset',['COLUMN_THUMBNAIL_SET',['../ev-sidebar-thumbnails_8c.html#a68c01102755fc7d1c810bb0b0635fa90ae54f0f8f83be745830aa425ac236fe19',1,'ev-sidebar-thumbnails.c']]],
   ['creation_5fdate_5fproperty',['CREATION_DATE_PROPERTY',['../ev-properties-view_8c.html#a80e3abfdceb5f0f2ef6e0e50ab2fd1aaa3f3e1e2e6a6587260e30f6876f779164',1,'ev-properties-view.c']]],
   ['creator_5fproperty',['CREATOR_PROPERTY',['../ev-properties-view_8c.html#a80e3abfdceb5f0f2ef6e0e50ab2fd1aaa7eadf1e50211e2ae9ab3393f9bf69286',1,'ev-properties-view.c']]]

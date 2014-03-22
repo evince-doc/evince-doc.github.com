@@ -65,6 +65,7 @@ var searchData=
   ['thumbnail_5fjob',['thumbnail_job',['../struct__EvWindowPrivate.html#a6f69bc944034b10522fe353decae5c03',1,'_EvWindowPrivate']]],
   ['thumbnail_5fjob_5fcompleted_5fcallback',['thumbnail_job_completed_callback',['../ev-sidebar-thumbnails_8c.html#a9246ad14337dcb65f0f3e30c5248e982',1,'ev-sidebar-thumbnails.c']]],
   ['thumbnail_5fsize',['THUMBNAIL_SIZE',['../evince-thumbnailer_8c.html#a724ddb07c287f1d4371e997101fce2b7',1,'evince-thumbnailer.c']]],
+  ['thumbnail_5fsurface',['thumbnail_surface',['../struct__EvJobThumbnail.html#ae3976c2f6c42f3e8cc69c566f0a3fe46',1,'_EvJobThumbnail']]],
   ['thumbnail_5fwidth',['THUMBNAIL_WIDTH',['../ev-sidebar-thumbnails_8c.html#af562473223519f4a32c8b5428c19c71e',1,'ev-sidebar-thumbnails.c']]],
   ['thumbnails_5fsidebar_5fid',['THUMBNAILS_SIDEBAR_ID',['../ev-window_8c.html#af839ad7c3774796206bc7036abe87ba7',1,'ev-window.c']]],
   ['thumbs_5fformat',['thumbs_format',['../struct__DjvuDocument.html#a53558d616864c24d05b2390dd1c4f5e6',1,'_DjvuDocument']]],

@@ -80,6 +80,7 @@ var ev_poppler_8cc =
     [ "pdf_document_get_page_label", "ev-poppler_8cc.html#a46d6cc5873ec2dd3154794b205665a1f", null ],
     [ "pdf_document_get_page_size", "ev-poppler_8cc.html#a0b28897a8d0368a0d68c1d0ac17b634c", null ],
     [ "pdf_document_get_thumbnail", "ev-poppler_8cc.html#a165863ad7f43b6b482d5d8090f4dc0d9", null ],
+    [ "pdf_document_get_thumbnail_surface", "ev-poppler_8cc.html#ac9d8cfd8c98879805f0b86cdabff6f0d", null ],
     [ "pdf_document_has_document_security", "ev-poppler_8cc.html#ae31e181686bdd6554c30da13d478e877", null ],
     [ "pdf_document_images_get_image", "ev-poppler_8cc.html#a8d48068de2dde3ae9bb388c513dbf5f9", null ],
     [ "pdf_document_images_get_image_mapping", "ev-poppler_8cc.html#af6344da64811c542f365e8f2b6fe536b", null ],

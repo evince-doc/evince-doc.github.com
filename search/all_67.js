@@ -109,6 +109,7 @@ var searchData=
   ['get_5ftext_5fmapping',['get_text_mapping',['../struct__EvDocumentTextInterface.html#adfc833822a5e5e9078fdef17cb2330e8',1,'_EvDocumentTextInterface']]],
   ['get_5ftfm_5fchars',['get_tfm_chars',['../tfm_8c.html#ac6dc474c097e2904d0fe3683b262a4c6',1,'tfm.c']]],
   ['get_5fthumbnail',['get_thumbnail',['../struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6',1,'_EvDocumentClass']]],
+  ['get_5fthumbnail_5fsurface',['get_thumbnail_surface',['../struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f',1,'_EvDocumentClass']]],
   ['get_5ftolerance',['get_tolerance',['../ev-properties-view_8c.html#a2b2a86ee6d0eb8e8e34f4e0ac5aabeab',1,'ev-properties-view.c']]],
   ['get_5fwidget_5fpadding',['get_widget_padding',['../ev-loading-message_8c.html#aa39e96a21298ad722478930f0679c650',1,'ev-loading-message.c']]],
   ['getglyph',['getglyph',['../struct__DviFontInfo.html#adcb16a2cb97759e8e7881ab87c683482',1,'_DviFontInfo']]],

@@ -11,6 +11,8 @@ var ev_document_misc_8h =
     [ "ev_document_misc_paint_one_page", "ev-document-misc_8h.html#acf93bb775e05db5c6864c1049e9cfd66", null ],
     [ "ev_document_misc_pixbuf_from_surface", "ev-document-misc_8h.html#a6fadb7103c73480a241085595b4ecf82", null ],
     [ "ev_document_misc_render_loading_thumbnail", "ev-document-misc_8h.html#a834e2e330c19d84f3ffaf307f53efba1", null ],
+    [ "ev_document_misc_render_loading_thumbnail_surface", "ev-document-misc_8h.html#a20745db331bf52563a484a0c54b76268", null ],
+    [ "ev_document_misc_render_thumbnail_surface_with_frame", "ev-document-misc_8h.html#a7fe4860586b66df976e8db7760ed9d31", null ],
     [ "ev_document_misc_render_thumbnail_with_frame", "ev-document-misc_8h.html#ae6fe95fe4bdc03854b33bf55a77b853b", null ],
     [ "ev_document_misc_surface_from_pixbuf", "ev-document-misc_8h.html#a0a9b0bf266672279361379cb271f2705", null ],
     [ "ev_document_misc_surface_rotate_and_scale", "ev-document-misc_8h.html#a0efd1589afa135bc99744859ecede365", null ]

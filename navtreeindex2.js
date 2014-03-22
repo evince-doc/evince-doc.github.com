@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"dviopcodes_8h.html#a14e781d10c0e8c5d17b9e0b3daecb4dd":[7,0,0,0,2,0,10,56],
 "dviopcodes_8h.html#a264838b464996ca1b7887c6201af5d78":[7,0,0,0,2,0,10,53],
 "dviopcodes_8h.html#a28304072120426f40c2d6ce82d303c63":[7,0,0,0,2,0,10,4],
 "dviopcodes_8h.html#a2a0685ba5dc2e80a5c35d2b1033baae6":[7,0,0,0,2,0,10,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "ev-annotation-properties-dialog_8h.html#a8186ccbd17a6a464ce92d9e46fa342fc":[7,0,0,7,3,1],
 "ev-annotation-properties-dialog_8h.html#a88b2f6728c3c855afdbe71e28b6f9c1c":[7,0,0,7,3,15],
 "ev-annotation-properties-dialog_8h.html#ab48710d00b01a5c0d57d0d96f78f8eb1":[7,0,0,7,3,10],
-"ev-annotation-properties-dialog_8h.html#ac06b8936e4e57a907bdc45c40cd06f90":[7,0,0,7,3,7],
-"ev-annotation-properties-dialog_8h.html#ac2f0ea3e8c7ad1014dadf008e4c5044e":[7,0,0,7,3,11]
+"ev-annotation-properties-dialog_8h.html#ac06b8936e4e57a907bdc45c40cd06f90":[7,0,0,7,3,7]
 };

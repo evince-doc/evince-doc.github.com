@@ -177,6 +177,10 @@ var ev_jobs_8h =
       [ "EV_JOB_RUN_THREAD", "ev-jobs_8h.html#a217ff48a4e8bc8e25fd1fe1963578098ad1831205cd5aede96c3b95bf115e1d6d", null ],
       [ "EV_JOB_RUN_MAIN_LOOP", "ev-jobs_8h.html#a217ff48a4e8bc8e25fd1fe1963578098a9d52acd19794060960c0668eed7cabb0", null ]
     ] ],
+    [ "EvJobThumbnailFormat", "ev-jobs_8h.html#ad88264b07f3d8f485f9384b34e288425", [
+      [ "EV_JOB_THUMBNAIL_PIXBUF", "ev-jobs_8h.html#ad88264b07f3d8f485f9384b34e288425ad6e3a516f73a7797b0cb1f3518747c59", null ],
+      [ "EV_JOB_THUMBNAIL_SURFACE", "ev-jobs_8h.html#ad88264b07f3d8f485f9384b34e288425a4059636e74c488158fe787e2d3b2c5eb", null ]
+    ] ],
     [ "ev_job_annots_get_type", "ev-jobs_8h.html#a7da0945a8c77d040fc88db027219ce7f", null ],
     [ "ev_job_annots_new", "ev-jobs_8h.html#ab8174b570ba2704357b6b2b3293e4629", null ],
     [ "ev_job_attachments_get_type", "ev-jobs_8h.html#abfeaf751c79a3800c5b73bf767a510d0", null ],
@@ -236,5 +240,6 @@ var ev_jobs_8h =
     [ "ev_job_succeeded", "ev-jobs_8h.html#ab5bb4c0ab5bc0eda5ce80d780e314de4", null ],
     [ "ev_job_thumbnail_get_type", "ev-jobs_8h.html#abdcf791a1223c5c1369f518e3202a62f", null ],
     [ "ev_job_thumbnail_new", "ev-jobs_8h.html#ab7dc8b237cbca031d7b621ba1d8701e1", null ],
-    [ "ev_job_thumbnail_set_has_frame", "ev-jobs_8h.html#a91c41c7707b35e06a6cbadb3d1d03610", null ]
+    [ "ev_job_thumbnail_set_has_frame", "ev-jobs_8h.html#a91c41c7707b35e06a6cbadb3d1d03610", null ],
+    [ "ev_job_thumbnail_set_output_format", "ev-jobs_8h.html#a1ad51cd1f990e688679f65e77da21d94", null ]
 ];

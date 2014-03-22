@@ -159,45 +159,54 @@ $(document).ready(function(){initNavTree('ev-document-misc_8h_source.html','');}
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;GdkPixbuf *<a class="code" href="ev-document-misc_8c.html#ae6fe95fe4bdc03854b33bf55a77b853b">ev_document_misc_render_thumbnail_with_frame</a> (GtkWidget *widget,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                             GdkPixbuf *source_pixbuf);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="ev-macros_8h.html#a9ef05ba4356b14ef8c46ba2bd118d848">EV_DEPRECATED</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-document-misc_8c.html#a6d196b4729c62d5da7ade247a90fc9f4">ev_document_misc_get_page_border_size</a> (gint          page_width,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                          gint          page_height,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                          GtkBorder    *border);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="ev-macros_8h.html#a9ef05ba4356b14ef8c46ba2bd118d848">EV_DEPRECATED</a></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-document-misc_8c.html#aa0de06ddae181dbd6c6d0c16e5f1c4fc">ev_document_misc_paint_one_page</a>       (cairo_t      *cr,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                          GtkWidget    *widget,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                          GdkRectangle *area,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                          GtkBorder    *border,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                          gboolean      highlight,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                          gboolean      inverted_colors);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;cairo_surface_t *<a class="code" href="ev-document-misc_8c.html#a0a9b0bf266672279361379cb271f2705">ev_document_misc_surface_from_pixbuf</a> (GdkPixbuf *pixbuf);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;GdkPixbuf       *<a class="code" href="ev-document-misc_8c.html#a6fadb7103c73480a241085595b4ecf82">ev_document_misc_pixbuf_from_surface</a> (cairo_surface_t *surface);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;cairo_surface_t *<a class="code" href="ev-document-misc_8c.html#a0efd1589afa135bc99744859ecede365">ev_document_misc_surface_rotate_and_scale</a> (cairo_surface_t *surface,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                gint             dest_width,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                gint             dest_height,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                gint             dest_rotation);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-document-misc_8c.html#a54815c4014dac0bff7ad66c39d54ab74">ev_document_misc_invert_surface</a> (cairo_surface_t *surface);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-document-misc_8c.html#a69fd415f7ae0cea215f65ee147cbab35">ev_document_misc_invert_pixbuf</a>  (GdkPixbuf       *pixbuf);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;cairo_surface_t *<a class="code" href="ev-document-misc_8c.html#a20745db331bf52563a484a0c54b76268">ev_document_misc_render_loading_thumbnail_surface</a> (GtkWidget *widget,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                    <span class="keywordtype">int</span>        width,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                    <span class="keywordtype">int</span>        height,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                    gboolean   inverted_colors);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;cairo_surface_t *<a class="code" href="ev-document-misc_8c.html#a7fe4860586b66df976e8db7760ed9d31">ev_document_misc_render_thumbnail_surface_with_frame</a> (GtkWidget       *widget,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                       cairo_surface_t *source_surface,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                       <span class="keywordtype">int</span>              width,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                       <span class="keywordtype">int</span>              height);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="ev-macros_8h.html#a9ef05ba4356b14ef8c46ba2bd118d848">EV_DEPRECATED</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-document-misc_8c.html#a6d196b4729c62d5da7ade247a90fc9f4">ev_document_misc_get_page_border_size</a> (gint          page_width,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                          gint          page_height,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                          GtkBorder    *border);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="ev-macros_8h.html#a9ef05ba4356b14ef8c46ba2bd118d848">EV_DEPRECATED</a></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-document-misc_8c.html#aa0de06ddae181dbd6c6d0c16e5f1c4fc">ev_document_misc_paint_one_page</a>       (cairo_t      *cr,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                          GtkWidget    *widget,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                          GdkRectangle *area,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                          GtkBorder    *border,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                          gboolean      highlight,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                          gboolean      inverted_colors);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;gdouble          <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (GdkScreen *screen);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;gchar           *<a class="code" href="ev-document-misc_8c.html#aa2705940e170e9af45e196240ecb6b1a">ev_document_misc_format_date</a> (GTime utime);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-document-misc_8c.html#aab63b318585d527dc34bba972d21a73b">ev_document_misc_get_pointer_position</a> (GtkWidget *widget,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                            gint      *x,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                            gint      *y);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_DOCUMENT_MISC_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;cairo_surface_t *<a class="code" href="ev-document-misc_8c.html#a0a9b0bf266672279361379cb271f2705">ev_document_misc_surface_from_pixbuf</a> (GdkPixbuf *pixbuf);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;GdkPixbuf       *<a class="code" href="ev-document-misc_8c.html#a6fadb7103c73480a241085595b4ecf82">ev_document_misc_pixbuf_from_surface</a> (cairo_surface_t *surface);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;cairo_surface_t *<a class="code" href="ev-document-misc_8c.html#a0efd1589afa135bc99744859ecede365">ev_document_misc_surface_rotate_and_scale</a> (cairo_surface_t *surface,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                gint             dest_width,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                gint             dest_height,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                gint             dest_rotation);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-document-misc_8c.html#a54815c4014dac0bff7ad66c39d54ab74">ev_document_misc_invert_surface</a> (cairo_surface_t *surface);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-document-misc_8c.html#a69fd415f7ae0cea215f65ee147cbab35">ev_document_misc_invert_pixbuf</a>  (GdkPixbuf       *pixbuf);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;gdouble          <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (GdkScreen *screen);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;gchar           *<a class="code" href="ev-document-misc_8c.html#aa2705940e170e9af45e196240ecb6b1a">ev_document_misc_format_date</a> (GTime utime);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-document-misc_8c.html#aab63b318585d527dc34bba972d21a73b">ev_document_misc_get_pointer_position</a> (GtkWidget *widget,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                            gint      *x,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                            gint      *y);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_DOCUMENT_MISC_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document-misc_8h.html">ev-document-misc.h</a></li>
-    <li class="footer">Generated on Sat Mar 22 2014 10:07:39 for Evince by
+    <li class="footer">Generated on Sat Mar 22 2014 12:34:37 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

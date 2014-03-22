@@ -8,6 +8,7 @@ var struct__EvDocumentClass =
     [ "get_page_label", "struct__EvDocumentClass.html#aea85b7496821ccee8359e24d7f85163c", null ],
     [ "get_page_size", "struct__EvDocumentClass.html#a4a9fa47c8ea0c87c584f4f1ebaf66659", null ],
     [ "get_thumbnail", "struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6", null ],
+    [ "get_thumbnail_surface", "struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f", null ],
     [ "load", "struct__EvDocumentClass.html#a76bd65cef00f5be816f681a1fcefd21c", null ],
     [ "load_gfile", "struct__EvDocumentClass.html#ad9455c99cda4ab67001809719c823eb6", null ],
     [ "load_stream", "struct__EvDocumentClass.html#a1b5d325abdfb1abfec9f86b854bd1eab", null ],

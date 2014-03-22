@@ -129,6 +129,8 @@ var searchData=
   ['ev_5fjob_5fpriority_5furgent',['EV_JOB_PRIORITY_URGENT',['../ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a315e9f24ccc1e00f6927057147023435',1,'ev-job-scheduler.h']]],
   ['ev_5fjob_5frun_5fmain_5floop',['EV_JOB_RUN_MAIN_LOOP',['../ev-jobs_8h.html#a217ff48a4e8bc8e25fd1fe1963578098a9d52acd19794060960c0668eed7cabb0',1,'ev-jobs.h']]],
   ['ev_5fjob_5frun_5fthread',['EV_JOB_RUN_THREAD',['../ev-jobs_8h.html#a217ff48a4e8bc8e25fd1fe1963578098ad1831205cd5aede96c3b95bf115e1d6d',1,'ev-jobs.h']]],
+  ['ev_5fjob_5fthumbnail_5fpixbuf',['EV_JOB_THUMBNAIL_PIXBUF',['../ev-jobs_8h.html#ad88264b07f3d8f485f9384b34e288425ad6e3a516f73a7797b0cb1f3518747c59',1,'ev-jobs.h']]],
+  ['ev_5fjob_5fthumbnail_5fsurface',['EV_JOB_THUMBNAIL_SURFACE',['../ev-jobs_8h.html#ad88264b07f3d8f485f9384b34e288425a4059636e74c488158fe787e2d3b2c5eb',1,'ev-jobs.h']]],
   ['ev_5flink_5faction_5ftype_5fexternal_5furi',['EV_LINK_ACTION_TYPE_EXTERNAL_URI',['../ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a64241e362318b36f4ad576ee6b38a5a0',1,'ev-link-action.h']]],
   ['ev_5flink_5faction_5ftype_5fgoto_5fdest',['EV_LINK_ACTION_TYPE_GOTO_DEST',['../ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a732da72728cc86b5058ec03aea40f6c5',1,'ev-link-action.h']]],
   ['ev_5flink_5faction_5ftype_5fgoto_5fremote',['EV_LINK_ACTION_TYPE_GOTO_REMOTE',['../ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a9f767201d6e7dfdf23db923a323792ba',1,'ev-link-action.h']]],

@@ -32,6 +32,7 @@ var ev_document_8c =
     [ "ev_document_get_page_label", "ev-document_8c.html#a4721b322507b11b0d36ffbcdd0ff8d65", null ],
     [ "ev_document_get_page_size", "ev-document_8c.html#a5a01bc5acbf69d30bed5717ad796b3d8", null ],
     [ "ev_document_get_thumbnail", "ev-document_8c.html#adc0b36e693a9d101a856c917f3466389", null ],
+    [ "ev_document_get_thumbnail_surface", "ev-document_8c.html#a06fe6786313d7475c81692506ee98976", null ],
     [ "ev_document_get_title", "ev-document_8c.html#aabb558196676359e12fbfd4c8b19a897", null ],
     [ "ev_document_get_uri", "ev-document_8c.html#a66855da553a1fec936981bc52509bbff", null ],
     [ "ev_document_has_synctex", "ev-document_8c.html#a477272394dd740b85ad0d9b235dfd1fd", null ],

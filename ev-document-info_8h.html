@@ -563,36 +563,36 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00894">894</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;{</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *copy;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    </div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    g_return_val_if_fail (info != NULL, NULL);</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    copy = g_new0 (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, 1);</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;    copy-&gt;title = g_strdup (info-&gt;title);</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    copy-&gt;format = g_strdup (info-&gt;format);</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    copy-&gt;author = g_strdup (info-&gt;author);</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    copy-&gt;subject = g_strdup (info-&gt;subject);</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    copy-&gt;keywords = g_strdup (info-&gt;keywords);</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    copy-&gt;security = g_strdup (info-&gt;security);</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    copy-&gt;creator = g_strdup (info-&gt;creator);</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    copy-&gt;producer = g_strdup (info-&gt;producer);</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    copy-&gt;linearized = g_strdup (info-&gt;linearized);</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    </div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    copy-&gt;creation_date = info-&gt;creation_date;</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    copy-&gt;modified_date = info-&gt;modified_date;</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    copy-&gt;layout = info-&gt;layout;</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    copy-&gt;mode = info-&gt;mode;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;    copy-&gt;ui_hints = info-&gt;ui_hints;</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    copy-&gt;permissions = info-&gt;permissions;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    copy-&gt;n_pages = info-&gt;n_pages;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    copy-&gt;license = <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (info-&gt;license);</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    copy-&gt;fields_mask = info-&gt;fields_mask;</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00916">916</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;{</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *copy;</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    </div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    g_return_val_if_fail (info != NULL, NULL);</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    <span class="keywordflow">return</span> copy;</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;}</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    copy = g_new0 (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, 1);</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    copy-&gt;title = g_strdup (info-&gt;title);</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    copy-&gt;format = g_strdup (info-&gt;format);</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    copy-&gt;author = g_strdup (info-&gt;author);</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    copy-&gt;subject = g_strdup (info-&gt;subject);</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    copy-&gt;keywords = g_strdup (info-&gt;keywords);</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    copy-&gt;security = g_strdup (info-&gt;security);</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    copy-&gt;creator = g_strdup (info-&gt;creator);</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    copy-&gt;producer = g_strdup (info-&gt;producer);</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    copy-&gt;linearized = g_strdup (info-&gt;linearized);</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    </div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    copy-&gt;creation_date = info-&gt;creation_date;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    copy-&gt;modified_date = info-&gt;modified_date;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    copy-&gt;layout = info-&gt;layout;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    copy-&gt;mode = info-&gt;mode;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    copy-&gt;ui_hints = info-&gt;ui_hints;</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    copy-&gt;permissions = info-&gt;permissions;</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    copy-&gt;n_pages = info-&gt;n_pages;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    copy-&gt;license = <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (info-&gt;license);</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    copy-&gt;fields_mask = info-&gt;fields_mask;</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordflow">return</span> copy;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -610,24 +610,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00926">926</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;{</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    <span class="keywordflow">if</span> (info == NULL)</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    g_free (info-&gt;title);</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    g_free (info-&gt;format);</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    g_free (info-&gt;author);</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    g_free (info-&gt;subject);</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    g_free (info-&gt;keywords);</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    g_free (info-&gt;creator);</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    g_free (info-&gt;producer);</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    g_free (info-&gt;linearized);</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    g_free (info-&gt;security);</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (info-&gt;license);</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    g_free (info);</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00948">948</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;{</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    <span class="keywordflow">if</span> (info == NULL)</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;    g_free (info-&gt;title);</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;    g_free (info-&gt;format);</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;    g_free (info-&gt;author);</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    g_free (info-&gt;subject);</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    g_free (info-&gt;keywords);</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    g_free (info-&gt;creator);</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    g_free (info-&gt;producer);</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    g_free (info-&gt;linearized);</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    g_free (info-&gt;security);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (info-&gt;license);</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    g_free (info);</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -671,24 +671,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00955">955</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;{</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *new_license;</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    new_license = <a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> ();</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>)</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>)</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>)</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <span class="keywordflow">return</span> new_license;</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00977">977</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;{</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *new_license;</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    new_license = <a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> ();</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>)</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>)</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>)</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    <span class="keywordflow">return</span> new_license;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -716,17 +716,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00975">975</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;{</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    g_free (license);</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00997">997</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;{</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    g_free (license);</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -754,10 +754,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00988">988</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;{</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01010">1010</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;{</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>;</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -801,10 +801,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00994">994</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;{</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>;</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01016">1016</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;{</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -832,10 +832,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01000">1000</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;{</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>;</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01022">1022</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;{</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>;</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -863,10 +863,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00949">949</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;{</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, 1);</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00971">971</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;{</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, 1);</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -886,7 +886,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document-info_8h.html">ev-document-info.h</a></li>
-    <li class="footer">Generated on Sat Mar 22 2014 10:07:42 for Evince by
+    <li class="footer">Generated on Sat Mar 22 2014 12:34:43 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

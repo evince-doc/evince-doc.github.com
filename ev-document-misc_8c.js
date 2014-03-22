@@ -12,7 +12,9 @@ var ev_document_misc_8c =
     [ "ev_document_misc_paint_one_page", "ev-document-misc_8c.html#aa0de06ddae181dbd6c6d0c16e5f1c4fc", null ],
     [ "ev_document_misc_pixbuf_from_surface", "ev-document-misc_8c.html#a6fadb7103c73480a241085595b4ecf82", null ],
     [ "ev_document_misc_render_loading_thumbnail", "ev-document-misc_8c.html#a834e2e330c19d84f3ffaf307f53efba1", null ],
-    [ "ev_document_misc_render_thumbnail_frame", "ev-document-misc_8c.html#a907f66ec068f9249f0c6c0baa9fca520", null ],
+    [ "ev_document_misc_render_loading_thumbnail_surface", "ev-document-misc_8c.html#a20745db331bf52563a484a0c54b76268", null ],
+    [ "ev_document_misc_render_thumbnail_frame", "ev-document-misc_8c.html#a5c5ce28da55d40413e71a9d75fac7a7a", null ],
+    [ "ev_document_misc_render_thumbnail_surface_with_frame", "ev-document-misc_8c.html#a7fe4860586b66df976e8db7760ed9d31", null ],
     [ "ev_document_misc_render_thumbnail_with_frame", "ev-document-misc_8c.html#ae6fe95fe4bdc03854b33bf55a77b853b", null ],
     [ "ev_document_misc_surface_from_pixbuf", "ev-document-misc_8c.html#a0a9b0bf266672279361379cb271f2705", null ],
     [ "ev_document_misc_surface_rotate_and_scale", "ev-document-misc_8c.html#a0efd1589afa135bc99744859ecede365", null ]

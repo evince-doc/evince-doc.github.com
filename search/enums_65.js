@@ -23,6 +23,7 @@ var searchData=
   ['evjobpagedataflags',['EvJobPageDataFlags',['../ev-jobs_8h.html#a3abbfdc3994809f05e8330bd0b7c3a3c',1,'ev-jobs.h']]],
   ['evjobpriority',['EvJobPriority',['../ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1',1,'ev-job-scheduler.h']]],
   ['evjobrunmode',['EvJobRunMode',['../ev-jobs_8h.html#a217ff48a4e8bc8e25fd1fe1963578098',1,'ev-jobs.h']]],
+  ['evjobthumbnailformat',['EvJobThumbnailFormat',['../ev-jobs_8h.html#ad88264b07f3d8f485f9384b34e288425',1,'ev-jobs.h']]],
   ['evlinkactiontype',['EvLinkActionType',['../ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057',1,'ev-link-action.h']]],
   ['evlinkdesttype',['EvLinkDestType',['../ev-link-dest_8h.html#aaa76279563e988975a3bed4849a57de9',1,'ev-link-dest.h']]],
   ['evpagelayout',['EvPageLayout',['../ev-document-model_8h.html#a9746ca193f7575bbca082fe76635174f',1,'ev-document-model.h']]],
