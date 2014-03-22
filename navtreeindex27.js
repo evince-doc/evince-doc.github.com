@@ -1,5 +1,17 @@
 var NAVTREEINDEX27 =
 {
+"struct__DviPaper.html#ac3dcf62381cb9080ce000879a02d08ea":[6,0,37,3],
+"struct__DviPaperSpec.html":[6,0,38],
+"struct__DviPaperSpec.html#a676c8c87db4019f7130925f52a188579":[6,0,38,0],
+"struct__DviPaperSpec.html#aec57bbdbaf9236a8cef0ee83ddf5ea82":[6,0,38,1],
+"struct__DviPaperSpec.html#af4943d8ddd04377149af166bca763871":[6,0,38,2],
+"struct__DviParams.html":[6,0,39],
+"struct__DviParams.html#a10621368dd69ad7c49e4504eae23d9dd":[6,0,39,14],
+"struct__DviParams.html#a11939157ccfa45bca746415cbf26a9a7":[6,0,39,4],
+"struct__DviParams.html#a22db50ac0d16ec9fdeb7b9a9aea87e78":[6,0,39,1],
+"struct__DviParams.html#a2a4123133a0f22ca5e1ed88d3d32a2d3":[6,0,39,20],
+"struct__DviParams.html#a2dc3028c00da865b30603cd34d9c3e38":[6,0,39,3],
+"struct__DviParams.html#a3bbe4ea2ce47dfb1aef292fa990f7729":[6,0,39,5],
 "struct__DviParams.html#a44ebb1e8950af2383eae7df5af488d3b":[6,0,39,7],
 "struct__DviParams.html#a468fd59ca8f0bd6be8b0327fbc57540a":[6,0,39,13],
 "struct__DviParams.html#a51b1ebaf389ff390ccc363f56254ff8a":[6,0,39,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX27 =
 "struct__EvDocumentInfo.html#a35a9ff984badb78f5e0d73d823d25d2e":[6,0,80,5],
 "struct__EvDocumentInfo.html#a396db4b6740db1ab8c5b988c4e9c849a":[6,0,80,8],
 "struct__EvDocumentInfo.html#a438c04bce85650d36a6d8368b927b016":[6,0,80,7],
-"struct__EvDocumentInfo.html#a4a75f1b26f93c5ef126f6e3b1a601cc1":[6,0,80,2],
-"struct__EvDocumentInfo.html#a52e9b79e9ecfd66457ffa7111c7e73a9":[6,0,80,12],
-"struct__EvDocumentInfo.html#a534788ac6111159d79973aeb2242ba15":[6,0,80,18],
-"struct__EvDocumentInfo.html#a544b3c7a01606378e39049bc490689d4":[6,0,80,11],
-"struct__EvDocumentInfo.html#a5c1437c98ad4deba4495a7e6e217228d":[6,0,80,17],
-"struct__EvDocumentInfo.html#a5cf65e376128562782ea6e759e180b6f":[6,0,80,19],
-"struct__EvDocumentInfo.html#a65db7188bb271fe107a7d875001623a8":[6,0,80,10],
-"struct__EvDocumentInfo.html#a75e628bfa7b21b6002fb97dcee2d8f19":[6,0,80,1],
-"struct__EvDocumentInfo.html#a96fd22cde6281f75080e1deac18b6b13":[6,0,80,6],
-"struct__EvDocumentInfo.html#a9cdd709c34d809e8d3ec6a51d3e27625":[6,0,80,0],
-"struct__EvDocumentInfo.html#ab1028387055a58ed2175db68708cc86e":[6,0,80,13],
-"struct__EvDocumentInfo.html#ab55f1b599760b13e5ee0e059a11e5a83":[6,0,80,9],
-"struct__EvDocumentInfo.html#ac912d79da5a22086f2ca7dee10120237":[6,0,80,15]
+"struct__EvDocumentInfo.html#a4a75f1b26f93c5ef126f6e3b1a601cc1":[6,0,80,2]
 };

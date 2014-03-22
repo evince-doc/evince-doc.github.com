@@ -143,8 +143,8 @@ Functions</h2></td></tr>
 <tr class="separator:a817c229eff105e0aefb28d4508c02526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb521446530dce8f612736981059125e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cairo-device_8h.html#afb521446530dce8f612736981059125e">mdvi_cairo_device_set_margins</a> (<a class="el" href="mdvi_8h.html#a9d98ef1e1880f271d5afb1a6e9aaf3c4">DviDevice</a> *device, gint xmargin, gint ymargin)</td></tr>
 <tr class="separator:afb521446530dce8f612736981059125e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac15cb8b27be4a873674a07d29c9457cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cairo-device_8h.html#ac15cb8b27be4a873674a07d29c9457cf">mdvi_cairo_device_set_scale</a> (<a class="el" href="mdvi_8h.html#a9d98ef1e1880f271d5afb1a6e9aaf3c4">DviDevice</a> *device, gdouble scale)</td></tr>
-<tr class="separator:ac15cb8b27be4a873674a07d29c9457cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe46dcda5b2223005774080f9b7e93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cairo-device_8h.html#abfe46dcda5b2223005774080f9b7e93c">mdvi_cairo_device_set_scale</a> (<a class="el" href="mdvi_8h.html#a9d98ef1e1880f271d5afb1a6e9aaf3c4">DviDevice</a> *device, gdouble xscale, gdouble yscale)</td></tr>
+<tr class="separator:abfe46dcda5b2223005774080f9b7e93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a800777628b74d586d38b799a4a3e2e0c"></a>
@@ -371,7 +371,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac15cb8b27be4a873674a07d29c9457cf"></a>
+<a class="anchor" id="abfe46dcda5b2223005774080f9b7e93c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -385,7 +385,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">gdouble&#160;</td>
-          <td class="paramname"><em>scale</em>&#160;</td>
+          <td class="paramname"><em>xscale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble&#160;</td>
+          <td class="paramname"><em>yscale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -396,20 +402,21 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cairo-device_8c_source.html#l00364">364</a> of file <a class="el" href="cairo-device_8c_source.html">cairo-device.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *cairo_device;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) device-&gt;<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab25967a615f9a0568977e478efec16a4">scale</a> = scale;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *cairo_device;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) device-&gt;<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ae759222de338025289c6a2a2b778a895">xscale</a> = xscale;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46">yscale</a> = yscale;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="cairo-device_8h_ac15cb8b27be4a873674a07d29c9457cf_icgraph.svg" width="584" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="cairo-device_8h_abfe46dcda5b2223005774080f9b7e93c_icgraph.svg" width="584" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -422,7 +429,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="cairo-device_8h.html">cairo-device.h</a></li>
-    <li class="footer">Generated on Sat Mar 22 2014 12:34:40 for Evince by
+    <li class="footer">Generated on Sat Mar 22 2014 15:01:34 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

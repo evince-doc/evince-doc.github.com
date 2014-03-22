@@ -19,7 +19,6 @@ var struct__EvViewPresentation =
     [ "page_cache", "struct__EvViewPresentation.html#ac293c06ef8b5699af3f8f2716c6520ea", null ],
     [ "prev_job", "struct__EvViewPresentation.html#acd3e70591e9e0e4868c50b0f1660413e", null ],
     [ "rotation", "struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6", null ],
-    [ "scale", "struct__EvViewPresentation.html#a1fa998a4740fdb2dac3a646d8185f2fd", null ],
     [ "state", "struct__EvViewPresentation.html#a65a64c76a2cb5690f3cae8f525f933cf", null ],
     [ "trans_timeout_id", "struct__EvViewPresentation.html#aa05a5011ba0da47d7d0af8a7156ab48b", null ]
 ];

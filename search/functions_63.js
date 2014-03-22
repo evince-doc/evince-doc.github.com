@@ -46,7 +46,7 @@ var searchData=
   ['create_5fblur_5ffilter',['create_blur_filter',['../ev-utils_8c.html#a94c637579ac9aef3ef422ddd85f6c69a',1,'ev-utils.c']]],
   ['create_5ffile_5ffrom_5furi_5ffor_5fformat',['create_file_from_uri_for_format',['../ev-window_8c.html#a9b91a8d01af0f6950d8513d95ff73464',1,'ev-window.c']]],
   ['create_5floading_5fmodel',['create_loading_model',['../ev-sidebar-links_8c.html#a8fed65edbe07b522e366da6df783cce6',1,'ev-sidebar-links.c']]],
-  ['create_5fregion_5ffrom_5fpoppler_5fregion',['create_region_from_poppler_region',['../ev-poppler_8cc.html#a40aa2add11092c6940cfaa7d670dcd9c',1,'ev-poppler.cc']]],
+  ['create_5fregion_5ffrom_5fpoppler_5fregion',['create_region_from_poppler_region',['../ev-poppler_8cc.html#ab520972f9115099e197bb1afba5e1590',1,'ev-poppler.cc']]],
   ['create_5fshadow',['create_shadow',['../ev-utils_8c.html#a3f545f62d056f4f2b5c8246f4522e313',1,'ev-utils.c']]],
   ['create_5fthumbnail_5fframe',['create_thumbnail_frame',['../ev-document-misc_8c.html#abef5da09d924359a1c6782e43e9e3199',1,'ev-document-misc.c']]],
   ['create_5ftool_5fitem',['create_tool_item',['../ev-page-action_8c.html#a1bb40b6d4fb281af004c167677ec3b5d',1,'ev-page-action.c']]],

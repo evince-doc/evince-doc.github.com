@@ -112,6 +112,7 @@ var ev_jobs_8c =
     [ "ev_job_thumbnail_dispose", "ev-jobs_8c.html#a7fac224b303dd6adbd77bb2faac8e63b", null ],
     [ "ev_job_thumbnail_init", "ev-jobs_8c.html#a36e68475e751b3a5c0552e4a7ab49322", null ],
     [ "ev_job_thumbnail_new", "ev-jobs_8c.html#ab7dc8b237cbca031d7b621ba1d8701e1", null ],
+    [ "ev_job_thumbnail_new_with_target_size", "ev-jobs_8c.html#a6e9731d7b542031176f3d60110e670a3", null ],
     [ "ev_job_thumbnail_run", "ev-jobs_8c.html#a6c50ef8b3b6ab7dd9727ad46feb0b195", null ],
     [ "ev_job_thumbnail_set_has_frame", "ev-jobs_8c.html#a91c41c7707b35e06a6cbadb3d1d03610", null ],
     [ "ev_job_thumbnail_set_output_format", "ev-jobs_8c.html#a1ad51cd1f990e688679f65e77da21d94", null ],

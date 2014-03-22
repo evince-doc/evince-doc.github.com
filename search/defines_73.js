@@ -12,7 +12,7 @@ var searchData=
   ['show_5fop_5fdata',['SHOW_OP_DATA',['../bitmap_8c.html#ade31562f4e8d35c72cbe47a89c9b3f37',1,'bitmap.c']]],
   ['showcmd',['SHOWCMD',['../dviread_8c.html#a69e90f9a00dcb666a8107cae970974b5',1,'dviread.c']]],
   ['sidebar_5fdefault_5fsize',['SIDEBAR_DEFAULT_SIZE',['../ev-window_8c.html#ad4e0051b8837c952688de4f823265f47',1,'ev-window.c']]],
-  ['size',['size',['../synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff',1,'size():&#160;synctex_parser.c'],['../common_8h.html#adb836fe7277960f6ccbd8cbd969e4bdb',1,'Size():&#160;common.h']]],
+  ['size',['Size',['../common_8h.html#adb836fe7277960f6ccbd8cbd969e4bdb',1,'Size():&#160;common.h'],['../synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff',1,'size():&#160;synctex_parser.c']]],
   ['skipnsp',['SKIPNSP',['../private_8h.html#af36c397f618d47a3d12a219e598b8db4',1,'private.h']]],
   ['skipsp',['SKIPSP',['../private_8h.html#a84cd83dab385c409cb1938c90dd0a72e',1,'private.h']]],
   ['special',['SPECIAL',['../special_8c.html#ada17be56b06f6b81a6d156588f718db0',1,'special.c']]],

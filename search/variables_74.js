@@ -1,9 +1,9 @@
 var searchData=
 [
   ['tail',['tail',['../structListHead.html#aadb5dcd590c6543d1c665684751bde74',1,'ListHead']]],
-  ['target_5fheight',['target_height',['../struct__EvJobRender.html#a7a18cac148df211b02ed5fd920337f0a',1,'_EvJobRender']]],
+  ['target_5fheight',['target_height',['../struct__EvRenderContext.html#ae9f0852254edc572d2115f82c28fc60d',1,'_EvRenderContext::target_height()'],['../struct__EvJobRender.html#a7a18cac148df211b02ed5fd920337f0a',1,'_EvJobRender::target_height()'],['../struct__EvJobThumbnail.html#a1f86c012cf994cd52d664dcc59269b7d',1,'_EvJobThumbnail::target_height()']]],
   ['target_5fpoints',['target_points',['../struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18',1,'_CacheJobInfo']]],
-  ['target_5fwidth',['target_width',['../struct__EvJobRender.html#a2af07b8e287fa88314d888ec16ff721b',1,'_EvJobRender']]],
+  ['target_5fwidth',['target_width',['../struct__EvRenderContext.html#a3418282f06d9ef35cc83720a0606fcce',1,'_EvRenderContext::target_width()'],['../struct__EvJobRender.html#a2af07b8e287fa88314d888ec16ff721b',1,'_EvJobRender::target_width()'],['../struct__EvJobThumbnail.html#a7be7d2751b79c0d59085af955bec0704',1,'_EvJobThumbnail::target_width()']]],
   ['tex_5ftext_5fencoding',['tex_text_encoding',['../fontmap_8c.html#a9506895d17a40d41cd13e6cc6a4c261a',1,'fontmap.c']]],
   ['tex_5ftext_5fvector',['tex_text_vector',['../fontmap_8c.html#a7e3085d3ee085d896a2556a413e15e36',1,'fontmap.c']]],
   ['text',['text',['../struct__DjvuTextPage.html#a088203f0f98199f3a54fe065a535f432',1,'_DjvuTextPage::text()'],['../struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9',1,'_EvDocumentLicense::text()'],['../struct__EvFormFieldText.html#af31f4ae5494202f639fde5a9bfc6ce55',1,'_EvFormFieldText::text()'],['../struct__EvFormFieldChoice.html#a049ce859dad64594fbb123e923586018',1,'_EvFormFieldChoice::text()'],['../struct__EvJobRender.html#a40596e5cca1d7d661290872dd46d167d',1,'_EvJobRender::text()'],['../struct__EvJobPageData.html#aca98fd408159001b5b9f0da86bd3ca4b',1,'_EvJobPageData::text()'],['../struct__EvJobFind.html#abf9c24ee0045a37f09786b70ef72e51d',1,'_EvJobFind::text()'],['../struct__EvPageCacheData.html#a88e9d75e52510f0e2e2082bd4a5a81b6',1,'_EvPageCacheData::text()'],['../structBadTitleEntry.html#a263ebd78df10b8c6c3501f296811b705',1,'BadTitleEntry::text()']]],

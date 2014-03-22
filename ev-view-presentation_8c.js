@@ -39,7 +39,7 @@ var ev_view_presentation_8c =
     [ "ev_view_presentation_get_preferred_width", "ev-view-presentation_8c.html#a271af24fd8e92506363e6d371eb50d1d", null ],
     [ "ev_view_presentation_get_property", "ev-view-presentation_8c.html#a1c50b4ea9c49d7353be9d7b6a2c98028", null ],
     [ "ev_view_presentation_get_rotation", "ev-view-presentation_8c.html#a6e8cd28d9da4acbbb8158f17b64aa3d8", null ],
-    [ "ev_view_presentation_get_scale_for_page", "ev-view-presentation_8c.html#ae958e1e0471c5856bad67e59eecfca49", null ],
+    [ "ev_view_presentation_get_view_size", "ev-view-presentation_8c.html#a51bbb4aeceb5ed04efcaf16e80713fad", null ],
     [ "ev_view_presentation_goto_entry_activate", "ev-view-presentation_8c.html#ae8310421999887dd142866853914b95e", null ],
     [ "ev_view_presentation_goto_entry_grab_focus", "ev-view-presentation_8c.html#a43b4ff7a638ecc4a1a800aca7db1ecd7", null ],
     [ "ev_view_presentation_goto_window_button_press_event", "ev-view-presentation_8c.html#a6e0ec07df33747c8171e74484e8ffff0", null ],

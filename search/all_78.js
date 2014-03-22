@@ -40,5 +40,6 @@ var searchData=
   ['xpsdocument',['XPSDocument',['../xps-document_8h.html#ae52b2712a7d52e51d44966f55e4e7238',1,'xps-document.h']]],
   ['xpsdocumentclass',['XPSDocumentClass',['../xps-document_8h.html#a11b2c2c6c58c537330b631a0f96fe2fb',1,'xps-document.h']]],
   ['xresize',['xresize',['../common_8h.html#a697791a48690414944aa62d64f305fba',1,'common.h']]],
+  ['xscale',['xscale',['../structDviCairoDevice.html#ae759222de338025289c6a2a2b778a895',1,'DviCairoDevice']]],
   ['xstradd',['xstradd',['../util_8c.html#aac3503ab350d64e72b87e52ea64b4f83',1,'util.c']]]
 ];

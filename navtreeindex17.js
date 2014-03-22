@@ -1,5 +1,16 @@
 var NAVTREEINDEX17 =
 {
+"ev-spectre_8c.html#ad1697671c89c2e0aefb577f622074fc2":[7,0,0,0,4,0,12],
+"ev-spectre_8c.html#adbb563b00d083d4a86583d28fa8d53af":[7,0,0,0,4,0,6],
+"ev-spectre_8c.html#af521e8fbc1f8c1d4e065a28f639beaa7":[7,0,0,0,4,0,18],
+"ev-spectre_8c_source.html":[7,0,0,0,4,0],
+"ev-spectre_8h.html":[7,0,0,0,4,1],
+"ev-spectre_8h.html#a090b06ec25f2ac9acf31eb9d43285625":[7,0,0,0,4,1,8],
+"ev-spectre_8h.html#a090b5377dd2ad057216c17c687a31afd":[7,0,0,0,4,1,2],
+"ev-spectre_8h.html#a4f814403ffe03f8e221735f5cc54368c":[7,0,0,0,4,1,1],
+"ev-spectre_8h.html#a51ed4f8e1b3a06802fa05615fff3d877":[7,0,0,0,4,1,6],
+"ev-spectre_8h.html#a52381aeefcaca0834ff543e780272633":[7,0,0,0,4,1,7],
+"ev-spectre_8h.html#a58d354b7932023fcec78c401161e07a1":[7,0,0,0,4,1,3],
 "ev-spectre_8h.html#a677104d56b5e8a6a660c012a40a5874a":[7,0,0,0,4,1,0],
 "ev-spectre_8h.html#a997e04fcc0710c1429af1ee09d57e4a3":[7,0,0,0,4,1,4],
 "ev-spectre_8h.html#ab0b0e1538c6ab320b384eb0e3d85ab85":[7,0,0,0,4,1,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX17 =
 "ev-utils_8h.html#a47bd383086c9f5d0e94a488a2cee2602":[7,0,0,7,62,3],
 "ev-utils_8h.html#af0e9066a0a50a5aa2932e3eb90c1fc7d":[7,0,0,7,62,1],
 "ev-utils_8h.html#af3aecfc46da2c5d238c1336efcb89f12":[7,0,0,7,62,4],
-"ev-utils_8h_source.html":[7,0,0,7,62],
-"ev-view-accessible_8c.html":[7,0,0,4,22],
-"ev-view-accessible_8c.html#a07a16540c7cfecab8b011f3c61f59cdf":[7,0,0,4,22,21],
-"ev-view-accessible_8c.html#a09a709e8b7c7e763ffe3669dd42a9b3b":[7,0,0,4,22,45],
-"ev-view-accessible_8c.html#a104fd9e14291be25ac6125a6171c90f9":[7,0,0,4,22,5],
-"ev-view-accessible_8c.html#a13dfe87ac48896d9a88bbdd7940ddf6a":[7,0,0,4,22,50],
-"ev-view-accessible_8c.html#a1591165b3d4d3b14bca9f914244032f1":[7,0,0,4,22,31],
-"ev-view-accessible_8c.html#a1c38d2ac043a6160afd296fba5457d7c":[7,0,0,4,22,27],
-"ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67":[7,0,0,4,22,36],
-"ev-view-accessible_8c.html#a1d69ef34ec7e8de7939a2275f2c30b72":[7,0,0,4,22,33],
-"ev-view-accessible_8c.html#a1d844f14bb3d665f4ae92ba1667b56c0":[7,0,0,4,22,20],
-"ev-view-accessible_8c.html#a2285e940b9609cafe9b04fb39a1636dc":[7,0,0,4,22,43]
+"ev-utils_8h_source.html":[7,0,0,7,62]
 };

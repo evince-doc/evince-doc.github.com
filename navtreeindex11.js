@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"ev-link-action_8c.html#a7765f11a9e191cc06563cc272cad7566":[7,0,0,2,54,34],
+"ev-link-action_8c.html#a7fd7376afc4419334a213fd8054002bc":[7,0,0,2,54,3],
 "ev-link-action_8c.html#a82fef9ef1eac2d6e8764062b60cb0fbd":[7,0,0,2,54,19],
 "ev-link-action_8c.html#a99ccfcc2230663eabdb02bed43a8d936":[7,0,0,2,54,16],
 "ev-link-action_8c.html#a9b1c7256a79355457ed80872578d4e70":[7,0,0,2,54,30],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "ev-media-player-keys_8c_source.html":[7,0,0,7,25],
 "ev-media-player-keys_8h.html":[7,0,0,7,26],
 "ev-media-player-keys_8h.html#a16986e14e00bf9abb04003df6789a6e0":[7,0,0,7,26,6],
-"ev-media-player-keys_8h.html#a1bc9fda5d799b74de086ce9452b7afe5":[7,0,0,7,26,1],
-"ev-media-player-keys_8h.html#a4a3be2ab9ae0eac23258c865978be190":[7,0,0,7,26,8],
-"ev-media-player-keys_8h.html#a564ef42eaa8dee917f34c35f5236913c":[7,0,0,7,26,9]
+"ev-media-player-keys_8h.html#a1bc9fda5d799b74de086ce9452b7afe5":[7,0,0,7,26,1]
 };

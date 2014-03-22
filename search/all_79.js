@@ -6,5 +6,6 @@ var searchData=
   ['y_5foffset',['y_offset',['../struct____synctex__scanner__t.html#a0f0c39c893f6812770fe5665de04302f',1,'__synctex_scanner_t']]],
   ['yamt',['yamt',['../structPairKernData.html#a4e12c4f9cebdff67b012b20aa4e70c1d',1,'PairKernData']]],
   ['yconv',['YCONV',['../tfm_8c.html#a184922e3e59a69a3527e93e19e12699d',1,'tfm.c']]],
-  ['ymargin',['ymargin',['../structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e',1,'DviCairoDevice']]]
+  ['ymargin',['ymargin',['../structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e',1,'DviCairoDevice']]],
+  ['yscale',['yscale',['../structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46',1,'DviCairoDevice']]]
 ];

@@ -8,9 +8,13 @@ var ev_render_context_8h =
     [ "EV_TYPE_RENDER_CONTEXT", "ev-render-context_8h.html#adeb01fdff379ed2f8ed04eea3b327cda", null ],
     [ "EvRenderContext", "ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14", null ],
     [ "EvRenderContextClass", "ev-render-context_8h.html#a001a300872ef47b57edcea66109915ba", null ],
+    [ "ev_render_context_compute_scaled_size", "ev-render-context_8h.html#a82d69e01bc2df1e684d1313c2cba3423", null ],
+    [ "ev_render_context_compute_scales", "ev-render-context_8h.html#ab646313af51c2358c6686d31736fc752", null ],
+    [ "ev_render_context_compute_transformed_size", "ev-render-context_8h.html#a63a760bc053be7ef3eef52bd7b0ab6e7", null ],
     [ "ev_render_context_get_type", "ev-render-context_8h.html#a870511695fd31c837eb17a2baecdbaf8", null ],
     [ "ev_render_context_new", "ev-render-context_8h.html#ae9bbcf2e371b12de18631e834d58847b", null ],
     [ "ev_render_context_set_page", "ev-render-context_8h.html#ad3e3147feeb16372af72d2e3ef9724a9", null ],
     [ "ev_render_context_set_rotation", "ev-render-context_8h.html#a9136cedd9252cffb19281c6edff40a4f", null ],
-    [ "ev_render_context_set_scale", "ev-render-context_8h.html#a303e16f3ab4ae00cf97f9b03975a7a67", null ]
+    [ "ev_render_context_set_scale", "ev-render-context_8h.html#a303e16f3ab4ae00cf97f9b03975a7a67", null ],
+    [ "ev_render_context_set_target_size", "ev-render-context_8h.html#a9f3d3fea4f37c9bd54682eae5c7e38d4", null ]
 ];

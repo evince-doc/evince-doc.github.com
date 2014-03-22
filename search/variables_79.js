@@ -5,5 +5,6 @@ var searchData=
   ['y2',['y2',['../struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3',1,'_EvRectangle']]],
   ['y_5foffset',['y_offset',['../struct____synctex__scanner__t.html#a0f0c39c893f6812770fe5665de04302f',1,'__synctex_scanner_t']]],
   ['yamt',['yamt',['../structPairKernData.html#a4e12c4f9cebdff67b012b20aa4e70c1d',1,'PairKernData']]],
-  ['ymargin',['ymargin',['../structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e',1,'DviCairoDevice']]]
+  ['ymargin',['ymargin',['../structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e',1,'DviCairoDevice']]],
+  ['yscale',['yscale',['../structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46',1,'DviCairoDevice']]]
 ];

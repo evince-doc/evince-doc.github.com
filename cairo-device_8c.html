@@ -158,8 +158,8 @@ Functions</h2></td></tr>
 <tr class="separator:a817c229eff105e0aefb28d4508c02526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb521446530dce8f612736981059125e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cairo-device_8c.html#afb521446530dce8f612736981059125e">mdvi_cairo_device_set_margins</a> (<a class="el" href="mdvi_8h.html#a9d98ef1e1880f271d5afb1a6e9aaf3c4">DviDevice</a> *device, gint xmargin, gint ymargin)</td></tr>
 <tr class="separator:afb521446530dce8f612736981059125e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac15cb8b27be4a873674a07d29c9457cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cairo-device_8c.html#ac15cb8b27be4a873674a07d29c9457cf">mdvi_cairo_device_set_scale</a> (<a class="el" href="mdvi_8h.html#a9d98ef1e1880f271d5afb1a6e9aaf3c4">DviDevice</a> *device, gdouble scale)</td></tr>
-<tr class="separator:ac15cb8b27be4a873674a07d29c9457cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe46dcda5b2223005774080f9b7e93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cairo-device_8c.html#abfe46dcda5b2223005774080f9b7e93c">mdvi_cairo_device_set_scale</a> (<a class="el" href="mdvi_8h.html#a9d98ef1e1880f271d5afb1a6e9aaf3c4">DviDevice</a> *device, gdouble xscale, gdouble yscale)</td></tr>
+<tr class="separator:abfe46dcda5b2223005774080f9b7e93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a3808e67c61d1a3f6a1f051bb963ba99c"></a>
@@ -369,50 +369,50 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cairo-device_8c_source.html#l00043">43</a> of file <a class="el" href="cairo-device_8c_source.html">cairo-device.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a>  *cairo_device;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span>              x, y, w, h;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    gboolean         isbox;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="struct__DviGlyph.html">DviGlyph</a>        *glyph;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    cairo_surface_t *surface;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) dvi-&gt;<a class="code" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    glyph = &amp;ch-&gt;<a class="code" href="struct__DviFontChar.html#a3033510cc3827364c66eeafc8cc772ee">grey</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    isbox = (glyph-&gt;<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a> == NULL ||</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;             (dvi-&gt;<a class="code" href="struct__DviContext.html#aea4196ee2845510e3924e2f94d1c88bc">params</a>.<a class="code" href="struct__DviParams.html#a44ebb1e8950af2383eae7df5af488d3b">flags</a> &amp; <a class="code" href="mdvi_8h.html#ad6b6ec9785fe5f9add019f3c54ad2528">MDVI_PARAM_CHARBOXES</a>) ||</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;             <a class="code" href="mdvi_8h.html#ac4e78878afe4e5f63d9b4ad4f381d097">MDVI_GLYPH_ISEMPTY</a> (glyph-&gt;<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a>));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    x = - glyph-&gt;<a class="code" href="struct__DviGlyph.html#ab71a1f2f66995d292ab6cc3a5278aa97">x</a> + x0 + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8">xmargin</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    y = - glyph-&gt;<a class="code" href="struct__DviGlyph.html#aba038ef683f62f8691c6ab1082ca4b5e">y</a> + y0 + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e">ymargin</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    w = glyph-&gt;<a class="code" href="struct__DviGlyph.html#a642daa10b01dd9d14e3f9c653a1e4235">w</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    h = glyph-&gt;<a class="code" href="struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6">h</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    surface = cairo_get_target (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (x &lt; 0 || y &lt; 0</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        || x + w &gt; cairo_image_surface_get_width (surface)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        || y + h &gt; cairo_image_surface_get_height (surface))</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    cairo_save (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (isbox) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        cairo_rectangle (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                 x - cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8">xmargin</a>,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 y - cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e">ymargin</a>,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                 w, h);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        cairo_stroke (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        cairo_translate (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>, x, y);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        cairo_set_source_surface (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                      (cairo_surface_t *) glyph-&gt;<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a>,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                      0, 0);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        cairo_paint (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    cairo_restore (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<p>Definition at line <a class="el" href="cairo-device_8c_source.html#l00044">44</a> of file <a class="el" href="cairo-device_8c_source.html">cairo-device.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a>  *cairo_device;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span>              x, y, w, h;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    gboolean         isbox;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="struct__DviGlyph.html">DviGlyph</a>        *glyph;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    cairo_surface_t *surface;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) dvi-&gt;<a class="code" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    glyph = &amp;ch-&gt;<a class="code" href="struct__DviFontChar.html#a3033510cc3827364c66eeafc8cc772ee">grey</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    isbox = (glyph-&gt;<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a> == NULL ||</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;             (dvi-&gt;<a class="code" href="struct__DviContext.html#aea4196ee2845510e3924e2f94d1c88bc">params</a>.<a class="code" href="struct__DviParams.html#a44ebb1e8950af2383eae7df5af488d3b">flags</a> &amp; <a class="code" href="mdvi_8h.html#ad6b6ec9785fe5f9add019f3c54ad2528">MDVI_PARAM_CHARBOXES</a>) ||</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;             <a class="code" href="mdvi_8h.html#ac4e78878afe4e5f63d9b4ad4f381d097">MDVI_GLYPH_ISEMPTY</a> (glyph-&gt;<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a>));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    x = - glyph-&gt;<a class="code" href="struct__DviGlyph.html#ab71a1f2f66995d292ab6cc3a5278aa97">x</a> + x0 + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8">xmargin</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    y = - glyph-&gt;<a class="code" href="struct__DviGlyph.html#aba038ef683f62f8691c6ab1082ca4b5e">y</a> + y0 + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e">ymargin</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    w = glyph-&gt;<a class="code" href="struct__DviGlyph.html#a642daa10b01dd9d14e3f9c653a1e4235">w</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    h = glyph-&gt;<a class="code" href="struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6">h</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    surface = cairo_get_target (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (x &lt; 0 || y &lt; 0</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        || x + w &gt; cairo_image_surface_get_width (surface)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        || y + h &gt; cairo_image_surface_get_height (surface))</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    cairo_save (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (isbox) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        cairo_rectangle (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 x - cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8">xmargin</a>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                 y - cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e">ymargin</a>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                 w, h);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        cairo_stroke (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        cairo_translate (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>, x, y);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        cairo_set_source_surface (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                      (cairo_surface_t *) glyph-&gt;<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a>,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                      0, 0);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        cairo_paint (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    cairo_restore (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -482,28 +482,27 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cairo-device_8c_source.html#l00092">92</a> of file <a class="el" href="cairo-device_8c_source.html">cairo-device.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *cairo_device;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="sysdeps_8h.html#ae896befe19461ac700776e254bb8d34d">Ulong</a>           color;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) dvi-&gt;<a class="code" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    color = cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#a1c7a2671b9d81c7f118c1122bf1061a5">fg</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    cairo_save (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    cairo_set_line_width (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                  cairo_get_line_width (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>) * cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab25967a615f9a0568977e478efec16a4">scale</a>);</div>
+<p>Definition at line <a class="el" href="cairo-device_8c_source.html#l00093">93</a> of file <a class="el" href="cairo-device_8c_source.html">cairo-device.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *cairo_device;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="sysdeps_8h.html#ae896befe19461ac700776e254bb8d34d">Ulong</a>           color;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) dvi-&gt;<a class="code" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    color = cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#a1c7a2671b9d81c7f118c1122bf1061a5">fg</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    cairo_save (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    cairo_scale (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>, cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ae759222de338025289c6a2a2b778a895">xscale</a>, cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46">yscale</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    cairo_set_source_rgb (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>,</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                  ((color &gt;&gt; 16) &amp; 0xff) / 255.,</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                  ((color &gt;&gt; 8) &amp; 0xff) / 255.,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                  ((color &gt;&gt; 0) &amp; 0xff) / 255.);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    cairo_rectangle (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;             x + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8">xmargin</a>,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;             y + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e">ymargin</a>,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;             width, height);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;             (x + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8">xmargin</a>) / cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ae759222de338025289c6a2a2b778a895">xscale</a>,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;             (y + cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e">ymargin</a>) / cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46">yscale</a>,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;             width / cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ae759222de338025289c6a2a2b778a895">xscale</a>, height / cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46">yscale</a>);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (fill == 0) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        cairo_stroke (cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76">cr</a>);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    } <span class="keywordflow">else</span> {</div>
@@ -957,7 +956,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac15cb8b27be4a873674a07d29c9457cf"></a>
+<a class="anchor" id="abfe46dcda5b2223005774080f9b7e93c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -971,7 +970,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">gdouble&#160;</td>
-          <td class="paramname"><em>scale</em>&#160;</td>
+          <td class="paramname"><em>xscale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble&#160;</td>
+          <td class="paramname"><em>yscale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -982,20 +987,21 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cairo-device_8c_source.html#l00364">364</a> of file <a class="el" href="cairo-device_8c_source.html">cairo-device.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *cairo_device;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) device-&gt;<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ab25967a615f9a0568977e478efec16a4">scale</a> = scale;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *cairo_device;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    cairo_device = (<a class="code" href="structDviCairoDevice.html">DviCairoDevice</a> *) device-&gt;<a class="code" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ae759222de338025289c6a2a2b778a895">xscale</a> = xscale;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    cairo_device-&gt;<a class="code" href="structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46">yscale</a> = yscale;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="cairo-device_8c_ac15cb8b27be4a873674a07d29c9457cf_icgraph.svg" width="584" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="cairo-device_8c_abfe46dcda5b2223005774080f9b7e93c_icgraph.svg" width="584" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1008,7 +1014,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="cairo-device_8c.html">cairo-device.c</a></li>
-    <li class="footer">Generated on Sat Mar 22 2014 12:34:40 for Evince by
+    <li class="footer">Generated on Sat Mar 22 2014 15:01:34 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -159,31 +159,50 @@ $(document).ready(function(){initNavTree('ev-render-context_8h_source.html','');
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="struct__EvRenderContext.html#a6f0697b49bef97c40b451e93fbcdeb9b">   50</a></span>&#160;    <a class="code" href="struct__EvPage.html">EvPage</a> *<a class="code" href="struct__EvRenderContext.html#a6f0697b49bef97c40b451e93fbcdeb9b">page</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="struct__EvRenderContext.html#ab67e9c0256667791b0f3d70b2a50820f">   51</a></span>&#160;    gint    <a class="code" href="struct__EvRenderContext.html#ab67e9c0256667791b0f3d70b2a50820f">rotation</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="struct__EvRenderContext.html#a826f0f75a0d4ad1a2abc7ba9f3c5357d">   52</a></span>&#160;    gdouble <a class="code" href="struct__EvRenderContext.html#a826f0f75a0d4ad1a2abc7ba9f3c5357d">scale</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;GType            <a class="code" href="ev-render-context_8h.html#a870511695fd31c837eb17a2baecdbaf8">ev_render_context_get_type</a>        (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *<a class="code" href="ev-render-context_8c.html#ae9bbcf2e371b12de18631e834d58847b">ev_render_context_new</a>             (<a class="code" href="struct__EvPage.html">EvPage</a>          *page,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                            gint             rotation,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                            gdouble          scale);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#ad3e3147feeb16372af72d2e3ef9724a9">ev_render_context_set_page</a>        (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                            <a class="code" href="struct__EvPage.html">EvPage</a>          *page);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#a713f1ec61ebc4d7a61e347219e1445ea">ev_render_context_set_rotation</a>    (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                            gint             rotation);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#a303e16f3ab4ae00cf97f9b03975a7a67">ev_render_context_set_scale</a>       (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                            gdouble          scale);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !EV_RENDER_CONTEXT */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="struct__EvRenderContext.html#a3418282f06d9ef35cc83720a0606fcce">   53</a></span>&#160;    gint    <a class="code" href="struct__EvRenderContext.html#a3418282f06d9ef35cc83720a0606fcce">target_width</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="struct__EvRenderContext.html#ae9f0852254edc572d2115f82c28fc60d">   54</a></span>&#160;    gint    <a class="code" href="struct__EvRenderContext.html#ae9f0852254edc572d2115f82c28fc60d">target_height</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;GType            <a class="code" href="ev-render-context_8h.html#a870511695fd31c837eb17a2baecdbaf8">ev_render_context_get_type</a>        (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *<a class="code" href="ev-render-context_8c.html#ae9bbcf2e371b12de18631e834d58847b">ev_render_context_new</a>             (<a class="code" href="struct__EvPage.html">EvPage</a>          *page,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            gint             rotation,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                            gdouble          scale);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#ad3e3147feeb16372af72d2e3ef9724a9">ev_render_context_set_page</a>        (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                            <a class="code" href="struct__EvPage.html">EvPage</a>          *page);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#a713f1ec61ebc4d7a61e347219e1445ea">ev_render_context_set_rotation</a>    (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                            gint             rotation);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#a303e16f3ab4ae00cf97f9b03975a7a67">ev_render_context_set_scale</a>       (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                            gdouble          scale);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#a9f3d3fea4f37c9bd54682eae5c7e38d4">ev_render_context_set_target_size</a> (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                    <span class="keywordtype">int</span>              target_width,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                    <span class="keywordtype">int</span>              target_height);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a>      (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                             <span class="keywordtype">double</span>           width_points,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                             <span class="keywordtype">double</span>           height_points,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                             <span class="keywordtype">int</span>             *scaled_width,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                             <span class="keywordtype">int</span>             *scaled_height);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#a63a760bc053be7ef3eef52bd7b0ab6e7">ev_render_context_compute_transformed_size</a> (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                             <span class="keywordtype">double</span>       width_points,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                             <span class="keywordtype">double</span>       height_points,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                             <span class="keywordtype">int</span>         *transformed_width,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                             <span class="keywordtype">int</span>         *transformed_height);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span>             <a class="code" href="ev-render-context_8c.html#ab646313af51c2358c6686d31736fc752">ev_render_context_compute_scales</a>  (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                    <span class="keywordtype">double</span>           width_points,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                    <span class="keywordtype">double</span>           height_points,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                    <span class="keywordtype">double</span>          *scale_x,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                    <span class="keywordtype">double</span>          *scale_y);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !EV_RENDER_CONTEXT */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-render-context_8h.html">ev-render-context.h</a></li>
-    <li class="footer">Generated on Sat Mar 22 2014 12:34:38 for Evince by
+    <li class="footer">Generated on Sat Mar 22 2014 15:01:33 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

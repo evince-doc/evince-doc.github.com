@@ -14,5 +14,5 @@ var cairo_device_8c =
     [ "mdvi_cairo_device_init", "cairo-device_8c.html#abee34d00e9d6307afd567299e52e627c", null ],
     [ "mdvi_cairo_device_render", "cairo-device_8c.html#a817c229eff105e0aefb28d4508c02526", null ],
     [ "mdvi_cairo_device_set_margins", "cairo-device_8c.html#afb521446530dce8f612736981059125e", null ],
-    [ "mdvi_cairo_device_set_scale", "cairo-device_8c.html#ac15cb8b27be4a873674a07d29c9457cf", null ]
+    [ "mdvi_cairo_device_set_scale", "cairo-device_8c.html#abfe46dcda5b2223005774080f9b7e93c", null ]
 ];

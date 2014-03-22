@@ -1,5 +1,17 @@
 var NAVTREEINDEX28 =
 {
+"struct__EvDocumentInfo.html#a52e9b79e9ecfd66457ffa7111c7e73a9":[6,0,80,12],
+"struct__EvDocumentInfo.html#a534788ac6111159d79973aeb2242ba15":[6,0,80,18],
+"struct__EvDocumentInfo.html#a544b3c7a01606378e39049bc490689d4":[6,0,80,11],
+"struct__EvDocumentInfo.html#a5c1437c98ad4deba4495a7e6e217228d":[6,0,80,17],
+"struct__EvDocumentInfo.html#a5cf65e376128562782ea6e759e180b6f":[6,0,80,19],
+"struct__EvDocumentInfo.html#a65db7188bb271fe107a7d875001623a8":[6,0,80,10],
+"struct__EvDocumentInfo.html#a75e628bfa7b21b6002fb97dcee2d8f19":[6,0,80,1],
+"struct__EvDocumentInfo.html#a96fd22cde6281f75080e1deac18b6b13":[6,0,80,6],
+"struct__EvDocumentInfo.html#a9cdd709c34d809e8d3ec6a51d3e27625":[6,0,80,0],
+"struct__EvDocumentInfo.html#ab1028387055a58ed2175db68708cc86e":[6,0,80,13],
+"struct__EvDocumentInfo.html#ab55f1b599760b13e5ee0e059a11e5a83":[6,0,80,9],
+"struct__EvDocumentInfo.html#ac912d79da5a22086f2ca7dee10120237":[6,0,80,15],
 "struct__EvDocumentInfo.html#ad8a963857d068cbdf17508c0bcb468eb":[6,0,80,14],
 "struct__EvDocumentInfo.html#af30f2daecf101cd7fcc578e860ed0e6e":[6,0,80,16],
 "struct__EvDocumentLayersInterface.html":[6,0,81],
@@ -237,17 +249,5 @@ var NAVTREEINDEX28 =
 "struct__EvJobExport.html#ab91046a9efcdf677d654162d6540f78d":[6,0,130,0],
 "struct__EvJobExport.html#af4e36ff283247c57979acdfd503d54f9":[6,0,130,2],
 "struct__EvJobExportClass.html":[6,0,131],
-"struct__EvJobExportClass.html#a22fd33fe8fadcfe827e1824f47e86a4e":[6,0,131,0],
-"struct__EvJobFind.html":[6,0,132],
-"struct__EvJobFind.html#a177e9b4c317c75765753087a397538c5":[6,0,132,6],
-"struct__EvJobFind.html#a3e273b1de436e529202535f1db807787":[6,0,132,4],
-"struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1":[6,0,132,3],
-"struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c":[6,0,132,5],
-"struct__EvJobFind.html#a8ba9a105844128bade72fda996bb7a53":[6,0,132,2],
-"struct__EvJobFind.html#aa6693a0753a31260db8489b05bec046d":[6,0,132,0],
-"struct__EvJobFind.html#abf9c24ee0045a37f09786b70ef72e51d":[6,0,132,8],
-"struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f":[6,0,132,1],
-"struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743":[6,0,132,7],
-"struct__EvJobFindClass.html":[6,0,133],
-"struct__EvJobFindClass.html#a140af56ecadd47982e0fa196735f3a4b":[6,0,133,0]
+"struct__EvJobExportClass.html#a22fd33fe8fadcfe827e1824f47e86a4e":[6,0,131,0]
 };

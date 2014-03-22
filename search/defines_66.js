@@ -10,6 +10,7 @@ var searchData=
   ['firstshift',['FIRSTSHIFT',['../bitmap_8h.html#aeef84314f0f1ba06c44242f90f317014',1,'bitmap.h']]],
   ['firstshiftat',['FIRSTSHIFTAT',['../bitmap_8h.html#a0b4585a091693723c56072f0270ca205',1,'bitmap.h']]],
   ['flags',['FLAGS',['../afmparse_8h.html#a6ccad09b4a2a06ae178418fdccf5940d',1,'afmparse.h']]],
+  ['flip_5fdimensions',['FLIP_DIMENSIONS',['../ev-render-context_8c.html#a562aa998be31272bda9417c22bf6a1e7',1,'ev-render-context.c']]],
   ['font_5ffree_5fglyph',['font_free_glyph',['../mdvi_8h.html#ae1a8d6af27a451e019b65716f76a9f4f',1,'mdvi.h']]],
   ['font_5fglyph_5fcount',['FONT_GLYPH_COUNT',['../mdvi_8h.html#aff6833a16025ecf75e88995fd4d243f4',1,'mdvi.h']]],
   ['fontchar',['FONTCHAR',['../mdvi_8h.html#a81a9a7d6197953f35cc43ef37809b5e6',1,'mdvi.h']]],

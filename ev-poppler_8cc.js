@@ -13,7 +13,7 @@ var ev_poppler_8cc =
     [ "build_layers_tree", "ev-poppler_8cc.html#ad08746a782fdefc2cdbd5088559948a6", null ],
     [ "build_tree", "ev-poppler_8cc.html#a8a141192be04efaca347f039bc5c0cfd", null ],
     [ "convert_error", "ev-poppler_8cc.html#a9456ee36df70fca6b1529f74873d6071", null ],
-    [ "create_region_from_poppler_region", "ev-poppler_8cc.html#a40aa2add11092c6940cfaa7d670dcd9c", null ],
+    [ "create_region_from_poppler_region", "ev-poppler_8cc.html#ab520972f9115099e197bb1afba5e1590", null ],
     [ "ev_annot_from_poppler_annot", "ev-poppler_8cc.html#ac89b903bb41f6e8ef2bf2a736c158f6b", null ],
     [ "EV_BACKEND_REGISTER_WITH_CODE", "ev-poppler_8cc.html#a38bba192feb175f48a806f5e4fb13470", null ],
     [ "ev_form_field_from_poppler_field", "ev-poppler_8cc.html#aa5ebd310f1fad0bd85c0e74d797e836b", null ],

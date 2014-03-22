@@ -338,70 +338,70 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01239">1239</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;{</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *selection;</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    GList *retval = NULL;</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    <span class="keywordtype">int</span> page;</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-pixbuf-cache_8h.html#a66518808252f701f9a3cf8f27e68eee5">EV_IS_PIXBUF_CACHE</a> (pixbuf_cache), NULL);</div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> == -1 || pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a8356ba055837b87fcb5d8c24215d383a">end_page</a> == -1)</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;    <span class="comment">/* We check each area to see what needs updating, and what needs freeing; */</span></div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> - pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>;</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;        <span class="keywordflow">if</span> (page &lt; 0) {</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;            page ++;</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01252">1252</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;{</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    <a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *selection;</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    GList *retval = NULL;</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    <span class="keywordtype">int</span> page;</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> != -1) {</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;            selection = g_slice_new0 (<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a>);</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa">page</a> = page;</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc">rect</a> = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>;</div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;            <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                selection-&gt;<a class="code" href="struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc">covered_region</a> = cairo_region_reference (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;            retval = g_list_prepend (retval, selection);</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;        }</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;        </div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;        page ++;</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;    }</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a>;</div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b">PAGE_CACHE_LEN</a> (pixbuf_cache); i++) {</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> != -1) {</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;            selection = g_slice_new0 (<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a>);</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa">page</a> = page;</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc">rect</a> = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>;</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;            <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;                selection-&gt;<a class="code" href="struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc">covered_region</a> = cairo_region_reference (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;            retval = g_list_prepend (retval, selection);</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;        }</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;        </div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;        page ++;</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;    }</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;        <span class="keywordflow">if</span> (page &gt;= <a class="code" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> != -1) {</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;            selection = g_slice_new0 (<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a>);</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa">page</a> = page;</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc">rect</a> = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>;</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;            <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;                selection-&gt;<a class="code" href="struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc">covered_region</a> = cairo_region_reference (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;            retval = g_list_prepend (retval, selection);</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        }</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        </div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;        page ++;</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;    }</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <span class="keywordflow">return</span> g_list_reverse (retval);</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;}</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-pixbuf-cache_8h.html#a66518808252f701f9a3cf8f27e68eee5">EV_IS_PIXBUF_CACHE</a> (pixbuf_cache), NULL);</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> == -1 || pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a8356ba055837b87fcb5d8c24215d383a">end_page</a> == -1)</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    <span class="comment">/* We check each area to see what needs updating, and what needs freeing; */</span></div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> - pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>;</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;        <span class="keywordflow">if</span> (page &lt; 0) {</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;            page ++;</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;        }</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> != -1) {</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;            selection = g_slice_new0 (<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a>);</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa">page</a> = page;</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc">rect</a> = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>;</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;            <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;                selection-&gt;<a class="code" href="struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc">covered_region</a> = cairo_region_reference (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;            retval = g_list_prepend (retval, selection);</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;        }</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;        </div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;        page ++;</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;    }</div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;</div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a>;</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b">PAGE_CACHE_LEN</a> (pixbuf_cache); i++) {</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> != -1) {</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;            selection = g_slice_new0 (<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a>);</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa">page</a> = page;</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc">rect</a> = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>;</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;            <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;                selection-&gt;<a class="code" href="struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc">covered_region</a> = cairo_region_reference (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;            retval = g_list_prepend (retval, selection);</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;        }</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        </div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        page ++;</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    }</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;        <span class="keywordflow">if</span> (page &gt;= <a class="code" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> != -1) {</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;            selection = g_slice_new0 (<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a>);</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa">page</a> = page;</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;            selection-&gt;<a class="code" href="struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc">rect</a> = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>;</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;            <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                selection-&gt;<a class="code" href="struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc">covered_region</a> = cairo_region_reference (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a>[i].<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;            retval = g_list_prepend (retval, selection);</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;        }</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        </div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        page ++;</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    }</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    <span class="keywordflow">return</span> g_list_reverse (retval);</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -445,59 +445,66 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01066">1066</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;{</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;    <a class="code" href="struct__CacheJobInfo.html">CacheJobInfo</a> *job_info;</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    <span class="comment">/* the document does not implement the selection interface */</span></div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    job_info = <a class="code" href="ev-pixbuf-cache_8c.html#acdac353ae4d2292dccc6a3c44d02ae86">find_job_cache</a> (pixbuf_cache, page);</div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;    <span class="keywordflow">if</span> (job_info == NULL)</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    <span class="comment">/* No selection on this page */</span></div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    <span class="keywordflow">if</span> (!job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a182e875a86c05f3edfde38b638d77d5e">points_set</a>)</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    <span class="comment">/* If we have a running job, we just return what we have under the</span></div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;<span class="comment">     * assumption that it&#39;ll be updated later and we can scale it as need</span></div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;<span class="comment">     * be */</span></div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp; <a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;include_selection)</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> &amp;&amp; !cairo_region_is_empty(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>) ?</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;                        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> : NULL;</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    <span class="comment">/* Now, lets see if we need to resize the region.  If we do, we clear the</span></div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;<span class="comment">     * old one. */</span></div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    <a class="code" href="ev-pixbuf-cache_8c.html#aa754959da54a884a746bfdfef6a4ab1e">clear_selection_region_if_needed</a> (pixbuf_cache, job_info, page, scale);</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;    <span class="comment">/* Finally, we see if the two scales are the same, and get a new region</span></div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;<span class="comment">     * if needed.</span></div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-document_8c.html#a850cc72b0c0132355a72d5e39afbda26">ev_rect_cmp</a> (&amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>), &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a4fcb3e37c95ccff4a7a5f5857f6dc7f0">selection_region_points</a>))) {</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;        <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc;</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;        <a class="code" href="struct__EvPage.html">EvPage</a> *ev_page;</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;        <a class="code" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;        ev_page = <a class="code" href="ev-document_8c.html#ad67d3d41cd55132a88bc4d6189d019d9">ev_document_get_page</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>, page);</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;        rc = <a class="code" href="ev-render-context_8c.html#ae9bbcf2e371b12de18631e834d58847b">ev_render_context_new</a> (ev_page, 0, scale);</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        g_object_unref (ev_page);</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;            cairo_region_destroy (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> =</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;            <a class="code" href="ev-selection_8c.html#a911c7036047b37116f0697f7df593279">ev_selection_get_selection_region</a> (<a class="code" href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>),</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;                               rc, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f">selection_style</a>,</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;                               &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>));</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a4fcb3e37c95ccff4a7a5f5857f6dc7f0">selection_region_points</a> = job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>;</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ae5e58f1b1a94f0e2c26c49f697d4d601">selection_region_scale</a> = scale;</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;        g_object_unref (rc);</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        <a class="code" href="ev-document_8c.html#aae33adc478ec91a4569bee55327e9e5f">ev_document_doc_mutex_unlock</a> ();</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    }</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;    <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> &amp;&amp; !cairo_region_is_empty(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>) ?</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;                job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> : NULL;</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01072">1072</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;{</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    <a class="code" href="struct__CacheJobInfo.html">CacheJobInfo</a> *job_info;</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    <span class="comment">/* the document does not implement the selection interface */</span></div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;    job_info = <a class="code" href="ev-pixbuf-cache_8c.html#acdac353ae4d2292dccc6a3c44d02ae86">find_job_cache</a> (pixbuf_cache, page);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    <span class="keywordflow">if</span> (job_info == NULL)</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;    <span class="comment">/* No selection on this page */</span></div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    <span class="keywordflow">if</span> (!job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a182e875a86c05f3edfde38b638d77d5e">points_set</a>)</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;    <span class="comment">/* If we have a running job, we just return what we have under the</span></div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;<span class="comment">     * assumption that it&#39;ll be updated later and we can scale it as need</span></div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;<span class="comment">     * be */</span></div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp; <a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;include_selection)</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;        <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> &amp;&amp; !cairo_region_is_empty(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>) ?</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;                        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> : NULL;</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;    <span class="comment">/* Now, lets see if we need to resize the region.  If we do, we clear the</span></div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;<span class="comment">     * old one. */</span></div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    <a class="code" href="ev-pixbuf-cache_8c.html#aa754959da54a884a746bfdfef6a4ab1e">clear_selection_region_if_needed</a> (pixbuf_cache, job_info, page, scale);</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    <span class="comment">/* Finally, we see if the two scales are the same, and get a new region</span></div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;<span class="comment">     * if needed.</span></div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-document_8c.html#a850cc72b0c0132355a72d5e39afbda26">ev_rect_cmp</a> (&amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>), &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a4fcb3e37c95ccff4a7a5f5857f6dc7f0">selection_region_points</a>))) {</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc;</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        <a class="code" href="struct__EvPage.html">EvPage</a> *ev_page;</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        gint width, height;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        <a class="code" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;        ev_page = <a class="code" href="ev-document_8c.html#ad67d3d41cd55132a88bc4d6189d019d9">ev_document_get_page</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>, page);</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;        <a class="code" href="ev-view-private_8h.html#af51d374635b49a10eb30711e9a5909c1">_get_page_size_for_scale_and_rotation</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>,</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;                               page, scale, 0,</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;                               &amp;width, &amp;height);</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        rc = <a class="code" href="ev-render-context_8c.html#ae9bbcf2e371b12de18631e834d58847b">ev_render_context_new</a> (ev_page, 0, 0.);</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        <a class="code" href="ev-render-context_8c.html#a9f3d3fea4f37c9bd54682eae5c7e38d4">ev_render_context_set_target_size</a> (rc, width, height);</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        g_object_unref (ev_page);</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>)</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;            cairo_region_destroy (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>);</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> =</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;            <a class="code" href="ev-selection_8c.html#a911c7036047b37116f0697f7df593279">ev_selection_get_selection_region</a> (<a class="code" href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>),</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;                               rc, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f">selection_style</a>,</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;                               &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>));</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a4fcb3e37c95ccff4a7a5f5857f6dc7f0">selection_region_points</a> = job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>;</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ae5e58f1b1a94f0e2c26c49f697d4d601">selection_region_scale</a> = scale;</div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;        g_object_unref (rc);</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;        <a class="code" href="ev-document_8c.html#aae33adc478ec91a4569bee55327e9e5f">ev_document_doc_mutex_unlock</a> ();</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    }</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> &amp;&amp; !cairo_region_is_empty(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a>) ?</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;                job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d">selection_region</a> : NULL;</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -577,34 +584,40 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        GdkColor text, base;</div>
 <div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc;</div>
 <div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;        <a class="code" href="struct__EvPage.html">EvPage</a> *ev_page;</div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;        <span class="comment">/* we need to get a new selection pixbuf */</span></div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        <a class="code" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> &lt; 0) {</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;            g_assert (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180">selection</a> == NULL);</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;            old_points = NULL;</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;            old_points = &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>);</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        }</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;        ev_page = <a class="code" href="ev-document_8c.html#ad67d3d41cd55132a88bc4d6189d019d9">ev_document_get_page</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>, page);</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        rc = <a class="code" href="ev-render-context_8c.html#ae9bbcf2e371b12de18631e834d58847b">ev_render_context_new</a> (ev_page, 0, scale);</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        g_object_unref (ev_page);</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#a332f75bfe4ad30a21878d591b7a6ecfd">get_selection_colors</a> (<a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#af9a58642979feddfbf19aa107d5eafd4">view</a>), &amp;text, &amp;base);</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;        <a class="code" href="ev-selection_8c.html#ac1ea9d79653b48af9b5064e01a831715">ev_selection_render_selection</a> (<a class="code" href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>),</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;                           rc, &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180">selection</a>),</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;                           &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>),</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;                           old_points,</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;                           job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f">selection_style</a>,</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;                           &amp;text, &amp;base);</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a> = job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>;</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a89c890e1a97289a4970801427e2e69f2">selection_scale</a> = scale;</div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;        g_object_unref (rc);</div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;        <a class="code" href="ev-document_8c.html#aae33adc478ec91a4569bee55327e9e5f">ev_document_doc_mutex_unlock</a> ();</div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;    }</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;    <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180">selection</a>;</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;}</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;        gint width, height;</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        <span class="comment">/* we need to get a new selection pixbuf */</span></div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        <a class="code" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;        <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>.<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> &lt; 0) {</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;            g_assert (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180">selection</a> == NULL);</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;            old_points = NULL;</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;            old_points = &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a>);</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        }</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        ev_page = <a class="code" href="ev-document_8c.html#ad67d3d41cd55132a88bc4d6189d019d9">ev_document_get_page</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>, page);</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;                <a class="code" href="ev-view-private_8h.html#af51d374635b49a10eb30711e9a5909c1">_get_page_size_for_scale_and_rotation</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>,</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;                                                       page, scale, 0,</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;                                                       &amp;width, &amp;height);</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;                rc = <a class="code" href="ev-render-context_8c.html#ae9bbcf2e371b12de18631e834d58847b">ev_render_context_new</a> (ev_page, 0, 0.);</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;                <a class="code" href="ev-render-context_8c.html#a9f3d3fea4f37c9bd54682eae5c7e38d4">ev_render_context_set_target_size</a> (rc, width, height);</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;        g_object_unref (ev_page);</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#a332f75bfe4ad30a21878d591b7a6ecfd">get_selection_colors</a> (<a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#af9a58642979feddfbf19aa107d5eafd4">view</a>), &amp;text, &amp;base);</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        <a class="code" href="ev-selection_8c.html#ac1ea9d79653b48af9b5064e01a831715">ev_selection_render_selection</a> (<a class="code" href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>),</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;                           rc, &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180">selection</a>),</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;                           &amp;(job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>),</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;                           old_points,</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;                           job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f">selection_style</a>,</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;                           &amp;text, &amp;base);</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d">selection_points</a> = job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18">target_points</a>;</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;        job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a89c890e1a97289a4970801427e2e69f2">selection_scale</a> = scale;</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;        g_object_unref (rc);</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;        <a class="code" href="ev-document_8c.html#aae33adc478ec91a4569bee55327e9e5f">ev_document_doc_mutex_unlock</a> ();</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    }</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;    <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180">selection</a>;</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -789,22 +802,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01305">1305</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;{</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <a class="code" href="struct__CacheJobInfo.html">CacheJobInfo</a> *job_info;</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        gint width, height;</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    job_info = <a class="code" href="ev-pixbuf-cache_8c.html#acdac353ae4d2292dccc6a3c44d02ae86">find_job_cache</a> (pixbuf_cache, page);</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;    <span class="keywordflow">if</span> (job_info == NULL)</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;    <a class="code" href="ev-view-private_8h.html#af51d374635b49a10eb30711e9a5909c1">_get_page_size_for_scale_and_rotation</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>,</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;                           page, scale, rotation,</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;                           &amp;width, &amp;height);</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#ae22d5fb5273a58e1da3dd6a62e12704f">add_job</a> (pixbuf_cache, job_info, region,</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;         width, height, page, rotation, scale,</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;         <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a315e9f24ccc1e00f6927057147023435">EV_JOB_PRIORITY_URGENT</a>);</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01318">1318</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;{</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;    <a class="code" href="struct__CacheJobInfo.html">CacheJobInfo</a> *job_info;</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        gint width, height;</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    job_info = <a class="code" href="ev-pixbuf-cache_8c.html#acdac353ae4d2292dccc6a3c44d02ae86">find_job_cache</a> (pixbuf_cache, page);</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    <span class="keywordflow">if</span> (job_info == NULL)</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;    <a class="code" href="ev-view-private_8h.html#af51d374635b49a10eb30711e9a5909c1">_get_page_size_for_scale_and_rotation</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>,</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;                           page, scale, rotation,</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;                           &amp;width, &amp;height);</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#ae22d5fb5273a58e1da3dd6a62e12704f">add_job</a> (pixbuf_cache, job_info, region,</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;         width, height, page, rotation, scale,</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;         <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a315e9f24ccc1e00f6927057147023435">EV_JOB_PRIORITY_URGENT</a>);</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1031,86 +1044,86 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01153">1153</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;{</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;    <a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *selection;</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;    GList *list = selection_list;</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    <span class="keywordtype">int</span> page;</div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    g_return_if_fail (<a class="code" href="ev-pixbuf-cache_8h.html#a66518808252f701f9a3cf8f27e68eee5">EV_IS_PIXBUF_CACHE</a> (pixbuf_cache));</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> == -1 || pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a8356ba055837b87fcb5d8c24215d383a">end_page</a> == -1)</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;    <span class="comment">/* We check each area to see what needs updating, and what needs freeing; */</span></div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> - pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>;</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;        <span class="keywordflow">if</span> (page &lt; 0) {</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;            page ++;</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        }</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;        selection = NULL;</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;        <span class="keywordflow">while</span> (list) {</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;            <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page == page) {</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                selection = list-&gt;data;</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page &gt; page) </div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;            list = list-&gt;next;</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        }</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;</div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;        <span class="keywordflow">if</span> (selection)</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a7dd27bc591c4a8d6c8b35d1d2b1e87a0">update_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a> + i, selection);</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946">clear_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a> + i);</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        page ++;</div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    }</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a>;</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b">PAGE_CACHE_LEN</a> (pixbuf_cache); i++) {</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        selection = NULL;</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;        <span class="keywordflow">while</span> (list) {</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;            <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page == page) {</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;                selection = list-&gt;data;</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page &gt; page) </div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;            list = list-&gt;next;</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;        }</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        <span class="keywordflow">if</span> (selection)</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a7dd27bc591c4a8d6c8b35d1d2b1e87a0">update_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a> + i, selection);</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946">clear_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a> + i);</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        page ++;</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    }</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;</div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;        <span class="keywordflow">if</span> (page &gt;= <a class="code" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        selection = NULL;</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        <span class="keywordflow">while</span> (list) {</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;            <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page == page) {</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                selection = list-&gt;data;</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page &gt; page) </div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;            list = list-&gt;next;</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;        }</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;</div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        <span class="keywordflow">if</span> (selection)</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a7dd27bc591c4a8d6c8b35d1d2b1e87a0">update_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a> + i, selection);</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946">clear_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a> + i);</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        page ++;</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    }</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-pixbuf-cache_8c_source.html#l01166">1166</a> of file <a class="el" href="ev-pixbuf-cache_8c_source.html">ev-pixbuf-cache.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;{</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;    <a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *selection;</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;    GList *list = selection_list;</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    <span class="keywordtype">int</span> page;</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;    g_return_if_fail (<a class="code" href="ev-pixbuf-cache_8h.html#a66518808252f701f9a3cf8f27e68eee5">EV_IS_PIXBUF_CACHE</a> (pixbuf_cache));</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        <span class="keywordflow">if</span> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> == -1 || pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a8356ba055837b87fcb5d8c24215d383a">end_page</a> == -1)</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    <span class="comment">/* We check each area to see what needs updating, and what needs freeing; */</span></div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a> - pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>;</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        <span class="keywordflow">if</span> (page &lt; 0) {</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;            page ++;</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;        }</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;        selection = NULL;</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        <span class="keywordflow">while</span> (list) {</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;            <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page == page) {</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                selection = list-&gt;data;</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page &gt; page) </div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;            list = list-&gt;next;</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;        }</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;        <span class="keywordflow">if</span> (selection)</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a7dd27bc591c4a8d6c8b35d1d2b1e87a0">update_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a> + i, selection);</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946">clear_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a6a819ddf4ced09c3bdd8f207db9e17d4">prev_job</a> + i);</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;        page ++;</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    }</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    page = pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65237b905a62749b9e22885b5084ce49">start_page</a>;</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b">PAGE_CACHE_LEN</a> (pixbuf_cache); i++) {</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        selection = NULL;</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        <span class="keywordflow">while</span> (list) {</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;            <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page == page) {</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;                selection = list-&gt;data;</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page &gt; page) </div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;            list = list-&gt;next;</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        }</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        <span class="keywordflow">if</span> (selection)</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a7dd27bc591c4a8d6c8b35d1d2b1e87a0">update_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a> + i, selection);</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946">clear_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a65cbf038adbf8d922d869d809859c9ce">job_list</a> + i);</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;        page ++;</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    }</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#ab544d8f7d8680a39bc9e18a9ba611bf1">preload_cache_size</a>; i++) {</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        <span class="keywordflow">if</span> (page &gt;= <a class="code" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">document</a>))</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;        selection = NULL;</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="keywordflow">while</span> (list) {</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;            <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page == page) {</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;                selection = list-&gt;data;</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((<a class="code" href="struct__EvViewSelection.html">EvViewSelection</a> *)list-&gt;data)-&gt;page &gt; page) </div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;            list = list-&gt;next;</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        }</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        <span class="keywordflow">if</span> (selection)</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a7dd27bc591c4a8d6c8b35d1d2b1e87a0">update_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a> + i, selection);</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;            <a class="code" href="ev-pixbuf-cache_8c.html#a387ebe1bd1ebf4ce43d41e59de2c0946">clear_job_selection</a> (pixbuf_cache-&gt;<a class="code" href="struct__EvPixbufCache.html#a7a8c2f3344bed5c77671983ad8148ef8">next_job</a> + i);</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;        page ++;</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    }</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1194,7 +1207,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-pixbuf-cache_8h.html">ev-pixbuf-cache.h</a></li>
-    <li class="footer">Generated on Sat Mar 22 2014 12:34:46 for Evince by
+    <li class="footer">Generated on Sat Mar 22 2014 15:01:37 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

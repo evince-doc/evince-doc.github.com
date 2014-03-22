@@ -50,7 +50,7 @@ var ev_sidebar_thumbnails_8c =
     [ "ev_thumbnails_size_cache_get_size", "ev-sidebar-thumbnails_8c.html#a87fd5fc339782816ae6d37aa1cb46777", null ],
     [ "ev_thumbnails_size_cache_new", "ev-sidebar-thumbnails_8c.html#aa04004588d474a4505fed8adedbfb033", null ],
     [ "G_DEFINE_TYPE_EXTENDED", "ev-sidebar-thumbnails_8c.html#a8d755ff888eeec094cb858a437a4ac0a", null ],
-    [ "get_scale_for_page", "ev-sidebar-thumbnails_8c.html#a9d63a7b44d209ae546b7aeef64f819f0", null ],
+    [ "get_size_for_page", "ev-sidebar-thumbnails_8c.html#a4347d5ad6ad2187c45b67c8e96801884", null ],
     [ "page_changed_cb", "ev-sidebar-thumbnails_8c.html#acca28ecfc7059f0365d53be3a7f9b5d5", null ],
     [ "refresh", "ev-sidebar-thumbnails_8c.html#ae1db2ee8ba074196b2e330a669af517b", null ],
     [ "thumbnail_job_completed_callback", "ev-sidebar-thumbnails_8c.html#a9246ad14337dcb65f0f3e30c5248e982", null ],

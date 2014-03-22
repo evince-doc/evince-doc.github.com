@@ -7,5 +7,6 @@ var searchData=
   ['xamt',['xamt',['../structPairKernData.html#a4bb21f6fa9bbdd1aa4ab3ce20c74940e',1,'PairKernData']]],
   ['xheight',['xHeight',['../structGlobalFontInfo.html#a3c5dcd0f11b8adf7e09ee81091e15587',1,'GlobalFontInfo']]],
   ['xmargin',['xmargin',['../structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8',1,'DviCairoDevice']]],
-  ['xps',['xps',['../struct__XPSDocument.html#a9c4718961b92a613d287ac03f37d647e',1,'_XPSDocument']]]
+  ['xps',['xps',['../struct__XPSDocument.html#a9c4718961b92a613d287ac03f37d647e',1,'_XPSDocument']]],
+  ['xscale',['xscale',['../structDviCairoDevice.html#ae759222de338025289c6a2a2b778a895',1,'DviCairoDevice']]]
 ];
