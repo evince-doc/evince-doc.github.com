@@ -55,7 +55,7 @@ var searchData=
   ['tfmfile_2ec',['tfmfile.c',['../tfmfile_8c.html',1,'']]],
   ['tfmhash',['tfmhash',['../tfmfile_8c.html#a9c3168dcc5e93a9e5e6eef2939da1aab',1,'tfmfile.c']]],
   ['tfminfo',['tfminfo',['../structtfmpool.html#a48f025e5e6ddda4c876da7b04edaacf9',1,'tfmpool::tfminfo()'],['../mdvi_8h.html#a0d4368e80b8d5b5cbd4ddc97e5412f44',1,'TFMInfo():&#160;mdvi.h']]],
-  ['tfmpool',['tfmpool',['../structtfmpool.html',1,'tfmpool'],['../tfmfile_8c.html#a04ecc02b296db4eb521c58a57dbdda09',1,'TFMPool():&#160;tfmfile.c'],['../tfmfile_8c.html#ace5905f1722fd468bcdb3651717fea91',1,'tfmpool():&#160;tfmfile.c']]],
+  ['tfmpool',['tfmpool',['../structtfmpool.html',1,'tfmpool'],['../tfmfile_8c.html#ace5905f1722fd468bcdb3651717fea91',1,'tfmpool():&#160;tfmfile.c'],['../tfmfile_8c.html#a04ecc02b296db4eb521c58a57dbdda09',1,'TFMPool():&#160;tfmfile.c']]],
   ['tfmprepare',['TFMPREPARE',['../common_8h.html#abc7ce8ecb19249a370682beeb47995ea',1,'common.h']]],
   ['tfmscale',['TFMSCALE',['../common_8h.html#a563cbd0fff070fc90d243c7d495bccbe',1,'common.h']]],
   ['tfmwidth',['tfmwidth',['../struct__DviFontChar.html#a6ac753dd3afffdc13b9dfd2550d263ca',1,'_DviFontChar']]],

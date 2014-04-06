@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"structTrackKernData.html#a2afaf37eff72ce82344487d501c056c3":[6,0,340,1],
-"structTrackKernData.html#a5807db989d1817bbfd4fd663965440f1":[6,0,340,2],
 "structTrackKernData.html#ad8237a3f50243b4a2f38b14c9c3d5b7b":[6,0,340,3],
 "structTrackKernData.html#afb58f0fad4367324e1c02394b37ed26b":[6,0,340,0],
 "struct__CacheJobInfo.html":[6,0,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX26 =
 "struct__DviPaper.html":[6,0,37],
 "struct__DviPaper.html#a3d4ee3ece1863cebbbe946ba788938be":[6,0,37,1],
 "struct__DviPaper.html#aa4264224e77b70e7945d55f4bb08ce1e":[6,0,37,2],
-"struct__DviPaper.html#ab345f8bd708ed32916254a487ef96141":[6,0,37,0]
+"struct__DviPaper.html#ab345f8bd708ed32916254a487ef96141":[6,0,37,0],
+"struct__DviPaper.html#ac3dcf62381cb9080ce000879a02d08ea":[6,0,37,3],
+"struct__DviPaperSpec.html":[6,0,38]
 };

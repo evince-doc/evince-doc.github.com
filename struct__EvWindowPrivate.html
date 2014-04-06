@@ -173,10 +173,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a71e99df1e7bb0f6b9c5b063fb2f46eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5b710f37d36417ddf9efd7185d0e84"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvWindowPrivate.html#a4b5b710f37d36417ddf9efd7185d0e84">fs_overlay</a></td></tr>
 <tr class="separator:a4b5b710f37d36417ddf9efd7185d0e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e2476367ff83bb7a86e3deb3e5cfc47"><td class="memItemLeft" align="right" valign="top">gint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvWindowPrivate.html#a9e2476367ff83bb7a86e3deb3e5cfc47">fs_motion_start_time</a></td></tr>
-<tr class="separator:a9e2476367ff83bb7a86e3deb3e5cfc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf77f9c48daebe0d18e79ade81ca40cd"><td class="memItemLeft" align="right" valign="top">guint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvWindowPrivate.html#acf77f9c48daebe0d18e79ade81ca40cd">fs_motion_n_events</a></td></tr>
-<tr class="separator:acf77f9c48daebe0d18e79ade81ca40cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9da233ce72a5a8c4dd20185e002f016"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvWindowPrivate.html#aa9da233ce72a5a8c4dd20185e002f016">fs_eventbox</a></td></tr>
+<tr class="separator:aa9da233ce72a5a8c4dd20185e002f016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab347e83a6fe1b8a7c90921f7c15b1bd0"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvWindowPrivate.html#ab347e83a6fe1b8a7c90921f7c15b1bd0">fs_revealer</a></td></tr>
+<tr class="separator:ab347e83a6fe1b8a7c90921f7c15b1bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2460e2bc96977f197d4d297c55b087fe"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvWindowPrivate.html#a2460e2bc96977f197d4d297c55b087fe">fs_pointer_on_toolbar</a></td></tr>
 <tr class="separator:a2460e2bc96977f197d4d297c55b087fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff131fe66e7958b30e64bc28d64288a6"><td class="memItemLeft" align="right" valign="top">guint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvWindowPrivate.html#aff131fe66e7958b30e64bc28d64288a6">fs_timeout_id</a></td></tr>
@@ -518,26 +518,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acf77f9c48daebe0d18e79ade81ca40cd"></a>
+<a class="anchor" id="aa9da233ce72a5a8c4dd20185e002f016"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">guint _EvWindowPrivate::fs_motion_n_events</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l00161">161</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9e2476367ff83bb7a86e3deb3e5cfc47"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">gint64 _EvWindowPrivate::fs_motion_start_time</td>
+          <td class="memname">GtkWidget* _EvWindowPrivate::fs_eventbox</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -571,6 +557,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="ev-window_8c_source.html#l00162">162</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab347e83a6fe1b8a7c90921f7c15b1bd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWidget* _EvWindowPrivate::fs_revealer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l00161">161</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1367,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__EvWindowPrivate.html">_EvWindowPrivate</a></li>
-    <li class="footer">Generated on Fri Apr 4 2014 09:37:23 for Evince by
+    <li class="footer">Generated on Sun Apr 6 2014 13:25:23 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

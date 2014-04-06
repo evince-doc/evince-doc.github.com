@@ -1,6 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"struct__EvWindowPrivate.html#abe4a6e93a44c6f208d121b500069b2ba":[6,0,270,25],
 "struct__EvWindowPrivate.html#abe9128f9496a33a0cb6c56e3d8310058":[6,0,270,9],
 "struct__EvWindowPrivate.html#ac38a25c3ca22a91b9a229721f3e4c1a3":[6,0,270,72],
 "struct__EvWindowPrivate.html#ac4255b88c5a4659d8202a6b135bfec3a":[6,0,270,67],
@@ -10,7 +9,6 @@ var NAVTREEINDEX32 =
 "struct__EvWindowPrivate.html#aca655e6863cca1389f35fcf601eaeb59":[6,0,270,71],
 "struct__EvWindowPrivate.html#acaaf50698739bf1fca0b2fe96f79e864":[6,0,270,13],
 "struct__EvWindowPrivate.html#acbf9f43050f457aeac8e2c380a462af2":[6,0,270,11],
-"struct__EvWindowPrivate.html#acf77f9c48daebe0d18e79ade81ca40cd":[6,0,270,17],
 "struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa":[6,0,270,75],
 "struct__EvWindowPrivate.html#ad51d3efa28cabe29fcc1094a3bacaacf":[6,0,270,59],
 "struct__EvWindowPrivate.html#ad6b8c26c387e0d9212ac157963e948df":[6,0,270,26],
@@ -249,5 +247,7 @@ var NAVTREEINDEX32 =
 "synctex__parser_8c.html#a058c73a02a66148b9e025b6f6d53ee42":[7,0,0,1,1,0,266],
 "synctex__parser_8c.html#a064e63ded70f95d63d9531d6076454db":[7,0,0,1,1,0,172],
 "synctex__parser_8c.html#a06732fa6f01dee52ef0d15e80f7c58db":[7,0,0,1,1,0,145],
-"synctex__parser_8c.html#a06d86333a0938a0b6e3bf0895696596d":[7,0,0,1,1,0,85]
+"synctex__parser_8c.html#a06d86333a0938a0b6e3bf0895696596d":[7,0,0,1,1,0,85],
+"synctex__parser_8c.html#a07456d41b85594e1582419edca58e612":[7,0,0,1,1,0,171],
+"synctex__parser_8c.html#a07bb05ee5d546b9263636b2e6002cc74":[7,0,0,1,1,0,108]
 };

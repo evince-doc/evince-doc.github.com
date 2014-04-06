@@ -1,7 +1,5 @@
 var NAVTREEINDEX27 =
 {
-"struct__DviPaper.html#ac3dcf62381cb9080ce000879a02d08ea":[6,0,37,3],
-"struct__DviPaperSpec.html":[6,0,38],
 "struct__DviPaperSpec.html#a676c8c87db4019f7130925f52a188579":[6,0,38,0],
 "struct__DviPaperSpec.html#aec57bbdbaf9236a8cef0ee83ddf5ea82":[6,0,38,1],
 "struct__DviPaperSpec.html#af4943d8ddd04377149af166bca763871":[6,0,38,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX27 =
 "struct__EvDocumentInfo.html#a35a9ff984badb78f5e0d73d823d25d2e":[6,0,80,5],
 "struct__EvDocumentInfo.html#a396db4b6740db1ab8c5b988c4e9c849a":[6,0,80,8],
 "struct__EvDocumentInfo.html#a438c04bce85650d36a6d8368b927b016":[6,0,80,7],
-"struct__EvDocumentInfo.html#a4a75f1b26f93c5ef126f6e3b1a601cc1":[6,0,80,2]
+"struct__EvDocumentInfo.html#a4a75f1b26f93c5ef126f6e3b1a601cc1":[6,0,80,2],
+"struct__EvDocumentInfo.html#a52e9b79e9ecfd66457ffa7111c7e73a9":[6,0,80,12],
+"struct__EvDocumentInfo.html#a534788ac6111159d79973aeb2242ba15":[6,0,80,18]
 };

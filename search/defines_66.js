@@ -24,8 +24,7 @@ var searchData=
   ['fuget2',['fuget2',['../common_8h.html#a6d95e4479ad12ae002ab1b4036918504',1,'common.h']]],
   ['fuget3',['fuget3',['../common_8h.html#a4a4c82da3ef4a73fc9744ef9bafa822c',1,'common.h']]],
   ['fuget4',['fuget4',['../common_8h.html#ac335e9a52a7646b773dcbf85de274043',1,'common.h']]],
-  ['fullscreen_5fmotion_5fnum_5fevents',['FULLSCREEN_MOTION_NUM_EVENTS',['../ev-window_8c.html#a173cc6eb51bf898677ca622d04148741',1,'ev-window.c']]],
-  ['fullscreen_5fmotion_5ftime',['FULLSCREEN_MOTION_TIME',['../ev-window_8c.html#a7c0cd5d68ce357ee94b1f0b8c00e0a4e',1,'ev-window.c']]],
   ['fullscreen_5fpopup_5ftimeout',['FULLSCREEN_POPUP_TIMEOUT',['../ev-window_8c.html#a4ce5ec2ac8b677e858481d21248d7675',1,'ev-window.c']]],
+  ['fullscreen_5ftransition_5fduration',['FULLSCREEN_TRANSITION_DURATION',['../ev-window_8c.html#aada9d4769019389b7f49c547d2b700ee',1,'ev-window.c']]],
   ['fullword',['FULLWORD',['../common_8h.html#a74fbd33177d4a35bc39e003a1e0724e3',1,'common.h']]]
 ];
