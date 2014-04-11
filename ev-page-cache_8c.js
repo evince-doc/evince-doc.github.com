@@ -8,6 +8,7 @@ var ev_page_cache_8c =
     [ "EvPageCacheData", "ev-page-cache_8c.html#ae7f315a5b8005b8499f5b3d540f14eb4", null ],
     [ "ev_page_cache_class_init", "ev-page-cache_8c.html#afc6d6bb7b4e7b91a0997c206a4200cd3", null ],
     [ "ev_page_cache_data_free", "ev-page-cache_8c.html#a0621cae578760bfb6e9c13416dd0a28a", null ],
+    [ "ev_page_cache_ensure_page", "ev-page-cache_8c.html#ae472ee9f37b0bf4b24483674141f6f47", null ],
     [ "ev_page_cache_finalize", "ev-page-cache_8c.html#a0e9c307b73e70959ef4ca1f489ba581b", null ],
     [ "ev_page_cache_get_annot_mapping", "ev-page-cache_8c.html#a5d0b5e6ff9510ea0fd510f1248ede7bb", null ],
     [ "ev_page_cache_get_flags", "ev-page-cache_8c.html#a710879ae906e30c6cb662cb7c5a7df51", null ],

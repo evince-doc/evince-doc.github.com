@@ -8,6 +8,7 @@ var ev_page_cache_8h =
     [ "EV_TYPE_PAGE_CACHE", "ev-page-cache_8h.html#ab60018f54cfc6af2e747e7a5d818996d", null ],
     [ "EvPageCache", "ev-page-cache_8h.html#ae0a6f5b5b809d282143d6701b6bcc33f", null ],
     [ "EvPageCacheClass", "ev-page-cache_8h.html#a96c04358c16dc3ec1cf9290aa05161f1", null ],
+    [ "ev_page_cache_ensure_page", "ev-page-cache_8h.html#ae472ee9f37b0bf4b24483674141f6f47", null ],
     [ "ev_page_cache_get_annot_mapping", "ev-page-cache_8h.html#a5d0b5e6ff9510ea0fd510f1248ede7bb", null ],
     [ "ev_page_cache_get_flags", "ev-page-cache_8h.html#a710879ae906e30c6cb662cb7c5a7df51", null ],
     [ "ev_page_cache_get_form_field_mapping", "ev-page-cache_8h.html#a47fcfac00d1008109fcb9cdb1e529d2b", null ],

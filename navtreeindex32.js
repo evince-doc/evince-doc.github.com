@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvWindowPrivate.html#a1066fa9e9305466a5a4121481a91aa4b":[6,0,273,7],
+"struct__EvWindowPrivate.html#a1661a0fdbbe3ca825479fe483a79866f":[6,0,273,47],
 "struct__EvWindowPrivate.html#a1e3b0ea10182fffc59e462310d03f992":[6,0,273,15],
 "struct__EvWindowPrivate.html#a22220ddd73502e450597d59e89c74a23":[6,0,273,66],
 "struct__EvWindowPrivate.html#a2460e2bc96977f197d4d297c55b087fe":[6,0,273,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "struct____synctex__updater__t.html#a32167da63c7a9787f6af3a06150afcf4":[6,0,10,1],
 "struct____synctex__updater__t.html#a46b15c92f83b585176dc0b39bce363c3":[6,0,10,3],
 "struct____synctex__updater__t.html#ae675c2ae1794c2f15d7a492253bb38e5":[6,0,10,4],
-"struct____synctex__updater__t_1_1__flags.html":[6,0,10,0],
-"struct____synctex__updater__t_1_1__flags.html#a7f827bf39798bea0e45acf68573b038d":[6,0,10,0,0],
-"struct____synctex__updater__t_1_1__flags.html#aa2305297befe75aa440a913f1814af30":[6,0,10,0,1]
+"struct____synctex__updater__t_1_1__flags.html":[6,0,10,0]
 };

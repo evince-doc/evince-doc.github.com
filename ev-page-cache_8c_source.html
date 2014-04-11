@@ -741,13 +741,23 @@ $(document).ready(function(){initNavTree('ev-page-cache_8c_source.html','');});
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;}</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno"><a class="code" href="ev-page-cache_8h.html#ae472ee9f37b0bf4b24483674141f6f47">  659</a></span>&#160;<a class="code" href="ev-page-cache_8c.html#ae472ee9f37b0bf4b24483674141f6f47">ev_page_cache_ensure_page</a> (<a class="code" href="struct__EvPageCache.html">EvPageCache</a> *cache,</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                           gint         page)</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;{</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        g_return_if_fail (<a class="code" href="ev-page-cache_8h.html#aa6e6f38cedb168efeb3b5cc10d018e4c">EV_IS_PAGE_CACHE</a> (cache));</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        g_return_if_fail (page &gt;= 0 &amp;&amp; page &lt; cache-&gt;n_pages);</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <a class="code" href="ev-page-cache_8c.html#a087a54e4a0310bd13c054dce6941e316">ev_page_cache_schedule_job_if_needed</a> (cache, page);</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-cache_8c.html">ev-page-cache.c</a></li>
-    <li class="footer">Generated on Fri Apr 11 2014 11:41:32 for Evince by
+    <li class="footer">Generated on Fri Apr 11 2014 16:37:43 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
