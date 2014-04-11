@@ -1,8 +1,8 @@
 var ev_history_action_widget_8c =
 [
     [ "_EvHistoryActionWidgetPrivate", "struct__EvHistoryActionWidgetPrivate.html", "struct__EvHistoryActionWidgetPrivate" ],
-    [ "PROP_0", "ev-history-action-widget_8c.html#afccd240f973cf154952fb917c9209719ac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_POPUP_SHOWN", "ev-history-action-widget_8c.html#afccd240f973cf154952fb917c9209719a7536978525fac3495f70dfa3a0b09dbe", null ],
+    [ "PROP_0", "ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_POPUP_SHOWN", "ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa7536978525fac3495f70dfa3a0b09dbe", null ],
     [ "EvHistoryActionButton", "ev-history-action-widget_8c.html#aa5c4045e941b5c4a890b02367c38f3de", [
       [ "EV_HISTORY_ACTION_BUTTON_BACK", "ev-history-action-widget_8c.html#aa5c4045e941b5c4a890b02367c38f3dea0bbad8a530a0c2f45e7b48da0e411f1f", null ],
       [ "EV_HISTORY_ACTION_BUTTON_FORWARD", "ev-history-action-widget_8c.html#aa5c4045e941b5c4a890b02367c38f3dea8ba0f73573ec46339f2e1341897ea6dc", null ]

@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"ev-link-action_8c.html#a7765f11a9e191cc06563cc272cad7566":[7,0,0,2,54,34],
 "ev-link-action_8c.html#a7fd7376afc4419334a213fd8054002bc":[7,0,0,2,54,3],
 "ev-link-action_8c.html#a82fef9ef1eac2d6e8764062b60cb0fbd":[7,0,0,2,54,19],
 "ev-link-action_8c.html#a99ccfcc2230663eabdb02bed43a8d936":[7,0,0,2,54,16],
@@ -230,6 +229,8 @@ var NAVTREEINDEX11 =
 "ev-mapping-list_8h_source.html":[7,0,0,2,62],
 "ev-media-player-keys_8c.html":[7,0,0,7,25],
 "ev-media-player-keys_8c.html#a100dccdcf74e0659e6b3248a886ee69a":[7,0,0,7,25,17],
+"ev-media-player-keys_8c.html#a1be3860693af99a6c1da72580097294ca0c34d85df8279641afad9e3c9b3a54ce":[7,0,0,7,25,6],
+"ev-media-player-keys_8c.html#a1be3860693af99a6c1da72580097294cac2439afec39a5b43a1fd36a4316379a7":[7,0,0,7,25,5],
 "ev-media-player-keys_8c.html#a2275a9d9f87ab0b18706c89498fb0ad1":[7,0,0,7,25,14],
 "ev-media-player-keys_8c.html#a2789048f8a6d2a6541405994727738a1":[7,0,0,7,25,18],
 "ev-media-player-keys_8c.html#a465000577e0188a93382a6fd5aaea91f":[7,0,0,7,25,7],
@@ -240,8 +241,6 @@ var NAVTREEINDEX11 =
 "ev-media-player-keys_8c.html#a754cc347524efae6e57d30d48c03b40f":[7,0,0,7,25,2],
 "ev-media-player-keys_8c.html#a7e97517dde2bae8c4d4422694f2862f3":[7,0,0,7,25,10],
 "ev-media-player-keys_8c.html#a84f9a2f3764f621f0d3a264a8dd837cc":[7,0,0,7,25,12],
-"ev-media-player-keys_8c.html#a900dca9b26de42491763226e12dcd47ba0c34d85df8279641afad9e3c9b3a54ce":[7,0,0,7,25,6],
-"ev-media-player-keys_8c.html#a900dca9b26de42491763226e12dcd47bac2439afec39a5b43a1fd36a4316379a7":[7,0,0,7,25,5],
 "ev-media-player-keys_8c.html#ab66da4d866e08a1cbf9f5dfb6c2d88de":[7,0,0,7,25,16],
 "ev-media-player-keys_8c.html#ab8b67a829007cc0b29f701c466f17784":[7,0,0,7,25,11],
 "ev-media-player-keys_8c.html#ad3a0c3d2d7720946b024c9b090fd091e":[7,0,0,7,25,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "ev-media-player-keys_8c_source.html":[7,0,0,7,25],
 "ev-media-player-keys_8h.html":[7,0,0,7,26],
 "ev-media-player-keys_8h.html#a16986e14e00bf9abb04003df6789a6e0":[7,0,0,7,26,6],
-"ev-media-player-keys_8h.html#a1bc9fda5d799b74de086ce9452b7afe5":[7,0,0,7,26,1]
+"ev-media-player-keys_8h.html#a1bc9fda5d799b74de086ce9452b7afe5":[7,0,0,7,26,1],
+"ev-media-player-keys_8h.html#a4a3be2ab9ae0eac23258c865978be190":[7,0,0,7,26,8]
 };

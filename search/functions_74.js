@@ -32,5 +32,5 @@ var searchData=
   ['tip_5ffrom_5faction_5fnamed',['tip_from_action_named',['../ev-view_8c.html#abe3cb0fd11def9e2d5d3784a1720589a',1,'ev-view.c']]],
   ['tip_5ffrom_5flink',['tip_from_link',['../ev-view_8c.html#a0aa49647f69f0c9b773ced02c1d0a2de',1,'ev-view.c']]],
   ['transition_5fnext_5fpage',['transition_next_page',['../ev-view-presentation_8c.html#afb24ef6823f7ffffa5e743212f732174',1,'ev-view-presentation.c']]],
-  ['treat_5fas_5fsoft_5freturn',['treat_as_soft_return',['../ev-view-accessible_8c.html#a13dfe87ac48896d9a88bbdd7940ddf6a',1,'ev-view-accessible.c']]]
+  ['treat_5fas_5fsoft_5freturn',['treat_as_soft_return',['../ev-page-accessible_8c.html#a6c7dd46ded8aac92c260c87a8b077c3b',1,'ev-page-accessible.c']]]
 ];

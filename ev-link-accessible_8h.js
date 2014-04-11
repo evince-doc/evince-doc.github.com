@@ -9,5 +9,5 @@ var ev_link_accessible_8h =
     [ "EvLinkAccessibleClass", "ev-link-accessible_8h.html#aa8b3dfa03e6e7ef5f7488bdd5e3da474", null ],
     [ "EvLinkAccessiblePrivate", "ev-link-accessible_8h.html#a4e0a5c29145ec97975c85d628308e209", null ],
     [ "ev_link_accessible_get_type", "ev-link-accessible_8h.html#a87f9779c8c639005b2ba6442fce0f642", null ],
-    [ "ev_link_accessible_new", "ev-link-accessible_8h.html#a6c05a72471e8257fbc7a546e578dff4e", null ]
+    [ "ev_link_accessible_new", "ev-link-accessible_8h.html#ab4afea73cfffbc125487eb7f70c4a685", null ]
 ];

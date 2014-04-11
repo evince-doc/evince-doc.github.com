@@ -2,7 +2,7 @@ var searchData=
 [
   ['activate_5fcb',['activate_cb',['../ev-page-action-widget_8c.html#a764421a80b236735532280a0a47a8f80',1,'activate_cb(EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-previewer_8c.html#a1d2321834e50a529e189214d55a1f804',1,'activate_cb(GApplication *application, gpointer user_data):&#160;ev-previewer.c']]],
   ['activate_5flink_5fcb',['activate_link_cb',['../ev-page-action_8c.html#af308128d6acffedf844f1d8d46b62085',1,'activate_link_cb(EvPageActionWidget *proxy, EvLink *link, EvPageAction *action):&#160;ev-page-action.c'],['../ev-window_8c.html#a107409da3119404be26e1e1a84e1f40d',1,'activate_link_cb(GObject *object, EvLink *link, EvWindow *window):&#160;ev-window.c']]],
-  ['add_5fattribute',['add_attribute',['../ev-view-accessible_8c.html#a9976746270c77e42447106448d9c4b61',1,'ev-view-accessible.c']]],
+  ['add_5fattribute',['add_attribute',['../ev-page-accessible_8c.html#a9976746270c77e42447106448d9c4b61',1,'ev-page-accessible.c']]],
   ['add_5fchange_5fpage_5fbinding_5fkeypad',['add_change_page_binding_keypad',['../ev-view-presentation_8c.html#a756f5406e5b6f7c9042970861ebd064a',1,'ev-view-presentation.c']]],
   ['add_5fjob',['add_job',['../ev-pixbuf-cache_8c.html#ae22d5fb5273a58e1da3dd6a62e12704f',1,'ev-pixbuf-cache.c']]],
   ['add_5fjob_5fif_5fneeded',['add_job_if_needed',['../ev-pixbuf-cache_8c.html#aecddc528272981f4a5e94d01370ebac1',1,'ev-pixbuf-cache.c']]],

@@ -31,6 +31,7 @@ var searchData=
   ['init_5ffont_5fclasses',['init_font_classes',['../fontsrch_8c.html#ab9a0a419084b3136c9211eeddc1b33a0',1,'fontsrch.c']]],
   ['init_5fpresentation',['init_presentation',['../ev-view-presentation_8c.html#a5ae96816a1b9dba0787f4767d2973c23',1,'ev-view-presentation.c']]],
   ['init_5fstatic_5fencoding',['init_static_encoding',['../fontmap_8c.html#a774d54532177a6053cd7613ba3a580ef',1,'fontmap.c']]],
+  ['initialize_5fchildren',['initialize_children',['../ev-view-accessible_8c.html#a81ce8f530707e0d083378ec2570ef82a',1,'ev-view-accessible.c']]],
   ['initialized',['initialized',['../fontsrch_8c.html#ad06983e7f6e71b233ea7ff3dee1952f2',1,'fontsrch.c']]],
   ['input',['input',['../struct____synctex__scanner__t.html#a507ab21e198032457f2178c943384239',1,'__synctex_scanner_t']]],
   ['insert_5fposition',['insert_position',['../struct__EvFindSidebarPrivate.html#acf1b2ab131e292afa3002fb22e9618a4',1,'_EvFindSidebarPrivate']]],
@@ -55,7 +56,7 @@ var searchData=
   ['issp',['ISSP',['../private_8h.html#aa3cad8c2f334773ed3f31478e63e636b',1,'private.h']]],
   ['isvirtual',['ISVIRTUAL',['../mdvi_8h.html#a5d9faef015549a2847491f53961e8bcf',1,'mdvi.h']]],
   ['italicangle',['italicAngle',['../structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff',1,'GlobalFontInfo']]],
-  ['item_5factivated',['item_activated',['../struct__EvOpenRecentActionClass.html#a02af51bab4a1d06f8a02373bdc82c98b',1,'_EvOpenRecentActionClass::item_activated()'],['../ev-open-recent-action_8c.html#ac9420823bfeba78fce625fc105e3b01daf4adf678107ef39e690a65618cdc19ee',1,'ITEM_ACTIVATED():&#160;ev-open-recent-action.c']]],
+  ['item_5factivated',['item_activated',['../struct__EvOpenRecentActionClass.html#a02af51bab4a1d06f8a02373bdc82c98b',1,'_EvOpenRecentActionClass::item_activated()'],['../ev-open-recent-action_8c.html#afa9be5679ab03d785820f2474c5ccc6eaf4adf678107ef39e690a65618cdc19ee',1,'ITEM_ACTIVATED():&#160;ev-open-recent-action.c']]],
   ['items',['items',['../struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9',1,'_EvBookmarks::items()'],['../struct__EvMetadata.html#aebc19339308c1ad2790fab4e7e64948b',1,'_EvMetadata::items()']]],
   ['index_20for_20this_20mapping',['index for this mapping',['../page.html',1,'']]]
 ];
