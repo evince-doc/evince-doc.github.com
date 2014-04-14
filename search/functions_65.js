@@ -1392,7 +1392,7 @@ var searchData=
   ['ev_5fview_5fmax_5fscale_5fchanged_5fcb',['ev_view_max_scale_changed_cb',['../ev-view_8c.html#a5e678dc3594b3090bf0ef14878441421',1,'ev-view.c']]],
   ['ev_5fview_5fmin_5fscale_5fchanged_5fcb',['ev_view_min_scale_changed_cb',['../ev-view_8c.html#a69aff5be9522dc198a4146dc34707e9c',1,'ev-view.c']]],
   ['ev_5fview_5fmotion_5fnotify_5fevent',['ev_view_motion_notify_event',['../ev-view_8c.html#a53def1c9f6e71536645d54fbae124d38',1,'ev-view.c']]],
-  ['ev_5fview_5fmove_5fcursor',['ev_view_move_cursor',['../ev-view_8c.html#ae93eddf9f3b8a7583f7accdb3055b864',1,'ev-view.c']]],
+  ['ev_5fview_5fmove_5fcursor',['ev_view_move_cursor',['../ev-view_8c.html#ac8cfb6b9d1e475287067d817d4012bec',1,'ev-view.c']]],
   ['ev_5fview_5fnew',['ev_view_new',['../ev-view_8c.html#a5407c6d2e4797e1f4cebd051440ad6eb',1,'ev_view_new(void):&#160;ev-view.c'],['../ev-view_8h.html#a5407c6d2e4797e1f4cebd051440ad6eb',1,'ev_view_new(void):&#160;ev-view.c']]],
   ['ev_5fview_5fnext_5fpage',['ev_view_next_page',['../ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de',1,'ev_view_next_page(EvView *view):&#160;ev-view.c'],['../ev-view_8h.html#a1279ae33808548a39a2c114e7ddbc7de',1,'ev_view_next_page(EvView *view):&#160;ev-view.c']]],
   ['ev_5fview_5fpage_5fchanged_5fcb',['ev_view_page_changed_cb',['../ev-view_8c.html#a9494b5ee9f52ffa84ca8e5237bdfa073',1,'ev-view.c']]],
@@ -1725,6 +1725,6 @@ var searchData=
   ['evince_5fthumbnail_5fpngenc_5fget_5fasync',['evince_thumbnail_pngenc_get_async',['../evince-thumbnailer_8c.html#ae5b98cb09afa471ed82b935a45a04b3d',1,'evince-thumbnailer.c']]],
   ['evince_5fthumbnailer_5fget_5fdocument',['evince_thumbnailer_get_document',['../evince-thumbnailer_8c.html#a3c23f2f39e9337fb609bd7446619bc02',1,'evince-thumbnailer.c']]],
   ['expand_5fopen_5flinks',['expand_open_links',['../ev-sidebar-links_8c.html#a4c3b5038dc6e3c3d41ad13c2733842eb',1,'ev-sidebar-links.c']]],
-  ['extend_5fselection_5ffrom_5fcursor',['extend_selection_from_cursor',['../ev-view_8c.html#a9192d72446fc9c878dac397f046bceb6',1,'ev-view.c']]],
+  ['extend_5fselection',['extend_selection',['../ev-view_8c.html#afa236f661ae8a247fb2368bddac97bfd',1,'ev-view.c']]],
   ['extract_5fargv',['extract_argv',['../comics-document_8c.html#aa4f8cbcc02bf6ea5b51c3f50ccaf221d',1,'comics-document.c']]]
 ];
