@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"struct__DviFontMapEnt.html#af707b1aa5740bfbe8be50185bca31f3b":[6,0,30,10],
+"struct__DviFontRef.html":[6,0,31],
+"struct__DviFontRef.html#a2e0e0725279e4a329e02bc831ddbf1ce":[6,0,31,1],
 "struct__DviFontRef.html#a7054aad30286553e48126964d8111257":[6,0,31,2],
 "struct__DviFontRef.html#abf9f7be963de5336f986264bfb6c3aa3":[6,0,31,0],
 "struct__DviFontSearch.html":[6,0,32],
@@ -246,8 +249,5 @@ var NAVTREEINDEX27 =
 "struct__EvDocumentClass.html#ad618325d2713d01425d5f69533df0ac0":[6,0,75,14],
 "struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f":[6,0,75,8],
 "struct__EvDocumentClass.html#ad9455c99cda4ab67001809719c823eb6":[6,0,75,10],
-"struct__EvDocumentClass.html#addbd3fbe9018832441566ba14ee85f01":[6,0,75,13],
-"struct__EvDocumentClass.html#aea85b7496821ccee8359e24d7f85163c":[6,0,75,5],
-"struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7":[6,0,75,12],
-"struct__EvDocumentFindInterface.html":[6,0,76]
+"struct__EvDocumentClass.html#addbd3fbe9018832441566ba14ee85f01":[6,0,75,13]
 };
