@@ -163,16 +163,24 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8h_source.html','')
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                     <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a>  *model);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;gint       <a class="code" href="ev-view-accessible_8c.html#aad4098f74b6005b57e8bbf43642017a9">ev_view_accessible_get_n_pages</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;gint       <a class="code" href="ev-view-accessible_8c.html#acae8f9fc3d7f53632eaa50b249bec753">ev_view_accessible_get_relevant_page</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* __EV_VIEW_ACCESSIBLE_H__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-view-accessible_8c.html#a524a6a680a70e1f03ba73c741bd22184">ev_view_accessible_set_page_range</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                          gint start,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                          gint end);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-view-accessible_8c.html#adf7a1febb1c508528289b7941c3e6d82">_transform_doc_rect_to_atk_rect</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        gint              page,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        <a class="code" href="struct__EvRectangle.html">EvRectangle</a>      *doc_rect,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        <a class="code" href="struct__EvRectangle.html">EvRectangle</a>      *atk_rect,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        AtkCoordType      coord_type);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* __EV_VIEW_ACCESSIBLE_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8h.html">ev-view-accessible.h</a></li>
-    <li class="footer">Generated on Wed Apr 23 2014 17:07:48 for Evince by
+    <li class="footer">Generated on Fri Apr 25 2014 06:07:41 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

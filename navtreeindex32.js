@@ -1,5 +1,13 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvViewSelection.html#abb4b7be54930cec3b1b4f956feaf294a":[6,0,270,3],
+"struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa":[6,0,270,1],
+"struct__EvWindow.html":[6,0,271],
+"struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf":[6,0,271,1],
+"struct__EvWindow.html#a2aee900cf1d55d7fab56c4212dc167af":[6,0,271,0],
+"struct__EvWindowClass.html":[6,0,272],
+"struct__EvWindowClass.html#a99715edba19ef67861872efd0cc810d2":[6,0,272,0],
+"struct__EvWindowPrivate.html":[6,0,273],
 "struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe":[6,0,273,2],
 "struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3":[6,0,273,28],
 "struct__EvWindowPrivate.html#a0fcf90a8e2385fcb8430b06cc1fa3ec7":[6,0,273,41],
@@ -241,13 +249,5 @@ var NAVTREEINDEX32 =
 "struct____synctex__scanner__t.html#aa09bf8eca2508d26805b53e173ecfd65":[6,0,9,4],
 "struct____synctex__scanner__t.html#aa6abb8a43f2d6c768736bd1e88fff5a0":[6,0,9,23],
 "struct____synctex__scanner__t.html#ab45b78f37503ecad42a2d59db482aa84":[6,0,9,2],
-"struct____synctex__scanner__t.html#ab769f28f38ed13f3b67bdeef142c8072":[6,0,9,17],
-"struct____synctex__scanner__t.html#ab830f0b6d8d83da0eb582b353fa0eed1":[6,0,9,13],
-"struct____synctex__scanner__t.html#ac4286c400976f24983dc707540526ff2":[6,0,9,6],
-"struct____synctex__scanner__t.html#ad22da22fb23f1112ed4a8c6e54c30a91":[6,0,9,5],
-"struct____synctex__scanner__t.html#ad7c390700b8d63577dbd959a8a3310e7":[6,0,9,22],
-"struct____synctex__scanner__t.html#adf66d7da8f27c0afa90cc103dd17b619":[6,0,9,9],
-"struct____synctex__updater__t.html":[6,0,10],
-"struct____synctex__updater__t.html#a1de70c5930356a900a1d2abe4255b8d4":[6,0,10,2],
-"struct____synctex__updater__t.html#a32167da63c7a9787f6af3a06150afcf4":[6,0,10,1]
+"struct____synctex__scanner__t.html#ab769f28f38ed13f3b67bdeef142c8072":[6,0,9,17]
 };

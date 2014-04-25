@@ -1,5 +1,11 @@
 var NAVTREEINDEX30 =
 {
+"struct__EvModule.html#a230f4907a251619354b5f6553be1bd26":[6,0,182,1],
+"struct__EvModule.html#a40bca56209fca732179db81d26278826":[6,0,182,4],
+"struct__EvModule.html#a647523b9f395ab4a1f5ba0b3584a6e89":[6,0,182,0],
+"struct__EvModule.html#a8821c12eda1ed48841f43f54741313a7":[6,0,182,2],
+"struct__EvModule.html#ac0813c5d681e866acd730df24e295704":[6,0,182,3],
+"struct__EvModuleClass.html":[6,0,183],
 "struct__EvModuleClass.html#ab78a0455506491444317f788e2a2a361":[6,0,183,0],
 "struct__EvOpenRecentAction.html":[6,0,184],
 "struct__EvOpenRecentAction.html#acfd98c93b9af865fe08123e2bc3a0185":[6,0,184,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvSidebarAttachments.html#a692a2881687ab5eb8efeff10586dcdde":[6,0,232,1],
 "struct__EvSidebarAttachments.html#a99469a8b50793d7f3badfb398033d02d":[6,0,232,0],
 "struct__EvSidebarAttachmentsClass.html":[6,0,233],
-"struct__EvSidebarAttachmentsClass.html#aa62695a6c34221e453d0d7193624b958":[6,0,233,1],
-"struct__EvSidebarAttachmentsClass.html#addf91566e0c5ae009428f12c8927b64b":[6,0,233,0],
-"struct__EvSidebarAttachmentsPrivate.html":[6,0,234],
-"struct__EvSidebarAttachmentsPrivate.html#a3b22553fb6fc66cf9ae969e957e5d673":[6,0,234,2],
-"struct__EvSidebarAttachmentsPrivate.html#a691f3d7a759ec09d782575922a405987":[6,0,234,3],
-"struct__EvSidebarAttachmentsPrivate.html#a7280c6799f7d80415925c8273400ecc7":[6,0,234,0],
-"struct__EvSidebarAttachmentsPrivate.html#aa364a06eacb41b49e10d13c3ff0814dc":[6,0,234,1]
+"struct__EvSidebarAttachmentsClass.html#aa62695a6c34221e453d0d7193624b958":[6,0,233,1]
 };

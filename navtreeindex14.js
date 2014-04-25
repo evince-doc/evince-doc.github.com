@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"ev-poppler_8cc.html#a8aa2c9e070998e3530a208c46988ca70":[7,0,0,0,3,0,24],
+"ev-poppler_8cc.html#a8c1d39ebfeaf4db5e9e66f0478389097":[7,0,0,0,3,0,108],
 "ev-poppler_8cc.html#a8d48068de2dde3ae9bb388c513dbf5f9":[7,0,0,0,3,0,82],
 "ev-poppler_8cc.html#a8d69e30506ea74d7b35922b22855525a":[7,0,0,0,3,0,84],
 "ev-poppler_8cc.html#a8e8660c690ade21b39c0e4dbfcf4ebb5":[7,0,0,0,3,0,35],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "ev-progress-message-area_8h.html#aee823accc4654f108e4f0ef4029abf92":[7,0,0,7,36,9],
 "ev-progress-message-area_8h.html#aef70d47eba2f603f415fd5ce5c55c428":[7,0,0,7,36,2],
 "ev-progress-message-area_8h.html#aef8415fa9e8c86973ded54548fdf2563":[7,0,0,7,36,6],
-"ev-progress-message-area_8h.html#af6dcb7f77bc9846c040f12370da2ecd3":[7,0,0,7,36,13],
-"ev-progress-message-area_8h_source.html":[7,0,0,7,36],
-"ev-properties-dialog_8c.html":[7,0,0,7,37]
+"ev-progress-message-area_8h.html#af6dcb7f77bc9846c040f12370da2ecd3":[7,0,0,7,36,13]
 };

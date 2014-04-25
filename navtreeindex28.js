@@ -1,5 +1,11 @@
 var NAVTREEINDEX28 =
 {
+"struct__EvDocumentClass.html#a9564fb5a3e83bda242b7fcc7405a0972":[6,0,75,3],
+"struct__EvDocumentClass.html#abd33a2607c47ae97f9ae24c6458e8790":[6,0,75,0],
+"struct__EvDocumentClass.html#ad618325d2713d01425d5f69533df0ac0":[6,0,75,14],
+"struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f":[6,0,75,8],
+"struct__EvDocumentClass.html#ad9455c99cda4ab67001809719c823eb6":[6,0,75,10],
+"struct__EvDocumentClass.html#addbd3fbe9018832441566ba14ee85f01":[6,0,75,13],
 "struct__EvDocumentClass.html#aea85b7496821ccee8359e24d7f85163c":[6,0,75,5],
 "struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7":[6,0,75,12],
 "struct__EvDocumentFindInterface.html":[6,0,76],
@@ -243,11 +249,5 @@ var NAVTREEINDEX28 =
 "struct__EvHistoryPrivate.html#a42648c828c41885f26534d9bbd0ebf45":[6,0,118,0],
 "struct__EvHistoryPrivate.html#ab35abf0ccc468348f2d3b7ccd2c7b0a0":[6,0,118,2],
 "struct__EvHistoryPrivate.html#ae764dff779335387600ee403105647f3":[6,0,118,3],
-"struct__EvHyperlink.html":[6,0,119],
-"struct__EvHyperlink.html#aa21705fa38668b0e9c79abf8d5de5fd4":[6,0,119,0],
-"struct__EvHyperlink.html#ac270cf3f8e9d8692a119c7b7bea3a8e6":[6,0,119,1],
-"struct__EvHyperlinkClass.html":[6,0,120],
-"struct__EvHyperlinkClass.html#afc22b87f1a21835e5789ee20209beb42":[6,0,120,0],
-"struct__EvImage.html":[6,0,121],
-"struct__EvImage.html#acef35819527d67cc426099269bbe16cb":[6,0,121,1]
+"struct__EvHyperlink.html":[6,0,119]
 };

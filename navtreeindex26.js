@@ -1,5 +1,11 @@
 var NAVTREEINDEX26 =
 {
+"structGlobalFontInfo.html#a93b3bec3f5990d421ddba7130095b6ec":[6,0,327,11],
+"structGlobalFontInfo.html#abe2c4c05ca46b1a17811602505fd26df":[6,0,327,5],
+"structGlobalFontInfo.html#ad11dd67acd61265ec737d9c448208745":[6,0,327,3],
+"structGlobalFontInfo.html#ae7ece2c8f8d22ae9969a7ce010cf0ab5":[6,0,327,1],
+"structGlobalFontInfo.html#af6a12d8109a46d90f220547a82cfd43f":[6,0,327,4],
+"structGlobalFontInfo.html#aff6da64a396489bea9511d774abf626c":[6,0,327,14],
 "structImageDNDInfo.html":[6,0,328],
 "structImageDNDInfo.html#a099b12a4454cacea35cb553481c75843":[6,0,328,2],
 "structImageDNDInfo.html#a765c01435702fa77bdc00daac0a33858":[6,0,328,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviFontMapEnt.html#a0ba3751c790d17171834e435b55c407a":[6,0,30,8],
 "struct__DviFontMapEnt.html#a7244d23ea435682c6eae2ed8aac289b6":[6,0,30,4],
 "struct__DviFontMapEnt.html#a8c20097421fbe04adaf1954ac1aacbad":[6,0,30,1],
-"struct__DviFontMapEnt.html#a97e09ee9acad5d06906e8316a5916c3c":[6,0,30,9],
-"struct__DviFontMapEnt.html#ab1e7f26b8b22a542addc9c838f359e56":[6,0,30,2],
-"struct__DviFontMapEnt.html#abf8e131c0f5f6a60a2764ff104a58bbc":[6,0,30,0],
-"struct__DviFontMapEnt.html#ac27eee617d78a41b4de679cb17bfd3e6":[6,0,30,7],
-"struct__DviFontMapEnt.html#ac38137254ea0f7c86751e5cbe413c636":[6,0,30,3],
-"struct__DviFontMapEnt.html#adfc592f373c52b857c3260ef9c123ad3":[6,0,30,6],
-"struct__DviFontMapEnt.html#ae3c1c72c2f18d0a984209dfef65c7284":[6,0,30,5]
+"struct__DviFontMapEnt.html#a97e09ee9acad5d06906e8316a5916c3c":[6,0,30,9]
 };

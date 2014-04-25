@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"ev-progress-message-area_8h_source.html":[7,0,0,7,36],
+"ev-properties-dialog_8c.html":[7,0,0,7,37],
 "ev-properties-dialog_8c.html#a46102e3d789254c78de89281a7e26d96":[7,0,0,7,37,2],
 "ev-properties-dialog_8c.html#a70579e8e84faa5bcdd960f90e84d858a":[7,0,0,7,37,4],
 "ev-properties-dialog_8c.html#a7f86ad1104d4f48e5c2113d02fcdc87a":[7,0,0,7,37,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "ev-sidebar-attachments_8c.html#a78b6ecd6b1675bd0d5595c4cc27ebd81":[7,0,0,7,45,22],
 "ev-sidebar-attachments_8c.html#a8628933cde20921c453a6d2607bdad62a1e7365ab36b084beff81fb1b96df4b11":[7,0,0,7,45,10],
 "ev-sidebar-attachments_8c.html#a8628933cde20921c453a6d2607bdad62a55d7f80237501e6ebd069f1f556f6217":[7,0,0,7,45,9],
-"ev-sidebar-attachments_8c.html#a8db54473599a0287d12a92ab134177e8":[7,0,0,7,45,15],
-"ev-sidebar-attachments_8c.html#a90e70f4e6c5482cb184d847e072ae22b":[7,0,0,7,45,27],
-"ev-sidebar-attachments_8c.html#a9334a5b9057f32da96db9b5c6a045d67abf7866167c9f740bdacaa103a372b335":[7,0,0,7,45,8]
+"ev-sidebar-attachments_8c.html#a8db54473599a0287d12a92ab134177e8":[7,0,0,7,45,15]
 };

@@ -428,6 +428,7 @@ var searchData=
   ['_5ftiff2pscontext',['_TIFF2PSContext',['../struct__TIFF2PSContext.html',1,'']]],
   ['_5ftiffdocument',['_TiffDocument',['../struct__TiffDocument.html',1,'']]],
   ['_5ftiffdocumentclass',['_TiffDocumentClass',['../struct__TiffDocumentClass.html',1,'']]],
+  ['_5ftransform_5fdoc_5frect_5fto_5fatk_5frect',['_transform_doc_rect_to_atk_rect',['../ev-view-accessible_8c.html#adf7a1febb1c508528289b7941c3e6d82',1,'_transform_doc_rect_to_atk_rect(EvViewAccessible *accessible, gint page, EvRectangle *doc_rect, EvRectangle *atk_rect, AtkCoordType coord_type):&#160;ev-view-accessible.c'],['../ev-view-accessible_8h.html#adf7a1febb1c508528289b7941c3e6d82',1,'_transform_doc_rect_to_atk_rect(EvViewAccessible *accessible, gint page, EvRectangle *doc_rect, EvRectangle *atk_rect, AtkCoordType coord_type):&#160;ev-view-accessible.c']]],
   ['_5fxpsdocument',['_XPSDocument',['../struct__XPSDocument.html',1,'']]],
   ['_5fxpsdocumentclass',['_XPSDocumentClass',['../struct__XPSDocumentClass.html',1,'']]]
 ];
