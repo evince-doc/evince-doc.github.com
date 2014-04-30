@@ -494,19 +494,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00527">527</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;{</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (sidebar));</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    g_return_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model));</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordflow">if</span> (model == sidebar-&gt;priv-&gt;model)</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    sidebar-&gt;priv-&gt;model = model;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a>),</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;              sidebar);</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00542">542</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;{</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (sidebar));</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    g_return_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model));</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">if</span> (model == sidebar-&gt;priv-&gt;model)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    sidebar-&gt;priv-&gt;model = model;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a>),</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;              sidebar);</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -575,7 +575,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8h_a5268901747270ea9f1a4733e5ac5543a_icgraph.svg" width="4259" height="948"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8h_a5268901747270ea9f1a4733e5ac5543a_icgraph.svg" width="4262" height="911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -588,7 +588,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar_8h.html">ev-sidebar.h</a></li>
-    <li class="footer">Generated on Tue Apr 29 2014 16:45:20 for Evince by
+    <li class="footer">Generated on Wed Apr 30 2014 08:16:18 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

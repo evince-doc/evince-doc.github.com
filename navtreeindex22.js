@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"ev-window_8h.html#af675dc382185a96ca9be725eb5ca1f00":[7,0,0,7,66,11],
 "ev-window_8h_source.html":[7,0,0,7,66],
 "ev-zoom-action-widget_8c.html":[7,0,0,7,67],
 "ev-zoom-action-widget_8c.html#a002b2f4894492820fe708b1b7e7c5e70":[7,0,0,7,67,1],
@@ -222,8 +223,8 @@ var NAVTREEINDEX22 =
 "fontsrch_8c.html#ae808ffd5a3231a6418f13f415ed989d2":[7,0,0,0,2,0,16,2],
 "fontsrch_8c.html#ae9de526d4c8933c5faaf7354c4a30717":[7,0,0,0,2,0,16,12],
 "fontsrch_8c_source.html":[7,0,0,0,2,0,16],
-"functions.html":[6,2,0,0],
 "functions.html":[6,2,0],
+"functions.html":[6,2,0,0],
 "functions_0x61.html":[6,2,0,1],
 "functions_0x62.html":[6,2,0,2],
 "functions_0x63.html":[6,2,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "functions_0x77.html":[6,2,0,22],
 "functions_0x78.html":[6,2,0,23],
 "functions_0x79.html":[6,2,0,24],
-"functions_0x7a.html":[6,2,0,25],
-"functions_func.html":[6,2,1]
+"functions_0x7a.html":[6,2,0,25]
 };

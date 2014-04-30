@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc":[6,0,270,2],
 "struct__EvViewSelection.html#abb4b7be54930cec3b1b4f956feaf294a":[6,0,270,3],
 "struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa":[6,0,270,1],
 "struct__EvWindow.html":[6,0,271],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "struct____synctex__scanner__t.html#a8438cc8e64fd36c7dcb54b6f3c1450dd":[6,0,9,18],
 "struct____synctex__scanner__t.html#aa09bf8eca2508d26805b53e173ecfd65":[6,0,9,4],
 "struct____synctex__scanner__t.html#aa6abb8a43f2d6c768736bd1e88fff5a0":[6,0,9,23],
-"struct____synctex__scanner__t.html#ab45b78f37503ecad42a2d59db482aa84":[6,0,9,2],
-"struct____synctex__scanner__t.html#ab769f28f38ed13f3b67bdeef142c8072":[6,0,9,17]
+"struct____synctex__scanner__t.html#ab45b78f37503ecad42a2d59db482aa84":[6,0,9,2]
 };

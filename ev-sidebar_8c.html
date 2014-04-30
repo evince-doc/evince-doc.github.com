@@ -191,6 +191,8 @@ Functions</h2></td></tr>
 <tr class="separator:a4041892a870949922598e19858af1c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07e374f15b88269b906f04e88c7fa89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-sidebar_8c.html#a07e374f15b88269b906f04e88c7fa89a">ev_sidebar_add_page</a> (<a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *ev_sidebar, GtkWidget *main_widget)</td></tr>
 <tr class="separator:a07e374f15b88269b906f04e88c7fa89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d13b9c12c78b6592cd4439216736015"><td class="memItemLeft" align="right" valign="top">static gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-sidebar_8c.html#a5d13b9c12c78b6592cd4439216736015">ev_sidebar_current_page_support_document</a> (<a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *sidebar, <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
+<tr class="separator:a5d13b9c12c78b6592cd4439216736015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c0e8dbddd906462c83106f2851deb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a> (<a class="el" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *model, GParamSpec *pspec, <a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *sidebar)</td></tr>
 <tr class="separator:a07c0e8dbddd906462c83106f2851deb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac386548b488f8327b419dd3e7ff17df6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-sidebar_8c.html#ac386548b488f8327b419dd3e7ff17df6">ev_sidebar_set_model</a> (<a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *sidebar, <a class="el" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *model)</td></tr>
@@ -459,6 +461,57 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5d13b9c12c78b6592cd4439216736015"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gboolean ev_sidebar_current_page_support_document </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *&#160;</td>
+          <td class="paramname"><em>sidebar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *&#160;</td>
+          <td class="paramname"><em>document</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00488">488</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;{</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    GtkWidget *current_page = <a class="code" href="ev-sidebar_8c.html#a85bc4770d9c9b1bdcb0d5f57ed8b7d39">ev_sidebar_get_current_page</a> (sidebar);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev_sidebar_page_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (current_page), document);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a5d13b9c12c78b6592cd4439216736015_icgraph.svg" width="752" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ad7c92ecc8bf7accee64c86389ecb4510"></a>
 <div class="memitem">
 <div class="memproto">
@@ -499,11 +552,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    G_OBJECT_CLASS (ev_sidebar_parent_class)-&gt;dispose (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_ad7c92ecc8bf7accee64c86389ecb4510_icgraph.svg" width="350" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -549,47 +602,52 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00488">488</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;{</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <a class="code" href="struct__EvSidebarPrivate.html">EvSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    GtkTreeIter iter;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    gboolean valid;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    gboolean has_pages = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordflow">for</span> (valid = gtk_tree_model_get_iter_first (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter);</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;         valid;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;         valid = gtk_tree_model_iter_next (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter)) {</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        GtkWidget *widget;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        GtkWidget *menu_widget;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        gtk_tree_model_get (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter,</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a79e9f285d34216706a748fd7ba8941b7ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, &amp;widget,</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a79e9f285d34216706a748fd7ba8941b7a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, &amp;menu_widget,</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                    -1);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev_sidebar_page_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (widget), document)) {</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            has_pages = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;            gtk_widget_set_sensitive (menu_widget, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        }</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        g_object_unref (widget);</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        g_object_unref (menu_widget);</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keywordflow">if</span> (!has_pages) {</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        gtk_widget_hide (GTK_WIDGET (sidebar));</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;select_button), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    }</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00498">498</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;{</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <a class="code" href="struct__EvSidebarPrivate.html">EvSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    GtkTreeIter iter;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    gboolean valid;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    GtkWidget *first_supported_page = NULL;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="keywordflow">for</span> (valid = gtk_tree_model_get_iter_first (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;         valid;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;         valid = gtk_tree_model_iter_next (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter)) {</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        GtkWidget *widget;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        GtkWidget *menu_widget;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        gtk_tree_model_get (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter,</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a79e9f285d34216706a748fd7ba8941b7ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, &amp;widget,</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a79e9f285d34216706a748fd7ba8941b7a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, &amp;menu_widget,</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                    -1);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev_sidebar_page_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (widget), document)) {</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            gtk_widget_set_sensitive (menu_widget, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            <span class="keywordflow">if</span> (!first_supported_page)</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                                first_supported_page = widget;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            gtk_widget_set_sensitive (menu_widget, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        }</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        g_object_unref (widget);</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        g_object_unref (menu_widget);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    }</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordflow">if</span> (first_supported_page != NULL) {</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-sidebar_8c.html#a5d13b9c12c78b6592cd4439216736015">ev_sidebar_current_page_support_document</a> (sidebar, document)) {</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            <a class="code" href="ev-sidebar_8c.html#a5268901747270ea9f1a4733e5ac5543a">ev_sidebar_set_page</a> (sidebar, first_supported_page);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        }</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;select_button), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        gtk_widget_hide (GTK_WIDGET (sidebar));</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    }</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a07c0e8dbddd906462c83106f2851deb5_icgraph.svg" width="528" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -627,12 +685,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        (notebook, gtk_notebook_get_current_page (notebook));</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a85bc4770d9c9b1bdcb0d5f57ed8b7d39_icgraph.svg" width="627" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a85bc4770d9c9b1bdcb0d5f57ed8b7d39_icgraph.svg" width="1000" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -697,11 +755,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a17f62fc152686d4c92292e7501f83c05_icgraph.svg" width="379" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -859,11 +917,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (menu_button), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a86d6a1df849ccf9adbbbe10fcd483364_icgraph.svg" width="390" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -910,11 +968,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    ev_sidebar-&gt;priv-&gt;menu = NULL;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a7c2f28046736156188a2353283aef847_icgraph.svg" width="368" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -981,11 +1039,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    g_object_notify (G_OBJECT (ev_sidebar), <span class="stringliteral">&quot;current-page&quot;</span>);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_af44b036cbf37a292589f89adf2b9c390_icgraph.svg" width="534" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1062,11 +1120,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    *push_in = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_accbd63f7133ad8e47fa77cf60e12b989_icgraph.svg" width="574" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1099,11 +1157,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">return</span> ev_sidebar;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a4041892a870949922598e19858af1c73_icgraph.svg" width="291" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1167,11 +1225,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a49fb7275bb2bcf31e54a1ba1204c1b61_icgraph.svg" width="344" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1246,11 +1304,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a4e7eb9adaef629aefacbdd6f2521909e_icgraph.svg" width="344" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1306,12 +1364,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    g_free (title);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_aba6cb075ecbde7736335e2bf2f84d6fd_icgraph.svg" width="4483" height="968"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_aba6cb075ecbde7736335e2bf2f84d6fd_icgraph.svg" width="4478" height="967"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1342,25 +1400,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00527">527</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;{</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (sidebar));</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    g_return_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model));</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordflow">if</span> (model == sidebar-&gt;priv-&gt;model)</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    sidebar-&gt;priv-&gt;model = model;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a>),</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;              sidebar);</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00542">542</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;{</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (sidebar));</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    g_return_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model));</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">if</span> (model == sidebar-&gt;priv-&gt;model)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    sidebar-&gt;priv-&gt;model = model;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a>),</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;              sidebar);</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_ac386548b488f8327b419dd3e7ff17df6_icgraph.svg" width="328" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1418,12 +1476,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    g_object_notify (G_OBJECT (ev_sidebar), <span class="stringliteral">&quot;current-page&quot;</span>);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a5268901747270ea9f1a4733e5ac5543a_icgraph.svg" width="4259" height="948"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a5268901747270ea9f1a4733e5ac5543a_icgraph.svg" width="4262" height="911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1488,11 +1546,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8c_a903896e2ae9a92e281594c74010733af_icgraph.svg" width="376" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1506,7 +1564,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar_8c.html">ev-sidebar.c</a></li>
-    <li class="footer">Generated on Tue Apr 29 2014 16:45:20 for Evince by
+    <li class="footer">Generated on Wed Apr 30 2014 08:16:18 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
