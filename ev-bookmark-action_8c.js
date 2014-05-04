@@ -2,8 +2,8 @@ var ev_bookmark_action_8c =
 [
     [ "_EvBookmarkAction", "struct__EvBookmarkAction.html", "struct__EvBookmarkAction" ],
     [ "_EvBookmarkActionClass", "struct__EvBookmarkActionClass.html", "struct__EvBookmarkActionClass" ],
-    [ "PROP_0", "ev-bookmark-action_8c.html#a84627a72058502328269676b81780f89ac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_PAGE", "ev-bookmark-action_8c.html#a84627a72058502328269676b81780f89a152797fe61abe42ebed64c158159bed4", null ],
+    [ "PROP_0", "ev-bookmark-action_8c.html#af715e26dfffd1f8de1c18449e2770cffac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_PAGE", "ev-bookmark-action_8c.html#af715e26dfffd1f8de1c18449e2770cffa152797fe61abe42ebed64c158159bed4", null ],
     [ "ev_bookmark_action_class_init", "ev-bookmark-action_8c.html#ad66331fba5b5d203f753010a3f37165c", null ],
     [ "ev_bookmark_action_get_page", "ev-bookmark-action_8c.html#a51c06e26a655c80c39e60c44f2d111d9", null ],
     [ "ev_bookmark_action_init", "ev-bookmark-action_8c.html#aab560c780a1e82093645300d509bb6c2", null ],

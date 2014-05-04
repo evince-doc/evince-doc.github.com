@@ -29,6 +29,7 @@ var searchData=
   ['evpagelayout',['EvPageLayout',['../ev-document-model_8h.html#a9746ca193f7575bbca082fe76635174f',1,'ev-document-model.h']]],
   ['evpresentationstate',['EvPresentationState',['../ev-view-presentation_8c.html#a8ec47fe49008f1db86ae2ade579cb5fe',1,'ev-view-presentation.c']]],
   ['evprintpageset',['EvPrintPageSet',['../ev-window_8h.html#a142763cc3835007569841f2b685abea4',1,'ev-window.h']]],
+  ['evrecentviewcolumns',['EvRecentViewColumns',['../ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747cc',1,'ev-recent-view.c']]],
   ['evsavetype',['EvSaveType',['../ev-window_8c.html#a0f9e34e0f58801ff959d153e044faabd',1,'ev-window.c']]],
   ['evselectionstyle',['EvSelectionStyle',['../ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23d',1,'ev-selection.h']]],
   ['evsizingmode',['EvSizingMode',['../ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5',1,'ev-document-model.h']]],

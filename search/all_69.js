@@ -7,6 +7,7 @@ var searchData=
   ['icon_5ftheme',['icon_theme',['../struct__EvSidebarAttachmentsPrivate.html#aa364a06eacb41b49e10d13c3ff0814dc',1,'_EvSidebarAttachmentsPrivate']]],
   ['icon_5ftheme_5fget_5fpixbuf_5ffrom_5fmime_5ftype',['icon_theme_get_pixbuf_from_mime_type',['../ev-sidebar-attachments_8c.html#aaf8ba7c97f3cc7db0ba1f15542843439',1,'ev-sidebar-attachments.c']]],
   ['icon_5fview',['icon_view',['../struct__EvSidebarAttachmentsPrivate.html#a3b22553fb6fc66cf9ae969e957e5d673',1,'_EvSidebarAttachmentsPrivate::icon_view()'],['../struct__EvSidebarThumbnailsPrivate.html#a3306e5a58924e5ecfa50704db79ab0c9',1,'_EvSidebarThumbnailsPrivate::icon_view()']]],
+  ['icon_5fview_5fsize',['ICON_VIEW_SIZE',['../ev-recent-view_8c.html#a8ee19e1b3ea3ffd9122c9a20ba8a5d86',1,'ev-recent-view.c']]],
   ['id',['id',['../struct__DviFontClass.html#a227a3e5b8e0b2828505f2c9eb37db2da',1,'_DviFontClass::id()'],['../struct__DviFontSearch.html#a3fcf145e91fda9a1b659d31d2ad4685e',1,'_DviFontSearch::id()'],['../struct__EvFormField.html#adc83bbd40a93ad6b970da82e9da96998',1,'_EvFormField::id()'],['../struct__EvImagePrivate.html#aa56b69b92d00486500c2a9e71e74d005',1,'_EvImagePrivate::id()']]],
   ['idle_5fcancelled_5fid',['idle_cancelled_id',['../struct__EvJob.html#ad299a781e4314b30d929970b4638eddd',1,'_EvJob']]],
   ['idle_5ffinished_5fid',['idle_finished_id',['../struct__EvJob.html#ac7d19aa4f1c7fe25bd1cd73b0f13b6f8',1,'_EvJob']]],
@@ -56,7 +57,7 @@ var searchData=
   ['issp',['ISSP',['../private_8h.html#aa3cad8c2f334773ed3f31478e63e636b',1,'private.h']]],
   ['isvirtual',['ISVIRTUAL',['../mdvi_8h.html#a5d9faef015549a2847491f53961e8bcf',1,'mdvi.h']]],
   ['italicangle',['italicAngle',['../structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff',1,'GlobalFontInfo']]],
-  ['item_5factivated',['item_activated',['../struct__EvOpenRecentActionClass.html#a02af51bab4a1d06f8a02373bdc82c98b',1,'_EvOpenRecentActionClass::item_activated()'],['../ev-open-recent-action_8c.html#afa9be5679ab03d785820f2474c5ccc6eaf4adf678107ef39e690a65618cdc19ee',1,'ITEM_ACTIVATED():&#160;ev-open-recent-action.c']]],
+  ['item_5factivated',['item_activated',['../struct__EvOpenRecentActionClass.html#a02af51bab4a1d06f8a02373bdc82c98b',1,'_EvOpenRecentActionClass::item_activated()'],['../ev-open-recent-action_8c.html#aa156d1cebb38c8a65846c4d9c006012aaf4adf678107ef39e690a65618cdc19ee',1,'ITEM_ACTIVATED():&#160;ev-open-recent-action.c'],['../ev-recent-view_8c.html#a531c35e38ede3ea4e5ba5afb24b29493af4adf678107ef39e690a65618cdc19ee',1,'ITEM_ACTIVATED():&#160;ev-recent-view.c']]],
   ['items',['items',['../struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9',1,'_EvBookmarks::items()'],['../struct__EvMetadata.html#aebc19339308c1ad2790fab4e7e64948b',1,'_EvMetadata::items()']]],
   ['index_20for_20this_20mapping',['index for this mapping',['../page.html',1,'']]]
 ];

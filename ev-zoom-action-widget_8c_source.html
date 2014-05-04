@@ -135,8 +135,8 @@ $(document).ready(function(){initNavTree('ev-zoom-action-widget_8c_source.html',
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;glib/gi18n.h&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-zoom-action-widget_8c.html#a1b70d876770ccff427513794d6b0b2a7ac37dda0da1a44e10c0504afeeb863f3c">   29</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ev-zoom-action-widget_8c.html#a1b70d876770ccff427513794d6b0b2a7a7536978525fac3495f70dfa3a0b09dbe">   30</a></span>&#160;        <a class="code" href="ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-zoom-action-widget_8c.html#a3babbf89cae9b856a12864a41506efbdac37dda0da1a44e10c0504afeeb863f3c">   29</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ev-zoom-action-widget_8c.html#a3babbf89cae9b856a12864a41506efbda7536978525fac3495f70dfa3a0b09dbe">   30</a></span>&#160;        <a class="code" href="ev-history-action-widget_8c.html#a1be3860693af99a6c1da72580097294ca7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="struct__EvZoomActionWidgetPrivate.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvZoomActionWidgetPrivate.html">_EvZoomActionWidgetPrivate</a> {</div>
@@ -160,10 +160,10 @@ $(document).ready(function(){initNavTree('ev-zoom-action-widget_8c_source.html',
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">float</span>  zoom_perc;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        guint  i;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">for</span> (i = 3; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>); i++) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span> (ABS (zoom - <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>) &lt; <a class="code" href="ev-zoom-action-widget_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">for</span> (i = 3; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span> (ABS (zoom - <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>) &lt; <a class="code" href="ev-zoom-action-widget_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        gtk_entry_set_text (GTK_ENTRY (control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#a5dafebdf9190d83aaedadf2e4e913973">entry</a>),</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                            <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].name);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                            <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].name);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
@@ -456,7 +456,7 @@ $(document).ready(function(){initNavTree('ev-zoom-action-widget_8c_source.html',
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <a class="code" href="struct__EvZoomActionWidget.html">EvZoomActionWidget</a> *control = <a class="code" href="ev-zoom-action-widget_8h.html#a595660f80532bfb0b9e600e3d1abcc97">EV_ZOOM_ACTION_WIDGET</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a>:</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-history-action-widget_8c.html#a1be3860693af99a6c1da72580097294ca7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a>:</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                g_value_set_boolean (value, control-&gt;<a class="code" href="struct__EvZoomActionWidget.html#adeb784d507aa8214a8ab1f17f3f3d330">priv</a>-&gt;<a class="code" href="struct__EvZoomActionWidgetPrivate.html#ad0f556aba5db5cc1362e7c0d04ec9168">popup_shown</a>);</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">default</span>:</div>
@@ -472,7 +472,7 @@ $(document).ready(function(){initNavTree('ev-zoom-action-widget_8c_source.html',
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        object_class-&gt;get_property = <a class="code" href="ev-zoom-action-widget_8c.html#a801e65d0915104eec8ee8617c74e3810">ev_zoom_action_widget_get_property</a>;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        g_object_class_install_property (object_class,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                         <a class="code" href="ev-history-action-widget_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a>,</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                         <a class="code" href="ev-history-action-widget_8c.html#a1be3860693af99a6c1da72580097294ca7536978525fac3495f70dfa3a0b09dbe">PROP_POPUP_SHOWN</a>,</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                                         g_param_spec_boolean (<span class="stringliteral">&quot;popup-shown&quot;</span>,</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                                                               <span class="stringliteral">&quot;Popup shown&quot;</span>,</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                                               <span class="stringliteral">&quot;Whether the zoom control&#39;s dropdown is shown&quot;</span>,</div>
@@ -542,7 +542,7 @@ $(document).ready(function(){initNavTree('ev-zoom-action-widget_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-zoom-action-widget_8c.html">ev-zoom-action-widget.c</a></li>
-    <li class="footer">Generated on Sun May 4 2014 09:48:33 for Evince by
+    <li class="footer">Generated on Sun May 4 2014 14:14:41 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

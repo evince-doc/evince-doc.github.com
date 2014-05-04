@@ -1371,7 +1371,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a732da72728cc86b5058ec03aea40f6c5">EV_LINK_ACTION_TYPE_GOTO_DEST</a>: {</div>
 <div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;            <a class="code" href="ev-link-dest_8h.html#a22a02983ecd30b97b3058686690d5dee">EvLinkDest</a> *<a class="code" href="synctex__parser__utils_8c.html#a723e06ace24a60ed94dca199595c08d2">dest</a>;</div>
 <div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;            </div>
-<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;            g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view_8c.html#a16685eea158879e41b101ca3634de462a4e96c390423f28d509edad4f3c79bc9b">SIGNAL_HANDLE_LINK</a>], 0, link);</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;            g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view_8c.html#a394b3903fbf00ba2b6243f60689a5a5fa4e96c390423f28d509edad4f3c79bc9b">SIGNAL_HANDLE_LINK</a>], 0, link);</div>
 <div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;        </div>
 <div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;            dest = <a class="code" href="ev-link-action_8c.html#afda5946bc557e14959dd81feab0d3457">ev_link_action_get_dest</a> (action);</div>
 <div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;            <a class="code" href="ev-view_8c.html#af1634c45db33ffcc762ce8135ccee7d3">ev_view_goto_dest</a> (view, dest);</div>
@@ -1405,7 +1405,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;                }</div>
 <div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;            }</div>
 <div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;</div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;            g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view_8c.html#a16685eea158879e41b101ca3634de462a1c06cd1a294d12d66b6bc3a3bc0c7f05">SIGNAL_LAYERS_CHANGED</a>], 0);</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;            g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view_8c.html#a394b3903fbf00ba2b6243f60689a5a5fa1c06cd1a294d12d66b6bc3a3bc0c7f05">SIGNAL_LAYERS_CHANGED</a>], 0);</div>
 <div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;            <a class="code" href="ev-view_8c.html#a0d351046eca883c1851b52eb6d026018">ev_view_reload_page</a> (view, view-&gt;<a class="code" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>, NULL);</div>
 <div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;        }</div>
 <div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -1413,7 +1413,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a64241e362318b36f4ad576ee6b38a5a0">EV_LINK_ACTION_TYPE_EXTERNAL_URI</a>:</div>
 <div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057ae39dd1c73a41a3a14d897e431c64ab86">EV_LINK_ACTION_TYPE_LAUNCH</a>:</div>
 <div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057a0114499e8e5ef32b3aaa04822c4e0ccb">EV_LINK_ACTION_TYPE_NAMED</a>:</div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;            g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view-presentation_8c.html#a77867ab4129f63159b37bca3b652a798af1b1ff86dfe7416a02aaade1a1fbc668">SIGNAL_EXTERNAL_LINK</a>], 0, action);</div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;            g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view-presentation_8c.html#afa231099d07583c3ed0981e0bb665f55af1b1ff86dfe7416a02aaade1a1fbc668">SIGNAL_EXTERNAL_LINK</a>], 0, action);</div>
 <div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;    }</div>
 <div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;}</div>
@@ -1955,7 +1955,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l03539"></a><span class="lineno"> 3539</span>&#160;        view-&gt;<a class="code" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a> = page;</div>
 <div class="line"><a name="l03540"></a><span class="lineno"> 3540</span>&#160;        view-&gt;<a class="code" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> = offset;</div>
 <div class="line"><a name="l03541"></a><span class="lineno"> 3541</span>&#160;</div>
-<div class="line"><a name="l03542"></a><span class="lineno"> 3542</span>&#160;        g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view_8c.html#a16685eea158879e41b101ca3634de462a88d4855ce571ef6301476468ea72a974">SIGNAL_CURSOR_MOVED</a>], 0,</div>
+<div class="line"><a name="l03542"></a><span class="lineno"> 3542</span>&#160;        g_signal_emit (view, <a class="code" href="ev-view_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-view_8c.html#a394b3903fbf00ba2b6243f60689a5a5fa88d4855ce571ef6301476468ea72a974">SIGNAL_CURSOR_MOVED</a>], 0,</div>
 <div class="line"><a name="l03543"></a><span class="lineno"> 3543</span>&#160;                   view-&gt;<a class="code" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a>, view-&gt;<a class="code" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a>);</div>
 <div class="line"><a name="l03544"></a><span class="lineno"> 3544</span>&#160;</div>
 <div class="line"><a name="l03545"></a><span class="lineno"> 3545</span>&#160;        <span class="keywordflow">if</span> (view-&gt;<a class="code" href="struct__EvView.html#a7d08cd0176dfb04c95e43d5236b6323a">caret_enabled</a> &amp;&amp; <a class="code" href="ev-view_8c.html#a691f0db8c7f2b66ded75e4dcf7a727a8">cursor_is_in_visible_page</a> (view))</div>
@@ -2358,7 +2358,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view_8h.html">ev-view.h</a></li>
-    <li class="footer">Generated on Sun May 4 2014 09:48:37 for Evince by
+    <li class="footer">Generated on Sun May 4 2014 14:14:47 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

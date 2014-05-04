@@ -6113,9 +6113,9 @@ Variables</h2></td></tr>
 <div class="line"><a name="l03945"></a><span class="lineno"> 3945</span>&#160;    gdouble     zoom = 0;</div>
 <div class="line"><a name="l03946"></a><span class="lineno"> 3946</span>&#160;    guint       i;</div>
 <div class="line"><a name="l03947"></a><span class="lineno"> 3947</span>&#160;</div>
-<div class="line"><a name="l03948"></a><span class="lineno"> 3948</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>); i++) {</div>
-<div class="line"><a name="l03949"></a><span class="lineno"> 3949</span>&#160;        <span class="keywordflow">if</span> (strcmp (action_name, <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) == 0) {</div>
-<div class="line"><a name="l03950"></a><span class="lineno"> 3950</span>&#160;            zoom = <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].level;</div>
+<div class="line"><a name="l03948"></a><span class="lineno"> 3948</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l03949"></a><span class="lineno"> 3949</span>&#160;        <span class="keywordflow">if</span> (strcmp (action_name, <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) == 0) {</div>
+<div class="line"><a name="l03950"></a><span class="lineno"> 3950</span>&#160;            zoom = <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].level;</div>
 <div class="line"><a name="l03951"></a><span class="lineno"> 3951</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l03952"></a><span class="lineno"> 3952</span>&#160;        }</div>
 <div class="line"><a name="l03953"></a><span class="lineno"> 3953</span>&#160;    }</div>
@@ -10811,11 +10811,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l06322"></a><span class="lineno"> 6322</span>&#160;</div>
 <div class="line"><a name="l06323"></a><span class="lineno"> 6323</span>&#160;    new_ui_id = gtk_ui_manager_new_merge_id (window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>);</div>
 <div class="line"><a name="l06324"></a><span class="lineno"> 6324</span>&#160;</div>
-<div class="line"><a name="l06325"></a><span class="lineno"> 6325</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l06325"></a><span class="lineno"> 6325</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>); i++) {</div>
 <div class="line"><a name="l06326"></a><span class="lineno"> 6326</span>&#160;        GtkAction *action;</div>
 <div class="line"><a name="l06327"></a><span class="lineno"> 6327</span>&#160;</div>
-<div class="line"><a name="l06328"></a><span class="lineno"> 6328</span>&#160;        action = gtk_action_new (<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>,</div>
-<div class="line"><a name="l06329"></a><span class="lineno"> 6329</span>&#160;                     <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].name),</div>
+<div class="line"><a name="l06328"></a><span class="lineno"> 6328</span>&#160;        action = gtk_action_new (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>,</div>
+<div class="line"><a name="l06329"></a><span class="lineno"> 6329</span>&#160;                     <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].name),</div>
 <div class="line"><a name="l06330"></a><span class="lineno"> 6330</span>&#160;                     NULL, NULL);</div>
 <div class="line"><a name="l06331"></a><span class="lineno"> 6331</span>&#160;        g_signal_connect (action, <span class="stringliteral">&quot;activate&quot;</span>,</div>
 <div class="line"><a name="l06332"></a><span class="lineno"> 6332</span>&#160;                  G_CALLBACK (<a class="code" href="ev-window_8c.html#a4ebff7a7306b420a7a3cf791097df1b5">ev_window_cmd_view_zoom_activate</a>),</div>
@@ -10826,8 +10826,8 @@ Variables</h2></td></tr>
 <div class="line"><a name="l06337"></a><span class="lineno"> 6337</span>&#160;        gtk_ui_manager_add_ui (window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>,</div>
 <div class="line"><a name="l06338"></a><span class="lineno"> 6338</span>&#160;                       new_ui_id,</div>
 <div class="line"><a name="l06339"></a><span class="lineno"> 6339</span>&#160;                       <span class="stringliteral">&quot;/ZoomSelectorPopup/ViewZoomItems&quot;</span>,</div>
-<div class="line"><a name="l06340"></a><span class="lineno"> 6340</span>&#160;                       <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].name),</div>
-<div class="line"><a name="l06341"></a><span class="lineno"> 6341</span>&#160;                       <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].name,</div>
+<div class="line"><a name="l06340"></a><span class="lineno"> 6340</span>&#160;                       <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].name),</div>
+<div class="line"><a name="l06341"></a><span class="lineno"> 6341</span>&#160;                       <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].name,</div>
 <div class="line"><a name="l06342"></a><span class="lineno"> 6342</span>&#160;                       GTK_UI_MANAGER_MENUITEM,</div>
 <div class="line"><a name="l06343"></a><span class="lineno"> 6343</span>&#160;                       <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l06344"></a><span class="lineno"> 6344</span>&#160;    }</div>
@@ -12692,11 +12692,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l04879"></a><span class="lineno"> 4879</span>&#160;    GtkActionGroup *action_group = window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4bd51d1ee7b20d5117e1f3d43d3a9005">zoom_selector_popup_action_group</a>;</div>
 <div class="line"><a name="l04880"></a><span class="lineno"> 4880</span>&#160;    guint           i;</div>
 <div class="line"><a name="l04881"></a><span class="lineno"> 4881</span>&#160;</div>
-<div class="line"><a name="l04882"></a><span class="lineno"> 4882</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l04882"></a><span class="lineno"> 4882</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>); i++) {</div>
 <div class="line"><a name="l04883"></a><span class="lineno"> 4883</span>&#160;        GtkAction *action;</div>
 <div class="line"><a name="l04884"></a><span class="lineno"> 4884</span>&#160;</div>
-<div class="line"><a name="l04885"></a><span class="lineno"> 4885</span>&#160;        action = gtk_action_group_get_action (action_group, <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
-<div class="line"><a name="l04886"></a><span class="lineno"> 4886</span>&#160;        gtk_action_set_visible (action, <a class="code" href="ev-zoom-action_8h.html#ae257fbb305a44b645d4f14d1edddd81c">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a> &lt;= max_scale);</div>
+<div class="line"><a name="l04885"></a><span class="lineno"> 4885</span>&#160;        action = gtk_action_group_get_action (action_group, <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l04886"></a><span class="lineno"> 4886</span>&#160;        gtk_action_set_visible (action, <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a> &lt;= max_scale);</div>
 <div class="line"><a name="l04887"></a><span class="lineno"> 4887</span>&#160;    }</div>
 <div class="line"><a name="l04888"></a><span class="lineno"> 4888</span>&#160;}</div>
 </div><!-- fragment -->
@@ -14770,7 +14770,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    gtk_tree_model_get (tree_model, iter,</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                <a class="code" href="ev-document-links_8h.html#a16af7b253440dadd46a80a4b9fddba4dac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                <a class="code" href="ev-document-links_8h.html#a80155586fa275b28773c9b203f52cabaac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                -1);</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <span class="keywordflow">if</span> (!link)</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="keywordflow">return</span> retval;</div>
@@ -19757,7 +19757,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-window_8c.html">ev-window.c</a></li>
-    <li class="footer">Generated on Sun May 4 2014 09:48:39 for Evince by
+    <li class="footer">Generated on Sun May 4 2014 14:14:49 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

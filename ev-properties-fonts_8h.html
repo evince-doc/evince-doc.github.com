@@ -165,7 +165,7 @@ Functions</h2></td></tr>
 <tr class="separator:a6b06c8bd45a50e2a42b60ccf186a6298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc6ded718a4a56f788939a798f4b2126"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-properties-fonts_8h.html#acc6ded718a4a56f788939a798f4b2126">ev_properties_fonts_new</a> (void)</td></tr>
 <tr class="separator:acc6ded718a4a56f788939a798f4b2126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb48b7c699555ed0e300d14978b8056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-properties-fonts_8h.html#a6cb48b7c699555ed0e300d14978b8056">ev_properties_fonts_set_document</a> (<a class="el" href="ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d">EvPropertiesFonts</a> *properties, <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
+<tr class="memitem:a6cb48b7c699555ed0e300d14978b8056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-properties-fonts_8h.html#a6cb48b7c699555ed0e300d14978b8056">ev_properties_fonts_set_document</a> (<a class="el" href="ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d">EvPropertiesFonts</a> *<a class="el" href="gd-two-lines-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>, <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
 <tr class="separator:a6cb48b7c699555ed0e300d14978b8056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -349,7 +349,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ev-properties-fonts_8c_source.html#l00236">236</a> of file <a class="el" href="ev-properties-fonts_8c_source.html">ev-properties-fonts.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d">EvPropertiesFonts</a> *properties;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d">EvPropertiesFonts</a> *<a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    properties = g_object_new (<a class="code" href="ev-properties-fonts_8h.html#ad73b2b1d22404d39242add539cb1f3c7">EV_TYPE_PROPERTIES_FONTS</a>,</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
@@ -396,23 +396,23 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ev-properties-fonts_8c_source.html#l00213">213</a> of file <a class="el" href="ev-properties-fonts_8c_source.html">ev-properties-fonts.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    GtkTreeView *tree_view = GTK_TREE_VIEW (properties-&gt;fonts_treeview);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    GtkTreeView *tree_view = GTK_TREE_VIEW (<a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>-&gt;fonts_treeview);</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    GtkListStore *list_store;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    properties-&gt;document = document;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>-&gt;document = document;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    list_store = gtk_list_store_new (<a class="code" href="ev-document-fonts_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a53ae469cb8832548099bc18d144aef15">EV_DOCUMENT_FONTS_COLUMN_NUM_COLUMNS</a>,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    list_store = gtk_list_store_new (<a class="code" href="ev-document-fonts_8h.html#aba01db17f4a2bfbc3db60dc172972a25a53ae469cb8832548099bc18d144aef15">EV_DOCUMENT_FONTS_COLUMN_NUM_COLUMNS</a>,</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                     G_TYPE_STRING, G_TYPE_STRING);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    gtk_tree_view_set_model (tree_view, GTK_TREE_MODEL (list_store));</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    properties-&gt;fonts_job = <a class="code" href="ev-jobs_8c.html#a7ca0c3745c26418ca6692c7722ccf45d">ev_job_fonts_new</a> (properties-&gt;document);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    g_signal_connect (properties-&gt;fonts_job, <span class="stringliteral">&quot;updated&quot;</span>,</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>-&gt;fonts_job = <a class="code" href="ev-jobs_8c.html#a7ca0c3745c26418ca6692c7722ccf45d">ev_job_fonts_new</a> (<a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>-&gt;document);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    g_signal_connect (<a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>-&gt;fonts_job, <span class="stringliteral">&quot;updated&quot;</span>,</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;              G_CALLBACK (<a class="code" href="ev-properties-fonts_8c.html#ac9752ea423c86fd394867318f6ed3f10">job_fonts_updated_cb</a>),</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              properties);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    g_signal_connect (properties-&gt;fonts_job, <span class="stringliteral">&quot;finished&quot;</span>,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              <a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    g_signal_connect (<a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>-&gt;fonts_job, <span class="stringliteral">&quot;finished&quot;</span>,</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;              G_CALLBACK (<a class="code" href="ev-properties-fonts_8c.html#a80a2f7c12ea37cb8af997ab4f4f9154f">job_fonts_finished_cb</a>),</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;              properties);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (properties-&gt;fonts_job, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;              <a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (<a class="code" href="gd-toggle-pixbuf-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>-&gt;fonts_job, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -433,7 +433,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-properties-fonts_8h.html">ev-properties-fonts.h</a></li>
-    <li class="footer">Generated on Sun May 4 2014 09:48:38 for Evince by
+    <li class="footer">Generated on Sun May 4 2014 14:14:47 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

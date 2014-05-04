@@ -2,8 +2,8 @@ var ev_zoom_action_widget_8c =
 [
     [ "_EvZoomActionWidgetPrivate", "struct__EvZoomActionWidgetPrivate.html", "struct__EvZoomActionWidgetPrivate" ],
     [ "EPSILON", "ev-zoom-action-widget_8c.html#a002b2f4894492820fe708b1b7e7c5e70", null ],
-    [ "PROP_0", "ev-zoom-action-widget_8c.html#a1b70d876770ccff427513794d6b0b2a7ac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_POPUP_SHOWN", "ev-zoom-action-widget_8c.html#a1b70d876770ccff427513794d6b0b2a7a7536978525fac3495f70dfa3a0b09dbe", null ],
+    [ "PROP_0", "ev-zoom-action-widget_8c.html#a3babbf89cae9b856a12864a41506efbdac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_POPUP_SHOWN", "ev-zoom-action-widget_8c.html#a3babbf89cae9b856a12864a41506efbda7536978525fac3495f70dfa3a0b09dbe", null ],
     [ "document_changed_cb", "ev-zoom-action-widget_8c.html#a1d1db1d36348a84735688dab75dc7176", null ],
     [ "entry_activated_cb", "ev-zoom-action-widget_8c.html#aab5bd7c204b3fff88a5977b86fef4160", null ],
     [ "entry_icon_press_callback", "ev-zoom-action-widget_8c.html#a3f0a91d674eba7aca88139d18ce03886", null ],

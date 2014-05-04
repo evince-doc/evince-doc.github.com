@@ -144,16 +144,16 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034ac37dda0da1a44e10c0504afeeb863f3c">   38</a></span>&#160;    <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1d885322a419db7ab3c5958dbb1d5a0f">   39</a></span>&#160;    <a class="code" href="ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>,</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a152797fe61abe42ebed64c158159bed4">   40</a></span>&#160;    <a class="code" href="ev-link-dest_8c.html#aaf105ae5beaca1dee30ae54530691fcea152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5ac37dda0da1a44e10c0504afeeb863f3c">   38</a></span>&#160;    <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1d885322a419db7ab3c5958dbb1d5a0f">   39</a></span>&#160;    <a class="code" href="ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a152797fe61abe42ebed64c158159bed4">   40</a></span>&#160;    <a class="code" href="ev-link-dest_8c.html#af9bdc3014f3d54c426b6d2df10de4960a152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ev-page-accessible_8c.html#abc2c389d6c46d6d04ac600028df16305">ev_page_accessible_component_iface_init</a> (AtkComponentIface *iface);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ev-page-accessible_8c.html#a2afffcde918b8fad9b2cec5371962535">ev_page_accessible_hypertext_iface_init</a> (AtkHypertextIface *iface);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ev-page-accessible_8c.html#ac178ad436479198a67cf7382b1d1dcac">ev_page_accessible_text_iface_init</a> (AtkTextIface *iface);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#ab00e4fc51ac8f833595705069546491c">   47</a></span>&#160;<a class="code" href="ev-annotation_8c.html#aa907e1ffeecbd88d0e9600a0d697adf9">G_DEFINE_TYPE_WITH_CODE</a> (<a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a>, ev_page_accessible, ATK_TYPE_OBJECT,</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="ev-page-accessible_8c.html#ab00e4fc51ac8f833595705069546491c">   47</a></span>&#160;<a class="code" href="gd-main-icon-view_8c.html#a5ba8aca36c4f2d45ef6fbe9d26c1b97c">G_DEFINE_TYPE_WITH_CODE</a> (<a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a>, ev_page_accessible, ATK_TYPE_OBJECT,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;             G_IMPLEMENT_INTERFACE (ATK_TYPE_COMPONENT, <a class="code" href="ev-page-accessible_8c.html#abc2c389d6c46d6d04ac600028df16305">ev_page_accessible_component_iface_init</a>)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             G_IMPLEMENT_INTERFACE (ATK_TYPE_HYPERTEXT, <a class="code" href="ev-page-accessible_8c.html#a2afffcde918b8fad9b2cec5371962535">ev_page_accessible_hypertext_iface_init</a>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;             G_IMPLEMENT_INTERFACE (ATK_TYPE_TEXT, <a class="code" href="ev-page-accessible_8c.html#ac178ad436479198a67cf7382b1d1dcac">ev_page_accessible_text_iface_init</a>))</div>
@@ -205,10 +205,10 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *accessible = <a class="code" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>:</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#a930d0969b71e2d35f39bb6c1782bd719">view_accessible</a> = <a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (g_value_get_object (value));</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-link-dest_8c.html#aaf105ae5beaca1dee30ae54530691fcea152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-link-dest_8c.html#af9bdc3014f3d54c426b6d2df10de4960a152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>:</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#a77b58d9014528908b238680dc4f6df98">page</a> = g_value_get_int (value);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -225,10 +225,10 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *accessible = <a class="code" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>:</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        g_value_set_object (value, <a class="code" href="ev-page-accessible_8c.html#a6987ddc4212f7c0c3617e92e1ba16abf">ev_page_accessible_get_view_accessible</a> (accessible));</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-link-dest_8c.html#aaf105ae5beaca1dee30ae54530691fcea152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-link-dest_8c.html#af9bdc3014f3d54c426b6d2df10de4960a152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>:</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        g_value_set_int (value, <a class="code" href="ev-page-accessible_8h.html#a3f7fdcc7c5ba27b22286f6d0c8b397bd">ev_page_accessible_get_page</a> (accessible));</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -356,7 +356,7 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        g_object_class-&gt;finalize = <a class="code" href="ev-page-accessible_8c.html#a1deb42506459a705fd0911c45db95fe3">ev_page_accessible_finalize</a>;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    g_object_class_install_property (g_object_class,</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                     <a class="code" href="ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>,</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                     <a class="code" href="ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a>,</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                     g_param_spec_object (<span class="stringliteral">&quot;view-accessible&quot;</span>,</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                  <span class="stringliteral">&quot;View Accessible&quot;</span>,</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                  <span class="stringliteral">&quot;The view accessible associated to this page&quot;</span>,</div>
@@ -365,7 +365,7 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                  G_PARAM_CONSTRUCT_ONLY |</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    g_object_class_install_property (g_object_class,</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                     <a class="code" href="ev-link-dest_8c.html#aaf105ae5beaca1dee30ae54530691fcea152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                     <a class="code" href="ev-link-dest_8c.html#af9bdc3014f3d54c426b6d2df10de4960a152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>,</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                     g_param_spec_int (<span class="stringliteral">&quot;page&quot;</span>,</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                               <span class="stringliteral">&quot;Page&quot;</span>,</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                               <span class="stringliteral">&quot;Page index this page represents&quot;</span>,</div>
@@ -1223,7 +1223,7 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-accessible_8c.html">ev-page-accessible.c</a></li>
-    <li class="footer">Generated on Sun May 4 2014 09:48:32 for Evince by
+    <li class="footer">Generated on Sun May 4 2014 14:14:40 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

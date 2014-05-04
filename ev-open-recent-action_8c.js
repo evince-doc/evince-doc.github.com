@@ -1,7 +1,7 @@
 var ev_open_recent_action_8c =
 [
-    [ "ITEM_ACTIVATED", "ev-open-recent-action_8c.html#afa9be5679ab03d785820f2474c5ccc6eaf4adf678107ef39e690a65618cdc19ee", null ],
-    [ "N_SIGNALS", "ev-open-recent-action_8c.html#afa9be5679ab03d785820f2474c5ccc6ea1e7365ab36b084beff81fb1b96df4b11", null ],
+    [ "ITEM_ACTIVATED", "ev-open-recent-action_8c.html#aa156d1cebb38c8a65846c4d9c006012aaf4adf678107ef39e690a65618cdc19ee", null ],
+    [ "N_SIGNALS", "ev-open-recent-action_8c.html#aa156d1cebb38c8a65846c4d9c006012aa1e7365ab36b084beff81fb1b96df4b11", null ],
     [ "ev_open_recent_action_class_init", "ev-open-recent-action_8c.html#a8cdd9a91e6488e47bb42b5f15837fea5", null ],
     [ "ev_open_recent_action_create_tool_item", "ev-open-recent-action_8c.html#a3cdd2be789c7181224fc2345999df451", null ],
     [ "ev_open_recent_action_init", "ev-open-recent-action_8c.html#a9b49986bea77a071c9ff99ccdc6b66d7", null ],

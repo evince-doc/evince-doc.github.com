@@ -1,0 +1,25 @@
+var gd_main_view_generic_8c =
+[
+    [ "RubberbandInfo", "structRubberbandInfo.html", "structRubberbandInfo" ],
+    [ "GdMainViewGenericInterface", "gd-main-view-generic_8c.html#a4386dbc9714833df2d04b929645b6f2f", null ],
+    [ "VIEW_SELECTION_CHANGED", "gd-main-view-generic_8c.html#a61dadd085c1777f559549e05962b2c9eafaeb8b044a16bd797173dcc17db421c1", null ],
+    [ "NUM_SIGNALS", "gd-main-view-generic_8c.html#a61dadd085c1777f559549e05962b2c9ea83a9065d3886a8f5086b1873410deb21", null ],
+    [ "_gd_main_view_generic_dnd_common", "gd-main-view-generic_8c.html#a490ecda275345be0e6001c870a3e7a4b", null ],
+    [ "_gd_main_view_generic_get_rubberband_range", "gd-main-view-generic_8c.html#a928a5b38bbc13ebec765c6939e99e8f3", null ],
+    [ "build_selection_uris_foreach", "gd-main-view-generic_8c.html#a2adccdd9819bb01d0d83f288702cb730", null ],
+    [ "gd_main_view_generic_default_init", "gd-main-view-generic_8c.html#a02a7e1e69fdcd426f62234fad054dc2f", null ],
+    [ "gd_main_view_generic_get_model", "gd-main-view-generic_8c.html#ad700f602f7d1f58874a4581f9a055b7d", null ],
+    [ "gd_main_view_generic_get_path_at_pos", "gd-main-view-generic_8c.html#a9ffebab4db93734dabd782c155fa3e8f", null ],
+    [ "gd_main_view_generic_scroll_to_path", "gd-main-view-generic_8c.html#a72f8b02024ae963f8f51fc64f387c27e", null ],
+    [ "gd_main_view_generic_select_all", "gd-main-view-generic_8c.html#ae26a163544fc24dab424065d7b4b025b", null ],
+    [ "gd_main_view_generic_set_model", "gd-main-view-generic_8c.html#a39384cc379488a8407a0d397d07b1824", null ],
+    [ "gd_main_view_generic_set_rubberband_range", "gd-main-view-generic_8c.html#ab0c89142ad43426f9e90b9732b2a1b46", null ],
+    [ "gd_main_view_generic_set_selection_mode", "gd-main-view-generic_8c.html#a972d025ba29287f4f354ea48485643b9", null ],
+    [ "gd_main_view_generic_unselect_all", "gd-main-view-generic_8c.html#a9ea67d1caa35f4feb222ebe9617c22ee", null ],
+    [ "get_rubber_band_info", "gd-main-view-generic_8c.html#aeaeb7339e179d1c706d8a3750640009b", null ],
+    [ "model_get_selection_uris", "gd-main-view-generic_8c.html#ac069455c8c6ca67e699184f361d5ae5c", null ],
+    [ "rubber_band_info_destroy", "gd-main-view-generic_8c.html#ab09ad775ab7df5896ca8ba1cd91a0a04", null ],
+    [ "set_all_selection", "gd-main-view-generic_8c.html#a472d348bec494048115a8e8568c54814", null ],
+    [ "set_selection_foreach", "gd-main-view-generic_8c.html#a7e5ccfd828d495c2a74830ce58db6a80", null ],
+    [ "signals", "gd-main-view-generic_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699", null ]
+];

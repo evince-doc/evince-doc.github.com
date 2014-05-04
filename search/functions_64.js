@@ -69,6 +69,7 @@ var searchData=
   ['do_5fsample',['do_sample',['../bitmap_8c.html#a8edd57e6d43b9023e057163e2d94ba48',1,'bitmap.c']]],
   ['document_5fchanged_5fcb',['document_changed_cb',['../ev-view-accessible_8c.html#aac71dd9ebf16ae86e9e8a88e973c215e',1,'document_changed_cb(EvDocumentModel *model, GParamSpec *pspec, EvViewAccessible *accessible):&#160;ev-view-accessible.c'],['../ev-history_8c.html#af21da833d54e421dcecfd7aab92a70bd',1,'document_changed_cb(EvDocumentModel *model, GParamSpec *pspec, EvHistory *history):&#160;ev-history.c'],['../ev-zoom-action-widget_8c.html#a1d1db1d36348a84735688dab75dc7176',1,'document_changed_cb(EvDocumentModel *model, GParamSpec *pspec, EvZoomActionWidget *control):&#160;ev-zoom-action-widget.c']]],
   ['document_5fget_5fpage_5fsize',['document_get_page_size',['../djvu-document_8c.html#a9b139e47dbbb99e84799eae3c77523f7',1,'djvu-document.c']]],
+  ['document_5fload_5fjob_5fcompleted_5fcallback',['document_load_job_completed_callback',['../ev-recent-view_8c.html#aeb7e59479a154d8779d19615c13fb3eb',1,'ev-recent-view.c']]],
   ['document_5floaded_5fcb',['document_loaded_cb',['../ev-daemon_8c.html#a0e72d2f453cb1011f84bdc1134125487',1,'ev-daemon.c']]],
   ['document_5fmodified_5fconfirmation_5fdialog_5fresponse',['document_modified_confirmation_dialog_response',['../ev-window_8c.html#a878d5a2118b3ac594c2e7f37b886838a',1,'ev-window.c']]],
   ['draw_5fbox',['draw_box',['../dviread_8c.html#a9dd8bde60a5665cd713672e9f4214d6e',1,'dviread.c']]],

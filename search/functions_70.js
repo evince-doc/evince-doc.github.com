@@ -7,6 +7,7 @@ var searchData=
   ['parse_5fcolor',['parse_color',['../dvi-document_8c.html#aea1916dda1fe9757db89364e15f829c1',1,'dvi-document.c']]],
   ['parse_5fepsf_5fspecial',['parse_epsf_special',['../sp-epsf_8c.html#a410e949e8e8ca8aae1805933a91c4e3c',1,'sp-epsf.c']]],
   ['parse_5fspec',['parse_spec',['../fontmap_8c.html#a2972e999434398d01e634b43fc5ad2d3',1,'fontmap.c']]],
+  ['path_5ffrom_5fline_5frects',['path_from_line_rects',['../gd-main-icon-view_8c.html#a10b6faab9c750f8d1fd3fbe4940ddf77',1,'gd-main-icon-view.c']]],
   ['pdf_5fdocument_5fannotations_5fadd_5fannotation',['pdf_document_annotations_add_annotation',['../ev-poppler_8cc.html#a8aa2c9e070998e3530a208c46988ca70',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fdocument_5fis_5fmodified',['pdf_document_annotations_document_is_modified',['../ev-poppler_8cc.html#a66c644172f8583f7053385d05e5d3f16',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fget_5fannotations',['pdf_document_annotations_get_annotations',['../ev-poppler_8cc.html#af6b808477903d5590addfd8e1a6480e1',1,'ev-poppler.cc']]],

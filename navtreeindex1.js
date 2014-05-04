@@ -81,6 +81,7 @@ var NAVTREEINDEX1 =
 "dir_35d8eede49d73d12409acf4199dded71.html":[7,0,0,6],
 "dir_62d5c4fd963ae06962ef732fa75a9902.html":[7,0,0,0,0],
 "dir_66798fc8659e7daf0e5247fc7505c5a3.html":[7,0,0,1],
+"dir_76e5df9502272f1f1e5aa7d4328470f5.html":[7,0,0,1,1],
 "dir_76ffd4dc0e831b112436fbc404ab1b1f.html":[7,0,0,1,0],
 "dir_7d17c42a7e17eb64fd49723c0ded91db.html":[7,0,0,0,2,0],
 "dir_7ec16c17d8d415e842eab6a6c267dc07.html":[7,0,0,9],
@@ -90,7 +91,7 @@ var NAVTREEINDEX1 =
 "dir_8afe8fb5d511b91003daab0546f13589.html":[7,0,0,2],
 "dir_8b322143158b2e883ee9175e4954824a.html":[7,0,0,4],
 "dir_8faf46932065e0d68934ee0715e31db4.html":[7,0,0,0,6],
-"dir_9a0eb316660ab3c7a56302ac61d2ed60.html":[7,0,0,1,1],
+"dir_9a0eb316660ab3c7a56302ac61d2ed60.html":[7,0,0,1,2],
 "dir_a6bad009a4e2c89bf4ec3636b694bcc6.html":[7,0,0,8],
 "dir_c43f4a3bc8028afa091a0c42a05d62c7.html":[7,0,0,5],
 "dir_df8aa77a9614fb61c4d7f3b0249f87b4.html":[7,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "dvimisc_8c.html#afebf063f189e9bccfdeb04bb3d1a5e75":[7,0,0,0,2,0,9,3],
 "dvimisc_8c_source.html":[7,0,0,0,2,0,9],
 "dviopcodes_8h.html":[7,0,0,0,2,0,10],
-"dviopcodes_8h.html#a053237302b367b1ab3720bb932f40937":[7,0,0,0,2,0,10,8],
-"dviopcodes_8h.html#a0a1571e2417f09b81fb3c4fe92b382cb":[7,0,0,0,2,0,10,14]
+"dviopcodes_8h.html#a053237302b367b1ab3720bb932f40937":[7,0,0,0,2,0,10,8]
 };

@@ -21,6 +21,7 @@ var searchData=
   ['lig',['lig',['../struct__t__ligature.html#aa7488b870ebf224a5b5372a64d2f9bb7',1,'_t_ligature']]],
   ['ligs',['ligs',['../structCharMetricInfo.html#af80521649706b11528a0614168d0d32f',1,'CharMetricInfo']]],
   ['line',['line',['../struct__EvSourceLink.html#ac48f6422979fb999255c4a9e8e081c64',1,'_EvSourceLink']]],
+  ['line_5ftwo',['line_two',['../struct__GdTwoLinesRendererPrivate.html#ac9e544e1905c2a8778eab02363ddeef2',1,'_GdTwoLinesRendererPrivate']]],
   ['linearized',['linearized',['../struct__EvDocumentInfo.html#a396db4b6740db1ab8c5b988c4e9c849a',1,'_EvDocumentInfo']]],
   ['link',['link',['../struct__EvLinkAccessiblePrivate.html#a7b4687ec96f4f6d4605c7ea2ebb1ed48',1,'_EvLinkAccessiblePrivate::link()'],['../struct__EvWindowPrivate.html#a882cbb60e4945bd8ed44074df7e5b1d4',1,'_EvWindowPrivate::link()'],['../struct__LinkTitleData.html#a95640907b5bede5d412e6e11c46d934a',1,'_LinkTitleData::link()']]],
   ['link_5factivated',['link_activated',['../struct__EvSidebarLinksClass.html#ada26748d74730dcfeb5fda32b8620521',1,'_EvSidebarLinksClass']]],

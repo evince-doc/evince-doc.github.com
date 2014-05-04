@@ -1,9 +1,9 @@
 var ev_page_accessible_8c =
 [
     [ "_EvPageAccessiblePrivate", "struct__EvPageAccessiblePrivate.html", "struct__EvPageAccessiblePrivate" ],
-    [ "PROP_0", "ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034ac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_VIEW_ACCESSIBLE", "ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1d885322a419db7ab3c5958dbb1d5a0f", null ],
-    [ "PROP_PAGE", "ev-page-accessible_8c.html#aac34dfe6c6b73b43a4656c9dce041034a152797fe61abe42ebed64c158159bed4", null ],
+    [ "PROP_0", "ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5ac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_VIEW_ACCESSIBLE", "ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a1d885322a419db7ab3c5958dbb1d5a0f", null ],
+    [ "PROP_PAGE", "ev-page-accessible_8c.html#a4790f45dcc812c1b00184a2edccdddf5a152797fe61abe42ebed64c158159bed4", null ],
     [ "add_attribute", "ev-page-accessible_8c.html#a9976746270c77e42447106448d9c4b61", null ],
     [ "ev_page_accessible_add_selection", "ev-page-accessible_8c.html#a2456ca297d2ea7e17a03bd5e906c9579", null ],
     [ "ev_page_accessible_class_init", "ev-page-accessible_8c.html#a90847a27f6933fcb31dd1106e030528f", null ],

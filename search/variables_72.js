@@ -4,7 +4,8 @@ var searchData=
   ['rb_5fgroup',['rb_group',['../struct__EvLayerPrivate.html#ac172b747a1e3fb45f68fdfa3d9ea40d1',1,'_EvLayerPrivate']]],
   ['rc',['rc',['../struct__EvJobExport.html#af4e36ff283247c57979acdfd503d54f9',1,'_EvJobExport']]],
   ['recent_5faction_5fgroup',['recent_action_group',['../struct__EvWindowPrivate.html#adb6cfbc1e7aaee3fb092e3c06353f466',1,'_EvWindowPrivate']]],
-  ['recent_5fmanager',['recent_manager',['../struct__EvWindowPrivate.html#a834a49301b6f3b2551257784171f384f',1,'_EvWindowPrivate']]],
+  ['recent_5fmanager',['recent_manager',['../struct__EvRecentViewPrivate.html#a502eef22ef17a6bb3e32bdf121d703ba',1,'_EvRecentViewPrivate::recent_manager()'],['../struct__EvWindowPrivate.html#a834a49301b6f3b2551257784171f384f',1,'_EvWindowPrivate::recent_manager()']]],
+  ['recent_5fmanager_5fchanged_5fhandler_5fid',['recent_manager_changed_handler_id',['../struct__EvRecentViewPrivate.html#aa7c3e6d12f79928c2c02b6d049da8851',1,'_EvRecentViewPrivate']]],
   ['recent_5fui_5fid',['recent_ui_id',['../struct__EvWindowPrivate.html#a56787859c33132063ff9ee75c305807e',1,'_EvWindowPrivate']]],
   ['rect',['rect',['../struct__EvAnnotationWindow.html#a9308d541cb04cc83f080c582e91dd068',1,'_EvAnnotationWindow::rect()'],['../struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc',1,'_EvViewSelection::rect()']]],
   ['rectangle',['rectangle',['../structEvAnnotationMarkupProps.html#a56a1562f8be08682a37a0ef5af35a16b',1,'EvAnnotationMarkupProps']]],
@@ -38,6 +39,8 @@ var searchData=
   ['rotate',['rotate',['../struct__TIFF2PSContext.html#a6d9e715b6bd01ca8d2314e6a4783d604',1,'_TIFF2PSContext']]],
   ['rotation',['rotation',['../struct__EvRenderContext.html#ab67e9c0256667791b0f3d70b2a50820f',1,'_EvRenderContext::rotation()'],['../struct__EvDocumentModel.html#a46d7ea9037a17f25fb01963a5c382355',1,'_EvDocumentModel::rotation()'],['../struct__EvJobRender.html#a707cc1d263f659c0e5f9ff34e6884e73',1,'_EvJobRender::rotation()'],['../struct__EvJobThumbnail.html#aafe66faac07070ff0fbab0bce84da3b8',1,'_EvJobThumbnail::rotation()'],['../struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6',1,'_EvViewPresentation::rotation()'],['../struct__EvHeightToPageCache.html#af2cbb054634f37ca982ceeed1741ee18',1,'_EvHeightToPageCache::rotation()'],['../struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83',1,'_EvView::rotation()'],['../struct__EvSidebarThumbnailsPrivate.html#a2fddd1250aa359a7e3dab95475dd2bd7',1,'_EvSidebarThumbnailsPrivate::rotation()']]],
   ['row_5factivated_5fid',['row_activated_id',['../struct__EvSidebarLinksPrivate.html#a4faa4762616255c2be223d9cda0c1d46',1,'_EvSidebarLinksPrivate']]],
+  ['rubberband_5fend',['rubberband_end',['../structRubberbandInfo.html#acf1301e891ba6e581887e1bad8ea6012',1,'RubberbandInfo']]],
+  ['rubberband_5fstart',['rubberband_start',['../structRubberbandInfo.html#ac9cbd1aae3d4d76b155cda43aada2035',1,'RubberbandInfo']]],
   ['run',['run',['../struct__EvJobClass.html#a1d71270f4c411717b224f83dd6141027',1,'_EvJobClass::run()'],['../struct__EvPrintOperationClass.html#a34151c018ac48e9d52307a06a0d4cd31',1,'_EvPrintOperationClass::run()']]],
   ['run_5fmode',['run_mode',['../struct__EvJob.html#ab1c83fd5270289f99eb54b856e16a0c2',1,'_EvJob']]],
   ['running_5fjob',['running_job',['../ev-job-scheduler_8c.html#aca5d42a7fc39e69a32bc5fc5a2c93ac7',1,'ev-job-scheduler.c']]]

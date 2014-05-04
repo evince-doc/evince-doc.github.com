@@ -142,8 +142,8 @@ $(document).ready(function(){initNavTree('ev-toolbar_8c_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">enum</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-toolbar_8c.html#abe974f22edeef8189603ba75fd90ff3cac37dda0da1a44e10c0504afeeb863f3c">   36</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-toolbar_8c.html#abe974f22edeef8189603ba75fd90ff3ca5444259366dcb8d3b0e146507c9e0174">   37</a></span>&#160;        <a class="code" href="ev-toolbar_8c.html#abe974f22edeef8189603ba75fd90ff3ca5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-toolbar_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9ac37dda0da1a44e10c0504afeeb863f3c">   36</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-toolbar_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9a5444259366dcb8d3b0e146507c9e0174">   37</a></span>&#160;        <a class="code" href="ev-toolbar_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="struct__EvToolbarPrivate.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvToolbarPrivate.html">_EvToolbarPrivate</a> {</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('ev-toolbar_8c_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="struct__EvToolbar.html">EvToolbar</a> *ev_toolbar = <a class="code" href="ev-toolbar_8h.html#a8abf853a91d8edacaf7816bcc7e21de3">EV_TOOLBAR</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-toolbar_8c.html#abe974f22edeef8189603ba75fd90ff3ca5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-toolbar_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>:</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a> = g_value_get_object (value);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">default</span>:</div>
@@ -380,7 +380,7 @@ $(document).ready(function(){initNavTree('ev-toolbar_8c_source.html','');});
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        g_object_class-&gt;constructed = <a class="code" href="ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c">ev_toolbar_constructed</a>;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        g_object_class_install_property (g_object_class,</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                         <a class="code" href="ev-toolbar_8c.html#abe974f22edeef8189603ba75fd90ff3ca5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                         <a class="code" href="ev-toolbar_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>,</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;window&quot;</span>,</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                                              <span class="stringliteral">&quot;Window&quot;</span>,</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                                              <span class="stringliteral">&quot;The evince window&quot;</span>,</div>
@@ -454,7 +454,7 @@ $(document).ready(function(){initNavTree('ev-toolbar_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-toolbar_8c.html">ev-toolbar.c</a></li>
-    <li class="footer">Generated on Sun May 4 2014 09:48:32 for Evince by
+    <li class="footer">Generated on Sun May 4 2014 14:14:41 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

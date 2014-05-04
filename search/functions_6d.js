@@ -97,6 +97,7 @@ var searchData=
   ['menu_5fposition_5fbelow',['menu_position_below',['../ev-zoom-action-widget_8c.html#acc4714cd141876a4685c76056d9812df',1,'ev-zoom-action-widget.c']]],
   ['merge_5fselection_5fregion',['merge_selection_region',['../ev-view_8c.html#a583b0e25a46bc171dab799d858049006',1,'ev-view.c']]],
   ['metadata_5fset_5fcallback',['metadata_set_callback',['../ev-metadata_8c.html#ad5f2ad120f91c10d32ac78f2d8270ab9',1,'ev-metadata.c']]],
+  ['model_5fget_5fselection_5furis',['model_get_selection_uris',['../gd-main-view-generic_8c.html#ac069455c8c6ca67e699184f361d5ae5c',1,'gd-main-view-generic.c']]],
   ['mount_5fvolume_5fready_5fcb',['mount_volume_ready_cb',['../ev-window_8c.html#af5d90a7a45888f5b2038d4c2bdbbc2fa',1,'ev-window.c']]],
   ['move_5fdown',['move_down',['../dviread_8c.html#ab5e58133614fd972ab64675879b892be',1,'dviread.c']]],
   ['move_5fhorizontal',['move_horizontal',['../dviread_8c.html#abc2079efe3ddbfdbf86e4578de3cff00',1,'dviread.c']]],

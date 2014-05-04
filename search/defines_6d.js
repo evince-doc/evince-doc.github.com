@@ -8,6 +8,7 @@ var searchData=
   ['max_5fname',['MAX_NAME',['../afmparse_8h.html#ac7c0207aa5a0e10d378be03b68041350',1,'afmparse.h']]],
   ['max_5fpreloaded_5fpages',['MAX_PRELOADED_PAGES',['../ev-pixbuf-cache_8c.html#af39eca278bdcab9ed18a88a9dbe7c02f',1,'ev-pixbuf-cache.c']]],
   ['max_5frecent_5fitem_5flen',['MAX_RECENT_ITEM_LEN',['../ev-window_8c.html#ada78dccf027629348cd488aa1e3fb67d',1,'ev-window.c']]],
+  ['max_5frecent_5fview_5fitems',['MAX_RECENT_VIEW_ITEMS',['../ev-recent-view_8c.html#a061641febeddc4b00bdf7c3f033ee2c7',1,'ev-recent-view.c']]],
   ['max_5fscale',['MAX_SCALE',['../ev-previewer-window_8c.html#a0706168c32c39d519133d981a3df0687',1,'ev-previewer-window.c']]],
   ['maxline',['MAXLINE',['../tiff2ps_8c.html#a3e937c42922f7601edb17b747602c471',1,'tiff2ps.c']]],
   ['mdvi_5fbackground',['MDVI_BACKGROUND',['../defaults_8h.html#a703ddc77861cdf31a1472ec4c5ff53ba',1,'defaults.h']]],
