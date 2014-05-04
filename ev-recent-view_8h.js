@@ -12,5 +12,5 @@ var ev_recent_view_8h =
     [ "EvRecentViewClass", "ev-recent-view_8h.html#a5e993448e6d05e5ac3545784a481a817", null ],
     [ "EvRecentViewPrivate", "ev-recent-view_8h.html#a454da840e740793cf4f5b3804a75fa0f", null ],
     [ "ev_recent_view_get_type", "ev-recent-view_8h.html#ac18a1d50de6073b5fbe3cd149def5505", null ],
-    [ "ev_recent_view_new", "ev-recent-view_8h.html#aaccfec4bd2627f38fc938c4aa3042bb5", null ]
+    [ "ev_recent_view_new", "ev-recent-view_8h.html#a7af491e748c8fc9baede5e7160378b28", null ]
 ];

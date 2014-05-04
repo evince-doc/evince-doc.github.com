@@ -17,7 +17,7 @@ var ev_recent_view_8c =
     [ "ev_recent_view_constructed", "ev-recent-view_8c.html#ad4d708830a20754da1bc96179fb712ed", null ],
     [ "ev_recent_view_dispose", "ev-recent-view_8c.html#ad82eded7fba970afb3571d5057aa7c8b", null ],
     [ "ev_recent_view_init", "ev-recent-view_8c.html#a991185973f2720bde3b09428bf702490", null ],
-    [ "ev_recent_view_new", "ev-recent-view_8c.html#aaccfec4bd2627f38fc938c4aa3042bb5", null ],
+    [ "ev_recent_view_new", "ev-recent-view_8c.html#a7af491e748c8fc9baede5e7160378b28", null ],
     [ "ev_recent_view_refresh", "ev-recent-view_8c.html#ab2d246584eeb71590b0bbb2f325d9029", null ],
     [ "on_button_press_event", "ev-recent-view_8c.html#af3b43359e572a59427ae3a935b95428e", null ],
     [ "on_button_release_event", "ev-recent-view_8c.html#a62889a83d4f624e3f5c5611c04bba480", null ],
