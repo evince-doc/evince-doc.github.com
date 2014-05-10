@@ -1,6 +1,5 @@
 var NAVTREEINDEX27 =
 {
-"struct__CacheJobInfo.html":[6,0,11],
 "struct__CacheJobInfo.html#a182e875a86c05f3edfde38b638d77d5e":[6,0,11,2],
 "struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f":[6,0,11,10],
 "struct__CacheJobInfo.html#a4fcb3e37c95ccff4a7a5f5857f6dc7f0":[6,0,11,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX27 =
 "struct__DviPaper.html#ac3dcf62381cb9080ce000879a02d08ea":[6,0,37,3],
 "struct__DviPaperSpec.html":[6,0,38],
 "struct__DviPaperSpec.html#a676c8c87db4019f7130925f52a188579":[6,0,38,0],
-"struct__DviPaperSpec.html#aec57bbdbaf9236a8cef0ee83ddf5ea82":[6,0,38,1]
+"struct__DviPaperSpec.html#aec57bbdbaf9236a8cef0ee83ddf5ea82":[6,0,38,1],
+"struct__DviPaperSpec.html#af4943d8ddd04377149af166bca763871":[6,0,38,2]
 };

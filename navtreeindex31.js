@@ -1,6 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"struct__EvPageCache.html#ac4d480263699bc3533ec4ab0e3cd0462":[6,0,195,1],
 "struct__EvPageCache.html#ad159b7d6a7aa42027ad6c1118d97b414":[6,0,195,2],
 "struct__EvPageCache.html#ad6ea515fd7488d2a88e153b2ce6cfbb6":[6,0,195,0],
 "struct__EvPageCache.html#ada47657471ca515d49ebbdbe9b223199":[6,0,195,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX31 =
 "struct__EvSidebarLinks.html#a7c7b090670803c8e1434245a60a227db":[6,0,245,0],
 "struct__EvSidebarLinksClass.html":[6,0,246],
 "struct__EvSidebarLinksClass.html#a66ed44a76657dd2f8de8701b390542c4":[6,0,246,0],
-"struct__EvSidebarLinksClass.html#ada26748d74730dcfeb5fda32b8620521":[6,0,246,1]
+"struct__EvSidebarLinksClass.html#ada26748d74730dcfeb5fda32b8620521":[6,0,246,1],
+"struct__EvSidebarLinksPrivate.html":[6,0,247]
 };
