@@ -23,7 +23,6 @@ var searchData=
   ['buff_5ffree',['buff_free',['../common_8c.html#a4265551dba818120071a9671dfb84904',1,'common.c']]],
   ['buff_5fgets',['buff_gets',['../common_8c.html#a595544ff3273044e8e372a20423cbfbc',1,'common.c']]],
   ['buff_5finit',['buff_init',['../common_8c.html#a7c9d8f5974add4c981a8261294e95e5a',1,'common.c']]],
-  ['build_5fcomments_5fstring',['build_comments_string',['../ev-window_8c.html#a9ea4ab6b2a9c56ab669d668057d05e88',1,'ev-window.c']]],
   ['build_5ffilename',['build_filename',['../namespacetest-print-combinations.html#a60ba804da25807bb234189e046e2c9fc',1,'test-print-combinations']]],
   ['build_5flayers_5ftree',['build_layers_tree',['../ev-poppler_8cc.html#ad08746a782fdefc2cdbd5088559948a6',1,'ev-poppler.cc']]],
   ['build_5fnew_5ftree_5fcb',['build_new_tree_cb',['../ev-page-action-widget_8c.html#aa1e6bf930e393d514942b1e272fb80c9',1,'ev-page-action-widget.c']]],

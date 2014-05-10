@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"ev-progress-message-area_8h.html#aef70d47eba2f603f415fd5ce5c55c428":[7,0,0,7,36,2],
+"ev-progress-message-area_8h.html#aef8415fa9e8c86973ded54548fdf2563":[7,0,0,7,36,6],
 "ev-progress-message-area_8h.html#af6dcb7f77bc9846c040f12370da2ecd3":[7,0,0,7,36,13],
 "ev-progress-message-area_8h_source.html":[7,0,0,7,36],
 "ev-properties-dialog_8c.html":[7,0,0,7,37],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "ev-sidebar-annotations_8c.html#adfb8716a64f948a5253cd938447edeb3":[7,0,0,7,45,22],
 "ev-sidebar-annotations_8c.html#aea775c22e305116e25b81b5c2c8e71e8":[7,0,0,7,45,21],
 "ev-sidebar-annotations_8c.html#af2acd4859aa7244eface8c79cbfa1fe5":[7,0,0,7,45,29],
-"ev-sidebar-annotations_8c_source.html":[7,0,0,7,45],
-"ev-sidebar-annotations_8h.html":[7,0,0,7,46],
-"ev-sidebar-annotations_8h.html#a0bf45d309def49da206e533ce5a5f5ee":[7,0,0,7,46,6]
+"ev-sidebar-annotations_8c_source.html":[7,0,0,7,45]
 };

@@ -15,6 +15,7 @@ var searchData=
   ['annotation_5fwindow_5fclosed',['annotation_window_closed',['../ev-view_8c.html#aac8b6f00e32b258568546293557e9009',1,'ev-view.c']]],
   ['annotation_5fwindow_5fgrab_5ffocus',['annotation_window_grab_focus',['../ev-view_8c.html#a478449df5ac4e09666f6286245d4cc61',1,'ev-view.c']]],
   ['annotation_5fwindow_5fmoved',['annotation_window_moved',['../ev-view_8c.html#a579c1d72cea319957cfba583777f5234',1,'ev-view.c']]],
+  ['app_5fabout_5fcb',['app_about_cb',['../ev-application_8c.html#ad96b173f96deb06b1dcb639cac2c4869',1,'ev-application.c']]],
   ['app_5fhelp_5fcb',['app_help_cb',['../ev-application_8c.html#a8a6d178614bc47b5c0a2e3dc3287a581',1,'ev-application.c']]],
   ['ascii85encode',['Ascii85Encode',['../tiff2ps_8c.html#ac0480e48a68f2b8d2525616ef24d5b98',1,'tiff2ps.c']]],
   ['ascii85encodeblock',['Ascii85EncodeBlock',['../tiff2ps_8c.html#addc0ecd98fa35f4ec67196a2d1cf5b76',1,'tiff2ps.c']]],

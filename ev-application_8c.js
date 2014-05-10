@@ -3,6 +3,7 @@ var ev_application_8c =
     [ "_EvApplication", "struct__EvApplication.html", "struct__EvApplication" ],
     [ "_EvApplicationClass", "struct__EvApplicationClass.html", "struct__EvApplicationClass" ],
     [ "_ev_application_open_uri_at_dest", "ev-application_8c.html#a36550d35480e686e2302fcf35a06f98e", null ],
+    [ "app_about_cb", "ev-application_8c.html#ad96b173f96deb06b1dcb639cac2c4869", null ],
     [ "app_help_cb", "ev-application_8c.html#a8a6d178614bc47b5c0a2e3dc3287a581", null ],
     [ "ev_application_accel_map_load", "ev-application_8c.html#a68b430f8f0c3bbaa92d4f67718a24b61", null ],
     [ "ev_application_accel_map_save", "ev-application_8c.html#a7919f71ce8b171db13200c88607d304d", null ],
