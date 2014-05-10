@@ -134,8 +134,8 @@ $(document).ready(function(){initNavTree('ev-async-renderer_8c_source.html','');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">enum</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-async-renderer_8c.html#a05589fbab0657f08285ebdfe93f5ec9ead339adc82d532c984dcc0d3281c01939">   28</a></span>&#160;    <a class="code" href="ev-async-renderer_8c.html#a05589fbab0657f08285ebdfe93f5ec9ead339adc82d532c984dcc0d3281c01939">RENDER_FINISHED</a>,</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-async-renderer_8c.html#a05589fbab0657f08285ebdfe93f5ec9ea0c34d85df8279641afad9e3c9b3a54ce">   29</a></span>&#160;    <a class="code" href="gimpcellrenderertoggle_8c.html#abc6126af1d45847bc59afa0aa3216b04a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-async-renderer_8c.html#abc5c98fcc1211af2b80116dd6e0a035dad339adc82d532c984dcc0d3281c01939">   28</a></span>&#160;    <a class="code" href="ev-async-renderer_8c.html#abc5c98fcc1211af2b80116dd6e0a035dad339adc82d532c984dcc0d3281c01939">RENDER_FINISHED</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-async-renderer_8c.html#abc5c98fcc1211af2b80116dd6e0a035da0c34d85df8279641afad9e3c9b3a54ce">   29</a></span>&#160;    <a class="code" href="gimpcellrenderertoggle_8c.html#abc6126af1d45847bc59afa0aa3216b04a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="ev-async-renderer_8c.html#a2789048f8a6d2a6541405994727738a1">   32</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-async-renderer_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="gimpcellrenderertoggle_8c.html#abc6126af1d45847bc59afa0aa3216b04a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a>] = { 0 };</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('ev-async-renderer_8c_source.html','');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> gboolean <a class="code" href="fontsrch_8c.html#ad06983e7f6e71b233ea7ff3dee1952f2">initialized</a> = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (!initialized) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="ev-async-renderer_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-async-renderer_8c.html#a05589fbab0657f08285ebdfe93f5ec9ead339adc82d532c984dcc0d3281c01939">RENDER_FINISHED</a>] =</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="ev-async-renderer_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-async-renderer_8c.html#abc5c98fcc1211af2b80116dd6e0a035dad339adc82d532c984dcc0d3281c01939">RENDER_FINISHED</a>] =</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            g_signal_new (<span class="stringliteral">&quot;render_finished&quot;</span>,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                      <a class="code" href="ev-async-renderer_8h.html#a26abc9825304174e6f8395cc0402f31c">EV_TYPE_ASYNC_RENDERER</a>,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                      G_SIGNAL_RUN_LAST,</div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('ev-async-renderer_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-async-renderer_8c.html">ev-async-renderer.c</a></li>
-    <li class="footer">Generated on Sat May 10 2014 12:07:15 for Evince by
+    <li class="footer">Generated on Sat May 10 2014 14:20:15 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

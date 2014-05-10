@@ -27,7 +27,6 @@ var searchData=
   ['build_5flayers_5ftree',['build_layers_tree',['../ev-poppler_8cc.html#ad08746a782fdefc2cdbd5088559948a6',1,'ev-poppler.cc']]],
   ['build_5fnew_5ftree_5fcb',['build_new_tree_cb',['../ev-page-action-widget_8c.html#aa1e6bf930e393d514942b1e272fb80c9',1,'ev-page-action-widget.c']]],
   ['build_5fpopup_5fmenu',['build_popup_menu',['../ev-sidebar-links_8c.html#a1497a1123bc89f2cb37e803305540cae',1,'ev-sidebar-links.c']]],
-  ['build_5fselection_5furis_5fforeach',['build_selection_uris_foreach',['../gd-main-view-generic_8c.html#a2adccdd9819bb01d0d83f288702cb730',1,'gd-main-view-generic.c']]],
   ['build_5ftree',['build_tree',['../djvu-links_8c.html#a42795b10369a7079ffe9afbc3e3c3788',1,'build_tree(const DjvuDocument *djvu_document, GtkTreeModel *model, GtkTreeIter *parent, miniexp_t iter):&#160;djvu-links.c'],['../ev-poppler_8cc.html#a8a141192be04efaca347f039bc5c0cfd',1,'build_tree(PdfDocument *pdf_document, GtkTreeModel *model, GtkTreeIter *parent, PopplerIndexIter *iter):&#160;ev-poppler.cc'],['../xps-document_8c.html#a664a3e0a922232d07fd8a6f4b9fae164',1,'build_tree(XPSDocument *xps_document, GtkTreeModel *model, GtkTreeIter *parent, GXPSOutlineIter *iter):&#160;xps-document.c']]],
   ['button_5fclicked',['button_clicked',['../ev-history-action-widget_8c.html#af26b32202df7ce386786793215909855',1,'ev-history-action-widget.c']]],
   ['button_5fpress_5fcb',['button_press_cb',['../ev-sidebar-links_8c.html#a50dee19bf2e19a0d2ae2a68fe1346c3d',1,'ev-sidebar-links.c']]],

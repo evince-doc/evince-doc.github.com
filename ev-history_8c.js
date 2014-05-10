@@ -2,9 +2,9 @@ var ev_history_8c =
 [
     [ "_EvHistoryPrivate", "struct__EvHistoryPrivate.html", "struct__EvHistoryPrivate" ],
     [ "EV_HISTORY_MAX_LENGTH", "ev-history_8c.html#ae70a489fc0823f76fee38f364096c818", null ],
-    [ "CHANGED", "ev-history_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7", null ],
-    [ "ACTIVATE_LINK", "ev-history_8c.html#afa9be5679ab03d785820f2474c5ccc6eaf1918f52a6f6ed218d3ce442157ba47d", null ],
-    [ "N_SIGNALS", "ev-history_8c.html#afa9be5679ab03d785820f2474c5ccc6ea1e7365ab36b084beff81fb1b96df4b11", null ],
+    [ "CHANGED", "ev-history_8c.html#a1be3860693af99a6c1da72580097294ca02950f589a2addc8bff690a59d33cee7", null ],
+    [ "ACTIVATE_LINK", "ev-history_8c.html#a1be3860693af99a6c1da72580097294caf1918f52a6f6ed218d3ce442157ba47d", null ],
+    [ "N_SIGNALS", "ev-history_8c.html#a1be3860693af99a6c1da72580097294ca1e7365ab36b084beff81fb1b96df4b11", null ],
     [ "clear_list", "ev-history_8c.html#a915f955cd7d691bb8988788611c5a7fe", null ],
     [ "compare_link", "ev-history_8c.html#ada3f54e832008d9ff4a82b98c477f611", null ],
     [ "document_changed_cb", "ev-history_8c.html#af21da833d54e421dcecfd7aab92a70bd", null ],

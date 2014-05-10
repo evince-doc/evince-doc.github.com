@@ -43,7 +43,6 @@ var searchData=
   ['toggle_5faction_5fentries',['toggle_action_entries',['../ev-previewer-window_8c.html#ab1f09fb5af948cc732c58781fba4b9fd',1,'ev-previewer-window.c']]],
   ['toggle_5fentries',['toggle_entries',['../ev-window_8c.html#ab356031fec92c363acd22012b15e29a5',1,'ev-window.c']]],
   ['toggle_5flist',['toggle_list',['../struct__EvLinkActionPrivate.html#a97fab923785a79977a7c9a1821b698b9',1,'_EvLinkActionPrivate']]],
-  ['toggle_5fvisible',['toggle_visible',['../struct__GdTogglePixbufRendererPrivate.html#aa2f1805ff6cd6f097f5a5f326f34aef8',1,'_GdTogglePixbufRendererPrivate']]],
   ['toolbar',['toolbar',['../struct__EvWindowPrivate.html#ac4255b88c5a4659d8202a6b135bfec3a',1,'_EvWindowPrivate']]],
   ['top',['top',['../struct__EvLinkDestPrivate.html#af3ba4bf63d6dc75630d6edcbe1269e2d',1,'_EvLinkDestPrivate']]],
   ['total',['total',['../struct__EvPrintOperationPrint.html#ac2b2a8a7984a27466f3a68a805327de3',1,'_EvPrintOperationPrint']]],

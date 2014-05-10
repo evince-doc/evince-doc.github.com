@@ -13,7 +13,6 @@ var searchData=
   ['activate',['activate',['../struct__EvViewClass.html#a137793787dfab18a906073548a1120bc',1,'_EvViewClass']]],
   ['activate_5flink',['activate_link',['../struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e',1,'_EvPageActionWidgetClass::activate_link()'],['../struct__EvPageActionClass.html#a2c964892f5e3a12593336d0a3acedff7',1,'_EvPageActionClass::activate_link()'],['../struct__EvHistoryClass.html#a6aaef3e54e3d9050e62035ba900a9ced',1,'_EvHistoryClass::activate_link()']]],
   ['activation_5flink',['activation_link',['../struct__EvFormField.html#a980049744dca9b84ed7b98fa1812df6a',1,'_EvFormField']]],
-  ['active',['active',['../struct__GdTogglePixbufRendererPrivate.html#a9dc13bb931a1ac83687801e83edb569c',1,'_GdTogglePixbufRendererPrivate']]],
   ['actual_5fhdpi',['actual_hdpi',['../struct__DviFontSearch.html#a0dc92b792e57a0df42682748d7db9625',1,'_DviFontSearch']]],
   ['actual_5fname',['actual_name',['../struct__DviFontSearch.html#ac2c0b1cb23e46a3a68b7bfc187c9c7ce',1,'_DviFontSearch']]],
   ['actual_5fvdpi',['actual_vdpi',['../struct__DviFontSearch.html#a237971897476b1fe7fdcb2d80e0f8ccb',1,'_DviFontSearch']]],

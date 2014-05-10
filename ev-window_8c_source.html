@@ -905,7 +905,7 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    gboolean retval = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    gtk_tree_model_get (tree_model, iter,</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                <a class="code" href="ev-document-links_8h.html#a80155586fa275b28773c9b203f52cabaac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                <a class="code" href="ev-document-links_8h.html#aba01db17f4a2bfbc3db60dc172972a25ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                -1);</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <span class="keywordflow">if</span> (!link)</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="keywordflow">return</span> retval;</div>
@@ -4029,9 +4029,9 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l03945"></a><span class="lineno"> 3945</span>&#160;    gdouble     zoom = 0;</div>
 <div class="line"><a name="l03946"></a><span class="lineno"> 3946</span>&#160;    guint       i;</div>
 <div class="line"><a name="l03947"></a><span class="lineno"> 3947</span>&#160;</div>
-<div class="line"><a name="l03948"></a><span class="lineno"> 3948</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>); i++) {</div>
-<div class="line"><a name="l03949"></a><span class="lineno"> 3949</span>&#160;        <span class="keywordflow">if</span> (strcmp (action_name, <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) == 0) {</div>
-<div class="line"><a name="l03950"></a><span class="lineno"> 3950</span>&#160;            zoom = <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].level;</div>
+<div class="line"><a name="l03948"></a><span class="lineno"> 3948</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l03949"></a><span class="lineno"> 3949</span>&#160;        <span class="keywordflow">if</span> (strcmp (action_name, <a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>) == 0) {</div>
+<div class="line"><a name="l03950"></a><span class="lineno"> 3950</span>&#160;            zoom = <a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].level;</div>
 <div class="line"><a name="l03951"></a><span class="lineno"> 3951</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l03952"></a><span class="lineno"> 3952</span>&#160;        }</div>
 <div class="line"><a name="l03953"></a><span class="lineno"> 3953</span>&#160;    }</div>
@@ -4963,11 +4963,11 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l04879"></a><span class="lineno"> 4879</span>&#160;    GtkActionGroup *action_group = window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4bd51d1ee7b20d5117e1f3d43d3a9005">zoom_selector_popup_action_group</a>;</div>
 <div class="line"><a name="l04880"></a><span class="lineno"> 4880</span>&#160;    guint           i;</div>
 <div class="line"><a name="l04881"></a><span class="lineno"> 4881</span>&#160;</div>
-<div class="line"><a name="l04882"></a><span class="lineno"> 4882</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l04882"></a><span class="lineno"> 4882</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>); i++) {</div>
 <div class="line"><a name="l04883"></a><span class="lineno"> 4883</span>&#160;        GtkAction *action;</div>
 <div class="line"><a name="l04884"></a><span class="lineno"> 4884</span>&#160;</div>
-<div class="line"><a name="l04885"></a><span class="lineno"> 4885</span>&#160;        action = gtk_action_group_get_action (action_group, <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
-<div class="line"><a name="l04886"></a><span class="lineno"> 4886</span>&#160;        gtk_action_set_visible (action, <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a> &lt;= max_scale);</div>
+<div class="line"><a name="l04885"></a><span class="lineno"> 4885</span>&#160;        action = gtk_action_group_get_action (action_group, <a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>);</div>
+<div class="line"><a name="l04886"></a><span class="lineno"> 4886</span>&#160;        gtk_action_set_visible (action, <a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a> &lt;= max_scale);</div>
 <div class="line"><a name="l04887"></a><span class="lineno"> 4887</span>&#160;    }</div>
 <div class="line"><a name="l04888"></a><span class="lineno"> 4888</span>&#160;}</div>
 <div class="line"><a name="l04889"></a><span class="lineno"> 4889</span>&#160;</div>
@@ -6298,11 +6298,11 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l06227"></a><span class="lineno"> 6227</span>&#160;</div>
 <div class="line"><a name="l06228"></a><span class="lineno"> 6228</span>&#160;    new_ui_id = gtk_ui_manager_new_merge_id (window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>);</div>
 <div class="line"><a name="l06229"></a><span class="lineno"> 6229</span>&#160;</div>
-<div class="line"><a name="l06230"></a><span class="lineno"> 6230</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>); i++) {</div>
+<div class="line"><a name="l06230"></a><span class="lineno"> 6230</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (<a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>); i++) {</div>
 <div class="line"><a name="l06231"></a><span class="lineno"> 6231</span>&#160;        GtkAction *action;</div>
 <div class="line"><a name="l06232"></a><span class="lineno"> 6232</span>&#160;</div>
-<div class="line"><a name="l06233"></a><span class="lineno"> 6233</span>&#160;        action = gtk_action_new (<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>,</div>
-<div class="line"><a name="l06234"></a><span class="lineno"> 6234</span>&#160;                     <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].name),</div>
+<div class="line"><a name="l06233"></a><span class="lineno"> 6233</span>&#160;        action = gtk_action_new (<a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>,</div>
+<div class="line"><a name="l06234"></a><span class="lineno"> 6234</span>&#160;                     <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].name),</div>
 <div class="line"><a name="l06235"></a><span class="lineno"> 6235</span>&#160;                     NULL, NULL);</div>
 <div class="line"><a name="l06236"></a><span class="lineno"> 6236</span>&#160;        g_signal_connect (action, <span class="stringliteral">&quot;activate&quot;</span>,</div>
 <div class="line"><a name="l06237"></a><span class="lineno"> 6237</span>&#160;                  G_CALLBACK (<a class="code" href="ev-window_8c.html#a4ebff7a7306b420a7a3cf791097df1b5">ev_window_cmd_view_zoom_activate</a>),</div>
@@ -6313,8 +6313,8 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l06242"></a><span class="lineno"> 6242</span>&#160;        gtk_ui_manager_add_ui (window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>,</div>
 <div class="line"><a name="l06243"></a><span class="lineno"> 6243</span>&#160;                       new_ui_id,</div>
 <div class="line"><a name="l06244"></a><span class="lineno"> 6244</span>&#160;                       <span class="stringliteral">&quot;/ZoomSelectorPopup/ViewZoomItems&quot;</span>,</div>
-<div class="line"><a name="l06245"></a><span class="lineno"> 6245</span>&#160;                       <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].name),</div>
-<div class="line"><a name="l06246"></a><span class="lineno"> 6246</span>&#160;                       <a class="code" href="ev-zoom-action_8h.html#aa393ec78bb821e61010d9e134875d972">zoom_levels</a>[i].name,</div>
+<div class="line"><a name="l06245"></a><span class="lineno"> 6245</span>&#160;                       <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].name),</div>
+<div class="line"><a name="l06246"></a><span class="lineno"> 6246</span>&#160;                       <a class="code" href="ev-zoom-action_8h.html#a613e49dc24119b1f967b226486823c6f">zoom_levels</a>[i].name,</div>
 <div class="line"><a name="l06247"></a><span class="lineno"> 6247</span>&#160;                       GTK_UI_MANAGER_MENUITEM,</div>
 <div class="line"><a name="l06248"></a><span class="lineno"> 6248</span>&#160;                       <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l06249"></a><span class="lineno"> 6249</span>&#160;    }</div>
@@ -7801,7 +7801,7 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-window_8c.html">ev-window.c</a></li>
-    <li class="footer">Generated on Sat May 10 2014 12:07:16 for Evince by
+    <li class="footer">Generated on Sat May 10 2014 14:20:16 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8c_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-zoom-action-widget_8h.html">ev-zoom-action-widget.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#aa57e16cd48de3b9a989056ff8df26f84a84b328a7ebdea4c8c4ed62e035ada28d">   27</a></span>&#160;        <a class="code" href="ev-history-action_8c.html#ac9420823bfeba78fce625fc105e3b01da84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>,</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#aa57e16cd48de3b9a989056ff8df26f84a0c34d85df8279641afad9e3c9b3a54ce">   28</a></span>&#160;        <a class="code" href="gimpcellrenderertoggle_8c.html#abc6126af1d45847bc59afa0aa3216b04a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9a84b328a7ebdea4c8c4ed62e035ada28d">   27</a></span>&#160;        <a class="code" href="ev-history-action_8c.html#a900dca9b26de42491763226e12dcd47ba84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9a0c34d85df8279641afad9e3c9b3a54ce">   28</a></span>&#160;        <a class="code" href="gimpcellrenderertoggle_8c.html#abc6126af1d45847bc59afa0aa3216b04a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8c_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#aafeca8fe1add6960c11968691d30783a">   51</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#aafeca8fe1add6960c11968691d30783a">zoom_widget_activated_cb</a> (GtkEntry     *entry,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                          <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        g_signal_emit (zoom_action, <a class="code" href="ev-zoom-action_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-history-action_8c.html#ac9420823bfeba78fce625fc105e3b01da84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>], 0, NULL);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        g_signal_emit (zoom_action, <a class="code" href="ev-zoom-action_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-history-action_8c.html#a900dca9b26de42491763226e12dcd47ba84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>], 0, NULL);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8c_source.html','');});
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        action_class-&gt;toolbar_item_type = <a class="code" href="ev-zoom-action-widget_8h.html#a1b3bcca4d038bbdf2587679894e7a495">EV_TYPE_ZOOM_ACTION_WIDGET</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        action_class-&gt;connect_proxy = <a class="code" href="ev-zoom-action_8c.html#ad19a06c8ad10dd5769bdf381eb76f23d">connect_proxy</a>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-history-action_8c.html#ac9420823bfeba78fce625fc105e3b01da84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>] =</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-history-action_8c.html#a900dca9b26de42491763226e12dcd47ba84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>] =</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                g_signal_new (<span class="stringliteral">&quot;activated&quot;</span>,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                              G_OBJECT_CLASS_TYPE (object_class),</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                              G_SIGNAL_RUN_LAST,</div>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-zoom-action_8c.html">ev-zoom-action.c</a></li>
-    <li class="footer">Generated on Sat May 10 2014 12:07:16 for Evince by
+    <li class="footer">Generated on Sat May 10 2014 14:20:16 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
