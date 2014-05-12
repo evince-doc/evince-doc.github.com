@@ -1558,11 +1558,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;</div>
 <div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;        x_scale = (cr_width - left - right) / width;</div>
 <div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;        y_scale = (cr_height - top - bottom) / height;</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;        <span class="keywordflow">if</span> (x_scale &lt; y_scale)</div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;            scale = x_scale;</div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;            scale = y_scale;</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;                scale = MIN (x_scale, y_scale);</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;                <span class="comment">/* Ignore scale &gt; 1 when shrinking to printable area */</span></div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;                <span class="keywordflow">if</span> (scale &gt; 1.0 &amp;&amp; print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> == EV_SCALE_SHRINK_TO_PRINTABLE_AREA)</div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;                        scale = 1.0;</div>
 <div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;</div>
 <div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;        <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a>) {</div>
 <div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;            <span class="keywordtype">double</span> left_right_sides, top_bottom_sides;</div>
@@ -3063,7 +3063,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-print-operation_8c.html">ev-print-operation.c</a></li>
-    <li class="footer">Generated on Sun May 11 2014 22:02:24 for Evince by
+    <li class="footer">Generated on Mon May 12 2014 11:20:21 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
