@@ -127,39 +127,48 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8h_source.html',
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="evince-view_8h.html">evince-view.h</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;gtk/gtk.h&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#a018f55162024dd68a66e64e6e8a0d955">   25</a></span>&#160;<span class="preprocessor">#define EV_TYPE_PAGE_ACTION_WIDGET (ev_page_action_widget_get_type ())</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#a43d0c482623e37452f73a7aa0a3f6df2">   26</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_PAGE_ACTION_WIDGET(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), EV_TYPE_PAGE_ACTION_WIDGET, EvPageActionWidget))</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#ab94d501aa1cf9798ce22ef5e7e027692">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvPageActionWidget.html">_EvPageActionWidget</a> <a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#ae543d4ee85950fe50050e804430f3f89">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvPageActionWidgetClass.html">_EvPageActionWidgetClass</a> <a class="code" href="struct__EvPageActionWidgetClass.html">EvPageActionWidgetClass</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidgetClass.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvPageActionWidgetClass.html">_EvPageActionWidgetClass</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidgetClass.html#a7b98d47c6e4939842fb59159dae77087">   33</a></span>&#160;    GtkToolItemClass <a class="code" href="struct__EvPageActionWidgetClass.html#a7b98d47c6e4939842fb59159dae77087">parent_class</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e">   35</a></span>&#160;    void (* <a class="code" href="struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e">activate_link</a>) (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *page_action,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <a class="code" href="ev-link_8h.html#aceeb53e4317fc21725ba64817acbdea8">EvLink</a>             *link);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;GType <a class="code" href="ev-page-action-widget_8h.html#a6c59837ec03d5fbcfcef24fbe3e3471b">ev_page_action_widget_get_type</a>          (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-page-action-widget_8c.html#a8eb1782de05a42ea149a7a58ea553bf3">ev_page_action_widget_update_links_model</a> (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *proxy,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                           GtkTreeModel       *model);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef __EV_PAGE_ACTION_WIDET_H__</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __EV_PAGE_ACTION_WIDET_H__</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="evince-view_8h.html">evince-view.h</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;gtk/gtk.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;G_BEGIN_DECLS</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#a018f55162024dd68a66e64e6e8a0d955">   30</a></span>&#160;<span class="preprocessor">#define EV_TYPE_PAGE_ACTION_WIDGET (ev_page_action_widget_get_type ())</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#a43d0c482623e37452f73a7aa0a3f6df2">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_PAGE_ACTION_WIDGET(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), EV_TYPE_PAGE_ACTION_WIDGET, EvPageActionWidget))</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#ab94d501aa1cf9798ce22ef5e7e027692">   33</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvPageActionWidget.html">_EvPageActionWidget</a> <a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8h.html#ae543d4ee85950fe50050e804430f3f89">   34</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvPageActionWidgetClass.html">_EvPageActionWidgetClass</a> <a class="code" href="struct__EvPageActionWidgetClass.html">EvPageActionWidgetClass</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidgetClass.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvPageActionWidgetClass.html">_EvPageActionWidgetClass</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidgetClass.html#a7b98d47c6e4939842fb59159dae77087">   38</a></span>&#160;    GtkToolItemClass <a class="code" href="struct__EvPageActionWidgetClass.html#a7b98d47c6e4939842fb59159dae77087">parent_class</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e">   40</a></span>&#160;    void (* <a class="code" href="struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e">activate_link</a>) (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *page_action,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <a class="code" href="ev-link_8h.html#aceeb53e4317fc21725ba64817acbdea8">EvLink</a>             *link);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-page-action-widget_8c.html#a05b827d9a48f6522353b16f828f68953">ev_page_action_widget_set_model</a>          (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *action_widget,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                           <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a>    *doc_model);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-page-action-widget_8c.html#af15d7ce6b79267b0247ed4b86c933ebd">ev_page_action_widget_grab_focus</a>         (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *proxy);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;GType <a class="code" href="ev-page-action-widget_8h.html#a6c59837ec03d5fbcfcef24fbe3e3471b">ev_page_action_widget_get_type</a>          (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-page-action-widget_8c.html#a8eb1782de05a42ea149a7a58ea553bf3">ev_page_action_widget_update_links_model</a> (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *proxy,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                           GtkTreeModel       *model);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-page-action-widget_8c.html#a05b827d9a48f6522353b16f828f68953">ev_page_action_widget_set_model</a>          (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *action_widget,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                           <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a>    *doc_model);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-page-action-widget_8c.html#af15d7ce6b79267b0247ed4b86c933ebd">ev_page_action_widget_grab_focus</a>         (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a> *proxy);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EV_PAGE_ACTION_WIDET_H__ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_08b887202959c421d24191eda7d5b732.html">libmisc</a></li><li class="navelem"><a class="el" href="ev-page-action-widget_8h.html">ev-page-action-widget.h</a></li>
-    <li class="footer">Generated on Thu May 15 2014 21:21:41 for Evince by
+    <li class="footer">Generated on Mon May 19 2014 11:49:08 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
