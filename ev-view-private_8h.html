@@ -274,10 +274,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08206">8206</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l08207"></a><span class="lineno"> 8207</span>&#160;{</div>
-<div class="line"><a name="l08208"></a><span class="lineno"> 8208</span>&#160;    <a class="code" href="ev-view_8c.html#a156be71427d85525a40215130b21931b">clear_selection</a> (view);</div>
-<div class="line"><a name="l08209"></a><span class="lineno"> 8209</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08203">8203</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l08204"></a><span class="lineno"> 8204</span>&#160;{</div>
+<div class="line"><a name="l08205"></a><span class="lineno"> 8205</span>&#160;    <a class="code" href="ev-view_8c.html#a156be71427d85525a40215130b21931b">clear_selection</a> (view);</div>
+<div class="line"><a name="l08206"></a><span class="lineno"> 8206</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -445,21 +445,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l06040">6040</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l06043"></a><span class="lineno"> 6043</span>&#160;{</div>
-<div class="line"><a name="l06044"></a><span class="lineno"> 6044</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
-<div class="line"><a name="l06045"></a><span class="lineno"> 6045</span>&#160;    GtkStateFlags    state;</div>
-<div class="line"><a name="l06046"></a><span class="lineno"> 6046</span>&#160;    GtkStyleContext *context;</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l06037">6037</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l06040"></a><span class="lineno"> 6040</span>&#160;{</div>
+<div class="line"><a name="l06041"></a><span class="lineno"> 6041</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
+<div class="line"><a name="l06042"></a><span class="lineno"> 6042</span>&#160;    GtkStateFlags    state;</div>
+<div class="line"><a name="l06043"></a><span class="lineno"> 6043</span>&#160;    GtkStyleContext *context;</div>
+<div class="line"><a name="l06044"></a><span class="lineno"> 6044</span>&#160;</div>
+<div class="line"><a name="l06045"></a><span class="lineno"> 6045</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
+<div class="line"><a name="l06046"></a><span class="lineno"> 6046</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
 <div class="line"><a name="l06047"></a><span class="lineno"> 6047</span>&#160;</div>
-<div class="line"><a name="l06048"></a><span class="lineno"> 6048</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
-<div class="line"><a name="l06049"></a><span class="lineno"> 6049</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
+<div class="line"><a name="l06048"></a><span class="lineno"> 6048</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
+<div class="line"><a name="l06049"></a><span class="lineno"> 6049</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
 <div class="line"><a name="l06050"></a><span class="lineno"> 6050</span>&#160;</div>
-<div class="line"><a name="l06051"></a><span class="lineno"> 6051</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
-<div class="line"><a name="l06052"></a><span class="lineno"> 6052</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
-<div class="line"><a name="l06053"></a><span class="lineno"> 6053</span>&#160;</div>
-<div class="line"><a name="l06054"></a><span class="lineno"> 6054</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
-<div class="line"><a name="l06055"></a><span class="lineno"> 6055</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
-<div class="line"><a name="l06056"></a><span class="lineno"> 6056</span>&#160;}</div>
+<div class="line"><a name="l06051"></a><span class="lineno"> 6051</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
+<div class="line"><a name="l06052"></a><span class="lineno"> 6052</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
+<div class="line"><a name="l06053"></a><span class="lineno"> 6053</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -503,10 +503,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08212">8212</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l08215"></a><span class="lineno"> 8215</span>&#160;{</div>
-<div class="line"><a name="l08216"></a><span class="lineno"> 8216</span>&#160;    <a class="code" href="ev-view_8c.html#af4c66a12e3dd928175a7c057083d7fd8">compute_selections</a> (view, <a class="code" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>, start_point, end_point);</div>
-<div class="line"><a name="l08217"></a><span class="lineno"> 8217</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08209">8209</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l08212"></a><span class="lineno"> 8212</span>&#160;{</div>
+<div class="line"><a name="l08213"></a><span class="lineno"> 8213</span>&#160;    <a class="code" href="ev-view_8c.html#af4c66a12e3dd928175a7c057083d7fd8">compute_selections</a> (view, <a class="code" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>, start_point, end_point);</div>
+<div class="line"><a name="l08214"></a><span class="lineno"> 8214</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -930,7 +930,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-private_8h.html">ev-view-private.h</a></li>
-    <li class="footer">Generated on Tue May 20 2014 18:51:11 for Evince by
+    <li class="footer">Generated on Wed May 21 2014 10:23:26 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
