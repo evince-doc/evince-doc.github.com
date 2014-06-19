@@ -33,7 +33,7 @@ var searchData=
   ['comics_5fremove_5fdir',['comics_remove_dir',['../comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f',1,'comics-document.c']]],
   ['compare_5fbookmarks',['compare_bookmarks',['../ev-sidebar-bookmarks_8c.html#a642cb9ccf09d1db9ebfe0db3ebfb6170',1,'compare_bookmarks(EvBookmark *a, EvBookmark *b):&#160;ev-sidebar-bookmarks.c'],['../ev-window_8c.html#a642cb9ccf09d1db9ebfe0db3ebfb6170',1,'compare_bookmarks(EvBookmark *a, EvBookmark *b):&#160;ev-window.c']]],
   ['compare_5flink',['compare_link',['../ev-history_8c.html#ada3f54e832008d9ff4a82b98c477f611',1,'ev-history.c']]],
-  ['compare_5frecent_5fitems',['compare_recent_items',['../ev-recent-view_8c.html#a03460335c60e1db73afec5f8cfacaba6',1,'compare_recent_items(GtkRecentInfo *a, GtkRecentInfo *b):&#160;ev-recent-view.c'],['../ev-window_8c.html#a03460335c60e1db73afec5f8cfacaba6',1,'compare_recent_items(GtkRecentInfo *a, GtkRecentInfo *b):&#160;ev-window.c']]],
+  ['compare_5frecent_5fitems',['compare_recent_items',['../ev-recent-view_8c.html#a03460335c60e1db73afec5f8cfacaba6',1,'ev-recent-view.c']]],
   ['compare_5frefs',['compare_refs',['../font_8c.html#a542750154851b9336af812c1dbdf39ce',1,'font.c']]],
   ['compression_5frun',['compression_run',['../ev-file-helpers_8c.html#a7cfdca906277dce77c724c0f3c1d8e16',1,'ev-file-helpers.c']]],
   ['compute_5fborder',['compute_border',['../ev-view_8c.html#a2e406429bb9f69129608f6b60a724097',1,'ev-view.c']]],

@@ -159,8 +159,6 @@ var searchData=
   ['evmodule',['EvModule',['../ev-module_8h.html#a36950331de5fbf5ba1fe56432a65318f',1,'ev-module.h']]],
   ['evmoduleclass',['EvModuleClass',['../ev-module_8c.html#abf1db85194eaa182fc23bcf6ef6841e5',1,'ev-module.c']]],
   ['evmoduleregisterfunc',['EvModuleRegisterFunc',['../ev-module_8c.html#a6323bd1f1bc97d24b77aee099bfd4446',1,'ev-module.c']]],
-  ['evopenrecentaction',['EvOpenRecentAction',['../ev-open-recent-action_8h.html#ac0771352b186b59b495ae1f8d85ebdc7',1,'ev-open-recent-action.h']]],
-  ['evopenrecentactionclass',['EvOpenRecentActionClass',['../ev-open-recent-action_8h.html#ad3421398b27106bbfb4d31ad63c1b990',1,'ev-open-recent-action.h']]],
   ['evpage',['EvPage',['../ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10',1,'ev-page.h']]],
   ['evpageaccessible',['EvPageAccessible',['../ev-page-accessible_8h.html#ac6346abb0c17138594f49ab3d56e4bc7',1,'ev-page-accessible.h']]],
   ['evpageaccessibleclass',['EvPageAccessibleClass',['../ev-page-accessible_8h.html#a64cd573f012ad72b1f2ab09c94a2462b',1,'ev-page-accessible.h']]],

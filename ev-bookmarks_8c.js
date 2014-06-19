@@ -14,6 +14,7 @@ var ev_bookmarks_8c =
     [ "ev_bookmarks_delete", "ev-bookmarks_8c.html#a5a6e5c0be999958677f0143c8540eac4", null ],
     [ "ev_bookmarks_finalize", "ev-bookmarks_8c.html#a85020ddb5526fed4174ed7576e4697b2", null ],
     [ "ev_bookmarks_get_bookmarks", "ev-bookmarks_8c.html#a1b6f82f861f1419cd8e14ede672125d4", null ],
+    [ "ev_bookmarks_has_bookmarks", "ev-bookmarks_8c.html#a223a50cad7c2b4b15dbc750bd076ddee", null ],
     [ "ev_bookmarks_init", "ev-bookmarks_8c.html#a7a42c6a48f267c0a682c64c6c24f4173", null ],
     [ "ev_bookmarks_new", "ev-bookmarks_8c.html#a7df9ee157e4e19e00bfa2ba4851711c9", null ],
     [ "ev_bookmarks_save", "ev-bookmarks_8c.html#a537d7803ed4e1f4352dacf3c966ccb95", null ],

@@ -4,7 +4,6 @@ var searchData=
   ['read_5fbcpl',['read_bcpl',['../common_8c.html#ad0eb5a379f5867eb863bb2c9b84b99c7',1,'common.c']]],
   ['read_5fencoding',['read_encoding',['../fontmap_8c.html#a7ddc6fd42c3343d96b39e37af1d04ca9',1,'fontmap.c']]],
   ['read_5fstring',['read_string',['../common_8c.html#ab9054efd6e9a8264931f84c7018a4f22',1,'common.c']]],
-  ['recent_5fchooser_5fitem_5factivated',['recent_chooser_item_activated',['../ev-open-recent-action_8c.html#ac112cac034ac417783296800a4a17c3e',1,'ev-open-recent-action.c']]],
   ['refresh',['refresh',['../ev-sidebar-thumbnails_8c.html#ae1db2ee8ba074196b2e330a669af517b',1,'ev-sidebar-thumbnails.c']]],
   ['register_5fbuiltin_5fspecials',['register_builtin_specials',['../special_8c.html#a6912991c8c05c0986d7f3f4cf8edbb65',1,'special.c']]],
   ['register_5fcustom_5factions',['register_custom_actions',['../ev-window_8c.html#ac7bfa66a0b7b2fdb434e22d57a165eda',1,'ev-window.c']]],

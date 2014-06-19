@@ -4,6 +4,7 @@ var searchData=
   ['evannotationmarkupprops',['EvAnnotationMarkupProps',['../structEvAnnotationMarkupProps.html',1,'']]],
   ['evdoc',['EvDoc',['../structEvDoc.html',1,'']]],
   ['evprintrange',['EvPrintRange',['../structEvPrintRange.html',1,'']]],
+  ['evrecentmenumodel',['EvRecentMenuModel',['../structEvRecentMenuModel.html',1,'']]],
   ['evstockicon',['EvStockIcon',['../structEvStockIcon.html',1,'']]],
   ['evtimelinepriv',['EvTimelinePriv',['../structEvTimelinePriv.html',1,'']]],
   ['evtransitionanimationpriv',['EvTransitionAnimationPriv',['../structEvTransitionAnimationPriv.html',1,'']]],

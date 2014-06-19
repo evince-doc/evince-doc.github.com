@@ -152,25 +152,26 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;GType        <a class="code" href="ev-bookmarks_8h.html#afd62750d6c507fe209e7b6b9a8287949">ev_bookmarks_get_type</a>      (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *<a class="code" href="ev-bookmarks_8c.html#a7df9ee157e4e19e00bfa2ba4851711c9">ev_bookmarks_new</a>           (<a class="code" href="struct__EvMetadata.html">EvMetadata</a> *metadata);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;GList       *<a class="code" href="ev-bookmarks_8c.html#a1b6f82f861f1419cd8e14ede672125d4">ev_bookmarks_get_bookmarks</a> (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-bookmarks_8c.html#a5d4198f40ca6933a54e6cc4efdadc717">ev_bookmarks_add</a>           (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                         <a class="code" href="struct__EvBookmark.html">EvBookmark</a>  *bookmark);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-bookmarks_8c.html#a5a6e5c0be999958677f0143c8540eac4">ev_bookmarks_delete</a>        (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                         <a class="code" href="struct__EvBookmark.html">EvBookmark</a>  *bookmark);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-bookmarks_8c.html#a1f0c24b7990fc06caa0d60cbb7a662c9">ev_bookmarks_update</a>        (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                         <a class="code" href="struct__EvBookmark.html">EvBookmark</a>  *bookmark);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;gboolean     <a class="code" href="ev-bookmarks_8c.html#a223a50cad7c2b4b15dbc750bd076ddee">ev_bookmarks_has_bookmarks</a> (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-bookmarks_8c.html#a5d4198f40ca6933a54e6cc4efdadc717">ev_bookmarks_add</a>           (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                         <a class="code" href="struct__EvBookmark.html">EvBookmark</a>  *bookmark);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-bookmarks_8c.html#a5a6e5c0be999958677f0143c8540eac4">ev_bookmarks_delete</a>        (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                         <a class="code" href="struct__EvBookmark.html">EvBookmark</a>  *bookmark);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span>         <a class="code" href="ev-bookmarks_8c.html#a1f0c24b7990fc06caa0d60cbb7a662c9">ev_bookmarks_update</a>        (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                         <a class="code" href="struct__EvBookmark.html">EvBookmark</a>  *bookmark);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_BOOKMARKS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_BOOKMARKS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-bookmarks_8h.html">ev-bookmarks.h</a></li>
-    <li class="footer">Generated on Tue Jun 17 2014 18:38:57 for Evince by
+    <li class="footer">Generated on Thu Jun 19 2014 16:04:18 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

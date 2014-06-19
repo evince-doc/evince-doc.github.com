@@ -118,7 +118,6 @@ var searchData=
   ['tmp_5furi',['tmp_uri',['../struct__EvImagePrivate.html#a1727d1523338309a1e05dd645a72e11d',1,'_EvImagePrivate']]],
   ['to',['to',['../struct__DviRange.html#abea2cbd25127d0025523f87001ee8669',1,'_DviRange']]],
   ['toggle_5faction_5fentries',['toggle_action_entries',['../ev-previewer-window_8c.html#ab1f09fb5af948cc732c58781fba4b9fd',1,'ev-previewer-window.c']]],
-  ['toggle_5fentries',['toggle_entries',['../ev-window_8c.html#ab356031fec92c363acd22012b15e29a5',1,'ev-window.c']]],
   ['toggle_5flist',['toggle_list',['../struct__EvLinkActionPrivate.html#a97fab923785a79977a7c9a1821b698b9',1,'_EvLinkActionPrivate']]],
   ['toolbar',['toolbar',['../struct__EvWindowPrivate.html#ac4255b88c5a4659d8202a6b135bfec3a',1,'_EvWindowPrivate']]],
   ['toolbar_5fresource_5fpath',['TOOLBAR_RESOURCE_PATH',['../ev-window_8c.html#a839692a2bb48b740cf2f2a8c098f8e85',1,'ev-window.c']]],

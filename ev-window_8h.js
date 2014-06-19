@@ -22,6 +22,7 @@ var ev_window_8h =
       [ "EV_WINDOW_MODE_FULLSCREEN", "ev-window_8h.html#af078888885ecae68b98b740c05c406d6a14292777d1e407041467e22ef15a58d1", null ],
       [ "EV_WINDOW_MODE_PRESENTATION", "ev-window_8h.html#af078888885ecae68b98b740c05c406d6a82e7bf20591bf6e8f6bb1ceb14b1dc1e", null ]
     ] ],
+    [ "ev_window_get_bookmarks_menu", "ev-window_8h.html#a9ec925c953b6f6090b5299f1bde257b6", null ],
     [ "ev_window_get_dbus_object_path", "ev-window_8h.html#aa4c4958da41d46c7c0a8be8144c73991", null ],
     [ "ev_window_get_main_action_group", "ev-window_8h.html#a382e1b848a1069280e61b33106b52791", null ],
     [ "ev_window_get_type", "ev-window_8h.html#aedb92311f8c69fea726df6551b735538", null ],

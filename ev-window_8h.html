@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('ev-window_8h.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h__dep__incl.svg" width="1410" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h__dep__incl.svg" width="1438" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -205,6 +205,8 @@ Functions</h2></td></tr>
 <tr class="separator:a382e1b848a1069280e61b33106b52791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20828b7723433b3ac9ac831531ae6d77"><td class="memItemLeft" align="right" valign="top">GtkActionGroup *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-window_8h.html#a20828b7723433b3ac9ac831531ae6d77">ev_window_get_zoom_selector_action_group</a> (<a class="el" href="ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f">EvWindow</a> *ev_window)</td></tr>
 <tr class="separator:a20828b7723433b3ac9ac831531ae6d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec925c953b6f6090b5299f1bde257b6"><td class="memItemLeft" align="right" valign="top">GMenuModel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-window_8h.html#a9ec925c953b6f6090b5299f1bde257b6">ev_window_get_bookmarks_menu</a> (<a class="el" href="ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f">EvWindow</a> *ev_window)</td></tr>
+<tr class="separator:a9ec925c953b6f6090b5299f1bde257b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a99e17323bb0720910679fd84dd083511"></a>
@@ -410,6 +412,39 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a9ec925c953b6f6090b5299f1bde257b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GMenuModel* ev_window_get_bookmarks_menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f">EvWindow</a> *&#160;</td>
+          <td class="paramname"><em>ev_window</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07373">7373</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l07374"></a><span class="lineno"> 7374</span>&#160;{</div>
+<div class="line"><a name="l07375"></a><span class="lineno"> 7375</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
+<div class="line"><a name="l07376"></a><span class="lineno"> 7376</span>&#160;</div>
+<div class="line"><a name="l07377"></a><span class="lineno"> 7377</span>&#160;    <span class="keywordflow">return</span> G_MENU_MODEL (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ab4ae287fee2e0c5a90fc639b683e3fcb">bookmarks_menu</a>);</div>
+<div class="line"><a name="l07378"></a><span class="lineno"> 7378</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a9ec925c953b6f6090b5299f1bde257b6_icgraph.svg" width="640" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="aa4c4958da41d46c7c0a8be8144c73991"></a>
 <div class="memitem">
 <div class="memproto">
@@ -424,14 +459,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07702">7702</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l07703"></a><span class="lineno"> 7703</span>&#160;{</div>
-<div class="line"><a name="l07704"></a><span class="lineno"> 7704</span>&#160;<span class="preprocessor">#ifdef ENABLE_DBUS</span></div>
-<div class="line"><a name="l07705"></a><span class="lineno"> 7705</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;dbus_object_path;</div>
-<div class="line"><a name="l07706"></a><span class="lineno"> 7706</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l07707"></a><span class="lineno"> 7707</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l07708"></a><span class="lineno"> 7708</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l07709"></a><span class="lineno"> 7709</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07339">7339</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l07340"></a><span class="lineno"> 7340</span>&#160;{</div>
+<div class="line"><a name="l07341"></a><span class="lineno"> 7341</span>&#160;<span class="preprocessor">#ifdef ENABLE_DBUS</span></div>
+<div class="line"><a name="l07342"></a><span class="lineno"> 7342</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;dbus_object_path;</div>
+<div class="line"><a name="l07343"></a><span class="lineno"> 7343</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l07344"></a><span class="lineno"> 7344</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l07345"></a><span class="lineno"> 7345</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l07346"></a><span class="lineno"> 7346</span>&#160;<span class="preprocessor"></span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -449,19 +484,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07720">7720</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l07721"></a><span class="lineno"> 7721</span>&#160;{</div>
-<div class="line"><a name="l07722"></a><span class="lineno"> 7722</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
-<div class="line"><a name="l07723"></a><span class="lineno"> 7723</span>&#160;</div>
-<div class="line"><a name="l07724"></a><span class="lineno"> 7724</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afbcf102f6f7a7df5f0c9109bd69ec9c3">action_group</a>;</div>
-<div class="line"><a name="l07725"></a><span class="lineno"> 7725</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07357">7357</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l07358"></a><span class="lineno"> 7358</span>&#160;{</div>
+<div class="line"><a name="l07359"></a><span class="lineno"> 7359</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
+<div class="line"><a name="l07360"></a><span class="lineno"> 7360</span>&#160;</div>
+<div class="line"><a name="l07361"></a><span class="lineno"> 7361</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afbcf102f6f7a7df5f0c9109bd69ec9c3">action_group</a>;</div>
+<div class="line"><a name="l07362"></a><span class="lineno"> 7362</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a382e1b848a1069280e61b33106b52791_icgraph.svg" width="4835" height="938"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a382e1b848a1069280e61b33106b52791_icgraph.svg" width="4712" height="920"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -498,19 +533,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07712">7712</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l07713"></a><span class="lineno"> 7713</span>&#160;{</div>
-<div class="line"><a name="l07714"></a><span class="lineno"> 7714</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
-<div class="line"><a name="l07715"></a><span class="lineno"> 7715</span>&#160;</div>
-<div class="line"><a name="l07716"></a><span class="lineno"> 7716</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>;</div>
-<div class="line"><a name="l07717"></a><span class="lineno"> 7717</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07349">7349</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l07350"></a><span class="lineno"> 7350</span>&#160;{</div>
+<div class="line"><a name="l07351"></a><span class="lineno"> 7351</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
+<div class="line"><a name="l07352"></a><span class="lineno"> 7352</span>&#160;</div>
+<div class="line"><a name="l07353"></a><span class="lineno"> 7353</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d">ui_manager</a>;</div>
+<div class="line"><a name="l07354"></a><span class="lineno"> 7354</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a201834318dc0c9c21446c48a3edff6a4_icgraph.svg" width="875" height="90"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a201834318dc0c9c21446c48a3edff6a4_icgraph.svg" width="800" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -534,10 +569,10 @@ Functions</h2></td></tr>
 <p>It returns the uri of the document showed in the <a class="el" href="ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f">EvWindow</a>.</p>
 <p>Returns: the uri of the document showed in the <a class="el" href="ev-window_8h.html#a01d4a5acd6fbc8b56826eb9bb58fad7f">EvWindow</a>. </p>
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l01799">1799</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;{</div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>;</div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l01800">1800</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;{</div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>;</div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -555,18 +590,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07728">7728</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l07729"></a><span class="lineno"> 7729</span>&#160;{</div>
-<div class="line"><a name="l07730"></a><span class="lineno"> 7730</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
-<div class="line"><a name="l07731"></a><span class="lineno"> 7731</span>&#160;</div>
-<div class="line"><a name="l07732"></a><span class="lineno"> 7732</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4bd51d1ee7b20d5117e1f3d43d3a9005">zoom_selector_popup_action_group</a>;</div>
-<div class="line"><a name="l07733"></a><span class="lineno"> 7733</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07365">7365</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l07366"></a><span class="lineno"> 7366</span>&#160;{</div>
+<div class="line"><a name="l07367"></a><span class="lineno"> 7367</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
+<div class="line"><a name="l07368"></a><span class="lineno"> 7368</span>&#160;</div>
+<div class="line"><a name="l07369"></a><span class="lineno"> 7369</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4bd51d1ee7b20d5117e1f3d43d3a9005">zoom_selector_popup_action_group</a>;</div>
+<div class="line"><a name="l07370"></a><span class="lineno"> 7370</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a20828b7723433b3ac9ac831531ae6d77_icgraph.svg" width="811" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -591,20 +626,20 @@ Functions</h2></td></tr>
 <p>It does look if there is any document loaded or if there is any job to load a document.</p>
 <p>Returns: TRUE if there isn't any document loaded or any any documente to be loaded, FALSE in other case. </p>
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l00663">663</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;{</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (ev_window), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <span class="keywordflow">return</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#acaaf50698739bf1fca0b2fe96f79e864">document</a> == NULL) &amp;&amp; </div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a> == NULL);</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l00664">664</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;{</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (ev_window), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keywordflow">return</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#acaaf50698739bf1fca0b2fe96f79e864">document</a> == NULL) &amp;&amp; </div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a> == NULL);</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a27acb374de7f1fcb44d9ae5ff5f3ebaf_icgraph.svg" width="2968" height="1618"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a27acb374de7f1fcb44d9ae5ff5f3ebaf_icgraph.svg" width="2094" height="1532"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -628,25 +663,25 @@ Functions</h2></td></tr>
 <p>Creates a #GtkWidget that represents the window.</p>
 <p>Returns: the #GtkWidget that represents the window. </p>
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07688">7688</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l07689"></a><span class="lineno"> 7689</span>&#160;{</div>
-<div class="line"><a name="l07690"></a><span class="lineno"> 7690</span>&#160;    GtkWidget *ev_window;</div>
-<div class="line"><a name="l07691"></a><span class="lineno"> 7691</span>&#160;</div>
-<div class="line"><a name="l07692"></a><span class="lineno"> 7692</span>&#160;    ev_window = GTK_WIDGET (g_object_new (<a class="code" href="ev-window_8h.html#ab5debcb77891aaf7c25becfae88cfbd6">EV_TYPE_WINDOW</a>,</div>
-<div class="line"><a name="l07693"></a><span class="lineno"> 7693</span>&#160;                          <span class="stringliteral">&quot;type&quot;</span>, GTK_WINDOW_TOPLEVEL,</div>
-<div class="line"><a name="l07694"></a><span class="lineno"> 7694</span>&#160;                                              <span class="stringliteral">&quot;application&quot;</span>, g_application_get_default (),</div>
-<div class="line"><a name="l07695"></a><span class="lineno"> 7695</span>&#160;                          <span class="stringliteral">&quot;show-menubar&quot;</span>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
-<div class="line"><a name="l07696"></a><span class="lineno"> 7696</span>&#160;                          NULL));</div>
-<div class="line"><a name="l07697"></a><span class="lineno"> 7697</span>&#160;</div>
-<div class="line"><a name="l07698"></a><span class="lineno"> 7698</span>&#160;    <span class="keywordflow">return</span> ev_window;</div>
-<div class="line"><a name="l07699"></a><span class="lineno"> 7699</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l07325">7325</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l07326"></a><span class="lineno"> 7326</span>&#160;{</div>
+<div class="line"><a name="l07327"></a><span class="lineno"> 7327</span>&#160;    GtkWidget *ev_window;</div>
+<div class="line"><a name="l07328"></a><span class="lineno"> 7328</span>&#160;</div>
+<div class="line"><a name="l07329"></a><span class="lineno"> 7329</span>&#160;    ev_window = GTK_WIDGET (g_object_new (<a class="code" href="ev-window_8h.html#ab5debcb77891aaf7c25becfae88cfbd6">EV_TYPE_WINDOW</a>,</div>
+<div class="line"><a name="l07330"></a><span class="lineno"> 7330</span>&#160;                          <span class="stringliteral">&quot;type&quot;</span>, GTK_WINDOW_TOPLEVEL,</div>
+<div class="line"><a name="l07331"></a><span class="lineno"> 7331</span>&#160;                                              <span class="stringliteral">&quot;application&quot;</span>, g_application_get_default (),</div>
+<div class="line"><a name="l07332"></a><span class="lineno"> 7332</span>&#160;                          <span class="stringliteral">&quot;show-menubar&quot;</span>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
+<div class="line"><a name="l07333"></a><span class="lineno"> 7333</span>&#160;                          NULL));</div>
+<div class="line"><a name="l07334"></a><span class="lineno"> 7334</span>&#160;</div>
+<div class="line"><a name="l07335"></a><span class="lineno"> 7335</span>&#160;    <span class="keywordflow">return</span> ev_window;</div>
+<div class="line"><a name="l07336"></a><span class="lineno"> 7336</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a1fdd586cd4cc9562201386f2103ce422_icgraph.svg" width="3518" height="1274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a1fdd586cd4cc9562201386f2103ce422_icgraph.svg" width="2787" height="782"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -695,74 +730,74 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l02180">2180</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;{</div>
-<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;    <span class="keywordflow">if</span> (document == ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#acaaf50698739bf1fca0b2fe96f79e864">document</a>)</div>
-<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;</div>
-<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;    <a class="code" href="ev-window_8c.html#aeda9a9c2c108b84b23fcb611c1a93163">ev_window_close_dialogs</a> (ev_window);</div>
-<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;    <a class="code" href="ev-window_8c.html#a2577e2835e9d6ad055adaf8b9225423e">ev_window_clear_load_job</a> (ev_window);</div>
-<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;    <a class="code" href="ev-window_8c.html#a179a9ca01c2399cea12959b95a236c55">ev_window_clear_local_uri</a> (ev_window);</div>
-<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;</div>
-<div class="line"><a name="l02193"></a><span class="lineno"> 2193</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>) {</div>
-<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>);</div>
-<div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a> = NULL;</div>
-<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;    }</div>
-<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;</div>
-<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>)</div>
-<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;        g_free (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>);</div>
-<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a> = g_strdup (<a class="code" href="ev-document_8c.html#a66855da553a1fec936981bc52509bbff">ev_document_get_uri</a> (document));</div>
-<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;</div>
-<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;    <a class="code" href="ev-window_8c.html#af9eb7a390b77f19c6b8bb9bea29b772d">setup_size_from_metadata</a> (ev_window);</div>
-<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;    <a class="code" href="ev-window_8c.html#a8ecc669970cf7dc6d72385e109190ec5">setup_model_from_metadata</a> (ev_window);</div>
-<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;</div>
-<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;    <a class="code" href="ev-document-model_8c.html#ae3b12555b7e0f885215b04ed99784769">ev_document_model_set_document</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a900e5d47af591198f2b6a4dc75b0a76a">model</a>, document);</div>
-<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;</div>
-<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;    <a class="code" href="ev-window_8c.html#a1ff144480d46c938417418826fbea114">setup_document_from_metadata</a> (ev_window);</div>
-<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;    <a class="code" href="ev-window_8c.html#ab676b32dd25b2a08aeeafb85bb289225">setup_view_from_metadata</a> (ev_window);</div>
-<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;</div>
-<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;    <span class="keywordflow">if</span> (dest) {</div>
-<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;        <a class="code" href="ev-link_8h.html#aceeb53e4317fc21725ba64817acbdea8">EvLink</a> *link;</div>
-<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;        <a class="code" href="ev-link-action_8h.html#a1b9b4cf94e3e2ef4821f5badb79f472c">EvLinkAction</a> *link_action;</div>
-<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;</div>
-<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;        link_action = <a class="code" href="ev-link-action_8c.html#a4334d447bc8b9e87c8ea8f152955d439">ev_link_action_new_dest</a> (dest);</div>
-<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;        link = <a class="code" href="ev-link_8c.html#a6690d4e0ffafb53cef0bbef77eab794e">ev_link_new</a> (NULL, link_action);</div>
-<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;        <a class="code" href="ev-view_8c.html#ab2cf93cf86f9ce5f9c237c2df3fcd52b">ev_view_handle_link</a> (<a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#aca655e6863cca1389f35fcf601eaeb59">view</a>), link);</div>
-<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;        g_object_unref (link_action);</div>
-<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;        g_object_unref (link);</div>
-<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;    }</div>
-<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;</div>
-<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;    <span class="keywordflow">switch</span> (mode) {</div>
-<div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6a14292777d1e407041467e22ef15a58d1">EV_WINDOW_MODE_FULLSCREEN</a>:</div>
-<div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;        <a class="code" href="ev-window_8c.html#ab25b17be28ff67482e6039f65b2c9264">ev_window_run_fullscreen</a> (ev_window);</div>
-<div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6a82e7bf20591bf6e8f6bb1ceb14b1dc1e">EV_WINDOW_MODE_PRESENTATION</a>:</div>
-<div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;        <a class="code" href="ev-window_8c.html#acfc371797d4d2bd6a2d3f50cba8f50ac">ev_window_run_presentation</a> (ev_window);</div>
-<div class="line"><a name="l02227"></a><span class="lineno"> 2227</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;    }</div>
-<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;</div>
-<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;    <span class="keywordflow">if</span> (search_string &amp;&amp; <a class="code" href="ev-document-find_8h.html#abba95d1fb126c440a77602c49f26a32c">EV_IS_DOCUMENT_FIND</a> (document) &amp;&amp;</div>
-<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;        mode != <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6a82e7bf20591bf6e8f6bb1ceb14b1dc1e">EV_WINDOW_MODE_PRESENTATION</a>) {</div>
-<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;        <a class="code" href="ev-window_8c.html#a137dcfbfdcae026e73940012b46c6a0a">ev_window_show_find_bar</a> (ev_window, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l02235"></a><span class="lineno"> 2235</span>&#160;        <a class="code" href="eggfindbar_8c.html#ac6e310b01a08be3b8f0d445b0e3b4842">egg_find_bar_set_search_string</a> (<a class="code" href="eggfindbar_8h.html#a08e8cec2dbd78e5ddc5c7424c48f7edd">EGG_FIND_BAR</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4793ce4c98feef7d9c1e61d44dc84dda">find_bar</a>),</div>
-<div class="line"><a name="l02236"></a><span class="lineno"> 2236</span>&#160;                        search_string);</div>
-<div class="line"><a name="l02237"></a><span class="lineno"> 2237</span>&#160;    }</div>
-<div class="line"><a name="l02238"></a><span class="lineno"> 2238</span>&#160;</div>
-<div class="line"><a name="l02239"></a><span class="lineno"> 2239</span>&#160;    <span class="comment">/* Create a monitor for the document */</span></div>
-<div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a> = <a class="code" href="ev-file-monitor_8c.html#a2b5de9438736dbb99f63b65d8e1d5826">ev_file_monitor_new</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>);</div>
-<div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;    g_signal_connect_swapped (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>, <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160;                  G_CALLBACK (<a class="code" href="ev-window_8c.html#a31a074fba1a499efa3c1585dd7c357b7">ev_window_file_changed</a>),</div>
-<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;                  ev_window);</div>
-<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l02181">2181</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;{</div>
+<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;    <span class="keywordflow">if</span> (document == ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#acaaf50698739bf1fca0b2fe96f79e864">document</a>)</div>
+<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;</div>
+<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;    <a class="code" href="ev-window_8c.html#aeda9a9c2c108b84b23fcb611c1a93163">ev_window_close_dialogs</a> (ev_window);</div>
+<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;    <a class="code" href="ev-window_8c.html#a2577e2835e9d6ad055adaf8b9225423e">ev_window_clear_load_job</a> (ev_window);</div>
+<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;    <a class="code" href="ev-window_8c.html#a179a9ca01c2399cea12959b95a236c55">ev_window_clear_local_uri</a> (ev_window);</div>
+<div class="line"><a name="l02193"></a><span class="lineno"> 2193</span>&#160;</div>
+<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>) {</div>
+<div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>);</div>
+<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a> = NULL;</div>
+<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;    }</div>
+<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;</div>
+<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>)</div>
+<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;        g_free (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>);</div>
+<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a> = g_strdup (<a class="code" href="ev-document_8c.html#a66855da553a1fec936981bc52509bbff">ev_document_get_uri</a> (document));</div>
+<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;</div>
+<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;    <a class="code" href="ev-window_8c.html#af9eb7a390b77f19c6b8bb9bea29b772d">setup_size_from_metadata</a> (ev_window);</div>
+<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;    <a class="code" href="ev-window_8c.html#a8ecc669970cf7dc6d72385e109190ec5">setup_model_from_metadata</a> (ev_window);</div>
+<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;</div>
+<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;    <a class="code" href="ev-document-model_8c.html#ae3b12555b7e0f885215b04ed99784769">ev_document_model_set_document</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a900e5d47af591198f2b6a4dc75b0a76a">model</a>, document);</div>
+<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;</div>
+<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;    <a class="code" href="ev-window_8c.html#a1ff144480d46c938417418826fbea114">setup_document_from_metadata</a> (ev_window);</div>
+<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;    <a class="code" href="ev-window_8c.html#ab676b32dd25b2a08aeeafb85bb289225">setup_view_from_metadata</a> (ev_window);</div>
+<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;</div>
+<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;    <span class="keywordflow">if</span> (dest) {</div>
+<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;        <a class="code" href="ev-link_8h.html#aceeb53e4317fc21725ba64817acbdea8">EvLink</a> *link;</div>
+<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;        <a class="code" href="ev-link-action_8h.html#a1b9b4cf94e3e2ef4821f5badb79f472c">EvLinkAction</a> *link_action;</div>
+<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;</div>
+<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;        link_action = <a class="code" href="ev-link-action_8c.html#a4334d447bc8b9e87c8ea8f152955d439">ev_link_action_new_dest</a> (dest);</div>
+<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;        link = <a class="code" href="ev-link_8c.html#a6690d4e0ffafb53cef0bbef77eab794e">ev_link_new</a> (NULL, link_action);</div>
+<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;        <a class="code" href="ev-view_8c.html#ab2cf93cf86f9ce5f9c237c2df3fcd52b">ev_view_handle_link</a> (<a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#aca655e6863cca1389f35fcf601eaeb59">view</a>), link);</div>
+<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;        g_object_unref (link_action);</div>
+<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;        g_object_unref (link);</div>
+<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;    }</div>
+<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;</div>
+<div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;    <span class="keywordflow">switch</span> (mode) {</div>
+<div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6a14292777d1e407041467e22ef15a58d1">EV_WINDOW_MODE_FULLSCREEN</a>:</div>
+<div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;        <a class="code" href="ev-window_8c.html#ab25b17be28ff67482e6039f65b2c9264">ev_window_run_fullscreen</a> (ev_window);</div>
+<div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6a82e7bf20591bf6e8f6bb1ceb14b1dc1e">EV_WINDOW_MODE_PRESENTATION</a>:</div>
+<div class="line"><a name="l02227"></a><span class="lineno"> 2227</span>&#160;        <a class="code" href="ev-window_8c.html#acfc371797d4d2bd6a2d3f50cba8f50ac">ev_window_run_presentation</a> (ev_window);</div>
+<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;    }</div>
+<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;</div>
+<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;    <span class="keywordflow">if</span> (search_string &amp;&amp; <a class="code" href="ev-document-find_8h.html#abba95d1fb126c440a77602c49f26a32c">EV_IS_DOCUMENT_FIND</a> (document) &amp;&amp;</div>
+<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;        mode != <a class="code" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6a82e7bf20591bf6e8f6bb1ceb14b1dc1e">EV_WINDOW_MODE_PRESENTATION</a>) {</div>
+<div class="line"><a name="l02235"></a><span class="lineno"> 2235</span>&#160;        <a class="code" href="ev-window_8c.html#a137dcfbfdcae026e73940012b46c6a0a">ev_window_show_find_bar</a> (ev_window, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l02236"></a><span class="lineno"> 2236</span>&#160;        <a class="code" href="eggfindbar_8c.html#ac6e310b01a08be3b8f0d445b0e3b4842">egg_find_bar_set_search_string</a> (<a class="code" href="eggfindbar_8h.html#a08e8cec2dbd78e5ddc5c7424c48f7edd">EGG_FIND_BAR</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a4793ce4c98feef7d9c1e61d44dc84dda">find_bar</a>),</div>
+<div class="line"><a name="l02237"></a><span class="lineno"> 2237</span>&#160;                        search_string);</div>
+<div class="line"><a name="l02238"></a><span class="lineno"> 2238</span>&#160;    }</div>
+<div class="line"><a name="l02239"></a><span class="lineno"> 2239</span>&#160;</div>
+<div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160;    <span class="comment">/* Create a monitor for the document */</span></div>
+<div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a> = <a class="code" href="ev-file-monitor_8c.html#a2b5de9438736dbb99f63b65d8e1d5826">ev_file_monitor_new</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>);</div>
+<div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160;    g_signal_connect_swapped (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>, <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;                  G_CALLBACK (<a class="code" href="ev-window_8c.html#a31a074fba1a499efa3c1585dd7c357b7">ev_window_file_changed</a>),</div>
+<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;                  ev_window);</div>
+<div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_ae9f09db2e536bf396299bc94aaa79c7b_icgraph.svg" width="3838" height="963"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_ae9f09db2e536bf396299bc94aaa79c7b_icgraph.svg" width="3470" height="452"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -811,90 +846,90 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-window_8c_source.html#l02097">2097</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;{</div>
-<div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;    GFile *source_file;</div>
-<div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;</div>
-<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ad6b8c26c387e0d9212ac157963e948df">in_reload</a> = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;</div>
-<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;    g_clear_pointer (&amp;ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ac649767a28d58424ea2988cf011e60b7">search_string</a>, g_free);</div>
-<div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ac649767a28d58424ea2988cf011e60b7">search_string</a> = search_string ?</div>
-<div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;        g_strdup (search_string) : NULL;</div>
-<div class="line"><a name="l02110"></a><span class="lineno"> 2110</span>&#160;</div>
-<div class="line"><a name="l02111"></a><span class="lineno"> 2111</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a> &amp;&amp;</div>
-<div class="line"><a name="l02112"></a><span class="lineno"> 2112</span>&#160;        g_ascii_strcasecmp (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>, uri) == 0) {</div>
-<div class="line"><a name="l02113"></a><span class="lineno"> 2113</span>&#160;        <a class="code" href="ev-window_8c.html#a8bf91c328981ed9823172fbcdec61500">ev_window_reload_document</a> (ev_window, dest);</div>
-<div class="line"><a name="l02114"></a><span class="lineno"> 2114</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;    }</div>
-<div class="line"><a name="l02116"></a><span class="lineno"> 2116</span>&#160;</div>
-<div class="line"><a name="l02117"></a><span class="lineno"> 2117</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>) {</div>
-<div class="line"><a name="l02118"></a><span class="lineno"> 2118</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>);</div>
-<div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a> = NULL;</div>
-<div class="line"><a name="l02120"></a><span class="lineno"> 2120</span>&#160;    }</div>
-<div class="line"><a name="l02121"></a><span class="lineno"> 2121</span>&#160;    </div>
-<div class="line"><a name="l02122"></a><span class="lineno"> 2122</span>&#160;    <a class="code" href="ev-window_8c.html#aeda9a9c2c108b84b23fcb611c1a93163">ev_window_close_dialogs</a> (ev_window);</div>
-<div class="line"><a name="l02123"></a><span class="lineno"> 2123</span>&#160;    <a class="code" href="ev-window_8c.html#a2577e2835e9d6ad055adaf8b9225423e">ev_window_clear_load_job</a> (ev_window);</div>
-<div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160;    <a class="code" href="ev-window_8c.html#a179a9ca01c2399cea12959b95a236c55">ev_window_clear_local_uri</a> (ev_window);</div>
-<div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;</div>
-<div class="line"><a name="l02126"></a><span class="lineno"> 2126</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa">window_mode</a> = mode;</div>
-<div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;</div>
-<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>)</div>
-<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;        g_free (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>);</div>
-<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a> = g_strdup (uri);</div>
-<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;</div>
-<div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>)</div>
-<div class="line"><a name="l02133"></a><span class="lineno"> 2133</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>);</div>
-<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>)</div>
-<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>);</div>
-<div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;</div>
-<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;    source_file = g_file_new_for_uri (uri);</div>
-<div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-metadata_8c.html#ab3e88db60086fc8393fce1bb175bdca1">ev_is_metadata_supported_for_file</a> (source_file)) {</div>
-<div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a> = <a class="code" href="ev-metadata_8c.html#a2e50035b46b6f3b9bdbfc4abfd33dc10">ev_metadata_new</a> (source_file);</div>
-<div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;        <a class="code" href="ev-window_8c.html#aabc3fa0b3c25c911abb19388fb651bb6">ev_window_init_metadata_with_default_values</a> (ev_window);</div>
-<div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a> = NULL;</div>
-<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;    }</div>
-<div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;</div>
-<div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>) {</div>
-<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a> = <a class="code" href="ev-bookmarks_8c.html#a7df9ee157e4e19e00bfa2ba4851711c9">ev_bookmarks_new</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>);</div>
-<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;        <a class="code" href="ev-sidebar-bookmarks_8c.html#a248d6b8ffe01e41985502320b6dc0e30">ev_sidebar_bookmarks_set_bookmarks</a> (<a class="code" href="ev-sidebar-bookmarks_8h.html#a09752702cef7af19a1e7010e650bfc47">EV_SIDEBAR_BOOKMARKS</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a9b90a112405e805b5dc73a2a89766cb1">sidebar_bookmarks</a>),</div>
-<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;                            ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>);</div>
-<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;        g_signal_connect_swapped (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>, <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;                      G_CALLBACK (<a class="code" href="ev-window_8c.html#a7b1c341e48b8809a0aa389c8bc2faf64">ev_window_setup_bookmarks</a>),</div>
-<div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160;                      ev_window);</div>
-<div class="line"><a name="l02152"></a><span class="lineno"> 2152</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l02153"></a><span class="lineno"> 2153</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a> = NULL;</div>
-<div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;    }</div>
-<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;</div>
-<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af3e7841cc9ad44e903bbd64b4ee7f10a">dest</a>)</div>
-<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af3e7841cc9ad44e903bbd64b4ee7f10a">dest</a>);</div>
-<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af3e7841cc9ad44e903bbd64b4ee7f10a">dest</a> = <a class="code" href="synctex__parser__utils_8c.html#a723e06ace24a60ed94dca199595c08d2">dest</a> ? g_object_ref (dest) : NULL;</div>
-<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;</div>
-<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;    <a class="code" href="ev-window_8c.html#af9eb7a390b77f19c6b8bb9bea29b772d">setup_size_from_metadata</a> (ev_window);</div>
-<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;    <a class="code" href="ev-window_8c.html#a8ecc669970cf7dc6d72385e109190ec5">setup_model_from_metadata</a> (ev_window);</div>
-<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;    <a class="code" href="ev-window_8c.html#a7b1c341e48b8809a0aa389c8bc2faf64">ev_window_setup_bookmarks</a> (ev_window);</div>
-<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;</div>
-<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a> = <a class="code" href="ev-jobs_8c.html#a8f253ec4c291dc0133b879334ad7e6c4">ev_job_load_new</a> (uri);</div>
-<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;    g_signal_connect (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a>,</div>
-<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;              <span class="stringliteral">&quot;finished&quot;</span>,</div>
-<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;              G_CALLBACK (<a class="code" href="ev-window_8c.html#a250036eb7e2975912fc9af1944b74005">ev_window_load_job_cb</a>),</div>
-<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;              ev_window);</div>
-<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;</div>
-<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;    <span class="keywordflow">if</span> (!g_file_is_native (source_file) &amp;&amp; !ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a29deab483e36630fad2b53d386284c2a">local_uri</a>) {</div>
-<div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;        <a class="code" href="ev-window_8c.html#a8a92a6c612c8644277bffce6c0e74bf1">ev_window_load_file_remote</a> (ev_window, source_file);</div>
-<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;        <a class="code" href="ev-window_8c.html#aa9b016b2293720c930e2676476b1955e">ev_window_show_loading_message</a> (ev_window);</div>
-<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;        g_object_unref (source_file);</div>
-<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;        <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a>, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
-<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;    }</div>
-<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-window_8c_source.html#l02098">2098</a> of file <a class="el" href="ev-window_8c_source.html">ev-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;{</div>
+<div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;    GFile *source_file;</div>
+<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;</div>
+<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ad6b8c26c387e0d9212ac157963e948df">in_reload</a> = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;</div>
+<div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;    g_clear_pointer (&amp;ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ac649767a28d58424ea2988cf011e60b7">search_string</a>, g_free);</div>
+<div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ac649767a28d58424ea2988cf011e60b7">search_string</a> = search_string ?</div>
+<div class="line"><a name="l02110"></a><span class="lineno"> 2110</span>&#160;        g_strdup (search_string) : NULL;</div>
+<div class="line"><a name="l02111"></a><span class="lineno"> 2111</span>&#160;</div>
+<div class="line"><a name="l02112"></a><span class="lineno"> 2112</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a> &amp;&amp;</div>
+<div class="line"><a name="l02113"></a><span class="lineno"> 2113</span>&#160;        g_ascii_strcasecmp (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>, uri) == 0) {</div>
+<div class="line"><a name="l02114"></a><span class="lineno"> 2114</span>&#160;        <a class="code" href="ev-window_8c.html#a8bf91c328981ed9823172fbcdec61500">ev_window_reload_document</a> (ev_window, dest);</div>
+<div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02116"></a><span class="lineno"> 2116</span>&#160;    }</div>
+<div class="line"><a name="l02117"></a><span class="lineno"> 2117</span>&#160;</div>
+<div class="line"><a name="l02118"></a><span class="lineno"> 2118</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>) {</div>
+<div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a>);</div>
+<div class="line"><a name="l02120"></a><span class="lineno"> 2120</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af1581639e1b495f10b508d57bfa52b70">monitor</a> = NULL;</div>
+<div class="line"><a name="l02121"></a><span class="lineno"> 2121</span>&#160;    }</div>
+<div class="line"><a name="l02122"></a><span class="lineno"> 2122</span>&#160;    </div>
+<div class="line"><a name="l02123"></a><span class="lineno"> 2123</span>&#160;    <a class="code" href="ev-window_8c.html#aeda9a9c2c108b84b23fcb611c1a93163">ev_window_close_dialogs</a> (ev_window);</div>
+<div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160;    <a class="code" href="ev-window_8c.html#a2577e2835e9d6ad055adaf8b9225423e">ev_window_clear_load_job</a> (ev_window);</div>
+<div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;    <a class="code" href="ev-window_8c.html#a179a9ca01c2399cea12959b95a236c55">ev_window_clear_local_uri</a> (ev_window);</div>
+<div class="line"><a name="l02126"></a><span class="lineno"> 2126</span>&#160;</div>
+<div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa">window_mode</a> = mode;</div>
+<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;</div>
+<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>)</div>
+<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;        g_free (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a>);</div>
+<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523">uri</a> = g_strdup (uri);</div>
+<div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;</div>
+<div class="line"><a name="l02133"></a><span class="lineno"> 2133</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>)</div>
+<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>);</div>
+<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>)</div>
+<div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>);</div>
+<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;</div>
+<div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;    source_file = g_file_new_for_uri (uri);</div>
+<div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-metadata_8c.html#ab3e88db60086fc8393fce1bb175bdca1">ev_is_metadata_supported_for_file</a> (source_file)) {</div>
+<div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a> = <a class="code" href="ev-metadata_8c.html#a2e50035b46b6f3b9bdbfc4abfd33dc10">ev_metadata_new</a> (source_file);</div>
+<div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;        <a class="code" href="ev-window_8c.html#aabc3fa0b3c25c911abb19388fb651bb6">ev_window_init_metadata_with_default_values</a> (ev_window);</div>
+<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a> = NULL;</div>
+<div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;    }</div>
+<div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;</div>
+<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>) {</div>
+<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a> = <a class="code" href="ev-bookmarks_8c.html#a7df9ee157e4e19e00bfa2ba4851711c9">ev_bookmarks_new</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094">metadata</a>);</div>
+<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;        <a class="code" href="ev-sidebar-bookmarks_8c.html#a248d6b8ffe01e41985502320b6dc0e30">ev_sidebar_bookmarks_set_bookmarks</a> (<a class="code" href="ev-sidebar-bookmarks_8h.html#a09752702cef7af19a1e7010e650bfc47">EV_SIDEBAR_BOOKMARKS</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a9b90a112405e805b5dc73a2a89766cb1">sidebar_bookmarks</a>),</div>
+<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;                            ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>);</div>
+<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;        g_signal_connect_swapped (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a>, <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160;                      G_CALLBACK (<a class="code" href="ev-window_8c.html#a7b1c341e48b8809a0aa389c8bc2faf64">ev_window_setup_bookmarks</a>),</div>
+<div class="line"><a name="l02152"></a><span class="lineno"> 2152</span>&#160;                      ev_window);</div>
+<div class="line"><a name="l02153"></a><span class="lineno"> 2153</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;        ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c">bookmarks</a> = NULL;</div>
+<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;    }</div>
+<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;</div>
+<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;    <span class="keywordflow">if</span> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af3e7841cc9ad44e903bbd64b4ee7f10a">dest</a>)</div>
+<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;        g_object_unref (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af3e7841cc9ad44e903bbd64b4ee7f10a">dest</a>);</div>
+<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#af3e7841cc9ad44e903bbd64b4ee7f10a">dest</a> = <a class="code" href="synctex__parser__utils_8c.html#a723e06ace24a60ed94dca199595c08d2">dest</a> ? g_object_ref (dest) : NULL;</div>
+<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;</div>
+<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;    <a class="code" href="ev-window_8c.html#af9eb7a390b77f19c6b8bb9bea29b772d">setup_size_from_metadata</a> (ev_window);</div>
+<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;    <a class="code" href="ev-window_8c.html#a8ecc669970cf7dc6d72385e109190ec5">setup_model_from_metadata</a> (ev_window);</div>
+<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;    <a class="code" href="ev-window_8c.html#a7b1c341e48b8809a0aa389c8bc2faf64">ev_window_setup_bookmarks</a> (ev_window);</div>
+<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;</div>
+<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;    ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a> = <a class="code" href="ev-jobs_8c.html#a8f253ec4c291dc0133b879334ad7e6c4">ev_job_load_new</a> (uri);</div>
+<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;    g_signal_connect (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a>,</div>
+<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;              <span class="stringliteral">&quot;finished&quot;</span>,</div>
+<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;              G_CALLBACK (<a class="code" href="ev-window_8c.html#a250036eb7e2975912fc9af1944b74005">ev_window_load_job_cb</a>),</div>
+<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;              ev_window);</div>
+<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;</div>
+<div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;    <span class="keywordflow">if</span> (!g_file_is_native (source_file) &amp;&amp; !ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a29deab483e36630fad2b53d386284c2a">local_uri</a>) {</div>
+<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;        <a class="code" href="ev-window_8c.html#a8a92a6c612c8644277bffce6c0e74bf1">ev_window_load_file_remote</a> (ev_window, source_file);</div>
+<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;        <a class="code" href="ev-window_8c.html#aa9b016b2293720c930e2676476b1955e">ev_window_show_loading_message</a> (ev_window);</div>
+<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;        g_object_unref (source_file);</div>
+<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;        <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3">load_job</a>, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
+<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;    }</div>
+<div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a9083be0813a4b83cdcd8b6b62b51bc56_icgraph.svg" width="3582" height="1294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-window_8h_a9083be0813a4b83cdcd8b6b62b51bc56_icgraph.svg" width="2814" height="684"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -939,7 +974,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-window_8h.html">ev-window.h</a></li>
-    <li class="footer">Generated on Tue Jun 17 2014 18:39:05 for Evince by
+    <li class="footer">Generated on Thu Jun 19 2014 16:04:27 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -38,6 +38,5 @@ var searchData=
   ['is_5frich_5ftext',['is_rich_text',['../struct__EvFormFieldText.html#aaef52a5257556cbb648fc085286a333a',1,'_EvFormFieldText']]],
   ['isfixedpitch',['isFixedPitch',['../structGlobalFontInfo.html#a57a51fafb29ae8edcfedd918cdaed010',1,'GlobalFontInfo']]],
   ['italicangle',['italicAngle',['../structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff',1,'GlobalFontInfo']]],
-  ['item_5factivated',['item_activated',['../struct__EvOpenRecentActionClass.html#a02af51bab4a1d06f8a02373bdc82c98b',1,'_EvOpenRecentActionClass']]],
   ['items',['items',['../struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9',1,'_EvBookmarks::items()'],['../struct__EvMetadata.html#aebc19339308c1ad2790fab4e7e64948b',1,'_EvMetadata::items()']]]
 ];

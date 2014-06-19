@@ -176,8 +176,6 @@ var searchData=
   ['_5fevmetadataclass',['_EvMetadataClass',['../struct__EvMetadataClass.html',1,'']]],
   ['_5fevmodule',['_EvModule',['../struct__EvModule.html',1,'']]],
   ['_5fevmoduleclass',['_EvModuleClass',['../struct__EvModuleClass.html',1,'']]],
-  ['_5fevopenrecentaction',['_EvOpenRecentAction',['../struct__EvOpenRecentAction.html',1,'']]],
-  ['_5fevopenrecentactionclass',['_EvOpenRecentActionClass',['../struct__EvOpenRecentActionClass.html',1,'']]],
   ['_5fevpage',['_EvPage',['../struct__EvPage.html',1,'']]],
   ['_5fevpageaccessible',['_EvPageAccessible',['../struct__EvPageAccessible.html',1,'']]],
   ['_5fevpageaccessibleclass',['_EvPageAccessibleClass',['../struct__EvPageAccessibleClass.html',1,'']]],
