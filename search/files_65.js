@@ -67,8 +67,6 @@ var searchData=
   ['ev_2dfind_2dsidebar_2eh',['ev-find-sidebar.h',['../ev-find-sidebar_8h.html',1,'']]],
   ['ev_2dform_2dfield_2ec',['ev-form-field.c',['../ev-form-field_8c.html',1,'']]],
   ['ev_2dform_2dfield_2eh',['ev-form-field.h',['../ev-form-field_8h.html',1,'']]],
-  ['ev_2dhistory_2daction_2dwidget_2ec',['ev-history-action-widget.c',['../ev-history-action-widget_8c.html',1,'']]],
-  ['ev_2dhistory_2daction_2dwidget_2eh',['ev-history-action-widget.h',['../ev-history-action-widget_8h.html',1,'']]],
   ['ev_2dhistory_2daction_2ec',['ev-history-action.c',['../ev-history-action_8c.html',1,'']]],
   ['ev_2dhistory_2daction_2eh',['ev-history-action.h',['../ev-history-action_8h.html',1,'']]],
   ['ev_2dhistory_2ec',['ev-history.c',['../ev-history_8c.html',1,'']]],

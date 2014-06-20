@@ -139,7 +139,7 @@ var searchData=
   ['format',['format',['../structPdfPrintContext.html#a94fa5147eebf19d53f003b82f23ae25e',1,'PdfPrintContext::format()'],['../struct__EvDocumentInfo.html#a13359293d4cc3a36798de16ef3b5e3fb',1,'_EvDocumentInfo::format()'],['../struct__EvFileExporterContext.html#a873c9e3e6d30f53495c3db6442df90aa',1,'_EvFileExporterContext::format()'],['../struct__EvJobThumbnail.html#a5e68373a653331bd516e1eea4802fc14',1,'_EvJobThumbnail::format()']]],
   ['format_5fproperty',['FORMAT_PROPERTY',['../ev-properties-view_8c.html#a80e3abfdceb5f0f2ef6e0e50ab2fd1aaa8677e09ddec86da103ccf13c80da9f1d',1,'ev-properties-view.c']]],
   ['forms_5fmodified',['forms_modified',['../struct__PdfDocument.html#ab65a44344dbea620f915cd01404e4d94',1,'_PdfDocument']]],
-  ['forward_5fbutton',['forward_button',['../struct__EvHistoryActionWidgetPrivate.html#a45bff74d0a497c29f03cebd09cd055d3',1,'_EvHistoryActionWidgetPrivate']]],
+  ['forward_5fbutton',['forward_button',['../struct__EvHistoryActionPrivate.html#aa9dd6ae328231a1aa01fa664f1882b64',1,'_EvHistoryActionPrivate']]],
   ['fprintf',['fprintf',['../struct____synctex__updater__t.html#a46b15c92f83b585176dc0b39bce363c3',1,'__synctex_updater_t']]],
   ['fps',['fps',['../structEvTimelinePriv.html#a6bab461ab5b5cc51003ab1cab49aa3d0',1,'EvTimelinePriv']]],
   ['frame',['frame',['../struct__EvTimelineClass.html#a054dc84a82629b3b8d34465aae00e83b',1,'_EvTimelineClass::frame()'],['../ev-timeline_8c.html#ab48899087cc647f0f791ed0c459adc53a200c1bcf1eaa8635daa3cbb5fdd2ebb6',1,'FRAME():&#160;ev-timeline.c']]],

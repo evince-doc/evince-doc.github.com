@@ -19,7 +19,7 @@ var searchData=
   ['evformfieldbuttontype',['EvFormFieldButtonType',['../ev-form-field_8h.html#a2c3f8140d14d97efb0b40cc7aeae2330',1,'ev-form-field.h']]],
   ['evformfieldchoicetype',['EvFormFieldChoiceType',['../ev-form-field_8h.html#a36b205c2e5f46cc5fc0553fb637f0ddf',1,'ev-form-field.h']]],
   ['evformfieldtexttype',['EvFormFieldTextType',['../ev-form-field_8h.html#a6b45f83a4ed23ef90ac0bea6e291c1f8',1,'ev-form-field.h']]],
-  ['evhistoryactionbutton',['EvHistoryActionButton',['../ev-history-action-widget_8c.html#aa5c4045e941b5c4a890b02367c38f3de',1,'ev-history-action-widget.c']]],
+  ['evhistoryactionbutton',['EvHistoryActionButton',['../ev-history-action_8c.html#aa5c4045e941b5c4a890b02367c38f3de',1,'ev-history-action.c']]],
   ['evjobpagedataflags',['EvJobPageDataFlags',['../ev-jobs_8h.html#a3abbfdc3994809f05e8330bd0b7c3a3c',1,'ev-jobs.h']]],
   ['evjobpriority',['EvJobPriority',['../ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1',1,'ev-job-scheduler.h']]],
   ['evjobrunmode',['EvJobRunMode',['../ev-jobs_8h.html#a217ff48a4e8bc8e25fd1fe1963578098',1,'ev-jobs.h']]],

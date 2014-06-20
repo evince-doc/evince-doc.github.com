@@ -28,7 +28,6 @@ var searchData=
   ['build_5fnew_5ftree_5fcb',['build_new_tree_cb',['../ev-page-action-widget_8c.html#aa1e6bf930e393d514942b1e272fb80c9',1,'ev-page-action-widget.c']]],
   ['build_5fpopup_5fmenu',['build_popup_menu',['../ev-sidebar-links_8c.html#a1497a1123bc89f2cb37e803305540cae',1,'ev-sidebar-links.c']]],
   ['build_5ftree',['build_tree',['../djvu-links_8c.html#a42795b10369a7079ffe9afbc3e3c3788',1,'build_tree(const DjvuDocument *djvu_document, GtkTreeModel *model, GtkTreeIter *parent, miniexp_t iter):&#160;djvu-links.c'],['../ev-poppler_8cc.html#a8a141192be04efaca347f039bc5c0cfd',1,'build_tree(PdfDocument *pdf_document, GtkTreeModel *model, GtkTreeIter *parent, PopplerIndexIter *iter):&#160;ev-poppler.cc'],['../xps-document_8c.html#a664a3e0a922232d07fd8a6f4b9fae164',1,'build_tree(XPSDocument *xps_document, GtkTreeModel *model, GtkTreeIter *parent, GXPSOutlineIter *iter):&#160;xps-document.c']]],
-  ['button_5fclicked',['button_clicked',['../ev-history-action-widget_8c.html#af26b32202df7ce386786793215909855',1,'ev-history-action-widget.c']]],
   ['button_5fpress_5fcb',['button_press_cb',['../ev-sidebar-links_8c.html#a50dee19bf2e19a0d2ae2a68fe1346c3d',1,'ev-sidebar-links.c']]],
-  ['button_5fpressed',['button_pressed',['../ev-history-action-widget_8c.html#a33854c937d3ce1ad7e3a35b150807f09',1,'ev-history-action-widget.c']]]
+  ['button_5fpressed',['button_pressed',['../ev-history-action_8c.html#a06773c62de06da879047a8dcd047d2ab',1,'ev-history-action.c']]]
 ];

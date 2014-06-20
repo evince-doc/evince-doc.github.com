@@ -15,8 +15,6 @@ var dir_03d4a7bd78ff53a92be90255bc24db97 =
     [ "ev-file-monitor.h", "ev-file-monitor_8h.html", "ev-file-monitor_8h" ],
     [ "ev-find-sidebar.c", "ev-find-sidebar_8c.html", "ev-find-sidebar_8c" ],
     [ "ev-find-sidebar.h", "ev-find-sidebar_8h.html", "ev-find-sidebar_8h" ],
-    [ "ev-history-action-widget.c", "ev-history-action-widget_8c.html", "ev-history-action-widget_8c" ],
-    [ "ev-history-action-widget.h", "ev-history-action-widget_8h.html", "ev-history-action-widget_8h" ],
     [ "ev-history-action.c", "ev-history-action_8c.html", "ev-history-action_8c" ],
     [ "ev-history-action.h", "ev-history-action_8h.html", "ev-history-action_8h" ],
     [ "ev-history.c", "ev-history_8c.html", "ev-history_8c" ],

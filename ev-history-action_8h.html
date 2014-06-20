@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('ev-history-action_8h.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-history-action_8h__dep__incl.svg" width="467" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-history-action_8h__dep__incl.svg" width="307" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -170,8 +170,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9fe6efe579ebae9fdfd9a8d769f2850d"><td class="memItemLeft" align="right" valign="top">GType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-history-action_8h.html#a9fe6efe579ebae9fdfd9a8d769f2850d">ev_history_action_get_type</a> (void)</td></tr>
 <tr class="separator:a9fe6efe579ebae9fdfd9a8d769f2850d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98731a7f2c4e5774478a85626f327b54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-history-action_8h.html#a98731a7f2c4e5774478a85626f327b54">ev_history_action_set_history</a> (<a class="el" href="ev-history-action_8h.html#aef1bcd3197ac8779175b1b4f997a39fb">EvHistoryAction</a> *action, <a class="el" href="ev-history_8h.html#ab770ea291b63021f3e66d0475709414c">EvHistory</a> *history)</td></tr>
-<tr class="separator:a98731a7f2c4e5774478a85626f327b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08579a38f74bdee9ec8b0c4f2032c8c1"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-history-action_8h.html#a08579a38f74bdee9ec8b0c4f2032c8c1">ev_history_action_new</a> (<a class="el" href="ev-history_8h.html#ab770ea291b63021f3e66d0475709414c">EvHistory</a> *history)</td></tr>
+<tr class="separator:a08579a38f74bdee9ec8b0c4f2032c8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac365a374719bc6d4bc8c4f73c4e71601"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-history-action_8h.html#ac365a374719bc6d4bc8c4f73c4e71601">ev_history_action_get_popup_shown</a> (<a class="el" href="ev-history-action_8h.html#aef1bcd3197ac8779175b1b4f997a39fb">EvHistoryAction</a> *action)</td></tr>
 <tr class="separator:ac365a374719bc6d4bc8c4f73c4e71601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -338,12 +338,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-history-action_8c_source.html#l00113">113</a> of file <a class="el" href="ev-history-action_8c_source.html">ev-history-action.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-history-action_8h.html#a2f40efa305454987be0a6d679fb56be2">EV_IS_HISTORY_ACTION</a> (action), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> action-&gt;<a class="code" href="struct__EvHistoryAction.html#a78f61fbb5c98b484a3c96c67b013daa5">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionPrivate.html#a8e97096ae4296e574a5fb3e8a90f1264">popup_shown</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-history-action_8c_source.html#l00279">279</a> of file <a class="el" href="ev-history-action_8c_source.html">ev-history-action.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;{</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-history-action_8h.html#a2f40efa305454987be0a6d679fb56be2">EV_IS_HISTORY_ACTION</a> (action), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> action-&gt;<a class="code" href="struct__EvHistoryAction.html#a78f61fbb5c98b484a3c96c67b013daa5">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionPrivate.html#a8e97096ae4296e574a5fb3e8a90f1264">popup_shown</a>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -373,54 +373,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a98731a7f2c4e5774478a85626f327b54"></a>
+<a class="anchor" id="a08579a38f74bdee9ec8b0c4f2032c8c1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ev_history_action_set_history </td>
+          <td class="memname">GtkWidget* ev_history_action_new </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ev-history-action_8h.html#aef1bcd3197ac8779175b1b4f997a39fb">EvHistoryAction</a> *&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="ev-history_8h.html#ab770ea291b63021f3e66d0475709414c">EvHistory</a> *&#160;</td>
-          <td class="paramname"><em>history</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>history</em>)</td><td></td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-history-action_8c_source.html#l00093">93</a> of file <a class="el" href="ev-history-action_8c_source.html">ev-history-action.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        GSList *proxies, *l;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        g_return_if_fail (<a class="code" href="ev-history-action_8h.html#a2f40efa305454987be0a6d679fb56be2">EV_IS_HISTORY_ACTION</a> (action));</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        g_return_if_fail (<a class="code" href="ev-history_8h.html#a4759acc195ac54f25a7c95f82855fe06">EV_IS_HISTORY</a> (history));</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">if</span> (action-&gt;<a class="code" href="struct__EvHistoryAction.html#a78f61fbb5c98b484a3c96c67b013daa5">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionPrivate.html#ab1fba00a89ad883ce6df1cef51548ffd">history</a> == history)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        action-&gt;<a class="code" href="struct__EvHistoryAction.html#a78f61fbb5c98b484a3c96c67b013daa5">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionPrivate.html#ab1fba00a89ad883ce6df1cef51548ffd">history</a> = history;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        proxies = gtk_action_get_proxies (GTK_ACTION (action));</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span> (l = proxies; l &amp;&amp; l-&gt;data; l = g_slist_next (l)) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="ev-history-action-widget_8h.html#a885e37682d643722caf2afa2aae3dc24">EV_IS_HISTORY_ACTION_WIDGET</a> (l-&gt;data))</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        <a class="code" href="ev-history-action-widget_8c.html#a5c2e5b8f9255162c430a2fb3183eba81">ev_history_action_widget_set_history</a> (<a class="code" href="ev-history-action-widget_8h.html#aec1ea77564c450a84f2df8b0690a5c29">EV_HISTORY_ACTION_WIDGET</a> (l-&gt;data), history);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-history-action_8c_source.html#l00271">271</a> of file <a class="el" href="ev-history-action_8c_source.html">ev-history-action.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-history_8h.html#a4759acc195ac54f25a7c95f82855fe06">EV_IS_HISTORY</a> (history), NULL);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-history-action_8h.html#a67d2f79619b28e44646426d4a5995b29">EV_TYPE_HISTORY_ACTION</a>, <span class="stringliteral">&quot;history&quot;</span>, history, NULL));</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-history-action_8h_a98731a7f2c4e5774478a85626f327b54_icgraph.svg" width="536" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-history-action_8h_a08579a38f74bdee9ec8b0c4f2032c8c1_icgraph.svg" width="571" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -433,7 +412,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-history-action_8h.html">ev-history-action.h</a></li>
-    <li class="footer">Generated on Thu Jun 19 2014 16:04:25 for Evince by
+    <li class="footer">Generated on Fri Jun 20 2014 10:14:38 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

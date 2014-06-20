@@ -13,5 +13,5 @@ var ev_history_action_8h =
     [ "EvHistoryActionPrivate", "ev-history-action_8h.html#a0590d76afd83339da5b6578cd0b734c8", null ],
     [ "ev_history_action_get_popup_shown", "ev-history-action_8h.html#ac365a374719bc6d4bc8c4f73c4e71601", null ],
     [ "ev_history_action_get_type", "ev-history-action_8h.html#a9fe6efe579ebae9fdfd9a8d769f2850d", null ],
-    [ "ev_history_action_set_history", "ev-history-action_8h.html#a98731a7f2c4e5774478a85626f327b54", null ]
+    [ "ev_history_action_new", "ev-history-action_8h.html#a08579a38f74bdee9ec8b0c4f2032c8c1", null ]
 ];

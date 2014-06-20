@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['back_5fbutton',['back_button',['../struct__EvHistoryActionWidgetPrivate.html#a9bd8d77b8acee42e67a97eef2fd355e0',1,'_EvHistoryActionWidgetPrivate']]],
+  ['back_5fbutton',['back_button',['../struct__EvHistoryActionPrivate.html#a6ef8454b969f4c4b980db4804fec0c79',1,'_EvHistoryActionPrivate']]],
   ['backend',['backend',['../structBadTitleEntry.html#a52bee56400ce058ee01cd70e9ec3260f',1,'BadTitleEntry']]],
   ['backend_5fdestroy_5ffunc',['backend_destroy_func',['../struct__EvPage.html#aefbac3335bd776eaef349688bbffa765',1,'_EvPage']]],
   ['backend_5fpage',['backend_page',['../struct__EvPage.html#a2a7d7b684b2ca8b4b79b41ef9315008c',1,'_EvPage']]],

@@ -4,7 +4,7 @@ var searchData=
   ['b1',['B1',['../common_8h.html#aa487c38820f9a4753fdd5d9345387d6f',1,'common.h']]],
   ['b2',['B2',['../common_8h.html#a5d1e5350411322b0c7483df4d40d7dd6',1,'common.h']]],
   ['b3',['B3',['../common_8h.html#ad36bbcacd0bc887427cca245e6cf90ba',1,'common.h']]],
-  ['back_5fbutton',['back_button',['../struct__EvHistoryActionWidgetPrivate.html#a9bd8d77b8acee42e67a97eef2fd355e0',1,'_EvHistoryActionWidgetPrivate']]],
+  ['back_5fbutton',['back_button',['../struct__EvHistoryActionPrivate.html#a6ef8454b969f4c4b980db4804fec0c79',1,'_EvHistoryActionPrivate']]],
   ['backend',['backend',['../structBadTitleEntry.html#a52bee56400ce058ee01cd70e9ec3260f',1,'BadTitleEntry']]],
   ['backend_5fdata_5fkey',['BACKEND_DATA_KEY',['../ev-document-factory_8c.html#af2d78270829dd7088ac35dcf515e058e',1,'ev-document-factory.c']]],
   ['backend_5fdestroy_5ffunc',['backend_destroy_func',['../struct__EvPage.html#aefbac3335bd776eaef349688bbffa765',1,'_EvPage']]],
@@ -22,7 +22,7 @@ var searchData=
   ['base_5fy',['base_y',['../struct__DviParams.html#a22db50ac0d16ec9fdeb7b9a9aea87e78',1,'_DviParams']]],
   ['bbox',['BBox',['../structBBox.html',1,'']]],
   ['begin',['begin',['../struct__EvFileExporterInterface.html#a5bbfb59331bf110055d496c3f7b1050f',1,'_EvFileExporterInterface']]],
-  ['begin_5fannot_5fadd',['begin_annot_add',['../struct__EvSidebarAnnotationsClass.html#adde7fa8616ab9a3e5e73a2a5026cee14',1,'_EvSidebarAnnotationsClass::begin_annot_add()'],['../ev-sidebar-annotations_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a340eae55371bf2c6d8bc38417f03e219',1,'BEGIN_ANNOT_ADD():&#160;ev-sidebar-annotations.c']]],
+  ['begin_5fannot_5fadd',['begin_annot_add',['../struct__EvSidebarAnnotationsClass.html#adde7fa8616ab9a3e5e73a2a5026cee14',1,'_EvSidebarAnnotationsClass::begin_annot_add()'],['../ev-sidebar-annotations_8c.html#a2f80701c36e79c0640d91c788feee0b3a340eae55371bf2c6d8bc38417f03e219',1,'BEGIN_ANNOT_ADD():&#160;ev-sidebar-annotations.c']]],
   ['begin_5fpage',['begin_page',['../struct__EvFileExporterInterface.html#ab32d9439cadb74dd14a5660ad11a0a00',1,'_EvFileExporterInterface']]],
   ['begin_5fprint',['begin_print',['../struct__EvPrintOperationClass.html#a7405891d71c5ff77b8dc1dbf33d572e1',1,'_EvPrintOperationClass::begin_print()'],['../ev-print-operation_8c.html#a4caf8d8f829279fba122163d961608a4aff9ff463e5be9a78781c73e37e1c2e14',1,'BEGIN_PRINT():&#160;ev-print-operation.c']]],
   ['bg',['bg',['../structDviCairoDevice.html#a9caf6ed5d06ed9826299a25cabfe1b11',1,'DviCairoDevice::bg()'],['../structColorCache.html#a3237323ce2df1f3e43f91c2edf29736a',1,'ColorCache::bg()'],['../struct__DviFontChar.html#adcaaa96292c1115adc34797ee36b272f',1,'_DviFontChar::bg()'],['../struct__DviParams.html#a51b1ebaf389ff390ccc363f56254ff8a',1,'_DviParams::bg()'],['../struct__DviColorPair.html#a66ec32154e4e74f53b6df392db0c1932',1,'_DviColorPair::bg()']]],
@@ -88,8 +88,7 @@ var searchData=
   ['build_5fpopup_5fmenu',['build_popup_menu',['../ev-sidebar-links_8c.html#a1497a1123bc89f2cb37e803305540cae',1,'ev-sidebar-links.c']]],
   ['build_5ftree',['build_tree',['../djvu-links_8c.html#a42795b10369a7079ffe9afbc3e3c3788',1,'build_tree(const DjvuDocument *djvu_document, GtkTreeModel *model, GtkTreeIter *parent, miniexp_t iter):&#160;djvu-links.c'],['../ev-poppler_8cc.html#a8a141192be04efaca347f039bc5c0cfd',1,'build_tree(PdfDocument *pdf_document, GtkTreeModel *model, GtkTreeIter *parent, PopplerIndexIter *iter):&#160;ev-poppler.cc'],['../xps-document_8c.html#a664a3e0a922232d07fd8a6f4b9fae164',1,'build_tree(XPSDocument *xps_document, GtkTreeModel *model, GtkTreeIter *parent, GXPSOutlineIter *iter):&#160;xps-document.c']]],
   ['builtins',['builtins',['../special_8c.html#a1b4d307070e19d7e28ae0e2442463614',1,'special.c']]],
-  ['button_5fclicked',['button_clicked',['../ev-history-action-widget_8c.html#af26b32202df7ce386786793215909855',1,'ev-history-action-widget.c']]],
   ['button_5fpress_5fcb',['button_press_cb',['../ev-sidebar-links_8c.html#a50dee19bf2e19a0d2ae2a68fe1346c3d',1,'ev-sidebar-links.c']]],
-  ['button_5fpressed',['button_pressed',['../ev-history-action-widget_8c.html#a33854c937d3ce1ad7e3a35b150807f09',1,'ev-history-action-widget.c']]],
+  ['button_5fpressed',['button_pressed',['../ev-history-action_8c.html#a06773c62de06da879047a8dcd047d2ab',1,'ev-history-action.c']]],
   ['bw',['bw',['../structEpsfBox.html#a529b5fadeff82e021653ca3549372fe9',1,'EpsfBox']]]
 ];

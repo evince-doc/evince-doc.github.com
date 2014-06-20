@@ -5,7 +5,6 @@ var searchData=
   ['have_5fprototypes',['HAVE_PROTOTYPES',['../fontsrch_8c.html#a25c5e3dadd6709e3c6bc1a83425dd5f9',1,'HAVE_PROTOTYPES():&#160;fontsrch.c'],['../private_8h.html#a25c5e3dadd6709e3c6bc1a83425dd5f9',1,'HAVE_PROTOTYPES():&#160;private.h']]],
   ['have_5fsetlocale',['HAVE_SETLOCALE',['../synctex__parser_8c.html#a35914b3b3c7631b3df4458683f225093',1,'synctex_parser.c']]],
   ['hide_5fcursor_5ftimeout',['HIDE_CURSOR_TIMEOUT',['../ev-view-presentation_8c.html#a5f8fe76f1d8cf0f77883cfc1bdd744d8',1,'ev-view-presentation.c']]],
-  ['history_5faction',['HISTORY_ACTION',['../ev-window_8c.html#aa1bccbcf0ecb655e6b23a6bfa3764e24',1,'ev-window.c']]],
   ['hoff',['HOFF',['../sp-epsf_8c.html#a6556156866fcaa4a928a8882476002e0',1,'sp-epsf.c']]],
   ['hscale',['HSCALE',['../sp-epsf_8c.html#a20c11344ee0b81dc530d07448b17028b',1,'sp-epsf.c']]],
   ['hsize',['HSIZE',['../sp-epsf_8c.html#accbc671b9a49dadd822cddd2ef6af38f',1,'sp-epsf.c']]]
