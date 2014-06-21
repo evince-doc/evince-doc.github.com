@@ -117,7 +117,7 @@ var searchData=
   ['compute_5fnew_5fselection',['compute_new_selection',['../ev-view_8c.html#aa9cb489f5ceae8680d641219558f5377',1,'ev-view.c']]],
   ['compute_5fscroll_5fincrement',['compute_scroll_increment',['../ev-view_8c.html#a333a10229212ad35b04342c614594f75',1,'ev-view.c']]],
   ['compute_5fselections',['compute_selections',['../ev-view_8c.html#af4c66a12e3dd928175a7c057083d7fd8',1,'ev-view.c']]],
-  ['connect_5fproxy',['connect_proxy',['../ev-page-action_8c.html#ad19a06c8ad10dd5769bdf381eb76f23d',1,'connect_proxy(GtkAction *action, GtkWidget *proxy):&#160;ev-page-action.c'],['../ev-zoom-action_8c.html#ad19a06c8ad10dd5769bdf381eb76f23d',1,'connect_proxy(GtkAction *action, GtkWidget *proxy):&#160;ev-zoom-action.c']]],
+  ['connect_5fproxy',['connect_proxy',['../ev-page-action_8c.html#ad19a06c8ad10dd5769bdf381eb76f23d',1,'ev-page-action.c']]],
   ['contents',['contents',['../struct__EvAnnotation.html#a690e96c2fa4c05f29740ecc071e2855c',1,'_EvAnnotation']]],
   ['context',['context',['../struct__DviDocument.html#a03ec6f7c7470b8a0d9eb45616d106936',1,'_DviDocument']]],
   ['continuous',['continuous',['../struct__EvDocumentModel.html#a36c94175e4830e94890f6dadb0b509f4',1,'_EvDocumentModel::continuous()'],['../struct__EvView.html#aa22cff27441457edfb23ef5abc4f33b4',1,'_EvView::continuous()']]],

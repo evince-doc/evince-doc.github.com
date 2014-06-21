@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>gd_create_symbolic_icon:</p>
 <p>Returns: (transfer full): </p>
 </div></td></tr>
-<tr class="memitem:a4438b14ed0e08ed90857fb09134d16f5"><td class="memItemLeft" align="right" valign="top">GIcon *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gd-icon-utils_8c.html#a4438b14ed0e08ed90857fb09134d16f5">gd_create_symbolic_icon</a> (const gchar *<a class="el" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, gint base_size)</td></tr>
+<tr class="memitem:a4438b14ed0e08ed90857fb09134d16f5"><td class="memItemLeft" align="right" valign="top">GIcon *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gd-icon-utils_8c.html#a4438b14ed0e08ed90857fb09134d16f5">gd_create_symbolic_icon</a> (const gchar *<a class="el" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, gint base_size)</td></tr>
 <tr class="separator:a4438b14ed0e08ed90857fb09134d16f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d14b79c20031caecd9970fca2219985"><td class="memItemLeft" align="right" valign="top">cairo_surface_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gd-icon-utils_8c.html#a6d14b79c20031caecd9970fca2219985">gd_embed_image_in_frame</a> (cairo_surface_t *source_image, const gchar *frame_image_url, GtkBorder *slice_width, GtkBorder *border_width)</td></tr>
 <tr class="separator:a6d14b79c20031caecd9970fca2219985"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  gtk_render_background (style, cr, (total_size - bg_size) / 2, (total_size - bg_size) / 2, bg_size, bg_size);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  symbolic_name = g_strconcat (<a class="code" href="ev-zoom-action_8h.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <span class="stringliteral">&quot;-symbolic&quot;</span>, NULL);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  symbolic_name = g_strconcat (<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <span class="stringliteral">&quot;-symbolic&quot;</span>, NULL);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  icon = g_themed_icon_new_with_default_fallbacks (symbolic_name);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  g_free (symbolic_name);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -385,7 +385,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_66798fc8659e7daf0e5247fc7505c5a3.html">cut-n-paste</a></li><li class="navelem"><a class="el" href="dir_76e5df9502272f1f1e5aa7d4328470f5.html">libgd</a></li><li class="navelem"><a class="el" href="gd-icon-utils_8c.html">gd-icon-utils.c</a></li>
-    <li class="footer">Generated on Fri Jun 20 2014 12:03:31 for Evince by
+    <li class="footer">Generated on Sat Jun 21 2014 09:51:35 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

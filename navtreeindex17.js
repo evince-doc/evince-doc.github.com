@@ -173,6 +173,7 @@ var NAVTREEINDEX17 =
 "ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061":[7,0,0,7,59,13],
 "ev-toolbar_8c.html#a352a4112395986bafc3b5850943bd4a4":[7,0,0,7,59,4],
 "ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c":[7,0,0,7,59,6],
+"ev-toolbar_8c.html#a60834d45367da3fd03a6e62d3e41622f":[7,0,0,7,59,17],
 "ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7a5444259366dcb8d3b0e146507c9e0174":[7,0,0,7,59,2],
 "ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7ac37dda0da1a44e10c0504afeeb863f3c":[7,0,0,7,59,1],
 "ev-toolbar_8c.html#a976e7359b740566a59db9d3be25ed825":[7,0,0,7,59,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "ev-transition-animation_8h.html#af24f9fcb06d51dee2ca1ed08d37cfabc":[7,0,0,4,23,9],
 "ev-transition-animation_8h.html#af30ec6316915ff750db57755d1155ba3":[7,0,0,4,23,13],
 "ev-transition-animation_8h.html#af7c189652a98f2e39b4ce9e1a3b94ab4":[7,0,0,4,23,10],
-"ev-transition-animation_8h_source.html":[7,0,0,4,23],
-"ev-transition-effect_8c.html":[7,0,0,2,71]
+"ev-transition-animation_8h_source.html":[7,0,0,4,23]
 };

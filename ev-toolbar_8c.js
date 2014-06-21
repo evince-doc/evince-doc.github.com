@@ -16,5 +16,6 @@ var ev_toolbar_8c =
     [ "ev_toolbar_new", "ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061", null ],
     [ "ev_toolbar_set_button_action", "ev-toolbar_8c.html#a08f96fa6f4498add5466ace344c6c8aa", null ],
     [ "ev_toolbar_set_property", "ev-toolbar_8c.html#ab8b98662fcaa8318b414f39e5e519e9b", null ],
-    [ "ev_toolbar_setup_bookmarks_menu", "ev-toolbar_8c.html#ad572dbfd31f60b87c969bfa6ce8d5cef", null ]
+    [ "ev_toolbar_setup_bookmarks_menu", "ev-toolbar_8c.html#ad572dbfd31f60b87c969bfa6ce8d5cef", null ],
+    [ "zoom_selector_activated", "ev-toolbar_8c.html#a60834d45367da3fd03a6e62d3e41622f", null ]
 ];

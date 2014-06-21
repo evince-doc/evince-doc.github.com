@@ -74,7 +74,7 @@ var searchData=
   ['flush_5ffont_5fmetrics',['flush_font_metrics',['../tfmfile_8c.html#a6ed5a56e7f44f4233787e4bd6d84cefb',1,'tfmfile.c']]],
   ['fmfile',['fmfile',['../structDviFontMapInfo.html#aee2e2573d80f1fa7836b7058e6593315',1,'DviFontMapInfo']]],
   ['fmtype',['fmtype',['../structDviFontMapInfo.html#a56bbd7452820c4a4a8672e5d23a44638',1,'DviFontMapInfo']]],
-  ['focus_5fout_5fcb',['focus_out_cb',['../ev-page-action-widget_8c.html#ac40977c0fde1b3b517106e3e7b212951',1,'focus_out_cb(EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-zoom-action-widget_8c.html#aea20a8b456c68dae20bc2ef69fb1c5d7',1,'focus_out_cb(EvZoomActionWidget *control):&#160;ev-zoom-action-widget.c']]],
+  ['focus_5fout_5fcb',['focus_out_cb',['../ev-page-action-widget_8c.html#ac40977c0fde1b3b517106e3e7b212951',1,'focus_out_cb(EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-zoom-action_8c.html#a4564a0ea3685cb46b6ed7409e92ea915',1,'focus_out_cb(EvZoomAction *zoom_action):&#160;ev-zoom-action.c']]],
   ['focused_5felement',['focused_element',['../struct__EvView.html#ade8558996c4b4ffe2d03776748c68f02',1,'_EvView']]],
   ['focused_5felement_5fpage',['focused_element_page',['../struct__EvView.html#af305edcfc1d4eaf70482ef360bcc3411',1,'_EvView']]],
   ['font_2ec',['font.c',['../font_8c.html',1,'']]],

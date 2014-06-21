@@ -67,8 +67,6 @@ var dir_03d4a7bd78ff53a92be90255bc24db97 =
     [ "ev-window-title.h", "ev-window-title_8h.html", "ev-window-title_8h" ],
     [ "ev-window.c", "ev-window_8c.html", "ev-window_8c" ],
     [ "ev-window.h", "ev-window_8h.html", "ev-window_8h" ],
-    [ "ev-zoom-action-widget.c", "ev-zoom-action-widget_8c.html", "ev-zoom-action-widget_8c" ],
-    [ "ev-zoom-action-widget.h", "ev-zoom-action-widget_8h.html", "ev-zoom-action-widget_8h" ],
     [ "ev-zoom-action.c", "ev-zoom-action_8c.html", "ev-zoom-action_8c" ],
     [ "ev-zoom-action.h", "ev-zoom-action_8h.html", "ev-zoom-action_8h" ],
     [ "main.c", "main_8c.html", "main_8c" ]
