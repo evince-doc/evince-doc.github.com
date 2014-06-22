@@ -539,15 +539,15 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8c_source.html','');});
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                gtk_widget_set_sensitive (GTK_WIDGET (zoom_action), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        }</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        g_signal_connect (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a46fdeaf31a61f962b9f74d5951afdcc9">document_changed_cb</a>),</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                          zoom_action);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        g_signal_connect (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::scale&quot;</span>,</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#ae1f6a8b3b726c79357b1f6f5e9897d6d">zoom_changed_cb</a>),</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                          zoom_action);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        g_signal_connect (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::max-scale&quot;</span>,</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a41179e9eae7d3f189f2ee91e0cfbbe3a">max_zoom_changed_cb</a>),</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                          zoom_action);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a46fdeaf31a61f962b9f74d5951afdcc9">document_changed_cb</a>),</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                 zoom_action, 0);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::scale&quot;</span>,</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#ae1f6a8b3b726c79357b1f6f5e9897d6d">zoom_changed_cb</a>),</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                                 zoom_action, 0);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::max-scale&quot;</span>,</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a41179e9eae7d3f189f2ee91e0cfbbe3a">max_zoom_changed_cb</a>),</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                                 zoom_action, 0);</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#af7a815c2c04cc4c57694dc620ad7ea92">setup_initial_entry_size</a> (zoom_action);</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;}</div>
@@ -646,7 +646,7 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-zoom-action_8c.html">ev-zoom-action.c</a></li>
-    <li class="footer">Generated on Sat Jun 21 2014 20:45:45 for Evince by
+    <li class="footer">Generated on Sun Jun 22 2014 11:17:33 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

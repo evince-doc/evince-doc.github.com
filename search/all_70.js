@@ -38,7 +38,7 @@ var searchData=
   ['page_5fready',['page_ready',['../struct__EvJobRender.html#ae45e00720d935590682c64062b2bf0e3',1,'_EvJobRender::page_ready()'],['../struct__CacheJobInfo.html#aae599e8966157e8ece06abd6426ae4df',1,'_CacheJobInfo::page_ready()']]],
   ['page_5fscale',['page_scale',['../struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2',1,'_EvPrintOperationPrint']]],
   ['page_5fscroll_5fcb',['page_scroll_cb',['../ev-page-action-widget_8c.html#a41c0a3a7488c626df7e119abbd625ef7',1,'ev-page-action-widget.c']]],
-  ['page_5fselector_5faction',['PAGE_SELECTOR_ACTION',['../ev-window_8c.html#a4e27e4fa5783b8a8111e8277b11cfb8a',1,'ev-window.c']]],
+  ['page_5fselector',['page_selector',['../struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6',1,'_EvToolbarPrivate']]],
   ['page_5fsizes',['page_sizes',['../struct__EvDocumentPrivate.html#ae9c4831e828a83719bd3362bf0654e56',1,'_EvDocumentPrivate']]],
   ['pagemap',['pagemap',['../struct__DviContext.html#ae9999a51ef6544cef2b8a6f582ad13a5',1,'_DviContext']]],
   ['pagenum',['PageNum',['../mdvi_8h.html#a318f73f062df6f9f1f28f04a97af7c13',1,'mdvi.h']]],

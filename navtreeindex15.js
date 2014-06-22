@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"ev-properties-fonts_8h.html#a902ba3ddf284c0b5d2d7a6544956dd38":[7,0,0,7,36,7],
+"ev-properties-fonts_8h.html#acb97f1939b51a9d6065372eba1394f9e":[7,0,0,7,36,8],
 "ev-properties-fonts_8h.html#acc6ded718a4a56f788939a798f4b2126":[7,0,0,7,36,10],
 "ev-properties-fonts_8h.html#acca30f93b8f6fdb2248ca3f160ce77d5":[7,0,0,7,36,4],
 "ev-properties-fonts_8h.html#ad73b2b1d22404d39242add539cb1f3c7":[7,0,0,7,36,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "ev-sidebar-attachments_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a598aba41b84bc4ac7eb3db1e272d7425":[7,0,0,7,45,6],
 "ev-sidebar-attachments_8c.html#a531c35e38ede3ea4e5ba5afb24b29493aabefd6151383bb4353f1920b3f53610d":[7,0,0,7,45,2],
 "ev-sidebar-attachments_8c.html#a531c35e38ede3ea4e5ba5afb24b29493afb27a384ab10ec1041f886684c86b1c4":[7,0,0,7,45,5],
-"ev-sidebar-attachments_8c.html#a6135f20f2e3e70dc68ac9e32df3f4d0c":[7,0,0,7,45,11],
-"ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae":[7,0,0,7,45,14],
-"ev-sidebar-attachments_8c.html#a6375f96d586b12eb6f909399353aa4b0":[7,0,0,7,45,1]
+"ev-sidebar-attachments_8c.html#a6135f20f2e3e70dc68ac9e32df3f4d0c":[7,0,0,7,45,11]
 };

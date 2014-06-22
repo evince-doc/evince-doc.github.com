@@ -12,7 +12,6 @@ var searchData=
   ['p_5ft',['P_T',['../afmparse_8h.html#aa8d4a7a112d978b6d05b71b44d68a7e7',1,'afmparse.h']]],
   ['p_5fw',['P_W',['../afmparse_8h.html#a4e22745ec0549e1923afbf723eeed575',1,'afmparse.h']]],
   ['page_5fcache_5flen',['PAGE_CACHE_LEN',['../ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b',1,'ev-pixbuf-cache.c']]],
-  ['page_5fselector_5faction',['PAGE_SELECTOR_ACTION',['../ev-window_8c.html#a4e27e4fa5783b8a8111e8277b11cfb8a',1,'ev-window.c']]],
   ['parent_5fclass',['parent_class',['../gimpcellrenderertoggle_8c.html#a9acb5cadd331d9e9960736182a1a1a67',1,'gimpcellrenderertoggle.c']]],
   ['parseerror',['parseError',['../afmparse_8h.html#a5565da478505347eb26a4ebf4657b5f5',1,'afmparse.h']]],
   ['pdf_5fdocument',['PDF_DOCUMENT',['../ev-poppler_8h.html#a5491239946a6f5c6b245526748e6c1ef',1,'ev-poppler.h']]],

@@ -14,6 +14,7 @@ var searchData=
   ['page_5fnames',['page_names',['../struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821',1,'_ComicsDocument']]],
   ['page_5fready',['page_ready',['../struct__EvJobRender.html#ae45e00720d935590682c64062b2bf0e3',1,'_EvJobRender::page_ready()'],['../struct__CacheJobInfo.html#aae599e8966157e8ece06abd6426ae4df',1,'_CacheJobInfo::page_ready()']]],
   ['page_5fscale',['page_scale',['../struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2',1,'_EvPrintOperationPrint']]],
+  ['page_5fselector',['page_selector',['../struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6',1,'_EvToolbarPrivate']]],
   ['page_5fsizes',['page_sizes',['../struct__EvDocumentPrivate.html#ae9c4831e828a83719bd3362bf0654e56',1,'_EvDocumentPrivate']]],
   ['pagemap',['pagemap',['../struct__DviContext.html#ae9999a51ef6544cef2b8a6f582ad13a5',1,'_DviContext']]],
   ['pages',['pages',['../struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c',1,'_EvJobFind']]],

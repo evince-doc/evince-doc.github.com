@@ -22,6 +22,7 @@ var struct__EvWindowPrivate =
     [ "fs_pointer_on_toolbar", "struct__EvWindowPrivate.html#a2460e2bc96977f197d4d297c55b087fe", null ],
     [ "fs_revealer", "struct__EvWindowPrivate.html#ab347e83a6fe1b8a7c90921f7c15b1bd0", null ],
     [ "fs_timeout_id", "struct__EvWindowPrivate.html#aff131fe66e7958b30e64bc28d64288a6", null ],
+    [ "fs_toolbar", "struct__EvWindowPrivate.html#ac8fbcb15fa3ee0e891fa2ba0a390e8ef", null ],
     [ "has_mailto_handler", "struct__EvWindowPrivate.html#ae297c32bdce08a2da6a5fac7f8172251", null ],
     [ "history", "struct__EvWindowPrivate.html#aa7b0b393d55556b8bc1e21fd0978fe0e", null ],
     [ "hpaned", "struct__EvWindowPrivate.html#a5e259cb15febf660bda413779c075225", null ],

@@ -12,6 +12,7 @@ var ev_toolbar_8h =
     [ "EvToolbarClass", "ev-toolbar_8h.html#aac6bcb2747e5eca4271168ab2eb09389", null ],
     [ "EvToolbarPrivate", "ev-toolbar_8h.html#add7fa5c3f690d121db971144812322ab", null ],
     [ "ev_toolbar_action_menu_popup", "ev-toolbar_8h.html#ad3558a4ca391039ded68227fb981d03e", null ],
+    [ "ev_toolbar_get_page_selector", "ev-toolbar_8h.html#a0a7f4d00139845fab4844cc5cef305b3", null ],
     [ "ev_toolbar_get_type", "ev-toolbar_8h.html#aea3b531e5372fd20b0a3cbfa2bee894f", null ],
     [ "ev_toolbar_has_visible_popups", "ev-toolbar_8h.html#adb2193128641c0e817dbcc396e896570", null ],
     [ "ev_toolbar_new", "ev-toolbar_8h.html#a245a5d581e501da3b24a81095d8ef061", null ]
