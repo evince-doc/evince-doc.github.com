@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"paper_8c.html#aa55ec729f90c6cc8b3c827c4f368cfc5":[7,0,0,0,2,0,23,0],
+"paper_8c.html#ad21c9d14bd2f624da7be4fc859b59b3c":[7,0,0,0,2,0,23,1],
 "paper_8c_source.html":[7,0,0,0,2,0,23],
 "paper_8h.html":[7,0,0,0,2,0,24],
 "paper_8h.html#a5dfa54d9143c0d861d1289887113da7b":[7,0,0,0,2,0,24,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "structEvViewWindowChild.html#afb4c9aeb299619a2931474883469edda":[6,0,323,7],
 "structEvViewWindowChild.html#affd331ba8d559e3d91e3737c923a2da5":[6,0,323,8],
 "structFontInfo.html":[6,0,324],
-"structFontInfo.html#a0a48d9ee5151b0496696c115b5b2e7d9":[6,0,324,3],
-"structFontInfo.html#a106ea659d8fd1904ce9f77095b99fa38":[6,0,324,2],
-"structFontInfo.html#a10e07e4d0833f3186bbb6926bde54450":[6,0,324,8]
+"structFontInfo.html#a0a48d9ee5151b0496696c115b5b2e7d9":[6,0,324,3]
 };

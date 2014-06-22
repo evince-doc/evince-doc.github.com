@@ -1419,13 +1419,13 @@ Functions</h2></td></tr>
 <p>Gets the color of .</p>
 <p>Since: 3.6 </p>
 
-<p>Definition at line <a class="el" href="ev-annotation_8c_source.html#l00598">598</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;{</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        g_return_if_fail (<a class="code" href="ev-annotation_8h.html#a80338d2664e81fde3ecc9923375b47cc">EV_IS_ANNOTATION</a> (annot));</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        g_return_if_fail (rgba != NULL);</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        *rgba = annot-&gt;<a class="code" href="struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674">rgba</a>;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-annotation_8c_source.html#l00597">597</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;{</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        g_return_if_fail (<a class="code" href="ev-annotation_8h.html#a80338d2664e81fde3ecc9923375b47cc">EV_IS_ANNOTATION</a> (annot));</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        g_return_if_fail (rgba != NULL);</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        *rgba = annot-&gt;<a class="code" href="struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674">rgba</a>;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1652,7 +1652,7 @@ Functions</h2></td></tr>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-20-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation_8c_a78cd49374569fd22584dd583d89fb7d0_icgraph.svg" width="648" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation_8c_a78cd49374569fd22584dd583d89fb7d0_icgraph.svg" width="854" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1741,7 +1741,7 @@ Functions</h2></td></tr>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-22-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation_8c_a925853fd3ee57c38a7714d727d178721_icgraph.svg" width="1512" height="992"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation_8c_a925853fd3ee57c38a7714d727d178721_icgraph.svg" width="1512" height="1059"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1947,7 +1947,7 @@ Functions</h2></td></tr>
 <div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-26-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation_8c_a3b81f1a4c297eea16ca3d7204b4d837e_icgraph.svg" width="1718" height="992"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation_8c_a3b81f1a4c297eea16ca3d7204b4d837e_icgraph.svg" width="1718" height="1059"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -2352,10 +2352,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        rgba.alpha = 1.;</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        <a class="code" href="ev-annotation_8c.html#a2070dec065e8e4adbd3a205b3fd37835">ev_annotation_set_rgba</a> (annot, &amp;rgba);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    g_object_notify (G_OBJECT (annot), <span class="stringliteral">&quot;color&quot;</span>);</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;}</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2707,16 +2706,17 @@ Functions</h2></td></tr>
 <p>Returns: TRUE if the color has been changed, FALSE otherwise</p>
 <p>Since: 3.6 </p>
 
-<p>Definition at line <a class="el" href="ev-annotation_8c_source.html#l00619">619</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;{</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-annotation_8h.html#a80338d2664e81fde3ecc9923375b47cc">EV_IS_ANNOTATION</a> (annot), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        g_return_val_if_fail (rgba != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <span class="keywordflow">if</span> (gdk_rgba_equal (rgba, &amp;annot-&gt;<a class="code" href="struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674">rgba</a>))</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        annot-&gt;<a class="code" href="struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674">rgba</a> = *rgba;</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        g_object_notify (G_OBJECT (annot), <span class="stringliteral">&quot;rgba&quot;</span>);</div>
+<p>Definition at line <a class="el" href="ev-annotation_8c_source.html#l00618">618</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;{</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-annotation_8h.html#a80338d2664e81fde3ecc9923375b47cc">EV_IS_ANNOTATION</a> (annot), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        g_return_val_if_fail (rgba != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <span class="keywordflow">if</span> (gdk_rgba_equal (rgba, &amp;annot-&gt;<a class="code" href="struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674">rgba</a>))</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        annot-&gt;<a class="code" href="struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674">rgba</a> = *rgba;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        g_object_notify (G_OBJECT (annot), <span class="stringliteral">&quot;rgba&quot;</span>);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    g_object_notify (G_OBJECT (annot), <span class="stringliteral">&quot;color&quot;</span>);</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;}</div>
@@ -3277,7 +3277,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-annotation_8c.html">ev-annotation.c</a></li>
-    <li class="footer">Generated on Sun Jun 22 2014 16:44:45 for Evince by
+    <li class="footer">Generated on Sun Jun 22 2014 22:11:49 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

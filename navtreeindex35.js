@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"test3_8py_source.html":[7,0,0,8,3],
+"test4_8py.html":[7,0,0,8,4],
 "test4_8py.html#a19eb584fcd58636e6f8ec9355b293adf":[7,0,0,8,4,0],
 "test4_8py_source.html":[7,0,0,8,4],
 "test5_8py.html":[7,0,0,8,5],

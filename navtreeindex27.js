@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"struct__DviFontClass.html#ad2f64d8faa8dedde4e9998668ce41b80":[6,0,27,3],
+"struct__DviFontInfo.html":[6,0,28],
 "struct__DviFontInfo.html#a015b34903d42959b985def9c71fa4929":[6,0,28,7],
 "struct__DviFontInfo.html#a2e3fda20f12a24f1a68593c3fdaedd16":[6,0,28,5],
 "struct__DviFontInfo.html#a90a0c947b030fc589cb4ad3221e253fa":[6,0,28,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "struct__EvDaemonApplicationClass.html#a0ff7dac8343cc0ed20ac76cb1a965c70":[6,0,70,0],
 "struct__EvDocument.html":[6,0,71],
 "struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72":[6,0,71,1],
-"struct__EvDocument.html#a5e82b9e76bd9d89602f141c02c8507f2":[6,0,71,0],
-"struct__EvDocumentAnnotationsInterface.html":[6,0,72],
-"struct__EvDocumentAnnotationsInterface.html#a12aae76c0154479c480a474015b2173a":[6,0,72,3]
+"struct__EvDocument.html#a5e82b9e76bd9d89602f141c02c8507f2":[6,0,71,0]
 };

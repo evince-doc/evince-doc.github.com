@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvViewPresentation.html#a3031f651ae8767a180045291ccc136a1":[6,0,266,13],
+"struct__EvViewPresentation.html#a309aa895f2837fa62eb06778abfe07b6":[6,0,266,18],
 "struct__EvViewPresentation.html#a5e711b4499600ad606f7ef9fe1d33b6c":[6,0,266,14],
 "struct__EvViewPresentation.html#a65a64c76a2cb5690f3cae8f525f933cf":[6,0,266,19],
 "struct__EvViewPresentation.html#a8d8ef39e3998aa5e78c7107edf10250c":[6,0,266,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "struct____synctex__class__t.html#aeafcb7d3d64d9a0c0632bd1d6e84b961":[6,0,8,11],
 "struct____synctex__class__t.html#af0db912f330c3b398c7e95eb2576ba4f":[6,0,8,8],
 "struct____synctex__class__t.html#afb26178895a6f86ed206ca481d36b9fe":[6,0,8,7],
-"struct____synctex__class__t.html#afd60732f9f1a051b978fb0efa2d786f4":[6,0,8,10],
-"struct____synctex__scanner__t.html":[6,0,9],
-"struct____synctex__scanner__t.html#a0c31d194ab4bab987d0d93719731856e":[6,0,9,11]
+"struct____synctex__class__t.html#afd60732f9f1a051b978fb0efa2d786f4":[6,0,8,10]
 };

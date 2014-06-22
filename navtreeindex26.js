@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"structFontInfo.html#a106ea659d8fd1904ce9f77095b99fa38":[6,0,324,2],
+"structFontInfo.html#a10e07e4d0833f3186bbb6926bde54450":[6,0,324,8],
 "structFontInfo.html#a142ec970f47b58403da9dbcbb5488073":[6,0,324,5],
 "structFontInfo.html#a27fa607afe78ec3b7d4e48e84cb782b4":[6,0,324,1],
 "structFontInfo.html#a4ffad0c03cbd7f9018e0cd0eb6eda8e7":[6,0,324,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviFontClass.html#a227a3e5b8e0b2828505f2c9eb37db2da":[6,0,27,0],
 "struct__DviFontClass.html#a2947c8082faee040bee6b3285d68de42":[6,0,27,2],
 "struct__DviFontClass.html#a53e1aba5fec0140ee925da623a7dfc9f":[6,0,27,1],
-"struct__DviFontClass.html#aa873a517f76541029fa9a8077c5687ec":[6,0,27,4],
-"struct__DviFontClass.html#ad2f64d8faa8dedde4e9998668ce41b80":[6,0,27,3],
-"struct__DviFontInfo.html":[6,0,28]
+"struct__DviFontClass.html#aa873a517f76541029fa9a8077c5687ec":[6,0,27,4]
 };
