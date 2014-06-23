@@ -29,7 +29,7 @@ var ev_annotation_window_8c =
     [ "ev_annotation_window_opacity_changed", "ev-annotation-window_8c.html#abbe8ccacc0a384ef7a371776271dae1d", null ],
     [ "ev_annotation_window_resize", "ev-annotation-window_8c.html#aea7633326545ebc1478a108b42a7e633", null ],
     [ "ev_annotation_window_set_annotation", "ev-annotation-window_8c.html#a7f7a0a0361014823a8c602103891fbe9", null ],
-    [ "ev_annotation_window_set_color", "ev-annotation-window_8c.html#aa8d6f33f751213314cde93edf606dcd8", null ],
+    [ "ev_annotation_window_set_color", "ev-annotation-window_8c.html#af7e5b096e2edb5fb6218a4d46cc526ad", null ],
     [ "ev_annotation_window_set_opacity", "ev-annotation-window_8c.html#aa3394ef715d270f33aa609e8fa85829e", null ],
     [ "ev_annotation_window_set_property", "ev-annotation-window_8c.html#ae9ef7927fdf805032a5adf07f7531fa7", null ],
     [ "ev_annotation_window_set_rectangle", "ev-annotation-window_8c.html#abe2bbec928bc69853449ced98dc87a08", null ],

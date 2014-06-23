@@ -70,7 +70,7 @@ var searchData=
   ['app_5fhelp_5fcb',['app_help_cb',['../ev-application_8c.html#a8a6d178614bc47b5c0a2e3dc3287a581',1,'ev-application.c']]],
   ['application',['application',['../structEvRecentMenuModel.html#aac0a5aa1ae7a3386d97c95f9d839bfab',1,'EvRecentMenuModel']]],
   ['archive',['archive',['../struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3',1,'_ComicsDocument']]],
-  ['area',['area',['../struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2',1,'_EvMapping::area()'],['../struct__EvLinkAccessiblePrivate.html#a7444afc175c4900b08781549af61a3e5',1,'_EvLinkAccessiblePrivate::area()']]],
+  ['area',['area',['../struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2',1,'_EvMapping::area()'],['../struct__EvImageAccessiblePrivate.html#a445ef2ecb6d23a7e87e89f41721bdd05',1,'_EvImageAccessiblePrivate::area()'],['../struct__EvLinkAccessiblePrivate.html#a7444afc175c4900b08781549af61a3e5',1,'_EvLinkAccessiblePrivate::area()']]],
   ['ascender',['ascender',['../structGlobalFontInfo.html#ae7ece2c8f8d22ae9969a7ce010cf0ab5',1,'GlobalFontInfo']]],
   ['ascii85',['ascii85',['../struct__TIFF2PSContext.html#acf92da1ea9ebfb2ad3abe3b78cbb2823',1,'_TIFF2PSContext']]],
   ['ascii85breaklen',['ascii85breaklen',['../struct__TIFF2PSContext.html#ad43c4898fb369c8dea6f6637a2959d17',1,'_TIFF2PSContext']]],

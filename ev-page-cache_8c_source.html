@@ -751,13 +751,27 @@ $(document).ready(function(){initNavTree('ev-page-cache_8c_source.html','');});
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <a class="code" href="ev-page-cache_8c.html#a087a54e4a0310bd13c054dce6941e316">ev_page_cache_schedule_job_if_needed</a> (cache, page);</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;}</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;gboolean</div>
+<div class="line"><a name="l00669"></a><span class="lineno"><a class="code" href="ev-page-cache_8h.html#aa5ef2306799155c69d8ffc0d0fbffbdd">  669</a></span>&#160;<a class="code" href="ev-page-cache_8c.html#aa5ef2306799155c69d8ffc0d0fbffbdd">ev_page_cache_is_page_cached</a> (<a class="code" href="struct__EvPageCache.html">EvPageCache</a>   *cache,</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                  gint           page)</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;{</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <a class="code" href="struct__EvPageCacheData.html">EvPageCacheData</a> *data;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-page-cache_8h.html#aa6e6f38cedb168efeb3b5cc10d018e4c">EV_IS_PAGE_CACHE</a> (cache), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    g_return_val_if_fail (page &gt;= 0 &amp;&amp; page &lt; cache-&gt;n_pages, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    data = &amp;cache-&gt;<a class="code" href="struct__EvPageCache.html#a914077049de90d432a29ba5a1fec5e09">page_list</a>[page];</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordflow">return</span> data-&gt;<a class="code" href="struct__EvPageCacheData.html#a0a33560cfb1241b067f4eb5b1fc73ff8">done</a>;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-cache_8c.html">ev-page-cache.c</a></li>
-    <li class="footer">Generated on Mon Jun 23 2014 12:43:39 for Evince by
+    <li class="footer">Generated on Mon Jun 23 2014 20:06:21 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

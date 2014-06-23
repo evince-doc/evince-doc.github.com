@@ -8,7 +8,7 @@ var searchData=
   ['idle_5fcancelled_5fid',['idle_cancelled_id',['../struct__EvJob.html#ad299a781e4314b30d929970b4638eddd',1,'_EvJob']]],
   ['idle_5ffinished_5fid',['idle_finished_id',['../struct__EvJob.html#ac7d19aa4f1c7fe25bd1cd73b0f13b6f8',1,'_EvJob']]],
   ['idle_5fscroll',['idle_scroll',['../struct__EvViewAccessiblePrivate.html#af326b5d8e7167429a85b737e41b52a8e',1,'_EvViewAccessiblePrivate']]],
-  ['image',['image',['../structImageDNDInfo.html#a765c01435702fa77bdc00daac0a33858',1,'ImageDNDInfo::image()'],['../struct__EvMessageAreaPrivate.html#af38039adde3962f23e687cd9ad6b7e5e',1,'_EvMessageAreaPrivate::image()'],['../struct__EvWindowPrivate.html#abe4a6e93a44c6f208d121b500069b2ba',1,'_EvWindowPrivate::image()']]],
+  ['image',['image',['../struct__EvImageAccessiblePrivate.html#a065907b42a168db894bea2d04819384f',1,'_EvImageAccessiblePrivate::image()'],['../structImageDNDInfo.html#a765c01435702fa77bdc00daac0a33858',1,'ImageDNDInfo::image()'],['../struct__EvMessageAreaPrivate.html#af38039adde3962f23e687cd9ad6b7e5e',1,'_EvMessageAreaPrivate::image()'],['../struct__EvWindowPrivate.html#abe4a6e93a44c6f208d121b500069b2ba',1,'_EvWindowPrivate::image()']]],
   ['image_5fdnd_5finfo',['image_dnd_info',['../struct__EvView.html#a3dfe44fd5e95a5405d83328d5c46e933',1,'_EvView']]],
   ['image_5fdone',['image_done',['../struct__DviDevice.html#a77bc6963184a3c066dbdd57eaadfa147',1,'_DviDevice']]],
   ['image_5fmapping',['image_mapping',['../struct__EvJobPageData.html#a35baece3ce2c16dd0c06f029fae12f50',1,'_EvJobPageData::image_mapping()'],['../struct__EvPageCacheData.html#ac5d835b6dc82042eab5e7c6d40c41b87',1,'_EvPageCacheData::image_mapping()']]],

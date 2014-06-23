@@ -24,6 +24,7 @@ var ev_view_accessible_8c =
     [ "ev_view_accessible_idle_do_action", "ev-view-accessible_8c.html#a1d423a831e643fbb1d1447a92661cc67", null ],
     [ "ev_view_accessible_init", "ev-view-accessible_8c.html#ac3b3d69e78ddd4374d9c1fd39441fb28", null ],
     [ "ev_view_accessible_initialize", "ev-view-accessible_8c.html#aec7ea48f215218b9b77de117e2a2ca23", null ],
+    [ "ev_view_accessible_is_doc_rect_showing", "ev-view-accessible_8c.html#a99e34bcf424176a717a2ec590798f73b", null ],
     [ "ev_view_accessible_new", "ev-view-accessible_8c.html#a6f000f2ced1e1216e1752eb726c32b6b", null ],
     [ "ev_view_accessible_ref_child", "ev-view-accessible_8c.html#a6dc4557b47fe004b92b9fe83a28cc1af", null ],
     [ "ev_view_accessible_selection_changed", "ev-view-accessible_8c.html#a89b5e208f8afe4e9725c39ce7d1bc38b", null ],

@@ -22,9 +22,15 @@ var ev_link_accessible_8c =
     [ "ev_link_accessible_action_get_name", "ev-link-accessible_8c.html#a9320409dd136262ac48b68953ff7eced", null ],
     [ "ev_link_accessible_action_interface_init", "ev-link-accessible_8c.html#a48a3819ebb82819bb25f9c72996d7989", null ],
     [ "ev_link_accessible_class_init", "ev-link-accessible_8c.html#ad5b43adf0b7a084076071bd1f5641e8a", null ],
+    [ "ev_link_accessible_component_iface_init", "ev-link-accessible_8c.html#a0fedba4863b11096c1cbd22918d09e8f", null ],
+    [ "ev_link_accessible_finalize", "ev-link-accessible_8c.html#a0d1a8ea49c9280ad29493510fda69730", null ],
+    [ "ev_link_accessible_get_extents", "ev-link-accessible_8c.html#a42f23c75e0d003f4d68248f09e655a7a", null ],
     [ "ev_link_accessible_get_hyperlink", "ev-link-accessible_8c.html#a2a5b22a72e47511fd040587d0d6580ad", null ],
+    [ "ev_link_accessible_get_parent", "ev-link-accessible_8c.html#a49aadec008221c6b1019e38c4c7634a1", null ],
+    [ "ev_link_accessible_grab_focus", "ev-link-accessible_8c.html#a24cf9a27ec17888fe869d44386001dfa", null ],
     [ "ev_link_accessible_hyperlink_impl_iface_init", "ev-link-accessible_8c.html#a82afd7b02e504e94f0ebd6fe260cd50b", null ],
     [ "ev_link_accessible_init", "ev-link-accessible_8c.html#a9b54481a6d194a07eb83b6752e2661aa", null ],
     [ "ev_link_accessible_new", "ev-link-accessible_8c.html#ab4afea73cfffbc125487eb7f70c4a685", null ],
-    [ "G_DEFINE_TYPE_WITH_CODE", "ev-link-accessible_8c.html#a81be508469eeb4f764f4685f10c830f4", null ]
+    [ "ev_link_accessible_ref_state_set", "ev-link-accessible_8c.html#ab757f0647cfc95703d94a47ef1504774", null ],
+    [ "G_DEFINE_TYPE_WITH_CODE", "ev-link-accessible_8c.html#a7817d8e2662d455bb02ed2693b83fda9", null ]
 ];

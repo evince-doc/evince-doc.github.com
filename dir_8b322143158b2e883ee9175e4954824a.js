@@ -4,6 +4,8 @@ var dir_8b322143158b2e883ee9175e4954824a =
     [ "ev-annotation-window.h", "ev-annotation-window_8h.html", "ev-annotation-window_8h" ],
     [ "ev-document-model.c", "ev-document-model_8c.html", "ev-document-model_8c" ],
     [ "ev-document-model.h", "ev-document-model_8h.html", "ev-document-model_8h" ],
+    [ "ev-image-accessible.c", "ev-image-accessible_8c.html", "ev-image-accessible_8c" ],
+    [ "ev-image-accessible.h", "ev-image-accessible_8h.html", "ev-image-accessible_8h" ],
     [ "ev-job-scheduler.c", "ev-job-scheduler_8c.html", "ev-job-scheduler_8c" ],
     [ "ev-job-scheduler.h", "ev-job-scheduler_8h.html", "ev-job-scheduler_8h" ],
     [ "ev-jobs.c", "ev-jobs_8c.html", "ev-jobs_8c" ],

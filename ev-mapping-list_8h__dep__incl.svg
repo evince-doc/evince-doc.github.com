@@ -183,20 +183,6 @@
 <path fill="none" stroke="midnightblue" d="M1748,-422.617C1748,-413.338 1748,-403.141 1748,-395.049"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1744.5,-422.909 1748,-432.909 1751.5,-422.909 1744.5,-422.909"/>
 </g>
-<!-- Node28 -->
-<g id="node28" class="node"><title>Node28</title>
-<g id="a_node28"><a xlink:href="ev-jobs_8h.html" target="_top" xlink:title="evince&#45;master/libview\l/ev&#45;jobs.h">
-<polygon fill="white" stroke="red" points="1484.22,-363 1484.22,-395 1595.78,-395 1595.78,-363 1484.22,-363"/>
-<text text-anchor="start" x="1492.22" y="-382" font-family="Helvetica,sans-Serif" font-size="10.00">evince&#45;master/libview</text>
-<text text-anchor="middle" x="1540" y="-370" font-family="Helvetica,sans-Serif" font-size="10.00">/ev&#45;jobs.h</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node28 -->
-<g id="edge45" class="edge"><title>Node3&#45;&gt;Node28</title>
-<path fill="none" stroke="midnightblue" d="M1692.52,-429.864C1659.3,-419.002 1617.56,-405.356 1586.15,-395.086"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1691.5,-433.212 1702.1,-432.993 1693.68,-426.559 1691.5,-433.212"/>
-</g>
 <!-- Node24 -->
 <g id="node24" class="node"><title>Node24</title>
 <g id="a_node24"><a xlink:href="ev-view_8h.html" target="_top" xlink:title="evince&#45;master/libview\l/ev&#45;view.h">
@@ -207,9 +193,23 @@
 </g>
 </g>
 <!-- Node3&#45;&gt;Node24 -->
-<g id="edge54" class="edge"><title>Node3&#45;&gt;Node24</title>
+<g id="edge45" class="edge"><title>Node3&#45;&gt;Node24</title>
 <path fill="none" stroke="midnightblue" d="M1719.23,-426.642C1691.22,-406.892 1646.75,-378.218 1604,-362 1531.09,-334.336 1441.51,-320.92 1384.82,-314.761"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1717.55,-429.744 1727.72,-432.714 1721.62,-424.05 1717.55,-429.744"/>
+</g>
+<!-- Node28 -->
+<g id="node28" class="node"><title>Node28</title>
+<g id="a_node28"><a xlink:href="ev-jobs_8h.html" target="_top" xlink:title="evince&#45;master/libview\l/ev&#45;jobs.h">
+<polygon fill="white" stroke="red" points="1484.22,-363 1484.22,-395 1595.78,-395 1595.78,-363 1484.22,-363"/>
+<text text-anchor="start" x="1492.22" y="-382" font-family="Helvetica,sans-Serif" font-size="10.00">evince&#45;master/libview</text>
+<text text-anchor="middle" x="1540" y="-370" font-family="Helvetica,sans-Serif" font-size="10.00">/ev&#45;jobs.h</text>
+</a>
+</g>
+</g>
+<!-- Node3&#45;&gt;Node28 -->
+<g id="edge46" class="edge"><title>Node3&#45;&gt;Node28</title>
+<path fill="none" stroke="midnightblue" d="M1692.52,-429.864C1659.3,-419.002 1617.56,-405.356 1586.15,-395.086"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1691.5,-433.212 1702.1,-432.993 1693.68,-426.559 1691.5,-433.212"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
@@ -712,23 +712,9 @@
 <polygon fill="midnightblue" stroke="midnightblue" points="1707.08,-289.65 1717.2,-292.791 1711.25,-284.025 1707.08,-289.65"/>
 </g>
 <!-- Node28&#45;&gt;Node9 -->
-<g id="edge46" class="edge"><title>Node28&#45;&gt;Node9</title>
+<g id="edge47" class="edge"><title>Node28&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M1534.42,-352.893C1531.77,-333.934 1531.78,-308.456 1546,-292 1572.86,-260.905 1686.23,-245.252 1755.69,-238.438"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1531,-353.659 1536.15,-362.921 1537.9,-352.472 1531,-353.659"/>
-</g>
-<!-- Node29 -->
-<g id="node29" class="node"><title>Node29</title>
-<g id="a_node29"><a xlink:href="ev-jobs_8c.html" target="_top" xlink:title="evince&#45;master/libview\l/ev&#45;jobs.c">
-<polygon fill="white" stroke="black" points="586.224,-293 586.224,-325 697.776,-325 697.776,-293 586.224,-293"/>
-<text text-anchor="start" x="594.224" y="-312" font-family="Helvetica,sans-Serif" font-size="10.00">evince&#45;master/libview</text>
-<text text-anchor="middle" x="642" y="-300" font-family="Helvetica,sans-Serif" font-size="10.00">/ev&#45;jobs.c</text>
-</a>
-</g>
-</g>
-<!-- Node28&#45;&gt;Node29 -->
-<g id="edge47" class="edge"><title>Node28&#45;&gt;Node29</title>
-<path fill="none" stroke="midnightblue" d="M1473.85,-366.836C1461.62,-365.026 1448.94,-363.316 1437,-362 1293.33,-346.174 854.363,-321.53 698.023,-313.014"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1473.58,-370.335 1483.99,-368.375 1474.63,-363.414 1473.58,-370.335"/>
 </g>
 <!-- Node28&#45;&gt;Node24 -->
 <g id="edge48" class="edge"><title>Node28&#45;&gt;Node24</title>
@@ -740,23 +726,37 @@
 <path fill="none" stroke="midnightblue" d="M1473.87,-362.65C1472.57,-362.424 1471.28,-362.207 1470,-362 1388.02,-348.72 1169.73,-367.862 1098,-326 1019.51,-280.194 1022.85,-148.214 1026.45,-103.23"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1473.49,-366.138 1483.96,-364.525 1474.77,-359.256 1473.49,-366.138"/>
 </g>
+<!-- Node29 -->
+<g id="node29" class="node"><title>Node29</title>
+<g id="a_node29"><a xlink:href="ev-jobs_8c.html" target="_top" xlink:title="evince&#45;master/libview\l/ev&#45;jobs.c">
+<polygon fill="white" stroke="black" points="586.224,-293 586.224,-325 697.776,-325 697.776,-293 586.224,-293"/>
+<text text-anchor="start" x="594.224" y="-312" font-family="Helvetica,sans-Serif" font-size="10.00">evince&#45;master/libview</text>
+<text text-anchor="middle" x="642" y="-300" font-family="Helvetica,sans-Serif" font-size="10.00">/ev&#45;jobs.c</text>
+</a>
+</g>
+</g>
+<!-- Node28&#45;&gt;Node29 -->
+<g id="edge50" class="edge"><title>Node28&#45;&gt;Node29</title>
+<path fill="none" stroke="midnightblue" d="M1473.85,-366.836C1461.62,-365.026 1448.94,-363.316 1437,-362 1293.33,-346.174 854.363,-321.53 698.023,-313.014"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1473.58,-370.335 1483.99,-368.375 1474.63,-363.414 1473.58,-370.335"/>
+</g>
 <!-- Node28&#45;&gt;Node14 -->
-<g id="edge50" class="edge"><title>Node28&#45;&gt;Node14</title>
+<g id="edge51" class="edge"><title>Node28&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M1473.82,-367.125C1461.59,-365.285 1448.92,-363.491 1437,-362 1269.11,-341.005 1216.46,-385.341 1058,-326 918.529,-273.769 784.471,-147.076 740.797,-103.232"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1473.54,-370.623 1483.96,-368.675 1474.6,-363.704 1473.54,-370.623"/>
 </g>
 <!-- Node28&#45;&gt;Node25 -->
-<g id="edge51" class="edge"><title>Node28&#45;&gt;Node25</title>
+<g id="edge52" class="edge"><title>Node28&#45;&gt;Node25</title>
 <path fill="none" stroke="midnightblue" d="M1473.85,-362.785C1472.56,-362.518 1471.27,-362.256 1470,-362 1378.89,-343.639 1354.77,-345.993 1264,-326 1261.16,-325.374 1258.25,-324.702 1255.31,-324.001"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1473.38,-366.264 1483.89,-364.907 1474.83,-359.415 1473.38,-366.264"/>
 </g>
 <!-- Node28&#45;&gt;Node27 -->
-<g id="edge52" class="edge"><title>Node28&#45;&gt;Node27</title>
+<g id="edge53" class="edge"><title>Node28&#45;&gt;Node27</title>
 <path fill="none" stroke="midnightblue" d="M1473.87,-362.656C1472.57,-362.429 1471.28,-362.21 1470,-362 1390.88,-349.042 1164.79,-385.456 1111,-326 1092.01,-305.006 1104.33,-269.394 1113.88,-249.187"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1473.48,-366.144 1483.96,-364.543 1474.77,-359.263 1473.48,-366.144"/>
 </g>
 <!-- Node28&#45;&gt;Node20 -->
-<g id="edge53" class="edge"><title>Node28&#45;&gt;Node20</title>
+<g id="edge54" class="edge"><title>Node28&#45;&gt;Node20</title>
 <path fill="none" stroke="midnightblue" d="M1473.87,-362.674C1472.57,-362.441 1471.28,-362.216 1470,-362 1398.13,-349.86 1192.63,-380.292 1144,-326 1133.92,-314.744 1137.01,-305.399 1144,-292 1144.66,-290.731 1311.9,-174.919 1313,-174 1363.1,-132.016 1357.69,-97.4724 1417,-70 1519.9,-22.3428 1866.43,-17.7128 1997.87,-17.7221"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1473.47,-366.161 1483.95,-364.593 1474.78,-359.284 1473.47,-366.161"/>
 </g>

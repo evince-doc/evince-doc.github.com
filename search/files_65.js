@@ -71,6 +71,8 @@ var searchData=
   ['ev_2dhistory_2daction_2eh',['ev-history-action.h',['../ev-history-action_8h.html',1,'']]],
   ['ev_2dhistory_2ec',['ev-history.c',['../ev-history_8c.html',1,'']]],
   ['ev_2dhistory_2eh',['ev-history.h',['../ev-history_8h.html',1,'']]],
+  ['ev_2dimage_2daccessible_2ec',['ev-image-accessible.c',['../ev-image-accessible_8c.html',1,'']]],
+  ['ev_2dimage_2daccessible_2eh',['ev-image-accessible.h',['../ev-image-accessible_8h.html',1,'']]],
   ['ev_2dimage_2ec',['ev-image.c',['../ev-image_8c.html',1,'']]],
   ['ev_2dimage_2eh',['ev-image.h',['../ev-image_8h.html',1,'']]],
   ['ev_2dinit_2ec',['ev-init.c',['../ev-init_8c.html',1,'']]],

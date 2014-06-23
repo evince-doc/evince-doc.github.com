@@ -204,6 +204,8 @@ Functions</h2></td></tr>
 <tr class="separator:a62dabc4ecaa6b60faa075d35af20a581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae472ee9f37b0bf4b24483674141f6f47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-page-cache_8c.html#ae472ee9f37b0bf4b24483674141f6f47">ev_page_cache_ensure_page</a> (<a class="el" href="ev-page-cache_8h.html#ae0a6f5b5b809d282143d6701b6bcc33f">EvPageCache</a> *cache, gint page)</td></tr>
 <tr class="separator:ae472ee9f37b0bf4b24483674141f6f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ef2306799155c69d8ffc0d0fbffbdd"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-page-cache_8c.html#aa5ef2306799155c69d8ffc0d0fbffbdd">ev_page_cache_is_page_cached</a> (<a class="el" href="ev-page-cache_8h.html#ae0a6f5b5b809d282143d6701b6bcc33f">EvPageCache</a> *cache, gint page)</td></tr>
+<tr class="separator:aa5ef2306799155c69d8ffc0d0fbffbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a63f9fa4062c39cc9196277f738ce7cf3"></a>
@@ -788,7 +790,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a1caa87e938322bc3df9a0ad31f0dc3e6_icgraph.svg" width="1014" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a1caa87e938322bc3df9a0ad31f0dc3e6_icgraph.svg" width="1014" height="238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -844,7 +846,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a736acbec8cb3572509f117011bb6927b_icgraph.svg" width="1664" height="1515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a736acbec8cb3572509f117011bb6927b_icgraph.svg" width="1664" height="1575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1032,7 +1034,7 @@ Functions</h2></td></tr>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a98caf2933580b49cdc02e62761021156_icgraph.svg" width="1934" height="1348"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a98caf2933580b49cdc02e62761021156_icgraph.svg" width="1976" height="1290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1199,6 +1201,54 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="aa5ef2306799155c69d8ffc0d0fbffbdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean ev_page_cache_is_page_cached </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-page-cache_8h.html#ae0a6f5b5b809d282143d6701b6bcc33f">EvPageCache</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>page</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-page-cache_8c_source.html#l00669">669</a> of file <a class="el" href="ev-page-cache_8c_source.html">ev-page-cache.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;{</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <a class="code" href="struct__EvPageCacheData.html">EvPageCacheData</a> *data;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-page-cache_8h.html#aa6e6f38cedb168efeb3b5cc10d018e4c">EV_IS_PAGE_CACHE</a> (cache), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    g_return_val_if_fail (page &gt;= 0 &amp;&amp; page &lt; cache-&gt;n_pages, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    data = &amp;cache-&gt;<a class="code" href="struct__EvPageCache.html#a914077049de90d432a29ba5a1fec5e09">page_list</a>[page];</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordflow">return</span> data-&gt;<a class="code" href="struct__EvPageCacheData.html#a0a33560cfb1241b067f4eb5b1fc73ff8">done</a>;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_aa5ef2306799155c69d8ffc0d0fbffbdd_icgraph.svg" width="758" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a3555d3f3ab03648ae5fafffa2902255c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1236,11 +1286,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="ev-page-cache_8c.html#aa14283303685bd99a3787031cd3eab1b">ev_page_cache_set_page_range</a> (cache, cache-&gt;<a class="code" href="struct__EvPageCache.html#a24832ed8354520e9c9a94e4e25014723">start_page</a>, cache-&gt;<a class="code" href="struct__EvPageCache.html#ac4d480263699bc3533ec4ab0e3cd0462">end_page</a>);</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a3555d3f3ab03648ae5fafffa2902255c_icgraph.svg" width="790" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1277,11 +1327,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">return</span> cache;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_ab655496da270a9f4a87225ac809e1b08_icgraph.svg" width="1208" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1346,11 +1396,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a087a54e4a0310bd13c054dce6941e316_icgraph.svg" width="1771" height="1051"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1393,11 +1443,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="ev-page-cache_8c.html#aa14283303685bd99a3787031cd3eab1b">ev_page_cache_set_page_range</a> (cache, cache-&gt;<a class="code" href="struct__EvPageCache.html#a24832ed8354520e9c9a94e4e25014723">start_page</a>, cache-&gt;<a class="code" href="struct__EvPageCache.html#ac4d480263699bc3533ec4ab0e3cd0462">end_page</a>);</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_aa53dc3c5d68bbd28698eea283bc457d1_icgraph.svg" width="1238" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1467,11 +1517,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        }</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_aa14283303685bd99a3787031cd3eab1b_icgraph.svg" width="2323" height="1211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1517,11 +1567,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    data-&gt;<a class="code" href="struct__EvPageCacheData.html#a918fa76894477ac5b1a274648e452400">job</a> = NULL;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_a07228792e308f0a04a62c030974b4b51_icgraph.svg" width="1814" height="1104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1598,11 +1648,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    data-&gt;<a class="code" href="struct__EvPageCacheData.html#a918fa76894477ac5b1a274648e452400">job</a> = NULL;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-cache_8c_add32cf4085a072bb5cbbbd47561efda2_icgraph.svg" width="1803" height="1104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1616,7 +1666,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-cache_8c.html">ev-page-cache.c</a></li>
-    <li class="footer">Generated on Mon Jun 23 2014 12:43:43 for Evince by
+    <li class="footer">Generated on Mon Jun 23 2014 20:06:25 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
