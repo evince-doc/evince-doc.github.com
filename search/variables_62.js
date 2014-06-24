@@ -27,7 +27,6 @@ var searchData=
   ['bookmarks',['bookmarks',['../struct__EvSidebarBookmarksPrivate.html#addcac5348faa71c3def881d702625436',1,'_EvSidebarBookmarksPrivate::bookmarks()'],['../struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c',1,'_EvWindowPrivate::bookmarks()']]],
   ['bookmarks_5fmenu',['bookmarks_menu',['../struct__EvWindowPrivate.html#ab4ae287fee2e0c5a90fc639b683e3fcb',1,'_EvWindowPrivate']]],
   ['bookmarks_5fsection',['bookmarks_section',['../struct__EvToolbarPrivate.html#a27b414f8284e374bceb08fc92e3b795e',1,'_EvToolbarPrivate']]],
-  ['bookmarks_5fui_5fid',['bookmarks_ui_id',['../struct__EvWindowPrivate.html#a3574b4adaa289f89669823aee3019828',1,'_EvWindowPrivate']]],
   ['bottom',['bottom',['../struct__EvLinkDestPrivate.html#a5feed9a2f4ad541bfa2dbc4ff0f3a379',1,'_EvLinkDestPrivate']]],
   ['bounding_5fbox',['bounding_box',['../struct__DjvuTextPage.html#a8b2b11f995e00090eb9cef9b5dac5e8f',1,'_DjvuTextPage']]],
   ['buckets',['buckets',['../struct__DviHashTable.html#a7dd7e8c1a7c25674224eff21e61ac765',1,'_DviHashTable']]],

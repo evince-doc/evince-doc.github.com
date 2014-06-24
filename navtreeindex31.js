@@ -1,9 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"struct__EvPropertiesFonts.html#a70817b69340a914161c5152f4348e216":[6,0,215,0],
-"struct__EvPropertiesFonts.html#a8446ee1646975dddc469ca50ce6d97ec":[6,0,215,5],
-"struct__EvPropertiesFontsClass.html":[6,0,216],
-"struct__EvPropertiesFontsClass.html#aec6c676c46f442bd102d8f40b3124581":[6,0,216,0],
 "struct__EvPropertiesLicense.html":[6,0,217],
 "struct__EvPropertiesLicense.html#a0ab790b42965bd218974b3dfec30d335":[6,0,217,0],
 "struct__EvPropertiesLicenseClass.html":[6,0,218],
@@ -249,5 +245,9 @@ var NAVTREEINDEX31 =
 "struct__EvView.html#a9b297e2d79c17cc95c3888ef52bb0661":[6,0,264,30],
 "struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259":[6,0,264,57],
 "struct__EvView.html#aa22cff27441457edfb23ef5abc4f33b4":[6,0,264,7],
-"struct__EvView.html#aaa93620b63447a1f0079ec6dfba9bf20":[6,0,264,36]
+"struct__EvView.html#aaa93620b63447a1f0079ec6dfba9bf20":[6,0,264,36],
+"struct__EvView.html#ab01c9b78f1eb4aaa2df288223a8b861d":[6,0,264,55],
+"struct__EvView.html#ab5f031f16fcc7df23887baa26e98c7fd":[6,0,264,45],
+"struct__EvView.html#abade6a12682485dc310c6695beb66da2":[6,0,264,63],
+"struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec":[6,0,264,15]
 };

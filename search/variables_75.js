@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ui_5fhints',['ui_hints',['../struct__EvDocumentInfo.html#a5cf65e376128562782ea6e759e180b6f',1,'_EvDocumentInfo']]],
-  ['ui_5fmanager',['ui_manager',['../struct__EvPreviewerWindow.html#a52da2ffde1768aae263f415ea3a1d1f1',1,'_EvPreviewerWindow::ui_manager()'],['../struct__EvSidebarBookmarksPrivate.html#a18af5165a46b8f62ae2eeeb856b0e825',1,'_EvSidebarBookmarksPrivate::ui_manager()'],['../struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d',1,'_EvWindowPrivate::ui_manager()']]],
+  ['ui_5fmanager',['ui_manager',['../struct__EvPreviewerWindow.html#a52da2ffde1768aae263f415ea3a1d1f1',1,'_EvPreviewerWindow::ui_manager()'],['../struct__EvSidebarBookmarksPrivate.html#a18af5165a46b8f62ae2eeeb856b0e825',1,'_EvSidebarBookmarksPrivate::ui_manager()']]],
   ['underlineposition',['underlinePosition',['../structGlobalFontInfo.html#a2dd77e9fcdddd766cf1f12435e17b800',1,'GlobalFontInfo']]],
   ['underlinethickness',['underlineThickness',['../structGlobalFontInfo.html#a8b039a996091c984d22281ecb7119c8c',1,'GlobalFontInfo']]],
   ['uniform',['uniform',['../struct__EvDocumentPrivate.html#ae78b7a7a5fc01dcf803364f94f6e7549',1,'_EvDocumentPrivate::uniform()'],['../struct__EvThumbsSizeCache.html#af6056dac2c0ec7df230c839e6f71c9d9',1,'_EvThumbsSizeCache::uniform()']]],

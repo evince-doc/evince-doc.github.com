@@ -1,14 +1,12 @@
 var struct__EvWindowPrivate =
 [
-    [ "action_group", "struct__EvWindowPrivate.html#afbcf102f6f7a7df5f0c9109bd69ec9c3", null ],
     [ "annot", "struct__EvWindowPrivate.html#a9533d726d289aa7472543c243a0ec563", null ],
     [ "ask_caret_navigation_check", "struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe", null ],
     [ "attach_list", "struct__EvWindowPrivate.html#a2a2a2714cefa31573971203929c308ca", null ],
     [ "attachment_popup", "struct__EvWindowPrivate.html#ac524b0fb82b7643de50a2d19fd84f810", null ],
-    [ "attachment_popup_action_group", "struct__EvWindowPrivate.html#af2e13dc11e5cce3217659961deb622ec", null ],
+    [ "attachment_popup_menu", "struct__EvWindowPrivate.html#a907c31d3475ad1f7981aad1f3b9e1865", null ],
     [ "bookmarks", "struct__EvWindowPrivate.html#abc59e71976bd36712b9a9d16299f617c", null ],
     [ "bookmarks_menu", "struct__EvWindowPrivate.html#ab4ae287fee2e0c5a90fc639b683e3fcb", null ],
-    [ "bookmarks_ui_id", "struct__EvWindowPrivate.html#a3574b4adaa289f89669823aee3019828", null ],
     [ "chrome", "struct__EvWindowPrivate.html#abe9128f9496a33a0cb6c56e3d8310058", null ],
     [ "close_after_print", "struct__EvWindowPrivate.html#a5481433a28f283b8e7f8fe431745033f", null ],
     [ "default_settings", "struct__EvWindowPrivate.html#acbf9f43050f457aeac8e2c380a462af2", null ],
@@ -67,12 +65,11 @@ var struct__EvWindowPrivate =
     [ "thumbnail_job", "struct__EvWindowPrivate.html#a6f69bc944034b10522fe353decae5c03", null ],
     [ "title", "struct__EvWindowPrivate.html#a22220ddd73502e450597d59e89c74a23", null ],
     [ "toolbar", "struct__EvWindowPrivate.html#ac4255b88c5a4659d8202a6b135bfec3a", null ],
-    [ "ui_manager", "struct__EvWindowPrivate.html#a5573edef9bb41b7f29a9a2ce8e073c5d", null ],
     [ "uri", "struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523", null ],
     [ "uri_mtime", "struct__EvWindowPrivate.html#a93c65c18b354c4b35359c73de5f083f6", null ],
     [ "view", "struct__EvWindowPrivate.html#aca655e6863cca1389f35fcf601eaeb59", null ],
     [ "view_box", "struct__EvWindowPrivate.html#ac38a25c3ca22a91b9a229721f3e4c1a3", null ],
     [ "view_popup", "struct__EvWindowPrivate.html#af9bf750f033c3d5cb94443c6f9b9b0d6", null ],
-    [ "view_popup_action_group", "struct__EvWindowPrivate.html#a3030ebad0f35c97e35420a63b703b102", null ],
+    [ "view_popup_menu", "struct__EvWindowPrivate.html#a4b00a584ad1e516f291b347585ae78d9", null ],
     [ "window_mode", "struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa", null ]
 ];

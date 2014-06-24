@@ -1,9 +1,5 @@
 var NAVTREEINDEX27 =
 {
-"struct__DviFont.html":[6,0,25],
-"struct__DviFont.html#a00b82e0ec4b05cb214bc3c75b31d66d1":[6,0,25,16],
-"struct__DviFont.html#a09ce4702cd098c3abb121c77c37e2f10":[6,0,25,2],
-"struct__DviFont.html#a1135e930d02f16738f051aa76120d8d9":[6,0,25,12],
 "struct__DviFont.html#a210c2e889404061497ea2e17c826ac94":[6,0,25,9],
 "struct__DviFont.html#a321e8128fa0b603d2b356b8d069c1c28":[6,0,25,7],
 "struct__DviFont.html#a3ac91d8ea508e81013e245ee26920d93":[6,0,25,14],
@@ -249,5 +245,9 @@ var NAVTREEINDEX27 =
 "struct__EvAttachment.html":[6,0,60],
 "struct__EvAttachment.html#a730073924fc03ad3007154d131fdd1f7":[6,0,60,1],
 "struct__EvAttachment.html#ac48a889beba008f9fdec80861dce0883":[6,0,60,0],
-"struct__EvAttachmentClass.html":[6,0,61]
+"struct__EvAttachmentClass.html":[6,0,61],
+"struct__EvAttachmentClass.html#af1613d671eb73a73b98edf2f9c60200a":[6,0,61,0],
+"struct__EvAttachmentPrivate.html":[6,0,62],
+"struct__EvAttachmentPrivate.html#a1859d6803deec8ce41c490562b8d6fef":[6,0,62,6],
+"struct__EvAttachmentPrivate.html#a1bc0f6bc41236d3ba52b687ff18d9486":[6,0,62,0]
 };
