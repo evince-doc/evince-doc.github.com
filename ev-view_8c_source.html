@@ -2725,8 +2725,8 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html','');});
 <div class="line"><a name="l02624"></a><span class="lineno"> 2624</span>&#160;    <span class="keywordflow">return</span> choice;</div>
 <div class="line"><a name="l02625"></a><span class="lineno"> 2625</span>&#160;}</div>
 <div class="line"><a name="l02626"></a><span class="lineno"> 2626</span>&#160;</div>
-<div class="line"><a name="l02627"></a><span class="lineno"> 2627</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l02628"></a><span class="lineno"><a class="code" href="ev-view_8c.html#a9c765a36502dce81a89d0605e8eee608"> 2628</a></span>&#160;<a class="code" href="ev-view_8c.html#a9c765a36502dce81a89d0605e8eee608">ev_view_focus_form_field</a> (<a class="code" href="struct__EvView.html">EvView</a>      *view,</div>
+<div class="line"><a name="l02627"></a><span class="lineno"> 2627</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l02628"></a><span class="lineno"><a class="code" href="ev-view_8c.html#afc17f1de1fe26ba8846a7d5d14a612a6"> 2628</a></span>&#160;<a class="code" href="ev-view-private_8h.html#afc17f1de1fe26ba8846a7d5d14a612a6">_ev_view_focus_form_field</a> (<a class="code" href="struct__EvView.html">EvView</a>      *view,</div>
 <div class="line"><a name="l02629"></a><span class="lineno"> 2629</span>&#160;              <a class="code" href="struct__EvFormField.html">EvFormField</a> *field)</div>
 <div class="line"><a name="l02630"></a><span class="lineno"> 2630</span>&#160;{</div>
 <div class="line"><a name="l02631"></a><span class="lineno"> 2631</span>&#160;    GtkWidget     *field_widget = NULL;</div>
@@ -2771,7 +2771,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html','');});
 <div class="line"><a name="l02670"></a><span class="lineno"> 2670</span>&#160;    <span class="keywordflow">if</span> (field-&gt;<a class="code" href="struct__EvFormField.html#aa89a3c2152176fb9ac3b8c1a5aaf15e9">is_read_only</a>)</div>
 <div class="line"><a name="l02671"></a><span class="lineno"> 2671</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l02672"></a><span class="lineno"> 2672</span>&#160;</div>
-<div class="line"><a name="l02673"></a><span class="lineno"> 2673</span>&#160;    <a class="code" href="ev-view_8c.html#a9c765a36502dce81a89d0605e8eee608">ev_view_focus_form_field</a> (view, field);</div>
+<div class="line"><a name="l02673"></a><span class="lineno"> 2673</span>&#160;    <a class="code" href="ev-view-private_8h.html#afc17f1de1fe26ba8846a7d5d14a612a6">_ev_view_focus_form_field</a> (view, field);</div>
 <div class="line"><a name="l02674"></a><span class="lineno"> 2674</span>&#160;</div>
 <div class="line"><a name="l02675"></a><span class="lineno"> 2675</span>&#160;    <span class="keywordflow">if</span> (field-&gt;<a class="code" href="struct__EvFormField.html#a980049744dca9b84ed7b98fa1812df6a">activation_link</a>)</div>
 <div class="line"><a name="l02676"></a><span class="lineno"> 2676</span>&#160;        <a class="code" href="ev-view_8c.html#ab2cf93cf86f9ce5f9c237c2df3fcd52b">ev_view_handle_link</a> (view, field-&gt;<a class="code" href="struct__EvFormField.html#a980049744dca9b84ed7b98fa1812df6a">activation_link</a>);</div>
@@ -4372,7 +4372,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html','');});
 <div class="line"><a name="l04304"></a><span class="lineno"> 4304</span>&#160;</div>
 <div class="line"><a name="l04305"></a><span class="lineno"> 4305</span>&#160;    <span class="keywordflow">if</span> ((field = <a class="code" href="ev-view_8c.html#af9b7608ecb732d1883e705aaf4882793">ev_view_get_form_field_at_location</a> (view, x, y))) {</div>
 <div class="line"><a name="l04306"></a><span class="lineno"> 4306</span>&#160;        <a class="code" href="ev-view_8c.html#a1c57ef7fe885805803a2423bdcc9cf1b">ev_view_remove_all</a> (view);</div>
-<div class="line"><a name="l04307"></a><span class="lineno"> 4307</span>&#160;        <a class="code" href="ev-view_8c.html#a9c765a36502dce81a89d0605e8eee608">ev_view_focus_form_field</a> (view, field);</div>
+<div class="line"><a name="l04307"></a><span class="lineno"> 4307</span>&#160;        <a class="code" href="ev-view-private_8h.html#afc17f1de1fe26ba8846a7d5d14a612a6">_ev_view_focus_form_field</a> (view, field);</div>
 <div class="line"><a name="l04308"></a><span class="lineno"> 4308</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l04309"></a><span class="lineno"> 4309</span>&#160;    }</div>
 <div class="line"><a name="l04310"></a><span class="lineno"> 4310</span>&#160;</div>
@@ -8414,7 +8414,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view_8c.html">ev-view.c</a></li>
-    <li class="footer">Generated on Tue Jun 24 2014 14:11:48 for Evince by
+    <li class="footer">Generated on Tue Jun 24 2014 16:01:42 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

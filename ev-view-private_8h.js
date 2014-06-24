@@ -17,6 +17,7 @@ var ev_view_private_8h =
       [ "SCROLL_TO_FIND_LOCATION", "ev-view-private_8h.html#a1aa0a9871663aa009306de68b639510fa34c0b15b2e23ca4b0430c9a71249c578", null ]
     ] ],
     [ "_ev_view_clear_selection", "ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef", null ],
+    [ "_ev_view_focus_form_field", "ev-view-private_8h.html#afc17f1de1fe26ba8846a7d5d14a612a6", null ],
     [ "_ev_view_get_caret_cursor_offset_at_doc_point", "ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf", null ],
     [ "_ev_view_get_selection_colors", "ev-view-private_8h.html#a60b52ce8d5e2aa3cb26fb9678cbcc558", null ],
     [ "_ev_view_set_focused_element", "ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158", null ],

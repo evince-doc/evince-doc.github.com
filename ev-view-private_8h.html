@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('ev-view-private_8h.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h__dep__incl.svg" width="1032" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h__dep__incl.svg" width="1234" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -201,6 +201,8 @@ Functions</h2></td></tr>
 <tr class="separator:a58e08a3b11353d7b0baa0fa57af59327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6c9f7e0c8bedfc59263b8bfdaee158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, <a class="el" href="ev-document_8h.html#ad16f94ff147b1427a11eedbf4dbe6991">EvMapping</a> *element_mapping, gint page)</td></tr>
 <tr class="separator:a2e6c9f7e0c8bedfc59263b8bfdaee158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc17f1de1fe26ba8846a7d5d14a612a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-private_8h.html#afc17f1de1fe26ba8846a7d5d14a612a6">_ev_view_focus_form_field</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, <a class="el" href="ev-form-field_8h.html#a1940a42dc6be3c16b1999f7347fbc9f9">EvFormField</a> *field)</td></tr>
+<tr class="separator:afc17f1de1fe26ba8846a7d5d14a612a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a6d7420fbc2a33a8b7eaaae40e844cba5"></a>
@@ -287,6 +289,79 @@ Functions</h2></td></tr>
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a451bb8751ffbcc07e73f7d82f7d106ef_icgraph.svg" width="568" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afc17f1de1fe26ba8846a7d5d14a612a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _ev_view_focus_form_field </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-form-field_8h.html#a1940a42dc6be3c16b1999f7347fbc9f9">EvFormField</a> *&#160;</td>
+          <td class="paramname"><em>field</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l02628">2628</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02630"></a><span class="lineno"> 2630</span>&#160;{</div>
+<div class="line"><a name="l02631"></a><span class="lineno"> 2631</span>&#160;    GtkWidget     *field_widget = NULL;</div>
+<div class="line"><a name="l02632"></a><span class="lineno"> 2632</span>&#160;    <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a> *form_field_mapping;</div>
+<div class="line"><a name="l02633"></a><span class="lineno"> 2633</span>&#160;    <a class="code" href="struct__EvMapping.html">EvMapping</a>     *mapping;</div>
+<div class="line"><a name="l02634"></a><span class="lineno"> 2634</span>&#160;</div>
+<div class="line"><a name="l02635"></a><span class="lineno"> 2635</span>&#160;    <a class="code" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (view, NULL, -1);</div>
+<div class="line"><a name="l02636"></a><span class="lineno"> 2636</span>&#160;</div>
+<div class="line"><a name="l02637"></a><span class="lineno"> 2637</span>&#160;    <span class="keywordflow">if</span> (field-&gt;<a class="code" href="struct__EvFormField.html#aa89a3c2152176fb9ac3b8c1a5aaf15e9">is_read_only</a>)</div>
+<div class="line"><a name="l02638"></a><span class="lineno"> 2638</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02639"></a><span class="lineno"> 2639</span>&#160;</div>
+<div class="line"><a name="l02640"></a><span class="lineno"> 2640</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a9677df610cb5a9447617a22936f07e24">EV_IS_FORM_FIELD_BUTTON</a> (field)) {</div>
+<div class="line"><a name="l02641"></a><span class="lineno"> 2641</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#a7d9b70a5b199c716c2c1cb09fb6a2348">ev_view_form_field_button_create_widget</a> (view, field);</div>
+<div class="line"><a name="l02642"></a><span class="lineno"> 2642</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a94b0454f6c4b52733f0b5e30e0f64095">EV_IS_FORM_FIELD_TEXT</a> (field)) {</div>
+<div class="line"><a name="l02643"></a><span class="lineno"> 2643</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#adc25e734b86ee0521798c9e227687ae8">ev_view_form_field_text_create_widget</a> (view, field);</div>
+<div class="line"><a name="l02644"></a><span class="lineno"> 2644</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a7bf43c3a17dbfc8277ca6fe5adf5fe28">EV_IS_FORM_FIELD_CHOICE</a> (field)) {</div>
+<div class="line"><a name="l02645"></a><span class="lineno"> 2645</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#a4ea0f104466cfb1e65541e5b69b83389">ev_view_form_field_choice_create_widget</a> (view, field);</div>
+<div class="line"><a name="l02646"></a><span class="lineno"> 2646</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a55c2dafc5f49d253141c60784be3091b">EV_IS_FORM_FIELD_SIGNATURE</a> (field)) {</div>
+<div class="line"><a name="l02647"></a><span class="lineno"> 2647</span>&#160;        <span class="comment">/* TODO */</span></div>
+<div class="line"><a name="l02648"></a><span class="lineno"> 2648</span>&#160;    }</div>
+<div class="line"><a name="l02649"></a><span class="lineno"> 2649</span>&#160;</div>
+<div class="line"><a name="l02650"></a><span class="lineno"> 2650</span>&#160;    <span class="comment">/* Form field doesn&#39;t require a widget */</span></div>
+<div class="line"><a name="l02651"></a><span class="lineno"> 2651</span>&#160;    <span class="keywordflow">if</span> (!field_widget)</div>
+<div class="line"><a name="l02652"></a><span class="lineno"> 2652</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02653"></a><span class="lineno"> 2653</span>&#160;</div>
+<div class="line"><a name="l02654"></a><span class="lineno"> 2654</span>&#160;    g_object_set_data_full (G_OBJECT (field_widget), <span class="stringliteral">&quot;form-field&quot;</span>,</div>
+<div class="line"><a name="l02655"></a><span class="lineno"> 2655</span>&#160;                g_object_ref (field),</div>
+<div class="line"><a name="l02656"></a><span class="lineno"> 2656</span>&#160;                (GDestroyNotify)g_object_unref);</div>
+<div class="line"><a name="l02657"></a><span class="lineno"> 2657</span>&#160;</div>
+<div class="line"><a name="l02658"></a><span class="lineno"> 2658</span>&#160;    form_field_mapping = <a class="code" href="ev-page-cache_8c.html#a47fcfac00d1008109fcb9cdb1e529d2b">ev_page_cache_get_form_field_mapping</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>,</div>
+<div class="line"><a name="l02659"></a><span class="lineno"> 2659</span>&#160;                                   field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>);</div>
+<div class="line"><a name="l02660"></a><span class="lineno"> 2660</span>&#160;    mapping = <a class="code" href="ev-mapping-list_8c.html#afdb093bbda0330990955ebcffe92aff2">ev_mapping_list_find</a> (form_field_mapping, field);</div>
+<div class="line"><a name="l02661"></a><span class="lineno"> 2661</span>&#160;    <a class="code" href="ev-view_8c.html#afdbef74c22bc77c4de99687ca80f55a0">ev_view_put_to_doc_rect</a> (view, field_widget, field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, &amp;mapping-&gt;<a class="code" href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">area</a>);</div>
+<div class="line"><a name="l02662"></a><span class="lineno"> 2662</span>&#160;    gtk_widget_show (field_widget);</div>
+<div class="line"><a name="l02663"></a><span class="lineno"> 2663</span>&#160;    gtk_widget_grab_focus (field_widget);</div>
+<div class="line"><a name="l02664"></a><span class="lineno"> 2664</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_afc17f1de1fe26ba8846a7d5d14a612a6_icgraph.svg" width="782" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -405,11 +480,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l04548"></a><span class="lineno"> 4548</span>&#160;    <span class="keywordflow">return</span> offset;</div>
 <div class="line"><a name="l04549"></a><span class="lineno"> 4549</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_ab0025a68ff63a643f533fe51249c9faf_icgraph.svg" width="2451" height="855"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -463,11 +538,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l06052"></a><span class="lineno"> 6052</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
 <div class="line"><a name="l06053"></a><span class="lineno"> 6053</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a60b52ce8d5e2aa3cb26fb9678cbcc558_icgraph.svg" width="2763" height="971"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -538,12 +613,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;    }</div>
 <div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a2e6c9f7e0c8bedfc59263b8bfdaee158_icgraph.svg" width="1182" height="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a2e6c9f7e0c8bedfc59263b8bfdaee158_icgraph.svg" width="1216" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -585,11 +660,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l08213"></a><span class="lineno"> 8213</span>&#160;    <a class="code" href="ev-view_8c.html#af4c66a12e3dd928175a7c057083d7fd8">compute_selections</a> (view, <a class="code" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>, start_point, end_point);</div>
 <div class="line"><a name="l08214"></a><span class="lineno"> 8214</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a58e08a3b11353d7b0baa0fa57af59327_icgraph.svg" width="750" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -681,11 +756,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    view_point-&gt;y = view_y + page_area.y + border.top;</div>
 <div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a3b05fea97420f6f5da941c85b21615cf_icgraph.svg" width="1182" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -785,12 +860,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;    view_rect-&gt;height = (gint)(h * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5);</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a8c882e0b7ddf3bf5a611d981a155e4e6_icgraph.svg" width="1067" height="1544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a8c882e0b7ddf3bf5a611d981a155e4e6_icgraph.svg" width="1072" height="1635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -851,11 +926,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    *doc_point_y = MAX ((<span class="keywordtype">double</span>) (view_point-&gt;y - page_area-&gt;y - border-&gt;right) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a103a33e3028683b204690cc6ff66a1ed_icgraph.svg" width="1443" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -913,11 +988,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> + (<span class="keywordtype">double</span>) view_rect-&gt;height / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>;</div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_a231b1221d672c5ee9781b519a1ae8e7d_icgraph.svg" width="1270" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -989,11 +1064,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        *page_height = (rotation == 0 || rotation == 180) ? height : width;</div>
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-private_8h_af51d374635b49a10eb30711e9a5909c1_icgraph.svg" width="1496" height="1636"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1007,7 +1082,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-private_8h.html">ev-view-private.h</a></li>
-    <li class="footer">Generated on Tue Jun 24 2014 14:11:55 for Evince by
+    <li class="footer">Generated on Tue Jun 24 2014 16:01:46 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -43,6 +43,7 @@ var ev_view_8c =
       [ "EV_VIEW_FIND_PREV", "ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10aca856b96a01eac0324eb4b00e56dddc23b", null ]
     ] ],
     [ "_ev_view_clear_selection", "ev-view_8c.html#a451bb8751ffbcc07e73f7d82f7d106ef", null ],
+    [ "_ev_view_focus_form_field", "ev-view_8c.html#afc17f1de1fe26ba8846a7d5d14a612a6", null ],
     [ "_ev_view_get_caret_cursor_offset_at_doc_point", "ev-view_8c.html#ab0025a68ff63a643f533fe51249c9faf", null ],
     [ "_ev_view_get_selection_colors", "ev-view_8c.html#a60b52ce8d5e2aa3cb26fb9678cbcc558", null ],
     [ "_ev_view_set_focused_element", "ev-view_8c.html#a2e6c9f7e0c8bedfc59263b8bfdaee158", null ],
@@ -137,7 +138,6 @@ var ev_view_8c =
     [ "ev_view_find_started", "ev-view_8c.html#ade9a15b28ef8a3c52f00fe2644a6c0f9", null ],
     [ "ev_view_find_window_child_for_annot", "ev-view_8c.html#a21dba3be737a58bde45a57fa5840cca9", null ],
     [ "ev_view_focus_annotation", "ev-view_8c.html#ae3e9746258db229cb1f8fac7ccdf49fc", null ],
-    [ "ev_view_focus_form_field", "ev-view_8c.html#a9c765a36502dce81a89d0605e8eee608", null ],
     [ "ev_view_focus_in", "ev-view_8c.html#a0a0d618092f963c971164c556e7d2a0e", null ],
     [ "ev_view_focus_out", "ev-view_8c.html#a9394dc99be3d289f2189857ebc802bbf", null ],
     [ "ev_view_forall", "ev-view_8c.html#a1ef30f5afecf5e17e458e85c572de289", null ],
