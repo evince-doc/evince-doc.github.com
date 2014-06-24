@@ -1,5 +1,12 @@
 var NAVTREEINDEX26 =
 {
+"structDviFontMapInfo.html#abf986cf148f9221f3217594a4334d77c":[6,0,318,6],
+"structDviFontMapInfo.html#aee2e2573d80f1fa7836b7058e6593315":[6,0,318,2],
+"structDviFontMapInfo.html#af83366b8b00bb5d286d6f0720b9916a6":[6,0,318,5],
+"structEpsfBox.html":[6,0,319],
+"structEpsfBox.html#a045671ebcf269681973c5e09c3584986":[6,0,319,1],
+"structEpsfBox.html#a43fcbef6fc6a7ba99bc63f28ed78715c":[6,0,319,0],
+"structEpsfBox.html#a529b5fadeff82e021653ca3549372fe9":[6,0,319,2],
 "structEpsfBox.html#ad7d26931cedf46d83cd809d269a87962":[6,0,319,3],
 "structEpsfBox.html#add0dbcf214e9a92acbd7b11d5ff33a43":[6,0,319,4],
 "structEvAnnotationMarkupProps.html":[6,0,320],
@@ -242,12 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb":[6,0,21,3],
 "struct__DviDevice.html#ab402b7bae3bc33ba74838c5338f48461":[6,0,21,10],
 "struct__DviDevice.html#abd5d658e20070a6471e8e2a8476eaf5f":[6,0,21,2],
-"struct__DviDevice.html#abfb00c9040b5b53aab2f862d1fefb105":[6,0,21,4],
-"struct__DviDevice.html#ac28972a8a7036cfb8c7eae6c5e7bbcbc":[6,0,21,5],
-"struct__DviDevice.html#ad74035fdc3160c87369aaa793ac0b2a2":[6,0,21,7],
-"struct__DviDevice.html#adbd79d3ba7190df76fbe7190ac30b3b3":[6,0,21,1],
-"struct__DviDevice.html#aeafbb8c4e69807ee8b7055eaf03ba4ba":[6,0,21,0],
-"struct__DviDocument.html":[6,0,22],
-"struct__DviDocument.html#a03ec6f7c7470b8a0d9eb45616d106936":[6,0,22,2],
-"struct__DviDocument.html#a148d3882abb332d781dcce2f04082185":[6,0,22,5]
+"struct__DviDevice.html#abfb00c9040b5b53aab2f862d1fefb105":[6,0,21,4]
 };

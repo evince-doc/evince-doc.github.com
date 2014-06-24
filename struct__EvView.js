@@ -6,6 +6,7 @@ var struct__EvView =
     [ "can_zoom_in", "struct__EvView.html#a60f9d92e5cbc011d977c2f3cb9015f45", null ],
     [ "can_zoom_out", "struct__EvView.html#aeec1146610c7b3420413afad600fed33", null ],
     [ "caret_enabled", "struct__EvView.html#a7d08cd0176dfb04c95e43d5236b6323a", null ],
+    [ "child_focus_idle_id", "struct__EvView.html#a8557f592c6f2fffd87e2adc72295a22f", null ],
     [ "children", "struct__EvView.html#aceddb80e1dc4e112033b650f38fa552c", null ],
     [ "continuous", "struct__EvView.html#aa22cff27441457edfb23ef5abc4f33b4", null ],
     [ "current_job", "struct__EvView.html#a4fbab6fb948f3fa3deb0e5e770530087", null ],

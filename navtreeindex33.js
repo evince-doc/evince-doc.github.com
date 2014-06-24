@@ -1,5 +1,13 @@
 var NAVTREEINDEX33 =
 {
+"struct__PdfDocument.html#a3f732df9f5e956858ee3ea81ef7feafb":[6,0,289,10],
+"struct__PdfDocument.html#a638f2ceaafcb57e8cf62c1a858c1092c":[6,0,289,7],
+"struct__PdfDocument.html#a78c5b17a5a22f9dc64a889999c414a06":[6,0,289,2],
+"struct__PdfDocument.html#ab65a44344dbea620f915cd01404e4d94":[6,0,289,6],
+"struct__PdfDocument.html#abeca2dfa75f70f82b3f0b93822f29dc9":[6,0,289,3],
+"struct__PdfDocument.html#ac0b6605591af9a0a63a812cf9ca9a65e":[6,0,289,1],
+"struct__PdfDocument.html#ac68ad13423c650aa8a37d7b9b912ce3a":[6,0,289,5],
+"struct__PdfDocument.html#ad368b3c33d01a3ce01a87d5191fd814b":[6,0,289,4],
 "struct__PdfDocument.html#adedd7cf9a75fd6287707915895b4dac2":[6,0,289,8],
 "struct__PdfDocument.html#af33ea29e936a7d8c86a00b2a7ee99412":[6,0,289,9],
 "struct__PdfDocumentClass.html":[6,0,290],
@@ -241,13 +249,5 @@ var NAVTREEINDEX33 =
 "synctex__parser_8c.html#a58c7a5460b5a2f19bf1e1b3a6e4993fd":[7,0,0,1,2,0,131],
 "synctex__parser_8c.html#a5a114637248e63ed20872242cb6fdd5f":[7,0,0,1,2,0,143],
 "synctex__parser_8c.html#a5af5e1beeea605ac01f045a53e308c02":[7,0,0,1,2,0,106],
-"synctex__parser_8c.html#a5ba3112f4cb4828de2bb2bb34bc69eea":[7,0,0,1,2,0,122],
-"synctex__parser_8c.html#a5c0e3b046afbd2affc4f7e99da93e538":[7,0,0,1,2,0,104],
-"synctex__parser_8c.html#a5c0f0fbfd48ebb652c3d5ec8c25ad872":[7,0,0,1,2,0,87],
-"synctex__parser_8c.html#a5cf163be57ada4953dc0e0c38f7a5d9a":[7,0,0,1,2,0,94],
-"synctex__parser_8c.html#a5d22f81cdf689bd1ff01af3ea14c68f6":[7,0,0,1,2,0,21],
-"synctex__parser_8c.html#a5d82a2c2dbe6ab30274290848411d667":[7,0,0,1,2,0,27],
-"synctex__parser_8c.html#a5eac025f376b4f657afa3589551a9f58":[7,0,0,1,2,0,267],
-"synctex__parser_8c.html#a5f41349dfe9d2a9f413e5d7ced4c0b74":[7,0,0,1,2,0,28],
-"synctex__parser_8c.html#a5f7109cdc5483a179edb80a7c54c6bd5":[7,0,0,1,2,0,223]
+"synctex__parser_8c.html#a5ba3112f4cb4828de2bb2bb34bc69eea":[7,0,0,1,2,0,122]
 };

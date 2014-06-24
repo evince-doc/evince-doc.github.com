@@ -20,6 +20,7 @@ var searchData=
   ['chars',['chars',['../struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7',1,'_TFMInfo::chars()'],['../struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4',1,'_DviFont::chars()']]],
   ['checksum',['checksum',['../struct__TFMInfo.html#a8429fe8b87476f4bf583bbce3f16b9cc',1,'_TFMInfo::checksum()'],['../struct__DviFont.html#a47feda7ada625d042192be0946b3d294',1,'_DviFont::checksum()']]],
   ['child',['child',['../struct____synctex__class__t.html#ace25029406ca336f39872a8b77564748',1,'__synctex_class_t']]],
+  ['child_5ffocus_5fidle_5fid',['child_focus_idle_id',['../struct__EvView.html#a8557f592c6f2fffd87e2adc72295a22f',1,'_EvView']]],
   ['children',['children',['../struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8',1,'_EvPageAccessiblePrivate::children()'],['../struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5',1,'_EvViewAccessiblePrivate::children()'],['../struct__EvView.html#aceddb80e1dc4e112033b650f38fa552c',1,'_EvView::children()']]],
   ['children_5finitialized',['children_initialized',['../struct__EvPageAccessiblePrivate.html#a68c87a67f5a2924c03072ed5c3a194b7',1,'_EvPageAccessiblePrivate']]],
   ['chrome',['chrome',['../struct__EvWindowPrivate.html#abe9128f9496a33a0cb6c56e3d8310058',1,'_EvWindowPrivate']]],

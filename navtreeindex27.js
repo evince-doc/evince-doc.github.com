@@ -1,5 +1,12 @@
 var NAVTREEINDEX27 =
 {
+"struct__DviDevice.html#ac28972a8a7036cfb8c7eae6c5e7bbcbc":[6,0,21,5],
+"struct__DviDevice.html#ad74035fdc3160c87369aaa793ac0b2a2":[6,0,21,7],
+"struct__DviDevice.html#adbd79d3ba7190df76fbe7190ac30b3b3":[6,0,21,1],
+"struct__DviDevice.html#aeafbb8c4e69807ee8b7055eaf03ba4ba":[6,0,21,0],
+"struct__DviDocument.html":[6,0,22],
+"struct__DviDocument.html#a03ec6f7c7470b8a0d9eb45616d106936":[6,0,22,2],
+"struct__DviDocument.html#a148d3882abb332d781dcce2f04082185":[6,0,22,5],
 "struct__DviDocument.html#a68b13a009c504ab94c6c72f00c4b6f67":[6,0,22,6],
 "struct__DviDocument.html#a9f8a2ef0d310ff90873e84ef6bb7ac9e":[6,0,22,4],
 "struct__DviDocument.html#aa2623d69e0b9ff73dfdb558114380466":[6,0,22,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX27 =
 "struct__EvAnnotationWindow.html#a5c94d1268c4e1a7019665ef47b2fb469":[6,0,55,7],
 "struct__EvAnnotationWindow.html#a9308d541cb04cc83f080c582e91dd068":[6,0,55,8],
 "struct__EvAnnotationWindow.html#a9a5587d83ed6a48609ea59eead8c1725":[6,0,55,11],
-"struct__EvAnnotationWindow.html#aa28954fac55189f9da50354147d9c953":[6,0,55,3],
-"struct__EvAnnotationWindow.html#aa78b9167d0190a7ba5ae533a9a91f5ac":[6,0,55,9],
-"struct__EvAnnotationWindow.html#ab2c383d4ec1518883360c6042162e52f":[6,0,55,12],
-"struct__EvAnnotationWindow.html#ab6ad3e9c18dd73eb5dbaf50c8dcb5d31":[6,0,55,10],
-"struct__EvAnnotationWindow.html#ac76616380599ba4ce8606c076c42956c":[6,0,55,6],
-"struct__EvAnnotationWindow.html#acf30b17ba49f5527ec862fe22bfb3719":[6,0,55,0],
-"struct__EvAnnotationWindow.html#aeda5827d69fe6cf687aa94820f2dc664":[6,0,55,4],
-"struct__EvAnnotationWindow.html#afe8b1858572cfb2563153a0b6e81ecb7":[6,0,55,13]
+"struct__EvAnnotationWindow.html#aa28954fac55189f9da50354147d9c953":[6,0,55,3]
 };
