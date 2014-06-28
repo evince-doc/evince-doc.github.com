@@ -71,12 +71,12 @@ var NAVTREEINDEX =
 "struct__EvAnnotationWindow.html#aa78b9167d0190a7ba5ae533a9a91f5ac",
 "struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3",
 "struct__EvJobThumbnail.html#ae3976c2f6c42f3e8cc69c566f0a3fe46",
-"struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158",
-"struct__EvView.html#a2950bfa7de31c4975be2405f6394adba",
-"struct__PdfDocument.html#a3f732df9f5e956858ee3ea81ef7feafb",
-"synctex__parser_8c.html#a5c0e3b046afbd2affc4f7e99da93e538",
-"synctex__parser__utils_8c.html#a4be10ac1ea9a318df2da20223b8824b9",
-"util_8c.html#ab9b6079b3d557763c583e540b6f25238"
+"struct__EvPrintOperationPrint.html",
+"struct__EvView.html#a27518d47f65599cafb713e456f4977ec",
+"struct__PdfDocument.html",
+"synctex__parser_8c.html#a5af5e1beeea605ac01f045a53e308c02",
+"synctex__parser__utils_8c.html#a130dca9145c602cde3d9e0b100cd39b2",
+"util_8c.html#aaf6d2d57a2dfa902e9ec0ec629597fba"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

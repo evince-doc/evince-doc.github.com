@@ -309,17 +309,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-link-accessible_8c_source.html#l00409">409</a> of file <a class="el" href="ev-link-accessible_8c_source.html">ev-link-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;{</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="struct__EvLinkAccessible.html">EvLinkAccessible</a> *atk_link;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        atk_link = g_object_new (<a class="code" href="ev-link-accessible_8h.html#a9753530c3eecf8e898db22ff47043b43">EV_TYPE_LINK_ACCESSIBLE</a>, NULL);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        atk_link-&gt;<a class="code" href="struct__EvLinkAccessible.html#ab014dc7b14761b591326fe53be5a7268">priv</a>-&gt;<a class="code" href="struct__EvLinkAccessiblePrivate.html#a7933696bd7e54c7d9caeb5be63ce612b">page</a> = page;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        atk_link-&gt;<a class="code" href="struct__EvLinkAccessible.html#ab014dc7b14761b591326fe53be5a7268">priv</a>-&gt;<a class="code" href="struct__EvLinkAccessiblePrivate.html#a7b4687ec96f4f6d4605c7ea2ebb1ed48">link</a> = g_object_ref (link);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        atk_link-&gt;<a class="code" href="struct__EvLinkAccessible.html#ab014dc7b14761b591326fe53be5a7268">priv</a>-&gt;<a class="code" href="struct__EvLinkAccessiblePrivate.html#a7444afc175c4900b08781549af61a3e5">area</a> = *area;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-link-accessible_8h.html#af9f34d9dd4b9421ecc555f5792ee021a">EV_LINK_ACCESSIBLE</a> (atk_link);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-link-accessible_8c_source.html#l00426">426</a> of file <a class="el" href="ev-link-accessible_8c_source.html">ev-link-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <a class="code" href="struct__EvLinkAccessible.html">EvLinkAccessible</a> *atk_link;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        atk_link = g_object_new (<a class="code" href="ev-link-accessible_8h.html#a9753530c3eecf8e898db22ff47043b43">EV_TYPE_LINK_ACCESSIBLE</a>, NULL);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        atk_link-&gt;<a class="code" href="struct__EvLinkAccessible.html#ab014dc7b14761b591326fe53be5a7268">priv</a>-&gt;<a class="code" href="struct__EvLinkAccessiblePrivate.html#a7933696bd7e54c7d9caeb5be63ce612b">page</a> = page;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        atk_link-&gt;<a class="code" href="struct__EvLinkAccessible.html#ab014dc7b14761b591326fe53be5a7268">priv</a>-&gt;<a class="code" href="struct__EvLinkAccessiblePrivate.html#a7b4687ec96f4f6d4605c7ea2ebb1ed48">link</a> = g_object_ref (link);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        atk_link-&gt;<a class="code" href="struct__EvLinkAccessible.html#ab014dc7b14761b591326fe53be5a7268">priv</a>-&gt;<a class="code" href="struct__EvLinkAccessiblePrivate.html#a7444afc175c4900b08781549af61a3e5">area</a> = *area;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-link-accessible_8h.html#af9f34d9dd4b9421ecc555f5792ee021a">EV_LINK_ACCESSIBLE</a> (atk_link);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -339,7 +339,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-link-accessible_8h.html">ev-link-accessible.h</a></li>
-    <li class="footer">Generated on Sat Jun 28 2014 19:02:10 for Evince by
+    <li class="footer">Generated on Sat Jun 28 2014 20:52:14 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

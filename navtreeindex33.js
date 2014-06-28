@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"struct__PdfDocument.html":[6,0,289],
+"struct__PdfDocument.html#a0d75ac18ce3958b1a1f8b7604d7653c9":[6,0,289,0],
 "struct__PdfDocument.html#a3f732df9f5e956858ee3ea81ef7feafb":[6,0,289,10],
 "struct__PdfDocument.html#a638f2ceaafcb57e8cf62c1a858c1092c":[6,0,289,7],
 "struct__PdfDocument.html#a78c5b17a5a22f9dc64a889999c414a06":[6,0,289,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "synctex__parser_8c.html#a589b8d16ac7569f68f94e75268f75b9f":[7,0,0,1,2,0,88],
 "synctex__parser_8c.html#a58ba09c90e76b5a58864a771073e37d5":[7,0,0,1,2,0,258],
 "synctex__parser_8c.html#a58c7a5460b5a2f19bf1e1b3a6e4993fd":[7,0,0,1,2,0,131],
-"synctex__parser_8c.html#a5a114637248e63ed20872242cb6fdd5f":[7,0,0,1,2,0,143],
-"synctex__parser_8c.html#a5af5e1beeea605ac01f045a53e308c02":[7,0,0,1,2,0,106],
-"synctex__parser_8c.html#a5ba3112f4cb4828de2bb2bb34bc69eea":[7,0,0,1,2,0,122]
+"synctex__parser_8c.html#a5a114637248e63ed20872242cb6fdd5f":[7,0,0,1,2,0,143]
 };

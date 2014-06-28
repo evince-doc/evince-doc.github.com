@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvView.html#a27518d47f65599cafb713e456f4977ec":[6,0,267,23],
+"struct__EvView.html#a28964bdcfec0753d509c785a83b826b0":[6,0,267,30],
 "struct__EvView.html#a2950bfa7de31c4975be2405f6394adba":[6,0,267,51],
 "struct__EvView.html#a2d33b3ab5415001f8ed01053c9d6f354":[6,0,267,63],
 "struct__EvView.html#a30c86248acd0188206495c0fd00e8590":[6,0,267,25],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "struct__PSFontMap.html#a7331b00c16ac8761629c1ffbfcbc9b98":[6,0,293,4],
 "struct__PSFontMap.html#a7f3a387c87951ba908419f68efce8f1a":[6,0,293,3],
 "struct__PSFontMap.html#a839910a3dd6855974ff86d21072900db":[6,0,293,0],
-"struct__PSFontMap.html#afe03d7461e2ade2e54eee3afd00269a8":[6,0,293,2],
-"struct__PdfDocument.html":[6,0,289],
-"struct__PdfDocument.html#a0d75ac18ce3958b1a1f8b7604d7653c9":[6,0,289,0]
+"struct__PSFontMap.html#afe03d7461e2ade2e54eee3afd00269a8":[6,0,293,2]
 };
