@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structDviFontMapInfo.html#a99d621dd8f0edef083173671ddba7e91":[6,0,318,7],
 "structDviFontMapInfo.html#abf986cf148f9221f3217594a4334d77c":[6,0,318,6],
 "structDviFontMapInfo.html#aee2e2573d80f1fa7836b7058e6593315":[6,0,318,2],
 "structDviFontMapInfo.html#af83366b8b00bb5d286d6f0720b9916a6":[6,0,318,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviDevice.html#a77bc6963184a3c066dbdd57eaadfa147":[6,0,21,8],
 "struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb":[6,0,21,3],
 "struct__DviDevice.html#ab402b7bae3bc33ba74838c5338f48461":[6,0,21,10],
-"struct__DviDevice.html#abd5d658e20070a6471e8e2a8476eaf5f":[6,0,21,2],
-"struct__DviDevice.html#abfb00c9040b5b53aab2f862d1fefb105":[6,0,21,4]
+"struct__DviDevice.html#abd5d658e20070a6471e8e2a8476eaf5f":[6,0,21,2]
 };

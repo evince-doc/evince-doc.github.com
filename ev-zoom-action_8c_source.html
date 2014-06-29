@@ -465,188 +465,202 @@ $(document).ready(function(){initNavTree('ev-zoom-action_8c_source.html','');});
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                              (gpointer)&amp;zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>);</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        g_clear_object (&amp;zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ab5f76d6664e1269e89e9cfe08c650831">zoom_free_section</a>);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        G_OBJECT_CLASS (ev_zoom_action_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#ae8c25c3ae7ec485220b6b11c66e62ba3">  365</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#ae8c25c3ae7ec485220b6b11c66e62ba3">ev_zoom_action_set_property</a> (GObject      *<span class="keywordtype">object</span>,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                             guint         prop_id,</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                             <span class="keyword">const</span> GValue *value,</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                             GParamSpec   *pspec)</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;{</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action = <a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>:</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a> = g_value_get_object (value);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a4eeefc644a379d0b127c793b061d3bbb">PROP_MENU</a>:</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716">menu</a> = g_value_get_object (value);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                G_OBJECT_WARN_INVALID_PROPERTY_ID (<span class="keywordtype">object</span>, prop_id, pspec);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#af7a815c2c04cc4c57694dc620ad7ea92">  385</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#af7a815c2c04cc4c57694dc620ad7ea92">setup_initial_entry_size</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action)</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;{</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        GMenuModel *menu;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        guint       i;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        gint        n_items;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        gint        width = 0;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        menu = g_menu_model_get_item_link (G_MENU_MODEL (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716">menu</a>),</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                                           <a class="code" href="ev-zoom-action_8c.html#a70ad55be767ca0a42c9150d24618e4caa0d30b21e4e7b05389aa162043b9c8ed8">ZOOM_MODES_SECTION</a>, G_MENU_LINK_SECTION);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        n_items = g_menu_model_get_n_items (menu);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; n_items; i++) {</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                GVariant *value;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                gint      length;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                value = g_menu_model_get_item_attribute_value (menu, i, G_MENU_ATTRIBUTE_LABEL, NULL);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                length = g_utf8_strlen (g_variant_get_string (value, NULL), -1);</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                <span class="keywordflow">if</span> (length &gt; width)</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                        width = length;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                g_variant_unref (value);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        }</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        g_object_unref (menu);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="comment">/* Count the toggle size as one character more */</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        gtk_entry_set_width_chars (GTK_ENTRY (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>), width + 1);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        g_clear_object (&amp;zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716">menu</a>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        g_clear_object (&amp;zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ab5f76d6664e1269e89e9cfe08c650831">zoom_free_section</a>);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        G_OBJECT_CLASS (ev_zoom_action_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#ae8c25c3ae7ec485220b6b11c66e62ba3">  366</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#ae8c25c3ae7ec485220b6b11c66e62ba3">ev_zoom_action_set_property</a> (GObject      *<span class="keywordtype">object</span>,</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                             guint         prop_id,</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                             <span class="keyword">const</span> GValue *value,</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                             GParamSpec   *pspec)</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;{</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action = <a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>:</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a> = g_value_get_object (value);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a4eeefc644a379d0b127c793b061d3bbb">PROP_MENU</a>:</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716">menu</a> = g_value_dup_object (value);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                G_OBJECT_WARN_INVALID_PROPERTY_ID (<span class="keywordtype">object</span>, prop_id, pspec);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#af7a815c2c04cc4c57694dc620ad7ea92">  386</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#af7a815c2c04cc4c57694dc620ad7ea92">setup_initial_entry_size</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action)</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;{</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        GMenuModel *menu;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        guint       i;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        gint        n_items;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        gint        width = 0;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        menu = g_menu_model_get_item_link (G_MENU_MODEL (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716">menu</a>),</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                                           <a class="code" href="ev-zoom-action_8c.html#a70ad55be767ca0a42c9150d24618e4caa0d30b21e4e7b05389aa162043b9c8ed8">ZOOM_MODES_SECTION</a>, G_MENU_LINK_SECTION);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        n_items = g_menu_model_get_n_items (menu);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; n_items; i++) {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                GVariant *value;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                gint      length;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                value = g_menu_model_get_item_attribute_value (menu, i, G_MENU_ATTRIBUTE_LABEL, NULL);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                length = g_utf8_strlen (g_variant_get_string (value, NULL), -1);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                <span class="keywordflow">if</span> (length &gt; width)</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                        width = length;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                g_variant_unref (value);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        g_object_unref (menu);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        gtk_entry_set_width_chars (GTK_ENTRY (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>), width);</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#a9812e61b227f5477c9e2cac2c3343ceb">  413</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#a9812e61b227f5477c9e2cac2c3343ceb">ev_zoom_action_constructed</a> (GObject *<span class="keywordtype">object</span>)</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;{</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action = <a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        G_OBJECT_CLASS (ev_zoom_action_parent_class)-&gt;constructed (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#ae6ba47b95653c5fa0776278ab54d846c">  413</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#ae6ba47b95653c5fa0776278ab54d846c">ev_zoom_action_get_preferred_width</a> (GtkWidget *widget,</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                    gint      *minimum_width,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                                    gint      *natural_width)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        *minimum_width = *natural_width = 0;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ab5f76d6664e1269e89e9cfe08c650831">zoom_free_section</a> =</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                g_menu_model_get_item_link (G_MENU_MODEL (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716">menu</a>),</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                            <a class="code" href="ev-zoom-action_8c.html#a70ad55be767ca0a42c9150d24618e4caaa7a396385561ae837263bd7488c638d6">ZOOM_FREE_SECTION</a>, G_MENU_LINK_SECTION);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a78b70906154788cb300048ee413dd25a">ev_zoom_action_populate_free_zoom_section</a> (zoom_action);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        g_object_add_weak_pointer (G_OBJECT (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>),</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                   (gpointer)&amp;zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>);</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>)) {</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                <a class="code" href="ev-zoom-action_8c.html#a769ac354433bd1a33cb20f240684720e">ev_zoom_action_update_zoom_level</a> (zoom_action);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                <a class="code" href="ev-zoom-action_8c.html#a01e6238cf686ac788e95c0abd90c8db5">ev_zoom_action_set_zoom_level</a> (zoom_action, 1.);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                gtk_widget_set_sensitive (GTK_WIDGET (zoom_action), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        }</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a46fdeaf31a61f962b9f74d5951afdcc9">document_changed_cb</a>),</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                 zoom_action, 0);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::scale&quot;</span>,</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#ae1f6a8b3b726c79357b1f6f5e9897d6d">zoom_changed_cb</a>),</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                                 zoom_action, 0);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::max-scale&quot;</span>,</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a41179e9eae7d3f189f2ee91e0cfbbe3a">max_zoom_changed_cb</a>),</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                                 zoom_action, 0);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#af7a815c2c04cc4c57694dc620ad7ea92">setup_initial_entry_size</a> (zoom_action);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;}</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#ade7f7c10944c8c0b548c5839fd2a03a2">  447</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#ade7f7c10944c8c0b548c5839fd2a03a2">ev_zoom_action_class_init</a> (<a class="code" href="struct__EvZoomActionClass.html">EvZoomActionClass</a> *<span class="keyword">class</span>)</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;{</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        GObjectClass *object_class = G_OBJECT_CLASS (<span class="keyword">class</span>);</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        object_class-&gt;finalize = <a class="code" href="ev-zoom-action_8c.html#af62f049d0e1ac78d4c353efd80015120">ev_zoom_action_finalize</a>;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        object_class-&gt;constructed = <a class="code" href="ev-zoom-action_8c.html#a9812e61b227f5477c9e2cac2c3343ceb">ev_zoom_action_constructed</a>;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        object_class-&gt;set_property = <a class="code" href="ev-zoom-action_8c.html#ae8c25c3ae7ec485220b6b11c66e62ba3">ev_zoom_action_set_property</a>;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        g_object_class_install_property (object_class,</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                                         <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>,</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;document-model&quot;</span>,</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                                                              <span class="stringliteral">&quot;DocumentModel&quot;</span>,</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                                              <span class="stringliteral">&quot;The document model&quot;</span>,</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                                                              <a class="code" href="ev-document-model_8h.html#a8fb246bf23bde49e9edcca57a6c83f2a">EV_TYPE_DOCUMENT_MODEL</a>,</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                                                              G_PARAM_WRITABLE |</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                                                              G_PARAM_CONSTRUCT_ONLY |</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        g_object_class_install_property (object_class,</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                                         <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a4eeefc644a379d0b127c793b061d3bbb">PROP_MENU</a>,</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;menu&quot;</span>,</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                                              <span class="stringliteral">&quot;Menu&quot;</span>,</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                                              <span class="stringliteral">&quot;The zoom popup menu&quot;</span>,</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                                              G_TYPE_MENU,</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                                                              G_PARAM_WRITABLE |</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                                                              G_PARAM_CONSTRUCT_ONLY |</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-zoom-action_8c.html#abe974f22edeef8189603ba75fd90ff3ca84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>] =</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                g_signal_new (<span class="stringliteral">&quot;activated&quot;</span>,</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                              G_OBJECT_CLASS_TYPE (object_class),</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                              G_SIGNAL_RUN_LAST,</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                              0, NULL, NULL,</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                              g_cclosure_marshal_VOID__VOID,</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                              G_TYPE_NONE, 0);</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        g_type_class_add_private (object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a>));</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;}</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00487"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#adb70363fd76093b4e565f148b67882ed">  487</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#adb70363fd76093b4e565f148b67882ed">ev_zoom_action_init</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action)</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a> *priv;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE (zoom_action, <a class="code" href="ev-zoom-action_8h.html#ae323f599646676ba8f0852eb442ae64c">EV_TYPE_ZOOM_ACTION</a>, <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a>);</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        priv = zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        gtk_orientable_set_orientation (GTK_ORIENTABLE (zoom_action), GTK_ORIENTATION_VERTICAL);</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a> = gtk_entry_new ();</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        gtk_entry_set_icon_from_icon_name (GTK_ENTRY (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>),</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;                                           GTK_ENTRY_ICON_SECONDARY,</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                                           <span class="stringliteral">&quot;go-down-symbolic&quot;</span>);</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        gtk_box_pack_start (GTK_BOX (zoom_action), priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        gtk_widget_show (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>);</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <span class="stringliteral">&quot;icon-press&quot;</span>,</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#ae20f0d63784c9450fdc1327020e232ac">entry_icon_press_callback</a>),</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                          zoom_action);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <span class="stringliteral">&quot;activate&quot;</span>,</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#afb4155355f06a275df1a1fbb572f4ce5">entry_activated_cb</a>),</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                          zoom_action);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        g_signal_connect_swapped (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <span class="stringliteral">&quot;focus-out-event&quot;</span>,</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                                  G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a4564a0ea3685cb46b6ed7409e92ea915">focus_out_cb</a>),</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                                  zoom_action);</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;}</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;GtkWidget *</div>
-<div class="line"><a name="l00515"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a7697084946ea50422bb8ed9b426f2dd7">  515</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#a7697084946ea50422bb8ed9b426f2dd7">ev_zoom_action_new</a> (<a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model,</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                    GMenu           *menu)</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;{</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model), NULL);</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        g_return_val_if_fail (G_IS_MENU (menu), NULL);</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-zoom-action_8h.html#ae323f599646676ba8f0852eb442ae64c">EV_TYPE_ZOOM_ACTION</a>,</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                                         <span class="stringliteral">&quot;document-model&quot;</span>, model,</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                                         <span class="stringliteral">&quot;menu&quot;</span>, menu,</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                                         NULL));</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;}</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;gboolean</div>
-<div class="line"><a name="l00528"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a3d0ad6565b1c5a1d0907a68304c848fc">  528</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *action)</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;{</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-zoom-action_8h.html#a0420458aa0d0d2ce3c2de673dc76771a">EV_IS_ZOOM_ACTION</a> (action), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        <span class="keywordflow">return</span> action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#af4dddb3804ec0a7b602ef540754fc76a">popup_shown</a>;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;}</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        GTK_WIDGET_CLASS (ev_zoom_action_parent_class)-&gt;get_preferred_width (widget, minimum_width, natural_width);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        *natural_width = *minimum_width;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#a9812e61b227f5477c9e2cac2c3343ceb">  424</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#a9812e61b227f5477c9e2cac2c3343ceb">ev_zoom_action_constructed</a> (GObject *<span class="keywordtype">object</span>)</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action = <a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        G_OBJECT_CLASS (ev_zoom_action_parent_class)-&gt;constructed (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ab5f76d6664e1269e89e9cfe08c650831">zoom_free_section</a> =</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                g_menu_model_get_item_link (G_MENU_MODEL (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716">menu</a>),</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                                            <a class="code" href="ev-zoom-action_8c.html#a70ad55be767ca0a42c9150d24618e4caaa7a396385561ae837263bd7488c638d6">ZOOM_FREE_SECTION</a>, G_MENU_LINK_SECTION);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a78b70906154788cb300048ee413dd25a">ev_zoom_action_populate_free_zoom_section</a> (zoom_action);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        g_object_add_weak_pointer (G_OBJECT (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>),</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                                   (gpointer)&amp;zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>)) {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                <a class="code" href="ev-zoom-action_8c.html#a769ac354433bd1a33cb20f240684720e">ev_zoom_action_update_zoom_level</a> (zoom_action);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                <a class="code" href="ev-zoom-action_8c.html#a01e6238cf686ac788e95c0abd90c8db5">ev_zoom_action_set_zoom_level</a> (zoom_action, 1.);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                gtk_widget_set_sensitive (GTK_WIDGET (zoom_action), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        }</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a46fdeaf31a61f962b9f74d5951afdcc9">document_changed_cb</a>),</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                                 zoom_action, 0);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::scale&quot;</span>,</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#ae1f6a8b3b726c79357b1f6f5e9897d6d">zoom_changed_cb</a>),</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                                 zoom_action, 0);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        g_signal_connect_object (zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a>, <span class="stringliteral">&quot;notify::max-scale&quot;</span>,</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                                 G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a41179e9eae7d3f189f2ee91e0cfbbe3a">max_zoom_changed_cb</a>),</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                                 zoom_action, 0);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#af7a815c2c04cc4c57694dc620ad7ea92">setup_initial_entry_size</a> (zoom_action);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;}</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#abfbc18f75cca80755012d3a87527b7d6">  458</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#abfbc18f75cca80755012d3a87527b7d6">ev_zoom_action_class_init</a> (<a class="code" href="struct__EvZoomActionClass.html">EvZoomActionClass</a> *klass)</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;{</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        GObjectClass *object_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        GtkWidgetClass *widget_class = GTK_WIDGET_CLASS(klass);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        object_class-&gt;finalize = <a class="code" href="ev-zoom-action_8c.html#af62f049d0e1ac78d4c353efd80015120">ev_zoom_action_finalize</a>;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        object_class-&gt;constructed = <a class="code" href="ev-zoom-action_8c.html#a9812e61b227f5477c9e2cac2c3343ceb">ev_zoom_action_constructed</a>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        object_class-&gt;set_property = <a class="code" href="ev-zoom-action_8c.html#ae8c25c3ae7ec485220b6b11c66e62ba3">ev_zoom_action_set_property</a>;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        widget_class-&gt;get_preferred_width = <a class="code" href="ev-zoom-action_8c.html#ae6ba47b95653c5fa0776278ab54d846c">ev_zoom_action_get_preferred_width</a>;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        g_object_class_install_property (object_class,</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                         <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>,</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;document-model&quot;</span>,</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                                                              <span class="stringliteral">&quot;DocumentModel&quot;</span>,</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                                                              <span class="stringliteral">&quot;The document model&quot;</span>,</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                                                              <a class="code" href="ev-document-model_8h.html#a8fb246bf23bde49e9edcca57a6c83f2a">EV_TYPE_DOCUMENT_MODEL</a>,</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                                                              G_PARAM_WRITABLE |</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                                                              G_PARAM_CONSTRUCT_ONLY |</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        g_object_class_install_property (object_class,</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                                         <a class="code" href="ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a4eeefc644a379d0b127c793b061d3bbb">PROP_MENU</a>,</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;menu&quot;</span>,</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                                                              <span class="stringliteral">&quot;Menu&quot;</span>,</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                                                              <span class="stringliteral">&quot;The zoom popup menu&quot;</span>,</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                                                              G_TYPE_MENU,</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                                                              G_PARAM_WRITABLE |</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                                                              G_PARAM_CONSTRUCT_ONLY |</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-zoom-action_8c.html#abe974f22edeef8189603ba75fd90ff3ca84b328a7ebdea4c8c4ed62e035ada28d">ACTIVATED</a>] =</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                g_signal_new (<span class="stringliteral">&quot;activated&quot;</span>,</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                              G_OBJECT_CLASS_TYPE (object_class),</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                              G_SIGNAL_RUN_LAST,</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                              0, NULL, NULL,</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                              g_cclosure_marshal_VOID__VOID,</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                              G_TYPE_NONE, 0);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        g_type_class_add_private (object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a>));</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;}</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00501"></a><span class="lineno"><a class="code" href="ev-zoom-action_8c.html#adb70363fd76093b4e565f148b67882ed">  501</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#adb70363fd76093b4e565f148b67882ed">ev_zoom_action_init</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action)</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;{</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a> *priv;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE (zoom_action, <a class="code" href="ev-zoom-action_8h.html#ae323f599646676ba8f0852eb442ae64c">EV_TYPE_ZOOM_ACTION</a>, <a class="code" href="struct__EvZoomActionPrivate.html">EvZoomActionPrivate</a>);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        priv = zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        gtk_orientable_set_orientation (GTK_ORIENTABLE (zoom_action), GTK_ORIENTATION_VERTICAL);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a> = gtk_entry_new ();</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        gtk_entry_set_icon_from_icon_name (GTK_ENTRY (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>),</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                                           GTK_ENTRY_ICON_SECONDARY,</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                                           <span class="stringliteral">&quot;go-down-symbolic&quot;</span>);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        gtk_box_pack_start (GTK_BOX (zoom_action), priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        gtk_widget_show (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <span class="stringliteral">&quot;icon-press&quot;</span>,</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#ae20f0d63784c9450fdc1327020e232ac">entry_icon_press_callback</a>),</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                          zoom_action);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        g_signal_connect (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <span class="stringliteral">&quot;activate&quot;</span>,</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                          G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#afb4155355f06a275df1a1fbb572f4ce5">entry_activated_cb</a>),</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                          zoom_action);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        g_signal_connect_swapped (priv-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a5b3219d42ee5de79d8942d3ade07740d">entry</a>, <span class="stringliteral">&quot;focus-out-event&quot;</span>,</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                                  G_CALLBACK (<a class="code" href="ev-zoom-action_8c.html#a4564a0ea3685cb46b6ed7409e92ea915">focus_out_cb</a>),</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                                  zoom_action);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;}</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l00529"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a7697084946ea50422bb8ed9b426f2dd7">  529</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#a7697084946ea50422bb8ed9b426f2dd7">ev_zoom_action_new</a> (<a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model,</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                    GMenu           *menu)</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;{</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model), NULL);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        g_return_val_if_fail (G_IS_MENU (menu), NULL);</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-zoom-action_8h.html#ae323f599646676ba8f0852eb442ae64c">EV_TYPE_ZOOM_ACTION</a>,</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                                         <span class="stringliteral">&quot;document-model&quot;</span>, model,</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                                         <span class="stringliteral">&quot;menu&quot;</span>, menu,</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                                         NULL));</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;}</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;gboolean</div>
+<div class="line"><a name="l00542"></a><span class="lineno"><a class="code" href="ev-zoom-action_8h.html#a3d0ad6565b1c5a1d0907a68304c848fc">  542</a></span>&#160;<a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *action)</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;{</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-zoom-action_8h.html#a0420458aa0d0d2ce3c2de673dc76771a">EV_IS_ZOOM_ACTION</a> (action), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="keywordflow">return</span> action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#af4dddb3804ec0a7b602ef540754fc76a">popup_shown</a>;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-zoom-action_8c.html">ev-zoom-action.c</a></li>
-    <li class="footer">Generated on Sat Jun 28 2014 20:52:09 for Evince by
+    <li class="footer">Generated on Sun Jun 29 2014 09:42:06 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

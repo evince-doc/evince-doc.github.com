@@ -218,13 +218,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00405">405</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;{</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        g_return_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar));</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>),</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                      <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00381">381</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;{</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        g_return_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar));</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>),</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                                      <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -327,25 +327,25 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00341">341</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;{</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        GObjectClass *g_object_class = G_OBJECT_CLASS (klass);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        g_object_class-&gt;set_property = <a class="code" href="ev-toolbar_8c.html#ab8b98662fcaa8318b414f39e5e519e9b">ev_toolbar_set_property</a>;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        g_object_class-&gt;constructed = <a class="code" href="ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c">ev_toolbar_constructed</a>;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        g_object_class_install_property (g_object_class,</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                         <a class="code" href="ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>,</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;window&quot;</span>,</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                                              <span class="stringliteral">&quot;Window&quot;</span>,</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                                              <span class="stringliteral">&quot;The evince window&quot;</span>,</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                                                              <a class="code" href="ev-window_8h.html#ab5debcb77891aaf7c25becfae88cfbd6">EV_TYPE_WINDOW</a>,</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                                                              G_PARAM_WRITABLE |</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                                              G_PARAM_CONSTRUCT_ONLY |</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        g_type_class_add_private (g_object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a>));</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00317">317</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;{</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        GObjectClass *g_object_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        g_object_class-&gt;set_property = <a class="code" href="ev-toolbar_8c.html#ab8b98662fcaa8318b414f39e5e519e9b">ev_toolbar_set_property</a>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        g_object_class-&gt;constructed = <a class="code" href="ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c">ev_toolbar_constructed</a>;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        g_object_class_install_property (g_object_class,</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                                         <a class="code" href="ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>,</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;window&quot;</span>,</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                                              <span class="stringliteral">&quot;Window&quot;</span>,</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                                              <span class="stringliteral">&quot;The evince window&quot;</span>,</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                                              <a class="code" href="ev-window_8h.html#ab5debcb77891aaf7c25becfae88cfbd6">EV_TYPE_WINDOW</a>,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                                              G_PARAM_WRITABLE |</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                                              G_PARAM_CONSTRUCT_ONLY |</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        g_type_class_add_private (g_object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a>));</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -402,119 +402,95 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                           <span class="stringliteral">&quot;go-down-symbolic&quot;</span>, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Next Page&quot;</span>));</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        gtk_container_add (GTK_CONTAINER (hbox), button);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        gtk_widget_show (button);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        tool_item = GTK_WIDGET (gtk_tool_item_new ());</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                gtk_widget_set_margin_left (tool_item, 6);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                gtk_widget_set_margin_right (tool_item, 6);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        gtk_container_add (GTK_CONTAINER (tool_item), hbox);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        gtk_widget_show (hbox);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        gtk_widget_show (tool_item);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">/* Page selector */</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">/* Use EvPageActionWidget for now, since the page selector action is also used by the previewer */</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        tool_item = GTK_WIDGET (g_object_new (<a class="code" href="ev-page-action-widget_8h.html#a018f55162024dd68a66e64e6e8a0d955">EV_TYPE_PAGE_ACTION_WIDGET</a>, NULL));</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a> = tool_item;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="ev-page-action-widget_8c.html#a05b827d9a48f6522353b16f828f68953">ev_page_action_widget_set_model</a> (<a class="code" href="ev-page-action-widget_8h.html#a43d0c482623e37452f73a7aa0a3f6df2">EV_PAGE_ACTION_WIDGET</a> (tool_item),</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                         <a class="code" href="ev-window_8c.html#ace3b80938864d8e61747ebe4aab0dd87">ev_window_get_document_model</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>));</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                gtk_widget_set_margin_left (tool_item, 6);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                gtk_widget_set_margin_right (tool_item, 6);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        gtk_widget_show (tool_item);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="comment">/* History */</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        hbox = <a class="code" href="ev-history-action_8c.html#a08579a38f74bdee9ec8b0c4f2032c8c1">ev_history_action_new</a> (<a class="code" href="ev-window_8c.html#ac78ab61760772c0de2e8a9ed55263d46">ev_window_get_history</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>));</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a> = hbox;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        tool_item = GTK_WIDGET (gtk_tool_item_new ());</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                gtk_widget_set_margin_left (tool_item, 6);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                gtk_widget_set_margin_right (tool_item, 6);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        gtk_container_add (GTK_CONTAINER (tool_item), hbox);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        gtk_widget_show (hbox);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        gtk_widget_show (tool_item);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="comment">/* Find */</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        button = <a class="code" href="ev-toolbar_8c.html#afcbacad44f6ba2112bc42712d5bd316f">ev_toolbar_create_toggle_button</a> (ev_toolbar, <span class="stringliteral">&quot;win.toggle-find&quot;</span>, <span class="stringliteral">&quot;edit-find-symbolic&quot;</span>,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                                  <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Find a word or phrase in the document&quot;</span>));</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        tool_item = GTK_WIDGET (gtk_tool_item_new ());</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        gtk_container_add (GTK_CONTAINER (tool_item), button);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        gtk_widget_show (button);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                gtk_widget_set_margin_left (tool_item, 6);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                gtk_widget_set_margin_right (tool_item, 6);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        gtk_widget_show (tool_item);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="comment">/* Action Menu */</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        menu = G_MENU_MODEL (gtk_builder_get_object (builder, <span class="stringliteral">&quot;action-menu&quot;</span>));</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        button = <a class="code" href="ev-toolbar_8c.html#afaed240a876b60217653d870d6d25eae">ev_toolbar_create_menu_button</a> (ev_toolbar, <span class="stringliteral">&quot;emblem-system-symbolic&quot;</span>,</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                                menu, GTK_ALIGN_END);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        gtk_widget_set_tooltip_text (button, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;File options&quot;</span>));</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a> = button;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        tool_item = GTK_WIDGET (gtk_tool_item_new ());</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        gtk_container_add (GTK_CONTAINER (tool_item), button);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        gtk_widget_show (button);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        gtk_header_bar_pack_end (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        gtk_widget_show (tool_item);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="comment">/* View Menu */</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        menu = G_MENU_MODEL (gtk_builder_get_object (builder, <span class="stringliteral">&quot;view-menu&quot;</span>));</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        button = <a class="code" href="ev-toolbar_8c.html#afaed240a876b60217653d870d6d25eae">ev_toolbar_create_menu_button</a> (ev_toolbar, <span class="stringliteral">&quot;document-properties-symbolic&quot;</span>,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                                menu, GTK_ALIGN_END);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        gtk_widget_set_tooltip_text (button, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;View options&quot;</span>));</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a> = button;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        tool_item = GTK_WIDGET (gtk_tool_item_new ());</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        gtk_container_add (GTK_CONTAINER (tool_item), button);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        gtk_widget_show (button);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        gtk_header_bar_pack_end (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        gtk_widget_show (tool_item);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="comment">/* Zoom selector */</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        vbox = <a class="code" href="ev-zoom-action_8c.html#a7697084946ea50422bb8ed9b426f2dd7">ev_zoom_action_new</a> (<a class="code" href="ev-window_8c.html#ace3b80938864d8e61747ebe4aab0dd87">ev_window_get_document_model</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>),</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                   G_MENU (gtk_builder_get_object (builder, <span class="stringliteral">&quot;zoom-menu&quot;</span>)));</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a> = vbox;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        g_signal_connect (vbox, <span class="stringliteral">&quot;activated&quot;</span>,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                          G_CALLBACK (<a class="code" href="ev-toolbar_8c.html#a60834d45367da3fd03a6e62d3e41622f">zoom_selector_activated</a>),</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                gtk_widget_set_margin_left (hbox, 6);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                gtk_widget_set_margin_right (hbox, 6);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), hbox);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        gtk_widget_show (hbox);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="comment">/* Page selector */</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">/* Use EvPageActionWidget for now, since the page selector action is also used by the previewer */</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        tool_item = GTK_WIDGET (g_object_new (<a class="code" href="ev-page-action-widget_8h.html#a018f55162024dd68a66e64e6e8a0d955">EV_TYPE_PAGE_ACTION_WIDGET</a>, NULL));</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a> = tool_item;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="ev-page-action-widget_8c.html#a05b827d9a48f6522353b16f828f68953">ev_page_action_widget_set_model</a> (<a class="code" href="ev-page-action-widget_8h.html#a43d0c482623e37452f73a7aa0a3f6df2">EV_PAGE_ACTION_WIDGET</a> (tool_item),</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                         <a class="code" href="ev-window_8c.html#ace3b80938864d8e61747ebe4aab0dd87">ev_window_get_document_model</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>));</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                gtk_widget_set_margin_left (tool_item, 6);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                gtk_widget_set_margin_right (tool_item, 6);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        gtk_widget_show (tool_item);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="comment">/* History */</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        hbox = <a class="code" href="ev-history-action_8c.html#a08579a38f74bdee9ec8b0c4f2032c8c1">ev_history_action_new</a> (<a class="code" href="ev-window_8c.html#ac78ab61760772c0de2e8a9ed55263d46">ev_window_get_history</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>));</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a> = hbox;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                gtk_widget_set_margin_left (hbox, 6);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                gtk_widget_set_margin_right (hbox, 6);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), hbox);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        gtk_widget_show (hbox);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="comment">/* Find */</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        button = <a class="code" href="ev-toolbar_8c.html#afcbacad44f6ba2112bc42712d5bd316f">ev_toolbar_create_toggle_button</a> (ev_toolbar, <span class="stringliteral">&quot;win.toggle-find&quot;</span>, <span class="stringliteral">&quot;edit-find-symbolic&quot;</span>,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                                  <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Find a word or phrase in the document&quot;</span>));</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                gtk_widget_set_margin_left (button, 6);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                gtk_widget_set_margin_right (button, 6);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        gtk_header_bar_pack_start (GTK_HEADER_BAR (ev_toolbar), button);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        gtk_widget_show (button);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="comment">/* Action Menu */</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        menu = G_MENU_MODEL (gtk_builder_get_object (builder, <span class="stringliteral">&quot;action-menu&quot;</span>));</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        button = <a class="code" href="ev-toolbar_8c.html#afaed240a876b60217653d870d6d25eae">ev_toolbar_create_menu_button</a> (ev_toolbar, <span class="stringliteral">&quot;emblem-system-symbolic&quot;</span>,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                                menu, GTK_ALIGN_END);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        gtk_widget_set_tooltip_text (button, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;File options&quot;</span>));</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a> = button;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        gtk_header_bar_pack_end (GTK_HEADER_BAR (ev_toolbar), button);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        gtk_widget_show (button);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">/* View Menu */</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        menu = G_MENU_MODEL (gtk_builder_get_object (builder, <span class="stringliteral">&quot;view-menu&quot;</span>));</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        button = <a class="code" href="ev-toolbar_8c.html#afaed240a876b60217653d870d6d25eae">ev_toolbar_create_menu_button</a> (ev_toolbar, <span class="stringliteral">&quot;document-properties-symbolic&quot;</span>,</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                                menu, GTK_ALIGN_END);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        gtk_widget_set_tooltip_text (button, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;View options&quot;</span>));</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a> = button;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        gtk_header_bar_pack_end (GTK_HEADER_BAR (ev_toolbar), button);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        gtk_widget_show (button);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="comment">/* Zoom selector */</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        vbox = <a class="code" href="ev-zoom-action_8c.html#a7697084946ea50422bb8ed9b426f2dd7">ev_zoom_action_new</a> (<a class="code" href="ev-window_8c.html#ace3b80938864d8e61747ebe4aab0dd87">ev_window_get_document_model</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>),</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                   G_MENU (gtk_builder_get_object (builder, <span class="stringliteral">&quot;zoom-menu&quot;</span>)));</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a> = vbox;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        g_signal_connect (vbox, <span class="stringliteral">&quot;activated&quot;</span>,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                          G_CALLBACK (<a class="code" href="ev-toolbar_8c.html#a60834d45367da3fd03a6e62d3e41622f">zoom_selector_activated</a>),</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                          ev_toolbar);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                gtk_widget_set_margin_left (vbox, 6);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                gtk_widget_set_margin_right (vbox, 6);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        gtk_header_bar_pack_end (GTK_HEADER_BAR (ev_toolbar), vbox);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        gtk_widget_show (vbox);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        recent_menu_model = <a class="code" href="ev-recent-menu-model_8c.html#aab0e6570445705ed73eea33641ce6a80">ev_recent_menu_model_new</a> (gtk_recent_manager_get_default (),</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                                      <span class="stringliteral">&quot;win.open-recent&quot;</span>,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                                      g_get_application_name ());</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        recent_submenu = G_MENU (gtk_builder_get_object (builder, <span class="stringliteral">&quot;recent&quot;</span>));</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        g_menu_append_section (recent_submenu, NULL, recent_menu_model);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        g_object_unref (recent_menu_model);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a27b414f8284e374bceb08fc92e3b795e">bookmarks_section</a> = G_MENU (gtk_builder_get_object (builder, <span class="stringliteral">&quot;bookmarks&quot;</span>));</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        bookmarks_submenu_model = <a class="code" href="ev-window_8c.html#a9ec925c953b6f6090b5299f1bde257b6">ev_window_get_bookmarks_menu</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        g_signal_connect (bookmarks_submenu_model, <span class="stringliteral">&quot;items-changed&quot;</span>,</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                          G_CALLBACK (<a class="code" href="ev-toolbar_8c.html#a352a4112395986bafc3b5850943bd4a4">ev_toolbar_bookmarks_menu_model_changed</a>),</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                          ev_toolbar);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        tool_item = GTK_WIDGET (gtk_tool_item_new ());</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">if</span> (rtl)</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                gtk_widget_set_margin_left (tool_item, 6);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                gtk_widget_set_margin_right (tool_item, 6);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        gtk_container_add (GTK_CONTAINER (tool_item), vbox);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        gtk_widget_show (vbox);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        gtk_header_bar_pack_end (GTK_HEADER_BAR (ev_toolbar), tool_item);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        gtk_widget_show (tool_item);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        recent_menu_model = <a class="code" href="ev-recent-menu-model_8c.html#aab0e6570445705ed73eea33641ce6a80">ev_recent_menu_model_new</a> (gtk_recent_manager_get_default (),</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                                      <span class="stringliteral">&quot;win.open-recent&quot;</span>,</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                                      g_get_application_name ());</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        recent_submenu = G_MENU (gtk_builder_get_object (builder, <span class="stringliteral">&quot;recent&quot;</span>));</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        g_menu_append_section (recent_submenu, NULL, recent_menu_model);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        g_object_unref (recent_menu_model);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a27b414f8284e374bceb08fc92e3b795e">bookmarks_section</a> = G_MENU (gtk_builder_get_object (builder, <span class="stringliteral">&quot;bookmarks&quot;</span>));</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        bookmarks_submenu_model = <a class="code" href="ev-window_8c.html#a9ec925c953b6f6090b5299f1bde257b6">ev_window_get_bookmarks_menu</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b">window</a>);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        g_signal_connect (bookmarks_submenu_model, <span class="stringliteral">&quot;items-changed&quot;</span>,</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                          G_CALLBACK (<a class="code" href="ev-toolbar_8c.html#a352a4112395986bafc3b5850943bd4a4">ev_toolbar_bookmarks_menu_model_changed</a>),</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                          ev_toolbar);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="ev-toolbar_8c.html#ad572dbfd31f60b87c969bfa6ce8d5cef">ev_toolbar_setup_bookmarks_menu</a> (ev_toolbar, bookmarks_submenu_model);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        g_object_unref (builder);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <a class="code" href="ev-toolbar_8c.html#ad572dbfd31f60b87c969bfa6ce8d5cef">ev_toolbar_setup_bookmarks_menu</a> (ev_toolbar, bookmarks_submenu_model);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        g_object_unref (builder);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -804,12 +780,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00414">414</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;{</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), NULL);</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">return</span> ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a>;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00390">390</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;{</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), NULL);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">return</span> ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a>;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -837,31 +813,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00378">378</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        GtkMenu          *popup_menu;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a> *priv;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        priv = ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>));</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>));</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>)))</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-history-action_8c.html#ac365a374719bc6d4bc8c4f73c4e71601">ev_history_action_get_popup_shown</a> (<a class="code" href="ev-history-action_8h.html#ac6ee4dc749e7a9b5b5229c229dc89982">EV_HISTORY_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a>)))</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00354">354</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;{</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        GtkMenu          *popup_menu;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a> *priv;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        priv = ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>));</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>));</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>)))</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-history-action_8c.html#ac365a374719bc6d4bc8c4f73c4e71601">ev_history_action_get_popup_shown</a> (<a class="code" href="ev-history-action_8h.html#ac6ee4dc749e7a9b5b5229c229dc89982">EV_HISTORY_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a>)))</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -897,10 +873,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00362">362</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;{</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE (ev_toolbar, <a class="code" href="ev-toolbar_8h.html#ae559035c788d08fccb48d1cc909392eb">EV_TYPE_TOOLBAR</a>, <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a>);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00338">338</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE (ev_toolbar, <a class="code" href="ev-toolbar_8h.html#ae559035c788d08fccb48d1cc909392eb">EV_TYPE_TOOLBAR</a>, <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a>);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -918,14 +894,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00368">368</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;{</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (window), NULL);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-toolbar_8h.html#ae559035c788d08fccb48d1cc909392eb">EV_TYPE_TOOLBAR</a>,</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                                         <span class="stringliteral">&quot;window&quot;</span>, window,</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                                         NULL));</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00344">344</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (window), NULL);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-toolbar_8h.html#ae559035c788d08fccb48d1cc909392eb">EV_TYPE_TOOLBAR</a>,</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                         <span class="stringliteral">&quot;window&quot;</span>, window,</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                         NULL));</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1188,7 +1164,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-toolbar_8c.html">ev-toolbar.c</a></li>
-    <li class="footer">Generated on Sat Jun 28 2014 20:52:20 for Evince by
+    <li class="footer">Generated on Sun Jun 29 2014 09:42:11 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

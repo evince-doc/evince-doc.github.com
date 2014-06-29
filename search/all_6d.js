@@ -180,11 +180,11 @@ var searchData=
   ['mdvi_5fset_5fbackground',['MDVI_SET_BACKGROUND',['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1eda745677e6abbf7666d66912e48d855758',1,'MDVI_SET_BACKGROUND():&#160;mdvi.h'],['../mdvi_8h.html#a0d544ce5f2f30fa2e2bbcda81d8c009f',1,'mdvi_set_background():&#160;mdvi.h']]],
   ['mdvi_5fset_5fcolor',['mdvi_set_color',['../color_8c.html#afebf063f189e9bccfdeb04bb3d1a5e75',1,'mdvi_set_color(DviContext *dvi, Ulong fg, Ulong bg):&#160;color.c'],['../dvimisc_8c.html#afebf063f189e9bccfdeb04bb3d1a5e75',1,'mdvi_set_color(DviContext *dvi, Ulong fg, Ulong bg):&#160;dvimisc.c']]],
   ['mdvi_5fset_5fdefault_5fencoding',['mdvi_set_default_encoding',['../fontmap_8c.html#a6c70f3616bf8a32f54ae621878bc09b4',1,'fontmap.c']]],
-  ['mdvi_5fset_5fdensity',['mdvi_set_density',['../mdvi_8h.html#a75a265b18e6b2b61b220f43da3bef67d',1,'mdvi_set_density():&#160;mdvi.h'],['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1edaa4bc1aea8bf3e447e6efe8b0805ce214',1,'MDVI_SET_DENSITY():&#160;mdvi.h']]],
-  ['mdvi_5fset_5fdpi',['mdvi_set_dpi',['../mdvi_8h.html#ae7e58fff037a8ac1db6cd8cf6c216953',1,'mdvi_set_dpi():&#160;mdvi.h'],['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1edac0afaabf21aa4ec1e10c22d26c8ebd2f',1,'MDVI_SET_DPI():&#160;mdvi.h']]],
-  ['mdvi_5fset_5fdrift',['MDVI_SET_DRIFT',['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1eda594246a519b6c1f2650b96affa62bc8d',1,'MDVI_SET_DRIFT():&#160;mdvi.h'],['../mdvi_8h.html#a90f8e7745b98ecd80e38eab05d071b95',1,'mdvi_set_drift():&#160;mdvi.h']]],
+  ['mdvi_5fset_5fdensity',['MDVI_SET_DENSITY',['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1edaa4bc1aea8bf3e447e6efe8b0805ce214',1,'MDVI_SET_DENSITY():&#160;mdvi.h'],['../mdvi_8h.html#a75a265b18e6b2b61b220f43da3bef67d',1,'mdvi_set_density():&#160;mdvi.h']]],
+  ['mdvi_5fset_5fdpi',['MDVI_SET_DPI',['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1edac0afaabf21aa4ec1e10c22d26c8ebd2f',1,'MDVI_SET_DPI():&#160;mdvi.h'],['../mdvi_8h.html#ae7e58fff037a8ac1db6cd8cf6c216953',1,'mdvi_set_dpi():&#160;mdvi.h']]],
+  ['mdvi_5fset_5fdrift',['mdvi_set_drift',['../mdvi_8h.html#a90f8e7745b98ecd80e38eab05d071b95',1,'mdvi_set_drift():&#160;mdvi.h'],['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1eda594246a519b6c1f2650b96affa62bc8d',1,'MDVI_SET_DRIFT():&#160;mdvi.h']]],
   ['mdvi_5fset_5fforeground',['MDVI_SET_FOREGROUND',['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1edaf647f16f7455628b80b022fb54a7a0a7',1,'MDVI_SET_FOREGROUND():&#160;mdvi.h'],['../mdvi_8h.html#a441473c602055534ef18f6de1824e7fe',1,'mdvi_set_foreground():&#160;mdvi.h']]],
-  ['mdvi_5fset_5fgamma',['MDVI_SET_GAMMA',['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1eda460b7f558c6c303669517d6a97d7d419',1,'MDVI_SET_GAMMA():&#160;mdvi.h'],['../mdvi_8h.html#a526f244a73563376475751bcb9a2a12f',1,'mdvi_set_gamma():&#160;mdvi.h']]],
+  ['mdvi_5fset_5fgamma',['mdvi_set_gamma',['../mdvi_8h.html#a526f244a73563376475751bcb9a2a12f',1,'mdvi_set_gamma():&#160;mdvi.h'],['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1eda460b7f558c6c303669517d6a97d7d419',1,'MDVI_SET_GAMMA():&#160;mdvi.h']]],
   ['mdvi_5fset_5fhdrift',['MDVI_SET_HDRIFT',['../mdvi_8h.html#adc5dfd76171ff74783558521f315d1edaefc429a2616f3b54fb5b96d10f68c14b',1,'MDVI_SET_HDRIFT():&#160;mdvi.h'],['../mdvi_8h.html#ae5c656414f1a0288cb139c7359c16f2d',1,'mdvi_set_hdrift():&#160;mdvi.h']]],
   ['mdvi_5fset_5fhshrink',['mdvi_set_hshrink',['../mdvi_8h.html#ad55da7343d78a1641ca16412e8e00ddb',1,'mdvi.h']]],
   ['mdvi_5fset_5flogfile',['mdvi_set_logfile',['../util_8c.html#aaf6d2d57a2dfa902e9ec0ec629597fba',1,'util.c']]],
@@ -277,6 +277,6 @@ var searchData=
   ['muget2',['muget2',['../common_8h.html#afee99e09c70493cf413b3c4829560868',1,'common.h']]],
   ['muget3',['muget3',['../common_8h.html#a4e7e98ead6fdc46ca1bb37df695f02a4',1,'common.h']]],
   ['muget4',['muget4',['../common_8h.html#a47a7ef0ad87da53d79bb31cf631b1c41',1,'common.h']]],
-  ['mugetn',['mugetn',['../common_8c.html#a46591b6d2597df232456e0285559e34b',1,'mugetn(const Uchar *p, size_t n):&#160;common.c'],['../common_8h.html#ab5872508b6d4614549a2842be0171c0d',1,'MUGETN():&#160;common.h']]],
+  ['mugetn',['MUGETN',['../common_8h.html#ab5872508b6d4614549a2842be0171c0d',1,'MUGETN():&#160;common.h'],['../common_8c.html#a46591b6d2597df232456e0285559e34b',1,'mugetn(const Uchar *p, size_t n):&#160;common.c']]],
   ['multi_5fselect',['multi_select',['../struct__EvFormFieldChoice.html#aa9745808fb34d4b99bdb06bcedb87ec4',1,'_EvFormFieldChoice']]]
 ];

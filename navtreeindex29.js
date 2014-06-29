@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"struct__EvFindSidebarPrivate.html":[6,0,98],
 "struct__EvFindSidebarPrivate.html#a0107985f40ac317798aca62ab988fdf3":[6,0,98,8],
 "struct__EvFindSidebarPrivate.html#a21218d53b1877d573879a4f65692645d":[6,0,98,5],
 "struct__EvFindSidebarPrivate.html#a39b379efc772d30e1775976b1aa61975":[6,0,98,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "struct__EvJobThumbnail.html#a5e68373a653331bd516e1eea4802fc14":[6,0,157,0],
 "struct__EvJobThumbnail.html#a651e14e99af140d3101f8a79d444bd83":[6,0,157,5],
 "struct__EvJobThumbnail.html#a7be7d2751b79c0d59085af955bec0704":[6,0,157,7],
-"struct__EvJobThumbnail.html#aafe66faac07070ff0fbab0bce84da3b8":[6,0,157,4],
-"struct__EvJobThumbnail.html#abba5b20f80cc96efd1e43254ddcd9e49":[6,0,157,3]
+"struct__EvJobThumbnail.html#aafe66faac07070ff0fbab0bce84da3b8":[6,0,157,4]
 };

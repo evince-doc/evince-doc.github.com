@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"struct__EvJobThumbnail.html#abba5b20f80cc96efd1e43254ddcd9e49":[6,0,157,3],
 "struct__EvJobThumbnail.html#ae3976c2f6c42f3e8cc69c566f0a3fe46":[6,0,157,9],
 "struct__EvJobThumbnail.html#afbb24fe415c1d45e499590027e48211d":[6,0,157,2],
 "struct__EvJobThumbnailClass.html":[6,0,158],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvPrintOperationClass.html#a88614473189ac8fb73e714fb476bcbfd":[6,0,210,12],
 "struct__EvPrintOperationClass.html#a8fcd4589790090ca3838c687a2c577e0":[6,0,210,10],
 "struct__EvPrintOperationClass.html#aa117ceb317c7159fdf93754367c5305c":[6,0,210,13],
-"struct__EvPrintOperationClass.html#aa51a59dfe6d33104b7080272b9789622":[6,0,210,15],
-"struct__EvPrintOperationClass.html#aaa923d3ab505d0211fff22ffb4b8745e":[6,0,210,11]
+"struct__EvPrintOperationClass.html#aa51a59dfe6d33104b7080272b9789622":[6,0,210,15]
 };
