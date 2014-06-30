@@ -44,6 +44,7 @@ var searchData=
   ['gimp_5fis_5fcell_5frenderer_5ftoggle_5fclass',['GIMP_IS_CELL_RENDERER_TOGGLE_CLASS',['../gimpcellrenderertoggle_8h.html#ab0bc5ec82299112b8e02760e87a61e03',1,'gimpcellrenderertoggle.h']]],
   ['gimp_5ftype_5fcell_5frenderer_5ftoggle',['GIMP_TYPE_CELL_RENDERER_TOGGLE',['../gimpcellrenderertoggle_8h.html#a5ee9e4914cff508669cd4e124baa6f4c',1,'gimpcellrenderertoggle.h']]],
   ['glyph_5fpresent',['glyph_present',['../mdvi_8h.html#aaa2bdda54fc9d460306e27bc1c012344',1,'mdvi.h']]],
+  ['gnome_5fdesktop_5fuse_5funstable_5fapi',['GNOME_DESKTOP_USE_UNSTABLE_API',['../ev-recent-view_8c.html#a975d3895abea7c1a346ff396120d4cda',1,'ev-recent-view.c']]],
   ['gs_5fauto_5freload',['GS_AUTO_RELOAD',['../ev-window_8c.html#aa6ae215009a4a6f1fd746c813db8d0f5',1,'ev-window.c']]],
   ['gs_5flast_5fdocument_5fdirectory',['GS_LAST_DOCUMENT_DIRECTORY',['../ev-window_8c.html#a91691a60b7413762c506408d4b100d34',1,'ev-window.c']]],
   ['gs_5flast_5fpictures_5fdirectory',['GS_LAST_PICTURES_DIRECTORY',['../ev-window_8c.html#a09a47d00964af8178941b621cbe18e62',1,'ev-window.c']]],

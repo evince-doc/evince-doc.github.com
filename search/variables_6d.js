@@ -42,6 +42,6 @@ var searchData=
   ['motion',['motion',['../struct__EvView.html#a17633e9f3f1d859b759e27269e13e289',1,'_EvView']]],
   ['move_5fcursor',['move_cursor',['../struct__EvViewClass.html#a735bed3e899e5a56c88d11575c41c926',1,'_EvViewClass']]],
   ['moved',['moved',['../struct__EvAnnotationWindowClass.html#af4d0e3ec026094405b8c433da075eb5f',1,'_EvAnnotationWindowClass::moved()'],['../structEvViewWindowChild.html#ad4894ebbb58d8eb844a3f6bb9ef7edc0',1,'EvViewWindowChild::moved()']]],
-  ['mtime',['mtime',['../struct__EvAttachmentPrivate.html#a54646240e79c8f9a5b8f08578e611816',1,'_EvAttachmentPrivate']]],
+  ['mtime',['mtime',['../struct__EvAttachmentPrivate.html#a54646240e79c8f9a5b8f08578e611816',1,'_EvAttachmentPrivate::mtime()'],['../structGetDocumentInfoAsyncData.html#a9c385d842725a8f2f4a358eb59cf227f',1,'GetDocumentInfoAsyncData::mtime()']]],
   ['multi_5fselect',['multi_select',['../struct__EvFormFieldChoice.html#aa9745808fb34d4b99bdb06bcedb87ec4',1,'_EvFormFieldChoice']]]
 ];

@@ -23,6 +23,8 @@ var searchData=
   ['nautilus_5fsendto',['nautilus_sendto',['../ev-window_8c.html#a4c62b4a8b5009b5bf31cd6c8f2d4d869',1,'ev-window.c']]],
   ['nbucks',['nbucks',['../struct__DviHashTable.html#ac54ff064d09c7835a297c7a5fa76ba53',1,'_DviHashTable']]],
   ['needbytes',['NEEDBYTES',['../dviread_8c.html#a05117055ab4cdfb1165554f4fb215682',1,'dviread.c']]],
+  ['needs_5fmetadata',['needs_metadata',['../structGetDocumentInfoAsyncData.html#a7c4a8cc57372bdd8fa67cc2a0a255743',1,'GetDocumentInfoAsyncData']]],
+  ['needs_5fthumbnail',['needs_thumbnail',['../structGetDocumentInfoAsyncData.html#a7f9a682038db3fffc77efce5c1d2bdd2',1,'GetDocumentInfoAsyncData']]],
   ['new',['new',['../struct____synctex__class__t.html#ab4c75f21dbfd5421534d42feeab86a0f',1,'__synctex_class_t']]],
   ['new_5fdocument_5ffor_5furi',['new_document_for_uri',['../ev-document-factory_8c.html#abc8ca4e29720bef98cb2bfd9c1103f88',1,'ev-document-factory.c']]],
   ['new_5fselection_5fregion_5fneeded',['new_selection_region_needed',['../ev-pixbuf-cache_8c.html#a67b7c58f9e776abbf82faa93292b680d',1,'ev-pixbuf-cache.c']]],

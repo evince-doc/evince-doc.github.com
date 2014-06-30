@@ -65,6 +65,7 @@ var searchData=
   ['llx',['llx',['../structBBox.html#a9f4faf7c8cc8f7d276322f93db63925d',1,'BBox::llx()'],['../sp-epsf_8c.html#a8f83188756efa6092294fca26269025c',1,'LLX():&#160;sp-epsf.c']]],
   ['lly',['lly',['../structBBox.html#a1f774deb3d0644ce6091c0591830d285',1,'BBox::lly()'],['../sp-epsf_8c.html#ad239c4e1fbcba2095cd502de3fd18ed0',1,'LLY():&#160;sp-epsf.c']]],
   ['load',['load',['../struct__DviFontInfo.html#abb0ab7f3ab357e50ac1c51457dbbe272',1,'_DviFontInfo::load()'],['../struct__EvDocumentClass.html#a76bd65cef00f5be816f681a1fcefd21c',1,'_EvDocumentClass::load()']]],
+  ['load_5fdocument_5fand_5fget_5fdocument_5finfo',['load_document_and_get_document_info',['../ev-recent-view_8c.html#afd578d31fb529aaedb2306cae77228a9',1,'ev-recent-view.c']]],
   ['load_5ffiles',['load_files',['../main_8c.html#a08bc7706ab39651aac94fad91b9642c4',1,'main.c']]],
   ['load_5ffont_5ffile',['load_font_file',['../font_8c.html#aeffc7d7b0450fc5e0ce24070c09c4cd9',1,'font.c']]],
   ['load_5fgfile',['load_gfile',['../struct__EvDocumentClass.html#ad9455c99cda4ab67001809719c823eb6',1,'_EvDocumentClass']]],

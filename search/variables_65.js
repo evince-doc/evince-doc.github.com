@@ -26,6 +26,7 @@ var searchData=
   ['ev_5fnamed_5fdest',['ev_named_dest',['../main_8c.html#aa3de858b862f5b5c324dd4059d1fc48b',1,'main.c']]],
   ['ev_5fpage_5findex',['ev_page_index',['../main_8c.html#a707beeec1ee9d8397a5d1411b1d47d7c',1,'main.c']]],
   ['ev_5fpage_5flabel',['ev_page_label',['../main_8c.html#aac307a6a8e8c49e600ff965b93ecfb61',1,'main.c']]],
+  ['ev_5frecent_5fview',['ev_recent_view',['../structGetDocumentInfoAsyncData.html#a432baba3ee26fe0fbe7510e0358ef882',1,'GetDocumentInfoAsyncData']]],
   ['ev_5fview_5faccessible_5faction_5fdescriptions',['ev_view_accessible_action_descriptions',['../ev-view-accessible_8c.html#a45e64cb48c6b81096f0eca3724af2d5e',1,'ev-view-accessible.c']]],
   ['ev_5fview_5faccessible_5faction_5fnames',['ev_view_accessible_action_names',['../ev-view-accessible_8c.html#ab34ced330f07ce061094962531cbf75d',1,'ev-view-accessible.c']]],
   ['evprintscale',['EvPrintScale',['../ev-print-operation_8c.html#ad9f671c30ef3f812da594dee7a2b4e65',1,'ev-print-operation.c']]],

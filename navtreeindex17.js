@@ -1,5 +1,14 @@
 var NAVTREEINDEX17 =
 {
+"ev-sidebar-page_8h.html#a36170d4668090f65bcd60630cc64c948":[7,0,0,7,54,11],
+"ev-sidebar-page_8h.html#a6143b085c3a8fd75b7adfc508a1d9c2d":[7,0,0,7,54,8],
+"ev-sidebar-page_8h.html#a6cf32d4e5c7737ccaec465a71d07ef19":[7,0,0,7,54,1],
+"ev-sidebar-page_8h.html#ab145be18096d42cc8df36bd97e05b941":[7,0,0,7,54,5],
+"ev-sidebar-page_8h.html#ab91a19036771f326a43bcf21bd476381":[7,0,0,7,54,4],
+"ev-sidebar-page_8h.html#ac1e3c3ccfb4221675f6eb145840414ab":[7,0,0,7,54,12],
+"ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd":[7,0,0,7,54,3],
+"ev-sidebar-page_8h.html#ae9241d58b250dd32a6b98437e835a94a":[7,0,0,7,54,6],
+"ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec":[7,0,0,7,54,7],
 "ev-sidebar-page_8h_source.html":[7,0,0,7,54],
 "ev-sidebar-thumbnails_8c.html":[7,0,0,7,55],
 "ev-sidebar-thumbnails_8c.html#a0a9be21522643f38e7ae819868b40203":[7,0,0,7,55,36],
@@ -240,14 +249,5 @@ var NAVTREEINDEX17 =
 "ev-toolbar_8c.html#a352a4112395986bafc3b5850943bd4a4":[7,0,0,7,59,4],
 "ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c":[7,0,0,7,59,6],
 "ev-toolbar_8c.html#a60834d45367da3fd03a6e62d3e41622f":[7,0,0,7,59,18],
-"ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7a5444259366dcb8d3b0e146507c9e0174":[7,0,0,7,59,2],
-"ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7ac37dda0da1a44e10c0504afeeb863f3c":[7,0,0,7,59,1],
-"ev-toolbar_8c.html#a976e7359b740566a59db9d3be25ed825":[7,0,0,7,59,8],
-"ev-toolbar_8c.html#ab8b98662fcaa8318b414f39e5e519e9b":[7,0,0,7,59,16],
-"ev-toolbar_8c.html#ad3558a4ca391039ded68227fb981d03e":[7,0,0,7,59,3],
-"ev-toolbar_8c.html#ad572dbfd31f60b87c969bfa6ce8d5cef":[7,0,0,7,59,17],
-"ev-toolbar_8c.html#adb2193128641c0e817dbcc396e896570":[7,0,0,7,59,12],
-"ev-toolbar_8c.html#aee274fa46dd84327678b79ccc23286e8":[7,0,0,7,59,5],
-"ev-toolbar_8c.html#af90b2b90d4e54a3b888d95d7a6fff760":[7,0,0,7,59,7],
-"ev-toolbar_8c.html#af98b26fa1173235360d55df10c93d362":[7,0,0,7,59,13]
+"ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7a5444259366dcb8d3b0e146507c9e0174":[7,0,0,7,59,2]
 };

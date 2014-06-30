@@ -5771,17 +5771,17 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 <li>ev_recent_view_class_init()
 : <a class="el" href="ev-recent-view_8c.html#a869a7c2681627ade1cc889814eec5b0d">ev-recent-view.c</a>
 </li>
-<li>ev_recent_view_clear_job()
-: <a class="el" href="ev-recent-view_8c.html#a836b90b70d03888fb0c69a1cb6afc353">ev-recent-view.c</a>
+<li>ev_recent_view_clear_async_data()
+: <a class="el" href="ev-recent-view_8c.html#aa20411520c856b1f9857e7638a9bbf5e">ev-recent-view.c</a>
 </li>
 <li>ev_recent_view_clear_model()
 : <a class="el" href="ev-recent-view_8c.html#a892e2499192bb6fdddbfadd077c9858b">ev-recent-view.c</a>
 </li>
+<li>EV_RECENT_VIEW_COLUMN_ASYNC_DATA
+: <a class="el" href="ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747ccaf46ae6c92e9f3512a9cff52f44f74a5e">ev-recent-view.c</a>
+</li>
 <li>EV_RECENT_VIEW_COLUMN_ICON
 : <a class="el" href="ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747cca2aa0cf7a663e01c985224e009742785e">ev-recent-view.c</a>
-</li>
-<li>EV_RECENT_VIEW_COLUMN_JOB
-: <a class="el" href="ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747ccacd7b470381dc933abab1a690246bb96d">ev-recent-view.c</a>
 </li>
 <li>EV_RECENT_VIEW_COLUMN_PRIMARY_TEXT
 : <a class="el" href="ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747cca8516fd01251445db688907306f213b0c">ev-recent-view.c</a>
@@ -5801,6 +5801,9 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 <li>EV_RECENT_VIEW_GET_CLASS
 : <a class="el" href="ev-recent-view_8h.html#a144b0fd8f48cf36496418109c3903748">ev-recent-view.h</a>
 </li>
+<li>ev_recent_view_get_document_info()
+: <a class="el" href="ev-recent-view_8c.html#a76e523a25735b8b9480f337d161dfe6d">ev-recent-view.c</a>
+</li>
 <li>ev_recent_view_get_type()
 : <a class="el" href="ev-recent-view_8h.html#ac18a1d50de6073b5fbe3cd149def5505">ev-recent-view.h</a>
 </li>
@@ -5819,8 +5822,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-document_8h.html#a850cc72b0c0132355a72d5e39afbda26">ev-document.h</a>
 </li>
 <li>ev_rectangle_copy()
-: <a class="el" href="ev-document_8c.html#ac72903e5df13110ad7c02bbe9c5ad811">ev-document.c</a>
-, <a class="el" href="ev-document_8h.html#a7030e92c483d6a5e466cdf435bee0c19">ev-document.h</a>
+: <a class="el" href="ev-document_8h.html#a7030e92c483d6a5e466cdf435bee0c19">ev-document.h</a>
+, <a class="el" href="ev-document_8c.html#ac72903e5df13110ad7c02bbe9c5ad811">ev-document.c</a>
 </li>
 <li>ev_rectangle_free()
 : <a class="el" href="ev-document_8c.html#a004402d55f839c6e66123d88c2dc9e59">ev-document.c</a>
@@ -5850,8 +5853,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-render-context_8h.html#a82d69e01bc2df1e684d1313c2cba3423">ev-render-context.h</a>
 </li>
 <li>ev_render_context_compute_scales()
-: <a class="el" href="ev-render-context_8h.html#ab646313af51c2358c6686d31736fc752">ev-render-context.h</a>
-, <a class="el" href="ev-render-context_8c.html#ab646313af51c2358c6686d31736fc752">ev-render-context.c</a>
+: <a class="el" href="ev-render-context_8c.html#ab646313af51c2358c6686d31736fc752">ev-render-context.c</a>
+, <a class="el" href="ev-render-context_8h.html#ab646313af51c2358c6686d31736fc752">ev-render-context.h</a>
 </li>
 <li>ev_render_context_compute_transformed_size()
 : <a class="el" href="ev-render-context_8c.html#a63a760bc053be7ef3eef52bd7b0ab6e7">ev-render-context.c</a>
@@ -5875,16 +5878,16 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-render-context_8h.html#ad3e3147feeb16372af72d2e3ef9724a9">ev-render-context.h</a>
 </li>
 <li>ev_render_context_set_rotation()
-: <a class="el" href="ev-render-context_8c.html#a713f1ec61ebc4d7a61e347219e1445ea">ev-render-context.c</a>
-, <a class="el" href="ev-render-context_8h.html#a9136cedd9252cffb19281c6edff40a4f">ev-render-context.h</a>
+: <a class="el" href="ev-render-context_8h.html#a9136cedd9252cffb19281c6edff40a4f">ev-render-context.h</a>
+, <a class="el" href="ev-render-context_8c.html#a713f1ec61ebc4d7a61e347219e1445ea">ev-render-context.c</a>
 </li>
 <li>ev_render_context_set_scale()
 : <a class="el" href="ev-render-context_8c.html#a303e16f3ab4ae00cf97f9b03975a7a67">ev-render-context.c</a>
 , <a class="el" href="ev-render-context_8h.html#a303e16f3ab4ae00cf97f9b03975a7a67">ev-render-context.h</a>
 </li>
 <li>ev_render_context_set_target_size()
-: <a class="el" href="ev-render-context_8c.html#a9f3d3fea4f37c9bd54682eae5c7e38d4">ev-render-context.c</a>
-, <a class="el" href="ev-render-context_8h.html#a9f3d3fea4f37c9bd54682eae5c7e38d4">ev-render-context.h</a>
+: <a class="el" href="ev-render-context_8h.html#a9f3d3fea4f37c9bd54682eae5c7e38d4">ev-render-context.h</a>
+, <a class="el" href="ev-render-context_8c.html#a9f3d3fea4f37c9bd54682eae5c7e38d4">ev-render-context.c</a>
 </li>
 <li>EV_SAVE_ATTACHMENT
 : <a class="el" href="ev-window_8c.html#a0f9e34e0f58801ff959d153e044faabdacc3495ad8786f87a6e80941a8ddef193">ev-window.c</a>
@@ -5920,8 +5923,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-selection_8h.html#afdecd17479524a1974d720844f2a732f">ev-selection.h</a>
 </li>
 <li>ev_selection_get_selected_text()
-: <a class="el" href="ev-selection_8h.html#ac39332ff575e99d10d047dd143348c6b">ev-selection.h</a>
-, <a class="el" href="ev-selection_8c.html#ac39332ff575e99d10d047dd143348c6b">ev-selection.c</a>
+: <a class="el" href="ev-selection_8c.html#ac39332ff575e99d10d047dd143348c6b">ev-selection.c</a>
+, <a class="el" href="ev-selection_8h.html#ac39332ff575e99d10d047dd143348c6b">ev-selection.h</a>
 </li>
 <li>ev_selection_get_selection_region()
 : <a class="el" href="ev-selection_8c.html#a911c7036047b37116f0697f7df593279">ev-selection.c</a>
@@ -5967,8 +5970,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-sidebar-annotations_8c.html#a312d3047c0ff4dce336ec69d073dfac9">ev-sidebar-annotations.c</a>
 </li>
 <li>ev_sidebar_annotations_annot_added()
-: <a class="el" href="ev-sidebar-annotations_8c.html#ac2b91d473ebfb431178910d88c443159">ev-sidebar-annotations.c</a>
-, <a class="el" href="ev-sidebar-annotations_8h.html#ac2b91d473ebfb431178910d88c443159">ev-sidebar-annotations.h</a>
+: <a class="el" href="ev-sidebar-annotations_8h.html#ac2b91d473ebfb431178910d88c443159">ev-sidebar-annotations.h</a>
+, <a class="el" href="ev-sidebar-annotations_8c.html#ac2b91d473ebfb431178910d88c443159">ev-sidebar-annotations.c</a>
 </li>
 <li>EV_SIDEBAR_ANNOTATIONS_CLASS
 : <a class="el" href="ev-sidebar-annotations_8h.html#a5e2aaa2b786443dee8b0ecbda60341de">ev-sidebar-annotations.h</a>
@@ -6004,8 +6007,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-sidebar-annotations_8c.html#aea775c22e305116e25b81b5c2c8e71e8">ev-sidebar-annotations.c</a>
 </li>
 <li>ev_sidebar_annotations_new()
-: <a class="el" href="ev-sidebar-annotations_8h.html#adfb8716a64f948a5253cd938447edeb3">ev-sidebar-annotations.h</a>
-, <a class="el" href="ev-sidebar-annotations_8c.html#adfb8716a64f948a5253cd938447edeb3">ev-sidebar-annotations.c</a>
+: <a class="el" href="ev-sidebar-annotations_8c.html#adfb8716a64f948a5253cd938447edeb3">ev-sidebar-annotations.c</a>
+, <a class="el" href="ev-sidebar-annotations_8h.html#adfb8716a64f948a5253cd938447edeb3">ev-sidebar-annotations.h</a>
 </li>
 <li>ev_sidebar_annotations_page_iface_init()
 : <a class="el" href="ev-sidebar-annotations_8c.html#ac7c4b11010af41d7b4dadeb127e040d1">ev-sidebar-annotations.c</a>
@@ -6068,8 +6071,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-sidebar-attachments_8c.html#a6b79457224435f973db2a427b43570c2">ev-sidebar-attachments.c</a>
 </li>
 <li>ev_sidebar_attachments_new()
-: <a class="el" href="ev-sidebar-attachments_8c.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">ev-sidebar-attachments.c</a>
-, <a class="el" href="ev-sidebar-attachments_8h.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">ev-sidebar-attachments.h</a>
+: <a class="el" href="ev-sidebar-attachments_8h.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">ev-sidebar-attachments.h</a>
+, <a class="el" href="ev-sidebar-attachments_8c.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">ev-sidebar-attachments.c</a>
 </li>
 <li>ev_sidebar_attachments_page_iface_init()
 : <a class="el" href="ev-sidebar-attachments_8c.html#a6ec1a6e955a49a40b5f34b9f104e47e7">ev-sidebar-attachments.c</a>
@@ -6151,8 +6154,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-sidebar-bookmarks_8c.html#a0c69575ea0df0d69972620d3413416fc">ev-sidebar-bookmarks.c</a>
 </li>
 <li>ev_sidebar_bookmarks_set_bookmarks()
-: <a class="el" href="ev-sidebar-bookmarks_8c.html#a248d6b8ffe01e41985502320b6dc0e30">ev-sidebar-bookmarks.c</a>
-, <a class="el" href="ev-sidebar-bookmarks_8h.html#a248d6b8ffe01e41985502320b6dc0e30">ev-sidebar-bookmarks.h</a>
+: <a class="el" href="ev-sidebar-bookmarks_8h.html#a248d6b8ffe01e41985502320b6dc0e30">ev-sidebar-bookmarks.h</a>
+, <a class="el" href="ev-sidebar-bookmarks_8c.html#a248d6b8ffe01e41985502320b6dc0e30">ev-sidebar-bookmarks.c</a>
 </li>
 <li>ev_sidebar_bookmarks_set_model()
 : <a class="el" href="ev-sidebar-bookmarks_8c.html#a477ba3b673cb8ef983e483b7409a0d56">ev-sidebar-bookmarks.c</a>
@@ -6245,8 +6248,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-sidebar-layers_8c.html#acd5ebf0c772baf4c0207d6bf0e2c291f">ev-sidebar-layers.c</a>
 </li>
 <li>ev_sidebar_layers_new()
-: <a class="el" href="ev-sidebar-layers_8c.html#a20cfa71f38ef8ee2c6959211daf7ac78">ev-sidebar-layers.c</a>
-, <a class="el" href="ev-sidebar-layers_8h.html#a20cfa71f38ef8ee2c6959211daf7ac78">ev-sidebar-layers.h</a>
+: <a class="el" href="ev-sidebar-layers_8h.html#a20cfa71f38ef8ee2c6959211daf7ac78">ev-sidebar-layers.h</a>
+, <a class="el" href="ev-sidebar-layers_8c.html#a20cfa71f38ef8ee2c6959211daf7ac78">ev-sidebar-layers.c</a>
 </li>
 <li>ev_sidebar_layers_page_iface_init()
 : <a class="el" href="ev-sidebar-layers_8c.html#a92d27cc0edddb2be3145344ad828a30c">ev-sidebar-layers.c</a>
@@ -6358,8 +6361,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-sidebar-page_8h.html#ab145be18096d42cc8df36bd97e05b941">ev-sidebar-page.h</a>
 </li>
 <li>ev_sidebar_page_set_model()
-: <a class="el" href="ev-sidebar-page_8c.html#a36170d4668090f65bcd60630cc64c948">ev-sidebar-page.c</a>
-, <a class="el" href="ev-sidebar-page_8h.html#a36170d4668090f65bcd60630cc64c948">ev-sidebar-page.h</a>
+: <a class="el" href="ev-sidebar-page_8h.html#a36170d4668090f65bcd60630cc64c948">ev-sidebar-page.h</a>
+, <a class="el" href="ev-sidebar-page_8c.html#a36170d4668090f65bcd60630cc64c948">ev-sidebar-page.c</a>
 </li>
 <li>ev_sidebar_page_support_document()
 : <a class="el" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev-sidebar-page.c</a>
@@ -6486,12 +6489,12 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a10449bcf74b94d588f876734f2c00565">ev-document-model.h</a>
 </li>
 <li>ev_source_link_copy()
-: <a class="el" href="ev-document_8c.html#a86a169357f30c855cf5fa37b9dfc0b29">ev-document.c</a>
-, <a class="el" href="ev-document_8h.html#a86a169357f30c855cf5fa37b9dfc0b29">ev-document.h</a>
+: <a class="el" href="ev-document_8h.html#a86a169357f30c855cf5fa37b9dfc0b29">ev-document.h</a>
+, <a class="el" href="ev-document_8c.html#a86a169357f30c855cf5fa37b9dfc0b29">ev-document.c</a>
 </li>
 <li>ev_source_link_free()
-: <a class="el" href="ev-document_8c.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev-document.c</a>
-, <a class="el" href="ev-document_8h.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev-document.h</a>
+: <a class="el" href="ev-document_8h.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev-document.h</a>
+, <a class="el" href="ev-document_8c.html#a031b44e907a4eb86c6e9f6bd945ae1c6">ev-document.c</a>
 </li>
 <li>ev_source_link_get_type()
 : <a class="el" href="ev-document_8h.html#a55b3e109a42223e8f2a413029ff5568a">ev-document.h</a>
@@ -6521,8 +6524,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-stock-icons_8c.html#aeb4ad4336277eff6e8c7be07c5f81b8d">ev-stock-icons.c</a>
 </li>
 <li>ev_stock_icons_shutdown()
-: <a class="el" href="ev-stock-icons_8c.html#a8af56133f550c32fad082413ce5d29f9">ev-stock-icons.c</a>
-, <a class="el" href="ev-stock-icons_8h.html#a8af56133f550c32fad082413ce5d29f9">ev-stock-icons.h</a>
+: <a class="el" href="ev-stock-icons_8h.html#a8af56133f550c32fad082413ce5d29f9">ev-stock-icons.h</a>
+, <a class="el" href="ev-stock-icons_8c.html#a8af56133f550c32fad082413ce5d29f9">ev-stock-icons.c</a>
 </li>
 <li>EV_STOCK_INVERTED_COLORS
 : <a class="el" href="ev-stock-icons_8h.html#a1f60276006e3de16efc7bc12a6b16fae">ev-stock-icons.h</a>
@@ -6600,8 +6603,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-timeline_8h.html#a66b5861e16d51b30371d1b64ed21d580">ev-timeline.h</a>
 </li>
 <li>ev_timeline_get_duration()
-: <a class="el" href="ev-timeline_8c.html#a1642685d72e59b156578846b5cde41ef">ev-timeline.c</a>
-, <a class="el" href="ev-timeline_8h.html#a1642685d72e59b156578846b5cde41ef">ev-timeline.h</a>
+: <a class="el" href="ev-timeline_8h.html#a1642685d72e59b156578846b5cde41ef">ev-timeline.h</a>
+, <a class="el" href="ev-timeline_8c.html#a1642685d72e59b156578846b5cde41ef">ev-timeline.c</a>
 </li>
 <li>ev_timeline_get_fps()
 : <a class="el" href="ev-timeline_8c.html#a4add4057ad8b830853eb3a76ba154524">ev-timeline.c</a>
@@ -6615,8 +6618,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-timeline_8c.html#a5a90fb2f460450a7373dfc5bc3d6dfe1">ev-timeline.c</a>
 </li>
 <li>ev_timeline_get_progress()
-: <a class="el" href="ev-timeline_8h.html#ab81c463378f9b8ea4d28965552a830ac">ev-timeline.h</a>
-, <a class="el" href="ev-timeline_8c.html#ab81c463378f9b8ea4d28965552a830ac">ev-timeline.c</a>
+: <a class="el" href="ev-timeline_8c.html#ab81c463378f9b8ea4d28965552a830ac">ev-timeline.c</a>
+, <a class="el" href="ev-timeline_8h.html#ab81c463378f9b8ea4d28965552a830ac">ev-timeline.h</a>
 </li>
 <li>ev_timeline_get_property()
 : <a class="el" href="ev-timeline_8c.html#a4503c165eaf0778ca4dd13762a2afd40">ev-timeline.c</a>
@@ -6628,16 +6631,16 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-timeline_8c.html#a1aeb6922a11806ffd8308c640d7698dd">ev-timeline.c</a>
 </li>
 <li>ev_timeline_is_running()
-: <a class="el" href="ev-timeline_8c.html#a892b9225fa36b88a94d0940364888d8a">ev-timeline.c</a>
-, <a class="el" href="ev-timeline_8h.html#a892b9225fa36b88a94d0940364888d8a">ev-timeline.h</a>
+: <a class="el" href="ev-timeline_8h.html#a892b9225fa36b88a94d0940364888d8a">ev-timeline.h</a>
+, <a class="el" href="ev-timeline_8c.html#a892b9225fa36b88a94d0940364888d8a">ev-timeline.c</a>
 </li>
 <li>ev_timeline_new()
-: <a class="el" href="ev-timeline_8h.html#a3cfc464da5bc7f760963944c9dc18d3a">ev-timeline.h</a>
-, <a class="el" href="ev-timeline_8c.html#a3cfc464da5bc7f760963944c9dc18d3a">ev-timeline.c</a>
+: <a class="el" href="ev-timeline_8c.html#a3cfc464da5bc7f760963944c9dc18d3a">ev-timeline.c</a>
+, <a class="el" href="ev-timeline_8h.html#a3cfc464da5bc7f760963944c9dc18d3a">ev-timeline.h</a>
 </li>
 <li>ev_timeline_pause()
-: <a class="el" href="ev-timeline_8c.html#a9ea3a81da74a7a774cdcc01091636469">ev-timeline.c</a>
-, <a class="el" href="ev-timeline_8h.html#a9ea3a81da74a7a774cdcc01091636469">ev-timeline.h</a>
+: <a class="el" href="ev-timeline_8h.html#a9ea3a81da74a7a774cdcc01091636469">ev-timeline.h</a>
+, <a class="el" href="ev-timeline_8c.html#a9ea3a81da74a7a774cdcc01091636469">ev-timeline.c</a>
 </li>
 <li>ev_timeline_real_start()
 : <a class="el" href="ev-timeline_8c.html#a884af0a21d45cf0efb9227bc0c1a51bc">ev-timeline.c</a>
@@ -6650,16 +6653,16 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-timeline_8c.html#ac38b74fc1418e1807142d728f7d2adb8">ev-timeline.c</a>
 </li>
 <li>ev_timeline_set_duration()
-: <a class="el" href="ev-timeline_8c.html#a126aa48e40f885f86ad7fbbe9bbed046">ev-timeline.c</a>
-, <a class="el" href="ev-timeline_8h.html#a126aa48e40f885f86ad7fbbe9bbed046">ev-timeline.h</a>
+: <a class="el" href="ev-timeline_8h.html#a126aa48e40f885f86ad7fbbe9bbed046">ev-timeline.h</a>
+, <a class="el" href="ev-timeline_8c.html#a126aa48e40f885f86ad7fbbe9bbed046">ev-timeline.c</a>
 </li>
 <li>ev_timeline_set_fps()
-: <a class="el" href="ev-timeline_8c.html#a685e51d122154252d2f8ce83e95dd335">ev-timeline.c</a>
-, <a class="el" href="ev-timeline_8h.html#a685e51d122154252d2f8ce83e95dd335">ev-timeline.h</a>
+: <a class="el" href="ev-timeline_8h.html#a685e51d122154252d2f8ce83e95dd335">ev-timeline.h</a>
+, <a class="el" href="ev-timeline_8c.html#a685e51d122154252d2f8ce83e95dd335">ev-timeline.c</a>
 </li>
 <li>ev_timeline_set_loop()
-: <a class="el" href="ev-timeline_8h.html#aa5fc28fcdba727942f061616b1b5503d">ev-timeline.h</a>
-, <a class="el" href="ev-timeline_8c.html#aa5fc28fcdba727942f061616b1b5503d">ev-timeline.c</a>
+: <a class="el" href="ev-timeline_8c.html#aa5fc28fcdba727942f061616b1b5503d">ev-timeline.c</a>
+, <a class="el" href="ev-timeline_8h.html#aa5fc28fcdba727942f061616b1b5503d">ev-timeline.h</a>
 </li>
 <li>ev_timeline_set_property()
 : <a class="el" href="ev-timeline_8c.html#a6eb198de7c1acf97e384042f44afe6d7">ev-timeline.c</a>
@@ -6729,8 +6732,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-toolbar_8c.html#af98b26fa1173235360d55df10c93d362">ev-toolbar.c</a>
 </li>
 <li>ev_toolbar_new()
-: <a class="el" href="ev-toolbar_8h.html#a245a5d581e501da3b24a81095d8ef061">ev-toolbar.h</a>
-, <a class="el" href="ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061">ev-toolbar.c</a>
+: <a class="el" href="ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061">ev-toolbar.c</a>
+, <a class="el" href="ev-toolbar_8h.html#a245a5d581e501da3b24a81095d8ef061">ev-toolbar.h</a>
 </li>
 <li>ev_toolbar_set_button_action()
 : <a class="el" href="ev-toolbar_8c.html#a08f96fa6f4498add5466ace344c6c8aa">ev-toolbar.c</a>
@@ -6802,27 +6805,27 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-transition-animation_8c.html#a0204dc24bf0b275227e4c0e9f7db49a2">ev-transition-animation.c</a>
 </li>
 <li>ev_transition_animation_new()
-: <a class="el" href="ev-transition-animation_8h.html#af30ec6316915ff750db57755d1155ba3">ev-transition-animation.h</a>
-, <a class="el" href="ev-transition-animation_8c.html#af30ec6316915ff750db57755d1155ba3">ev-transition-animation.c</a>
+: <a class="el" href="ev-transition-animation_8c.html#af30ec6316915ff750db57755d1155ba3">ev-transition-animation.c</a>
+, <a class="el" href="ev-transition-animation_8h.html#af30ec6316915ff750db57755d1155ba3">ev-transition-animation.h</a>
 </li>
 <li>ev_transition_animation_paint()
-: <a class="el" href="ev-transition-animation_8h.html#a0f7c24ae262b2a05900918eda7769873">ev-transition-animation.h</a>
-, <a class="el" href="ev-transition-animation_8c.html#a0f7c24ae262b2a05900918eda7769873">ev-transition-animation.c</a>
+: <a class="el" href="ev-transition-animation_8c.html#a0f7c24ae262b2a05900918eda7769873">ev-transition-animation.c</a>
+, <a class="el" href="ev-transition-animation_8h.html#a0f7c24ae262b2a05900918eda7769873">ev-transition-animation.h</a>
 </li>
 <li>ev_transition_animation_push()
 : <a class="el" href="ev-transition-animation_8c.html#a3f275eb7ccc5559112321d06d88900d2">ev-transition-animation.c</a>
 </li>
 <li>ev_transition_animation_ready()
-: <a class="el" href="ev-transition-animation_8c.html#a367f700dc5aad882e2a1992da375cd07">ev-transition-animation.c</a>
-, <a class="el" href="ev-transition-animation_8h.html#a367f700dc5aad882e2a1992da375cd07">ev-transition-animation.h</a>
+: <a class="el" href="ev-transition-animation_8h.html#a367f700dc5aad882e2a1992da375cd07">ev-transition-animation.h</a>
+, <a class="el" href="ev-transition-animation_8c.html#a367f700dc5aad882e2a1992da375cd07">ev-transition-animation.c</a>
 </li>
 <li>ev_transition_animation_set_dest_surface()
-: <a class="el" href="ev-transition-animation_8c.html#ae69d854a007e306d664de55008623182">ev-transition-animation.c</a>
-, <a class="el" href="ev-transition-animation_8h.html#a9cc1066e2620ec2c33b4eda9a08c6fd0">ev-transition-animation.h</a>
+: <a class="el" href="ev-transition-animation_8h.html#a9cc1066e2620ec2c33b4eda9a08c6fd0">ev-transition-animation.h</a>
+, <a class="el" href="ev-transition-animation_8c.html#ae69d854a007e306d664de55008623182">ev-transition-animation.c</a>
 </li>
 <li>ev_transition_animation_set_origin_surface()
-: <a class="el" href="ev-transition-animation_8c.html#ab6657a763592baf97478c6b8a7caba46">ev-transition-animation.c</a>
-, <a class="el" href="ev-transition-animation_8h.html#ab6657a763592baf97478c6b8a7caba46">ev-transition-animation.h</a>
+: <a class="el" href="ev-transition-animation_8h.html#ab6657a763592baf97478c6b8a7caba46">ev-transition-animation.h</a>
+, <a class="el" href="ev-transition-animation_8c.html#ab6657a763592baf97478c6b8a7caba46">ev-transition-animation.c</a>
 </li>
 <li>ev_transition_animation_set_property()
 : <a class="el" href="ev-transition-animation_8c.html#a0feaa6a040953147a5d9b6050c255b56">ev-transition-animation.c</a>
@@ -6888,8 +6891,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-transition-effect_8c.html#a1aa314d2c4ed157fb4e22aa809a4a882">ev-transition-effect.c</a>
 </li>
 <li>ev_transition_effect_new()
-: <a class="el" href="ev-transition-effect_8h.html#a6979ce3d9717b993ce27ea4a21310735">ev-transition-effect.h</a>
-, <a class="el" href="ev-transition-effect_8c.html#a6979ce3d9717b993ce27ea4a21310735">ev-transition-effect.c</a>
+: <a class="el" href="ev-transition-effect_8c.html#a6979ce3d9717b993ce27ea4a21310735">ev-transition-effect.c</a>
+, <a class="el" href="ev-transition-effect_8h.html#a6979ce3d9717b993ce27ea4a21310735">ev-transition-effect.h</a>
 </li>
 <li>EV_TRANSITION_EFFECT_PUSH
 : <a class="el" href="ev-transition-effect_8h.html#ad307eb65ed10bb9ab98a866ff0f1b59da4f2114cea1b395137944bb1b58e8671c">ev-transition-effect.h</a>
@@ -7282,8 +7285,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-accessible_8c.html#abc573ff62fd6c6d1b457d6b6054ea9b5">ev-view-accessible.c</a>
 </li>
 <li>ev_view_accessible_get_n_pages()
-: <a class="el" href="ev-view-accessible_8h.html#a5117ccc0e709de51f81730c82583e2b3">ev-view-accessible.h</a>
-, <a class="el" href="ev-view-accessible_8c.html#aad4098f74b6005b57e8bbf43642017a9">ev-view-accessible.c</a>
+: <a class="el" href="ev-view-accessible_8c.html#aad4098f74b6005b57e8bbf43642017a9">ev-view-accessible.c</a>
+, <a class="el" href="ev-view-accessible_8h.html#a5117ccc0e709de51f81730c82583e2b3">ev-view-accessible.h</a>
 </li>
 <li>ev_view_accessible_get_relevant_page()
 : <a class="el" href="ev-view-accessible_8c.html#acae8f9fc3d7f53632eaa50b249bec753">ev-view-accessible.c</a>
@@ -7302,12 +7305,12 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-accessible_8c.html#aec7ea48f215218b9b77de117e2a2ca23">ev-view-accessible.c</a>
 </li>
 <li>ev_view_accessible_is_doc_rect_showing()
-: <a class="el" href="ev-view-accessible_8h.html#a99e34bcf424176a717a2ec590798f73b">ev-view-accessible.h</a>
-, <a class="el" href="ev-view-accessible_8c.html#a99e34bcf424176a717a2ec590798f73b">ev-view-accessible.c</a>
+: <a class="el" href="ev-view-accessible_8c.html#a99e34bcf424176a717a2ec590798f73b">ev-view-accessible.c</a>
+, <a class="el" href="ev-view-accessible_8h.html#a99e34bcf424176a717a2ec590798f73b">ev-view-accessible.h</a>
 </li>
 <li>ev_view_accessible_new()
-: <a class="el" href="ev-view-accessible_8h.html#a6f000f2ced1e1216e1752eb726c32b6b">ev-view-accessible.h</a>
-, <a class="el" href="ev-view-accessible_8c.html#a6f000f2ced1e1216e1752eb726c32b6b">ev-view-accessible.c</a>
+: <a class="el" href="ev-view-accessible_8c.html#a6f000f2ced1e1216e1752eb726c32b6b">ev-view-accessible.c</a>
+, <a class="el" href="ev-view-accessible_8h.html#a6f000f2ced1e1216e1752eb726c32b6b">ev-view-accessible.h</a>
 </li>
 <li>ev_view_accessible_ref_child()
 : <a class="el" href="ev-view-accessible_8c.html#a6dc4557b47fe004b92b9fe83a28cc1af">ev-view-accessible.c</a>
@@ -7320,8 +7323,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-view-accessible_8c.html#a2285e940b9609cafe9b04fb39a1636dc">ev-view-accessible.c</a>
 </li>
 <li>ev_view_accessible_set_page_range()
-: <a class="el" href="ev-view-accessible_8h.html#a524a6a680a70e1f03ba73c741bd22184">ev-view-accessible.h</a>
-, <a class="el" href="ev-view-accessible_8c.html#a524a6a680a70e1f03ba73c741bd22184">ev-view-accessible.c</a>
+: <a class="el" href="ev-view-accessible_8c.html#a524a6a680a70e1f03ba73c741bd22184">ev-view-accessible.c</a>
+, <a class="el" href="ev-view-accessible_8h.html#a524a6a680a70e1f03ba73c741bd22184">ev-view-accessible.h</a>
 </li>
 <li>ev_view_activate()
 : <a class="el" href="ev-view_8c.html#a66bfb32b4007c2756e5c9455cf0081f0">ev-view.c</a>
@@ -7348,12 +7351,12 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#a29c9f73267a4a12636fa962b1286690a">ev-view.c</a>
 </li>
 <li>ev_view_autoscroll_start()
-: <a class="el" href="ev-view_8h.html#a6057c02ba21d898d3e20d091cf642050">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a6057c02ba21d898d3e20d091cf642050">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a6057c02ba21d898d3e20d091cf642050">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a6057c02ba21d898d3e20d091cf642050">ev-view.h</a>
 </li>
 <li>ev_view_autoscroll_stop()
-: <a class="el" href="ev-view_8h.html#a1fe12716987095c8e5993acf1fcab0f4">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a1fe12716987095c8e5993acf1fcab0f4">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a1fe12716987095c8e5993acf1fcab0f4">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a1fe12716987095c8e5993acf1fcab0f4">ev-view.h</a>
 </li>
 <li>ev_view_begin_add_annotation()
 : <a class="el" href="ev-view_8h.html#aa49963d34c4251df044c3d7422e2965b">ev-view.h</a>
@@ -7366,16 +7369,16 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#acce3912972b4e339df9ce14ec2d87c8f">ev-view.c</a>
 </li>
 <li>ev_view_can_zoom_in()
-: <a class="el" href="ev-view_8h.html#a6e4b505c49763cba01453010da3fda11">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a6e4b505c49763cba01453010da3fda11">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a6e4b505c49763cba01453010da3fda11">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a6e4b505c49763cba01453010da3fda11">ev-view.h</a>
 </li>
 <li>ev_view_can_zoom_out()
-: <a class="el" href="ev-view_8h.html#adef64e99488d53e10d8294dca85ea128">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#adef64e99488d53e10d8294dca85ea128">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#adef64e99488d53e10d8294dca85ea128">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#adef64e99488d53e10d8294dca85ea128">ev-view.h</a>
 </li>
 <li>ev_view_cancel_add_annotation()
-: <a class="el" href="ev-view_8h.html#abb7abf428b083b1ba823fc281efea770">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#abb7abf428b083b1ba823fc281efea770">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#abb7abf428b083b1ba823fc281efea770">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#abb7abf428b083b1ba823fc281efea770">ev-view.h</a>
 </li>
 <li>ev_view_change_page()
 : <a class="el" href="ev-view_8c.html#a58fffcea834ebde21fba0e9883f98b10">ev-view.c</a>
@@ -7400,8 +7403,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5">ev-view.c</a>
 </li>
 <li>ev_view_copy_link_address()
-: <a class="el" href="ev-view_8h.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev-view.h</a>
 </li>
 <li>ev_view_create_annotation()
 : <a class="el" href="ev-view_8c.html#a8e33300c72e94355cc1706877a3355ed">ev-view.c</a>
@@ -7428,8 +7431,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bfaa9025c4f8bbf15a050e6f7a785456ac9">ev-view-cursor.h</a>
 </li>
 <li>ev_view_cursor_new()
-: <a class="el" href="ev-view-cursor_8h.html#a704279f0834b640d01ca87f992cfc503">ev-view-cursor.h</a>
-, <a class="el" href="ev-view-cursor_8c.html#ac28bb24d211b038e399b8ef3a5ce66cf">ev-view-cursor.c</a>
+: <a class="el" href="ev-view-cursor_8c.html#ac28bb24d211b038e399b8ef3a5ce66cf">ev-view-cursor.c</a>
+, <a class="el" href="ev-view-cursor_8h.html#a704279f0834b640d01ca87f992cfc503">ev-view-cursor.h</a>
 </li>
 <li>EV_VIEW_CURSOR_NORMAL
 : <a class="el" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bfa96c7298304eb5aa1b86f197ce6279e32">ev-view-cursor.h</a>
@@ -7468,8 +7471,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#a701acdaff6a2d3608dae576498d501db">ev-view.c</a>
 </li>
 <li>ev_view_find_cancel()
-: <a class="el" href="ev-view_8h.html#a69eb99221b1d5354ccfb4640f925f8e4">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a69eb99221b1d5354ccfb4640f925f8e4">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a69eb99221b1d5354ccfb4640f925f8e4">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a69eb99221b1d5354ccfb4640f925f8e4">ev-view.h</a>
 </li>
 <li>ev_view_find_changed()
 : <a class="el" href="ev-view_8c.html#a6ca841cb28770dd973f7c1af1baad0eb">ev-view.c</a>
@@ -7485,8 +7488,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10aca3bcd1bec3d101640a969c309af92bdd9">ev-view.c</a>
 </li>
 <li>ev_view_find_next()
-: <a class="el" href="ev-view_8h.html#a9dcdadb4a8672331acfbd8d9d4445276">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a9dcdadb4a8672331acfbd8d9d4445276">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a9dcdadb4a8672331acfbd8d9d4445276">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a9dcdadb4a8672331acfbd8d9d4445276">ev-view.h</a>
 </li>
 <li>EV_VIEW_FIND_PREV
 : <a class="el" href="ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10aca856b96a01eac0324eb4b00e56dddc23b">ev-view.c</a>
@@ -7496,24 +7499,24 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-view_8h.html#af70c84aafc088507c77dccb1895bcec2">ev-view.h</a>
 </li>
 <li>ev_view_find_restart()
-: <a class="el" href="ev-view_8h.html#ab521bf29ade0b0c120bd94ce69179f74">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#ab521bf29ade0b0c120bd94ce69179f74">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#ab521bf29ade0b0c120bd94ce69179f74">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#ab521bf29ade0b0c120bd94ce69179f74">ev-view.h</a>
 </li>
 <li>ev_view_find_search_changed()
 : <a class="el" href="ev-view_8h.html#a3bbd25512a4068064161deaed737a173">ev-view.h</a>
 , <a class="el" href="ev-view_8c.html#a3bbd25512a4068064161deaed737a173">ev-view.c</a>
 </li>
 <li>ev_view_find_set_highlight_search()
-: <a class="el" href="ev-view_8h.html#a76f46ee1b38429b28d6575a90d3461ec">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a76f46ee1b38429b28d6575a90d3461ec">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a76f46ee1b38429b28d6575a90d3461ec">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a76f46ee1b38429b28d6575a90d3461ec">ev-view.h</a>
 </li>
 <li>ev_view_find_set_result()
-: <a class="el" href="ev-view_8h.html#ad95bffa913795b3fa5550bab38cada05">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#ad95bffa913795b3fa5550bab38cada05">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#ad95bffa913795b3fa5550bab38cada05">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#ad95bffa913795b3fa5550bab38cada05">ev-view.h</a>
 </li>
 <li>ev_view_find_started()
-: <a class="el" href="ev-view_8h.html#ade9a15b28ef8a3c52f00fe2644a6c0f9">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#ade9a15b28ef8a3c52f00fe2644a6c0f9">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#ade9a15b28ef8a3c52f00fe2644a6c0f9">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#ade9a15b28ef8a3c52f00fe2644a6c0f9">ev-view.h</a>
 </li>
 <li>ev_view_find_window_child_for_annot()
 : <a class="el" href="ev-view_8c.html#a21dba3be737a58bde45a57fa5840cca9">ev-view.c</a>
@@ -7522,8 +7525,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#af516d8953e9d2283009eaef496cd8014">ev-view.c</a>
 </li>
 <li>ev_view_focus_annotation()
-: <a class="el" href="ev-view_8h.html#ae3e9746258db229cb1f8fac7ccdf49fc">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#ae3e9746258db229cb1f8fac7ccdf49fc">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#ae3e9746258db229cb1f8fac7ccdf49fc">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#ae3e9746258db229cb1f8fac7ccdf49fc">ev-view.h</a>
 </li>
 <li>ev_view_focus_in()
 : <a class="el" href="ev-view_8c.html#a0a0d618092f963c971164c556e7d2a0e">ev-view.c</a>
@@ -7598,8 +7601,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#af9b7608ecb732d1883e705aaf4882793">ev-view.c</a>
 </li>
 <li>ev_view_get_has_selection()
-: <a class="el" href="ev-view_8h.html#a47539db7d40303d49e68db231d19a548">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a47539db7d40303d49e68db231d19a548">ev-view.h</a>
 </li>
 <li>ev_view_get_height_to_page()
 : <a class="el" href="ev-view_8c.html#af16b70e18d01149573ea34de2d70f6aa">ev-view.c</a>
@@ -7617,8 +7620,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#af7f2b4e565d3edc9f74150882caf24e7">ev-view.c</a>
 </li>
 <li>ev_view_get_page_extents()
-: <a class="el" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev-view.c</a>
-, <a class="el" href="ev-view_8h.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev-view.h</a>
+: <a class="el" href="ev-view_8h.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev-view.h</a>
+, <a class="el" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev-view.c</a>
 </li>
 <li>ev_view_get_page_size()
 : <a class="el" href="ev-view_8c.html#a2ccfa61111735991d2f07a27eadb7d78">ev-view.c</a>
@@ -7679,8 +7682,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-view_8c.html#a4b1e8f5d374cde8a895b422077ddc6fc">ev-view.c</a>
 </li>
 <li>ev_view_is_loading()
-: <a class="el" href="ev-view_8c.html#abe512525bb472b40103269f290bbcf29">ev-view.c</a>
-, <a class="el" href="ev-view_8h.html#abe512525bb472b40103269f290bbcf29">ev-view.h</a>
+: <a class="el" href="ev-view_8h.html#abe512525bb472b40103269f290bbcf29">ev-view.h</a>
+, <a class="el" href="ev-view_8c.html#abe512525bb472b40103269f290bbcf29">ev-view.c</a>
 </li>
 <li>ev_view_key_press_event()
 : <a class="el" href="ev-view_8c.html#a7eebe9fe6efa62f4e8b08eab0c67d482">ev-view.c</a>
@@ -7704,12 +7707,12 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#ac8cfb6b9d1e475287067d817d4012bec">ev-view.c</a>
 </li>
 <li>ev_view_new()
-: <a class="el" href="ev-view_8h.html#a5407c6d2e4797e1f4cebd051440ad6eb">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a5407c6d2e4797e1f4cebd051440ad6eb">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a5407c6d2e4797e1f4cebd051440ad6eb">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a5407c6d2e4797e1f4cebd051440ad6eb">ev-view.h</a>
 </li>
 <li>ev_view_next_page()
-: <a class="el" href="ev-view_8h.html#a1279ae33808548a39a2c114e7ddbc7de">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a1279ae33808548a39a2c114e7ddbc7de">ev-view.h</a>
 </li>
 <li>ev_view_page_changed_cb()
 : <a class="el" href="ev-view_8c.html#a9494b5ee9f52ffa84ca8e5237bdfa073">ev-view.c</a>
@@ -7766,8 +7769,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-presentation_8h.html#a133ebdda47c35aee47911c4a286f8c3c">ev-view-presentation.h</a>
 </li>
 <li>ev_view_presentation_get_current_page()
-: <a class="el" href="ev-view-presentation_8h.html#aa08cc58399281749a8cdef395ba5ab7c">ev-view-presentation.h</a>
-, <a class="el" href="ev-view-presentation_8c.html#aa08cc58399281749a8cdef395ba5ab7c">ev-view-presentation.c</a>
+: <a class="el" href="ev-view-presentation_8c.html#aa08cc58399281749a8cdef395ba5ab7c">ev-view-presentation.c</a>
+, <a class="el" href="ev-view-presentation_8h.html#aa08cc58399281749a8cdef395ba5ab7c">ev-view-presentation.h</a>
 </li>
 <li>ev_view_presentation_get_link_at_location()
 : <a class="el" href="ev-view-presentation_8c.html#a045c0c5a153569e7d64ff9dc6f66e97a">ev-view-presentation.c</a>
@@ -7785,8 +7788,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-presentation_8c.html#a1c50b4ea9c49d7353be9d7b6a2c98028">ev-view-presentation.c</a>
 </li>
 <li>ev_view_presentation_get_rotation()
-: <a class="el" href="ev-view-presentation_8c.html#a6e8cd28d9da4acbbb8158f17b64aa3d8">ev-view-presentation.c</a>
-, <a class="el" href="ev-view-presentation_8h.html#a6e8cd28d9da4acbbb8158f17b64aa3d8">ev-view-presentation.h</a>
+: <a class="el" href="ev-view-presentation_8h.html#a6e8cd28d9da4acbbb8158f17b64aa3d8">ev-view-presentation.h</a>
+, <a class="el" href="ev-view-presentation_8c.html#a6e8cd28d9da4acbbb8158f17b64aa3d8">ev-view-presentation.c</a>
 </li>
 <li>ev_view_presentation_get_type()
 : <a class="el" href="ev-view-presentation_8h.html#a1da36ceb71837d1c1e38764d83dda835">ev-view-presentation.h</a>
@@ -7837,8 +7840,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-presentation_8c.html#a251400083fe44b28ed285b6d68986ebf">ev-view-presentation.c</a>
 </li>
 <li>ev_view_presentation_new()
-: <a class="el" href="ev-view-presentation_8c.html#a2eaf6f4b14dbee80630a6840decd5104">ev-view-presentation.c</a>
-, <a class="el" href="ev-view-presentation_8h.html#a2eaf6f4b14dbee80630a6840decd5104">ev-view-presentation.h</a>
+: <a class="el" href="ev-view-presentation_8h.html#a2eaf6f4b14dbee80630a6840decd5104">ev-view-presentation.h</a>
+, <a class="el" href="ev-view-presentation_8c.html#a2eaf6f4b14dbee80630a6840decd5104">ev-view-presentation.c</a>
 </li>
 <li>ev_view_presentation_next_page()
 : <a class="el" href="ev-view-presentation_8c.html#a290818a209e0543441e58409a946e7fe">ev-view-presentation.c</a>
@@ -7882,8 +7885,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-presentation_8c.html#ae09d0ad5bdbb82adebf4ff6e2c2052fe">ev-view-presentation.c</a>
 </li>
 <li>ev_view_presentation_set_rotation()
-: <a class="el" href="ev-view-presentation_8h.html#a3278e1def20749e38645a28578f58919">ev-view-presentation.h</a>
-, <a class="el" href="ev-view-presentation_8c.html#a3278e1def20749e38645a28578f58919">ev-view-presentation.c</a>
+: <a class="el" href="ev-view-presentation_8c.html#a3278e1def20749e38645a28578f58919">ev-view-presentation.c</a>
+, <a class="el" href="ev-view-presentation_8h.html#a3278e1def20749e38645a28578f58919">ev-view-presentation.h</a>
 </li>
 <li>ev_view_presentation_set_white()
 : <a class="el" href="ev-view-presentation_8c.html#afcb2a12f48d9b224a733ef4205d36a53">ev-view-presentation.c</a>
@@ -7907,8 +7910,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view-presentation_8c.html#a26d158fc11e952428ab1a3ecf554a5e9">ev-view-presentation.c</a>
 </li>
 <li>ev_view_previous_page()
-: <a class="el" href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241">ev-view.c</a>
-, <a class="el" href="ev-view_8h.html#ac73a18c65269189aaba636ef848e5241">ev-view.h</a>
+: <a class="el" href="ev-view_8h.html#ac73a18c65269189aaba636ef848e5241">ev-view.h</a>
+, <a class="el" href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241">ev-view.c</a>
 </li>
 <li>ev_view_primary_clear_cb()
 : <a class="el" href="ev-view_8c.html#a7892e67d740dce0eaedf29249c2501ed">ev-view.c</a>
@@ -7951,8 +7954,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#a75a108a4e67017afadacf173e13253c4">ev-view.c</a>
 </li>
 <li>ev_view_scroll()
-: <a class="el" href="ev-view_8c.html#ab508decb6ec537488156e4034a148bc2">ev-view.c</a>
-, <a class="el" href="ev-view_8h.html#ab508decb6ec537488156e4034a148bc2">ev-view.h</a>
+: <a class="el" href="ev-view_8h.html#ab508decb6ec537488156e4034a148bc2">ev-view.h</a>
+, <a class="el" href="ev-view_8c.html#ab508decb6ec537488156e4034a148bc2">ev-view.c</a>
 </li>
 <li>ev_view_scroll_drag_release()
 : <a class="el" href="ev-view_8c.html#a21d7b0b680761ea225bca5ec586820d3">ev-view.c</a>
@@ -7974,8 +7977,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#a68ea7a4c9e5eed0c438ff18d376c172e">ev-view.c</a>
 </li>
 <li>ev_view_set_caret_cursor_position()
-: <a class="el" href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70">ev-view.c</a>
-, <a class="el" href="ev-view_8h.html#ad252527b78bb0905ab35216ca2ac3a70">ev-view.h</a>
+: <a class="el" href="ev-view_8h.html#ad252527b78bb0905ab35216ca2ac3a70">ev-view.h</a>
+, <a class="el" href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70">ev-view.c</a>
 </li>
 <li>ev_view_set_caret_navigation_enabled()
 : <a class="el" href="ev-view_8h.html#af968df50ffca1525bf5c4242cd7569c7">ev-view.h</a>
@@ -7992,12 +7995,12 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 , <a class="el" href="ev-view_8h.html#a5f0955a4dbd557a9de3361f658a8ba24">ev-view.h</a>
 </li>
 <li>ev_view_set_model()
-: <a class="el" href="ev-view_8c.html#a9fece6b2092f4e88751504f349f9d979">ev-view.c</a>
-, <a class="el" href="ev-view_8h.html#a9fece6b2092f4e88751504f349f9d979">ev-view.h</a>
+: <a class="el" href="ev-view_8h.html#a9fece6b2092f4e88751504f349f9d979">ev-view.h</a>
+, <a class="el" href="ev-view_8c.html#a9fece6b2092f4e88751504f349f9d979">ev-view.c</a>
 </li>
 <li>ev_view_set_page_cache_size()
-: <a class="el" href="ev-view_8c.html#a026f9468b065fb1c6d1a0aa8bbfe3b2e">ev-view.c</a>
-, <a class="el" href="ev-view_8h.html#a026f9468b065fb1c6d1a0aa8bbfe3b2e">ev-view.h</a>
+: <a class="el" href="ev-view_8h.html#a026f9468b065fb1c6d1a0aa8bbfe3b2e">ev-view.h</a>
+, <a class="el" href="ev-view_8c.html#a026f9468b065fb1c6d1a0aa8bbfe3b2e">ev-view.c</a>
 </li>
 <li>ev_view_set_property()
 : <a class="el" href="ev-view_8c.html#aac1adafabcfbfbeb314b0f922f86f35d">ev-view.c</a>
@@ -8034,8 +8037,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-view_8c.html#a8bec86179b637038f89d2b7c8d97e28b">ev-view.c</a>
 </li>
 <li>ev_view_supports_caret_navigation()
-: <a class="el" href="ev-view_8h.html#a4c42acdf6c13434a1c99764b14ee747f">ev-view.h</a>
-, <a class="el" href="ev-view_8c.html#a4c42acdf6c13434a1c99764b14ee747f">ev-view.c</a>
+: <a class="el" href="ev-view_8c.html#a4c42acdf6c13434a1c99764b14ee747f">ev-view.c</a>
+, <a class="el" href="ev-view_8h.html#a4c42acdf6c13434a1c99764b14ee747f">ev-view.h</a>
 </li>
 <li>ev_view_synctex_backward_search()
 : <a class="el" href="ev-view_8c.html#a763a3d35f7c807ab3193fb34e9ece574">ev-view.c</a>
@@ -8325,8 +8328,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-window_8c.html#a3877bab5dafb9ac625af9674408318d1">ev-window.c</a>
 </li>
 <li>ev_window_focus_view()
-: <a class="el" href="ev-window_8c.html#a0a5ec81005cc33233d5539e17877efad">ev-window.c</a>
-, <a class="el" href="ev-window_8h.html#a0a5ec81005cc33233d5539e17877efad">ev-window.h</a>
+: <a class="el" href="ev-window_8h.html#a0a5ec81005cc33233d5539e17877efad">ev-window.h</a>
+, <a class="el" href="ev-window_8c.html#a0a5ec81005cc33233d5539e17877efad">ev-window.c</a>
 </li>
 <li>ev_window_fullscreen_hide_toolbar()
 : <a class="el" href="ev-window_8c.html#a2be3530faec121fef2f02adffd6f9927">ev-window.c</a>
@@ -8348,16 +8351,16 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-window_8h.html#acfd6be947c590de4df358902d8c91b6f">ev-window.h</a>
 </li>
 <li>ev_window_get_dbus_object_path()
-: <a class="el" href="ev-window_8h.html#aa4c4958da41d46c7c0a8be8144c73991">ev-window.h</a>
-, <a class="el" href="ev-window_8c.html#aa4c4958da41d46c7c0a8be8144c73991">ev-window.c</a>
+: <a class="el" href="ev-window_8c.html#aa4c4958da41d46c7c0a8be8144c73991">ev-window.c</a>
+, <a class="el" href="ev-window_8h.html#aa4c4958da41d46c7c0a8be8144c73991">ev-window.h</a>
 </li>
 <li>ev_window_get_document_model()
 : <a class="el" href="ev-window_8c.html#ace3b80938864d8e61747ebe4aab0dd87">ev-window.c</a>
 , <a class="el" href="ev-window_8h.html#ace3b80938864d8e61747ebe4aab0dd87">ev-window.h</a>
 </li>
 <li>ev_window_get_history()
-: <a class="el" href="ev-window_8c.html#ac78ab61760772c0de2e8a9ed55263d46">ev-window.c</a>
-, <a class="el" href="ev-window_8h.html#ac78ab61760772c0de2e8a9ed55263d46">ev-window.h</a>
+: <a class="el" href="ev-window_8h.html#ac78ab61760772c0de2e8a9ed55263d46">ev-window.h</a>
+, <a class="el" href="ev-window_8c.html#ac78ab61760772c0de2e8a9ed55263d46">ev-window.c</a>
 </li>
 <li>EV_WINDOW_GET_PRIVATE
 : <a class="el" href="ev-window_8c.html#a856809ed7bdb65f92327757a6a73d6f5">ev-window.c</a>
@@ -8366,8 +8369,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-window_8h.html#aedb92311f8c69fea726df6551b735538">ev-window.h</a>
 </li>
 <li>ev_window_get_uri()
-: <a class="el" href="ev-window_8c.html#ae513dc48a56676eacd7bb66d95d6ce25">ev-window.c</a>
-, <a class="el" href="ev-window_8h.html#ae513dc48a56676eacd7bb66d95d6ce25">ev-window.h</a>
+: <a class="el" href="ev-window_8h.html#ae513dc48a56676eacd7bb66d95d6ce25">ev-window.h</a>
+, <a class="el" href="ev-window_8c.html#ae513dc48a56676eacd7bb66d95d6ce25">ev-window.c</a>
 </li>
 <li>ev_window_handle_link()
 : <a class="el" href="ev-window_8c.html#afa25b8e654e0233bac201a9c335d9929">ev-window.c</a>
@@ -8388,8 +8391,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-window_8c.html#a30e7536e7864bcfbffa1f9e922c19dd9">ev-window.c</a>
 </li>
 <li>ev_window_is_empty()
-: <a class="el" href="ev-window_8h.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf">ev-window.h</a>
-, <a class="el" href="ev-window_8c.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf">ev-window.c</a>
+: <a class="el" href="ev-window_8c.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf">ev-window.c</a>
+, <a class="el" href="ev-window_8h.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf">ev-window.h</a>
 </li>
 <li>EV_WINDOW_IS_PRESENTATION
 : <a class="el" href="ev-window_8c.html#a2d1d292e9ac2d3671d712e492f79adbc">ev-window.c</a>
@@ -8428,19 +8431,19 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-window_8h.html#af078888885ecae68b98b740c05c406d6a82e7bf20591bf6e8f6bb1ceb14b1dc1e">ev-window.h</a>
 </li>
 <li>ev_window_new()
-: <a class="el" href="ev-window_8c.html#a1fdd586cd4cc9562201386f2103ce422">ev-window.c</a>
-, <a class="el" href="ev-window_8h.html#a1fdd586cd4cc9562201386f2103ce422">ev-window.h</a>
+: <a class="el" href="ev-window_8h.html#a1fdd586cd4cc9562201386f2103ce422">ev-window.h</a>
+, <a class="el" href="ev-window_8c.html#a1fdd586cd4cc9562201386f2103ce422">ev-window.c</a>
 </li>
 <li>ev_window_open_copy_at_dest()
 : <a class="el" href="ev-window_8c.html#a41dd39c315679c4643ea428addc35989">ev-window.c</a>
 </li>
 <li>ev_window_open_document()
-: <a class="el" href="ev-window_8c.html#ae9f09db2e536bf396299bc94aaa79c7b">ev-window.c</a>
-, <a class="el" href="ev-window_8h.html#ae9f09db2e536bf396299bc94aaa79c7b">ev-window.h</a>
+: <a class="el" href="ev-window_8h.html#ae9f09db2e536bf396299bc94aaa79c7b">ev-window.h</a>
+, <a class="el" href="ev-window_8c.html#ae9f09db2e536bf396299bc94aaa79c7b">ev-window.c</a>
 </li>
 <li>ev_window_open_uri()
-: <a class="el" href="ev-window_8c.html#a9083be0813a4b83cdcd8b6b62b51bc56">ev-window.c</a>
-, <a class="el" href="ev-window_8h.html#a9083be0813a4b83cdcd8b6b62b51bc56">ev-window.h</a>
+: <a class="el" href="ev-window_8h.html#a9083be0813a4b83cdcd8b6b62b51bc56">ev-window.h</a>
+, <a class="el" href="ev-window_8c.html#a9083be0813a4b83cdcd8b6b62b51bc56">ev-window.c</a>
 </li>
 <li>ev_window_page_changed_cb()
 : <a class="el" href="ev-window_8c.html#a3cc242788cb9ba2b768758a6365f3f49">ev-window.c</a>
@@ -8491,8 +8494,8 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-window_8c.html#a9fc18efcac4d128a3232d94c94767c79">ev-window.c</a>
 </li>
 <li>ev_window_print_range()
-: <a class="el" href="ev-window_8c.html#aefe505e39a44bb8fb27599e10fc7a3c4">ev-window.c</a>
-, <a class="el" href="ev-window_8h.html#ac02c402e88568e438a2e191459881548">ev-window.h</a>
+: <a class="el" href="ev-window_8h.html#ac02c402e88568e438a2e191459881548">ev-window.h</a>
+, <a class="el" href="ev-window_8c.html#aefe505e39a44bb8fb27599e10fc7a3c4">ev-window.c</a>
 </li>
 <li>ev_window_print_update_pending_jobs_message()
 : <a class="el" href="ev-window_8c.html#a46b5c6eb5343afba7474d47396aa8230">ev-window.c</a>
@@ -8556,6 +8559,9 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 </li>
 <li>ev_window_set_document()
 : <a class="el" href="ev-window_8c.html#a2a04847bcb09a7da9a416278e8344783">ev-window.c</a>
+</li>
+<li>ev_window_set_document_metadata()
+: <a class="el" href="ev-window_8c.html#a73d4757ccce15008bed4b351a728362c">ev-window.c</a>
 </li>
 <li>ev_window_set_icon_from_thumbnail()
 : <a class="el" href="ev-window_8c.html#a82c56312fc3e25a251ea0355faebab03">ev-window.c</a>
@@ -8632,16 +8638,16 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 : <a class="el" href="ev-window-title_8c.html#a99942ce00d7e9f0aaf1398f52d59ff64">ev-window-title.c</a>
 </li>
 <li>ev_window_title_set_document()
-: <a class="el" href="ev-window-title_8h.html#ac9435f832fe41c8460773167a8dcb4a7">ev-window-title.h</a>
-, <a class="el" href="ev-window-title_8c.html#ac9435f832fe41c8460773167a8dcb4a7">ev-window-title.c</a>
+: <a class="el" href="ev-window-title_8c.html#ac9435f832fe41c8460773167a8dcb4a7">ev-window-title.c</a>
+, <a class="el" href="ev-window-title_8h.html#ac9435f832fe41c8460773167a8dcb4a7">ev-window-title.h</a>
 </li>
 <li>ev_window_title_set_type()
 : <a class="el" href="ev-window-title_8h.html#a2e2de8d2e079a24c3a8449c37dda9aa8">ev-window-title.h</a>
 , <a class="el" href="ev-window-title_8c.html#a2e2de8d2e079a24c3a8449c37dda9aa8">ev-window-title.c</a>
 </li>
 <li>ev_window_title_set_uri()
-: <a class="el" href="ev-window-title_8c.html#ad8be6842e20dd75477f19d18a80a44ed">ev-window-title.c</a>
-, <a class="el" href="ev-window-title_8h.html#ad8be6842e20dd75477f19d18a80a44ed">ev-window-title.h</a>
+: <a class="el" href="ev-window-title_8h.html#ad8be6842e20dd75477f19d18a80a44ed">ev-window-title.h</a>
+, <a class="el" href="ev-window-title_8c.html#ad8be6842e20dd75477f19d18a80a44ed">ev-window-title.c</a>
 </li>
 <li>ev_window_title_update()
 : <a class="el" href="ev-window-title_8c.html#a89b733023b6d6ef27bce45a2d2ffcdb3">ev-window-title.c</a>
@@ -9672,7 +9678,7 @@ $(document).ready(function(){initNavTree('globals_0x65.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 30 2014 13:12:14 for Evince by
+    <li class="footer">Generated on Mon Jun 30 2014 16:52:23 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

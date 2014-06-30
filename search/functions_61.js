@@ -11,6 +11,7 @@ var searchData=
   ['add_5fprev_5fjobs_5fif_5fneeded',['add_prev_jobs_if_needed',['../ev-pixbuf-cache_8c.html#afcd2adeaf62a64c891ac46f70cd12e20',1,'ev-pixbuf-cache.c']]],
   ['add_5frange',['add_range',['../ev-sidebar-thumbnails_8c.html#a7033ac599561b3e3b2e61a9a10fc1b20',1,'ev-sidebar-thumbnails.c']]],
   ['add_5fscroll_5fbinding_5fkeypad',['add_scroll_binding_keypad',['../ev-view_8c.html#aee0a2f46d199791b6e65e57e69e01d9d',1,'ev-view.c']]],
+  ['add_5fthumbnail_5fto_5fmodel',['add_thumbnail_to_model',['../ev-recent-view_8c.html#a71c112bfe637202a502b2800dd973efa',1,'ev-recent-view.c']]],
   ['adjustment_5fchanged_5fcb',['adjustment_changed_cb',['../ev-sidebar-thumbnails_8c.html#ab1741c2ebac19c67519bbaecb153de0f',1,'ev-sidebar-thumbnails.c']]],
   ['annotation_5fwindow_5fclosed',['annotation_window_closed',['../ev-view_8c.html#aac8b6f00e32b258568546293557e9009',1,'ev-view.c']]],
   ['annotation_5fwindow_5fgrab_5ffocus',['annotation_window_grab_focus',['../ev-view_8c.html#a478449df5ac4e09666f6286245d4cc61',1,'ev-view.c']]],

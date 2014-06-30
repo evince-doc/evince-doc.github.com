@@ -1,6 +1,7 @@
 var searchData=
 [
   ['sanitized_5fsubstring',['sanitized_substring',['../ev-find-sidebar_8c.html#aac1fcff102feccff9c90326416e3723d',1,'ev-find-sidebar.c']]],
+  ['save_5fdocument_5fthumbnail_5fin_5fcache',['save_document_thumbnail_in_cache',['../ev-recent-view_8c.html#a9d1f3dc6b0b60b58fb6e7217faed9cb6',1,'ev-recent-view.c']]],
   ['save_5fprint_5fsetting_5ffile',['save_print_setting_file',['../ev-window_8c.html#a2fa329af31efc69dedace13e773ef9b6',1,'ev-window.c']]],
   ['save_5fsizing_5fmode',['save_sizing_mode',['../ev-window_8c.html#aa81ec5deb6dc3f5dfa2cce524947a4ad',1,'ev-window.c']]],
   ['schedule_5fchild_5ffocus_5fin_5fidle',['schedule_child_focus_in_idle',['../ev-view_8c.html#a657906126f55a89b1be19f0928fe4ec3',1,'ev-view.c']]],
@@ -51,7 +52,7 @@ var searchData=
   ['sort_5fup',['sort_up',['../dviread_8c.html#a6ed88e5c258e470e1f641755579e37b4',1,'dviread.c']]],
   ['sp_5flayer',['sp_layer',['../special_8c.html#aeddd364eb30059d46278f82132f0bdb5',1,'special.c']]],
   ['spawn_5fevince',['spawn_evince',['../ev-daemon_8c.html#a5ea868d5d6d7ec7da8d496f507b0ef0d',1,'ev-daemon.c']]],
-  ['special',['special',['../dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150',1,'special(DviContext *dvi, int opcode):&#160;dviread.c'],['../special_8c.html#a869244b203e3be73bbf99eafbd38f925',1,'SPECIAL(sp_layer):&#160;special.c'],['../special_8c.html#a5ac513dc64a38d58e9ff983f4d3d56d7',1,'SPECIAL(epsf_special):&#160;special.c'],['../special_8c.html#ad8dbce681f366042dc41ecd8d26a621c',1,'SPECIAL(do_color_special):&#160;special.c']]],
+  ['special',['SPECIAL',['../special_8c.html#a869244b203e3be73bbf99eafbd38f925',1,'SPECIAL(sp_layer):&#160;special.c'],['../special_8c.html#a5ac513dc64a38d58e9ff983f4d3d56d7',1,'SPECIAL(epsf_special):&#160;special.c'],['../special_8c.html#ad8dbce681f366042dc41ecd8d26a621c',1,'SPECIAL(do_color_special):&#160;special.c'],['../dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150',1,'special(DviContext *dvi, int opcode):&#160;dviread.c']]],
   ['start_5fselection_5ffor_5fevent',['start_selection_for_event',['../ev-view_8c.html#a6ecdb4386af30f9d935011278e55b224',1,'ev-view.c']]],
   ['str2class',['str2class',['../paper_8c.html#a61c9747425af89bb9cbddc4686141ebf',1,'paper.c']]],
   ['str_5fto_5futf8',['str_to_utf8',['../djvu-links_8c.html#a017d206234a04260034ab56f28dc83e1',1,'djvu-links.c']]],

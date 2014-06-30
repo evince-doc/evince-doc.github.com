@@ -12,6 +12,7 @@ var searchData=
   ['listh_5finit',['listh_init',['../list_8c.html#a97a8a6cdeb2d7dd48ea297247c703b8a',1,'list.c']]],
   ['listh_5fprepend',['listh_prepend',['../list_8c.html#a471ef9a45d061bfed5cbff9729dbffc2',1,'list.c']]],
   ['listh_5fremove',['listh_remove',['../list_8c.html#a47854a8815eb584da7186f6fe29c1cc1',1,'list.c']]],
+  ['load_5fdocument_5fand_5fget_5fdocument_5finfo',['load_document_and_get_document_info',['../ev-recent-view_8c.html#afd578d31fb529aaedb2306cae77228a9',1,'ev-recent-view.c']]],
   ['load_5ffiles',['load_files',['../main_8c.html#a08bc7706ab39651aac94fad91b9642c4',1,'main.c']]],
   ['load_5ffont_5ffile',['load_font_file',['../font_8c.html#aeffc7d7b0450fc5e0ce24070c09c4cd9',1,'font.c']]],
   ['load_5fone_5fglyph',['load_one_glyph',['../font_8c.html#abae99b7595aa5f0069c3851dae11840a',1,'font.c']]],

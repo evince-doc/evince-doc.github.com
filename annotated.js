@@ -332,6 +332,7 @@ var annotated =
     [ "EvViewWindowChild", "structEvViewWindowChild.html", "structEvViewWindowChild" ],
     [ "FontInfo", "structFontInfo.html", "structFontInfo" ],
     [ "fontinfo", "structfontinfo.html", "structfontinfo" ],
+    [ "GetDocumentInfoAsyncData", "structGetDocumentInfoAsyncData.html", "structGetDocumentInfoAsyncData" ],
     [ "GlobalFontInfo", "structGlobalFontInfo.html", "structGlobalFontInfo" ],
     [ "ImageDNDInfo", "structImageDNDInfo.html", "structImageDNDInfo" ],
     [ "ListHead", "structListHead.html", "structListHead" ],

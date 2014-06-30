@@ -6,7 +6,7 @@ var searchData=
   ['can_5fzoom_5fin',['can_zoom_in',['../struct__EvView.html#a60f9d92e5cbc011d977c2f3cb9015f45',1,'_EvView']]],
   ['can_5fzoom_5fout',['can_zoom_out',['../struct__EvView.html#aeec1146610c7b3420413afad600fed33',1,'_EvView']]],
   ['cancel',['cancel',['../struct__EvPrintOperationClass.html#a0ef86384e2cc5cf288cd7a3b92450324',1,'_EvPrintOperationClass']]],
-  ['cancellable',['cancellable',['../struct__EvJob.html#a075f67fd7b0ca186531e4fbe13173d84',1,'_EvJob']]],
+  ['cancellable',['cancellable',['../struct__EvJob.html#a075f67fd7b0ca186531e4fbe13173d84',1,'_EvJob::cancellable()'],['../structGetDocumentInfoAsyncData.html#a46e2a18b685d7ed27d2f3c395fa5ff86',1,'GetDocumentInfoAsyncData::cancellable()']]],
   ['cancelled',['cancelled',['../struct__EvJob.html#a607664fef7f625017610e6e5314c90fb',1,'_EvJob::cancelled()'],['../struct__EvJobClass.html#a982489ee5c5e1174ac444064a646317a',1,'_EvJobClass::cancelled()'],['../ev-jobs_8c.html#aabfcbcb5ac86a1edac4035264bc7d2b8a3c862c356e44394920d592cde81bec7b',1,'CANCELLED():&#160;ev-jobs.c']]],
   ['capheight',['capHeight',['../structGlobalFontInfo.html#a6f35b360592910fdb23c195a368383a6',1,'GlobalFontInfo']]],
   ['caret_5fenabled',['caret_enabled',['../struct__EvView.html#a7d08cd0176dfb04c95e43d5236b6323a',1,'_EvView']]],
