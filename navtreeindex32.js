@@ -1,6 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"struct__EvTransitionAnimationClass.html#a5160982e7183ac812872bc218accc42f":[6,0,263,0],
 "struct__EvTransitionEffect.html":[6,0,264],
 "struct__EvTransitionEffect.html#a036f62cb2327ffffcaef5ae58e31840b":[6,0,264,0],
 "struct__EvTransitionEffectClass.html":[6,0,265],
@@ -249,5 +248,6 @@ var NAVTREEINDEX32 =
 "struct__GimpCellRendererToggleClass.html#a0c85f979a33fa871649269387fa8860e":[6,0,286,2],
 "struct__GimpCellRendererToggleClass.html#a5cf97580e194362df055f48ee897ea6b":[6,0,286,1],
 "struct__GimpCellRendererToggleClass.html#a74a4909d61a91bfd22553befd031dc00":[6,0,286,3],
-"struct__GimpCellRendererToggleClass.html#a8758087698c0d3c92bdf3a2e5f7bd2a0":[6,0,286,4]
+"struct__GimpCellRendererToggleClass.html#a8758087698c0d3c92bdf3a2e5f7bd2a0":[6,0,286,4],
+"struct__GimpCellRendererToggleClass.html#a8b3f71003d9948e9bdf3b3d180c5651f":[6,0,286,0]
 };

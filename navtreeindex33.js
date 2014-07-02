@@ -1,6 +1,5 @@
 var NAVTREEINDEX33 =
 {
-"struct__GimpCellRendererToggleClass.html#a8b3f71003d9948e9bdf3b3d180c5651f":[6,0,286,0],
 "struct__GimpCellRendererToggleClass.html#aaa4f976dc9cef0ec298c7faa52b7515d":[6,0,286,5],
 "struct__LinkTitleData.html":[6,0,287],
 "struct__LinkTitleData.html#a191159123329fc29e9f975ea5ee5dfb4":[6,0,287,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX33 =
 "synctex__parser_8c.html#a3ec677000f6da84f22cf9d4bd88e2fd1":[7,0,0,1,2,0,64],
 "synctex__parser_8c.html#a3f549859bab1bbb7122365073552d252":[7,0,0,1,2,0,198],
 "synctex__parser_8c.html#a42b9043599e3475df405d8f015f7e0c8":[7,0,0,1,2,0,135],
-"synctex__parser_8c.html#a44fee2b3ed130858c7471e60cd8e7a03":[7,0,0,1,2,0,43]
+"synctex__parser_8c.html#a44fee2b3ed130858c7471e60cd8e7a03":[7,0,0,1,2,0,43],
+"synctex__parser_8c.html#a46ab9a750768aff05527a60a33247c82":[7,0,0,1,2,0,224]
 };

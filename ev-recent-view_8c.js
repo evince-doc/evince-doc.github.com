@@ -2,7 +2,6 @@ var ev_recent_view_8c =
 [
     [ "_EvRecentViewPrivate", "struct__EvRecentViewPrivate.html", "struct__EvRecentViewPrivate" ],
     [ "GetDocumentInfoAsyncData", "structGetDocumentInfoAsyncData.html", "structGetDocumentInfoAsyncData" ],
-    [ "GNOME_DESKTOP_USE_UNSTABLE_API", "ev-recent-view_8c.html#a975d3895abea7c1a346ff396120d4cda", null ],
     [ "ICON_VIEW_SIZE", "ev-recent-view_8c.html#a8ee19e1b3ea3ffd9122c9a20ba8a5d86", null ],
     [ "MAX_RECENT_VIEW_ITEMS", "ev-recent-view_8c.html#a061641febeddc4b00bdf7c3f033ee2c7", null ],
     [ "ITEM_ACTIVATED", "ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173af4adf678107ef39e690a65618cdc19ee", null ],

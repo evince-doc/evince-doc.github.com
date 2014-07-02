@@ -209,7 +209,6 @@ var searchData=
   ['glyph_5fdata',['glyph_data',['../struct__DviFontChar.html#a6fbb916082516f15b2f3c85a196a5d75',1,'_DviFontChar']]],
   ['glyph_5fpresent',['glyph_present',['../mdvi_8h.html#aaa2bdda54fc9d460306e27bc1c012344',1,'mdvi.h']]],
   ['gnaunrar',['GNAUNRAR',['../comics-document_8c.html#af40458a768dbbfcedefd3c17e83aeeb7a904b0f03bf5dd78374e15fe7d4786880',1,'comics-document.c']]],
-  ['gnome_5fdesktop_5fuse_5funstable_5fapi',['GNOME_DESKTOP_USE_UNSTABLE_API',['../ev-recent-view_8c.html#a975d3895abea7c1a346ff396120d4cda',1,'ev-recent-view.c']]],
   ['go_5fto_5fnext_5fpage',['go_to_next_page',['../ev-view_8c.html#a94d91472a9f62bacabf7618cb1d94c92',1,'ev-view.c']]],
   ['go_5fto_5fprevious_5fpage',['go_to_previous_page',['../ev-view_8c.html#a91047859a4c80a502c0d43c5e5d3c354',1,'ev-view.c']]],
   ['goption_5foptions',['goption_options',['../ev-previewer_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;ev-previewer.c'],['../main_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;main.c'],['../evince-thumbnailer_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;evince-thumbnailer.c']]],
