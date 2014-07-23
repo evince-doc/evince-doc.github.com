@@ -1,5 +1,8 @@
 var NAVTREEINDEX36 =
 {
+"xps-document_8c.html#a50e6cab9a0d466c18a5a432b13bdb460":[6,0,0,0,6,0,16],
+"xps-document_8c.html#a664a3e0a922232d07fd8a6f4b9fae164":[6,0,0,0,6,0,2],
+"xps-document_8c.html#a8f0e2491e0101cc2f890066e26881cfc":[6,0,0,0,6,0,12],
 "xps-document_8c.html#a90671ad9fd2d0bd0a7da21f45c6fb827":[6,0,0,0,6,0,5],
 "xps-document_8c.html#a92ab28cf474d3a6ac44a666da1ee82ff":[6,0,0,0,6,0,15],
 "xps-document_8c.html#a96c180d0fd52631361588b5527f5f70f":[6,0,0,0,6,0,9],

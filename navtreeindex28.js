@@ -1,5 +1,8 @@
 var NAVTREEINDEX28 =
 {
+"struct__EvAnnotationWindow.html#a2ac3567a92cb08951a07ebff1e2d9d76":[5,0,47,1],
+"struct__EvAnnotationWindow.html#a5c94d1268c4e1a7019665ef47b2fb469":[5,0,47,7],
+"struct__EvAnnotationWindow.html#a9308d541cb04cc83f080c582e91dd068":[5,0,47,8],
 "struct__EvAnnotationWindow.html#a9a5587d83ed6a48609ea59eead8c1725":[5,0,47,11],
 "struct__EvAnnotationWindow.html#aa28954fac55189f9da50354147d9c953":[5,0,47,3],
 "struct__EvAnnotationWindow.html#aa78b9167d0190a7ba5ae533a9a91f5ac":[5,0,47,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX28 =
 "struct__EvFileMonitorPrivate.html":[5,0,87],
 "struct__EvFileMonitorPrivate.html#a8c81e8ec3da248c4c2769ef986a02bf0":[5,0,87,0],
 "struct__EvFileMonitorPrivate.html#aec9330271d5df3de7019c19b3628b397":[5,0,87,1],
-"struct__EvFindSidebar.html":[5,0,88],
-"struct__EvFindSidebar.html#a06018cf4eb1d500be45585e31a207a32":[5,0,88,0],
-"struct__EvFindSidebar.html#a20d03ea1fa81253d76b0c9bc4510632d":[5,0,88,1],
-"struct__EvFindSidebarClass.html":[5,0,89]
+"struct__EvFindSidebar.html":[5,0,88]
 };

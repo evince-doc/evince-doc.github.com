@@ -134,6 +134,7 @@ var searchData=
   ['get_5fsize_5ffor_5fpage',['get_size_for_page',['../ev-sidebar-thumbnails_8c.html#a4347d5ad6ad2187c45b67c8e96801884',1,'ev-sidebar-thumbnails.c']]],
   ['get_5fsupported_5fimage_5fextensions',['get_supported_image_extensions',['../comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3',1,'comics-document.c']]],
   ['get_5fsupported_5foptions',['get_supported_options',['../struct__EvDocumentFindInterface.html#a1f99dbe2fa9054048fbbb2cf8772d5da',1,'_EvDocumentFindInterface']]],
+  ['get_5fsurface_5ffrom_5fjob',['get_surface_from_job',['../ev-view-presentation_8c.html#a0573c7897295c9a4ab69ba1056da7130',1,'ev-view-presentation.c']]],
   ['get_5fsurrounding_5ftext_5fmarkup',['get_surrounding_text_markup',['../ev-find-sidebar_8c.html#aaf4b7a54477afe7433d8525576a3ad14',1,'ev-find-sidebar.c']]],
   ['get_5ftexmfcnf',['get_texmfcnf',['../texmfcnf_8c.html#a43c97bf968a621adbd885948dd08b2dd',1,'get_texmfcnf(void):&#160;texmfcnf.c'],['../texmfcnf_8h.html#a773b09675517fc33d8ac9967a8a950da',1,'get_texmfcnf(void):&#160;texmfcnf.c']]],
   ['get_5ftext',['get_text',['../struct__EvDocumentTextInterface.html#ad5a742d3aadec2c2d78347ae40fb0324',1,'_EvDocumentTextInterface']]],

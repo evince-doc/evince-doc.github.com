@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"structEpsfBox.html#a43fcbef6fc6a7ba99bc63f28ed78715c":[5,0,311,0],
+"structEpsfBox.html#a529b5fadeff82e021653ca3549372fe9":[5,0,311,2],
+"structEpsfBox.html#ad7d26931cedf46d83cd809d269a87962":[5,0,311,3],
 "structEpsfBox.html#add0dbcf214e9a92acbd7b11d5ff33a43":[5,0,311,4],
 "structEvAnnotationMarkupProps.html":[5,0,312],
 "structEvAnnotationMarkupProps.html#a10123fa1996bc2a7472991588b61ba18":[5,0,312,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviDevice.html":[5,0,13],
 "struct__DviDevice.html#a2191cece01dd91f670ed9fcadd50ad5a":[5,0,13,9],
 "struct__DviDevice.html#a58c655736979fefb02fd78b1793d4b59":[5,0,13,11],
-"struct__DviDevice.html#a632cd8adca4ac14962cadcfb880b0180":[5,0,13,6],
-"struct__DviDevice.html#a77bc6963184a3c066dbdd57eaadfa147":[5,0,13,8],
-"struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb":[5,0,13,3],
-"struct__DviDevice.html#ab402b7bae3bc33ba74838c5338f48461":[5,0,13,10]
+"struct__DviDevice.html#a632cd8adca4ac14962cadcfb880b0180":[5,0,13,6]
 };

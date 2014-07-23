@@ -88,6 +88,7 @@ var searchData=
   ['get_5fsettings_5fkey_5ffor_5fdirectory',['get_settings_key_for_directory',['../ev-window_8c.html#a6b4c71751d9682cb3aaa3e27ba51ceed',1,'ev-window.c']]],
   ['get_5fsize_5ffor_5fpage',['get_size_for_page',['../ev-sidebar-thumbnails_8c.html#a4347d5ad6ad2187c45b67c8e96801884',1,'ev-sidebar-thumbnails.c']]],
   ['get_5fsupported_5fimage_5fextensions',['get_supported_image_extensions',['../comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3',1,'comics-document.c']]],
+  ['get_5fsurface_5ffrom_5fjob',['get_surface_from_job',['../ev-view-presentation_8c.html#a0573c7897295c9a4ab69ba1056da7130',1,'ev-view-presentation.c']]],
   ['get_5fsurrounding_5ftext_5fmarkup',['get_surrounding_text_markup',['../ev-find-sidebar_8c.html#aaf4b7a54477afe7433d8525576a3ad14',1,'ev-find-sidebar.c']]],
   ['get_5ftexmfcnf',['get_texmfcnf',['../texmfcnf_8c.html#a43c97bf968a621adbd885948dd08b2dd',1,'get_texmfcnf(void):&#160;texmfcnf.c'],['../texmfcnf_8h.html#a773b09675517fc33d8ac9967a8a950da',1,'get_texmfcnf(void):&#160;texmfcnf.c']]],
   ['get_5ftfm_5fchars',['get_tfm_chars',['../tfm_8c.html#ac6dc474c097e2904d0fe3683b262a4c6',1,'tfm.c']]],
