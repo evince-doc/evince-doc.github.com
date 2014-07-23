@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +92,7 @@ $(document).ready(function(){initNavTree('pagesel_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -175,7 +174,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    </div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">for</span>(i = 0; i &lt; 11; i++)</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">if</span>(spec[i]) {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(spec[i]-&gt;<a class="code" href="namespacetest-print-combinations.html#a177015d9ff5f9b422e9e63bb7d91ff53">ranges</a>);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(spec[i]-&gt;ranges);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(spec[i]);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(spec);</div>
@@ -310,7 +309,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">if</span>(spec == NULL)</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">if</span>(spec[0]) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        not_found = <a class="code" href="pagesel_8c.html#a592fb6e3c2c9cfd1cca3c009ceae7ef0">mdvi_in_range</a>(spec[0]-&gt;<a class="code" href="namespacetest-print-combinations.html#a177015d9ff5f9b422e9e63bb7d91ff53">ranges</a>, </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        not_found = <a class="code" href="pagesel_8c.html#a592fb6e3c2c9cfd1cca3c009ceae7ef0">mdvi_in_range</a>(spec[0]-&gt;ranges, </div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            spec[0]-&gt;nranges, dvipage);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">if</span>(not_found &lt; 0)</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">return</span> 0;</div>
@@ -318,7 +317,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">for</span>(i = 1; i &lt;= 10; i++) {</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">if</span>(spec[i] == NULL)</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        not_found = <a class="code" href="pagesel_8c.html#a592fb6e3c2c9cfd1cca3c009ceae7ef0">mdvi_in_range</a>(spec[i]-&gt;<a class="code" href="namespacetest-print-combinations.html#a177015d9ff5f9b422e9e63bb7d91ff53">ranges</a>, </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        not_found = <a class="code" href="pagesel_8c.html#a592fb6e3c2c9cfd1cca3c009ceae7ef0">mdvi_in_range</a>(spec[i]-&gt;ranges, </div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            spec[i]-&gt;nranges, (<span class="keywordtype">int</span>)page[i]);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">if</span>(not_found &lt; 0)</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">return</span> 0;</div>
@@ -698,7 +697,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="pagesel_8c.html">pagesel.c</a></li>
-    <li class="footer">Generated on Wed Jul 23 2014 11:14:10 for Evince by
+    <li class="footer">Generated on Wed Jul 23 2014 14:54:11 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -66,7 +66,7 @@ var searchData=
   ['annots',['annots',['../struct__PdfDocument.html#a0d75ac18ce3958b1a1f8b7604d7653c9',1,'_PdfDocument::annots()'],['../struct__EvJobAnnots.html#aaa41aa1b66dbd974c6207fe720980a1f',1,'_EvJobAnnots::annots()']]],
   ['annots_5fmodified',['annots_modified',['../struct__PdfDocument.html#ac0b6605591af9a0a63a812cf9ca9a65e',1,'_PdfDocument']]],
   ['annots_5fsidebar_5fid',['ANNOTS_SIDEBAR_ID',['../ev-window_8c.html#ab61708919ca4478b6d4ea0d978dc75ea',1,'ev-window.c']]],
-  ['app',['app',['../struct__EvAttachmentPrivate.html#a1bc0f6bc41236d3ba52b687ff18d9486',1,'_EvAttachmentPrivate::app()'],['../namespacetest-print-combinations.html#afb7addaae4c1cd71270d6164ff24e88c',1,'test-print-combinations.app()']]],
+  ['app',['app',['../struct__EvAttachmentPrivate.html#a1bc0f6bc41236d3ba52b687ff18d9486',1,'_EvAttachmentPrivate']]],
   ['app_5fabout_5fcb',['app_about_cb',['../ev-application_8c.html#ad96b173f96deb06b1dcb639cac2c4869',1,'ev-application.c']]],
   ['app_5fhelp_5fcb',['app_help_cb',['../ev-application_8c.html#a8a6d178614bc47b5c0a2e3dc3287a581',1,'ev-application.c']]],
   ['application',['application',['../structEvRecentMenuModel.html#aac0a5aa1ae7a3386d97c95f9d839bfab',1,'EvRecentMenuModel']]],

@@ -58,7 +58,6 @@ var searchData=
   ['history_5fmenu_5flink_5factivated',['history_menu_link_activated',['../ev-history-action_8c.html#afa7886048257f9c27cf211694ca0d875',1,'ev-history-action.c']]],
   ['hits',['hits',['../structColorCache.html#a7aeaf8cda29cbe142fae19a8a446121b',1,'ColorCache']]],
   ['hoff',['HOFF',['../sp-epsf_8c.html#a6556156866fcaa4a928a8882476002e0',1,'sp-epsf.c']]],
-  ['homedir',['homedir',['../namespacetest-print-combinations.html#aa4b9bf97b45e89b967ce36ef15f25a43',1,'test-print-combinations.homedir()'],['../namespacetest6.html#af15634395ed1cf6ba7c20e0d77e93939',1,'test6.homedir()']]],
   ['hpaned',['hpaned',['../struct__EvWindowPrivate.html#a5e259cb15febf660bda413779c075225',1,'_EvWindowPrivate']]],
   ['hsb2rgb',['hsb2rgb',['../dvi-document_8c.html#a894b57ec9fbb550fc3b7204d3037981f',1,'dvi-document.c']]],
   ['hscale',['HSCALE',['../sp-epsf_8c.html#a20c11344ee0b81dc530d07448b17028b',1,'sp-epsf.c']]],

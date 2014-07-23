@@ -1,14 +1,6 @@
 var searchData=
 [
   ['t1_2ec',['t1.c',['../t1_8c.html',1,'']]],
-  ['test_2dprint_2dcombinations_2epy',['test-print-combinations.py',['../test-print-combinations_8py.html',1,'']]],
-  ['test1_2epy',['test1.py',['../test1_8py.html',1,'']]],
-  ['test2_2epy',['test2.py',['../test2_8py.html',1,'']]],
-  ['test3_2epy',['test3.py',['../test3_8py.html',1,'']]],
-  ['test4_2epy',['test4.py',['../test4_8py.html',1,'']]],
-  ['test5_2epy',['test5.py',['../test5_8py.html',1,'']]],
-  ['test6_2epy',['test6.py',['../test6_8py.html',1,'']]],
-  ['test7_2epy',['test7.py',['../test7_8py.html',1,'']]],
   ['texmfcnf_2ec',['texmfcnf.c',['../texmfcnf_8c.html',1,'']]],
   ['texmfcnf_2eh',['texmfcnf.h',['../texmfcnf_8h.html',1,'']]],
   ['tfm_2ec',['tfm.c',['../tfm_8c.html',1,'']]],

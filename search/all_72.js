@@ -2,7 +2,7 @@ var searchData=
 [
   ['range_5fhas_5flower',['RANGE_HAS_LOWER',['../mdvi_8h.html#a004b9f76aceaffc21fc8ff9b7962277d',1,'mdvi.h']]],
   ['range_5fhas_5fupper',['RANGE_HAS_UPPER',['../mdvi_8h.html#a914916a249ee9288e99e0f3ae2c62c95',1,'mdvi.h']]],
-  ['ranges',['ranges',['../struct__DviPageSpec.html#a5e222c330e708deafd6d3e7efb2c5602',1,'_DviPageSpec::ranges()'],['../namespacetest-print-combinations.html#a177015d9ff5f9b422e9e63bb7d91ff53',1,'test-print-combinations.ranges()']]],
+  ['ranges',['ranges',['../struct__DviPageSpec.html#a5e222c330e708deafd6d3e7efb2c5602',1,'_DviPageSpec']]],
   ['rarlabs',['RARLABS',['../comics-document_8c.html#af40458a768dbbfcedefd3c17e83aeeb7a4d851a6ef09c110876fa50f4c8f5bb03',1,'comics-document.c']]],
   ['rb_5fgroup',['rb_group',['../struct__EvLayerPrivate.html#ac172b747a1e3fb45f68fdfa3d9ea40d1',1,'_EvLayerPrivate']]],
   ['rc',['rc',['../struct__EvJobExport.html#af4e36ff283247c57979acdfd503d54f9',1,'_EvJobExport']]],
@@ -46,7 +46,6 @@ var searchData=
   ['result_5factivated',['RESULT_ACTIVATED',['../ev-find-sidebar_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa01e040de4c34c6e23487c8844c476331',1,'ev-find-sidebar.c']]],
   ['result_5fcolumn',['RESULT_COLUMN',['../ev-find-sidebar_8c.html#afccd240f973cf154952fb917c9209719a797f705710f0877986a4506215661fb4',1,'ev-find-sidebar.c']]],
   ['results',['results',['../struct__DjvuTextPage.html#a42593faa99b95ffea631d0e990c28159',1,'_DjvuTextPage']]],
-  ['reverse',['reverse',['../namespacetest-print-combinations.html#a407bbcf94aa7b9dcc6c2160d056dfcfb',1,'test-print-combinations']]],
   ['rgb2ulong',['RGB2ULONG',['../dvi-document_8c.html#a892d95341ddf5bec9de804a479b2214d',1,'dvi-document.c']]],
   ['rgba',['rgba',['../struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674',1,'_EvAnnotation']]],
   ['rgbcolorimage',['RGBcolorimage',['../tiff2ps_8c.html#a1c3cb9d717b6dfefc38f50ca5b6cd798',1,'tiff2ps.c']]],
@@ -61,7 +60,6 @@ var searchData=
   ['rule_5fround',['rule_round',['../mdvi_8h.html#a8dd031ba7daa3be51e2fe2def9f3a462',1,'mdvi.h']]],
   ['run',['run',['../struct__EvJobClass.html#a1d71270f4c411717b224f83dd6141027',1,'_EvJobClass::run()'],['../struct__EvPrintOperationClass.html#a34151c018ac48e9d52307a06a0d4cd31',1,'_EvPrintOperationClass::run()']]],
   ['run_5fmode',['run_mode',['../struct__EvJob.html#ab1c83fd5270289f99eb54b856e16a0c2',1,'_EvJob']]],
-  ['run_5ftest',['run_test',['../namespacetest-print-combinations.html#acb09e6299ff2e0616b312de0237d2512',1,'test-print-combinations']]],
   ['running_5fjob',['running_job',['../ev-job-scheduler_8c.html#aca5d42a7fc39e69a32bc5fc5a2c93ac7',1,'ev-job-scheduler.c']]],
   ['rwi',['RWI',['../sp-epsf_8c.html#a761113af46208ad1fbd040908ac75d58',1,'sp-epsf.c']]]
 ];

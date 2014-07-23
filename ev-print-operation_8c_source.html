@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +92,7 @@ $(document).ready(function(){initNavTree('ev-print-operation_8c_source.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -498,10 +497,10 @@ $(document).ready(function(){initNavTree('ev-print-operation_8c_source.html','')
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    GtkPageSetup *page_setup;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    GtkPrintSettings *<a class="code" href="ev-previewer_8c.html#a20cee399606cef5d4b035ff7aa255199">print_settings</a>;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    GtkPageSet page_set;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    gint <a class="code" href="namespacetest-print-combinations.html#ae5265252efeb08f9b001a424e76eedd2">copies</a>;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    guint <a class="code" href="namespacetest-print-combinations.html#ab58f1283fb5817c06d95b621a79024dd">collate</a>     : 1;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    guint <a class="code" href="namespacetest-print-combinations.html#a407bbcf94aa7b9dcc6c2160d056dfcfb">reverse</a>     : 1;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    gint <a class="code" href="namespacetest-print-combinations.html#acecc18608a0f8c0ed994ee0c25c0cbcb">pages_per_sheet</a>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    gint copies;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    guint collate     : 1;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    guint reverse     : 1;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    gint pages_per_sheet;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    gint fd;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    gchar *temp_file;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    gchar *job_name;</div>
@@ -519,7 +518,7 @@ $(document).ready(function(){initNavTree('ev-print-operation_8c_source.html','')
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    gint sheet, page_count;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    gint range, n_ranges;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    GtkPageRange *<a class="code" href="namespacetest-print-combinations.html#a177015d9ff5f9b422e9e63bb7d91ff53">ranges</a>;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    GtkPageRange *ranges;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    GtkPageRange one_range;</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    gint page, start, end, inc;</div>
@@ -981,7 +980,7 @@ $(document).ready(function(){initNavTree('ev-print-operation_8c_source.html','')
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            gchar  *cmd;</div>
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;            gchar  *quoted_filename;</div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;            gchar  *quoted_settings_filename;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                        GAppInfo *<a class="code" href="namespacetest-print-combinations.html#afb7addaae4c1cd71270d6164ff24e88c">app</a>;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                        GAppInfo *app;</div>
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                        GdkAppLaunchContext *ctx;</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;            quoted_filename = g_shell_quote (export-&gt;temp_file);</div>
@@ -2229,7 +2228,7 @@ $(document).ready(function(){initNavTree('ev-print-operation_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-print-operation_8c.html">ev-print-operation.c</a></li>
-    <li class="footer">Generated on Wed Jul 23 2014 11:14:09 for Evince by
+    <li class="footer">Generated on Wed Jul 23 2014 14:54:10 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

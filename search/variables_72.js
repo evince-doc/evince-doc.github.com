@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ranges',['ranges',['../struct__DviPageSpec.html#a5e222c330e708deafd6d3e7efb2c5602',1,'_DviPageSpec::ranges()'],['../namespacetest-print-combinations.html#a177015d9ff5f9b422e9e63bb7d91ff53',1,'test-print-combinations.ranges()']]],
+  ['ranges',['ranges',['../struct__DviPageSpec.html#a5e222c330e708deafd6d3e7efb2c5602',1,'_DviPageSpec']]],
   ['rb_5fgroup',['rb_group',['../struct__EvLayerPrivate.html#ac172b747a1e3fb45f68fdfa3d9ea40d1',1,'_EvLayerPrivate']]],
   ['rc',['rc',['../struct__EvJobExport.html#af4e36ff283247c57979acdfd503d54f9',1,'_EvJobExport']]],
   ['recent_5fmanager',['recent_manager',['../struct__EvRecentViewPrivate.html#a502eef22ef17a6bb3e32bdf121d703ba',1,'_EvRecentViewPrivate::recent_manager()'],['../struct__EvWindowPrivate.html#a834a49301b6f3b2551257784171f384f',1,'_EvWindowPrivate::recent_manager()']]],
@@ -30,7 +30,6 @@ var searchData=
   ['resize_5fse',['resize_se',['../struct__EvAnnotationWindow.html#aa78b9167d0190a7ba5ae533a9a91f5ac',1,'_EvAnnotationWindow']]],
   ['resize_5fsw',['resize_sw',['../struct__EvAnnotationWindow.html#ab6ad3e9c18dd73eb5dbaf50c8dcb5d31',1,'_EvAnnotationWindow']]],
   ['results',['results',['../struct__DjvuTextPage.html#a42593faa99b95ffea631d0e990c28159',1,'_DjvuTextPage']]],
-  ['reverse',['reverse',['../namespacetest-print-combinations.html#a407bbcf94aa7b9dcc6c2160d056dfcfb',1,'test-print-combinations']]],
   ['rgba',['rgba',['../struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674',1,'_EvAnnotation']]],
   ['rgbcolorimage',['RGBcolorimage',['../tiff2ps_8c.html#a1c3cb9d717b6dfefc38f50ca5b6cd798',1,'tiff2ps.c']]],
   ['right',['right',['../struct__TFMChar.html#aa50a8b507cc0ae81bca1ef5d0a4de987',1,'_TFMChar::right()'],['../structsynctex__distances__t.html#a4a9740a00d530e6c7b58eabe644a6d77',1,'synctex_distances_t::right()'],['../structsynctex__offsets__t.html#a2cd149f6eb10f953dd9636717dfb2852',1,'synctex_offsets_t::right()'],['../structsynctex__node__set__t.html#a99e18c2a2158cf33ced43ea92c96ebd8',1,'synctex_node_set_t::right()'],['../struct__EvLinkDestPrivate.html#a20ea9984a8af4cc5917fb91c9899ce6e',1,'_EvLinkDestPrivate::right()']]],

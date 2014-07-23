@@ -1,13 +1,5 @@
 var annotated =
 [
-    [ "test-print-combinations", "namespacetest-print-combinations.html", null ],
-    [ "test1", "namespacetest1.html", null ],
-    [ "test2", "namespacetest2.html", null ],
-    [ "test3", "namespacetest3.html", null ],
-    [ "test4", "namespacetest4.html", null ],
-    [ "test5", "namespacetest5.html", null ],
-    [ "test6", "namespacetest6.html", null ],
-    [ "test7", "namespacetest7.html", null ],
     [ "__synctex_class_t", "struct____synctex__class__t.html", "struct____synctex__class__t" ],
     [ "__synctex_scanner_t", "struct____synctex__scanner__t.html", "struct____synctex__scanner__t" ],
     [ "__synctex_updater_t", "struct____synctex__updater__t.html", "struct____synctex__updater__t" ],
