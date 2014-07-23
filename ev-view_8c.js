@@ -298,6 +298,7 @@ var ev_view_8c =
     [ "location_in_text", "ev-view_8c.html#a3857bb56ab220584d530c3900c056048", null ],
     [ "merge_selection_region", "ev-view_8c.html#a583b0e25a46bc171dab799d858049006", null ],
     [ "on_adjustment_value_changed", "ev-view_8c.html#a5694180f5acfbecd2da6a7ff40f1b3bc", null ],
+    [ "on_notify_scale_factor", "ev-view_8c.html#ab0652ca341deecb3d2e91a02e321cb6a", null ],
     [ "position_caret_cursor_at_doc_point", "ev-view_8c.html#a16951fada911c9e9fe24655da60908cc", null ],
     [ "position_caret_cursor_at_location", "ev-view_8c.html#a975cebaedbcda309f13262335bb68e38", null ],
     [ "position_caret_cursor_for_event", "ev-view_8c.html#a17563aba8da777e124059b090f8878c1", null ],

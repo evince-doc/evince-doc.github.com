@@ -1,5 +1,6 @@
 var struct__CacheJobInfo =
 [
+    [ "device_scale", "struct__CacheJobInfo.html#a7e79de464a690aad2fb8c5c2839ff091", null ],
     [ "job", "struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322", null ],
     [ "page_ready", "struct__CacheJobInfo.html#aae599e8966157e8ece06abd6426ae4df", null ],
     [ "points_set", "struct__CacheJobInfo.html#a182e875a86c05f3edfde38b638d77d5e", null ],

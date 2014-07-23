@@ -12,6 +12,7 @@ var searchData=
   ['on_5fbutton_5fpress_5fevent',['on_button_press_event',['../ev-recent-view_8c.html#af3b43359e572a59427ae3a935b95428e',1,'ev-recent-view.c']]],
   ['on_5fbutton_5frelease_5fevent',['on_button_release_event',['../ev-recent-view_8c.html#a62889a83d4f624e3f5c5611c04bba480',1,'ev-recent-view.c']]],
   ['on_5ficon_5fview_5fitem_5factivated',['on_icon_view_item_activated',['../ev-recent-view_8c.html#ae7c0f9d72f141be682cff9c2d29f639a',1,'ev-recent-view.c']]],
+  ['on_5fnotify_5fscale_5ffactor',['on_notify_scale_factor',['../ev-view_8c.html#ab0652ca341deecb3d2e91a02e321cb6a',1,'ev-view.c']]],
   ['only_5fprint',['only_print',['../namespacetest-print-combinations.html#a3d99c2866067ec67ccb190980f278e14',1,'test-print-combinations']]],
   ['op',['op',['../struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158',1,'_EvPrintOperationPrint']]],
   ['opacity',['opacity',['../structEvAnnotationMarkupProps.html#a6fe576ba32c70ff4ddc49f11a26cfe9d',1,'EvAnnotationMarkupProps::opacity()'],['../struct__EvAnnotationPropertiesDialog.html#a9568abfa97b257492c14418a7137d3fb',1,'_EvAnnotationPropertiesDialog::opacity()']]],

@@ -41,6 +41,7 @@ var searchData=
   ['get_5fcursor_5fblink_5ftimeout_5fid',['get_cursor_blink_timeout_id',['../ev-view_8c.html#a0702208f2530ddebb9c8288f90b6b4bf',1,'ev-view.c']]],
   ['get_5fcursor_5fcolor',['get_cursor_color',['../ev-view_8c.html#aa08b6d84d318ae356aaef2c0af9d219e',1,'ev-view.c']]],
   ['get_5fdefault_5fuser_5funits',['get_default_user_units',['../ev-properties-view_8c.html#aad1eaa6d666ce135c570f4d0327877c2',1,'ev-properties-view.c']]],
+  ['get_5fdevice_5fscale',['get_device_scale',['../ev-pixbuf-cache_8c.html#a5cae88113214985a7383d019de4371ec',1,'ev-pixbuf-cache.c']]],
   ['get_5fdjvu_5fhyperlink_5farea',['get_djvu_hyperlink_area',['../djvu-links_8c.html#a79a541dc8b7053c95b703604bee3ce1d',1,'djvu-links.c']]],
   ['get_5fdjvu_5fhyperlink_5fmapping',['get_djvu_hyperlink_mapping',['../djvu-links_8c.html#a91b6e27b0ab67d59a6ba3e8a3871427f',1,'djvu-links.c']]],
   ['get_5fdjvu_5flink_5faction',['get_djvu_link_action',['../djvu-links_8c.html#adcb7a1f2182f741b4beb695af8778d12',1,'djvu-links.c']]],

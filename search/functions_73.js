@@ -15,6 +15,7 @@ var searchData=
   ['selection_5fupdate_5fidle_5fcb',['selection_update_idle_cb',['../ev-view_8c.html#aa12fc6b1c613765a87d96ca7e19fcaaa',1,'ev-view.c']]],
   ['send_5ffocus_5fchange',['send_focus_change',['../ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4',1,'send_focus_change(GtkWidget *widget, gboolean in):&#160;ev-annotation-window.c'],['../ev-view-presentation_8c.html#ab1f0de9c90c80722db3907a49d6356b4',1,'send_focus_change(GtkWidget *widget, gboolean in):&#160;ev-view-presentation.c']]],
   ['set_5fchar',['set_char',['../dviread_8c.html#a86cc0ebbe5e1f848610594a466108741',1,'dviread.c']]],
+  ['set_5fdevice_5fscale_5fon_5fsurface',['set_device_scale_on_surface',['../ev-pixbuf-cache_8c.html#a45279a44b2a2341c14f722a6d952c463',1,'ev-pixbuf-cache.c']]],
   ['set_5fproperty',['set_property',['../ev-properties-view_8c.html#ab017fe1ee396cd06a0d8538d72c3f02a',1,'ev-properties-view.c']]],
   ['set_5frule',['set_rule',['../dviread_8c.html#a708166ca0bbb91d553e73c8361d5bb46',1,'dviread.c']]],
   ['set_5furi_5fmtime',['set_uri_mtime',['../ev-window_8c.html#a4497bf05b7f74a5984b6db767028efd8',1,'ev-window.c']]],

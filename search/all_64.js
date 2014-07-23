@@ -63,6 +63,7 @@ var searchData=
   ['dev_5fdestroy',['dev_destroy',['../struct__DviDevice.html#abd5d658e20070a6471e8e2a8476eaf5f',1,'_DviDevice']]],
   ['device',['device',['../struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363',1,'_DviContext']]],
   ['device_5fdata',['device_data',['../struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb',1,'_DviDevice']]],
+  ['device_5fscale',['device_scale',['../struct__CacheJobInfo.html#a7e79de464a690aad2fb8c5c2839ff091',1,'_CacheJobInfo']]],
   ['dgets',['dgets',['../files_8c.html#a371bf3425509ae5cc79d195d89b128b7',1,'files.c']]],
   ['dir',['dir',['../struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488',1,'_ComicsDocument']]],
   ['direction',['direction',['../structEvTransitionEffectPrivate.html#ae1df2ecd65698e7f033eae4f88fd43d2',1,'EvTransitionEffectPrivate']]],

@@ -47,11 +47,13 @@ var ev_pixbuf_cache_8c =
     [ "ev_pixbuf_cache_style_changed", "ev-pixbuf-cache_8c.html#af848536c5f513df11ec20419c5cddc5f", null ],
     [ "ev_pixbuf_cache_update_range", "ev-pixbuf-cache_8c.html#a013435f3c1e3701eb5765706e28af5ac", null ],
     [ "find_job_cache", "ev-pixbuf-cache_8c.html#acdac353ae4d2292dccc6a3c44d02ae86", null ],
+    [ "get_device_scale", "ev-pixbuf-cache_8c.html#a5cae88113214985a7383d019de4371ec", null ],
     [ "get_selection_colors", "ev-pixbuf-cache_8c.html#a332f75bfe4ad30a21878d591b7a6ecfd", null ],
     [ "job_finished_cb", "ev-pixbuf-cache_8c.html#aeec93b3a0270ec47b494e72ada5818f1", null ],
     [ "move_one_job", "ev-pixbuf-cache_8c.html#aa90524c4f00dfe2406d8ffe1151079b1", null ],
     [ "new_selection_region_needed", "ev-pixbuf-cache_8c.html#a67b7c58f9e776abbf82faa93292b680d", null ],
     [ "new_selection_surface_needed", "ev-pixbuf-cache_8c.html#a606e19d48e66beb0791b865b2f4e50ab", null ],
+    [ "set_device_scale_on_surface", "ev-pixbuf-cache_8c.html#a45279a44b2a2341c14f722a6d952c463", null ],
     [ "update_job_selection", "ev-pixbuf-cache_8c.html#a7dd27bc591c4a8d6c8b35d1d2b1e87a0", null ],
     [ "signals", "ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c", null ]
 ];
