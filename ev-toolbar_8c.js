@@ -7,8 +7,6 @@ var ev_toolbar_8c =
     [ "ev_toolbar_bookmarks_menu_model_changed", "ev-toolbar_8c.html#a352a4112395986bafc3b5850943bd4a4", null ],
     [ "ev_toolbar_class_init", "ev-toolbar_8c.html#aee274fa46dd84327678b79ccc23286e8", null ],
     [ "ev_toolbar_constructed", "ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c", null ],
-    [ "ev_toolbar_create_button", "ev-toolbar_8c.html#af90b2b90d4e54a3b888d95d7a6fff760", null ],
-    [ "ev_toolbar_create_button_group", "ev-toolbar_8c.html#a976e7359b740566a59db9d3be25ed825", null ],
     [ "ev_toolbar_create_menu_button", "ev-toolbar_8c.html#afaed240a876b60217653d870d6d25eae", null ],
     [ "ev_toolbar_create_toggle_button", "ev-toolbar_8c.html#afcbacad44f6ba2112bc42712d5bd316f", null ],
     [ "ev_toolbar_get_page_selector", "ev-toolbar_8c.html#a0a7f4d00139845fab4844cc5cef305b3", null ],

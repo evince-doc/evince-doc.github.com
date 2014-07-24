@@ -1,5 +1,11 @@
 var NAVTREEINDEX29 =
 {
+"struct__EvFileMonitorClass.html":[5,0,86],
+"struct__EvFileMonitorClass.html#a5d6b6165a6667228772f80cd7a4285fb":[5,0,86,0],
+"struct__EvFileMonitorClass.html#a6314e294af4ce0b4f7afd355e62c09d5":[5,0,86,1],
+"struct__EvFileMonitorPrivate.html":[5,0,87],
+"struct__EvFileMonitorPrivate.html#a8c81e8ec3da248c4c2769ef986a02bf0":[5,0,87,0],
+"struct__EvFileMonitorPrivate.html#aec9330271d5df3de7019c19b3628b397":[5,0,87,1],
 "struct__EvFindSidebar.html":[5,0,88],
 "struct__EvFindSidebar.html#a06018cf4eb1d500be45585e31a207a32":[5,0,88,0],
 "struct__EvFindSidebar.html#a20d03ea1fa81253d76b0c9bc4510632d":[5,0,88,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX29 =
 "struct__EvJobRenderClass.html#a3e960d48ea5597bcc282b955bf5af121":[5,0,146,0],
 "struct__EvJobSave.html":[5,0,147],
 "struct__EvJobSave.html#a81d07950a5b2abdc2d48cbd77b2a4238":[5,0,147,1],
-"struct__EvJobSave.html#a81eea26c53bdaff55ea230d3746ff061":[5,0,147,2],
-"struct__EvJobSave.html#ab652961768e6493ccaf2b271faf9a143":[5,0,147,0],
-"struct__EvJobSaveClass.html":[5,0,148],
-"struct__EvJobSaveClass.html#ad3092cbfde3b1a32441387768bbc07ea":[5,0,148,0],
-"struct__EvJobThumbnail.html":[5,0,149],
-"struct__EvJobThumbnail.html#a0fb027a9daabaeb1530eee3a880d3391":[5,0,149,8],
-"struct__EvJobThumbnail.html#a1a98cfaddef6f3ec3f9b7aa650ad1d90":[5,0,149,1]
+"struct__EvJobSave.html#a81eea26c53bdaff55ea230d3746ff061":[5,0,147,2]
 };

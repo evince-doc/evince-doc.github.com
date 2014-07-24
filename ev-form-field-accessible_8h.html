@@ -167,6 +167,8 @@ Functions</h2></td></tr>
 <tr class="separator:a355a9b4b7e0fb9768935b70dc7ba1565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6803196f238344f264295ce2ad2b8c77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-form-field-accessible_8h.html#ae61b5c91ade68c1cf3151dea7ea255af">EvFormFieldAccessible</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-form-field-accessible_8h.html#a6803196f238344f264295ce2ad2b8c77">ev_form_field_accessible_new</a> (<a class="el" href="ev-page-accessible_8h.html#ac6346abb0c17138594f49ab3d56e4bc7">EvPageAccessible</a> *page, <a class="el" href="ev-form-field_8h.html#a1940a42dc6be3c16b1999f7347fbc9f9">EvFormField</a> *form_field, <a class="el" href="ev-document_8h.html#af8db5b0424c937f5cb5fee739ce7244b">EvRectangle</a> *area)</td></tr>
 <tr class="separator:a6803196f238344f264295ce2ad2b8c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5858b47bfdb2090e82a53164cfe1d346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-form-field_8h.html#a1940a42dc6be3c16b1999f7347fbc9f9">EvFormField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-form-field-accessible_8h.html#a5858b47bfdb2090e82a53164cfe1d346">ev_form_field_accessible_get_field</a> (<a class="el" href="ev-form-field-accessible_8h.html#ae61b5c91ade68c1cf3151dea7ea255af">EvFormFieldAccessible</a> *accessible)</td></tr>
+<tr class="separator:a5858b47bfdb2090e82a53164cfe1d346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="adbb5cf7a96c33c59668155300e4a9f1f"></a>
@@ -263,6 +265,37 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a5858b47bfdb2090e82a53164cfe1d346"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-form-field_8h.html#a1940a42dc6be3c16b1999f7347fbc9f9">EvFormField</a>* ev_form_field_accessible_get_field </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-form-field-accessible_8h.html#ae61b5c91ade68c1cf3151dea7ea255af">EvFormFieldAccessible</a> *&#160;</td>
+          <td class="paramname"><em>accessible</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-form-field-accessible_8c_source.html#l00244">244</a> of file <a class="el" href="ev-form-field-accessible_8c_source.html">ev-form-field-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">return</span> accessible-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a4acf76cba7a7545ea7050e8bace20920">form_field</a>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a5858b47bfdb2090e82a53164cfe1d346_icgraph.svg" width="1832" height="372"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a355a9b4b7e0fb9768935b70dc7ba1565"></a>
 <div class="memitem">
 <div class="memproto">
@@ -321,12 +354,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (atk_form_field);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a6803196f238344f264295ce2ad2b8c77_icgraph.svg" width="790" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a6803196f238344f264295ce2ad2b8c77_icgraph.svg" width="2056" height="372"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -339,7 +372,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-form-field-accessible_8h.html">ev-form-field-accessible.h</a></li>
-    <li class="footer">Generated on Thu Jul 24 2014 13:03:41 for Evince by
+    <li class="footer">Generated on Thu Jul 24 2014 16:45:22 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

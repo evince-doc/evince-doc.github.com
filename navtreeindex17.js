@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"ev-sidebar-page_8h.html":[6,0,0,7,54],
+"ev-sidebar-page_8h.html#a08c4a7acaea2f71b0561389f4f1d205d":[6,0,0,7,54,9],
+"ev-sidebar-page_8h.html#a1e5c6040e53f835382f53296d727ebdd":[6,0,0,7,54,10],
+"ev-sidebar-page_8h.html#a2e1fe37bf09c39b177cb0859034e8ef1":[6,0,0,7,54,2],
 "ev-sidebar-page_8h.html#a36170d4668090f65bcd60630cc64c948":[6,0,0,7,54,11],
 "ev-sidebar-page_8h.html#a6143b085c3a8fd75b7adfc508a1d9c2d":[6,0,0,7,54,8],
 "ev-sidebar-page_8h.html#a6cf32d4e5c7737ccaec465a71d07ef19":[6,0,0,7,54,1],
@@ -244,10 +248,6 @@ var NAVTREEINDEX17 =
 "ev-timeline_8h.html#afd642adcf777de66472911ab7a2596d4":[6,0,0,4,25,12],
 "ev-timeline_8h_source.html":[6,0,0,4,25],
 "ev-toolbar_8c.html":[6,0,0,7,59],
-"ev-toolbar_8c.html#a08f96fa6f4498add5466ace344c6c8aa":[6,0,0,7,59,15],
-"ev-toolbar_8c.html#a0a7f4d00139845fab4844cc5cef305b3":[6,0,0,7,59,11],
-"ev-toolbar_8c.html#a245a5d581e501da3b24a81095d8ef061":[6,0,0,7,59,14],
-"ev-toolbar_8c.html#a352a4112395986bafc3b5850943bd4a4":[6,0,0,7,59,4],
-"ev-toolbar_8c.html#a52e958b9e12431d5116afc7b41d29b7c":[6,0,0,7,59,6],
-"ev-toolbar_8c.html#a60834d45367da3fd03a6e62d3e41622f":[6,0,0,7,59,18]
+"ev-toolbar_8c.html#a08f96fa6f4498add5466ace344c6c8aa":[6,0,0,7,59,13],
+"ev-toolbar_8c.html#a0a7f4d00139845fab4844cc5cef305b3":[6,0,0,7,59,9]
 };

@@ -11,6 +11,7 @@ var ev_page_accessible_8c =
     [ "ev_page_accessible_class_init", "ev-page-accessible_8c.html#a90847a27f6933fcb31dd1106e030528f", null ],
     [ "ev_page_accessible_component_iface_init", "ev-page-accessible_8c.html#abc2c389d6c46d6d04ac600028df16305", null ],
     [ "ev_page_accessible_finalize", "ev-page-accessible_8c.html#a1deb42506459a705fd0911c45db95fe3", null ],
+    [ "ev_page_accessible_get_accessible_for_mapping", "ev-page-accessible_8c.html#a1f19e0f0601d5e354892959d6e3b7740", null ],
     [ "ev_page_accessible_get_caret_offset", "ev-page-accessible_8c.html#adda1b9b48de34fe77b49894dfccf8e73", null ],
     [ "ev_page_accessible_get_character_at_offset", "ev-page-accessible_8c.html#a5ea6bbe8a13655b5daf68f30a677dd6a", null ],
     [ "ev_page_accessible_get_character_count", "ev-page-accessible_8c.html#aba366631939b1ce9d3cd742051db0b60", null ],

@@ -1331,13 +1331,35 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_page);</div>
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;}</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;AtkObject *</div>
+<div class="line"><a name="l01228"></a><span class="lineno"><a class="code" href="ev-page-accessible_8h.html#a1f19e0f0601d5e354892959d6e3b7740"> 1228</a></span>&#160;<a class="code" href="ev-page-accessible_8c.html#a1f19e0f0601d5e354892959d6e3b7740">ev_page_accessible_get_accessible_for_mapping</a> (<a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page_accessible,</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;                           <a class="code" href="struct__EvMapping.html">EvMapping</a>        *mapping)</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;{</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    gint i;</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    <a class="code" href="ev-page-accessible_8c.html#afd19be39f2809ae29dd2a3335875860c">ev_page_accessible_initialize_children</a> (page_accessible);</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    <span class="keywordflow">if</span> (!mapping || !page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>)</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>-&gt;len; i++) {</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        AtkObject *child;</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        child = g_ptr_array_index (page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>, i);</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-form-field-accessible_8h.html#aa31f442e21b0e31713c3f9ca44d0781e">EV_IS_FORM_FIELD_ACCESSIBLE</a> (child) &amp;&amp;</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;            <a class="code" href="ev-form-field-accessible_8c.html#a5858b47bfdb2090e82a53164cfe1d346">ev_form_field_accessible_get_field</a> (<a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (child)) == mapping-&gt;<a class="code" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">data</a>)</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;            <span class="keywordflow">return</span> child;</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    }</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-accessible_8c.html">ev-page-accessible.c</a></li>
-    <li class="footer">Generated on Thu Jul 24 2014 13:03:36 for Evince by
+    <li class="footer">Generated on Thu Jul 24 2014 16:45:19 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

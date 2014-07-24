@@ -8,6 +8,7 @@ var ev_page_accessible_8h =
     [ "EvPageAccessible", "ev-page-accessible_8h.html#ac6346abb0c17138594f49ab3d56e4bc7", null ],
     [ "EvPageAccessibleClass", "ev-page-accessible_8h.html#a64cd573f012ad72b1f2ab09c94a2462b", null ],
     [ "EvPageAccessiblePrivate", "ev-page-accessible_8h.html#a0e692312956840b71b4e43daae77c1cd", null ],
+    [ "ev_page_accessible_get_accessible_for_mapping", "ev-page-accessible_8h.html#a1f19e0f0601d5e354892959d6e3b7740", null ],
     [ "ev_page_accessible_get_page", "ev-page-accessible_8h.html#a3f7fdcc7c5ba27b22286f6d0c8b397bd", null ],
     [ "ev_page_accessible_get_type", "ev-page-accessible_8h.html#a8dec3af747d876e491915172646e2741", null ],
     [ "ev_page_accessible_get_view", "ev-page-accessible_8h.html#a4c6ebe3904af057d7d774fb2e05a1721", null ],

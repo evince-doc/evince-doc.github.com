@@ -277,10 +277,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08382">8382</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l08383"></a><span class="lineno"> 8383</span>&#160;{</div>
-<div class="line"><a name="l08384"></a><span class="lineno"> 8384</span>&#160;    <a class="code" href="ev-view_8c.html#a156be71427d85525a40215130b21931b">clear_selection</a> (view);</div>
-<div class="line"><a name="l08385"></a><span class="lineno"> 8385</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08424">8424</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l08425"></a><span class="lineno"> 8425</span>&#160;{</div>
+<div class="line"><a name="l08426"></a><span class="lineno"> 8426</span>&#160;    <a class="code" href="ev-view_8c.html#a156be71427d85525a40215130b21931b">clear_selection</a> (view);</div>
+<div class="line"><a name="l08427"></a><span class="lineno"> 8427</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -318,46 +318,46 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l02627">2627</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02629"></a><span class="lineno"> 2629</span>&#160;{</div>
-<div class="line"><a name="l02630"></a><span class="lineno"> 2630</span>&#160;    GtkWidget     *field_widget = NULL;</div>
-<div class="line"><a name="l02631"></a><span class="lineno"> 2631</span>&#160;    <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a> *form_field_mapping;</div>
-<div class="line"><a name="l02632"></a><span class="lineno"> 2632</span>&#160;    <a class="code" href="struct__EvMapping.html">EvMapping</a>     *mapping;</div>
-<div class="line"><a name="l02633"></a><span class="lineno"> 2633</span>&#160;</div>
-<div class="line"><a name="l02634"></a><span class="lineno"> 2634</span>&#160;    <a class="code" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (view, NULL, -1);</div>
-<div class="line"><a name="l02635"></a><span class="lineno"> 2635</span>&#160;</div>
-<div class="line"><a name="l02636"></a><span class="lineno"> 2636</span>&#160;    <span class="keywordflow">if</span> (field-&gt;<a class="code" href="struct__EvFormField.html#aa89a3c2152176fb9ac3b8c1a5aaf15e9">is_read_only</a>)</div>
-<div class="line"><a name="l02637"></a><span class="lineno"> 2637</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02638"></a><span class="lineno"> 2638</span>&#160;</div>
-<div class="line"><a name="l02639"></a><span class="lineno"> 2639</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a9677df610cb5a9447617a22936f07e24">EV_IS_FORM_FIELD_BUTTON</a> (field)) {</div>
-<div class="line"><a name="l02640"></a><span class="lineno"> 2640</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#a7d9b70a5b199c716c2c1cb09fb6a2348">ev_view_form_field_button_create_widget</a> (view, field);</div>
-<div class="line"><a name="l02641"></a><span class="lineno"> 2641</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a94b0454f6c4b52733f0b5e30e0f64095">EV_IS_FORM_FIELD_TEXT</a> (field)) {</div>
-<div class="line"><a name="l02642"></a><span class="lineno"> 2642</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#adc25e734b86ee0521798c9e227687ae8">ev_view_form_field_text_create_widget</a> (view, field);</div>
-<div class="line"><a name="l02643"></a><span class="lineno"> 2643</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a7bf43c3a17dbfc8277ca6fe5adf5fe28">EV_IS_FORM_FIELD_CHOICE</a> (field)) {</div>
-<div class="line"><a name="l02644"></a><span class="lineno"> 2644</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#a4ea0f104466cfb1e65541e5b69b83389">ev_view_form_field_choice_create_widget</a> (view, field);</div>
-<div class="line"><a name="l02645"></a><span class="lineno"> 2645</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a55c2dafc5f49d253141c60784be3091b">EV_IS_FORM_FIELD_SIGNATURE</a> (field)) {</div>
-<div class="line"><a name="l02646"></a><span class="lineno"> 2646</span>&#160;        <span class="comment">/* TODO */</span></div>
-<div class="line"><a name="l02647"></a><span class="lineno"> 2647</span>&#160;    }</div>
-<div class="line"><a name="l02648"></a><span class="lineno"> 2648</span>&#160;</div>
-<div class="line"><a name="l02649"></a><span class="lineno"> 2649</span>&#160;    <span class="comment">/* Form field doesn&#39;t require a widget */</span></div>
-<div class="line"><a name="l02650"></a><span class="lineno"> 2650</span>&#160;    <span class="keywordflow">if</span> (!field_widget) {</div>
-<div class="line"><a name="l02651"></a><span class="lineno"> 2651</span>&#160;        <span class="keywordflow">if</span> (!gtk_widget_has_focus (GTK_WIDGET (view)))</div>
-<div class="line"><a name="l02652"></a><span class="lineno"> 2652</span>&#160;            gtk_widget_grab_focus (GTK_WIDGET (view));</div>
-<div class="line"><a name="l02653"></a><span class="lineno"> 2653</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02654"></a><span class="lineno"> 2654</span>&#160;    }</div>
-<div class="line"><a name="l02655"></a><span class="lineno"> 2655</span>&#160;</div>
-<div class="line"><a name="l02656"></a><span class="lineno"> 2656</span>&#160;    g_object_set_data_full (G_OBJECT (field_widget), <span class="stringliteral">&quot;form-field&quot;</span>,</div>
-<div class="line"><a name="l02657"></a><span class="lineno"> 2657</span>&#160;                g_object_ref (field),</div>
-<div class="line"><a name="l02658"></a><span class="lineno"> 2658</span>&#160;                (GDestroyNotify)g_object_unref);</div>
-<div class="line"><a name="l02659"></a><span class="lineno"> 2659</span>&#160;</div>
-<div class="line"><a name="l02660"></a><span class="lineno"> 2660</span>&#160;    form_field_mapping = <a class="code" href="ev-page-cache_8c.html#a47fcfac00d1008109fcb9cdb1e529d2b">ev_page_cache_get_form_field_mapping</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>,</div>
-<div class="line"><a name="l02661"></a><span class="lineno"> 2661</span>&#160;                                   field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>);</div>
-<div class="line"><a name="l02662"></a><span class="lineno"> 2662</span>&#160;    mapping = <a class="code" href="ev-mapping-list_8c.html#afdb093bbda0330990955ebcffe92aff2">ev_mapping_list_find</a> (form_field_mapping, field);</div>
-<div class="line"><a name="l02663"></a><span class="lineno"> 2663</span>&#160;    <a class="code" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (view, mapping, field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>);</div>
-<div class="line"><a name="l02664"></a><span class="lineno"> 2664</span>&#160;    <a class="code" href="ev-view_8c.html#afdbef74c22bc77c4de99687ca80f55a0">ev_view_put_to_doc_rect</a> (view, field_widget, field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, &amp;mapping-&gt;<a class="code" href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">area</a>);</div>
-<div class="line"><a name="l02665"></a><span class="lineno"> 2665</span>&#160;    gtk_widget_show (field_widget);</div>
-<div class="line"><a name="l02666"></a><span class="lineno"> 2666</span>&#160;    gtk_widget_grab_focus (field_widget);</div>
-<div class="line"><a name="l02667"></a><span class="lineno"> 2667</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l02667">2667</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02669"></a><span class="lineno"> 2669</span>&#160;{</div>
+<div class="line"><a name="l02670"></a><span class="lineno"> 2670</span>&#160;    GtkWidget     *field_widget = NULL;</div>
+<div class="line"><a name="l02671"></a><span class="lineno"> 2671</span>&#160;    <a class="code" href="ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4">EvMappingList</a> *form_field_mapping;</div>
+<div class="line"><a name="l02672"></a><span class="lineno"> 2672</span>&#160;    <a class="code" href="struct__EvMapping.html">EvMapping</a>     *mapping;</div>
+<div class="line"><a name="l02673"></a><span class="lineno"> 2673</span>&#160;</div>
+<div class="line"><a name="l02674"></a><span class="lineno"> 2674</span>&#160;    <a class="code" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (view, NULL, -1);</div>
+<div class="line"><a name="l02675"></a><span class="lineno"> 2675</span>&#160;</div>
+<div class="line"><a name="l02676"></a><span class="lineno"> 2676</span>&#160;    <span class="keywordflow">if</span> (field-&gt;<a class="code" href="struct__EvFormField.html#aa89a3c2152176fb9ac3b8c1a5aaf15e9">is_read_only</a>)</div>
+<div class="line"><a name="l02677"></a><span class="lineno"> 2677</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02678"></a><span class="lineno"> 2678</span>&#160;</div>
+<div class="line"><a name="l02679"></a><span class="lineno"> 2679</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a9677df610cb5a9447617a22936f07e24">EV_IS_FORM_FIELD_BUTTON</a> (field)) {</div>
+<div class="line"><a name="l02680"></a><span class="lineno"> 2680</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#a7d9b70a5b199c716c2c1cb09fb6a2348">ev_view_form_field_button_create_widget</a> (view, field);</div>
+<div class="line"><a name="l02681"></a><span class="lineno"> 2681</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a94b0454f6c4b52733f0b5e30e0f64095">EV_IS_FORM_FIELD_TEXT</a> (field)) {</div>
+<div class="line"><a name="l02682"></a><span class="lineno"> 2682</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#adc25e734b86ee0521798c9e227687ae8">ev_view_form_field_text_create_widget</a> (view, field);</div>
+<div class="line"><a name="l02683"></a><span class="lineno"> 2683</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a7bf43c3a17dbfc8277ca6fe5adf5fe28">EV_IS_FORM_FIELD_CHOICE</a> (field)) {</div>
+<div class="line"><a name="l02684"></a><span class="lineno"> 2684</span>&#160;        field_widget = <a class="code" href="ev-view_8c.html#a4ea0f104466cfb1e65541e5b69b83389">ev_view_form_field_choice_create_widget</a> (view, field);</div>
+<div class="line"><a name="l02685"></a><span class="lineno"> 2685</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="ev-form-field_8h.html#a55c2dafc5f49d253141c60784be3091b">EV_IS_FORM_FIELD_SIGNATURE</a> (field)) {</div>
+<div class="line"><a name="l02686"></a><span class="lineno"> 2686</span>&#160;        <span class="comment">/* TODO */</span></div>
+<div class="line"><a name="l02687"></a><span class="lineno"> 2687</span>&#160;    }</div>
+<div class="line"><a name="l02688"></a><span class="lineno"> 2688</span>&#160;</div>
+<div class="line"><a name="l02689"></a><span class="lineno"> 2689</span>&#160;    <span class="comment">/* Form field doesn&#39;t require a widget */</span></div>
+<div class="line"><a name="l02690"></a><span class="lineno"> 2690</span>&#160;    <span class="keywordflow">if</span> (!field_widget) {</div>
+<div class="line"><a name="l02691"></a><span class="lineno"> 2691</span>&#160;        <span class="keywordflow">if</span> (!gtk_widget_has_focus (GTK_WIDGET (view)))</div>
+<div class="line"><a name="l02692"></a><span class="lineno"> 2692</span>&#160;            gtk_widget_grab_focus (GTK_WIDGET (view));</div>
+<div class="line"><a name="l02693"></a><span class="lineno"> 2693</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02694"></a><span class="lineno"> 2694</span>&#160;    }</div>
+<div class="line"><a name="l02695"></a><span class="lineno"> 2695</span>&#160;</div>
+<div class="line"><a name="l02696"></a><span class="lineno"> 2696</span>&#160;    g_object_set_data_full (G_OBJECT (field_widget), <span class="stringliteral">&quot;form-field&quot;</span>,</div>
+<div class="line"><a name="l02697"></a><span class="lineno"> 2697</span>&#160;                g_object_ref (field),</div>
+<div class="line"><a name="l02698"></a><span class="lineno"> 2698</span>&#160;                (GDestroyNotify)g_object_unref);</div>
+<div class="line"><a name="l02699"></a><span class="lineno"> 2699</span>&#160;</div>
+<div class="line"><a name="l02700"></a><span class="lineno"> 2700</span>&#160;    form_field_mapping = <a class="code" href="ev-page-cache_8c.html#a47fcfac00d1008109fcb9cdb1e529d2b">ev_page_cache_get_form_field_mapping</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>,</div>
+<div class="line"><a name="l02701"></a><span class="lineno"> 2701</span>&#160;                                   field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>);</div>
+<div class="line"><a name="l02702"></a><span class="lineno"> 2702</span>&#160;    mapping = <a class="code" href="ev-mapping-list_8c.html#afdb093bbda0330990955ebcffe92aff2">ev_mapping_list_find</a> (form_field_mapping, field);</div>
+<div class="line"><a name="l02703"></a><span class="lineno"> 2703</span>&#160;    <a class="code" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (view, mapping, field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>);</div>
+<div class="line"><a name="l02704"></a><span class="lineno"> 2704</span>&#160;    <a class="code" href="ev-view_8c.html#afdbef74c22bc77c4de99687ca80f55a0">ev_view_put_to_doc_rect</a> (view, field_widget, field-&gt;<a class="code" href="struct__EvFormField.html#a3f134cbdc8e148b6db9f5a100637abc1">page</a>-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>, &amp;mapping-&gt;<a class="code" href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">area</a>);</div>
+<div class="line"><a name="l02705"></a><span class="lineno"> 2705</span>&#160;    gtk_widget_show (field_widget);</div>
+<div class="line"><a name="l02706"></a><span class="lineno"> 2706</span>&#160;    gtk_widget_grab_focus (field_widget);</div>
+<div class="line"><a name="l02707"></a><span class="lineno"> 2707</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -407,81 +407,81 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l04475">4475</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l04479"></a><span class="lineno"> 4479</span>&#160;{</div>
-<div class="line"><a name="l04480"></a><span class="lineno"> 4480</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *areas = NULL;</div>
-<div class="line"><a name="l04481"></a><span class="lineno"> 4481</span>&#160;    guint        n_areas = 0;</div>
-<div class="line"><a name="l04482"></a><span class="lineno"> 4482</span>&#160;    gint         offset = -1;</div>
-<div class="line"><a name="l04483"></a><span class="lineno"> 4483</span>&#160;    gint         first_line_offset;</div>
-<div class="line"><a name="l04484"></a><span class="lineno"> 4484</span>&#160;    gint         last_line_offset = -1;</div>
-<div class="line"><a name="l04485"></a><span class="lineno"> 4485</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *rect;</div>
-<div class="line"><a name="l04486"></a><span class="lineno"> 4486</span>&#160;    guint        i;</div>
-<div class="line"><a name="l04487"></a><span class="lineno"> 4487</span>&#160;</div>
-<div class="line"><a name="l04488"></a><span class="lineno"> 4488</span>&#160;    <a class="code" href="ev-page-cache_8c.html#a98caf2933580b49cdc02e62761021156">ev_page_cache_get_text_layout</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, page, &amp;areas, &amp;n_areas);</div>
-<div class="line"><a name="l04489"></a><span class="lineno"> 4489</span>&#160;    <span class="keywordflow">if</span> (!areas)</div>
-<div class="line"><a name="l04490"></a><span class="lineno"> 4490</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l04491"></a><span class="lineno"> 4491</span>&#160;</div>
-<div class="line"><a name="l04492"></a><span class="lineno"> 4492</span>&#160;    i = 0;</div>
-<div class="line"><a name="l04493"></a><span class="lineno"> 4493</span>&#160;    <span class="keywordflow">while</span> (i &lt; n_areas &amp;&amp; offset == -1) {</div>
-<div class="line"><a name="l04494"></a><span class="lineno"> 4494</span>&#160;        rect = areas + i;</div>
-<div class="line"><a name="l04495"></a><span class="lineno"> 4495</span>&#160;</div>
-<div class="line"><a name="l04496"></a><span class="lineno"> 4496</span>&#160;        first_line_offset = -1;</div>
-<div class="line"><a name="l04497"></a><span class="lineno"> 4497</span>&#160;        <span class="keywordflow">while</span> (doc_y &gt;= rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> &amp;&amp; doc_y &lt;= rect-&gt;y2) {</div>
-<div class="line"><a name="l04498"></a><span class="lineno"> 4498</span>&#160;            <span class="keywordflow">if</span> (first_line_offset == -1) {</div>
-<div class="line"><a name="l04499"></a><span class="lineno"> 4499</span>&#160;                <span class="keywordflow">if</span> (doc_x &lt;= rect-&gt;x1) {</div>
-<div class="line"><a name="l04500"></a><span class="lineno"> 4500</span>&#160;                    <span class="comment">/* Location is before the start of the line */</span></div>
-<div class="line"><a name="l04501"></a><span class="lineno"> 4501</span>&#160;                    <span class="keywordflow">if</span> (last_line_offset != -1) {</div>
-<div class="line"><a name="l04502"></a><span class="lineno"> 4502</span>&#160;                        <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *last = areas + last_line_offset;</div>
-<div class="line"><a name="l04503"></a><span class="lineno"> 4503</span>&#160;                        gint         dx1, dx2;</div>
-<div class="line"><a name="l04504"></a><span class="lineno"> 4504</span>&#160;</div>
-<div class="line"><a name="l04505"></a><span class="lineno"> 4505</span>&#160;                        <span class="comment">/* If there&#39;s a previous line, check distances */</span></div>
-<div class="line"><a name="l04506"></a><span class="lineno"> 4506</span>&#160;</div>
-<div class="line"><a name="l04507"></a><span class="lineno"> 4507</span>&#160;                        dx1 = doc_x - last-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
-<div class="line"><a name="l04508"></a><span class="lineno"> 4508</span>&#160;                        dx2 = rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - doc_x;</div>
-<div class="line"><a name="l04509"></a><span class="lineno"> 4509</span>&#160;</div>
-<div class="line"><a name="l04510"></a><span class="lineno"> 4510</span>&#160;                        <span class="keywordflow">if</span> (dx1 &lt; dx2)</div>
-<div class="line"><a name="l04511"></a><span class="lineno"> 4511</span>&#160;                            offset = last_line_offset;</div>
-<div class="line"><a name="l04512"></a><span class="lineno"> 4512</span>&#160;                        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l04513"></a><span class="lineno"> 4513</span>&#160;                            offset = i;</div>
-<div class="line"><a name="l04514"></a><span class="lineno"> 4514</span>&#160;                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l04515"></a><span class="lineno"> 4515</span>&#160;                        offset = i;</div>
-<div class="line"><a name="l04516"></a><span class="lineno"> 4516</span>&#160;                    }</div>
-<div class="line"><a name="l04517"></a><span class="lineno"> 4517</span>&#160;</div>
-<div class="line"><a name="l04518"></a><span class="lineno"> 4518</span>&#160;                    last_line_offset = i + 1;</div>
-<div class="line"><a name="l04519"></a><span class="lineno"> 4519</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l04520"></a><span class="lineno"> 4520</span>&#160;                }</div>
-<div class="line"><a name="l04521"></a><span class="lineno"> 4521</span>&#160;                first_line_offset = i;</div>
-<div class="line"><a name="l04522"></a><span class="lineno"> 4522</span>&#160;            }</div>
-<div class="line"><a name="l04523"></a><span class="lineno"> 4523</span>&#160;            last_line_offset = i + 1;</div>
-<div class="line"><a name="l04524"></a><span class="lineno"> 4524</span>&#160;</div>
-<div class="line"><a name="l04525"></a><span class="lineno"> 4525</span>&#160;            <span class="keywordflow">if</span> (doc_x &gt;= rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> &amp;&amp; doc_x &lt;= rect-&gt;x2) {</div>
-<div class="line"><a name="l04526"></a><span class="lineno"> 4526</span>&#160;                <span class="comment">/* Location is inside the line. Position the caret before</span></div>
-<div class="line"><a name="l04527"></a><span class="lineno"> 4527</span>&#160;<span class="comment">                 * or after the character, depending on whether the point</span></div>
-<div class="line"><a name="l04528"></a><span class="lineno"> 4528</span>&#160;<span class="comment">                 * falls within the left or right half of the bounding box.</span></div>
-<div class="line"><a name="l04529"></a><span class="lineno"> 4529</span>&#160;<span class="comment">                 */</span></div>
-<div class="line"><a name="l04530"></a><span class="lineno"> 4530</span>&#160;                <span class="keywordflow">if</span> (doc_x &lt;= rect-&gt;x1 + (rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) / 2)</div>
-<div class="line"><a name="l04531"></a><span class="lineno"> 4531</span>&#160;                    offset = i;</div>
-<div class="line"><a name="l04532"></a><span class="lineno"> 4532</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l04533"></a><span class="lineno"> 4533</span>&#160;                    offset = i + 1;</div>
-<div class="line"><a name="l04534"></a><span class="lineno"> 4534</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l04535"></a><span class="lineno"> 4535</span>&#160;            }</div>
-<div class="line"><a name="l04536"></a><span class="lineno"> 4536</span>&#160;</div>
-<div class="line"><a name="l04537"></a><span class="lineno"> 4537</span>&#160;            i++;</div>
-<div class="line"><a name="l04538"></a><span class="lineno"> 4538</span>&#160;            rect = areas + i;</div>
-<div class="line"><a name="l04539"></a><span class="lineno"> 4539</span>&#160;        }</div>
-<div class="line"><a name="l04540"></a><span class="lineno"> 4540</span>&#160;</div>
-<div class="line"><a name="l04541"></a><span class="lineno"> 4541</span>&#160;        <span class="keywordflow">if</span> (first_line_offset == -1)</div>
-<div class="line"><a name="l04542"></a><span class="lineno"> 4542</span>&#160;            i++;</div>
-<div class="line"><a name="l04543"></a><span class="lineno"> 4543</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l04515">4515</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l04519"></a><span class="lineno"> 4519</span>&#160;{</div>
+<div class="line"><a name="l04520"></a><span class="lineno"> 4520</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *areas = NULL;</div>
+<div class="line"><a name="l04521"></a><span class="lineno"> 4521</span>&#160;    guint        n_areas = 0;</div>
+<div class="line"><a name="l04522"></a><span class="lineno"> 4522</span>&#160;    gint         offset = -1;</div>
+<div class="line"><a name="l04523"></a><span class="lineno"> 4523</span>&#160;    gint         first_line_offset;</div>
+<div class="line"><a name="l04524"></a><span class="lineno"> 4524</span>&#160;    gint         last_line_offset = -1;</div>
+<div class="line"><a name="l04525"></a><span class="lineno"> 4525</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *rect;</div>
+<div class="line"><a name="l04526"></a><span class="lineno"> 4526</span>&#160;    guint        i;</div>
+<div class="line"><a name="l04527"></a><span class="lineno"> 4527</span>&#160;</div>
+<div class="line"><a name="l04528"></a><span class="lineno"> 4528</span>&#160;    <a class="code" href="ev-page-cache_8c.html#a98caf2933580b49cdc02e62761021156">ev_page_cache_get_text_layout</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, page, &amp;areas, &amp;n_areas);</div>
+<div class="line"><a name="l04529"></a><span class="lineno"> 4529</span>&#160;    <span class="keywordflow">if</span> (!areas)</div>
+<div class="line"><a name="l04530"></a><span class="lineno"> 4530</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l04531"></a><span class="lineno"> 4531</span>&#160;</div>
+<div class="line"><a name="l04532"></a><span class="lineno"> 4532</span>&#160;    i = 0;</div>
+<div class="line"><a name="l04533"></a><span class="lineno"> 4533</span>&#160;    <span class="keywordflow">while</span> (i &lt; n_areas &amp;&amp; offset == -1) {</div>
+<div class="line"><a name="l04534"></a><span class="lineno"> 4534</span>&#160;        rect = areas + i;</div>
+<div class="line"><a name="l04535"></a><span class="lineno"> 4535</span>&#160;</div>
+<div class="line"><a name="l04536"></a><span class="lineno"> 4536</span>&#160;        first_line_offset = -1;</div>
+<div class="line"><a name="l04537"></a><span class="lineno"> 4537</span>&#160;        <span class="keywordflow">while</span> (doc_y &gt;= rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> &amp;&amp; doc_y &lt;= rect-&gt;y2) {</div>
+<div class="line"><a name="l04538"></a><span class="lineno"> 4538</span>&#160;            <span class="keywordflow">if</span> (first_line_offset == -1) {</div>
+<div class="line"><a name="l04539"></a><span class="lineno"> 4539</span>&#160;                <span class="keywordflow">if</span> (doc_x &lt;= rect-&gt;x1) {</div>
+<div class="line"><a name="l04540"></a><span class="lineno"> 4540</span>&#160;                    <span class="comment">/* Location is before the start of the line */</span></div>
+<div class="line"><a name="l04541"></a><span class="lineno"> 4541</span>&#160;                    <span class="keywordflow">if</span> (last_line_offset != -1) {</div>
+<div class="line"><a name="l04542"></a><span class="lineno"> 4542</span>&#160;                        <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *last = areas + last_line_offset;</div>
+<div class="line"><a name="l04543"></a><span class="lineno"> 4543</span>&#160;                        gint         dx1, dx2;</div>
 <div class="line"><a name="l04544"></a><span class="lineno"> 4544</span>&#160;</div>
-<div class="line"><a name="l04545"></a><span class="lineno"> 4545</span>&#160;    <span class="keywordflow">if</span> (last_line_offset == -1)</div>
-<div class="line"><a name="l04546"></a><span class="lineno"> 4546</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l04547"></a><span class="lineno"> 4547</span>&#160;</div>
-<div class="line"><a name="l04548"></a><span class="lineno"> 4548</span>&#160;    <span class="keywordflow">if</span> (offset == -1)</div>
-<div class="line"><a name="l04549"></a><span class="lineno"> 4549</span>&#160;        offset = last_line_offset;</div>
-<div class="line"><a name="l04550"></a><span class="lineno"> 4550</span>&#160;</div>
-<div class="line"><a name="l04551"></a><span class="lineno"> 4551</span>&#160;    <span class="keywordflow">return</span> offset;</div>
-<div class="line"><a name="l04552"></a><span class="lineno"> 4552</span>&#160;}</div>
+<div class="line"><a name="l04545"></a><span class="lineno"> 4545</span>&#160;                        <span class="comment">/* If there&#39;s a previous line, check distances */</span></div>
+<div class="line"><a name="l04546"></a><span class="lineno"> 4546</span>&#160;</div>
+<div class="line"><a name="l04547"></a><span class="lineno"> 4547</span>&#160;                        dx1 = doc_x - last-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
+<div class="line"><a name="l04548"></a><span class="lineno"> 4548</span>&#160;                        dx2 = rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - doc_x;</div>
+<div class="line"><a name="l04549"></a><span class="lineno"> 4549</span>&#160;</div>
+<div class="line"><a name="l04550"></a><span class="lineno"> 4550</span>&#160;                        <span class="keywordflow">if</span> (dx1 &lt; dx2)</div>
+<div class="line"><a name="l04551"></a><span class="lineno"> 4551</span>&#160;                            offset = last_line_offset;</div>
+<div class="line"><a name="l04552"></a><span class="lineno"> 4552</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l04553"></a><span class="lineno"> 4553</span>&#160;                            offset = i;</div>
+<div class="line"><a name="l04554"></a><span class="lineno"> 4554</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l04555"></a><span class="lineno"> 4555</span>&#160;                        offset = i;</div>
+<div class="line"><a name="l04556"></a><span class="lineno"> 4556</span>&#160;                    }</div>
+<div class="line"><a name="l04557"></a><span class="lineno"> 4557</span>&#160;</div>
+<div class="line"><a name="l04558"></a><span class="lineno"> 4558</span>&#160;                    last_line_offset = i + 1;</div>
+<div class="line"><a name="l04559"></a><span class="lineno"> 4559</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l04560"></a><span class="lineno"> 4560</span>&#160;                }</div>
+<div class="line"><a name="l04561"></a><span class="lineno"> 4561</span>&#160;                first_line_offset = i;</div>
+<div class="line"><a name="l04562"></a><span class="lineno"> 4562</span>&#160;            }</div>
+<div class="line"><a name="l04563"></a><span class="lineno"> 4563</span>&#160;            last_line_offset = i + 1;</div>
+<div class="line"><a name="l04564"></a><span class="lineno"> 4564</span>&#160;</div>
+<div class="line"><a name="l04565"></a><span class="lineno"> 4565</span>&#160;            <span class="keywordflow">if</span> (doc_x &gt;= rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> &amp;&amp; doc_x &lt;= rect-&gt;x2) {</div>
+<div class="line"><a name="l04566"></a><span class="lineno"> 4566</span>&#160;                <span class="comment">/* Location is inside the line. Position the caret before</span></div>
+<div class="line"><a name="l04567"></a><span class="lineno"> 4567</span>&#160;<span class="comment">                 * or after the character, depending on whether the point</span></div>
+<div class="line"><a name="l04568"></a><span class="lineno"> 4568</span>&#160;<span class="comment">                 * falls within the left or right half of the bounding box.</span></div>
+<div class="line"><a name="l04569"></a><span class="lineno"> 4569</span>&#160;<span class="comment">                 */</span></div>
+<div class="line"><a name="l04570"></a><span class="lineno"> 4570</span>&#160;                <span class="keywordflow">if</span> (doc_x &lt;= rect-&gt;x1 + (rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) / 2)</div>
+<div class="line"><a name="l04571"></a><span class="lineno"> 4571</span>&#160;                    offset = i;</div>
+<div class="line"><a name="l04572"></a><span class="lineno"> 4572</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l04573"></a><span class="lineno"> 4573</span>&#160;                    offset = i + 1;</div>
+<div class="line"><a name="l04574"></a><span class="lineno"> 4574</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l04575"></a><span class="lineno"> 4575</span>&#160;            }</div>
+<div class="line"><a name="l04576"></a><span class="lineno"> 4576</span>&#160;</div>
+<div class="line"><a name="l04577"></a><span class="lineno"> 4577</span>&#160;            i++;</div>
+<div class="line"><a name="l04578"></a><span class="lineno"> 4578</span>&#160;            rect = areas + i;</div>
+<div class="line"><a name="l04579"></a><span class="lineno"> 4579</span>&#160;        }</div>
+<div class="line"><a name="l04580"></a><span class="lineno"> 4580</span>&#160;</div>
+<div class="line"><a name="l04581"></a><span class="lineno"> 4581</span>&#160;        <span class="keywordflow">if</span> (first_line_offset == -1)</div>
+<div class="line"><a name="l04582"></a><span class="lineno"> 4582</span>&#160;            i++;</div>
+<div class="line"><a name="l04583"></a><span class="lineno"> 4583</span>&#160;    }</div>
+<div class="line"><a name="l04584"></a><span class="lineno"> 4584</span>&#160;</div>
+<div class="line"><a name="l04585"></a><span class="lineno"> 4585</span>&#160;    <span class="keywordflow">if</span> (last_line_offset == -1)</div>
+<div class="line"><a name="l04586"></a><span class="lineno"> 4586</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l04587"></a><span class="lineno"> 4587</span>&#160;</div>
+<div class="line"><a name="l04588"></a><span class="lineno"> 4588</span>&#160;    <span class="keywordflow">if</span> (offset == -1)</div>
+<div class="line"><a name="l04589"></a><span class="lineno"> 4589</span>&#160;        offset = last_line_offset;</div>
+<div class="line"><a name="l04590"></a><span class="lineno"> 4590</span>&#160;</div>
+<div class="line"><a name="l04591"></a><span class="lineno"> 4591</span>&#160;    <span class="keywordflow">return</span> offset;</div>
+<div class="line"><a name="l04592"></a><span class="lineno"> 4592</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -525,21 +525,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l06044">6044</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l06047"></a><span class="lineno"> 6047</span>&#160;{</div>
-<div class="line"><a name="l06048"></a><span class="lineno"> 6048</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
-<div class="line"><a name="l06049"></a><span class="lineno"> 6049</span>&#160;    GtkStateFlags    state;</div>
-<div class="line"><a name="l06050"></a><span class="lineno"> 6050</span>&#160;    GtkStyleContext *context;</div>
-<div class="line"><a name="l06051"></a><span class="lineno"> 6051</span>&#160;</div>
-<div class="line"><a name="l06052"></a><span class="lineno"> 6052</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
-<div class="line"><a name="l06053"></a><span class="lineno"> 6053</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
-<div class="line"><a name="l06054"></a><span class="lineno"> 6054</span>&#160;</div>
-<div class="line"><a name="l06055"></a><span class="lineno"> 6055</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
-<div class="line"><a name="l06056"></a><span class="lineno"> 6056</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
-<div class="line"><a name="l06057"></a><span class="lineno"> 6057</span>&#160;</div>
-<div class="line"><a name="l06058"></a><span class="lineno"> 6058</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
-<div class="line"><a name="l06059"></a><span class="lineno"> 6059</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
-<div class="line"><a name="l06060"></a><span class="lineno"> 6060</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l06084">6084</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l06087"></a><span class="lineno"> 6087</span>&#160;{</div>
+<div class="line"><a name="l06088"></a><span class="lineno"> 6088</span>&#160;    GtkWidget       *widget = GTK_WIDGET (view);</div>
+<div class="line"><a name="l06089"></a><span class="lineno"> 6089</span>&#160;    GtkStateFlags    state;</div>
+<div class="line"><a name="l06090"></a><span class="lineno"> 6090</span>&#160;    GtkStyleContext *context;</div>
+<div class="line"><a name="l06091"></a><span class="lineno"> 6091</span>&#160;</div>
+<div class="line"><a name="l06092"></a><span class="lineno"> 6092</span>&#160;    state = gtk_widget_has_focus (widget) ? GTK_STATE_FLAG_SELECTED : GTK_STATE_FLAG_ACTIVE;</div>
+<div class="line"><a name="l06093"></a><span class="lineno"> 6093</span>&#160;    context = gtk_widget_get_style_context (widget);</div>
+<div class="line"><a name="l06094"></a><span class="lineno"> 6094</span>&#160;</div>
+<div class="line"><a name="l06095"></a><span class="lineno"> 6095</span>&#160;    <span class="keywordflow">if</span> (bg_color)</div>
+<div class="line"><a name="l06096"></a><span class="lineno"> 6096</span>&#160;        gtk_style_context_get_background_color (context, state, bg_color);</div>
+<div class="line"><a name="l06097"></a><span class="lineno"> 6097</span>&#160;</div>
+<div class="line"><a name="l06098"></a><span class="lineno"> 6098</span>&#160;    <span class="keywordflow">if</span> (fg_color)</div>
+<div class="line"><a name="l06099"></a><span class="lineno"> 6099</span>&#160;        gtk_style_context_get_color (context, state, fg_color);</div>
+<div class="line"><a name="l06100"></a><span class="lineno"> 6100</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -583,38 +583,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l02116">2116</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;{</div>
-<div class="line"><a name="l02120"></a><span class="lineno"> 2120</span>&#160;    GdkRectangle    view_rect;</div>
-<div class="line"><a name="l02121"></a><span class="lineno"> 2121</span>&#160;    cairo_region_t *region = NULL;</div>
-<div class="line"><a name="l02122"></a><span class="lineno"> 2122</span>&#160;</div>
-<div class="line"><a name="l02123"></a><span class="lineno"> 2123</span>&#160;    <span class="keywordflow">if</span> (view-&gt;<a class="code" href="struct__EvView.html#ade8558996c4b4ffe2d03776748c68f02">focused_element</a> == element_mapping)</div>
-<div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;</div>
-<div class="line"><a name="l02126"></a><span class="lineno"> 2126</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-view_8c.html#a134fbaaa5e20747be6463ec530786d8a">ev_view_get_focused_area</a> (view, &amp;view_rect))</div>
-<div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;        region = cairo_region_create_rectangle (&amp;view_rect);</div>
-<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;</div>
-<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;    view-&gt;<a class="code" href="struct__EvView.html#ade8558996c4b4ffe2d03776748c68f02">focused_element</a> = element_mapping;</div>
-<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;    view-&gt;<a class="code" href="struct__EvView.html#af305edcfc1d4eaf70482ef360bcc3411">focused_element_page</a> = page;</div>
-<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;</div>
-<div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-view_8c.html#a134fbaaa5e20747be6463ec530786d8a">ev_view_get_focused_area</a> (view, &amp;view_rect)) {</div>
-<div class="line"><a name="l02133"></a><span class="lineno"> 2133</span>&#160;        <span class="keywordflow">if</span> (!region)</div>
-<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;            region = cairo_region_create_rectangle (&amp;view_rect);</div>
-<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;            cairo_region_union_rectangle (region, &amp;view_rect);</div>
-<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;</div>
-<div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;        <a class="code" href="ev-document-model_8c.html#aefb8a0c3006b87f15bbcfab2186c61e5">ev_document_model_set_page</a> (view-&gt;<a class="code" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>, page);</div>
-<div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;        view_rect.x += view-&gt;<a class="code" href="struct__EvView.html#ab01c9b78f1eb4aaa2df288223a8b861d">scroll_x</a>;</div>
-<div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;        view_rect.y += view-&gt;<a class="code" href="struct__EvView.html#afc7d973e82c9d56691a9c4242ad6fd16">scroll_y</a>;</div>
-<div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;        <a class="code" href="ev-view_8c.html#a7238ef67387d9bbc9900dd22e5ed034e">ensure_rectangle_is_visible</a> (view, &amp;view_rect);</div>
-<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;    }</div>
-<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;</div>
-<div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;    <span class="keywordflow">if</span> (region) {</div>
-<div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;        gdk_window_invalidate_region (gtk_widget_get_window (GTK_WIDGET (view)),</div>
-<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;                          region, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;        cairo_region_destroy (region);</div>
-<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;    }</div>
-<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l02149">2149</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02152"></a><span class="lineno"> 2152</span>&#160;{</div>
+<div class="line"><a name="l02153"></a><span class="lineno"> 2153</span>&#160;    GdkRectangle    view_rect;</div>
+<div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;    cairo_region_t *region = NULL;</div>
+<div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;</div>
+<div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;    <span class="keywordflow">if</span> (view-&gt;<a class="code" href="struct__EvView.html#ade8558996c4b4ffe2d03776748c68f02">focused_element</a> == element_mapping)</div>
+<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;</div>
+<div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;    <span class="keywordflow">if</span> (view-&gt;<a class="code" href="struct__EvView.html#a668333354f59a1fbc86e87322cd4295d">accessible</a>)</div>
+<div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;        <a class="code" href="ev-view-accessible_8c.html#a0395d054f18875ebac19f75272595a64">ev_view_accessible_set_focused_element</a> (<a class="code" href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a> (view-&gt;<a class="code" href="struct__EvView.html#a668333354f59a1fbc86e87322cd4295d">accessible</a>), element_mapping, page);</div>
+<div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;</div>
+<div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-view_8c.html#a134fbaaa5e20747be6463ec530786d8a">ev_view_get_focused_area</a> (view, &amp;view_rect))</div>
+<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;        region = cairo_region_create_rectangle (&amp;view_rect);</div>
+<div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;</div>
+<div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;    view-&gt;<a class="code" href="struct__EvView.html#ade8558996c4b4ffe2d03776748c68f02">focused_element</a> = element_mapping;</div>
+<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;    view-&gt;<a class="code" href="struct__EvView.html#af305edcfc1d4eaf70482ef360bcc3411">focused_element_page</a> = page;</div>
+<div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;</div>
+<div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-view_8c.html#a134fbaaa5e20747be6463ec530786d8a">ev_view_get_focused_area</a> (view, &amp;view_rect)) {</div>
+<div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;        <span class="keywordflow">if</span> (!region)</div>
+<div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;            region = cairo_region_create_rectangle (&amp;view_rect);</div>
+<div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;            cairo_region_union_rectangle (region, &amp;view_rect);</div>
+<div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;</div>
+<div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;        <a class="code" href="ev-document-model_8c.html#aefb8a0c3006b87f15bbcfab2186c61e5">ev_document_model_set_page</a> (view-&gt;<a class="code" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>, page);</div>
+<div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;        view_rect.x += view-&gt;<a class="code" href="struct__EvView.html#ab01c9b78f1eb4aaa2df288223a8b861d">scroll_x</a>;</div>
+<div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;        view_rect.y += view-&gt;<a class="code" href="struct__EvView.html#afc7d973e82c9d56691a9c4242ad6fd16">scroll_y</a>;</div>
+<div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;        <a class="code" href="ev-view_8c.html#a7238ef67387d9bbc9900dd22e5ed034e">ensure_rectangle_is_visible</a> (view, &amp;view_rect);</div>
+<div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;    }</div>
+<div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;</div>
+<div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;    <span class="keywordflow">if</span> (region) {</div>
+<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;        gdk_window_invalidate_region (gtk_widget_get_window (GTK_WIDGET (view)),</div>
+<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;                          region, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;        cairo_region_destroy (region);</div>
+<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;    }</div>
+<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -658,10 +661,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08388">8388</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l08391"></a><span class="lineno"> 8391</span>&#160;{</div>
-<div class="line"><a name="l08392"></a><span class="lineno"> 8392</span>&#160;    <a class="code" href="ev-view_8c.html#af4c66a12e3dd928175a7c057083d7fd8">compute_selections</a> (view, <a class="code" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>, start_point, end_point);</div>
-<div class="line"><a name="l08393"></a><span class="lineno"> 8393</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l08430">8430</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l08433"></a><span class="lineno"> 8433</span>&#160;{</div>
+<div class="line"><a name="l08434"></a><span class="lineno"> 8434</span>&#160;    <a class="code" href="ev-view_8c.html#af4c66a12e3dd928175a7c057083d7fd8">compute_selections</a> (view, <a class="code" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>, start_point, end_point);</div>
+<div class="line"><a name="l08435"></a><span class="lineno"> 8435</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -711,53 +714,53 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01318">1318</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;{</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;    GdkRectangle page_area;</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;    GtkBorder border;</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;    <span class="keywordtype">double</span> x, y, view_x, view_y;</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    <span class="keywordflow">switch</span> (view-&gt;<a class="code" href="struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83">rotation</a>) {</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        x = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        y = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;    <span class="keywordflow">case</span> 90: {</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        gdouble width;</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, NULL);</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        x = width - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        y = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;    }</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    <span class="keywordflow">case</span> 180: {</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        gdouble width, height;</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, &amp;height);</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        x = width - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        y = height - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;    }</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;    <span class="keywordflow">case</span> 270: {</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        gdouble height;</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, NULL, &amp;height);</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        x = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        y = height - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;    }</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;        g_assert_not_reached ();</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;    }</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    <a class="code" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a> (view, page, &amp;page_area, &amp;border);</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;    view_x = CLAMP ((gint)(x * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5), 0, page_area.width);</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;    view_y = CLAMP ((gint)(y * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5), 0, page_area.height);</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;    view_point-&gt;x = view_x + page_area.x + border.left;</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;    view_point-&gt;y = view_y + page_area.y + border.top;</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01351">1351</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;{</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;    GdkRectangle page_area;</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;    GtkBorder border;</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;    <span class="keywordtype">double</span> x, y, view_x, view_y;</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;    <span class="keywordflow">switch</span> (view-&gt;<a class="code" href="struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83">rotation</a>) {</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;        x = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        y = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;    <span class="keywordflow">case</span> 90: {</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;        gdouble width;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, NULL);</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;        x = width - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;        y = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;    }</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    <span class="keywordflow">case</span> 180: {</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;        gdouble width, height;</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, &amp;height);</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        x = width - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        y = height - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;    }</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    <span class="keywordflow">case</span> 270: {</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        gdouble height;</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, NULL, &amp;height);</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        x = doc_point-&gt;<a class="code" href="struct__EvPoint.html#ad2e9e39d7b7f5d8572dc6b2bd4aab2c4">y</a>;</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;        y = height - doc_point-&gt;<a class="code" href="struct__EvPoint.html#ab11d4b8139a7eac9990f7017c7c4f151">x</a>;</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    }</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;        g_assert_not_reached ();</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    }</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    <a class="code" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a> (view, page, &amp;page_area, &amp;border);</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    view_x = CLAMP ((gint)(x * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5), 0, page_area.width);</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    view_y = CLAMP ((gint)(y * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5), 0, page_area.height);</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    view_point-&gt;x = view_x + page_area.x + border.left;</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;    view_point-&gt;y = view_y + page_area.y + border.top;</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -807,61 +810,61 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01370">1370</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;{</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;    GdkRectangle page_area;</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    GtkBorder border;</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;    <span class="keywordtype">double</span> x, y, w, h;</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    <span class="keywordflow">switch</span> (view-&gt;<a class="code" href="struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83">rotation</a>) {</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;    <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;        x = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;        y = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    <span class="keywordflow">case</span> 90: {</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        gdouble width;</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, NULL);</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;        x = width - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>;</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;        y = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;    }</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    <span class="keywordflow">case</span> 180: {</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        gdouble width, height;</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, &amp;height);</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;        x = width - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;        y = height - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>;</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    }</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <span class="keywordflow">case</span> 270: {</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;        gdouble height;</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, NULL, &amp;height);</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;        x = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;        y = height - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    }</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;        g_assert_not_reached ();</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;    }</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    <a class="code" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a> (view, page, &amp;page_area, &amp;border);</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01403">1403</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;{</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;    GdkRectangle page_area;</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    GtkBorder border;</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    <span class="keywordtype">double</span> x, y, w, h;</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    <span class="keywordflow">switch</span> (view-&gt;<a class="code" href="struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83">rotation</a>) {</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;        x = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;        y = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;    <span class="keywordflow">case</span> 90: {</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        gdouble width;</div>
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;    view_rect-&gt;x = (gint)(x * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5) + page_area.x + border.left;</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;    view_rect-&gt;y = (gint)(y * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5) + page_area.y + border.top;</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;    view_rect-&gt;width = (gint)(w * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5);</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    view_rect-&gt;height = (gint)(h * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5);</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;}</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, NULL);</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        x = width - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>;</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;        y = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;    }</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;    <span class="keywordflow">case</span> 180: {</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;        gdouble width, height;</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, &amp;width, &amp;height);</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;        x = width - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        y = height - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>;</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    }</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    <span class="keywordflow">case</span> 270: {</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        gdouble height;</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;        <a class="code" href="ev-view_8c.html#a628acf7add33f21e29e1852a8ca22df4">get_doc_page_size</a> (view, page, NULL, &amp;height);</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        x = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        y = height - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        w = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;        h = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;    }</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;        g_assert_not_reached ();</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    }</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;    <a class="code" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a> (view, page, &amp;page_area, &amp;border);</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;    view_rect-&gt;x = (gint)(x * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5) + page_area.x + border.left;</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    view_rect-&gt;y = (gint)(y * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5) + page_area.y + border.top;</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    view_rect-&gt;width = (gint)(w * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5);</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    view_rect-&gt;height = (gint)(h * view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a> + 0.5);</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -923,11 +926,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01293">1293</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;{</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;    *doc_point_x = MAX ((<span class="keywordtype">double</span>) (view_point-&gt;x - page_area-&gt;x - border-&gt;left) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    *doc_point_y = MAX ((<span class="keywordtype">double</span>) (view_point-&gt;y - page_area-&gt;y - border-&gt;right) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01326">1326</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;{</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;    *doc_point_x = MAX ((<span class="keywordtype">double</span>) (view_point-&gt;x - page_area-&gt;x - border-&gt;left) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;    *doc_point_y = MAX ((<span class="keywordtype">double</span>) (view_point-&gt;y - page_area-&gt;y - border-&gt;right) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -983,13 +986,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01305">1305</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;{</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> = MAX ((<span class="keywordtype">double</span>) (view_rect-&gt;x - page_area-&gt;x - border-&gt;left) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = MAX ((<span class="keywordtype">double</span>) (view_rect-&gt;y - page_area-&gt;y - border-&gt;right) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> + (double) view_rect-&gt;width / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>;</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> + (<span class="keywordtype">double</span>) view_rect-&gt;height / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>;</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01338">1338</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;{</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> = MAX ((<span class="keywordtype">double</span>) (view_rect-&gt;x - page_area-&gt;x - border-&gt;left) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = MAX ((<span class="keywordtype">double</span>) (view_rect-&gt;y - page_area-&gt;y - border-&gt;right) / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>, 0);</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> + (double) view_rect-&gt;width / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>;</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;    doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = doc_rect-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> + (<span class="keywordtype">double</span>) view_rect-&gt;height / view-&gt;<a class="code" href="struct__EvView.html#ac9416bfd554fda4710849462537a5c53">scale</a>;</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1051,21 +1054,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01098">1098</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;{</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    gdouble w, h;</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    gint    width, height;</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    <a class="code" href="ev-document_8c.html#a5a01bc5acbf69d30bed5717ad796b3d8">ev_document_get_page_size</a> (document, page, &amp;w, &amp;h);</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;    width = (gint)(w * scale + 0.5);</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;    height = (gint)(h * scale + 0.5);</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    <span class="keywordflow">if</span> (page_width)</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;        *page_width = (rotation == 0 || rotation == 180) ? width : height;</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    <span class="keywordflow">if</span> (page_height)</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;        *page_height = (rotation == 0 || rotation == 180) ? height : width;</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view_8c_source.html#l01131">1131</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;{</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    gdouble w, h;</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    gint    width, height;</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;    <a class="code" href="ev-document_8c.html#a5a01bc5acbf69d30bed5717ad796b3d8">ev_document_get_page_size</a> (document, page, &amp;w, &amp;h);</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;    width = (gint)(w * scale + 0.5);</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;    height = (gint)(h * scale + 0.5);</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;    <span class="keywordflow">if</span> (page_width)</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;        *page_width = (rotation == 0 || rotation == 180) ? width : height;</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;    <span class="keywordflow">if</span> (page_height)</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;        *page_height = (rotation == 0 || rotation == 180) ? height : width;</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1085,7 +1088,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-private_8h.html">ev-view-private.h</a></li>
-    <li class="footer">Generated on Thu Jul 24 2014 13:03:43 for Evince by
+    <li class="footer">Generated on Thu Jul 24 2014 16:45:23 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
