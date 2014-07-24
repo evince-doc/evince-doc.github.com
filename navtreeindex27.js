@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"struct__DviDevice.html#a632cd8adca4ac14962cadcfb880b0180":[5,0,13,6],
 "struct__DviDevice.html#a77bc6963184a3c066dbdd57eaadfa147":[5,0,13,8],
 "struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb":[5,0,13,3],
 "struct__DviDevice.html#ab402b7bae3bc33ba74838c5338f48461":[5,0,13,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "struct__EvAnnotationTextClass.html":[5,0,46],
 "struct__EvAnnotationTextClass.html#a319869f1b61b267504ee6bffe4e7a310":[5,0,46,0],
 "struct__EvAnnotationWindow.html":[5,0,47],
-"struct__EvAnnotationWindow.html#a14a6dcf1a469978c950663944793dc26":[5,0,47,2],
-"struct__EvAnnotationWindow.html#a1d593b73ac854fc4e03df275ef2d42f7":[5,0,47,14]
+"struct__EvAnnotationWindow.html#a14a6dcf1a469978c950663944793dc26":[5,0,47,2]
 };

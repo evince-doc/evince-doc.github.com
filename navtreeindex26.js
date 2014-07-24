@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structEpsfBox.html#a045671ebcf269681973c5e09c3584986":[5,0,311,1],
 "structEpsfBox.html#a43fcbef6fc6a7ba99bc63f28ed78715c":[5,0,311,0],
 "structEpsfBox.html#a529b5fadeff82e021653ca3549372fe9":[5,0,311,2],
 "structEpsfBox.html#ad7d26931cedf46d83cd809d269a87962":[5,0,311,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviContext.html#af9f97f052639c87c18b65636f944b4c3":[5,0,12,17],
 "struct__DviDevice.html":[5,0,13],
 "struct__DviDevice.html#a2191cece01dd91f670ed9fcadd50ad5a":[5,0,13,9],
-"struct__DviDevice.html#a58c655736979fefb02fd78b1793d4b59":[5,0,13,11],
-"struct__DviDevice.html#a632cd8adca4ac14962cadcfb880b0180":[5,0,13,6]
+"struct__DviDevice.html#a58c655736979fefb02fd78b1793d4b59":[5,0,13,11]
 };

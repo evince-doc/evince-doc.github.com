@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"mdvi_8h.html#ac0fd8f3c7746b592f7c7def273bb9c12":[6,0,0,0,2,0,21,131],
 "mdvi_8h.html#ac3390f1dd4d78f8776355085997892e1":[6,0,0,0,2,0,21,47],
 "mdvi_8h.html#ac3fa93480d8d98c9daed1c08b51e5c4a":[6,0,0,0,2,0,21,25],
 "mdvi_8h.html#ac4e78878afe4e5f63d9b4ad4f381d097":[6,0,0,0,2,0,21,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "structDviFontMapInfo.html#abf986cf148f9221f3217594a4334d77c":[5,0,310,6],
 "structDviFontMapInfo.html#aee2e2573d80f1fa7836b7058e6593315":[5,0,310,2],
 "structDviFontMapInfo.html#af83366b8b00bb5d286d6f0720b9916a6":[5,0,310,5],
-"structEpsfBox.html":[5,0,311],
-"structEpsfBox.html#a045671ebcf269681973c5e09c3584986":[5,0,311,1]
+"structEpsfBox.html":[5,0,311]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"struct__PSFontMap.html":[5,0,285],
 "struct__PSFontMap.html#a63b0cbd45b9385ac9dd3b877c2837ddc":[5,0,285,1],
 "struct__PSFontMap.html#a7331b00c16ac8761629c1ffbfcbc9b98":[5,0,285,4],
 "struct__PSFontMap.html#a7f3a387c87951ba908419f68efce8f1a":[5,0,285,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "synctex__parser_8c.html#a51db3c1b4b327397c6e3c183618b9fe8":[6,0,0,1,2,0,31],
 "synctex__parser_8c.html#a5497c6776ca0a30206c7d25a831ef646":[6,0,0,1,2,0,234],
 "synctex__parser_8c.html#a54a21d54007e947c166a1a4dc36bf4a7":[6,0,0,1,2,0,47],
-"synctex__parser_8c.html#a55805ec2666152204096bdcb665f8d49":[6,0,0,1,2,0,65],
-"synctex__parser_8c.html#a577e24c268523311022d43b3b1750d52":[6,0,0,1,2,0,158]
+"synctex__parser_8c.html#a55805ec2666152204096bdcb665f8d49":[6,0,0,1,2,0,65]
 };
