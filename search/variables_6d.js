@@ -2,7 +2,6 @@ var searchData=
 [
   ['mag',['mag',['../struct__DviParams.html#ac505875a9cdf697248bb85dfd292cc41',1,'_DviParams']]],
   ['main_5fbox',['main_box',['../struct__EvMessageAreaPrivate.html#a52565f0e5c41295dad5e41891e9c1442',1,'_EvMessageAreaPrivate::main_box()'],['../struct__EvWindowPrivate.html#a84f7abaf00803169ddc85972b72e4671',1,'_EvWindowPrivate::main_box()']]],
-  ['manager',['manager',['../structEvRecentMenuModel.html#a4e82f27283fa3b595aff905ba137e4c1',1,'EvRecentMenuModel']]],
   ['mapname',['mapname',['../struct__PSFontMap.html#a63b0cbd45b9385ac9dd3b877c2837ddc',1,'_PSFontMap']]],
   ['maptable',['maptable',['../fontmap_8c.html#a1f6eef065739d1900cc1e702f0451438',1,'fontmap.c']]],
   ['max',['max',['../structSaveToBufferData.html#aa26c3417669b0765909439c4e2793a3a',1,'SaveToBufferData']]],
@@ -15,7 +14,7 @@ var searchData=
   ['maxkernamt',['maxKernAmt',['../structTrackKernData.html#a2afaf37eff72ce82344487d501c056c3',1,'TrackKernData']]],
   ['maxpageheight',['maxPageHeight',['../struct__TIFF2PSContext.html#a9002a685f1e8b945aec43648b5f34044',1,'_TIFF2PSContext']]],
   ['maxptsize',['maxPtSize',['../structTrackKernData.html#a5807db989d1817bbfd4fd663965440f1',1,'TrackKernData']]],
-  ['menu',['menu',['../structEvRecentMenuModel.html#a3bf75433e5725914ca690a7c5ef642c8',1,'EvRecentMenuModel::menu()'],['../struct__EvSidebarPrivate.html#a418692e682bb8ab96c52631d6232adcf',1,'_EvSidebarPrivate::menu()'],['../struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716',1,'_EvZoomActionPrivate::menu()']]],
+  ['menu',['menu',['../struct__EvSidebarPrivate.html#a418692e682bb8ab96c52631d6232adcf',1,'_EvSidebarPrivate::menu()'],['../struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716',1,'_EvZoomActionPrivate::menu()']]],
   ['message_5farea',['message_area',['../struct__EvWindowPrivate.html#a338f0ad420f5bed5155a8c50d241b886',1,'_EvWindowPrivate']]],
   ['message_5ftype',['message_type',['../struct__EvMessageAreaPrivate.html#ac477dfb0fb0e8482bc8f1e69d3b77320',1,'_EvMessageAreaPrivate']]],
   ['messages',['messages',['../util_8c.html#ae754a74a4db95933116b65d1eee1a516',1,'util.c']]],

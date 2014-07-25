@@ -32,6 +32,7 @@ var ev_window_8h =
     [ "ev_window_is_empty", "ev-window_8h.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf", null ],
     [ "ev_window_new", "ev-window_8h.html#a1fdd586cd4cc9562201386f2103ce422", null ],
     [ "ev_window_open_document", "ev-window_8h.html#ae9f09db2e536bf396299bc94aaa79c7b", null ],
+    [ "ev_window_open_recent_view", "ev-window_8h.html#a6ab0e44aff405c06bedb56f83dd50b70", null ],
     [ "ev_window_open_uri", "ev-window_8h.html#a9083be0813a4b83cdcd8b6b62b51bc56", null ],
     [ "ev_window_print_range", "ev-window_8h.html#ac02c402e88568e438a2e191459881548", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"struct__DviContext.html#ae9999a51ef6544cef2b8a6f582ad13a5":[5,0,12,27],
 "struct__DviContext.html#aea4196ee2845510e3924e2f94d1c88bc":[5,0,12,30],
 "struct__DviContext.html#af3efe887bb045c80c1446791ca3fc2e0":[5,0,12,18],
 "struct__DviContext.html#af9f97f052639c87c18b65636f944b4c3":[5,0,12,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "struct__EvAnnotationPropertiesDialog.html#ac1db7248bfad0eedf03092bb6d88d38e":[5,0,43,2],
 "struct__EvAnnotationPropertiesDialogClass.html":[5,0,44],
 "struct__EvAnnotationPropertiesDialogClass.html#aea93c593e6ff4d97a29b3c64f8ce6e1b":[5,0,44,0],
-"struct__EvAnnotationText.html":[5,0,45],
-"struct__EvAnnotationText.html#a16e4abcc7777133ab4b1d430f21e1418":[5,0,45,1]
+"struct__EvAnnotationText.html":[5,0,45]
 };

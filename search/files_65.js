@@ -140,8 +140,6 @@ var searchData=
   ['ev_2dproperties_2dmain_2ec',['ev-properties-main.c',['../ev-properties-main_8c.html',1,'']]],
   ['ev_2dproperties_2dview_2ec',['ev-properties-view.c',['../ev-properties-view_8c.html',1,'']]],
   ['ev_2dproperties_2dview_2eh',['ev-properties-view.h',['../ev-properties-view_8h.html',1,'']]],
-  ['ev_2drecent_2dmenu_2dmodel_2ec',['ev-recent-menu-model.c',['../ev-recent-menu-model_8c.html',1,'']]],
-  ['ev_2drecent_2dmenu_2dmodel_2eh',['ev-recent-menu-model.h',['../ev-recent-menu-model_8h.html',1,'']]],
   ['ev_2drecent_2dview_2ec',['ev-recent-view.c',['../ev-recent-view_8c.html',1,'']]],
   ['ev_2drecent_2dview_2eh',['ev-recent-view.h',['../ev-recent-view_8h.html',1,'']]],
   ['ev_2drender_2dcontext_2ec',['ev-render-context.c',['../ev-render-context_8c.html',1,'']]],

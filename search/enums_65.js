@@ -33,6 +33,7 @@ var searchData=
   ['evsavetype',['EvSaveType',['../ev-window_8c.html#a0f9e34e0f58801ff959d153e044faabd',1,'ev-window.c']]],
   ['evselectionstyle',['EvSelectionStyle',['../ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23d',1,'ev-selection.h']]],
   ['evsizingmode',['EvSizingMode',['../ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5',1,'ev-document-model.h']]],
+  ['evtoolbarmode',['EvToolbarMode',['../ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb',1,'ev-toolbar.h']]],
   ['evtransitioneffectalignment',['EvTransitionEffectAlignment',['../ev-transition-effect_8h.html#a884fd00d90c151cc03bc13d9cc8f916e',1,'ev-transition-effect.h']]],
   ['evtransitioneffectdirection',['EvTransitionEffectDirection',['../ev-transition-effect_8h.html#aa3c9785a6e9aaf378b45888673c39d2a',1,'ev-transition-effect.h']]],
   ['evtransitioneffecttype',['EvTransitionEffectType',['../ev-transition-effect_8h.html#ad307eb65ed10bb9ab98a866ff0f1b59d',1,'ev-transition-effect.h']]],

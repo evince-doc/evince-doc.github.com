@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('ev-toolbar_8h.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ev-toolbar.h File Reference</div>  </div>
@@ -163,6 +164,14 @@ Typedefs</h2></td></tr>
 <tr class="memitem:add7fa5c3f690d121db971144812322ab"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__EvToolbarPrivate.html">_EvToolbarPrivate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-toolbar_8h.html#add7fa5c3f690d121db971144812322ab">EvToolbarPrivate</a></td></tr>
 <tr class="separator:add7fa5c3f690d121db971144812322ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae6f6554299d708fed9cdda516530e5cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb">EvToolbarMode</a> { <a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cba8cda563a431a65d356cb3ad2066ee3ce">EV_TOOLBAR_MODE_NORMAL</a>, 
+<a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cbae2206905d3f2c5a54c5649664b0a80c6">EV_TOOLBAR_MODE_FULLSCREEN</a>, 
+<a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cba50cfa78025918260c36a9091db1b049c">EV_TOOLBAR_MODE_RECENT_VIEW</a>
+ }</td></tr>
+<tr class="separator:ae6f6554299d708fed9cdda516530e5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aea3b531e5372fd20b0a3cbfa2bee894f"><td class="memItemLeft" align="right" valign="top">GType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-toolbar_8h.html#aea3b531e5372fd20b0a3cbfa2bee894f">ev_toolbar_get_type</a> (void)</td></tr>
@@ -175,6 +184,10 @@ Functions</h2></td></tr>
 <tr class="separator:ad3558a4ca391039ded68227fb981d03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a7f4d00139845fab4844cc5cef305b3"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-toolbar_8h.html#a0a7f4d00139845fab4844cc5cef305b3">ev_toolbar_get_page_selector</a> (<a class="el" href="ev-toolbar_8h.html#aef32ebbeaf2aefbf5a2e437d0d59ce40">EvToolbar</a> *ev_toolbar)</td></tr>
 <tr class="separator:a0a7f4d00139845fab4844cc5cef305b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4996ea59ac8f0a6289fae4fe50574b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-toolbar_8h.html#a4996ea59ac8f0a6289fae4fe50574b11">ev_toolbar_set_mode</a> (<a class="el" href="ev-toolbar_8h.html#aef32ebbeaf2aefbf5a2e437d0d59ce40">EvToolbar</a> *ev_toolbar, <a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb">EvToolbarMode</a> mode)</td></tr>
+<tr class="separator:a4996ea59ac8f0a6289fae4fe50574b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117c502087401addfcefd094976474c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb">EvToolbarMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-toolbar_8h.html#a117c502087401addfcefd094976474c3">ev_toolbar_get_mode</a> (<a class="el" href="ev-toolbar_8h.html#aef32ebbeaf2aefbf5a2e437d0d59ce40">EvToolbar</a> *ev_toolbar)</td></tr>
+<tr class="separator:a117c502087401addfcefd094976474c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a2688cf7897704c807ee30b374af343c3"></a>
@@ -191,7 +204,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00031">31</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00037">37</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -209,7 +222,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00033">33</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00039">39</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +240,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00030">30</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00036">36</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +258,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00032">32</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00038">38</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +276,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00034">34</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00040">40</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +290,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00029">29</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00035">35</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +305,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00036">36</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00042">42</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +319,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00037">37</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00043">43</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
 </div>
 </div>
@@ -320,8 +333,36 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00038">38</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00044">44</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
 
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ae6f6554299d708fed9cdda516530e5cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb">EvToolbarMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae6f6554299d708fed9cdda516530e5cba8cda563a431a65d356cb3ad2066ee3ce"></a>EV_TOOLBAR_MODE_NORMAL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae6f6554299d708fed9cdda516530e5cbae2206905d3f2c5a54c5649664b0a80c6"></a>EV_TOOLBAR_MODE_FULLSCREEN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae6f6554299d708fed9cdda516530e5cba50cfa78025918260c36a9091db1b049c"></a>EV_TOOLBAR_MODE_RECENT_VIEW</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="ev-toolbar_8h_source.html#l00029">29</a> of file <a class="el" href="ev-toolbar_8h_source.html">ev-toolbar.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cba8cda563a431a65d356cb3ad2066ee3ce">EV_TOOLBAR_MODE_NORMAL</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cbae2206905d3f2c5a54c5649664b0a80c6">EV_TOOLBAR_MODE_FULLSCREEN</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cba50cfa78025918260c36a9091db1b049c">EV_TOOLBAR_MODE_RECENT_VIEW</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb">EvToolbarMode</a>;</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -339,13 +380,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00329">329</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        g_return_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar));</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>),</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                                      <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00360">360</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        g_return_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar));</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>),</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                      <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -353,6 +394,39 @@ Functions</h2></td></tr>
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_ad3558a4ca391039ded68227fb981d03e_icgraph.svg" width="432" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a117c502087401addfcefd094976474c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb">EvToolbarMode</a> ev_toolbar_get_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-toolbar_8h.html#aef32ebbeaf2aefbf5a2e437d0d59ce40">EvToolbar</a> *&#160;</td>
+          <td class="paramname"><em>ev_toolbar</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00422">422</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;{</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cba8cda563a431a65d356cb3ad2066ee3ce">EV_TOOLBAR_MODE_NORMAL</a>);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordflow">return</span> ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a0f2557f00e2191b4e58ebdc1c7801025">toolbar_mode</a>;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_a117c502087401addfcefd094976474c3_icgraph.svg" width="2568" height="1110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -373,19 +447,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00338">338</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), NULL);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span> ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00369">369</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;{</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), NULL);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_a0a7f4d00139845fab4844cc5cef305b3_icgraph.svg" width="3739" height="976"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_a0a7f4d00139845fab4844cc5cef305b3_icgraph.svg" width="3814" height="1243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -422,38 +496,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00302">302</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        GtkMenu          *popup_menu;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a> *priv;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        priv = ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>));</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>));</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>)))</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-history-action_8c.html#ac365a374719bc6d4bc8c4f73c4e71601">ev_history_action_get_popup_shown</a> (<a class="code" href="ev-history-action_8h.html#ac6ee4dc749e7a9b5b5229c229dc89982">EV_HISTORY_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a>)))</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00333">333</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        GtkMenu          *popup_menu;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a> *priv;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        priv = ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>));</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>));</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>)))</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-history-action_8c.html#ac365a374719bc6d4bc8c4f73c4e71601">ev_history_action_get_popup_shown</a> (<a class="code" href="ev-history-action_8h.html#ac6ee4dc749e7a9b5b5229c229dc89982">EV_HISTORY_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a>)))</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_adb2193128641c0e817dbcc396e896570_icgraph.svg" width="4499" height="920"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_adb2193128641c0e817dbcc396e896570_icgraph.svg" width="4574" height="1011"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -474,21 +548,100 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00292">292</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (window), NULL);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-toolbar_8h.html#ae559035c788d08fccb48d1cc909392eb">EV_TYPE_TOOLBAR</a>,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                         <span class="stringliteral">&quot;window&quot;</span>, window,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                         NULL));</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00323">323</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (window), NULL);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-toolbar_8h.html#ae559035c788d08fccb48d1cc909392eb">EV_TYPE_TOOLBAR</a>,</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                         <span class="stringliteral">&quot;window&quot;</span>, window,</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                         NULL));</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_a245a5d581e501da3b24a81095d8ef061_icgraph.svg" width="3454" height="896"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_a245a5d581e501da3b24a81095d8ef061_icgraph.svg" width="3528" height="1067"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4996ea59ac8f0a6289fae4fe50574b11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_toolbar_set_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-toolbar_8h.html#aef32ebbeaf2aefbf5a2e437d0d59ce40">EvToolbar</a> *&#160;</td>
+          <td class="paramname"><em>ev_toolbar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cb">EvToolbarMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-toolbar_8c_source.html#l00377">377</a> of file <a class="el" href="ev-toolbar_8c_source.html">ev-toolbar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a> *priv;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        g_return_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar));</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        priv = ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a0f2557f00e2191b4e58ebdc1c7801025">toolbar_mode</a> = mode;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordflow">switch</span> (mode) {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cba8cda563a431a65d356cb3ad2066ee3ce">EV_TOOLBAR_MODE_NORMAL</a>:</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a>);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a>);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4a9c22d1a9dc73906bffd10fe315e08e">find_button</a>);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a697d00905b34dd81fcf15270a2230f18">recent_view_button</a>);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a2fd69d8bdc4e7985d0eff7b25e40c6dd">open_button</a>);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cbae2206905d3f2c5a54c5649664b0a80c6">EV_TOOLBAR_MODE_FULLSCREEN</a>:</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a>);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a>);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4a9c22d1a9dc73906bffd10fe315e08e">find_button</a>);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a697d00905b34dd81fcf15270a2230f18">recent_view_button</a>);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a2fd69d8bdc4e7985d0eff7b25e40c6dd">open_button</a>);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-toolbar_8h.html#ae6f6554299d708fed9cdda516530e5cba50cfa78025918260c36a9091db1b049c">EV_TOOLBAR_MODE_RECENT_VIEW</a>:</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9">history_action</a>);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6">page_selector</a>);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                gtk_widget_hide (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4a9c22d1a9dc73906bffd10fe315e08e">find_button</a>);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a697d00905b34dd81fcf15270a2230f18">recent_view_button</a>);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                gtk_widget_show (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a2fd69d8bdc4e7985d0eff7b25e40c6dd">open_button</a>);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-toolbar_8h_a4996ea59ac8f0a6289fae4fe50574b11_icgraph.svg" width="3616" height="1066"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -501,7 +654,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-toolbar_8h.html">ev-toolbar.h</a></li>
-    <li class="footer">Generated on Fri Jul 25 2014 07:33:29 for Evince by
+    <li class="footer">Generated on Fri Jul 25 2014 09:24:31 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

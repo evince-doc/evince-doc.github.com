@@ -8,6 +8,7 @@ var searchData=
   ['named',['named',['../struct__EvLinkDestPrivate.html#aea5a18cbb373c4d4bc792890d1c0755e',1,'_EvLinkDestPrivate']]],
   ['nametab',['nametab',['../struct__DviEncoding.html#a30de27617b25990b8d138ae7d03b843a',1,'_DviEncoding']]],
   ['nautilus_5fsendto',['nautilus_sendto',['../ev-window_8c.html#a4c62b4a8b5009b5bf31cd6c8f2d4d869',1,'ev-window.c']]],
+  ['navigation_5faction',['navigation_action',['../struct__EvToolbarPrivate.html#af08b62a6dc358f25c7faca66b0924da8',1,'_EvToolbarPrivate']]],
   ['nbucks',['nbucks',['../struct__DviHashTable.html#ac54ff064d09c7835a297c7a5fa76ba53',1,'_DviHashTable']]],
   ['needs_5fmetadata',['needs_metadata',['../structGetDocumentInfoAsyncData.html#a7c4a8cc57372bdd8fa67cc2a0a255743',1,'GetDocumentInfoAsyncData']]],
   ['needs_5fthumbnail',['needs_thumbnail',['../structGetDocumentInfoAsyncData.html#a7f9a682038db3fffc77efce5c1d2bdd2',1,'GetDocumentInfoAsyncData']]],

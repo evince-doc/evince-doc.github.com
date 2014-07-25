@@ -16,6 +16,7 @@ var searchData=
   ['filter_5fmodel',['filter_model',['../struct__EvPageActionWidget.html#a199a40d25a4e27d2107b946dd915497a',1,'_EvPageActionWidget']]],
   ['find_5fbar',['find_bar',['../struct__EvWindowPrivate.html#a4793ce4c98feef7d9c1e61d44dc84dda',1,'_EvWindowPrivate']]],
   ['find_5fbar_5fsignals',['find_bar_signals',['../eggfindbar_8c.html#aebb8f3e747842b3416373a3e36d3f063',1,'eggfindbar.c']]],
+  ['find_5fbutton',['find_button',['../struct__EvToolbarPrivate.html#a4a9c22d1a9dc73906bffd10fe315e08e',1,'_EvToolbarPrivate']]],
   ['find_5fentry',['find_entry',['../struct__EggFindBarPrivate.html#a69fc79a39e040ba96688f0a67c2a27d1',1,'_EggFindBarPrivate']]],
   ['find_5fjob',['find_job',['../struct__EvView.html#afb6184ea28c35aef7c9f586567cbd03f',1,'_EvView::find_job()'],['../struct__EvWindowPrivate.html#a1e3b0ea10182fffc59e462310d03f992',1,'_EvWindowPrivate::find_job()']]],
   ['find_5flink_5fdest',['find_link_dest',['../struct__EvDocumentLinksInterface.html#a743ef355ed53b47adf760a966bdcc08a',1,'_EvDocumentLinksInterface']]],

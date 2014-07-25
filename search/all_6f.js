@@ -15,6 +15,7 @@ var searchData=
   ['on_5fnotify_5fscale_5ffactor',['on_notify_scale_factor',['../ev-view_8c.html#ab0652ca341deecb3d2e91a02e321cb6a',1,'ev-view.c']]],
   ['op',['op',['../struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158',1,'_EvPrintOperationPrint']]],
   ['opacity',['opacity',['../structEvAnnotationMarkupProps.html#a6fe576ba32c70ff4ddc49f11a26cfe9d',1,'EvAnnotationMarkupProps::opacity()'],['../struct__EvAnnotationPropertiesDialog.html#a9568abfa97b257492c14418a7137d3fb',1,'_EvAnnotationPropertiesDialog::opacity()']]],
+  ['open_5fbutton',['open_button',['../struct__EvToolbarPrivate.html#a2fd69d8bdc4e7985d0eff7b25e40c6dd',1,'_EvToolbarPrivate']]],
   ['open_5fcb',['open_cb',['../ev-previewer_8c.html#ad08e25532647867f7587175eff15d199',1,'ev-previewer.c']]],
   ['open_5fremote_5flink',['open_remote_link',['../ev-window_8c.html#a2c327737828fdb7540ea9e16b497faef',1,'ev-window.c']]],
   ['opendvi',['opendvi',['../dviread_8c.html#a182bfe28b827b43f1295ccf8fa573da2',1,'dviread.c']]],

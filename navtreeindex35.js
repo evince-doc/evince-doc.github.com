@@ -1,5 +1,12 @@
 var NAVTREEINDEX35 =
 {
+"synctex__parser_8h.html#ad019fa90e591adb64846fcda8c6df58b":[6,0,0,1,2,1,1],
+"synctex__parser_8h.html#ad29b3d71a9c9650652f80ccf16d382e9":[6,0,0,1,2,1,49],
+"synctex__parser_8h.html#ad538ba3e6aee95091dd427e08a88eed0":[6,0,0,1,2,1,55],
+"synctex__parser_8h.html#ad5401e3051ae209e27e04befb90055d9":[6,0,0,1,2,1,27],
+"synctex__parser_8h.html#ad7c1af3278e15601db9d93c550dabe0c":[6,0,0,1,2,1,8],
+"synctex__parser_8h.html#ada037216861f2ab4c0705d3fd14a8420":[6,0,0,1,2,1,59],
+"synctex__parser_8h.html#ada45f8d6545bb11d74bca1c08fb4d913":[6,0,0,1,2,1,36],
 "synctex__parser_8h.html#adfddaf0dc58b54ac2e256ac87431489b":[6,0,0,1,2,1,57],
 "synctex__parser_8h.html#ae42e885da11dae77debff9284274cb01":[6,0,0,1,2,1,2],
 "synctex__parser_8h.html#ae703ad77551fd275bd33ae161c873145":[6,0,0,1,2,1,34],
@@ -181,8 +188,8 @@ var NAVTREEINDEX35 =
 "tiff2ps_8c.html#ad2dcbbea6148cd90f071414a37c29449":[6,0,0,0,5,2,5],
 "tiff2ps_8c.html#addc0ecd98fa35f4ec67196a2d1cf5b76":[6,0,0,0,5,2,14],
 "tiff2ps_8c.html#ae33dcb84ffee66ad961471bd2417848d":[6,0,0,0,5,2,20],
-"tiff2ps_8c.html#ae3ce3f1f3093525937c720ff77ebf1b1":[6,0,0,0,5,2,3],
 "tiff2ps_8c.html#ae3ce3f1f3093525937c720ff77ebf1b1":[6,0,0,0,5,2,4],
+"tiff2ps_8c.html#ae3ce3f1f3093525937c720ff77ebf1b1":[6,0,0,0,5,2,3],
 "tiff2ps_8c.html#aee105c6d702b3adf4ea28e7969d19400":[6,0,0,0,5,2,40],
 "tiff2ps_8c.html#aef3505cbed594ff10c4a0294598a7340":[6,0,0,0,5,2,15],
 "tiff2ps_8c.html#af0eb8f58754e312b5916d5f7c54bd4cf":[6,0,0,0,5,2,43],
@@ -242,12 +249,5 @@ var NAVTREEINDEX35 =
 "util_8c_source.html":[6,0,0,0,2,0,35],
 "vf_8c.html":[6,0,0,0,2,0,36],
 "vf_8c.html#a097a0fd9fdcd452a8d87cb36fc8cdcbd":[6,0,0,0,2,0,36,2],
-"vf_8c.html#a0fa20d97881a5d2cbb817b0e3cb227b6":[6,0,0,0,2,0,36,1],
-"vf_8c.html#a30667ee6d5f900c909736435d808e8f9":[6,0,0,0,2,0,36,4],
-"vf_8c.html#a507b5bc2e0cc09295342b26e3e55aabb":[6,0,0,0,2,0,36,5],
-"vf_8c.html#a8f0c5341bee257ec1004a4cc2a12be0d":[6,0,0,0,2,0,36,0],
-"vf_8c.html#aec7c925d7f99beff75ab29430cd3ca9a":[6,0,0,0,2,0,36,3],
-"vf_8c_source.html":[6,0,0,0,2,0,36],
-"xps-document_8c.html":[6,0,0,0,6,0],
-"xps-document_8c.html#a09fab556708123aa2f01bb464647e1da":[6,0,0,0,6,0,19]
+"vf_8c.html#a0fa20d97881a5d2cbb817b0e3cb227b6":[6,0,0,0,2,0,36,1]
 };

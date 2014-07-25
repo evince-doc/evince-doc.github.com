@@ -39,8 +39,6 @@ var dir_03d4a7bd78ff53a92be90255bc24db97 =
     [ "ev-properties-fonts.h", "ev-properties-fonts_8h.html", "ev-properties-fonts_8h" ],
     [ "ev-properties-license.c", "ev-properties-license_8c.html", "ev-properties-license_8c" ],
     [ "ev-properties-license.h", "ev-properties-license_8h.html", "ev-properties-license_8h" ],
-    [ "ev-recent-menu-model.c", "ev-recent-menu-model_8c.html", "ev-recent-menu-model_8c" ],
-    [ "ev-recent-menu-model.h", "ev-recent-menu-model_8h.html", "ev-recent-menu-model_8h" ],
     [ "ev-recent-view.c", "ev-recent-view_8c.html", "ev-recent-view_8c" ],
     [ "ev-recent-view.h", "ev-recent-view_8h.html", "ev-recent-view_8h" ],
     [ "ev-sidebar-annotations.c", "ev-sidebar-annotations_8c.html", "ev-sidebar-annotations_8c" ],

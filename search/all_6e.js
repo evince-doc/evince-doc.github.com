@@ -20,6 +20,7 @@ var searchData=
   ['nautilus_5fmodule_5flist_5ftypes',['nautilus_module_list_types',['../ev-properties-main_8c.html#a1e609f364af3e30855c0fdbe8ca3c896',1,'ev-properties-main.c']]],
   ['nautilus_5fmodule_5fshutdown',['nautilus_module_shutdown',['../ev-properties-main_8c.html#aa47a011a554152f858ec52a770f9cf10',1,'ev-properties-main.c']]],
   ['nautilus_5fsendto',['nautilus_sendto',['../ev-window_8c.html#a4c62b4a8b5009b5bf31cd6c8f2d4d869',1,'ev-window.c']]],
+  ['navigation_5faction',['navigation_action',['../struct__EvToolbarPrivate.html#af08b62a6dc358f25c7faca66b0924da8',1,'_EvToolbarPrivate']]],
   ['nbucks',['nbucks',['../struct__DviHashTable.html#ac54ff064d09c7835a297c7a5fa76ba53',1,'_DviHashTable']]],
   ['needbytes',['NEEDBYTES',['../dviread_8c.html#a05117055ab4cdfb1165554f4fb215682',1,'dviread.c']]],
   ['needs_5fmetadata',['needs_metadata',['../structGetDocumentInfoAsyncData.html#a7c4a8cc57372bdd8fa67cc2a0a255743',1,'GetDocumentInfoAsyncData']]],

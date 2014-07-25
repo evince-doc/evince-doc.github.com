@@ -929,49 +929,48 @@ $(document).ready(function(){initNavTree('ev-recent-view_8c_source.html','');});
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        gtk_widget_set_hexpand (GTK_WIDGET (ev_recent_view), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        gtk_widget_set_vexpand (GTK_WIDGET (ev_recent_view), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (ev_recent_view), GTK_SHADOW_IN);</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (ev_recent_view),</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                                        GTK_POLICY_NEVER,</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                                        GTK_POLICY_AUTOMATIC);</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        priv-&gt;<a class="code" href="struct__EvRecentViewPrivate.html#aa7c3e6d12f79928c2c02b6d049da8851">recent_manager_changed_handler_id</a> =</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                g_signal_connect_swapped (priv-&gt;<a class="code" href="struct__EvRecentViewPrivate.html#a502eef22ef17a6bb3e32bdf121d703ba">recent_manager</a>,</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                                          <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                                          G_CALLBACK (<a class="code" href="ev-recent-view_8c.html#ab2d246584eeb71590b0bbb2f325d9029">ev_recent_view_refresh</a>),</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                                          ev_recent_view);</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;}</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00836"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#a869a7c2681627ade1cc889814eec5b0d">  836</a></span>&#160;<a class="code" href="ev-recent-view_8c.html#a869a7c2681627ade1cc889814eec5b0d">ev_recent_view_class_init</a> (<a class="code" href="struct__EvRecentViewClass.html">EvRecentViewClass</a> *klass)</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;{</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        GObjectClass *g_object_class = G_OBJECT_CLASS (klass);</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        g_object_class-&gt;constructed = <a class="code" href="ev-recent-view_8c.html#ad4d708830a20754da1bc96179fb712ed">ev_recent_view_constructed</a>;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        g_object_class-&gt;dispose = <a class="code" href="ev-recent-view_8c.html#ad82eded7fba970afb3571d5057aa7c8b">ev_recent_view_dispose</a>;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>] =</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                  g_signal_new (<span class="stringliteral">&quot;item-activated&quot;</span>,</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                                <a class="code" href="ev-recent-view_8h.html#ae673b121d0dcdedc3eeb586855dfb3c4">EV_TYPE_RECENT_VIEW</a>,</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                                G_SIGNAL_RUN_LAST,</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                                0, NULL, NULL,</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                                g_cclosure_marshal_generic,</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                                G_TYPE_NONE, 1,</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;                                G_TYPE_STRING);</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        g_type_class_add_private (klass, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvRecentViewPrivate.html">EvRecentViewPrivate</a>));</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;}</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;GtkWidget *</div>
-<div class="line"><a name="l00856"></a><span class="lineno"><a class="code" href="ev-recent-view_8h.html#a7af491e748c8fc9baede5e7160378b28">  856</a></span>&#160;<a class="code" href="ev-recent-view_8c.html#a7af491e748c8fc9baede5e7160378b28">ev_recent_view_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;{</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-recent-view_8h.html#ae673b121d0dcdedc3eeb586855dfb3c4">EV_TYPE_RECENT_VIEW</a>, NULL));</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;}</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (ev_recent_view),</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                                        GTK_POLICY_NEVER,</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                                        GTK_POLICY_AUTOMATIC);</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        priv-&gt;<a class="code" href="struct__EvRecentViewPrivate.html#aa7c3e6d12f79928c2c02b6d049da8851">recent_manager_changed_handler_id</a> =</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                g_signal_connect_swapped (priv-&gt;<a class="code" href="struct__EvRecentViewPrivate.html#a502eef22ef17a6bb3e32bdf121d703ba">recent_manager</a>,</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                                          <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                                          G_CALLBACK (<a class="code" href="ev-recent-view_8c.html#ab2d246584eeb71590b0bbb2f325d9029">ev_recent_view_refresh</a>),</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                                          ev_recent_view);</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;}</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#a869a7c2681627ade1cc889814eec5b0d">  835</a></span>&#160;<a class="code" href="ev-recent-view_8c.html#a869a7c2681627ade1cc889814eec5b0d">ev_recent_view_class_init</a> (<a class="code" href="struct__EvRecentViewClass.html">EvRecentViewClass</a> *klass)</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;{</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        GObjectClass *g_object_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        g_object_class-&gt;constructed = <a class="code" href="ev-recent-view_8c.html#ad4d708830a20754da1bc96179fb712ed">ev_recent_view_constructed</a>;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        g_object_class-&gt;dispose = <a class="code" href="ev-recent-view_8c.html#ad82eded7fba970afb3571d5057aa7c8b">ev_recent_view_dispose</a>;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>] =</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                  g_signal_new (<span class="stringliteral">&quot;item-activated&quot;</span>,</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                                <a class="code" href="ev-recent-view_8h.html#ae673b121d0dcdedc3eeb586855dfb3c4">EV_TYPE_RECENT_VIEW</a>,</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                                G_SIGNAL_RUN_LAST,</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                                0, NULL, NULL,</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                                g_cclosure_marshal_generic,</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                                G_TYPE_NONE, 1,</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                                G_TYPE_STRING);</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        g_type_class_add_private (klass, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvRecentViewPrivate.html">EvRecentViewPrivate</a>));</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;}</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l00855"></a><span class="lineno"><a class="code" href="ev-recent-view_8h.html#a7af491e748c8fc9baede5e7160378b28">  855</a></span>&#160;<a class="code" href="ev-recent-view_8c.html#a7af491e748c8fc9baede5e7160378b28">ev_recent_view_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;{</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-recent-view_8h.html#ae673b121d0dcdedc3eeb586855dfb3c4">EV_TYPE_RECENT_VIEW</a>, NULL));</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-recent-view_8c.html">ev-recent-view.c</a></li>
-    <li class="footer">Generated on Fri Jul 25 2014 07:33:22 for Evince by
+    <li class="footer">Generated on Fri Jul 25 2014 09:24:25 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -49,6 +49,7 @@ var struct__EvWindowPrivate =
     [ "progress_idle", "struct__EvWindowPrivate.html#a1661a0fdbbe3ca825479fe483a79866f", null ],
     [ "properties", "struct__EvWindowPrivate.html#a8767527d85339f2c42c1a48be7c511fe", null ],
     [ "recent_manager", "struct__EvWindowPrivate.html#a834a49301b6f3b2551257784171f384f", null ],
+    [ "recent_view", "struct__EvWindowPrivate.html#a585730c7e8b2b128d2fa77efb116e78b", null ],
     [ "reload_job", "struct__EvWindowPrivate.html#a77803c57ae1b0ea5a5ffed575c6f2c5f", null ],
     [ "save_job", "struct__EvWindowPrivate.html#a7669ec5385a5e039046d1721c7324167", null ],
     [ "scrolled_window", "struct__EvWindowPrivate.html#ae3babc1e4bf9ab8f728d281f02ee5624", null ],

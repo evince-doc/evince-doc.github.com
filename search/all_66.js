@@ -34,6 +34,7 @@ var searchData=
   ['find_5fbar_5fsearch_5fchanged_5fcb',['find_bar_search_changed_cb',['../ev-window_8c.html#a96cdf3fd4aaf2e9378ae1c7ed5a9b884',1,'ev-window.c']]],
   ['find_5fbar_5fsignals',['find_bar_signals',['../eggfindbar_8c.html#aebb8f3e747842b3416373a3e36d3f063',1,'eggfindbar.c']]],
   ['find_5fbar_5fvisibility_5fchanged_5fcb',['find_bar_visibility_changed_cb',['../ev-window_8c.html#a2bc7364a5e42ca100e85205c5926fea2',1,'ev-window.c']]],
+  ['find_5fbutton',['find_button',['../struct__EvToolbarPrivate.html#a4a9c22d1a9dc73906bffd10fe315e08e',1,'_EvToolbarPrivate']]],
   ['find_5fcheck_5frefresh_5frate',['find_check_refresh_rate',['../ev-window_8c.html#a8e184efe9e6d14dba4196e4b56aaa011',1,'ev-window.c']]],
   ['find_5fencoding',['find_encoding',['../fontmap_8c.html#abf3eac40f13173bb8c7ac3a695fada1b',1,'fontmap.c']]],
   ['find_5fentry',['find_entry',['../struct__EggFindBarPrivate.html#a69fc79a39e040ba96688f0a67c2a27d1',1,'_EggFindBarPrivate']]],

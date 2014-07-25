@@ -5,6 +5,8 @@ var searchData=
   ['rc',['rc',['../struct__EvJobExport.html#af4e36ff283247c57979acdfd503d54f9',1,'_EvJobExport']]],
   ['recent_5fmanager',['recent_manager',['../struct__EvRecentViewPrivate.html#a502eef22ef17a6bb3e32bdf121d703ba',1,'_EvRecentViewPrivate::recent_manager()'],['../struct__EvWindowPrivate.html#a834a49301b6f3b2551257784171f384f',1,'_EvWindowPrivate::recent_manager()']]],
   ['recent_5fmanager_5fchanged_5fhandler_5fid',['recent_manager_changed_handler_id',['../struct__EvRecentViewPrivate.html#aa7c3e6d12f79928c2c02b6d049da8851',1,'_EvRecentViewPrivate']]],
+  ['recent_5fview',['recent_view',['../struct__EvWindowPrivate.html#a585730c7e8b2b128d2fa77efb116e78b',1,'_EvWindowPrivate']]],
+  ['recent_5fview_5fbutton',['recent_view_button',['../struct__EvToolbarPrivate.html#a697d00905b34dd81fcf15270a2230f18',1,'_EvToolbarPrivate']]],
   ['rect',['rect',['../struct__EvAnnotationWindow.html#a9308d541cb04cc83f080c582e91dd068',1,'_EvAnnotationWindow::rect()'],['../struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc',1,'_EvViewSelection::rect()']]],
   ['rectangle',['rectangle',['../structEvAnnotationMarkupProps.html#a56a1562f8be08682a37a0ef5af35a16b',1,'EvAnnotationMarkupProps']]],
   ['rectangular',['rectangular',['../structEvTransitionEffectPrivate.html#ab195df807c639aca2cb0bb01375d0658',1,'EvTransitionEffectPrivate']]],

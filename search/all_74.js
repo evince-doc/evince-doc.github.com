@@ -104,6 +104,7 @@ var searchData=
   ['toggle_5faction_5fentries',['toggle_action_entries',['../ev-previewer-window_8c.html#ab1f09fb5af948cc732c58781fba4b9fd',1,'ev-previewer-window.c']]],
   ['toggle_5flist',['toggle_list',['../struct__EvLinkActionPrivate.html#a97fab923785a79977a7c9a1821b698b9',1,'_EvLinkActionPrivate']]],
   ['toolbar',['toolbar',['../struct__EvWindowPrivate.html#ac4255b88c5a4659d8202a6b135bfec3a',1,'_EvWindowPrivate']]],
+  ['toolbar_5fmode',['toolbar_mode',['../struct__EvToolbarPrivate.html#a0f2557f00e2191b4e58ebdc1c7801025',1,'_EvToolbarPrivate']]],
   ['toolbar_5fresource_5fpath',['TOOLBAR_RESOURCE_PATH',['../ev-window_8c.html#a839692a2bb48b740cf2f2a8c098f8e85',1,'ev-window.c']]],
   ['top',['top',['../struct__EvLinkDestPrivate.html#af3ba4bf63d6dc75630d6edcbe1269e2d',1,'_EvLinkDestPrivate']]],
   ['total',['total',['../struct__EvPrintOperationPrint.html#ac2b2a8a7984a27466f3a68a805327de3',1,'_EvPrintOperationPrint']]],

@@ -315,7 +315,6 @@ var annotated =
     [ "EvAnnotationMarkupProps", "structEvAnnotationMarkupProps.html", "structEvAnnotationMarkupProps" ],
     [ "EvDoc", "structEvDoc.html", "structEvDoc" ],
     [ "EvPrintRange", "structEvPrintRange.html", "structEvPrintRange" ],
-    [ "EvRecentMenuModel", "structEvRecentMenuModel.html", "structEvRecentMenuModel" ],
     [ "EvStockIcon", "structEvStockIcon.html", "structEvStockIcon" ],
     [ "EvTimelinePriv", "structEvTimelinePriv.html", "structEvTimelinePriv" ],
     [ "EvTransitionAnimationPriv", "structEvTransitionAnimationPriv.html", "structEvTransitionAnimationPriv" ],
