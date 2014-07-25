@@ -223,10 +223,10 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">static</span> GSList*    <a class="code" href="comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3">get_supported_image_extensions</a> (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span>       <a class="code" href="comics-document_8c.html#a544eaa8b9a69cc5afdc5e6a4aee15fca">get_page_size_area_prepared_cb</a> (GdkPixbufLoader *loader,</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                          gpointer data);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span>       <a class="code" href="comics-document_8c.html#abd3e3e8e0e64d4d2d743c68645bf2ca2">render_pixbuf_size_prepared_cb</a> (GdkPixbufLoader *loader,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span>       <a class="code" href="comics-document_8c.html#a62cca497214947fc43cadd8c81522d99">render_pixbuf_size_prepared_cb</a> (GdkPixbufLoader *loader,</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                          gint width,</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                          gint height,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                          gpointer data);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                          <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span>**     <a class="code" href="comics-document_8c.html#aa4f8cbcc02bf6ea5b51c3f50ccaf221d">extract_argv</a>                   (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document,</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                          gint page);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
@@ -765,8 +765,8 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        loader = gdk_pixbuf_loader_new ();</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        g_signal_connect (loader, <span class="stringliteral">&quot;size-prepared&quot;</span>,</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                  G_CALLBACK (<a class="code" href="comics-document_8c.html#abd3e3e8e0e64d4d2d743c68645bf2ca2">render_pixbuf_size_prepared_cb</a>), </div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                  &amp;rc);</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                  G_CALLBACK (<a class="code" href="comics-document_8c.html#a62cca497214947fc43cadd8c81522d99">render_pixbuf_size_prepared_cb</a>), </div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                  rc);</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <span class="keywordflow">while</span> (outpipe &gt;= 0) {</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            bytes = read (outpipe, buf, 4096);</div>
@@ -826,161 +826,160 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;}</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno"><a class="code" href="comics-document_8c.html#abd3e3e8e0e64d4d2d743c68645bf2ca2">  740</a></span>&#160;<a class="code" href="comics-document_8c.html#abd3e3e8e0e64d4d2d743c68645bf2ca2">render_pixbuf_size_prepared_cb</a> (GdkPixbufLoader *loader,</div>
+<div class="line"><a name="l00740"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a62cca497214947fc43cadd8c81522d99">  740</a></span>&#160;<a class="code" href="comics-document_8c.html#a62cca497214947fc43cadd8c81522d99">render_pixbuf_size_prepared_cb</a> (GdkPixbufLoader *loader,</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                gint             width,</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                gint             height,</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                gpointer         data)</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc)</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;{</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc = data;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width, height, &amp;scaled_width, &amp;scaled_height);</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    gdk_pixbuf_loader_set_size (loader, scaled_width, scaled_height);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;}</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> </div>
-<div class="line"><a name="l00759"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">  759</a></span>&#160;<a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">comics_remove_dir</a> (gchar *path_name) </div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;{</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    GDir  *content_dir;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="keyword">const</span> gchar *filename;</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    gchar *filename_with_path;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    </div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    <span class="keywordflow">if</span> (g_file_test (path_name, G_FILE_TEST_IS_DIR)) {</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        content_dir = g_dir_open  (path_name, 0, NULL);</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        filename  = g_dir_read_name (content_dir);</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <span class="keywordflow">while</span> (filename) {</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;            filename_with_path = </div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                g_build_filename (path_name, </div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                          filename, NULL);</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            <a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">comics_remove_dir</a> (filename_with_path);</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            g_free (filename_with_path);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            filename = g_dir_read_name (content_dir);</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        }</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        g_dir_close (content_dir);</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    }</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="comment">/* Note from g_remove() documentation: on Windows, it is in general not </span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="comment">     * possible to remove a file that is open to some process, or mapped </span></div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="comment">     * into memory.*/</span></div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    <span class="keywordflow">return</span> (g_remove (path_name));</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;}</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00785"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a33249f2707b49b3d3a1992577f4b4a94">  785</a></span>&#160;<a class="code" href="comics-document_8c.html#a33249f2707b49b3d3a1992577f4b4a94">comics_document_finalize</a> (GObject *<span class="keywordtype">object</span>)</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;{</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <a class="code" href="struct__ComicsDocument.html">ComicsDocument</a> *comics_document = <a class="code" href="comics-document_8h.html#a67a228a1aef85fe694a721efe63d0cbf">COMICS_DOCUMENT</a> (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    </div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordflow">if</span> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba">decompress_tmp</a>) {</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">comics_remove_dir</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488">dir</a>) == -1)</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;            g_warning (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;There was an error deleting “%s”.&quot;</span>),</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;                   comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488">dir</a>);</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488">dir</a>);</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    }</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    </div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <span class="keywordflow">if</span> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>) {</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;                g_ptr_array_foreach (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>, (GFunc) g_free, NULL);</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;                g_ptr_array_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    }</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644">selected_command</a>);</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c">alternative_command</a>);</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d">extract_command</a>);</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa">list_command</a>);</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    G_OBJECT_CLASS (comics_document_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;}</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00811"></a><span class="lineno"><a class="code" href="comics-document_8c.html#ac3e8e08a0d080e5b04b75bf0fbf99b5e">  811</a></span>&#160;<a class="code" href="comics-document_8c.html#ac3e8e08a0d080e5b04b75bf0fbf99b5e">comics_document_class_init</a> (<a class="code" href="struct__ComicsDocumentClass.html">ComicsDocumentClass</a> *klass)</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;{</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    GObjectClass    *gobject_class = G_OBJECT_CLASS (klass);</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *ev_document_class = <a class="code" href="ev-document_8h.html#a64dd590cd981f08430fee3c1a92d22a7">EV_DOCUMENT_CLASS</a> (klass);</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    gobject_class-&gt;finalize = <a class="code" href="comics-document_8c.html#a33249f2707b49b3d3a1992577f4b4a94">comics_document_finalize</a>;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a76bd65cef00f5be816f681a1fcefd21c">load</a> = <a class="code" href="comics-document_8c.html#a1898f492f581b5040470a2cf5fe88d3b">comics_document_load</a>;</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#addbd3fbe9018832441566ba14ee85f01">save</a> = <a class="code" href="comics-document_8c.html#a630d2c6b62abddd76420ac32e4e4214e">comics_document_save</a>;</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a9564fb5a3e83bda242b7fcc7405a0972">get_n_pages</a> = <a class="code" href="comics-document_8c.html#ab0e7b3614518839e7c15ccdc2bf5c3b0">comics_document_get_n_pages</a>;</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a4a9fa47c8ea0c87c584f4f1ebaf66659">get_page_size</a> = <a class="code" href="comics-document_8c.html#a78ceb8dc582b79acd03eb36e51e00f0f">comics_document_get_page_size</a>;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7">render</a> = <a class="code" href="comics-document_8c.html#ab479135307413a3f4ac02970f3e50d67">comics_document_render</a>;</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;}</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00826"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a962e948d50d22ff1e8211ad8f4490e50">  826</a></span>&#160;<a class="code" href="comics-document_8c.html#a962e948d50d22ff1e8211ad8f4490e50">comics_document_init</a> (<a class="code" href="struct__ComicsDocument.html">ComicsDocument</a> *comics_document)</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;{</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a> = NULL;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a> = NULL;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d">extract_command</a> = NULL;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;}</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="comment">/* Returns a list of file extensions supported by gdk-pixbuf */</span></div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="keyword">static</span> GSList*</div>
-<div class="line"><a name="l00835"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3">  835</a></span>&#160;<a class="code" href="comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3">get_supported_image_extensions</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;{</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    GSList *extensions = NULL;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    GSList *formats = gdk_pixbuf_get_formats ();</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    GSList *l;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keywordflow">for</span> (l = formats; l != NULL; l = l-&gt;next) {</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        gchar **ext = gdk_pixbuf_format_get_extensions (l-&gt;data);</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        <span class="keywordflow">for</span> (i = 0; ext[i] != NULL; i++) {</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;            extensions = g_slist_append (extensions,</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                             g_strdup (ext[i]));</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        }</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        g_strfreev (ext);</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    }</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    g_slist_free (formats);</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    <span class="keywordflow">return</span> extensions;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;}</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span>**</div>
-<div class="line"><a name="l00858"></a><span class="lineno"><a class="code" href="comics-document_8c.html#aa4f8cbcc02bf6ea5b51c3f50ccaf221d">  858</a></span>&#160;<a class="code" href="comics-document_8c.html#aa4f8cbcc02bf6ea5b51c3f50ccaf221d">extract_argv</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document, gint page)</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;{</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <a class="code" href="struct__ComicsDocument.html">ComicsDocument</a> *comics_document = <a class="code" href="comics-document_8h.html#a67a228a1aef85fe694a721efe63d0cbf">COMICS_DOCUMENT</a> (document);</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordtype">char</span> **argv;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keywordtype">char</span> *command_line, *quoted_archive, *quoted_filename;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    GError *err = NULL;</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keywordflow">if</span> (page &gt;= comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>-&gt;len)</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    <span class="keywordflow">if</span> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0">regex_arg</a>) {</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        quoted_archive = <a class="code" href="comics-document_8c.html#a0b3d70a485ae4859ad5e7adfd12ea57d">comics_regex_quote</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        quoted_filename =</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            <a class="code" href="comics-document_8c.html#a0b3d70a485ae4859ad5e7adfd12ea57d">comics_regex_quote</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>-&gt;pdata[page]);</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        quoted_archive = g_shell_quote (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        quoted_filename = g_shell_quote (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>-&gt;pdata[page]);</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    }</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    command_line = g_strdup_printf (<span class="stringliteral">&quot;%s %s %s&quot;</span>,</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d">extract_command</a>,</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                    quoted_archive,</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;                    quoted_filename);</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    g_shell_parse_argv (command_line, NULL, &amp;argv, &amp;err);</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <span class="keywordflow">if</span> (err) {</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        g_warning (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Error %s&quot;</span>), err-&gt;message);</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        g_error_free (err);</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    }</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    g_free (command_line);</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    g_free (quoted_archive);</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    g_free (quoted_filename);</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordflow">return</span> argv;</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;}</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width, height, &amp;scaled_width, &amp;scaled_height);</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    gdk_pixbuf_loader_set_size (loader, scaled_width, scaled_height);</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;}</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> </div>
+<div class="line"><a name="l00758"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">  758</a></span>&#160;<a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">comics_remove_dir</a> (gchar *path_name) </div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;{</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    GDir  *content_dir;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="keyword">const</span> gchar *filename;</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    gchar *filename_with_path;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    </div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordflow">if</span> (g_file_test (path_name, G_FILE_TEST_IS_DIR)) {</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        content_dir = g_dir_open  (path_name, 0, NULL);</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        filename  = g_dir_read_name (content_dir);</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        <span class="keywordflow">while</span> (filename) {</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;            filename_with_path = </div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                g_build_filename (path_name, </div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                          filename, NULL);</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            <a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">comics_remove_dir</a> (filename_with_path);</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            g_free (filename_with_path);</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            filename = g_dir_read_name (content_dir);</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        }</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        g_dir_close (content_dir);</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    }</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="comment">/* Note from g_remove() documentation: on Windows, it is in general not </span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="comment">     * possible to remove a file that is open to some process, or mapped </span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="comment">     * into memory.*/</span></div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="keywordflow">return</span> (g_remove (path_name));</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;}</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00784"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a33249f2707b49b3d3a1992577f4b4a94">  784</a></span>&#160;<a class="code" href="comics-document_8c.html#a33249f2707b49b3d3a1992577f4b4a94">comics_document_finalize</a> (GObject *<span class="keywordtype">object</span>)</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;{</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    <a class="code" href="struct__ComicsDocument.html">ComicsDocument</a> *comics_document = <a class="code" href="comics-document_8h.html#a67a228a1aef85fe694a721efe63d0cbf">COMICS_DOCUMENT</a> (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    </div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keywordflow">if</span> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba">decompress_tmp</a>) {</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="comics-document_8c.html#a439c8742e42ca69679c0c8241fe63b1f">comics_remove_dir</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488">dir</a>) == -1)</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;            g_warning (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;There was an error deleting “%s”.&quot;</span>),</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;                   comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488">dir</a>);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488">dir</a>);</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    }</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    </div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordflow">if</span> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>) {</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;                g_ptr_array_foreach (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>, (GFunc) g_free, NULL);</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;                g_ptr_array_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    }</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644">selected_command</a>);</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c">alternative_command</a>);</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d">extract_command</a>);</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    g_free (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa">list_command</a>);</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    G_OBJECT_CLASS (comics_document_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;}</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno"><a class="code" href="comics-document_8c.html#ac3e8e08a0d080e5b04b75bf0fbf99b5e">  810</a></span>&#160;<a class="code" href="comics-document_8c.html#ac3e8e08a0d080e5b04b75bf0fbf99b5e">comics_document_class_init</a> (<a class="code" href="struct__ComicsDocumentClass.html">ComicsDocumentClass</a> *klass)</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;{</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    GObjectClass    *gobject_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *ev_document_class = <a class="code" href="ev-document_8h.html#a64dd590cd981f08430fee3c1a92d22a7">EV_DOCUMENT_CLASS</a> (klass);</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    gobject_class-&gt;finalize = <a class="code" href="comics-document_8c.html#a33249f2707b49b3d3a1992577f4b4a94">comics_document_finalize</a>;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a76bd65cef00f5be816f681a1fcefd21c">load</a> = <a class="code" href="comics-document_8c.html#a1898f492f581b5040470a2cf5fe88d3b">comics_document_load</a>;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#addbd3fbe9018832441566ba14ee85f01">save</a> = <a class="code" href="comics-document_8c.html#a630d2c6b62abddd76420ac32e4e4214e">comics_document_save</a>;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a9564fb5a3e83bda242b7fcc7405a0972">get_n_pages</a> = <a class="code" href="comics-document_8c.html#ab0e7b3614518839e7c15ccdc2bf5c3b0">comics_document_get_n_pages</a>;</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a4a9fa47c8ea0c87c584f4f1ebaf66659">get_page_size</a> = <a class="code" href="comics-document_8c.html#a78ceb8dc582b79acd03eb36e51e00f0f">comics_document_get_page_size</a>;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7">render</a> = <a class="code" href="comics-document_8c.html#ab479135307413a3f4ac02970f3e50d67">comics_document_render</a>;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;}</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a962e948d50d22ff1e8211ad8f4490e50">  825</a></span>&#160;<a class="code" href="comics-document_8c.html#a962e948d50d22ff1e8211ad8f4490e50">comics_document_init</a> (<a class="code" href="struct__ComicsDocument.html">ComicsDocument</a> *comics_document)</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;{</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a> = NULL;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a> = NULL;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d">extract_command</a> = NULL;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;}</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;<span class="comment">/* Returns a list of file extensions supported by gdk-pixbuf */</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="keyword">static</span> GSList*</div>
+<div class="line"><a name="l00834"></a><span class="lineno"><a class="code" href="comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3">  834</a></span>&#160;<a class="code" href="comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3">get_supported_image_extensions</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;{</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    GSList *extensions = NULL;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    GSList *formats = gdk_pixbuf_get_formats ();</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    GSList *l;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="keywordflow">for</span> (l = formats; l != NULL; l = l-&gt;next) {</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        gchar **ext = gdk_pixbuf_format_get_extensions (l-&gt;data);</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        <span class="keywordflow">for</span> (i = 0; ext[i] != NULL; i++) {</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;            extensions = g_slist_append (extensions,</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                             g_strdup (ext[i]));</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        }</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        g_strfreev (ext);</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    }</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    g_slist_free (formats);</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keywordflow">return</span> extensions;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;}</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span>**</div>
+<div class="line"><a name="l00857"></a><span class="lineno"><a class="code" href="comics-document_8c.html#aa4f8cbcc02bf6ea5b51c3f50ccaf221d">  857</a></span>&#160;<a class="code" href="comics-document_8c.html#aa4f8cbcc02bf6ea5b51c3f50ccaf221d">extract_argv</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document, gint page)</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;{</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <a class="code" href="struct__ComicsDocument.html">ComicsDocument</a> *comics_document = <a class="code" href="comics-document_8h.html#a67a228a1aef85fe694a721efe63d0cbf">COMICS_DOCUMENT</a> (document);</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="keywordtype">char</span> **argv;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordtype">char</span> *command_line, *quoted_archive, *quoted_filename;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    GError *err = NULL;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <span class="keywordflow">if</span> (page &gt;= comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>-&gt;len)</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    <span class="keywordflow">if</span> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0">regex_arg</a>) {</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        quoted_archive = <a class="code" href="comics-document_8c.html#a0b3d70a485ae4859ad5e7adfd12ea57d">comics_regex_quote</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        quoted_filename =</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;            <a class="code" href="comics-document_8c.html#a0b3d70a485ae4859ad5e7adfd12ea57d">comics_regex_quote</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>-&gt;pdata[page]);</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        quoted_archive = g_shell_quote (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        quoted_filename = g_shell_quote (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>-&gt;pdata[page]);</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    }</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    command_line = g_strdup_printf (<span class="stringliteral">&quot;%s %s %s&quot;</span>,</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                    comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d">extract_command</a>,</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                    quoted_archive,</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                    quoted_filename);</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    g_shell_parse_argv (command_line, NULL, &amp;argv, &amp;err);</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keywordflow">if</span> (err) {</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        g_warning (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Error %s&quot;</span>), err-&gt;message);</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        g_error_free (err);</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    }</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    g_free (command_line);</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    g_free (quoted_archive);</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    g_free (quoted_filename);</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordflow">return</span> argv;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_62d5c4fd963ae06962ef732fa75a9902.html">comics</a></li><li class="navelem"><a class="el" href="comics-document_8c.html">comics-document.c</a></li>
-    <li class="footer">Generated on Fri Jul 25 2014 09:24:24 for Evince by
+    <li class="footer">Generated on Fri Jul 25 2014 11:15:24 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

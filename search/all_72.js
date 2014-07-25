@@ -36,7 +36,7 @@ var searchData=
   ['render',['render',['../struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7',1,'_EvDocumentClass']]],
   ['render_5ffinished',['render_finished',['../struct__EvAsyncRendererInterface.html#a4a42164dbdd0ce665ae5dbbacb5f675b',1,'_EvAsyncRendererInterface::render_finished()'],['../ev-async-renderer_8c.html#abc5c98fcc1211af2b80116dd6e0a035dad339adc82d532c984dcc0d3281c01939',1,'RENDER_FINISHED():&#160;ev-async-renderer.c']]],
   ['render_5fpixbuf',['render_pixbuf',['../struct__EvAsyncRendererInterface.html#a3ca67cdef9363e99e669b89c262cae3a',1,'_EvAsyncRendererInterface']]],
-  ['render_5fpixbuf_5fsize_5fprepared_5fcb',['render_pixbuf_size_prepared_cb',['../comics-document_8c.html#abd3e3e8e0e64d4d2d743c68645bf2ca2',1,'comics-document.c']]],
+  ['render_5fpixbuf_5fsize_5fprepared_5fcb',['render_pixbuf_size_prepared_cb',['../comics-document_8c.html#a62cca497214947fc43cadd8c81522d99',1,'comics-document.c']]],
   ['render_5fselection',['render_selection',['../struct__EvSelectionInterface.html#adf006871b52534fdde70a538f395114a',1,'_EvSelectionInterface']]],
   ['requisition',['requisition',['../struct__EvView.html#a451beaac1c6bf5349e6ff03f41ac98b3',1,'_EvView']]],
   ['res_5funit',['res_unit',['../struct__TIFF2PSContext.html#a7a50b364c46ae524a15239bfa8a8267c',1,'_TIFF2PSContext']]],

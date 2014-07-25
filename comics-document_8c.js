@@ -32,7 +32,7 @@ var comics_document_8c =
     [ "extract_argv", "comics-document_8c.html#aa4f8cbcc02bf6ea5b51c3f50ccaf221d", null ],
     [ "get_page_size_area_prepared_cb", "comics-document_8c.html#a544eaa8b9a69cc5afdc5e6a4aee15fca", null ],
     [ "get_supported_image_extensions", "comics-document_8c.html#a21a2afeb1169ddf5f4bfbeb0d67488e3", null ],
-    [ "render_pixbuf_size_prepared_cb", "comics-document_8c.html#abd3e3e8e0e64d4d2d743c68645bf2ca2", null ],
+    [ "render_pixbuf_size_prepared_cb", "comics-document_8c.html#a62cca497214947fc43cadd8c81522d99", null ],
     [ "sort_page_names", "comics-document_8c.html#a612035c227aae2684e5dbcfcf6f1f174", null ],
     [ "command_usage_def", "comics-document_8c.html#a3f810655214ff237438be23c2e75e301", null ]
 ];
