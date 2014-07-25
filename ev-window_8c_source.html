@@ -7318,20 +7318,28 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l07255"></a><span class="lineno"> 7255</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a900e5d47af591198f2b6a4dc75b0a76a">model</a>;</div>
 <div class="line"><a name="l07256"></a><span class="lineno"> 7256</span>&#160;}</div>
 <div class="line"><a name="l07257"></a><span class="lineno"> 7257</span>&#160;</div>
-<div class="line"><a name="l07258"></a><span class="lineno"> 7258</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l07259"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a0a5ec81005cc33233d5539e17877efad"> 7259</a></span>&#160;<a class="code" href="ev-window_8c.html#a0a5ec81005cc33233d5539e17877efad">ev_window_focus_view</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
+<div class="line"><a name="l07258"></a><span class="lineno"> 7258</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l07259"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a8fadd3feea12f0b2edd83fd9843d0479"> 7259</a></span>&#160;<a class="code" href="ev-window_8c.html#a8fadd3feea12f0b2edd83fd9843d0479">ev_window_get_toolbar</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
 <div class="line"><a name="l07260"></a><span class="lineno"> 7260</span>&#160;{</div>
-<div class="line"><a name="l07261"></a><span class="lineno"> 7261</span>&#160;    g_return_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window));</div>
+<div class="line"><a name="l07261"></a><span class="lineno"> 7261</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window), NULL);</div>
 <div class="line"><a name="l07262"></a><span class="lineno"> 7262</span>&#160;</div>
-<div class="line"><a name="l07263"></a><span class="lineno"> 7263</span>&#160;    gtk_widget_grab_focus (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#aca655e6863cca1389f35fcf601eaeb59">view</a>);</div>
+<div class="line"><a name="l07263"></a><span class="lineno"> 7263</span>&#160;    <span class="keywordflow">return</span> ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#ac4255b88c5a4659d8202a6b135bfec3a">toolbar</a>;</div>
 <div class="line"><a name="l07264"></a><span class="lineno"> 7264</span>&#160;}</div>
+<div class="line"><a name="l07265"></a><span class="lineno"> 7265</span>&#160;</div>
+<div class="line"><a name="l07266"></a><span class="lineno"> 7266</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l07267"></a><span class="lineno"><a class="code" href="ev-window_8h.html#a0a5ec81005cc33233d5539e17877efad"> 7267</a></span>&#160;<a class="code" href="ev-window_8c.html#a0a5ec81005cc33233d5539e17877efad">ev_window_focus_view</a> (<a class="code" href="struct__EvWindow.html">EvWindow</a> *ev_window)</div>
+<div class="line"><a name="l07268"></a><span class="lineno"> 7268</span>&#160;{</div>
+<div class="line"><a name="l07269"></a><span class="lineno"> 7269</span>&#160;    g_return_if_fail (<a class="code" href="ev-window_8h.html#a618b5646def50d22acfeee0d80e04d74">EV_WINDOW</a> (ev_window));</div>
+<div class="line"><a name="l07270"></a><span class="lineno"> 7270</span>&#160;</div>
+<div class="line"><a name="l07271"></a><span class="lineno"> 7271</span>&#160;    gtk_widget_grab_focus (ev_window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#aca655e6863cca1389f35fcf601eaeb59">view</a>);</div>
+<div class="line"><a name="l07272"></a><span class="lineno"> 7272</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-window_8c.html">ev-window.c</a></li>
-    <li class="footer">Generated on Fri Jul 25 2014 20:30:30 for Evince by
+    <li class="footer">Generated on Fri Jul 25 2014 22:21:28 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

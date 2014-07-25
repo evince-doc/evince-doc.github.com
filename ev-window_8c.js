@@ -144,6 +144,7 @@ var ev_window_8c =
     [ "ev_window_get_dbus_object_path", "ev-window_8c.html#aa4c4958da41d46c7c0a8be8144c73991", null ],
     [ "ev_window_get_document_model", "ev-window_8c.html#ace3b80938864d8e61747ebe4aab0dd87", null ],
     [ "ev_window_get_history", "ev-window_8c.html#ac78ab61760772c0de2e8a9ed55263d46", null ],
+    [ "ev_window_get_toolbar", "ev-window_8c.html#a8fadd3feea12f0b2edd83fd9843d0479", null ],
     [ "ev_window_get_uri", "ev-window_8c.html#ae513dc48a56676eacd7bb66d95d6ce25", null ],
     [ "ev_window_handle_link", "ev-window_8c.html#afa25b8e654e0233bac201a9c335d9929", null ],
     [ "ev_window_hide_loading_message", "ev-window_8c.html#aeb99d9acc9b5aca1ecea50283511ce7b", null ],

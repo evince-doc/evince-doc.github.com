@@ -27,6 +27,7 @@ var ev_window_8h =
     [ "ev_window_get_dbus_object_path", "ev-window_8h.html#aa4c4958da41d46c7c0a8be8144c73991", null ],
     [ "ev_window_get_document_model", "ev-window_8h.html#ace3b80938864d8e61747ebe4aab0dd87", null ],
     [ "ev_window_get_history", "ev-window_8h.html#ac78ab61760772c0de2e8a9ed55263d46", null ],
+    [ "ev_window_get_toolbar", "ev-window_8h.html#a8fadd3feea12f0b2edd83fd9843d0479", null ],
     [ "ev_window_get_type", "ev-window_8h.html#aedb92311f8c69fea726df6551b735538", null ],
     [ "ev_window_get_uri", "ev-window_8h.html#ae513dc48a56676eacd7bb66d95d6ce25", null ],
     [ "ev_window_is_empty", "ev-window_8h.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf", null ],
