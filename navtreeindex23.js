@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"fontmap_8h.html#a274b9d811686bedefeee59c68e2b74d5":[6,0,0,0,2,0,15,13],
 "fontmap_8h.html#a3bafca653f3b1469e2c5f16366142c5c":[6,0,0,0,2,0,15,8],
 "fontmap_8h.html#a3c54c14da73bed430f70a134ef5fa1c4":[6,0,0,0,2,0,15,6],
 "fontmap_8h.html#a442c84395980f70aa10d50b8e3901c6d":[6,0,0,0,2,0,15,12],
@@ -40,8 +41,8 @@ var NAVTREEINDEX23 =
 "fontsrch_8c.html#ae808ffd5a3231a6418f13f415ed989d2":[6,0,0,0,2,0,16,2],
 "fontsrch_8c.html#ae9de526d4c8933c5faaf7354c4a30717":[6,0,0,0,2,0,16,12],
 "fontsrch_8c_source.html":[6,0,0,0,2,0,16],
-"functions.html":[5,2,0,0],
 "functions.html":[5,2,0],
+"functions.html":[5,2,0,0],
 "functions_0x61.html":[5,2,0,1],
 "functions_0x62.html":[5,2,0,2],
 "functions_0x63.html":[5,2,0,3],
@@ -68,8 +69,8 @@ var NAVTREEINDEX23 =
 "functions_0x79.html":[5,2,0,24],
 "functions_0x7a.html":[5,2,0,25],
 "functions_func.html":[5,2,1],
-"functions_vars.html":[5,2,2],
 "functions_vars.html":[5,2,2,0],
+"functions_vars.html":[5,2,2],
 "functions_vars_0x61.html":[5,2,2,1],
 "functions_vars_0x62.html":[5,2,2,2],
 "functions_vars_0x63.html":[5,2,2,3],
@@ -212,8 +213,8 @@ var NAVTREEINDEX23 =
 "gimpcellrenderertoggle_8h.html#ab0bc5ec82299112b8e02760e87a61e03":[6,0,0,1,0,1,6],
 "gimpcellrenderertoggle_8h.html#ad4322375e2a08293579ad6bbcd2d61ee":[6,0,0,1,0,1,10],
 "gimpcellrenderertoggle_8h_source.html":[6,0,0,1,0,1],
-"globals.html":[6,1,0],
 "globals.html":[6,1,0,0],
+"globals.html":[6,1,0],
 "globals_0x61.html":[6,1,0,1],
 "globals_0x62.html":[6,1,0,2],
 "globals_0x63.html":[6,1,0,3],
@@ -240,14 +241,13 @@ var NAVTREEINDEX23 =
 "globals_0x78.html":[6,1,0,24],
 "globals_0x79.html":[6,1,0,25],
 "globals_0x7a.html":[6,1,0,26],
-"globals_defs.html":[6,1,6],
 "globals_defs.html":[6,1,6,0],
+"globals_defs.html":[6,1,6],
 "globals_defs_0x61.html":[6,1,6,1],
 "globals_defs_0x62.html":[6,1,6,2],
 "globals_defs_0x63.html":[6,1,6,3],
 "globals_defs_0x64.html":[6,1,6,4],
 "globals_defs_0x65.html":[6,1,6,5],
 "globals_defs_0x66.html":[6,1,6,6],
-"globals_defs_0x67.html":[6,1,6,7],
-"globals_defs_0x68.html":[6,1,6,8]
+"globals_defs_0x67.html":[6,1,6,7]
 };

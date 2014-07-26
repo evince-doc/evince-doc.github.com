@@ -216,5 +216,6 @@ var searchData=
   ['ev_5fwindow_5fmode_5fnormal',['EV_WINDOW_MODE_NORMAL',['../ev-window_8h.html#af078888885ecae68b98b740c05c406d6ae90a703b9d5a1babb04146de1b8b987e',1,'ev-window.h']]],
   ['ev_5fwindow_5fmode_5fpresentation',['EV_WINDOW_MODE_PRESENTATION',['../ev-window_8h.html#af078888885ecae68b98b740c05c406d6a82e7bf20591bf6e8f6bb1ceb14b1dc1e',1,'ev-window.h']]],
   ['ev_5fwindow_5ftitle_5fdocument',['EV_WINDOW_TITLE_DOCUMENT',['../ev-window-title_8h.html#a8762464a03e5b5a9ce6627755ab2af67abdb7f09da6ef076046c00bf3b9b2061f',1,'ev-window-title.h']]],
-  ['ev_5fwindow_5ftitle_5fpassword',['EV_WINDOW_TITLE_PASSWORD',['../ev-window-title_8h.html#a8762464a03e5b5a9ce6627755ab2af67a3f43e7d8163e757689f8df64739d684a',1,'ev-window-title.h']]]
+  ['ev_5fwindow_5ftitle_5fpassword',['EV_WINDOW_TITLE_PASSWORD',['../ev-window-title_8h.html#a8762464a03e5b5a9ce6627755ab2af67a3f43e7d8163e757689f8df64739d684a',1,'ev-window-title.h']]],
+  ['ev_5fwindow_5ftitle_5frecent',['EV_WINDOW_TITLE_RECENT',['../ev-window-title_8h.html#a8762464a03e5b5a9ce6627755ab2af67aac893e5f47f9649b405bfd6c9ccddeb6',1,'ev-window-title.h']]]
 ];

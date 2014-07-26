@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvTransitionAnimationClass.html":[5,0,255],
 "struct__EvTransitionAnimationClass.html#a5160982e7183ac812872bc218accc42f":[5,0,255,0],
 "struct__EvTransitionEffect.html":[5,0,256],
 "struct__EvTransitionEffect.html#a036f62cb2327ffffcaef5ae58e31840b":[5,0,256,0],
@@ -218,10 +219,11 @@ var NAVTREEINDEX32 =
 "struct__EvWindowPrivate.html#afc10590d55bb2559a562df85af88e094":[5,0,269,34],
 "struct__EvWindowPrivate.html#aff131fe66e7958b30e64bc28d64288a6":[5,0,269,19],
 "struct__EvWindowTitle.html":[5,0,270],
-"struct__EvWindowTitle.html#a72d608b3d6b3be8498702bbadb180011":[5,0,270,2],
-"struct__EvWindowTitle.html#aa32529b87dfc58ee523221ecbd55a1dd":[5,0,270,0],
-"struct__EvWindowTitle.html#abd3fdc5b7291439d176b09133dceabd9":[5,0,270,3],
-"struct__EvWindowTitle.html#ae92dd33f6455c2ef09561fc3b48e0479":[5,0,270,1],
+"struct__EvWindowTitle.html#a72d608b3d6b3be8498702bbadb180011":[5,0,270,3],
+"struct__EvWindowTitle.html#aa32529b87dfc58ee523221ecbd55a1dd":[5,0,270,1],
+"struct__EvWindowTitle.html#abd3fdc5b7291439d176b09133dceabd9":[5,0,270,4],
+"struct__EvWindowTitle.html#ac9b4a2972af7ac772e534947f5c07423":[5,0,270,0],
+"struct__EvWindowTitle.html#ae92dd33f6455c2ef09561fc3b48e0479":[5,0,270,2],
 "struct__EvZoomAction.html":[5,0,271],
 "struct__EvZoomAction.html#a3e3f435953761f3c13fd71fe20cc8eed":[5,0,271,0],
 "struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150":[5,0,271,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "struct__GimpCellRendererToggle.html#a5f4e599a85ab32499339ed87ebddd174":[5,0,277,2],
 "struct__GimpCellRendererToggle.html#a711847107c6621219b16a4734b2b0ca6":[5,0,277,3],
 "struct__GimpCellRendererToggle.html#af05210618f3152a876de64c9660491fc":[5,0,277,0],
-"struct__GimpCellRendererToggleClass.html":[5,0,278],
-"struct__GimpCellRendererToggleClass.html#a0c85f979a33fa871649269387fa8860e":[5,0,278,2],
-"struct__GimpCellRendererToggleClass.html#a5cf97580e194362df055f48ee897ea6b":[5,0,278,1]
+"struct__GimpCellRendererToggleClass.html":[5,0,278]
 };
