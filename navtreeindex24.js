@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"globals_defs_0x65.html":[6,1,6,5],
+"globals_defs_0x66.html":[6,1,6,6],
+"globals_defs_0x67.html":[6,1,6,7],
 "globals_defs_0x68.html":[6,1,6,8],
 "globals_defs_0x69.html":[6,1,6,9],
 "globals_defs_0x6b.html":[6,1,6,10],
@@ -65,8 +68,8 @@ var NAVTREEINDEX24 =
 "globals_func_0x77.html":[6,1,1,22],
 "globals_func_0x78.html":[6,1,1,23],
 "globals_func_0x7a.html":[6,1,1,24],
-"globals_type.html":[6,1,3,0],
 "globals_type.html":[6,1,3],
+"globals_type.html":[6,1,3,0],
 "globals_type_0x62.html":[6,1,3,1],
 "globals_type_0x63.html":[6,1,3,2],
 "globals_type_0x64.html":[6,1,3,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "mdvi_8h.html#a90d25f8a0d50a69c0912865f23285d18":[6,0,0,0,2,0,21,125],
 "mdvi_8h.html#a90f8e7745b98ecd80e38eab05d071b95":[6,0,0,0,2,0,21,51],
 "mdvi_8h.html#a914916a249ee9288e99e0f3ae2c62c95":[6,0,0,0,2,0,21,68],
-"mdvi_8h.html#a91caecb9ef617d419555b7b7f16fc05d":[6,0,0,0,2,0,21,119],
-"mdvi_8h.html#a91fb55e75bb1eebbb5ea62bba52c8f63":[6,0,0,0,2,0,21,105],
-"mdvi_8h.html#a93cf5a0a6d00599785f91f4aad3a9307":[6,0,0,0,2,0,21,26],
-"mdvi_8h.html#a97324277e2d247b6f4d4e70e025db242":[6,0,0,0,2,0,21,123]
+"mdvi_8h.html#a91caecb9ef617d419555b7b7f16fc05d":[6,0,0,0,2,0,21,119]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX25 =
 {
+"mdvi_8h.html#a91fb55e75bb1eebbb5ea62bba52c8f63":[6,0,0,0,2,0,21,105],
+"mdvi_8h.html#a93cf5a0a6d00599785f91f4aad3a9307":[6,0,0,0,2,0,21,26],
+"mdvi_8h.html#a97324277e2d247b6f4d4e70e025db242":[6,0,0,0,2,0,21,123],
 "mdvi_8h.html#a9a1b5caa48d2405b3de59b739694bea1":[6,0,0,0,2,0,21,59],
 "mdvi_8h.html#a9d2cdd1cc263bfbb63edb82b92ad7b12":[6,0,0,0,2,0,21,39],
 "mdvi_8h.html#a9d98ef1e1880f271d5afb1a6e9aaf3c4":[6,0,0,0,2,0,21,79],
@@ -246,8 +249,5 @@ var NAVTREEINDEX25 =
 "structDstring.html":[5,0,308],
 "structDstring.html#a52a5c2dc3102921ae01c219d27d2f00d":[5,0,308,0],
 "structDstring.html#a66824d6165711a46519bea353f99a22c":[5,0,308,1],
-"structDstring.html#acf052de97ce224539a13750abd971461":[5,0,308,2],
-"structDviCairoDevice.html":[5,0,309],
-"structDviCairoDevice.html#a1c7a2671b9d81c7f118c1122bf1061a5":[5,0,309,2],
-"structDviCairoDevice.html#a9caf6ed5d06ed9826299a25cabfe1b11":[5,0,309,0]
+"structDstring.html#acf052de97ce224539a13750abd971461":[5,0,308,2]
 };

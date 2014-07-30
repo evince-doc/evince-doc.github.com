@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"ev-history_8h.html#a5c90a5deb4f02b85186843f2e6b40aed":[6,0,0,7,18,13],
+"ev-history_8h.html#a660104227681a00a5c83bfbdd61249a5":[6,0,0,7,18,18],
+"ev-history_8h.html#a6d5764a99490117f0f88f7eb80b86848":[6,0,0,7,18,23],
 "ev-history_8h.html#a733374484d99c78146c7452a93c151b4":[6,0,0,7,18,19],
 "ev-history_8h.html#a791430a01b41223e53e0f854f5708f9b":[6,0,0,7,18,6],
 "ev-history_8h.html#ab34ff3d612ca3769ecfc4c64fbddc438":[6,0,0,7,18,16],
@@ -246,8 +249,5 @@ var NAVTREEINDEX9 =
 "ev-jobs_8h.html#a038ac53abe21ff171b1b46e04dfe5808":[6,0,0,4,11,95],
 "ev-jobs_8h.html#a048d77451efe25ceaf89193d0db4312e":[6,0,0,4,11,35],
 "ev-jobs_8h.html#a079b249d30e1c9b91a1d41c1d0edea60":[6,0,0,4,11,122],
-"ev-jobs_8h.html#a08b5ca427ef3524511cfe9c7a8240601":[6,0,0,4,11,72],
-"ev-jobs_8h.html#a08b70077dea771d9a6079bbdfcc49ab1":[6,0,0,4,11,140],
-"ev-jobs_8h.html#a090d2ce6a0fea8b1b1ad5b8ddddf3a0f":[6,0,0,4,11,135],
-"ev-jobs_8h.html#a0a76963dfd486c3e0237d9ea1cb9159c":[6,0,0,4,11,38]
+"ev-jobs_8h.html#a08b5ca427ef3524511cfe9c7a8240601":[6,0,0,4,11,72]
 };

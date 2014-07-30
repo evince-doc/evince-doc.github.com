@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"structDviCairoDevice.html":[5,0,309],
+"structDviCairoDevice.html#a1c7a2671b9d81c7f118c1122bf1061a5":[5,0,309,2],
+"structDviCairoDevice.html#a9caf6ed5d06ed9826299a25cabfe1b11":[5,0,309,0],
 "structDviCairoDevice.html#aa83c732c44c913360298e1a38a04c8e8":[5,0,309,3],
 "structDviCairoDevice.html#ab74f171fd873ddc6d7c5211a7a89dc2e":[5,0,309,5],
 "structDviCairoDevice.html#ac8c3412de7f560d7d895b06b8ecb4e46":[5,0,309,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviContext.html#ab4f9515b62acec430c55dddf1744243f":[5,0,12,19],
 "struct__DviContext.html#ab920ca247f78f00dd39179ae73082e28":[5,0,12,29],
 "struct__DviContext.html#ac1432d77fb6d86b009d81b2aaf48e63b":[5,0,12,11],
-"struct__DviContext.html#ac7c0d318b9a07b681866bd1235e13596":[5,0,12,0],
-"struct__DviContext.html#acf0ac0472c32ba190d86e94502cd4aca":[5,0,12,35],
-"struct__DviContext.html#adafeff39ebbae70d6f4a1ca5e3b3862f":[5,0,12,6],
-"struct__DviContext.html#adb2202674ac4bdd581d94f8c4a00c306":[5,0,12,32]
+"struct__DviContext.html#ac7c0d318b9a07b681866bd1235e13596":[5,0,12,0]
 };

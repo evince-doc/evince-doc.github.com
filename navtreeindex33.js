@@ -1,5 +1,11 @@
 var NAVTREEINDEX33 =
 {
+"struct__GimpCellRendererToggle.html":[5,0,277],
+"struct__GimpCellRendererToggle.html#a2be5ba4036ea2a1544dd7d5a5079c60b":[5,0,277,1],
+"struct__GimpCellRendererToggle.html#a5f4e599a85ab32499339ed87ebddd174":[5,0,277,2],
+"struct__GimpCellRendererToggle.html#a711847107c6621219b16a4734b2b0ca6":[5,0,277,3],
+"struct__GimpCellRendererToggle.html#af05210618f3152a876de64c9660491fc":[5,0,277,0],
+"struct__GimpCellRendererToggleClass.html":[5,0,278],
 "struct__GimpCellRendererToggleClass.html#a0c85f979a33fa871649269387fa8860e":[5,0,278,2],
 "struct__GimpCellRendererToggleClass.html#a5cf97580e194362df055f48ee897ea6b":[5,0,278,1],
 "struct__GimpCellRendererToggleClass.html#a74a4909d61a91bfd22553befd031dc00":[5,0,278,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX33 =
 "synctex__parser_8c.html#a35914b3b3c7631b3df4458683f225093":[6,0,0,1,2,0,14],
 "synctex__parser_8c.html#a3664dec0b283ee7c4a5788cdf2d5739e":[6,0,0,1,2,0,58],
 "synctex__parser_8c.html#a37cbdf2d03c09b2e0855b30a96bba233":[6,0,0,1,2,0,189],
-"synctex__parser_8c.html#a38f234ae8e32c15e3d27cdf8d1ba1518":[6,0,0,1,2,0,251],
-"synctex__parser_8c.html#a3ad4666bed6117f9276248ce657c21d0":[6,0,0,1,2,0,26],
-"synctex__parser_8c.html#a3bd2cd6f724b8eadfc42a2a488fcccdb":[6,0,0,1,2,0,91],
-"synctex__parser_8c.html#a3c761636bc778975f68d5e647a6837b1":[6,0,0,1,2,0,41],
-"synctex__parser_8c.html#a3dd642acc12c7662f5a7b70c1ae80d2e":[6,0,0,1,2,0,62],
-"synctex__parser_8c.html#a3de8bd1f7e7abbe866eab66a843e525e":[6,0,0,1,2,0,194],
-"synctex__parser_8c.html#a3e84aa899ab8cc68f31d1e80a946deec":[6,0,0,1,2,0,105]
+"synctex__parser_8c.html#a38f234ae8e32c15e3d27cdf8d1ba1518":[6,0,0,1,2,0,251]
 };

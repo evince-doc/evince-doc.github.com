@@ -1,5 +1,11 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6":[5,0,253,6],
+"struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9":[5,0,253,3],
+"struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab":[5,0,253,9],
+"struct__EvToolbarPrivate.html#af08b62a6dc358f25c7faca66b0924da8":[5,0,253,4],
+"struct__EvTransitionAnimation.html":[5,0,254],
+"struct__EvTransitionAnimation.html#a68bb80e976ec1495db80cf5c0b587f74":[5,0,254,0],
 "struct__EvTransitionAnimationClass.html":[5,0,255],
 "struct__EvTransitionAnimationClass.html#a5160982e7183ac812872bc218accc42f":[5,0,255,0],
 "struct__EvTransitionEffect.html":[5,0,256],
@@ -243,11 +249,5 @@ var NAVTREEINDEX32 =
 "struct__GdTwoLinesRendererClass.html#addac1eeccb9c357ca60c395a473669d4":[5,0,275,0],
 "struct__GdTwoLinesRendererPrivate.html":[5,0,276],
 "struct__GdTwoLinesRendererPrivate.html#aa8483533a8c83c9293b3375a8a8b516e":[5,0,276,1],
-"struct__GdTwoLinesRendererPrivate.html#ac9e544e1905c2a8778eab02363ddeef2":[5,0,276,0],
-"struct__GimpCellRendererToggle.html":[5,0,277],
-"struct__GimpCellRendererToggle.html#a2be5ba4036ea2a1544dd7d5a5079c60b":[5,0,277,1],
-"struct__GimpCellRendererToggle.html#a5f4e599a85ab32499339ed87ebddd174":[5,0,277,2],
-"struct__GimpCellRendererToggle.html#a711847107c6621219b16a4734b2b0ca6":[5,0,277,3],
-"struct__GimpCellRendererToggle.html#af05210618f3152a876de64c9660491fc":[5,0,277,0],
-"struct__GimpCellRendererToggleClass.html":[5,0,278]
+"struct__GdTwoLinesRendererPrivate.html#ac9e544e1905c2a8778eab02363ddeef2":[5,0,276,0]
 };
