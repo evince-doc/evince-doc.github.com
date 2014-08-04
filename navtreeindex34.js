@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"synctex__parser_8c.html#a38f234ae8e32c15e3d27cdf8d1ba1518":[6,0,0,1,2,0,251],
 "synctex__parser_8c.html#a3ad4666bed6117f9276248ce657c21d0":[6,0,0,1,2,0,26],
 "synctex__parser_8c.html#a3bd2cd6f724b8eadfc42a2a488fcccdb":[6,0,0,1,2,0,91],
 "synctex__parser_8c.html#a3c761636bc778975f68d5e647a6837b1":[6,0,0,1,2,0,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "synctex__parser_8h.html#a9ef386e4ae8b36fe4b933d726e32d9a1":[6,0,0,1,2,1,48],
 "synctex__parser_8h.html#a9fa4d5ea994bd4b018380f1ba72dfe9b":[6,0,0,1,2,1,4],
 "synctex__parser_8h.html#aa3ddfb08e151d7bb4994274ddaf50918":[6,0,0,1,2,1,50],
-"synctex__parser_8h.html#aa4923cfdcde5b9d889e32adb911736ea":[6,0,0,1,2,1,11],
-"synctex__parser_8h.html#aa516bb1c3d15cf610c8b350e00453b3d":[6,0,0,1,2,1,25]
+"synctex__parser_8h.html#aa4923cfdcde5b9d889e32adb911736ea":[6,0,0,1,2,1,11]
 };

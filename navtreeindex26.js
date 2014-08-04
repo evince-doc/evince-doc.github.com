@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structDstring.html#acf052de97ce224539a13750abd971461":[5,0,308,2],
 "structDviCairoDevice.html":[5,0,309],
 "structDviCairoDevice.html#a1c7a2671b9d81c7f118c1122bf1061a5":[5,0,309,2],
 "structDviCairoDevice.html#a9caf6ed5d06ed9826299a25cabfe1b11":[5,0,309,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "struct__DviContext.html#aa9c40efae0a0e49945111c911688c070":[5,0,12,1],
 "struct__DviContext.html#ab4f9515b62acec430c55dddf1744243f":[5,0,12,19],
 "struct__DviContext.html#ab920ca247f78f00dd39179ae73082e28":[5,0,12,29],
-"struct__DviContext.html#ac1432d77fb6d86b009d81b2aaf48e63b":[5,0,12,11],
-"struct__DviContext.html#ac7c0d318b9a07b681866bd1235e13596":[5,0,12,0]
+"struct__DviContext.html#ac1432d77fb6d86b009d81b2aaf48e63b":[5,0,12,11]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b":[5,0,253,10],
 "struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6":[5,0,253,6],
 "struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9":[5,0,253,3],
 "struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab":[5,0,253,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "struct__GdTwoLinesRendererClass.html":[5,0,275],
 "struct__GdTwoLinesRendererClass.html#addac1eeccb9c357ca60c395a473669d4":[5,0,275,0],
 "struct__GdTwoLinesRendererPrivate.html":[5,0,276],
-"struct__GdTwoLinesRendererPrivate.html#aa8483533a8c83c9293b3375a8a8b516e":[5,0,276,1],
-"struct__GdTwoLinesRendererPrivate.html#ac9e544e1905c2a8778eab02363ddeef2":[5,0,276,0]
+"struct__GdTwoLinesRendererPrivate.html#aa8483533a8c83c9293b3375a8a8b516e":[5,0,276,1]
 };
