@@ -13,5 +13,6 @@ var ev_page_accessible_8h =
     [ "ev_page_accessible_get_type", "ev-page-accessible_8h.html#a8dec3af747d876e491915172646e2741", null ],
     [ "ev_page_accessible_get_view", "ev-page-accessible_8h.html#a4c6ebe3904af057d7d774fb2e05a1721", null ],
     [ "ev_page_accessible_get_view_accessible", "ev-page-accessible_8h.html#a6987ddc4212f7c0c3617e92e1ba16abf", null ],
-    [ "ev_page_accessible_new", "ev-page-accessible_8h.html#a78c7490e315160cba502d23a113b2ae3", null ]
+    [ "ev_page_accessible_new", "ev-page-accessible_8h.html#a78c7490e315160cba502d23a113b2ae3", null ],
+    [ "ev_page_accessible_update_element_state", "ev-page-accessible_8h.html#a6c9320443001a36abfa9f9f6e5798038", null ]
 ];

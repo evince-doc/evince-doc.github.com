@@ -723,13 +723,24 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8c_source.html','')
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keywordflow">if</span> (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>)</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        atk_object_notify_state_change (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>, ATK_STATE_FOCUSED, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;}</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00620"></a><span class="lineno"><a class="code" href="ev-view-accessible_8h.html#a8933cdcbe38d194191d976a819490a7e">  620</a></span>&#160;<a class="code" href="ev-view-accessible_8c.html#a8933cdcbe38d194191d976a819490a7e">ev_view_accessible_update_element_state</a> (<a class="code" href="struct__EvViewAccessible.html">EvViewAccessible</a> *accessible,</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                     <a class="code" href="struct__EvMapping.html">EvMapping</a>        *element,</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                     gint              element_page)</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;{</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, element_page);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <a class="code" href="ev-page-accessible_8c.html#a6c9320443001a36abfa9f9f6e5798038">ev_page_accessible_update_element_state</a> (page, element);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8c.html">ev-view-accessible.c</a></li>
-    <li class="footer">Generated on Mon Aug 4 2014 13:37:42 for Evince by
+    <li class="footer">Generated on Mon Aug 4 2014 15:28:09 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

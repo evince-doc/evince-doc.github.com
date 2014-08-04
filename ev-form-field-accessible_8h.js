@@ -10,5 +10,6 @@ var ev_form_field_accessible_8h =
     [ "EvFormFieldAccessiblePrivate", "ev-form-field-accessible_8h.html#a2ed256fb69ae5379d606a90172e184f8", null ],
     [ "ev_form_field_accessible_get_field", "ev-form-field-accessible_8h.html#a5858b47bfdb2090e82a53164cfe1d346", null ],
     [ "ev_form_field_accessible_get_type", "ev-form-field-accessible_8h.html#a355a9b4b7e0fb9768935b70dc7ba1565", null ],
-    [ "ev_form_field_accessible_new", "ev-form-field-accessible_8h.html#a6803196f238344f264295ce2ad2b8c77", null ]
+    [ "ev_form_field_accessible_new", "ev-form-field-accessible_8h.html#a6803196f238344f264295ce2ad2b8c77", null ],
+    [ "ev_form_field_accessible_update_state", "ev-form-field-accessible_8h.html#a2e81e5dbb86da962414c9214708389e7", null ]
 ];

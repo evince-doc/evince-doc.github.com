@@ -169,6 +169,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6803196f238344f264295ce2ad2b8c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5858b47bfdb2090e82a53164cfe1d346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-form-field_8h.html#a1940a42dc6be3c16b1999f7347fbc9f9">EvFormField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-form-field-accessible_8h.html#a5858b47bfdb2090e82a53164cfe1d346">ev_form_field_accessible_get_field</a> (<a class="el" href="ev-form-field-accessible_8h.html#ae61b5c91ade68c1cf3151dea7ea255af">EvFormFieldAccessible</a> *accessible)</td></tr>
 <tr class="separator:a5858b47bfdb2090e82a53164cfe1d346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e81e5dbb86da962414c9214708389e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-form-field-accessible_8h.html#a2e81e5dbb86da962414c9214708389e7">ev_form_field_accessible_update_state</a> (<a class="el" href="ev-form-field-accessible_8h.html#ae61b5c91ade68c1cf3151dea7ea255af">EvFormFieldAccessible</a> *accessible)</td></tr>
+<tr class="separator:a2e81e5dbb86da962414c9214708389e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="adbb5cf7a96c33c59668155300e4a9f1f"></a>
@@ -279,17 +281,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-form-field-accessible_8c_source.html#l00361">361</a> of file <a class="el" href="ev-form-field-accessible_8c_source.html">ev-form-field-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;{</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">return</span> accessible-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a4acf76cba7a7545ea7050e8bace20920">form_field</a>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-form-field-accessible_8c_source.html#l00393">393</a> of file <a class="el" href="ev-form-field-accessible_8c_source.html">ev-form-field-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;{</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> accessible-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a4acf76cba7a7545ea7050e8bace20920">form_field</a>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a5858b47bfdb2090e82a53164cfe1d346_icgraph.svg" width="1832" height="372"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a5858b47bfdb2090e82a53164cfe1d346_icgraph.svg" width="1838" height="495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -342,24 +344,78 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-form-field-accessible_8c_source.html#l00346">346</a> of file <a class="el" href="ev-form-field-accessible_8c_source.html">ev-form-field-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;{</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <a class="code" href="struct__EvFormFieldAccessible.html">EvFormFieldAccessible</a> *atk_form_field;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    atk_form_field = g_object_new (<a class="code" href="ev-form-field-accessible_8h.html#a268428469cbf32b7d116e9e7a1fe2bd9">EV_TYPE_FORM_FIELD_ACCESSIBLE</a>, NULL);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    atk_form_field-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a008d1ec211c3d405ec178eddaf818ed5">page</a> = page;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    atk_form_field-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a4acf76cba7a7545ea7050e8bace20920">form_field</a> = g_object_ref (form_field);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    atk_form_field-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a92dd69738fd14d1a0e45221427d6d07b">area</a> = *area;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (atk_form_field);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-form-field-accessible_8c_source.html#l00376">376</a> of file <a class="el" href="ev-form-field-accessible_8c_source.html">ev-form-field-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="struct__EvFormFieldAccessible.html">EvFormFieldAccessible</a> *atk_form_field;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    atk_form_field = g_object_new (<a class="code" href="ev-form-field-accessible_8h.html#a268428469cbf32b7d116e9e7a1fe2bd9">EV_TYPE_FORM_FIELD_ACCESSIBLE</a>, NULL);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    atk_form_field-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a008d1ec211c3d405ec178eddaf818ed5">page</a> = page;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    atk_form_field-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a4acf76cba7a7545ea7050e8bace20920">form_field</a> = g_object_ref (form_field);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    atk_form_field-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#a92dd69738fd14d1a0e45221427d6d07b">area</a> = *area;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    atk_form_field-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#aeacc61c64fa72120d47ade6aa33ced44">saved_states</a> = atk_state_set_new ();</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <a class="code" href="ev-form-field-accessible_8c.html#a2e81e5dbb86da962414c9214708389e7">ev_form_field_accessible_update_state</a> (atk_form_field);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (atk_form_field);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a6803196f238344f264295ce2ad2b8c77_icgraph.svg" width="2056" height="372"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a6803196f238344f264295ce2ad2b8c77_icgraph.svg" width="2062" height="524"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e81e5dbb86da962414c9214708389e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_form_field_accessible_update_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-form-field-accessible_8h.html#ae61b5c91ade68c1cf3151dea7ea255af">EvFormFieldAccessible</a> *&#160;</td>
+          <td class="paramname"><em>accessible</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-form-field-accessible_8c_source.html#l00314">314</a> of file <a class="el" href="ev-form-field-accessible_8c_source.html">ev-form-field-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    AtkObject *atk_object;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    AtkStateSet *states;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    AtkStateSet *changed_states;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    gint i;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    atk_object = ATK_OBJECT (accessible);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    states = <a class="code" href="ev-form-field-accessible_8c.html#a4ec923456a791d84242b2159ffda9908">ev_form_field_accessible_ref_state_set</a> (atk_object);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    changed_states = atk_state_set_xor_sets (accessible-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#aeacc61c64fa72120d47ade6aa33ced44">saved_states</a>, states);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (changed_states &amp;&amp; !atk_state_set_is_empty (accessible-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#aeacc61c64fa72120d47ade6aa33ced44">saved_states</a>)) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; ATK_STATE_LAST_DEFINED; i++) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">if</span> (atk_state_set_contains_state (changed_states, i))</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                atk_object_notify_state_change (atk_object, i, atk_state_set_contains_state (states, i));</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    g_object_unref (accessible-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#aeacc61c64fa72120d47ade6aa33ced44">saved_states</a>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    atk_state_set_clear_states (changed_states);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    accessible-&gt;<a class="code" href="struct__EvFormFieldAccessible.html#a36eb6005f0363e4610c16b7dac4abd28">priv</a>-&gt;<a class="code" href="struct__EvFormFieldAccessiblePrivate.html#aeacc61c64fa72120d47ade6aa33ced44">saved_states</a> = atk_state_set_or_sets (changed_states, states);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    g_object_unref (changed_states);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    g_object_unref (states);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-form-field-accessible_8h_a2e81e5dbb86da962414c9214708389e7_icgraph.svg" width="2280" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -372,7 +428,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-form-field-accessible_8h.html">ev-form-field-accessible.h</a></li>
-    <li class="footer">Generated on Mon Aug 4 2014 13:37:46 for Evince by
+    <li class="footer">Generated on Mon Aug 4 2014 15:28:14 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

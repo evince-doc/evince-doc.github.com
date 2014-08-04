@@ -206,6 +206,8 @@ Functions</h2></td></tr>
 <tr class="separator:a524a6a680a70e1f03ba73c741bd22184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0395d054f18875ebac19f75272595a64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-accessible_8c.html#a0395d054f18875ebac19f75272595a64">ev_view_accessible_set_focused_element</a> (<a class="el" href="ev-view-accessible_8h.html#a5f753ae10cb7f541522f754dac41bd6e">EvViewAccessible</a> *accessible, <a class="el" href="ev-document_8h.html#ad16f94ff147b1427a11eedbf4dbe6991">EvMapping</a> *new_focus, gint new_focus_page)</td></tr>
 <tr class="separator:a0395d054f18875ebac19f75272595a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8933cdcbe38d194191d976a819490a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view-accessible_8c.html#a8933cdcbe38d194191d976a819490a7e">ev_view_accessible_update_element_state</a> (<a class="el" href="ev-view-accessible_8h.html#a5f753ae10cb7f541522f754dac41bd6e">EvViewAccessible</a> *accessible, <a class="el" href="ev-document_8h.html#ad16f94ff147b1427a11eedbf4dbe6991">EvMapping</a> *element, gint element_page)</td></tr>
+<tr class="separator:a8933cdcbe38d194191d976a819490a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -1331,7 +1333,7 @@ Variables</h2></td></tr>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-accessible_8c_a99e34bcf424176a717a2ec590798f73b_icgraph.svg" width="603" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-accessible_8c_a99e34bcf424176a717a2ec590798f73b_icgraph.svg" width="2702" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1699,6 +1701,56 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8933cdcbe38d194191d976a819490a7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_view_accessible_update_element_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-view-accessible_8h.html#a5f753ae10cb7f541522f754dac41bd6e">EvViewAccessible</a> *&#160;</td>
+          <td class="paramname"><em>accessible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-document_8h.html#ad16f94ff147b1427a11eedbf4dbe6991">EvMapping</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>element_page</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-view-accessible_8c_source.html#l00620">620</a> of file <a class="el" href="ev-view-accessible_8c_source.html">ev-view-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;{</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, element_page);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <a class="code" href="ev-page-accessible_8c.html#a6c9320443001a36abfa9f9f6e5798038">ev_page_accessible_update_element_state</a> (page, element);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-accessible_8c_a8933cdcbe38d194191d976a819490a7e_icgraph.svg" width="944" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ab2bb16a5b8362fbe091b4e8fb6fe0d5c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1775,11 +1827,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    }</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-accessible_8c_a81ce8f530707e0d083378ec2570ef82a_icgraph.svg" width="1160" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1842,11 +1894,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor"></span>}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-accessible_8c_ac3b3b8499a3baca2c583c801b4cd273f_icgraph.svg" width="960" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1917,7 +1969,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8c.html">ev-view-accessible.c</a></li>
-    <li class="footer">Generated on Mon Aug 4 2014 13:37:47 for Evince by
+    <li class="footer">Generated on Mon Aug 4 2014 15:28:15 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
