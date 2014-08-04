@@ -1,7 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"struct__EvToolbarPrivate.html#a0f2557f00e2191b4e58ebdc1c7801025":[5,0,253,8],
-"struct__EvToolbarPrivate.html#a27b414f8284e374bceb08fc92e3b795e":[5,0,253,1],
 "struct__EvToolbarPrivate.html#a2fd69d8bdc4e7985d0eff7b25e40c6dd":[5,0,253,5],
 "struct__EvToolbarPrivate.html#a4a9c22d1a9dc73906bffd10fe315e08e":[5,0,253,2],
 "struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6":[5,0,253,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX32 =
 "struct__EvZoomActionPrivate.html#a775df825a8f4788a1f140051bf8d3f3b":[5,0,273,3],
 "struct__EvZoomActionPrivate.html#ab5f76d6664e1269e89e9cfe08c650831":[5,0,273,5],
 "struct__EvZoomActionPrivate.html#ad88e0e7da2025fbb3dee0b1a595d9716":[5,0,273,1],
-"struct__EvZoomActionPrivate.html#af4dddb3804ec0a7b602ef540754fc76a":[5,0,273,4]
+"struct__EvZoomActionPrivate.html#af4dddb3804ec0a7b602ef540754fc76a":[5,0,273,4],
+"struct__GdTwoLinesRenderer.html":[5,0,274],
+"struct__GdTwoLinesRenderer.html#a3851a991a601bad7701dc21f97efe210":[5,0,274,0]
 };

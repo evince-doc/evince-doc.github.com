@@ -1,7 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"struct__EvPreviewerWindow.html#a5966c5ab3f7503e037f769d5313bca49":[5,0,199,6],
-"struct__EvPreviewerWindow.html#a804a8cf3324c7cf351d5d1be1a031125":[5,0,199,3],
 "struct__EvPreviewerWindow.html#a8545e85e50f11a57d5bbcef4aa9e81fd":[5,0,199,9],
 "struct__EvPreviewerWindow.html#a8f51734d068a505ed3cf91d97fc81043":[5,0,199,1],
 "struct__EvPreviewerWindow.html#ac8047270bed172893b7c63219e362e23":[5,0,199,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX31 =
 "struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182":[5,0,251,1],
 "struct__EvToolbarClass.html":[5,0,252],
 "struct__EvToolbarClass.html#ac23ea328fbd67cd9f716fe16b12a4256":[5,0,252,0],
-"struct__EvToolbarPrivate.html":[5,0,253]
+"struct__EvToolbarPrivate.html":[5,0,253],
+"struct__EvToolbarPrivate.html#a0f2557f00e2191b4e58ebdc1c7801025":[5,0,253,8],
+"struct__EvToolbarPrivate.html#a27b414f8284e374bceb08fc92e3b795e":[5,0,253,1]
 };

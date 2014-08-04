@@ -1,7 +1,5 @@
 var NAVTREEINDEX30 =
 {
-"struct__EvJobRender.html#a40596e5cca1d7d661290872dd46d167d":[5,0,145,14],
-"struct__EvJobRender.html#a707cc1d263f659c0e5f9ff34e6884e73":[5,0,145,5],
 "struct__EvJobRender.html#a75b90ad8179f2e427bf43757b52b318c":[5,0,145,9],
 "struct__EvJobRender.html#a7a18cac148df211b02ed5fd920337f0a":[5,0,145,12],
 "struct__EvJobRender.html#a8e59391729937a3d6774e44516ee6752":[5,0,145,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX30 =
 "struct__EvPreviewerWindow.html#a24b92bbb29345b635b4bfca7a8aff643":[5,0,199,12],
 "struct__EvPreviewerWindow.html#a357bec54ba325d3ec001bdee7cd90d4e":[5,0,199,10],
 "struct__EvPreviewerWindow.html#a3f9ea50daa6f942996f440c78077c4c7":[5,0,199,8],
-"struct__EvPreviewerWindow.html#a52da2ffde1768aae263f415ea3a1d1f1":[5,0,199,11]
+"struct__EvPreviewerWindow.html#a52da2ffde1768aae263f415ea3a1d1f1":[5,0,199,11],
+"struct__EvPreviewerWindow.html#a5966c5ab3f7503e037f769d5313bca49":[5,0,199,6],
+"struct__EvPreviewerWindow.html#a804a8cf3324c7cf351d5d1be1a031125":[5,0,199,3]
 };

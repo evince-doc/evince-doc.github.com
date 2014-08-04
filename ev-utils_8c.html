@@ -147,8 +147,6 @@ Functions</h2></td></tr>
 <tr class="separator:aee1d680384b5eae7018b579d7e7cb0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a215f44c16da47031044eb3f21df2e083"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-utils_8c.html#a215f44c16da47031044eb3f21df2e083">ev_gui_menu_position_tree_selection</a> (GtkMenu *menu, gint *x, gint *y, gboolean *push_in, gpointer user_data)</td></tr>
 <tr class="separator:a215f44c16da47031044eb3f21df2e083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d4812f95cfba8d1ce74d232dd759f8e"><td class="memItemLeft" align="right" valign="top">gint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-utils_8c.html#a2d4812f95cfba8d1ce74d232dd759f8e">get_num_monitors</a> (GtkWindow *<a class="el" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</td></tr>
-<tr class="separator:a2d4812f95cfba8d1ce74d232dd759f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9af39ac454bfcf69118dcbb76f919eac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-utils_8c.html#a9af39ac454bfcf69118dcbb76f919eac">file_filter_add_mime_types</a> (GdkPixbufFormat *format, GtkFileFilter *filter, GtkFileFilter *supported_filter)</td></tr>
 <tr class="separator:a9af39ac454bfcf69118dcbb76f919eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47bd383086c9f5d0e94a488a2cee2602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-utils_8c.html#a47bd383086c9f5d0e94a488a2cee2602">file_chooser_dialog_add_writable_pixbuf_formats</a> (GtkFileChooser *chooser)</td></tr>
@@ -657,42 +655,42 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-utils_8c_source.html#l00325">325</a> of file <a class="el" href="ev-utils_8c_source.html">ev-utils.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    GSList *pixbuf_formats = NULL;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    GSList *iter;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    GtkFileFilter *filter, *supported_filter;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    supported_filter = gtk_file_filter_new ();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    gtk_file_filter_set_name (supported_filter, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Supported Image Files&quot;</span>));</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    gtk_file_chooser_add_filter (chooser, supported_filter);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    filter = gtk_file_filter_new ();</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    gtk_file_filter_set_name (filter, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;All Files&quot;</span>));</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    gtk_file_filter_add_pattern (filter, <span class="stringliteral">&quot;*&quot;</span>);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    gtk_file_chooser_add_filter (chooser, filter);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    pixbuf_formats = gdk_pixbuf_get_formats ();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">for</span> (iter = pixbuf_formats; iter; iter = iter-&gt;next) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        GdkPixbufFormat *format = iter-&gt;data;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        gchar *<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">if</span> (gdk_pixbuf_format_is_disabled (format) ||</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            !gdk_pixbuf_format_is_writable (format))</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        filter = gtk_file_filter_new ();</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        name = gdk_pixbuf_format_get_description (format);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        gtk_file_filter_set_name (filter, name);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <a class="code" href="ev-utils_8c.html#a9af39ac454bfcf69118dcbb76f919eac">file_filter_add_mime_types</a> (format, filter, supported_filter);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        g_object_set_data (G_OBJECT(filter), <span class="stringliteral">&quot;pixbuf-format&quot;</span>, format);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        gtk_file_chooser_add_filter (chooser, filter);</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    g_slist_free (pixbuf_formats);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-utils_8c_source.html#l00298">298</a> of file <a class="el" href="ev-utils_8c_source.html">ev-utils.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;{</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    GSList *pixbuf_formats = NULL;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    GSList *iter;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    GtkFileFilter *filter, *supported_filter;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    supported_filter = gtk_file_filter_new ();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    gtk_file_filter_set_name (supported_filter, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Supported Image Files&quot;</span>));</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    gtk_file_chooser_add_filter (chooser, supported_filter);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    filter = gtk_file_filter_new ();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    gtk_file_filter_set_name (filter, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;All Files&quot;</span>));</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    gtk_file_filter_add_pattern (filter, <span class="stringliteral">&quot;*&quot;</span>);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    gtk_file_chooser_add_filter (chooser, filter);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    pixbuf_formats = gdk_pixbuf_get_formats ();</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">for</span> (iter = pixbuf_formats; iter; iter = iter-&gt;next) {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        GdkPixbufFormat *format = iter-&gt;data;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        gchar *<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span> (gdk_pixbuf_format_is_disabled (format) ||</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            !gdk_pixbuf_format_is_writable (format))</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        filter = gtk_file_filter_new ();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        name = gdk_pixbuf_format_get_description (format);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        gtk_file_filter_set_name (filter, name);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="ev-utils_8c.html#a9af39ac454bfcf69118dcbb76f919eac">file_filter_add_mime_types</a> (format, filter, supported_filter);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        g_object_set_data (G_OBJECT(filter), <span class="stringliteral">&quot;pixbuf-format&quot;</span>, format);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        gtk_file_chooser_add_filter (chooser, filter);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    g_slist_free (pixbuf_formats);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -744,18 +742,18 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-utils_8c_source.html#l00310">310</a> of file <a class="el" href="ev-utils_8c_source.html">ev-utils.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;{</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    gchar **mime_types;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    gint i;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    mime_types = gdk_pixbuf_format_get_mime_types (format);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">for</span> (i = 0; mime_types[i] != 0; i++) {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        gtk_file_filter_add_mime_type (filter, mime_types[i]);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        gtk_file_filter_add_mime_type (supported_filter, mime_types[i]);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    g_strfreev (mime_types);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-utils_8c_source.html#l00283">283</a> of file <a class="el" href="ev-utils_8c_source.html">ev-utils.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    gchar **mime_types;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    gint i;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    mime_types = gdk_pixbuf_format_get_mime_types (format);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">for</span> (i = 0; mime_types[i] != 0; i++) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        gtk_file_filter_add_mime_type (filter, mime_types[i]);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        gtk_file_filter_add_mime_type (supported_filter, mime_types[i]);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    g_strfreev (mime_types);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -839,37 +837,37 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-utils_8c_source.html#l00363">363</a> of file <a class="el" href="ev-utils_8c_source.html">ev-utils.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    GSList *pixbuf_formats = NULL;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    GSList *iter;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    pixbuf_formats = gdk_pixbuf_get_formats ();</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">for</span> (iter = pixbuf_formats; iter; iter = iter-&gt;next) {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        gchar **extension_list;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        GdkPixbufFormat *format = iter-&gt;data;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">if</span> (gdk_pixbuf_format_is_disabled (format) ||</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                !gdk_pixbuf_format_is_writable (format))</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            extension_list = gdk_pixbuf_format_get_extensions (format);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">for</span> (i = 0; extension_list[i] != 0; i++) {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">if</span> (g_str_has_suffix (uri, extension_list[i])) {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                    g_slist_free (pixbuf_formats);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                g_strfreev (extension_list);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <span class="keywordflow">return</span> format;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        g_strfreev (extension_list);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    g_slist_free (pixbuf_formats);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-utils_8c_source.html#l00336">336</a> of file <a class="el" href="ev-utils_8c_source.html">ev-utils.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    GSList *pixbuf_formats = NULL;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    GSList *iter;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    pixbuf_formats = gdk_pixbuf_get_formats ();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">for</span> (iter = pixbuf_formats; iter; iter = iter-&gt;next) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        gchar **extension_list;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        GdkPixbufFormat *format = iter-&gt;data;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span> (gdk_pixbuf_format_is_disabled (format) ||</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                !gdk_pixbuf_format_is_writable (format))</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            extension_list = gdk_pixbuf_format_get_extensions (format);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">for</span> (i = 0; extension_list[i] != 0; i++) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keywordflow">if</span> (g_str_has_suffix (uri, extension_list[i])) {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                    g_slist_free (pixbuf_formats);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                g_strfreev (extension_list);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                <span class="keywordflow">return</span> format;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        g_strfreev (extension_list);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    g_slist_free (pixbuf_formats);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -883,51 +881,13 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2d4812f95cfba8d1ce74d232dd759f8e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">gint get_num_monitors </td>
-          <td>(</td>
-          <td class="paramtype">GtkWindow *&#160;</td>
-          <td class="paramname"><em>window</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>get_num_monitors: Get the number of user monitors. : optional GtkWindow to look at.</p>
-<p>Returns: Number of monitors, -1 if uncertain situation (like multiple screens) </p>
-
-<p>Definition at line <a class="el" href="ev-utils_8c_source.html#l00289">289</a> of file <a class="el" href="ev-utils_8c_source.html">ev-utils.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    GdkDisplay *display; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    GdkScreen *screen;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    gint num_screen;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    display = gdk_display_get_default ();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    num_screen = gdk_display_get_n_screens (display);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span> (num_screen != 1)</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>)</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        screen = gtk_window_get_screen (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        screen = gdk_display_get_screen (display, 0);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">return</span> gdk_screen_get_n_monitors (screen);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-utils_8c.html">ev-utils.c</a></li>
-    <li class="footer">Generated on Mon Aug 4 2014 15:28:19 for Evince by
+    <li class="footer">Generated on Mon Aug 4 2014 17:19:16 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

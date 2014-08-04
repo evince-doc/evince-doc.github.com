@@ -1,7 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfaffea3eb595d69ac112bf4571903cd2e7":[6,0,0,0,2,0,21,96,3],
-"mdvi_8h.html#a86a3bde72a0a900dc9e5d95337603964":[6,0,0,0,2,0,21,77],
 "mdvi_8h.html#a8dd031ba7daa3be51e2fe2def9f3a462":[6,0,0,0,2,0,21,69],
 "mdvi_8h.html#a90d25f8a0d50a69c0912865f23285d18":[6,0,0,0,2,0,21,125],
 "mdvi_8h.html#a90f8e7745b98ecd80e38eab05d071b95":[6,0,0,0,2,0,21,51],
@@ -249,5 +247,7 @@ var NAVTREEINDEX25 =
 "structDragInfo.html#a169ed1fe9242d88ade1043a51106da8b":[5,0,307,4],
 "structDragInfo.html#a1ce46f64213be376accb0d737544b901":[5,0,307,0],
 "structDragInfo.html#a2ebab2c57acf1ce487039afcd1761c53":[5,0,307,3],
-"structDragInfo.html#a6087c9199ed5c1ed2fa9b02b05dd334e":[5,0,307,7]
+"structDragInfo.html#a6087c9199ed5c1ed2fa9b02b05dd334e":[5,0,307,7],
+"structDragInfo.html#aa8d13cc79d2f985b629250713868a2a3":[5,0,307,6],
+"structDragInfo.html#ad5d9125942f247055fc65052c507af58":[5,0,307,2]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"structDragInfo.html#aa8d13cc79d2f985b629250713868a2a3":[5,0,307,6],
-"structDragInfo.html#ad5d9125942f247055fc65052c507af58":[5,0,307,2],
 "structDragInfo.html#ae0c00368ebb010fbfc3b475e6fd8a03f":[5,0,307,1],
 "structDstring.html":[5,0,308],
 "structDstring.html#a52a5c2dc3102921ae01c219d27d2f00d":[5,0,308,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX26 =
 "struct__DviContext.html#a5c2f30ed6c2fbdce3c551b4a44e0e65f":[5,0,12,22],
 "struct__DviContext.html#a5d6a9b4b6f2149ebb91b2561d67a71da":[5,0,12,9],
 "struct__DviContext.html#a65df20fe8c148ffc1fee41dd6010eb9f":[5,0,12,31],
-"struct__DviContext.html#a6e5f8875b2a6ead3d849f8a9fc6db242":[5,0,12,4]
+"struct__DviContext.html#a6e5f8875b2a6ead3d849f8a9fc6db242":[5,0,12,4],
+"struct__DviContext.html#a87582ad9c3fc9fdc5883289abac499fe":[5,0,12,16],
+"struct__DviContext.html#aa1b2d54d6c6af15ccd7bdde9af11a678":[5,0,12,26]
 };

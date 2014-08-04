@@ -69,7 +69,6 @@ var searchData=
   ['get_5fmime_5ftype_5ffrom_5fdata',['get_mime_type_from_data',['../ev-file-helpers_8c.html#a3d18cebef235320393581c80ac4e08ef',1,'ev-file-helpers.c']]],
   ['get_5fmime_5ftype_5ffrom_5furi',['get_mime_type_from_uri',['../ev-file-helpers_8c.html#a7236eb9d6ff0a786b2e9e988a6122f6c',1,'ev-file-helpers.c']]],
   ['get_5fmtime',['get_mtime',['../util_8c.html#ac91ac5286a5b3a676905335425ead897',1,'util.c']]],
-  ['get_5fnum_5fmonitors',['get_num_monitors',['../ev-utils_8c.html#a2d4812f95cfba8d1ce74d232dd759f8e',1,'get_num_monitors(GtkWindow *window):&#160;ev-utils.c'],['../ev-utils_8h.html#a2d4812f95cfba8d1ce74d232dd759f8e',1,'get_num_monitors(GtkWindow *window):&#160;ev-utils.c']]],
   ['get_5fpacked',['get_packed',['../pk_8c.html#a22ec56dca8d1638aba9d03de00c172b0',1,'pk.c']]],
   ['get_5fpage_5frotation',['get_page_rotation',['../ev-spectre_8c.html#a5640c90fe7189431c4f7bab4b7b173a6',1,'ev-spectre.c']]],
   ['get_5fpage_5fsize_5farea_5fprepared_5fcb',['get_page_size_area_prepared_cb',['../comics-document_8c.html#a544eaa8b9a69cc5afdc5e6a4aee15fca',1,'comics-document.c']]],

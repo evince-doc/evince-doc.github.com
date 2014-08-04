@@ -108,7 +108,6 @@ var searchData=
   ['get_5fmime_5ftype_5ffrom_5furi',['get_mime_type_from_uri',['../ev-file-helpers_8c.html#a7236eb9d6ff0a786b2e9e988a6122f6c',1,'ev-file-helpers.c']]],
   ['get_5fmtime',['get_mtime',['../util_8c.html#ac91ac5286a5b3a676905335425ead897',1,'util.c']]],
   ['get_5fn_5fpages',['get_n_pages',['../struct__EvDocumentClass.html#a9564fb5a3e83bda242b7fcc7405a0972',1,'_EvDocumentClass']]],
-  ['get_5fnum_5fmonitors',['get_num_monitors',['../ev-utils_8c.html#a2d4812f95cfba8d1ce74d232dd759f8e',1,'get_num_monitors(GtkWindow *window):&#160;ev-utils.c'],['../ev-utils_8h.html#a2d4812f95cfba8d1ce74d232dd759f8e',1,'get_num_monitors(GtkWindow *window):&#160;ev-utils.c']]],
   ['get_5fpacked',['get_packed',['../pk_8c.html#a22ec56dca8d1638aba9d03de00c172b0',1,'pk.c']]],
   ['get_5fpage',['get_page',['../struct__EvDocumentClass.html#a6758efda10d71df9247167ce4371edb0',1,'_EvDocumentClass']]],
   ['get_5fpage_5fduration',['get_page_duration',['../struct__EvDocumentTransitionInterface.html#aa192955f19fa6746d6ac380b45c0e4bf',1,'_EvDocumentTransitionInterface']]],
