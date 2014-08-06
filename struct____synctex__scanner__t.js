@@ -6,7 +6,7 @@ var struct____synctex__scanner__t =
     [ "class", "struct____synctex__scanner__t.html#a5313be691a11d7f4c4dc3dfa18adb010", null ],
     [ "count", "struct____synctex__scanner__t.html#aa09bf8eca2508d26805b53e173ecfd65", null ],
     [ "file", "struct____synctex__scanner__t.html#ad22da22fb23f1112ed4a8c6e54c30a91", null ],
-    [ "flags", "struct____synctex__scanner__t.html#a124b2fe57eea280b7644c298a503f795", null ],
+    [ "flags", "struct____synctex__scanner__t.html#a68baadc201ab8d60784508201720e45e", null ],
     [ "has_parsed", "struct____synctex__scanner__t.html#a837f7c06752eaf446f5d3beb9e612ebd", null ],
     [ "input", "struct____synctex__scanner__t.html#a507ab21e198032457f2178c943384239", null ],
     [ "lists_of_friends", "struct____synctex__scanner__t.html#adf66d7da8f27c0afa90cc103dd17b619", null ],

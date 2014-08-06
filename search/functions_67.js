@@ -95,6 +95,7 @@ var searchData=
   ['get_5ftfm_5fchars',['get_tfm_chars',['../tfm_8c.html#ac6dc474c097e2904d0fe3683b262a4c6',1,'tfm.c']]],
   ['get_5ftolerance',['get_tolerance',['../ev-properties-view_8c.html#a2b2a86ee6d0eb8e8e34f4e0ac5aabeab',1,'ev-properties-view.c']]],
   ['get_5fwidget_5fpadding',['get_widget_padding',['../ev-loading-message_8c.html#aa39e96a21298ad722478930f0679c650',1,'ev-loading-message.c']]],
+  ['getproperty',['getProperty',['../classEvBrowserPlugin.html#aeac4c272cde54e96f673fe435ecf5762',1,'EvBrowserPlugin']]],
   ['getstring',['getstring',['../util_8c.html#a851bbe43ff1a2995af0aaa33e3e85944',1,'util.c']]],
   ['getword',['getword',['../util_8c.html#af089aaaccf87a8142502cb1ce45a4281',1,'util.c']]],
   ['gf_5ffont_5fget_5fglyph',['gf_font_get_glyph',['../gf_8c.html#a6b5a3c289ec091a664c192d560544fa3',1,'gf.c']]],
@@ -119,5 +120,8 @@ var searchData=
   ['goto_5ffith_5fdest',['goto_fith_dest',['../ev-view_8c.html#acebba7d8585074822921b0aedb041c48',1,'ev-view.c']]],
   ['goto_5ffitr_5fdest',['goto_fitr_dest',['../ev-view_8c.html#a1cfb06c90b2aab5810e561bfe5bfcbe1',1,'ev-view.c']]],
   ['goto_5ffitv_5fdest',['goto_fitv_dest',['../ev-view_8c.html#abfe13400507501f8d25feecdd80128e7',1,'ev-view.c']]],
-  ['goto_5fxyz_5fdest',['goto_xyz_dest',['../ev-view_8c.html#ab3be800ed7b64a61274c8f5ea40026bf',1,'ev-view.c']]]
+  ['goto_5fxyz_5fdest',['goto_xyz_dest',['../ev-view_8c.html#ab3be800ed7b64a61274c8f5ea40026bf',1,'ev-view.c']]],
+  ['gotonextpage',['goToNextPage',['../classEvBrowserPlugin.html#a2beddac257e6df4d302c5c844d733942',1,'EvBrowserPlugin::goToNextPage()'],['../EvBrowserPluginToolbar_8cpp.html#a687d55d04e4f7793c19fa61c909a15b0',1,'goToNextPage():&#160;EvBrowserPluginToolbar.cpp']]],
+  ['gotopage',['goToPage',['../classEvBrowserPlugin.html#aa6ccc9ab517725c66809e895abacfd11',1,'EvBrowserPlugin::goToPage(unsigned page)'],['../classEvBrowserPlugin.html#a765970b756d9c7667c6151586b5588cc',1,'EvBrowserPlugin::goToPage(const char *pageLabel)']]],
+  ['gotopreviouspage',['goToPreviousPage',['../classEvBrowserPlugin.html#a9f2752b769d57384867cf4837ecfb3bb',1,'EvBrowserPlugin::goToPreviousPage()'],['../EvBrowserPluginToolbar_8cpp.html#ab376685bc293e733707acdc7c93b54a4',1,'goToPreviousPage():&#160;EvBrowserPluginToolbar.cpp']]]
 ];

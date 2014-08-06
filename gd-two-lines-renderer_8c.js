@@ -1,9 +1,9 @@
 var gd_two_lines_renderer_8c =
 [
     [ "_GdTwoLinesRendererPrivate", "struct__GdTwoLinesRendererPrivate.html", "struct__GdTwoLinesRendererPrivate" ],
-    [ "PROP_TEXT_LINES", "gd-two-lines-renderer_8c.html#a61dadd085c1777f559549e05962b2c9eadd2402539dfa28dace76faca9fa48157", null ],
-    [ "PROP_LINE_TWO", "gd-two-lines-renderer_8c.html#a61dadd085c1777f559549e05962b2c9ea54a9f92f50cf66c59fc04930e3f3783c", null ],
-    [ "NUM_PROPERTIES", "gd-two-lines-renderer_8c.html#a61dadd085c1777f559549e05962b2c9eab51c2c36001e75f18da28963f1b13344", null ],
+    [ "PROP_TEXT_LINES", "gd-two-lines-renderer_8c.html#ac36f475ca5b446f4fde4c9b90bec77c8add2402539dfa28dace76faca9fa48157", null ],
+    [ "PROP_LINE_TWO", "gd-two-lines-renderer_8c.html#ac36f475ca5b446f4fde4c9b90bec77c8a54a9f92f50cf66c59fc04930e3f3783c", null ],
+    [ "NUM_PROPERTIES", "gd-two-lines-renderer_8c.html#ac36f475ca5b446f4fde4c9b90bec77c8ab51c2c36001e75f18da28963f1b13344", null ],
     [ "create_layout_with_attrs", "gd-two-lines-renderer_8c.html#a51bb66bf884ab3afafc572ffa2fb96cb", null ],
     [ "gd_two_lines_renderer_class_init", "gd-two-lines-renderer_8c.html#aa296ec55ac7e28ba5767b94f943c1a32", null ],
     [ "gd_two_lines_renderer_finalize", "gd-two-lines-renderer_8c.html#a744e59a421a9e60e62ba3267beb9cd66", null ],

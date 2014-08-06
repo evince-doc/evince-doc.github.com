@@ -8,6 +8,7 @@ var globals_type =
     [ "g", "globals_type_0x67.html", null ],
     [ "i", "globals_type_0x69.html", null ],
     [ "l", "globals_type_0x6c.html", null ],
+    [ "n", "globals_type_0x6e.html", null ],
     [ "p", "globals_type_0x70.html", null ],
     [ "s", "globals_type_0x73.html", null ],
     [ "t", "globals_type_0x74.html", null ],

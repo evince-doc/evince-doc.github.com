@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_5fclass',['_class',['../structNPObject.html#a2c62da9b2fbf0399ee207289c326541b',1,'NPObject']]],
   ['_5fgimp_5freserved1',['_gimp_reserved1',['../struct__GimpCellRendererToggleClass.html#a8b3f71003d9948e9bdf3b3d180c5651f',1,'_GimpCellRendererToggleClass']]],
   ['_5fgimp_5freserved2',['_gimp_reserved2',['../struct__GimpCellRendererToggleClass.html#a5cf97580e194362df055f48ee897ea6b',1,'_GimpCellRendererToggleClass']]],
   ['_5fgimp_5freserved3',['_gimp_reserved3',['../struct__GimpCellRendererToggleClass.html#a0c85f979a33fa871649269387fa8860e',1,'_GimpCellRendererToggleClass']]],

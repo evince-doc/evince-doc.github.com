@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
@@ -78,6 +79,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -108,6 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_0x78.html#index_x"><span>x</span></a></li>
       <li><a href="functions_0x79.html#index_y"><span>y</span></a></li>
       <li><a href="functions_0x7a.html#index_z"><span>z</span></a></li>
+      <li><a href="functions_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -162,6 +166,9 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 <li>last_y
 : <a class="el" href="structAutoScrollInfo.html#a2d0adc3f99560186b3f8ab30a1983062">AutoScrollInfo</a>
 </li>
+<li>lastmodified
+: <a class="el" href="struct__NPStream.html#aebb004f9e61be47fa87ffd114e18ba39">_NPStream</a>
+</li>
 <li>layer
 : <a class="el" href="struct__DviParams.html#a652321310308d5dd705087c6f1b2a6d9">_DviParams</a>
 </li>
@@ -180,6 +187,7 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 </li>
 <li>left
 : <a class="el" href="struct__TFMChar.html#a2892913ded9ead3cbe77f71200e771db">_TFMChar</a>
+, <a class="el" href="struct__NPRect.html#a1826abedd1c293aa024e4076bc82594a">_NPRect</a>
 , <a class="el" href="structsynctex__distances__t.html#ac03b2fb447b841c7cd1eaef882d9bb0e">synctex_distances_t</a>
 , <a class="el" href="structsynctex__offsets__t.html#a346cfb4972abd9c20f73f5f25a51dd72">synctex_offsets_t</a>
 , <a class="el" href="structsynctex__node__set__t.html#a819d6d3bef5b6a0606612f9618316695">synctex_node_set_t</a>
@@ -187,11 +195,13 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 </li>
 <li>len
 : <a class="el" href="structSaveToBufferData.html#a39e2b692f6450b72a4f57fca0108f5eb">SaveToBufferData</a>
+, <a class="el" href="struct__NPSavedData.html#aa23b15e0b958019ac7dc5bce5a96db6b">_NPSavedData</a>
 </li>
 <li>length
 : <a class="el" href="structBuffer.html#ab017cc01197319698565f0eab23148ea">Buffer</a>
 , <a class="el" href="structDstring.html#a66824d6165711a46519bea353f99a22c">Dstring</a>
 , <a class="el" href="struct__DviBuffer.html#a761c2621a19a919234f862c1da6ed1fd">_DviBuffer</a>
+, <a class="el" href="struct__NPByteRange.html#a028708d81ee826bd7b700ddc00bb4b0c">_NPByteRange</a>
 , <a class="el" href="struct____synctex__updater__t.html#ae675c2ae1794c2f15d7a492253bb38e5">__synctex_updater_t</a>
 </li>
 <li>level2
@@ -246,8 +256,8 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 : <a class="el" href="struct__LinkTitleData.html#a191159123329fc29e9f975ea5ee5dfb4">_LinkTitleData</a>
 </li>
 <li>links
-: <a class="el" href="struct__DjvuTextPage.html#a3c8a8312b18a47a83d4aba8644481f9f">_DjvuTextPage</a>
-, <a class="el" href="structtfmpool.html#a01ea26451d4308a5ce5713333f1a01de">tfmpool</a>
+: <a class="el" href="structtfmpool.html#a01ea26451d4308a5ce5713333f1a01de">tfmpool</a>
+, <a class="el" href="struct__DjvuTextPage.html#a3c8a8312b18a47a83d4aba8644481f9f">_DjvuTextPage</a>
 , <a class="el" href="struct__DviEncoding.html#a53c54be4fd5b12910936ab137f3ccf98">_DviEncoding</a>
 , <a class="el" href="struct__DviFontClass.html#a2947c8082faee040bee6b3285d68de42">_DviFontClass</a>
 , <a class="el" href="struct__DviFont.html#a210c2e889404061497ea2e17c826ac94">_DviFont</a>
@@ -311,8 +321,8 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 : <a class="el" href="struct__EvView.html#ae628b1d26c1d6ecd4f1fd513a6340b79">_EvView</a>
 </li>
 <li>loc
-: <a class="el" href="struct__DviFont.html#a7cffb6ea0d3009cddac2066753532505">_DviFont</a>
-, <a class="el" href="struct__TFMInfo.html#a278509b73d4b47186bcd76e688e12eb9">_TFMInfo</a>
+: <a class="el" href="struct__TFMInfo.html#a278509b73d4b47186bcd76e688e12eb9">_TFMInfo</a>
+, <a class="el" href="struct__DviFont.html#a7cffb6ea0d3009cddac2066753532505">_DviFont</a>
 </li>
 <li>local_uri
 : <a class="el" href="struct__EvWindowPrivate.html#a29deab483e36630fad2b53d386284c2a">_EvWindowPrivate</a>
@@ -329,13 +339,16 @@ $(document).ready(function(){initNavTree('functions_0x6c.html','');});
 <li>loop
 : <a class="el" href="structEvTimelinePriv.html#afaa3738c243fcf5ed16e7c636324ff8d">EvTimelinePriv</a>
 </li>
+<li>lostfocus
+: <a class="el" href="struct__NPPluginFuncs.html#a2c55b0340e00a495963d64b4301a4cb0">_NPPluginFuncs</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 5 2014 11:49:25 for Evince by
+    <li class="footer">Generated on Wed Aug 6 2014 11:52:29 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

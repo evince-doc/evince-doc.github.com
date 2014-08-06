@@ -1,6 +1,7 @@
 var dir_3280676015dea8927551146fc343f431 =
 [
     [ "backend", "dir_df8aa77a9614fb61c4d7f3b0249f87b4.html", "dir_df8aa77a9614fb61c4d7f3b0249f87b4" ],
+    [ "browser-plugin", "dir_4749fc399d07762408107c351fb51f81.html", "dir_4749fc399d07762408107c351fb51f81" ],
     [ "cut-n-paste", "dir_66798fc8659e7daf0e5247fc7505c5a3.html", "dir_66798fc8659e7daf0e5247fc7505c5a3" ],
     [ "libdocument", "dir_8afe8fb5d511b91003daab0546f13589.html", "dir_8afe8fb5d511b91003daab0546f13589" ],
     [ "libmisc", "dir_08b887202959c421d24191eda7d5b732.html", "dir_08b887202959c421d24191eda7d5b732" ],

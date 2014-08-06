@@ -2,13 +2,13 @@ var ev_zoom_action_8c =
 [
     [ "_EvZoomActionPrivate", "struct__EvZoomActionPrivate.html", "struct__EvZoomActionPrivate" ],
     [ "EPSILON", "ev-zoom-action_8c.html#a002b2f4894492820fe708b1b7e7c5e70", null ],
-    [ "ACTIVATED", "ev-zoom-action_8c.html#abe974f22edeef8189603ba75fd90ff3ca84b328a7ebdea4c8c4ed62e035ada28d", null ],
-    [ "LAST_SIGNAL", "ev-zoom-action_8c.html#abe974f22edeef8189603ba75fd90ff3ca0c34d85df8279641afad9e3c9b3a54ce", null ],
-    [ "PROP_0", "ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7ac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_DOCUMENT_MODEL", "ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a60c51d72a7cb10f001abe9f680cc4540", null ],
-    [ "PROP_MENU", "ev-zoom-action_8c.html#a1b70d876770ccff427513794d6b0b2a7a4eeefc644a379d0b127c793b061d3bbb", null ],
-    [ "ZOOM_MODES_SECTION", "ev-zoom-action_8c.html#a70ad55be767ca0a42c9150d24618e4caa0d30b21e4e7b05389aa162043b9c8ed8", null ],
-    [ "ZOOM_FREE_SECTION", "ev-zoom-action_8c.html#a70ad55be767ca0a42c9150d24618e4caaa7a396385561ae837263bd7488c638d6", null ],
+    [ "ACTIVATED", "ev-zoom-action_8c.html#a634f9f55e799f3052a34590f08100017a84b328a7ebdea4c8c4ed62e035ada28d", null ],
+    [ "LAST_SIGNAL", "ev-zoom-action_8c.html#a634f9f55e799f3052a34590f08100017a0c34d85df8279641afad9e3c9b3a54ce", null ],
+    [ "PROP_0", "ev-zoom-action_8c.html#ab39a415800ebd0d977c477376649649bac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_DOCUMENT_MODEL", "ev-zoom-action_8c.html#ab39a415800ebd0d977c477376649649ba60c51d72a7cb10f001abe9f680cc4540", null ],
+    [ "PROP_MENU", "ev-zoom-action_8c.html#ab39a415800ebd0d977c477376649649ba4eeefc644a379d0b127c793b061d3bbb", null ],
+    [ "ZOOM_MODES_SECTION", "ev-zoom-action_8c.html#ae33c78feb670de33d2abf21ec0624531a0d30b21e4e7b05389aa162043b9c8ed8", null ],
+    [ "ZOOM_FREE_SECTION", "ev-zoom-action_8c.html#ae33c78feb670de33d2abf21ec0624531aa7a396385561ae837263bd7488c638d6", null ],
     [ "document_changed_cb", "ev-zoom-action_8c.html#a46fdeaf31a61f962b9f74d5951afdcc9", null ],
     [ "entry_activated_cb", "ev-zoom-action_8c.html#afb4155355f06a275df1a1fbb572f4ce5", null ],
     [ "entry_icon_press_callback", "ev-zoom-action_8c.html#ae20f0d63784c9450fdc1327020e232ac", null ],
@@ -33,5 +33,5 @@ var ev_zoom_action_8c =
     [ "level", "ev-zoom-action_8c.html#a450c3ab9b94a4663caad892b7193b547", null ],
     [ "name", "ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d", null ],
     [ "signals", "ev-zoom-action_8c.html#a2789048f8a6d2a6541405994727738a1", null ],
-    [ "zoom_levels", "ev-zoom-action_8c.html#ae257fbb305a44b645d4f14d1edddd81c", null ]
+    [ "zoom_levels", "ev-zoom-action_8c.html#ab5c24524dd39344e49c901cb68b7017a", null ]
 ];

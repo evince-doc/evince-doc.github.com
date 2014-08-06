@@ -10,6 +10,7 @@ var searchData=
   ['open_5fcb',['open_cb',['../ev-previewer_8c.html#ad08e25532647867f7587175eff15d199',1,'ev-previewer.c']]],
   ['open_5fremote_5flink',['open_remote_link',['../ev-window_8c.html#a2c327737828fdb7540ea9e16b497faef',1,'ev-window.c']]],
   ['opendvi',['opendvi',['../dviread_8c.html#a182bfe28b827b43f1295ccf8fa573da2',1,'dviread.c']]],
+  ['operator_28_29',['operator()',['../structunique__gptr__deleter.html#a0c35dd48300a5af721e314628bb2b678',1,'unique_gptr_deleter']]],
   ['option_5fversion_5fcb',['option_version_cb',['../main_8c.html#aed4aa084a07ca3e29e4012020f34ec45',1,'main.c']]],
   ['override_5frestrictions_5fchanged',['override_restrictions_changed',['../ev-window_8c.html#a199abdea8fe68f7d49b345cbd101bf02',1,'ev-window.c']]]
 ];

@@ -1,11 +1,23 @@
 <map id="ev_document_model_get_continuous" name="ev_document_model_get_continuous">
-<area shape="rect" id="node2" href="$ev-document-model_8c.html#a8f53ac5f2b690a26b57b9a8864a5f297" title="ev_document_model_get\l_property" alt="" coords="224,5,395,49"/>
-<area shape="rect" id="node4" href="$ev-view_8c.html#a6bb9d51020e964ed082786109cd02180" title="ev_view_continuous\l_changed_cb" alt="" coords="239,73,380,117"/>
-<area shape="rect" id="node5" href="$ev-view_8h.html#a9fece6b2092f4e88751504f349f9d979" title="ev_view_set_model" alt="" coords="477,141,616,169"/>
-<area shape="rect" id="node9" href="$ev-window_8c.html#a97b5394edf1d3f88ab3d1b0d992fca15" title="ev_window_cmd_edit\l_save_settings" alt="" coords="235,193,384,237"/>
-<area shape="rect" id="node10" href="$ev-window_8c.html#ae25a19db4cd779eb859d4cbc50c7ada1" title="ev_window_continuous\l_changed_cb" alt="" coords="467,222,626,266"/>
-<area shape="rect" id="node3" href="$ev-document-model_8c.html#ad68766834ac20232045d0cae02f24c98" title="ev_document_model_class_init" alt="" coords="443,13,650,41"/>
-<area shape="rect" id="node6" href="$ev-previewer-window_8c.html#aa13a123777923612e896f056bdad0ebb" title="ev_previewer_window\l_constructor" alt="" coords="698,133,851,177"/>
-<area shape="rect" id="node8" href="$ev-window_8c.html#ae0b3f58d06ac06d49ccf65faa3ac7272" title="ev_window_init" alt="" coords="719,215,831,243"/>
-<area shape="rect" id="node7" href="$ev-previewer-window_8c.html#ad7144ec66230401f249164cb3325fe78" title="ev_previewer_window\l_class_init" alt="" coords="898,133,1051,177"/>
+<area shape="rect" id="node2" href="$classEvBrowserPlugin.html#a4ce74865cb791f2ceb9032a794d70c6f" title="EvBrowserPlugin::isContinuous" alt="" coords="507,57,714,85"/>
+<area shape="rect" id="node7" href="$classEvBrowserPlugin.html#a12d0775a9e8ceea76b44d387e363c141" title="EvBrowserPlugin::toggleContinuous" alt="" coords="224,141,458,169"/>
+<area shape="rect" id="node10" href="$ev-document-model_8c.html#a8f53ac5f2b690a26b57b9a8864a5f297" title="ev_document_model_get\l_property" alt="" coords="256,193,427,237"/>
+<area shape="rect" id="node12" href="$ev-view_8c.html#a6bb9d51020e964ed082786109cd02180" title="ev_view_continuous\l_changed_cb" alt="" coords="271,261,412,305"/>
+<area shape="rect" id="node13" href="$ev-view_8h.html#a9fece6b2092f4e88751504f349f9d979" title="ev_view_set_model" alt="" coords="541,329,680,357"/>
+<area shape="rect" id="node21" href="$ev-window_8c.html#a97b5394edf1d3f88ab3d1b0d992fca15" title="ev_window_cmd_edit\l_save_settings" alt="" coords="267,381,416,425"/>
+<area shape="rect" id="node22" href="$ev-window_8c.html#ae25a19db4cd779eb859d4cbc50c7ada1" title="ev_window_continuous\l_changed_cb" alt="" coords="262,449,421,493"/>
+<area shape="rect" id="node3" href="$classEvBrowserPlugin.html#aeac4c272cde54e96f673fe435ecf5762" title="EvBrowserPlugin::getProperty" alt="" coords="763,5,962,33"/>
+<area shape="rect" id="node4" href="$EvBrowserPluginToolbar_8cpp.html#a26da5ad5254c5366e778bee1e736e023" title="continuousChanged" alt="" coords="793,109,933,137"/>
+<area shape="rect" id="node5" href="$EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef" title="evBrowserPluginToolbarConstructed" alt="" coords="1011,109,1250,137"/>
+<area shape="rect" id="node6" href="$EvBrowserPluginToolbar_8cpp.html#aaa0f4d351846ede0f1b717104263bb62" title="ev_browser_plugin_toolbar\l_class_init" alt="" coords="1299,101,1480,145"/>
+<area shape="rect" id="node8" href="$classEvBrowserPlugin.html#a287bf9f279311c91d4c8c4472b7a8558" title="EvBrowserPlugin::invoke" alt="" coords="526,109,695,137"/>
+<area shape="rect" id="node9" href="$EvBrowserPluginToolbar_8cpp.html#a64983d82cfed6b8c06b78d2e0721d614" title="toggleContinuous" alt="" coords="548,161,673,189"/>
+<area shape="rect" id="node11" href="$ev-document-model_8c.html#ad68766834ac20232045d0cae02f24c98" title="ev_document_model_class_init" alt="" coords="507,213,714,241"/>
+<area shape="rect" id="node14" href="$classEvBrowserPlugin.html#a98a82dbda07a3c4d2dab9907bedfb46e" title="EvBrowserPlugin::initialize" alt="" coords="774,298,951,326"/>
+<area shape="rect" id="node18" href="$ev-previewer-window_8c.html#aa13a123777923612e896f056bdad0ebb" title="ev_previewer_window\l_constructor" alt="" coords="786,350,939,394"/>
+<area shape="rect" id="node20" href="$ev-window_8c.html#ae0b3f58d06ac06d49ccf65faa3ac7272" title="ev_window_init" alt="" coords="807,437,919,465"/>
+<area shape="rect" id="node15" href="$npapi_8h.html#a777d05edd2b732666f949f37a19cead7" title="NPP_New" alt="" coords="1089,298,1172,326"/>
+<area shape="rect" id="node16" href="$EvBrowserPluginMain_8cpp.html#abde3fe97b93cef0a9279840ca677f999" title="initializePluginFuncs" alt="" coords="1318,298,1460,326"/>
+<area shape="rect" id="node17" href="$EvBrowserPluginMain_8cpp.html#a6625e6bc3b97cbbc35a9520608ef02e6" title="NP_Initialize" alt="" coords="1528,298,1624,326"/>
+<area shape="rect" id="node19" href="$ev-previewer-window_8c.html#ad7144ec66230401f249164cb3325fe78" title="ev_previewer_window\l_class_init" alt="" coords="1054,350,1207,394"/>
 </map>

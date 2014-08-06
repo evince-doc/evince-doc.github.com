@@ -1,8 +1,8 @@
 var ev_toolbar_8c =
 [
     [ "_EvToolbarPrivate", "struct__EvToolbarPrivate.html", "struct__EvToolbarPrivate" ],
-    [ "PROP_0", "ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7ac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_WINDOW", "ev-toolbar_8c.html#a79e9f285d34216706a748fd7ba8941b7a5444259366dcb8d3b0e146507c9e0174", null ],
+    [ "PROP_0", "ev-toolbar_8c.html#aa57e16cd48de3b9a989056ff8df26f84ac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_WINDOW", "ev-toolbar_8c.html#aa57e16cd48de3b9a989056ff8df26f84a5444259366dcb8d3b0e146507c9e0174", null ],
     [ "ev_toolbar_action_menu_popup", "ev-toolbar_8c.html#ad3558a4ca391039ded68227fb981d03e", null ],
     [ "ev_toolbar_bookmarks_menu_model_changed", "ev-toolbar_8c.html#a352a4112395986bafc3b5850943bd4a4", null ],
     [ "ev_toolbar_class_init", "ev-toolbar_8c.html#aee274fa46dd84327678b79ccc23286e8", null ],

@@ -1,7 +1,8 @@
 var searchData=
 [
   ['object',['object',['../struct__PSDocument.html#a3268e688e297dfef9f4cfdfd2a1b54e4',1,'_PSDocument::object()'],['../struct__XPSDocument.html#a425677e893d74433345faa815ebb96c7',1,'_XPSDocument::object()']]],
-  ['offset',['offset',['../struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3',1,'_ComicsDocument::offset()'],['../structComicBookDecompressCommand.html#a303fd2b26739aef585cc953ceaa1b7cc',1,'ComicBookDecompressCommand::offset()'],['../struct__DviEncoding.html#a6caa50f1f820e702bcc8018a915a4658',1,'_DviEncoding::offset()'],['../struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff',1,'_DviFontChar::offset()']]],
+  ['objectvalue',['objectValue',['../struct__NPVariant.html#a061fbdaf1fdb181af2329408edd0aa74',1,'_NPVariant']]],
+  ['offset',['offset',['../struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3',1,'_ComicsDocument::offset()'],['../structComicBookDecompressCommand.html#a303fd2b26739aef585cc953ceaa1b7cc',1,'ComicBookDecompressCommand::offset()'],['../struct__DviEncoding.html#a6caa50f1f820e702bcc8018a915a4658',1,'_DviEncoding::offset()'],['../struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff',1,'_DviFontChar::offset()'],['../struct__NPByteRange.html#aeedbe57bcd478d8a710389e38d8b5ed4',1,'_NPByteRange::offset()']]],
   ['ofm_5ffont_5finfo',['ofm_font_info',['../fonts_8c.html#af968bf7a06055a4223f9384ddf7abb99',1,'ofm_font_info():&#160;tfm.c'],['../tfm_8c.html#af968bf7a06055a4223f9384ddf7abb99',1,'ofm_font_info():&#160;tfm.c']]],
   ['op',['op',['../struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158',1,'_EvPrintOperationPrint']]],
   ['opacity',['opacity',['../structEvAnnotationMarkupProps.html#a6fe576ba32c70ff4ddc49f11a26cfe9d',1,'EvAnnotationMarkupProps::opacity()'],['../struct__EvAnnotationPropertiesDialog.html#a9568abfa97b257492c14418a7137d3fb',1,'_EvAnnotationPropertiesDialog::opacity()']]],

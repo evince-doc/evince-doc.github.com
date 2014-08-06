@@ -168,11 +168,11 @@ $(document).ready(function(){initNavTree('ev-recent-view_8c_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span>};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173af4adf678107ef39e690a65618cdc19ee">   63</a></span>&#160;        <a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>,</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173a83a9065d3886a8f5086b1873410deb21">   64</a></span>&#160;        <a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173a83a9065d3886a8f5086b1873410deb21">NUM_SIGNALS</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#ade9ca5088d171ad20b4c237f1c2d6260af4adf678107ef39e690a65618cdc19ee">   63</a></span>&#160;        <a class="code" href="ev-recent-view_8c.html#ade9ca5088d171ad20b4c237f1c2d6260af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a83a9065d3886a8f5086b1873410deb21">   64</a></span>&#160;        <a class="code" href="ev-recent-view_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a83a9065d3886a8f5086b1873410deb21">NUM_SIGNALS</a></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">   67</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173a83a9065d3886a8f5086b1873410deb21">NUM_SIGNALS</a>] = { 0, };</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">   67</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a83a9065d3886a8f5086b1873410deb21">NUM_SIGNALS</a>] = { 0, };</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="gimpcellrenderertoggle_8c.html#a5147f916416de34ae15ae07402203071">G_DEFINE_TYPE</a> (<a class="code" href="ev-recent-view_8h.html#a1bbb1ca1bed2334653dcc03c9cbdc8c8">EvRecentView</a>, ev_recent_view, GTK_TYPE_SCROLLED_WINDOW)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
@@ -360,7 +360,7 @@ $(document).ready(function(){initNavTree('ev-recent-view_8c_source.html','');});
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        gtk_tree_model_get (GTK_TREE_MODEL (priv-&gt;<a class="code" href="struct__EvRecentViewPrivate.html#a8d05254c7d2ac595987be6de0d3dddf3">model</a>), &amp;iter,</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                            <a class="code" href="ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747ccafc4cc98501f5ea0ec586da13c7c2aff3">EV_RECENT_VIEW_COLUMN_URI</a>, &amp;uri,</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                            -1);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        g_signal_emit (ev_recent_view, <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>], 0, uri);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        g_signal_emit (ev_recent_view, <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#ade9ca5088d171ad20b4c237f1c2d6260af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>], 0, uri);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        g_free (uri);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
@@ -947,7 +947,7 @@ $(document).ready(function(){initNavTree('ev-recent-view_8c_source.html','');});
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        g_object_class-&gt;constructed = <a class="code" href="ev-recent-view_8c.html#ad4d708830a20754da1bc96179fb712ed">ev_recent_view_constructed</a>;</div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        g_object_class-&gt;dispose = <a class="code" href="ev-recent-view_8c.html#ad82eded7fba970afb3571d5057aa7c8b">ev_recent_view_dispose</a>;</div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>] =</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <a class="code" href="ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699">signals</a>[<a class="code" href="ev-recent-view_8c.html#ade9ca5088d171ad20b4c237f1c2d6260af4adf678107ef39e690a65618cdc19ee">ITEM_ACTIVATED</a>] =</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                  g_signal_new (<span class="stringliteral">&quot;item-activated&quot;</span>,</div>
 <div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                                <a class="code" href="ev-recent-view_8h.html#ae673b121d0dcdedc3eeb586855dfb3c4">EV_TYPE_RECENT_VIEW</a>,</div>
 <div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                                G_SIGNAL_RUN_LAST,</div>
@@ -970,7 +970,7 @@ $(document).ready(function(){initNavTree('ev-recent-view_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-recent-view_8c.html">ev-recent-view.c</a></li>
-    <li class="footer">Generated on Tue Aug 5 2014 11:49:17 for Evince by
+    <li class="footer">Generated on Wed Aug 6 2014 11:52:19 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

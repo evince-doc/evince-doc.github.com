@@ -1,7 +1,9 @@
 var searchData=
 [
   ['object',['object',['../struct__PSDocument.html#a3268e688e297dfef9f4cfdfd2a1b54e4',1,'_PSDocument::object()'],['../struct__XPSDocument.html#a425677e893d74433345faa815ebb96c7',1,'_XPSDocument::object()']]],
-  ['offset',['offset',['../struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3',1,'_ComicsDocument::offset()'],['../structComicBookDecompressCommand.html#a303fd2b26739aef585cc953ceaa1b7cc',1,'ComicBookDecompressCommand::offset()'],['../struct__DviEncoding.html#a6caa50f1f820e702bcc8018a915a4658',1,'_DviEncoding::offset()'],['../struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff',1,'_DviFontChar::offset()']]],
+  ['object_5fto_5fnpvariant',['OBJECT_TO_NPVARIANT',['../npruntime_8h.html#adbc4e4813e741dfe32cf617ad16bc79f',1,'npruntime.h']]],
+  ['objectvalue',['objectValue',['../struct__NPVariant.html#a061fbdaf1fdb181af2329408edd0aa74',1,'_NPVariant']]],
+  ['offset',['offset',['../struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3',1,'_ComicsDocument::offset()'],['../structComicBookDecompressCommand.html#a303fd2b26739aef585cc953ceaa1b7cc',1,'ComicBookDecompressCommand::offset()'],['../struct__DviEncoding.html#a6caa50f1f820e702bcc8018a915a4658',1,'_DviEncoding::offset()'],['../struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff',1,'_DviFontChar::offset()'],['../struct__NPByteRange.html#aeedbe57bcd478d8a710389e38d8b5ed4',1,'_NPByteRange::offset()']]],
   ['offset_5f7z',['OFFSET_7Z',['../comics-document_8c.html#a8b4f48bd603fb40d124f75362ee0d1ad',1,'comics-document.c']]],
   ['offset_5fzip',['OFFSET_ZIP',['../comics-document_8c.html#a9b93cb69667335492534f4368920ed6b',1,'comics-document.c']]],
   ['ofm1_5fload_5ffile',['ofm1_load_file',['../tfmfile_8c.html#a8ade1e0b46fbb9772b4f3c2b7ace9321',1,'tfmfile.c']]],
@@ -19,6 +21,7 @@ var searchData=
   ['open_5fcb',['open_cb',['../ev-previewer_8c.html#ad08e25532647867f7587175eff15d199',1,'ev-previewer.c']]],
   ['open_5fremote_5flink',['open_remote_link',['../ev-window_8c.html#a2c327737828fdb7540ea9e16b497faef',1,'ev-window.c']]],
   ['opendvi',['opendvi',['../dviread_8c.html#a182bfe28b827b43f1295ccf8fa573da2',1,'dviread.c']]],
+  ['operator_28_29',['operator()',['../structunique__gptr__deleter.html#a0c35dd48300a5af721e314628bb2b678',1,'unique_gptr_deleter']]],
   ['option_5fversion_5fcb',['option_version_cb',['../main_8c.html#aed4aa084a07ca3e29e4012020f34ec45',1,'main.c']]],
   ['options',['options',['../struct__EvJobFind.html#a3e273b1de436e529202535f1db807787',1,'_EvJobFind']]],
   ['opts',['opts',['../struct__DjvuDocument.html#a34943233231251f9da01c851cfaff486',1,'_DjvuDocument']]],
@@ -28,6 +31,7 @@ var searchData=
   ['orig_5fx',['orig_x',['../struct__EvAnnotationWindow.html#affe739d6e927893042e54aa1ec75d4f9',1,'_EvAnnotationWindow::orig_x()'],['../structEvViewWindowChild.html#aa2a7acd4cfec53556651dd3e0220d9be',1,'EvViewWindowChild::orig_x()']]],
   ['orig_5fy',['orig_y',['../struct__EvAnnotationWindow.html#ac76616380599ba4ce8606c076c42956c',1,'_EvAnnotationWindow::orig_y()'],['../structEvViewWindowChild.html#a335630ed88867cd532ae2e2cd5de88ab',1,'EvViewWindowChild::orig_y()']]],
   ['origin_5fsurface',['origin_surface',['../structEvTransitionAnimationPriv.html#afb72fbe36912a5eb2c4f1477d7005b56',1,'EvTransitionAnimationPriv']]],
+  ['oscall',['OSCALL',['../npfunctions_8h.html#a65d1cc61b816ca66e55e0704ee94eb9d',1,'npfunctions.h']]],
   ['output',['output',['../struct____synctex__scanner__t.html#a0c31d194ab4bab987d0d93719731856e',1,'__synctex_scanner_t::output()'],['../structAsyncData.html#adb33636d4a23c2eac250543ad6b0b6ee',1,'AsyncData::output()']]],
   ['output_5ffmt',['output_fmt',['../struct____synctex__scanner__t.html#a6b47843cf9ba4e354ec770fcf3224383',1,'__synctex_scanner_t']]],
   ['override_5frestrictions_5fchanged',['override_restrictions_changed',['../ev-window_8c.html#a199abdea8fe68f7d49b345cbd101bf02',1,'ev-window.c']]],

@@ -2,6 +2,8 @@ var searchData=
 [
   ['epsfbox',['EpsfBox',['../structEpsfBox.html',1,'']]],
   ['evannotationmarkupprops',['EvAnnotationMarkupProps',['../structEvAnnotationMarkupProps.html',1,'']]],
+  ['evbrowserplugin',['EvBrowserPlugin',['../classEvBrowserPlugin.html',1,'']]],
+  ['evbrowserpluginclass',['EvBrowserPluginClass',['../structEvBrowserPluginClass.html',1,'']]],
   ['evdoc',['EvDoc',['../structEvDoc.html',1,'']]],
   ['evprintrange',['EvPrintRange',['../structEvPrintRange.html',1,'']]],
   ['evstockicon',['EvStockIcon',['../structEvStockIcon.html',1,'']]],

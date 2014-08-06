@@ -18,5 +18,6 @@ var searchData=
   ['bmbit',['BMBIT',['../bitmap_8h.html#a00e6d3949d704567c071adab2b2f1a42',1,'bitmap.h']]],
   ['bookmarks_5fsidebar_5fid',['BOOKMARKS_SIDEBAR_ID',['../ev-window_8c.html#aa03ce28f34fdb611325155eb2d424d0a',1,'ev-window.c']]],
   ['bool',['BOOL',['../afmparse_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa',1,'afmparse.h']]],
+  ['boolean_5fto_5fnpvariant',['BOOLEAN_TO_NPVARIANT',['../npruntime_8h.html#aaa77ec2245aaf776f3e7a1e34b6607a0',1,'npruntime.h']]],
   ['buffer_5fsize',['BUFFER_SIZE',['../ev-file-helpers_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'ev-file-helpers.c']]]
 ];

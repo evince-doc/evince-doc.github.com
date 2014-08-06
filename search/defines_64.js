@@ -36,6 +36,7 @@ var searchData=
   ['djvu_5fis_5fdocument',['DJVU_IS_DOCUMENT',['../djvu-document_8h.html#a2e368454fb28d0ecf3fd874b7dbeefda',1,'djvu-document.h']]],
   ['djvu_5ftype_5fdocument',['DJVU_TYPE_DOCUMENT',['../djvu-document_8h.html#a09f24030c1a563ca95cf7ed265b4d280',1,'djvu-document.h']]],
   ['dobreak',['DOBREAK',['../tiff2ps_8c.html#ad2dcbbea6148cd90f071414a37c29449',1,'tiff2ps.c']]],
+  ['double_5fto_5fnpvariant',['DOUBLE_TO_NPVARIANT',['../npruntime_8h.html#a5c15076ba02ebc90777684e9b7646a76',1,'npruntime.h']]],
   ['drag_5fhistory',['DRAG_HISTORY',['../ev-view-private_8h.html#a6d7420fbc2a33a8b7eaaae40e844cba5',1,'ev-view-private.h']]],
   ['dround',['DROUND',['../fontmap_8c.html#a96d0fd32d42598d29e8f156a056bfe48',1,'fontmap.c']]],
   ['dsget1',['dsget1',['../dviread_8c.html#a48d92763097afb7bf677cdaae4c3952e',1,'dviread.c']]],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['activate_5fcb',['activate_cb',['../ev-page-action-widget_8c.html#a764421a80b236735532280a0a47a8f80',1,'activate_cb(EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-previewer_8c.html#a1d2321834e50a529e189214d55a1f804',1,'activate_cb(GApplication *application, gpointer user_data):&#160;ev-previewer.c']]],
   ['activate_5flink_5fcb',['activate_link_cb',['../ev-page-action_8c.html#af308128d6acffedf844f1d8d46b62085',1,'activate_link_cb(EvPageActionWidget *proxy, EvLink *link, EvPageAction *action):&#160;ev-page-action.c'],['../ev-window_8c.html#a107409da3119404be26e1e1a84e1f40d',1,'activate_link_cb(GObject *object, EvLink *link, EvWindow *window):&#160;ev-window.c']]],
+  ['activatelink',['activateLink',['../classEvBrowserPlugin.html#a8b4c429ae5abf0f0a138209e58cef33f',1,'EvBrowserPlugin::activateLink()'],['../EvBrowserPluginToolbar_8cpp.html#a0ebcf02281ff339f6186903bcf62ad3d',1,'activateLink():&#160;EvBrowserPluginToolbar.cpp']]],
   ['add_5fattribute',['add_attribute',['../ev-page-accessible_8c.html#a9976746270c77e42447106448d9c4b61',1,'ev-page-accessible.c']]],
   ['add_5fchange_5fpage_5fbinding_5fkeypad',['add_change_page_binding_keypad',['../ev-view-presentation_8c.html#a756f5406e5b6f7c9042970861ebd064a',1,'ev-view-presentation.c']]],
   ['add_5fjob',['add_job',['../ev-pixbuf-cache_8c.html#ae22d5fb5273a58e1da3dd6a62e12704f',1,'ev-pixbuf-cache.c']]],
@@ -13,6 +14,7 @@ var searchData=
   ['add_5fscroll_5fbinding_5fkeypad',['add_scroll_binding_keypad',['../ev-view_8c.html#aee0a2f46d199791b6e65e57e69e01d9d',1,'ev-view.c']]],
   ['add_5fthumbnail_5fto_5fmodel',['add_thumbnail_to_model',['../ev-recent-view_8c.html#a71c112bfe637202a502b2800dd973efa',1,'ev-recent-view.c']]],
   ['adjustment_5fchanged_5fcb',['adjustment_changed_cb',['../ev-sidebar-thumbnails_8c.html#ab1741c2ebac19c67519bbaecb153de0f',1,'ev-sidebar-thumbnails.c']]],
+  ['allocate',['allocate',['../classEvBrowserPlugin.html#a14943665274f8d18e5711dddc32a4c44',1,'EvBrowserPlugin']]],
   ['annotation_5fwindow_5fclosed',['annotation_window_closed',['../ev-view_8c.html#aac8b6f00e32b258568546293557e9009',1,'ev-view.c']]],
   ['annotation_5fwindow_5fgrab_5ffocus',['annotation_window_grab_focus',['../ev-view_8c.html#a478449df5ac4e09666f6286245d4cc61',1,'ev-view.c']]],
   ['annotation_5fwindow_5fmoved',['annotation_window_moved',['../ev-view_8c.html#a579c1d72cea319957cfba583777f5234',1,'ev-view.c']]],

@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
@@ -78,6 +79,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -108,6 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_0x78.html#index_x"><span>x</span></a></li>
       <li><a href="functions_0x79.html#index_y"><span>y</span></a></li>
       <li><a href="functions_0x7a.html#index_z"><span>z</span></a></li>
+      <li><a href="functions_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -160,17 +164,26 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 , <a class="el" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">_DviGlyph</a>
 , <a class="el" href="structBITMAP.html#a128c882f02a87946321988051e0fd48a">BITMAP</a>
 , <a class="el" href="struct__DviBuffer.html#abaeaab555bc2de292b7530bfd1db1169">_DviBuffer</a>
-, <a class="el" href="struct__EvAttachmentPrivate.html#ae3ea4eac57a90d14e012fa1e8fbc0e48">_EvAttachmentPrivate</a>
+, <a class="el" href="struct__NPAsyncSurface.html#acc3cd06494f2ab58aabfcde0b061a30f">_NPAsyncSurface</a>
 , <a class="el" href="structBuffer.html#aeec1fd4af0ddf6765b0187466d4361b8">Buffer</a>
+, <a class="el" href="struct__NPImageExpose.html#a4261d6867119c1ffe0bd4fe44cbaa4d0">_NPImageExpose</a>
+, <a class="el" href="struct__EvAttachmentPrivate.html#ae3ea4eac57a90d14e012fa1e8fbc0e48">_EvAttachmentPrivate</a>
+, <a class="el" href="structDstring.html#a52a5c2dc3102921ae01c219d27d2f00d">Dstring</a>
 , <a class="el" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">_EvMapping</a>
 , <a class="el" href="structConvFilter.html#a350ef139129a4a5cfe088bfa5715b53f">ConvFilter</a>
-, <a class="el" href="structDstring.html#a52a5c2dc3102921ae01c219d27d2f00d">Dstring</a>
 </li>
 <li>data_destroy_func
 : <a class="el" href="struct__EvMappingList.html#af5b32123a4fee53a08ba3278d85b7f2f">_EvMappingList</a>
 </li>
+<li>dataSize
+: <a class="el" href="struct__NPImageExpose.html#a38e94219212019a5e5f3fb87b6634e82">_NPImageExpose</a>
+</li>
 <li>dbus_name
 : <a class="el" href="structEvDoc.html#ab68d091cd39ce70ec40679f25e7752e0">EvDoc</a>
+</li>
+<li>deallocate
+: <a class="el" href="structNPClass.html#a9d6f7068e17c4788fc7057c4c96f0732">NPClass</a>
+, <a class="el" href="classEvBrowserPlugin.html#a8b7109c013ee7b58967957d1ddb9c5a4">EvBrowserPlugin</a>
 </li>
 <li>decompress_tmp
 : <a class="el" href="struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba">_ComicsDocument</a>
@@ -199,8 +212,9 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 , <a class="el" href="struct__DviParams.html#a11939157ccfa45bca746415cbf26a9a7">_DviParams</a>
 </li>
 <li>depth
-: <a class="el" href="struct__TFMChar.html#a21eec4160d1d3e18aa833027e756ae9f">_TFMChar</a>
-, <a class="el" href="struct__DviContext.html#ac1432d77fb6d86b009d81b2aaf48e63b">_DviContext</a>
+: <a class="el" href="struct__DviContext.html#ac1432d77fb6d86b009d81b2aaf48e63b">_DviContext</a>
+, <a class="el" href="struct__NPImageExpose.html#aaef2311fadc6309c258e045087706697">_NPImageExpose</a>
+, <a class="el" href="struct__TFMChar.html#a21eec4160d1d3e18aa833027e756ae9f">_TFMChar</a>
 </li>
 <li>desc
 : <a class="el" href="structfontinfo.html#af23c07cdc2e95c24affa67801ca4f559">fontinfo</a>
@@ -211,6 +225,9 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 </li>
 <li>description
 : <a class="el" href="struct__EvAttachmentPrivate.html#a47341005510f8c3985fbcf81060da621">_EvAttachmentPrivate</a>
+</li>
+<li>descriptionString()
+: <a class="el" href="classEvBrowserPlugin.html#a9efa83273eb8401568f844785597d136">EvBrowserPlugin</a>
 </li>
 <li>design
 : <a class="el" href="struct__TFMInfo.html#aff69ca14390a43d53a837cd71780657b">_TFMInfo</a>
@@ -223,6 +240,16 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 <li>dest_surface
 : <a class="el" href="structEvTransitionAnimationPriv.html#ad929163d8cc0ac0e9f222398a00fc164">EvTransitionAnimationPriv</a>
 </li>
+<li>destroy
+: <a class="el" href="struct__NPPluginFuncs.html#a4ac404eacf1b7df7d7d56893833af018">_NPPluginFuncs</a>
+</li>
+<li>destroyStream()
+: <a class="el" href="classEvBrowserPlugin.html#a71d0e1df17cd270a1781b987a6517976">EvBrowserPlugin</a>
+</li>
+<li>destroystream
+: <a class="el" href="struct__NPPluginFuncs.html#a42e0e0834c9ec36eecd4a6de950b5461">_NPPluginFuncs</a>
+, <a class="el" href="struct__NPNetscapeFuncs.html#a20ef54eef1a7704dcc5554aa0e0034a5">_NPNetscapeFuncs</a>
+</li>
 <li>dev_destroy
 : <a class="el" href="struct__DviDevice.html#abd5d658e20070a6471e8e2a8476eaf5f">_DviDevice</a>
 </li>
@@ -234,6 +261,9 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 </li>
 <li>device_scale
 : <a class="el" href="struct__CacheJobInfo.html#a7e79de464a690aad2fb8c5c2839ff091">_CacheJobInfo</a>
+</li>
+<li>didComposite
+: <a class="el" href="struct__NPPluginFuncs.html#a779bb7eeafcdf26b2236df943751da5d">_NPPluginFuncs</a>
 </li>
 <li>dir
 : <a class="el" href="struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488">_ComicsDocument</a>
@@ -262,9 +292,9 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 , <a class="el" href="struct__XPSDocument.html#a0214919fc6c548cd32555b4b8a600d98">_XPSDocument</a>
 </li>
 <li>doc_model
-: <a class="el" href="struct__EvPageActionWidget.html#a5acd35fa19d68deaea892b4f186d757b">_EvPageActionWidget</a>
-, <a class="el" href="struct__EvPageActionPrivate.html#a650ba0dd90093e341a8afbed36383a06">_EvPageActionPrivate</a>
+: <a class="el" href="struct__EvPageActionPrivate.html#a650ba0dd90093e341a8afbed36383a06">_EvPageActionPrivate</a>
 , <a class="el" href="struct__EvSidebarLinksPrivate.html#a9fe956ba44bba7d247af95997de0b674">_EvSidebarLinksPrivate</a>
+, <a class="el" href="struct__EvPageActionWidget.html#a5acd35fa19d68deaea892b4f186d757b">_EvPageActionWidget</a>
 </li>
 <li>doc_rect
 : <a class="el" href="structEvViewChild.html#aae0cb80c307b47f211d056e942b12b7d">EvViewChild</a>
@@ -277,28 +307,28 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 </li>
 <li>document
 : <a class="el" href="struct__EvSidebarLinksPrivate.html#ad8604082bb9264eb5a57f4947dd4c3e7">_EvSidebarLinksPrivate</a>
-, <a class="el" href="struct__EvViewPresentation.html#aacbc29385e061a1daa204dae1ed4539b">_EvViewPresentation</a>
-, <a class="el" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">_EvView</a>
-, <a class="el" href="struct__EvPreviewerWindow.html#a804a8cf3324c7cf351d5d1be1a031125">_EvPreviewerWindow</a>
-, <a class="el" href="struct__EvPropertiesFonts.html#a4d8310e61152ed1704546454c48f6671">_EvPropertiesFonts</a>
-, <a class="el" href="struct__EvSidebarAnnotationsPrivate.html#a90c754e358d7cec9a2ee9cf7f1a40369">_EvSidebarAnnotationsPrivate</a>
-, <a class="el" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">_EvSidebarLayersPrivate</a>
-, <a class="el" href="struct__EvPropertiesDialog.html#ae3103ab7e7da1a5875b2a49d65e2d1cd">_EvPropertiesDialog</a>
-, <a class="el" href="struct__EvSidebarThumbnailsPrivate.html#a6489016792c26922f3b03ba0ad764d19">_EvSidebarThumbnailsPrivate</a>
-, <a class="el" href="struct__EvWindowPrivate.html#acaaf50698739bf1fca0b2fe96f79e864">_EvWindowPrivate</a>
-, <a class="el" href="struct__EvPrintOperation.html#a7f758372c3aaaa676ef707646732f336">_EvPrintOperation</a>
-, <a class="el" href="struct__EvDocumentModel.html#a4a83fccfb4a8a9e595a93e05edb752f7">_EvDocumentModel</a>
-, <a class="el" href="struct__EvPageCache.html#ad6ea515fd7488d2a88e153b2ce6cfbb6">_EvPageCache</a>
-, <a class="el" href="struct__EvWindowTitle.html#aa32529b87dfc58ee523221ecbd55a1dd">_EvWindowTitle</a>
 , <a class="el" href="struct__PdfDocument.html#a78c5b17a5a22f9dc64a889999c414a06">_PdfDocument</a>
 , <a class="el" href="struct__EvPageActionWidget.html#a3186127c5570568ce424c15ee85d82e6">_EvPageActionWidget</a>
 , <a class="el" href="structAsyncData.html#abd83721321d13fe9b9e3f94ec974b75e">AsyncData</a>
 , <a class="el" href="struct__EvJob.html#ae7de0863fef7b4db03d3fee85d6aa3eb">_EvJob</a>
+, <a class="el" href="struct__EvPreviewerWindow.html#a804a8cf3324c7cf351d5d1be1a031125">_EvPreviewerWindow</a>
+, <a class="el" href="struct__EvPageCache.html#ad6ea515fd7488d2a88e153b2ce6cfbb6">_EvPageCache</a>
 , <a class="el" href="struct__EvPixbufCache.html#a77d204c741eabf001847edd5ecf6a102">_EvPixbufCache</a>
+, <a class="el" href="struct__EvWindowTitle.html#aa32529b87dfc58ee523221ecbd55a1dd">_EvWindowTitle</a>
+, <a class="el" href="struct__EvViewPresentation.html#aacbc29385e061a1daa204dae1ed4539b">_EvViewPresentation</a>
+, <a class="el" href="struct__EvWindowPrivate.html#acaaf50698739bf1fca0b2fe96f79e864">_EvWindowPrivate</a>
+, <a class="el" href="struct__EvPrintOperation.html#a7f758372c3aaaa676ef707646732f336">_EvPrintOperation</a>
+, <a class="el" href="struct__EvPropertiesFonts.html#a4d8310e61152ed1704546454c48f6671">_EvPropertiesFonts</a>
+, <a class="el" href="struct__EvSidebarAnnotationsPrivate.html#a90c754e358d7cec9a2ee9cf7f1a40369">_EvSidebarAnnotationsPrivate</a>
+, <a class="el" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">_EvSidebarLayersPrivate</a>
+, <a class="el" href="struct__EvSidebarThumbnailsPrivate.html#a6489016792c26922f3b03ba0ad764d19">_EvSidebarThumbnailsPrivate</a>
+, <a class="el" href="struct__EvPropertiesDialog.html#ae3103ab7e7da1a5875b2a49d65e2d1cd">_EvPropertiesDialog</a>
+, <a class="el" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">_EvView</a>
+, <a class="el" href="struct__EvDocumentModel.html#a4a83fccfb4a8a9e595a93e05edb752f7">_EvDocumentModel</a>
 </li>
 <li>document_is_modified
-: <a class="el" href="struct__EvDocumentAnnotationsInterface.html#a6a9cd14313288784fe1dc0e5bcf902d9">_EvDocumentAnnotationsInterface</a>
-, <a class="el" href="struct__EvDocumentFormsInterface.html#a57b2ee03ccc1245ee30adc6ecb333025">_EvDocumentFormsInterface</a>
+: <a class="el" href="struct__EvDocumentFormsInterface.html#a57b2ee03ccc1245ee30adc6ecb333025">_EvDocumentFormsInterface</a>
+, <a class="el" href="struct__EvDocumentAnnotationsInterface.html#a6a9cd14313288784fe1dc0e5bcf902d9">_EvDocumentAnnotationsInterface</a>
 </li>
 <li>document_uri
 : <a class="el" href="struct__EvJobSave.html#ab652961768e6493ccaf2b271faf9a143">_EvJobSave</a>
@@ -310,9 +340,18 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 <li>dot_dir
 : <a class="el" href="struct__EvApplication.html#a9a89a524088b3e68a0ed85145030c689">_EvApplication</a>
 </li>
+<li>doubleValue
+: <a class="el" href="struct__NPVariant.html#a8977f45878e22f3b9a51ee0f19998fbe">_NPVariant</a>
+</li>
+<li>download()
+: <a class="el" href="classEvBrowserPlugin.html#a2df36ff10e4f4cd52bfba8659552813e">EvBrowserPlugin</a>
+</li>
+<li>Download
+: <a class="el" href="structEvBrowserPluginClass.html#a54090d6391234119c71902b665f1692aa1e31f33cd0b7dd46908271ee0c633bc2">EvBrowserPluginClass</a>
+</li>
 <li>dpi
-: <a class="el" href="struct__DviParams.html#a3bbe4ea2ce47dfb1aef292fa990f7729">_DviParams</a>
-, <a class="el" href="struct__EvPreviewerWindow.html#a105f39d58e37ec0cb76e67733d5ce038">_EvPreviewerWindow</a>
+: <a class="el" href="struct__EvPreviewerWindow.html#a105f39d58e37ec0cb76e67733d5ce038">_EvPreviewerWindow</a>
+, <a class="el" href="struct__DviParams.html#a3bbe4ea2ce47dfb1aef292fa990f7729">_DviParams</a>
 </li>
 <li>drag_info
 : <a class="el" href="struct__EvView.html#a41a70a87419edbc257aabad5cd1f50b6">_EvView</a>
@@ -329,9 +368,12 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 <li>draw_rule
 : <a class="el" href="struct__DviDevice.html#a632cd8adca4ac14962cadcfb880b0180">_DviDevice</a>
 </li>
+<li>Dual
+: <a class="el" href="structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68a490899a815d779953826d2dd94042be3">EvBrowserPluginClass</a>
+</li>
 <li>dual_even_left
-: <a class="el" href="struct__EvView.html#adb0cc2d86164c184286847fc3df14cc7">_EvView</a>
-, <a class="el" href="struct__EvHeightToPageCache.html#a1c1bc0d8054dfab802372bc0984f9f5c">_EvHeightToPageCache</a>
+: <a class="el" href="struct__EvHeightToPageCache.html#a1c1bc0d8054dfab802372bc0984f9f5c">_EvHeightToPageCache</a>
+, <a class="el" href="struct__EvView.html#adb0cc2d86164c184286847fc3df14cc7">_EvView</a>
 </li>
 <li>dual_height_to_page
 : <a class="el" href="struct__EvHeightToPageCache.html#a3ab2ae3856ea28b7db0d3a5ed6d3ff6d">_EvHeightToPageCache</a>
@@ -342,12 +384,15 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 <li>dual_page_odd_left
 : <a class="el" href="struct__EvDocumentModel.html#a4920162a0d8782c368033c3ffe409057">_EvDocumentModel</a>
 </li>
+<li>dualToggleButton
+: <a class="el" href="struct__EvBrowserPluginToolbarPrivate.html#ad040649d8993d9af6110cafcc3a3a3a4">_EvBrowserPluginToolbarPrivate</a>
+</li>
 <li>duplex
 : <a class="el" href="struct__EvFileExporterContext.html#a0ccc2886da014756e23b60e680466236">_EvFileExporterContext</a>
 </li>
 <li>duration
-: <a class="el" href="structEvTransitionEffectPrivate.html#a825bfc82da30a0b41e21620a24ccdb22">EvTransitionEffectPrivate</a>
-, <a class="el" href="structEvTimelinePriv.html#abb715d2b9be4908dbe5c2175de4f4e01">EvTimelinePriv</a>
+: <a class="el" href="structEvTimelinePriv.html#abb715d2b9be4908dbe5c2175de4f4e01">EvTimelinePriv</a>
+, <a class="el" href="structEvTransitionEffectPrivate.html#a825bfc82da30a0b41e21620a24ccdb22">EvTransitionEffectPrivate</a>
 </li>
 <li>dvi_page_h
 : <a class="el" href="struct__DviContext.html#a428cc58e1d0bbb4b74181efd19cca031">_DviContext</a>
@@ -373,7 +418,7 @@ $(document).ready(function(){initNavTree('functions_0x64.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 5 2014 11:49:25 for Evince by
+    <li class="footer">Generated on Wed Aug 6 2014 11:52:29 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -191,7 +191,13 @@ var searchData=
   ['ev_2dwindow_2eh',['ev-window.h',['../ev-window_8h.html',1,'']]],
   ['ev_2dzoom_2daction_2ec',['ev-zoom-action.c',['../ev-zoom-action_8c.html',1,'']]],
   ['ev_2dzoom_2daction_2eh',['ev-zoom-action.h',['../ev-zoom-action_8h.html',1,'']]],
+  ['evbrowserplugin_2ecpp',['EvBrowserPlugin.cpp',['../EvBrowserPlugin_8cpp.html',1,'']]],
+  ['evbrowserplugin_2eh',['EvBrowserPlugin.h',['../EvBrowserPlugin_8h.html',1,'']]],
+  ['evbrowserpluginmain_2ecpp',['EvBrowserPluginMain.cpp',['../EvBrowserPluginMain_8cpp.html',1,'']]],
+  ['evbrowserplugintoolbar_2ecpp',['EvBrowserPluginToolbar.cpp',['../EvBrowserPluginToolbar_8cpp.html',1,'']]],
+  ['evbrowserplugintoolbar_2eh',['EvBrowserPluginToolbar.h',['../EvBrowserPluginToolbar_8h.html',1,'']]],
   ['evince_2ddocument_2eh',['evince-document.h',['../evince-document_8h.html',1,'']]],
   ['evince_2dthumbnailer_2ec',['evince-thumbnailer.c',['../evince-thumbnailer_8c.html',1,'']]],
-  ['evince_2dview_2eh',['evince-view.h',['../evince-view_8h.html',1,'']]]
+  ['evince_2dview_2eh',['evince-view.h',['../evince-view_8h.html',1,'']]],
+  ['evmemoryutils_2eh',['EvMemoryUtils.h',['../EvMemoryUtils_8h.html',1,'']]]
 ];

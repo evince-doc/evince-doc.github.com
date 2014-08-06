@@ -4,14 +4,15 @@ var searchData=
   ['labels',['labels',['../struct__EvPropertiesView.html#afdd7f88c338fa6c94a13be593890b43d',1,'_EvPropertiesView']]],
   ['last_5fpage',['last_page',['../struct__EvFileExporterContext.html#ae1a71ded3eb210d60e2717357647b29a',1,'_EvFileExporterContext']]],
   ['last_5fy',['last_y',['../structAutoScrollInfo.html#a2d0adc3f99560186b3f8ab30a1983062',1,'AutoScrollInfo']]],
+  ['lastmodified',['lastmodified',['../struct__NPStream.html#aebb004f9e61be47fa87ffd114e18ba39',1,'_NPStream']]],
   ['layer',['layer',['../struct__DviParams.html#a652321310308d5dd705087c6f1b2a6d9',1,'_DviParams']]],
   ['layer_5fis_5fvisible',['layer_is_visible',['../struct__EvDocumentLayersInterface.html#aa246d6a179495ddcaa295666fd9ce4fa',1,'_EvDocumentLayersInterface']]],
   ['layers_5fchanged',['layers_changed',['../struct__EvViewClass.html#a170bf891da60d442530c9d007cfd5979',1,'_EvViewClass']]],
   ['layers_5fvisibility_5fchanged',['layers_visibility_changed',['../struct__EvSidebarLayersClass.html#ada7c3f454547ce29750fa52f2371b9b1',1,'_EvSidebarLayersClass']]],
   ['layout',['layout',['../struct__EvDocumentInfo.html#a96fd22cde6281f75080e1deac18b6b13',1,'_EvDocumentInfo::layout()'],['../struct__EvView.html#aaa93620b63447a1f0079ec6dfba9bf20',1,'_EvView::layout()']]],
-  ['left',['left',['../struct__TFMChar.html#a2892913ded9ead3cbe77f71200e771db',1,'_TFMChar::left()'],['../structsynctex__distances__t.html#ac03b2fb447b841c7cd1eaef882d9bb0e',1,'synctex_distances_t::left()'],['../structsynctex__offsets__t.html#a346cfb4972abd9c20f73f5f25a51dd72',1,'synctex_offsets_t::left()'],['../structsynctex__node__set__t.html#a819d6d3bef5b6a0606612f9618316695',1,'synctex_node_set_t::left()'],['../struct__EvLinkDestPrivate.html#a16a01fc6f1c73fb4cbd4aab27a2005f6',1,'_EvLinkDestPrivate::left()']]],
-  ['len',['len',['../structSaveToBufferData.html#a39e2b692f6450b72a4f57fca0108f5eb',1,'SaveToBufferData']]],
-  ['length',['length',['../structBuffer.html#ab017cc01197319698565f0eab23148ea',1,'Buffer::length()'],['../structDstring.html#a66824d6165711a46519bea353f99a22c',1,'Dstring::length()'],['../struct__DviBuffer.html#a761c2621a19a919234f862c1da6ed1fd',1,'_DviBuffer::length()'],['../struct____synctex__updater__t.html#ae675c2ae1794c2f15d7a492253bb38e5',1,'__synctex_updater_t::length()']]],
+  ['left',['left',['../struct__TFMChar.html#a2892913ded9ead3cbe77f71200e771db',1,'_TFMChar::left()'],['../struct__NPRect.html#a1826abedd1c293aa024e4076bc82594a',1,'_NPRect::left()'],['../structsynctex__distances__t.html#ac03b2fb447b841c7cd1eaef882d9bb0e',1,'synctex_distances_t::left()'],['../structsynctex__offsets__t.html#a346cfb4972abd9c20f73f5f25a51dd72',1,'synctex_offsets_t::left()'],['../structsynctex__node__set__t.html#a819d6d3bef5b6a0606612f9618316695',1,'synctex_node_set_t::left()'],['../struct__EvLinkDestPrivate.html#a16a01fc6f1c73fb4cbd4aab27a2005f6',1,'_EvLinkDestPrivate::left()']]],
+  ['len',['len',['../structSaveToBufferData.html#a39e2b692f6450b72a4f57fca0108f5eb',1,'SaveToBufferData::len()'],['../struct__NPSavedData.html#aa23b15e0b958019ac7dc5bce5a96db6b',1,'_NPSavedData::len()']]],
+  ['length',['length',['../structBuffer.html#ab017cc01197319698565f0eab23148ea',1,'Buffer::length()'],['../structDstring.html#a66824d6165711a46519bea353f99a22c',1,'Dstring::length()'],['../struct__DviBuffer.html#a761c2621a19a919234f862c1da6ed1fd',1,'_DviBuffer::length()'],['../struct__NPByteRange.html#a028708d81ee826bd7b700ddc00bb4b0c',1,'_NPByteRange::length()'],['../struct____synctex__updater__t.html#ae675c2ae1794c2f15d7a492253bb38e5',1,'__synctex_updater_t::length()']]],
   ['level',['level',['../ev-zoom-action_8c.html#a450c3ab9b94a4663caad892b7193b547',1,'ev-zoom-action.c']]],
   ['level2',['level2',['../struct__TIFF2PSContext.html#a75b6407af4210c8ba55890c50afcdb09',1,'_TIFF2PSContext']]],
   ['level3',['level3',['../struct__TIFF2PSContext.html#a2fd7e30256291b47c1891969beb8f264',1,'_TIFF2PSContext']]],
@@ -54,5 +55,6 @@ var searchData=
   ['log',['log',['../struct____synctex__class__t.html#a25c33b646d9ef2dfa10512fd57e319dd',1,'__synctex_class_t']]],
   ['logfile',['logfile',['../util_8c.html#ab25a3625a8efbaa3d81ef27bbb51c9c5',1,'util.c']]],
   ['lookup',['lookup',['../struct__DviFontInfo.html#af2a45a4268ed1726b55c3f8a2d39c9e7',1,'_DviFontInfo']]],
-  ['loop',['loop',['../structEvTimelinePriv.html#afaa3738c243fcf5ed16e7c636324ff8d',1,'EvTimelinePriv']]]
+  ['loop',['loop',['../structEvTimelinePriv.html#afaa3738c243fcf5ed16e7c636324ff8d',1,'EvTimelinePriv']]],
+  ['lostfocus',['lostfocus',['../struct__NPPluginFuncs.html#a2c55b0340e00a495963d64b4301a4cb0',1,'_NPPluginFuncs']]]
 ];
