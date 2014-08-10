@@ -17,6 +17,7 @@ var ev_find_sidebar_8c =
     [ "ev_find_sidebar_new", "ev-find-sidebar_8c.html#aff38015cb256d1a001248522165dced7", null ],
     [ "ev_find_sidebar_next", "ev-find-sidebar_8c.html#a6f323635f9c75ba6b5248c273ecb457e", null ],
     [ "ev_find_sidebar_previous", "ev-find-sidebar_8c.html#a3bcdf4c22618f3eccb9c5b478ddd24bc", null ],
+    [ "ev_find_sidebar_reset_model", "ev-find-sidebar_8c.html#a8e29cbbd50b9ca3bae76930d4112f9f7", null ],
     [ "ev_find_sidebar_restart", "ev-find-sidebar_8c.html#a46e8216ce970123e8fdb74bff7c9d6cb", null ],
     [ "ev_find_sidebar_select_highlighted_result", "ev-find-sidebar_8c.html#a9c214da2778406be5cb2c9c9feaf317e", null ],
     [ "ev_find_sidebar_start", "ev-find-sidebar_8c.html#a787abe465a250ac886a15a5d75b1d3ea", null ],

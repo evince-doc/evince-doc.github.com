@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structComicBookDecompressCommand.html#a303fd2b26739aef585cc953ceaa1b7cc":[5,0,323,3],
 "structComicBookDecompressCommand.html#a5981b419df78856905f9fb64f2854d6b":[5,0,323,4],
 "structComicBookDecompressCommand.html#a61136e684a6682fc6ab2eabb12726660":[5,0,323,2],
 "structComicBookDecompressCommand.html#af31cfe6c092fadbe3407017c3f298b65":[5,0,323,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488":[5,0,4,4],
 "struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa":[5,0,4,6],
 "struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3":[5,0,4,1],
-"struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[5,0,4,7],
-"struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[5,0,4,2]
+"struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[5,0,4,7]
 };

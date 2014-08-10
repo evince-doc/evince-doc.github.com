@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"ev-window_8h.html#af078888885ecae68b98b740c05c406d6ae90a703b9d5a1babb04146de1b8b987e":[6,0,0,8,64,13,0],
 "ev-window_8h.html#af675dc382185a96ca9be725eb5ca1f00":[6,0,0,8,64,11],
 "ev-window_8h_source.html":[6,0,0,8,64],
 "ev-zoom-action_8c.html":[6,0,0,8,65],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "functions_vars_0x6c.html":[5,3,2,12],
 "functions_vars_0x6d.html":[5,3,2,13],
 "functions_vars_0x6e.html":[5,3,2,14],
-"functions_vars_0x6f.html":[5,3,2,15],
-"functions_vars_0x70.html":[5,3,2,16]
+"functions_vars_0x6f.html":[5,3,2,15]
 };
