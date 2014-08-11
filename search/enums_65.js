@@ -27,6 +27,7 @@ var searchData=
   ['evlinkactiontype',['EvLinkActionType',['../ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057',1,'ev-link-action.h']]],
   ['evlinkdesttype',['EvLinkDestType',['../ev-link-dest_8h.html#aaa76279563e988975a3bed4849a57de9',1,'ev-link-dest.h']]],
   ['evpagelayout',['EvPageLayout',['../ev-document-model_8h.html#a9746ca193f7575bbca082fe76635174f',1,'ev-document-model.h']]],
+  ['evpanaction',['EvPanAction',['../ev-view-private_8h.html#aceb8f0bd74548a7a35915de2a57db5bd',1,'ev-view-private.h']]],
   ['evpresentationstate',['EvPresentationState',['../ev-view-presentation_8c.html#a8ec47fe49008f1db86ae2ade579cb5fe',1,'ev-view-presentation.c']]],
   ['evprintpageset',['EvPrintPageSet',['../ev-window_8h.html#a142763cc3835007569841f2b685abea4',1,'ev-window.h']]],
   ['evrecentviewcolumns',['EvRecentViewColumns',['../ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747cc',1,'ev-recent-view.c']]],

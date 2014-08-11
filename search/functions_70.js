@@ -5,6 +5,8 @@ var searchData=
   ['page_5fscroll_5fcb',['page_scroll_cb',['../ev-page-action-widget_8c.html#a41c0a3a7488c626df7e119abbd625ef7',1,'ev-page-action-widget.c']]],
   ['pagecount',['pageCount',['../classEvBrowserPlugin.html#a42ff0173b3a8b301b5ca05de6a9fcc42',1,'EvBrowserPlugin']]],
   ['paint_5fsurface',['paint_surface',['../ev-transition-animation_8c.html#ad03382b8a91b743cd5d5b91af2f09399',1,'ev-transition-animation.c']]],
+  ['pan_5fgesture_5fend_5fcb',['pan_gesture_end_cb',['../ev-view_8c.html#ac6771c6f31663d5642f62e1da2f66ef2',1,'ev-view.c']]],
+  ['pan_5fgesture_5fpan_5fcb',['pan_gesture_pan_cb',['../ev-view_8c.html#ae04c0f129b574d5efd05777f0ae8ab5f',1,'ev-view.c']]],
   ['parse_5fcolor',['parse_color',['../dvi-document_8c.html#aea1916dda1fe9757db89364e15f829c1',1,'dvi-document.c']]],
   ['parse_5fepsf_5fspecial',['parse_epsf_special',['../sp-epsf_8c.html#a410e949e8e8ca8aae1805933a91c4e3c',1,'sp-epsf.c']]],
   ['parse_5fspec',['parse_spec',['../fontmap_8c.html#a2972e999434398d01e634b43fc5ad2d3',1,'fontmap.c']]],

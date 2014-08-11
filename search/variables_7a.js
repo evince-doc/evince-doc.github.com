@@ -4,6 +4,7 @@ var searchData=
   ['zoom',['zoom',['../struct__EvLinkDestPrivate.html#a03685c24cea2399958e70bd223c138ab',1,'_EvLinkDestPrivate']]],
   ['zoom_5faction',['zoom_action',['../struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6',1,'_EvToolbarPrivate']]],
   ['zoom_5ffree_5fsection',['zoom_free_section',['../struct__EvZoomActionPrivate.html#ab5f76d6664e1269e89e9cfe08c650831',1,'_EvZoomActionPrivate']]],
+  ['zoom_5fgesture',['zoom_gesture',['../struct__EvView.html#aff559faac95d88cf600ac7508551df38',1,'_EvView']]],
   ['zoom_5flevels',['zoom_levels',['../ev-zoom-action_8c.html#ab5c24524dd39344e49c901cb68b7017a',1,'ev-zoom-action.c']]],
   ['zoomautomaticradiobutton',['zoomAutomaticRadioButton',['../struct__EvBrowserPluginToolbarPrivate.html#accbc0e58c8c1e63ac24c2400be796eca',1,'_EvBrowserPluginToolbarPrivate']]],
   ['zoomfitpageradiobutton',['zoomFitPageRadioButton',['../struct__EvBrowserPluginToolbarPrivate.html#a18d4b41008651a89e78d55f3ed02b5bd',1,'_EvBrowserPluginToolbarPrivate']]],

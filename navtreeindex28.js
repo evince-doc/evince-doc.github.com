@@ -1,5 +1,16 @@
 var NAVTREEINDEX28 =
 {
+"structCharMetricInfo.html#af80521649706b11528a0614168d0d32f":[5,0,321,2],
+"structColorCache.html":[5,0,322],
+"structColorCache.html#a111ea19e43540ec296a5c2f98a241ad4":[5,0,322,2],
+"structColorCache.html#a3237323ce2df1f3e43f91c2edf29736a":[5,0,322,0],
+"structColorCache.html#a4867b2fedfd8f2240a500ceb44dd1814":[5,0,322,6],
+"structColorCache.html#a7aeaf8cda29cbe142fae19a8a446121b":[5,0,322,4],
+"structColorCache.html#a98fc96e020e4684efc7ffebc519aa6a8":[5,0,322,1],
+"structColorCache.html#adca0f3b5c84a68bc51223497866bc8e7":[5,0,322,3],
+"structColorCache.html#adec207a4d45ea409abc719192d4092ac":[5,0,322,5],
+"structComicBookDecompressCommand.html":[5,0,323],
+"structComicBookDecompressCommand.html#a2f9d9d1f17dbf03b43316121e5f2c44c":[5,0,323,1],
 "structComicBookDecompressCommand.html#a303fd2b26739aef585cc953ceaa1b7cc":[5,0,323,3],
 "structComicBookDecompressCommand.html#a5981b419df78856905f9fb64f2854d6b":[5,0,323,4],
 "structComicBookDecompressCommand.html#a61136e684a6682fc6ab2eabb12726660":[5,0,323,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX28 =
 "struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786":[5,0,3,4],
 "struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322":[5,0,3,1],
 "struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d":[5,0,3,7],
-"struct__CacheJobInfo.html#ae5e58f1b1a94f0e2c26c49f697d4d601":[5,0,3,9],
-"struct__ComicsDocument.html":[5,0,4],
-"struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0":[5,0,4,10],
-"struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d":[5,0,4,5],
-"struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644":[5,0,4,11],
-"struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c":[5,0,4,0],
-"struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba":[5,0,4,3],
-"struct__ComicsDocument.html#a853bc7317f785565fc74d501dcdd622f":[5,0,4,9],
-"struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488":[5,0,4,4],
-"struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa":[5,0,4,6],
-"struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3":[5,0,4,1],
-"struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[5,0,4,7]
+"struct__CacheJobInfo.html#ae5e58f1b1a94f0e2c26c49f697d4d601":[5,0,3,9]
 };

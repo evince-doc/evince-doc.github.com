@@ -1,5 +1,16 @@
 var NAVTREEINDEX33 =
 {
+"struct__EvPageActionWidget.html#a2e8bc83f8b41671a2094e11a85f1252e":[5,0,189,2],
+"struct__EvPageActionWidget.html#a3186127c5570568ce424c15ee85d82e6":[5,0,189,1],
+"struct__EvPageActionWidget.html#a4c2da39cf1dbef42953deaaf27a5497b":[5,0,189,6],
+"struct__EvPageActionWidget.html#a5acd35fa19d68deaea892b4f186d757b":[5,0,189,0],
+"struct__EvPageActionWidget.html#a6af5f82ae9a14d15ddde3a62f246c756":[5,0,189,7],
+"struct__EvPageActionWidget.html#a8df30baf5212aa0338bbf0e0d8315c20":[5,0,189,5],
+"struct__EvPageActionWidgetClass.html":[5,0,190],
+"struct__EvPageActionWidgetClass.html#a7b98d47c6e4939842fb59159dae77087":[5,0,190,1],
+"struct__EvPageActionWidgetClass.html#ad60a442aa5dae7e74e512d10c279520e":[5,0,190,0],
+"struct__EvPageCache.html":[5,0,191],
+"struct__EvPageCache.html#a24832ed8354520e9c9a94e4e25014723":[5,0,191,6],
 "struct__EvPageCache.html#a914077049de90d432a29ba5a1fec5e09":[5,0,191,4],
 "struct__EvPageCache.html#ac4d480263699bc3533ec4ab0e3cd0462":[5,0,191,1],
 "struct__EvPageCache.html#ad159b7d6a7aa42027ad6c1118d97b414":[5,0,191,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX33 =
 "struct__EvSidebarLayers.html":[5,0,238],
 "struct__EvSidebarLayers.html#a1d9ee6a7d6a5276f574796097aa19cb8":[5,0,238,1],
 "struct__EvSidebarLayers.html#a3b40dcda5f6af914a7e9c4c1650610e8":[5,0,238,0],
-"struct__EvSidebarLayersClass.html":[5,0,239],
-"struct__EvSidebarLayersClass.html#a89f10c33ded1f3f9fa66972b7da076da":[5,0,239,0],
-"struct__EvSidebarLayersClass.html#ada7c3f454547ce29750fa52f2371b9b1":[5,0,239,1],
-"struct__EvSidebarLayersPrivate.html":[5,0,240],
-"struct__EvSidebarLayersPrivate.html#a242e903dc28143a4326a07f470bd9aa4":[5,0,240,2],
-"struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc":[5,0,240,1],
-"struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793":[5,0,240,0],
-"struct__EvSidebarLinks.html":[5,0,241],
-"struct__EvSidebarLinks.html#a04e8c4ab3e14d2a2cb7620aab8764a58":[5,0,241,1],
-"struct__EvSidebarLinks.html#a7c7b090670803c8e1434245a60a227db":[5,0,241,0],
-"struct__EvSidebarLinksClass.html":[5,0,242],
-"struct__EvSidebarLinksClass.html#a66ed44a76657dd2f8de8701b390542c4":[5,0,242,0]
+"struct__EvSidebarLayersClass.html":[5,0,239]
 };

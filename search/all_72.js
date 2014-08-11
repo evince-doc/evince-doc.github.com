@@ -37,7 +37,7 @@ var searchData=
   ['reload_5fremote_5fcopy_5fprogress_5fcb',['reload_remote_copy_progress_cb',['../ev-window_8c.html#a83982c8d05ce287a5433b28afeb13404',1,'ev-window.c']]],
   ['reload_5fremote_5fcopy_5fready_5fcb',['reload_remote_copy_ready_cb',['../ev-window_8c.html#a8a7b51a26db558fbf6162e1ec6239cd0',1,'ev-window.c']]],
   ['reloadplugins',['reloadplugins',['../struct__NPNetscapeFuncs.html#a8181873fe5447743593b347ad0687460',1,'_NPNetscapeFuncs']]],
-  ['removeproperty',['removeproperty',['../struct__NPNetscapeFuncs.html#affa8e64bd0fbf11ed26f0aacb51fabf2',1,'_NPNetscapeFuncs::removeproperty()'],['../structNPClass.html#abfd93f88c9a41e31be0f8419531ecf71',1,'NPClass::removeProperty()']]],
+  ['removeproperty',['removeProperty',['../structNPClass.html#abfd93f88c9a41e31be0f8419531ecf71',1,'NPClass::removeProperty()'],['../struct__NPNetscapeFuncs.html#affa8e64bd0fbf11ed26f0aacb51fabf2',1,'_NPNetscapeFuncs::removeproperty()']]],
   ['render',['render',['../struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7',1,'_EvDocumentClass']]],
   ['render_5ffinished',['render_finished',['../struct__EvAsyncRendererInterface.html#a4a42164dbdd0ce665ae5dbbacb5f675b',1,'_EvAsyncRendererInterface::render_finished()'],['../ev-async-renderer_8c.html#a6b7b47dd702d9e331586d485013fd1eaad339adc82d532c984dcc0d3281c01939',1,'RENDER_FINISHED():&#160;ev-async-renderer.c']]],
   ['render_5fpixbuf',['render_pixbuf',['../struct__EvAsyncRendererInterface.html#a3ca67cdef9363e99e669b89c262cae3a',1,'_EvAsyncRendererInterface']]],

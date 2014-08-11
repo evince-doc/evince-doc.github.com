@@ -6,6 +6,8 @@ var searchData=
   ['zoom_5ffor_5fsize_5ffit_5fheight',['zoom_for_size_fit_height',['../ev-view_8c.html#aa844059e1e8b29ca2a25980e130aedde',1,'ev-view.c']]],
   ['zoom_5ffor_5fsize_5ffit_5fpage',['zoom_for_size_fit_page',['../ev-view_8c.html#a5cf2c61fd05dd86c2fee7a7ff4f50221',1,'ev-view.c']]],
   ['zoom_5ffor_5fsize_5ffit_5fwidth',['zoom_for_size_fit_width',['../ev-view_8c.html#a90fe98a1b41f5817af03f96ca4b178d2',1,'ev-view.c']]],
+  ['zoom_5fgesture_5fbegin_5fcb',['zoom_gesture_begin_cb',['../ev-view_8c.html#af24682e6143e286b059c21231d43fd25',1,'ev-view.c']]],
+  ['zoom_5fgesture_5fscale_5fchanged_5fcb',['zoom_gesture_scale_changed_cb',['../ev-view_8c.html#a1826db1d61a2bc607104ec2c264c0635',1,'ev-view.c']]],
   ['zoom_5fselector_5factivated',['zoom_selector_activated',['../ev-toolbar_8c.html#a60834d45367da3fd03a6e62d3e41622f',1,'ev-toolbar.c']]],
   ['zoomautomatictoggled',['zoomAutomaticToggled',['../EvBrowserPluginToolbar_8cpp.html#adc6d71136134d61fccaebe216553243c',1,'EvBrowserPluginToolbar.cpp']]],
   ['zoomfitpagetoggled',['zoomFitPageToggled',['../EvBrowserPluginToolbar_8cpp.html#ad46dda7d33d268abaf438f21ed3a677f',1,'EvBrowserPluginToolbar.cpp']]],

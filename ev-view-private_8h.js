@@ -10,6 +10,11 @@ var ev_view_private_8h =
     [ "_EvViewClass", "struct__EvViewClass.html", "struct__EvViewClass" ],
     [ "DRAG_HISTORY", "ev-view-private_8h.html#a6d7420fbc2a33a8b7eaaae40e844cba5", null ],
     [ "EvHeightToPageCache", "ev-view-private_8h.html#ad9d319a3017a419e31dd7344dac62676", null ],
+    [ "EvPanAction", "ev-view-private_8h.html#aceb8f0bd74548a7a35915de2a57db5bd", [
+      [ "EV_PAN_ACTION_NONE", "ev-view-private_8h.html#aceb8f0bd74548a7a35915de2a57db5bdae450d1fa192e92dbb3bfa3460f00e7ae", null ],
+      [ "EV_PAN_ACTION_NEXT", "ev-view-private_8h.html#aceb8f0bd74548a7a35915de2a57db5bdabb08b9d4142857f8088961b099a2bff6", null ],
+      [ "EV_PAN_ACTION_PREV", "ev-view-private_8h.html#aceb8f0bd74548a7a35915de2a57db5bdacc7a4c49968cc282ee3cf68ce51293a6", null ]
+    ] ],
     [ "PendingScroll", "ev-view-private_8h.html#a1aa0a9871663aa009306de68b639510f", [
       [ "SCROLL_TO_KEEP_POSITION", "ev-view-private_8h.html#a1aa0a9871663aa009306de68b639510fa4e73cb14b5d82a0afc0235a09303c465", null ],
       [ "SCROLL_TO_PAGE_POSITION", "ev-view-private_8h.html#a1aa0a9871663aa009306de68b639510fa0603642e3dd5bbf5ac186924ca23a845", null ],

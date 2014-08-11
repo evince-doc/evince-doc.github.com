@@ -1,5 +1,16 @@
 var NAVTREEINDEX27 =
 {
+"npfunctions_8h.html#ab34dcd687147418886c34a114c730b34":[6,0,0,1,0,1,31],
+"npfunctions_8h.html#ab46cce89d4444491a34db13c5fa16dbb":[6,0,0,1,0,1,14],
+"npfunctions_8h.html#ab4c4979aba27e33cec84fc0256b52d02":[6,0,0,1,0,1,20],
+"npfunctions_8h.html#abc27f18113a77b8ab70ff96e4f0b5997":[6,0,0,1,0,1,52],
+"npfunctions_8h.html#abef43cdfca4da9378f4eed18c0917a32":[6,0,0,1,0,1,9],
+"npfunctions_8h.html#ac5c39f0e706d075aed5f1033aa80ebff":[6,0,0,1,0,1,5],
+"npfunctions_8h.html#ac625b4c4c9e32b9a569d258a2b51d856":[6,0,0,1,0,1,15],
+"npfunctions_8h.html#ac62b29b645d27106dd5be90555b0525d":[6,0,0,1,0,1,59],
+"npfunctions_8h.html#acae5dd36f677ca4c753265ab996f30cb":[6,0,0,1,0,1,8],
+"npfunctions_8h.html#acb84c0a58248c814c95a3ae350b6047a":[6,0,0,1,0,1,26],
+"npfunctions_8h.html#ad2fff47a1e16ec9c4458f59c2e2dbcb2":[6,0,0,1,0,1,39],
 "npfunctions_8h.html#ad38eef26aefdceffd5416efa1414bab1":[6,0,0,1,0,1,30],
 "npfunctions_8h.html#ad7758748c939e333fbb738f27d8a8311":[6,0,0,1,0,1,12],
 "npfunctions_8h.html#ad8308b2d81d1ea83a5c306076053cbe8":[6,0,0,1,0,1,61],
@@ -238,16 +249,5 @@ var NAVTREEINDEX27 =
 "structCharMetricInfo.html#a3b203ccd0888008f4b525b30030b6ab0":[5,0,321,3],
 "structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f":[5,0,321,4],
 "structCharMetricInfo.html#adb8e4767e585371e2f929149d7c223c7":[5,0,321,1],
-"structCharMetricInfo.html#ae4510ed299356e805c66dbfe5dd86202":[5,0,321,0],
-"structCharMetricInfo.html#af80521649706b11528a0614168d0d32f":[5,0,321,2],
-"structColorCache.html":[5,0,322],
-"structColorCache.html#a111ea19e43540ec296a5c2f98a241ad4":[5,0,322,2],
-"structColorCache.html#a3237323ce2df1f3e43f91c2edf29736a":[5,0,322,0],
-"structColorCache.html#a4867b2fedfd8f2240a500ceb44dd1814":[5,0,322,6],
-"structColorCache.html#a7aeaf8cda29cbe142fae19a8a446121b":[5,0,322,4],
-"structColorCache.html#a98fc96e020e4684efc7ffebc519aa6a8":[5,0,322,1],
-"structColorCache.html#adca0f3b5c84a68bc51223497866bc8e7":[5,0,322,3],
-"structColorCache.html#adec207a4d45ea409abc719192d4092ac":[5,0,322,5],
-"structComicBookDecompressCommand.html":[5,0,323],
-"structComicBookDecompressCommand.html#a2f9d9d1f17dbf03b43316121e5f2c44c":[5,0,323,1]
+"structCharMetricInfo.html#ae4510ed299356e805c66dbfe5dd86202":[5,0,321,0]
 };

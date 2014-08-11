@@ -46,12 +46,15 @@ var struct__EvView =
     [ "motion", "struct__EvView.html#a17633e9f3f1d859b759e27269e13e289", null ],
     [ "page_cache", "struct__EvView.html#a0370c47abe01a07c23239c5796997308", null ],
     [ "page_layout", "struct__EvView.html#a89ed4ae2b083bbf712a000d2250f143c", null ],
+    [ "pan_action", "struct__EvView.html#a407b1ff1a500bd9d008fc2e4723461c9", null ],
+    [ "pan_gesture", "struct__EvView.html#ad56a36c471427aeb59d54c8a11eb85db", null ],
     [ "pending_point", "struct__EvView.html#ab5f031f16fcc7df23887baa26e98c7fd", null ],
     [ "pending_resize", "struct__EvView.html#a8a7a857726ca38b6acbbb285bf466f73", null ],
     [ "pending_scroll", "struct__EvView.html#a1baf7fd59e26d0b447d4f560d66d3d42", null ],
     [ "pixbuf_cache", "struct__EvView.html#a5c5b1c61e09eeeecd6efb61dbe335e86", null ],
     [ "pixbuf_cache_size", "struct__EvView.html#acfac2baa9d4aafa135ef491478a2e8fa", null ],
     [ "pressed_button", "struct__EvView.html#a2950bfa7de31c4975be2405f6394adba", null ],
+    [ "prev_zoom_gesture_scale", "struct__EvView.html#afae115efaf929b387f6b047305efcefb", null ],
     [ "requisition", "struct__EvView.html#a451beaac1c6bf5349e6ff03f41ac98b3", null ],
     [ "rotation", "struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83", null ],
     [ "scale", "struct__EvView.html#ac9416bfd554fda4710849462537a5c53", null ],
@@ -69,5 +72,6 @@ var struct__EvView =
     [ "vadjustment", "struct__EvView.html#a08822c99888de3c4a438bbef9b47f549", null ],
     [ "vscroll_policy", "struct__EvView.html#a950f73c278c9602a1a746591c5775eed", null ],
     [ "window_child_focus", "struct__EvView.html#ad5bb1734f0dbe2d9a9e88a6096274638", null ],
-    [ "window_children", "struct__EvView.html#a43d7d7edef088def8542eacf1a96bb58", null ]
+    [ "window_children", "struct__EvView.html#a43d7d7edef088def8542eacf1a96bb58", null ],
+    [ "zoom_gesture", "struct__EvView.html#aff559faac95d88cf600ac7508551df38", null ]
 ];

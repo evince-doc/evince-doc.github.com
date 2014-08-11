@@ -1,5 +1,16 @@
 var NAVTREEINDEX29 =
 {
+"struct__ComicsDocument.html":[5,0,4],
+"struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0":[5,0,4,10],
+"struct__ComicsDocument.html#a3294471a25c5b85cd71f78328e66ff1d":[5,0,4,5],
+"struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644":[5,0,4,11],
+"struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c":[5,0,4,0],
+"struct__ComicsDocument.html#a59c99ff86b17d61b8e6116969ae10dba":[5,0,4,3],
+"struct__ComicsDocument.html#a853bc7317f785565fc74d501dcdd622f":[5,0,4,9],
+"struct__ComicsDocument.html#a92acba229bd0ceb47a1a85dee5972488":[5,0,4,4],
+"struct__ComicsDocument.html#a985e3d58dda5c32142856bceb287e4aa":[5,0,4,6],
+"struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3":[5,0,4,1],
+"struct__ComicsDocument.html#abda9d67d21086d004f262f222941dee3":[5,0,4,7],
 "struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[5,0,4,2],
 "struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821":[5,0,4,8],
 "struct__ComicsDocumentClass.html":[5,0,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX29 =
 "struct__DviParams.html#a51b1ebaf389ff390ccc363f56254ff8a":[5,0,31,2],
 "struct__DviParams.html#a652321310308d5dd705087c6f1b2a6d9":[5,0,31,11],
 "struct__DviParams.html#a714ceb7f93f2ca63f44558f2e822fe9c":[5,0,31,15],
-"struct__DviParams.html#a772fc274414e7728029835f41981a8dc":[5,0,31,10],
-"struct__DviParams.html#a8dc406cbe8e8c46ff3ed821a0743d2ec":[5,0,31,16],
-"struct__DviParams.html#aaab2140613ee64f9fc59141ba2509950":[5,0,31,9],
-"struct__DviParams.html#ac4765f2437899478e1d4f36d5f338138":[5,0,31,19],
-"struct__DviParams.html#ac505875a9cdf697248bb85dfd292cc41":[5,0,31,12],
-"struct__DviParams.html#ad4ee1ca974231a8671b1e8926b21e300":[5,0,31,18],
-"struct__DviParams.html#aee9c02c1013ee6efe5daba29751f2c13":[5,0,31,0],
-"struct__DviParams.html#af0df0901f69152acb4b532a1a30a727c":[5,0,31,6],
-"struct__DviParams.html#af2026f8f5ca01859b74c4d9879e85fd7":[5,0,31,17],
-"struct__DviParams.html#afd4e66c34a287595f07749481f9d687b":[5,0,31,8],
-"struct__DviRange.html":[5,0,32],
-"struct__DviRange.html#a099dbfb073172ade4fad0ecb057036db":[5,0,32,0]
+"struct__DviParams.html#a772fc274414e7728029835f41981a8dc":[5,0,31,10]
 };

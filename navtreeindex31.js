@@ -1,5 +1,16 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvDocumentInfo.html#a75e628bfa7b21b6002fb97dcee2d8f19":[5,0,75,1],
+"struct__EvDocumentInfo.html#a96fd22cde6281f75080e1deac18b6b13":[5,0,75,6],
+"struct__EvDocumentInfo.html#a9cdd709c34d809e8d3ec6a51d3e27625":[5,0,75,0],
+"struct__EvDocumentInfo.html#ab1028387055a58ed2175db68708cc86e":[5,0,75,13],
+"struct__EvDocumentInfo.html#ab55f1b599760b13e5ee0e059a11e5a83":[5,0,75,9],
+"struct__EvDocumentInfo.html#ac912d79da5a22086f2ca7dee10120237":[5,0,75,15],
+"struct__EvDocumentInfo.html#ad8a963857d068cbdf17508c0bcb468eb":[5,0,75,14],
+"struct__EvDocumentInfo.html#af30f2daecf101cd7fcc578e860ed0e6e":[5,0,75,16],
+"struct__EvDocumentLayersInterface.html":[5,0,76],
+"struct__EvDocumentLayersInterface.html#a191cd037db9d3e7959e51bd6dc2f76d1":[5,0,76,0],
+"struct__EvDocumentLayersInterface.html#a69c43434abb29e31ef9fba06b692bc2d":[5,0,76,1],
 "struct__EvDocumentLayersInterface.html#aa246d6a179495ddcaa295666fd9ce4fa":[5,0,76,4],
 "struct__EvDocumentLayersInterface.html#aa2e6d169b05a8d20c1eb49866b85d145":[5,0,76,3],
 "struct__EvDocumentLayersInterface.html#ab7029196af71af2a1591ff38ad1fc907":[5,0,76,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvJobAttachmentsClass.html#acdcf7be777afa723c1675546c147462e":[5,0,126,0],
 "struct__EvJobClass.html":[5,0,127],
 "struct__EvJobClass.html#a1d71270f4c411717b224f83dd6141027":[5,0,127,3],
-"struct__EvJobClass.html#a60d5b8cfbbcf950029afadf2251041e5":[5,0,127,1],
-"struct__EvJobClass.html#a982489ee5c5e1174ac444064a646317a":[5,0,127,0],
-"struct__EvJobClass.html#ac871c2e719039fadea04efb38d474379":[5,0,127,2],
-"struct__EvJobExport.html":[5,0,128],
-"struct__EvJobExport.html#a48e2abe13291d955fd2b566a4d1bd60c":[5,0,128,1],
-"struct__EvJobExport.html#ab91046a9efcdf677d654162d6540f78d":[5,0,128,0],
-"struct__EvJobExport.html#af4e36ff283247c57979acdfd503d54f9":[5,0,128,2],
-"struct__EvJobExportClass.html":[5,0,129],
-"struct__EvJobExportClass.html#a22fd33fe8fadcfe827e1824f47e86a4e":[5,0,129,0],
-"struct__EvJobFind.html":[5,0,130],
-"struct__EvJobFind.html#a177e9b4c317c75765753087a397538c5":[5,0,130,6],
-"struct__EvJobFind.html#a3e273b1de436e529202535f1db807787":[5,0,130,4]
+"struct__EvJobClass.html#a60d5b8cfbbcf950029afadf2251041e5":[5,0,127,1]
 };
