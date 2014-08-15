@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"struct__DviParams.html#a772fc274414e7728029835f41981a8dc":[5,0,31,10],
 "struct__DviParams.html#a8dc406cbe8e8c46ff3ed821a0743d2ec":[5,0,31,16],
 "struct__DviParams.html#aaab2140613ee64f9fc59141ba2509950":[5,0,31,9],
 "struct__DviParams.html#ac4765f2437899478e1d4f36d5f338138":[5,0,31,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvDocumentInfo.html#a534788ac6111159d79973aeb2242ba15":[5,0,75,18],
 "struct__EvDocumentInfo.html#a544b3c7a01606378e39049bc490689d4":[5,0,75,11],
 "struct__EvDocumentInfo.html#a5c1437c98ad4deba4495a7e6e217228d":[5,0,75,17],
-"struct__EvDocumentInfo.html#a5cf65e376128562782ea6e759e180b6f":[5,0,75,19],
-"struct__EvDocumentInfo.html#a65db7188bb271fe107a7d875001623a8":[5,0,75,10]
+"struct__EvDocumentInfo.html#a5cf65e376128562782ea6e759e180b6f":[5,0,75,19]
 };

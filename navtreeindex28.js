@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structCharMetricInfo.html#ae4510ed299356e805c66dbfe5dd86202":[5,0,321,0],
 "structCharMetricInfo.html#af80521649706b11528a0614168d0d32f":[5,0,321,2],
 "structColorCache.html":[5,0,322],
 "structColorCache.html#a111ea19e43540ec296a5c2f98a241ad4":[5,0,322,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d":[5,0,3,6],
 "struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786":[5,0,3,4],
 "struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322":[5,0,3,1],
-"struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d":[5,0,3,7],
-"struct__CacheJobInfo.html#ae5e58f1b1a94f0e2c26c49f697d4d601":[5,0,3,9]
+"struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d":[5,0,3,7]
 };

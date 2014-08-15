@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"struct__EvPageActionWidget.html#a199a40d25a4e27d2107b946dd915497a":[5,0,189,3],
 "struct__EvPageActionWidget.html#a2e8bc83f8b41671a2094e11a85f1252e":[5,0,189,2],
 "struct__EvPageActionWidget.html#a3186127c5570568ce424c15ee85d82e6":[5,0,189,1],
 "struct__EvPageActionWidget.html#a4c2da39cf1dbef42953deaaf27a5497b":[5,0,189,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "struct__EvSidebarClass.html#ad2f0fbf1452aade3d50aa2a3a6a98b4e":[5,0,237,0],
 "struct__EvSidebarLayers.html":[5,0,238],
 "struct__EvSidebarLayers.html#a1d9ee6a7d6a5276f574796097aa19cb8":[5,0,238,1],
-"struct__EvSidebarLayers.html#a3b40dcda5f6af914a7e9c4c1650610e8":[5,0,238,0],
-"struct__EvSidebarLayersClass.html":[5,0,239]
+"struct__EvSidebarLayers.html#a3b40dcda5f6af914a7e9c4c1650610e8":[5,0,238,0]
 };

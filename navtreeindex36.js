@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"struct__NPStream.html#a54536dc05130cae4e6fea0d000eec74e":[5,0,296,3],
 "struct__NPStream.html#a5a7c75fa7838035e29cfe03822e5a38c":[5,0,296,1],
 "struct__NPStream.html#a9a7484e81a72b591f97bb176536c5a83":[5,0,296,6],
 "struct__NPStream.html#aebb004f9e61be47fa87ffd114e18ba39":[5,0,296,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "synctex__parser_8c.html#a2b712fd4dac5720df55bb855c4db605d":[6,0,0,2,2,0,178],
 "synctex__parser_8c.html#a2c4b621dae38ac5134a248303a183ef2":[6,0,0,2,2,0,74],
 "synctex__parser_8c.html#a2ceee763583070b40c7c158c9fa9894b":[6,0,0,2,2,0,156],
-"synctex__parser_8c.html#a300f350237627dc6e830feb5a31147a5":[6,0,0,2,2,0,33],
-"synctex__parser_8c.html#a311ae5d13c9f7e7fd0af07834e0e49e9":[6,0,0,2,2,0,165]
+"synctex__parser_8c.html#a300f350237627dc6e830feb5a31147a5":[6,0,0,2,2,0,33]
 };
