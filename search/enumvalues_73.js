@@ -10,6 +10,7 @@ var searchData=
   ['security_5fproperty',['SECURITY_PROPERTY',['../ev-properties-view_8c.html#a80e3abfdceb5f0f2ef6e0e50ab2fd1aaa42957980af0e094152330ab5ab8b4e11',1,'ev-properties-view.c']]],
   ['signal_5factivate',['SIGNAL_ACTIVATE',['../ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a3e0380f06cd33ac4c86238321e044799',1,'ev-view.c']]],
   ['signal_5fannot_5fadded',['SIGNAL_ANNOT_ADDED',['../ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a22ab1c1f49084ca47f185316562a8fbb',1,'ev-view.c']]],
+  ['signal_5fannot_5fremoved',['SIGNAL_ANNOT_REMOVED',['../ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a80fdef65d864e8d4b81994a44d76020e',1,'ev-view.c']]],
   ['signal_5fcursor_5fmoved',['SIGNAL_CURSOR_MOVED',['../ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a88d4855ce571ef6301476468ea72a974',1,'ev-view.c']]],
   ['signal_5fexternal_5flink',['SIGNAL_EXTERNAL_LINK',['../ev-view-presentation_8c.html#a84627a72058502328269676b81780f89af1b1ff86dfe7416a02aaade1a1fbc668',1,'SIGNAL_EXTERNAL_LINK():&#160;ev-view-presentation.c'],['../ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3af1b1ff86dfe7416a02aaade1a1fbc668',1,'SIGNAL_EXTERNAL_LINK():&#160;ev-view.c']]],
   ['signal_5fhandle_5flink',['SIGNAL_HANDLE_LINK',['../ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a4e96c390423f28d509edad4f3c79bc9b',1,'ev-view.c']]],

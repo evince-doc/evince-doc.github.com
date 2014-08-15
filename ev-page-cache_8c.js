@@ -23,7 +23,7 @@ var ev_page_cache_8c =
     [ "ev_page_cache_get_text_mapping", "ev-page-cache_8c.html#a8f7e64cbcb0f043d64df430331265b4a", null ],
     [ "ev_page_cache_init", "ev-page-cache_8c.html#aba449b2cc9bfc6722973adfe4aefc8c5", null ],
     [ "ev_page_cache_is_page_cached", "ev-page-cache_8c.html#aa5ef2306799155c69d8ffc0d0fbffbdd", null ],
-    [ "ev_page_cache_mark_dirty", "ev-page-cache_8c.html#a3555d3f3ab03648ae5fafffa2902255c", null ],
+    [ "ev_page_cache_mark_dirty", "ev-page-cache_8c.html#adb894744c67bbf999b513c550487f3ac", null ],
     [ "ev_page_cache_new", "ev-page-cache_8c.html#ab655496da270a9f4a87225ac809e1b08", null ],
     [ "ev_page_cache_schedule_job_if_needed", "ev-page-cache_8c.html#a087a54e4a0310bd13c054dce6941e316", null ],
     [ "ev_page_cache_set_flags", "ev-page-cache_8c.html#aa53dc3c5d68bbd28698eea283bc457d1", null ],

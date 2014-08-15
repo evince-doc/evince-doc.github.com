@@ -15,6 +15,7 @@ var ev_sidebar_annotations_8c =
     [ "ev_sidebar_annotations_add_annots_list", "ev-sidebar-annotations_8c.html#a652e9726c497acbf2e64c958ac130993", null ],
     [ "ev_sidebar_annotations_add_annots_palette", "ev-sidebar-annotations_8c.html#a312d3047c0ff4dce336ec69d073dfac9", null ],
     [ "ev_sidebar_annotations_annot_added", "ev-sidebar-annotations_8c.html#ac2b91d473ebfb431178910d88c443159", null ],
+    [ "ev_sidebar_annotations_annot_removed", "ev-sidebar-annotations_8c.html#a7557fdf16db3992bef00a47229aebf0b", null ],
     [ "ev_sidebar_annotations_class_init", "ev-sidebar-annotations_8c.html#a2c68ec3b303ebe5f1f1f43c641393bf0", null ],
     [ "ev_sidebar_annotations_create_simple_model", "ev-sidebar-annotations_8c.html#a8a9898bab6fa37cfcc173a3b98a4ae9d", null ],
     [ "ev_sidebar_annotations_document_changed_cb", "ev-sidebar-annotations_8c.html#a767594c7a74580f894b52f036f2df5c9", null ],

@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"structBITMAP.html#a2b72c426cabec9d895384364c657a426":[5,0,319,3],
+"structBITMAP.html#a5d80a4cf27b3b9f390d81ea7caf61c1f":[5,0,319,2],
+"structBITMAP.html#ac0d5017ccb00d92a65e782d1f3d15ba4":[5,0,319,1],
+"structBadTitleEntry.html":[5,0,317],
 "structBadTitleEntry.html#a263ebd78df10b8c6c3501f296811b705":[5,0,317,1],
 "structBadTitleEntry.html#a52bee56400ce058ee01cd70e9ec3260f":[5,0,317,0],
 "structBuffer.html":[5,0,320],
@@ -245,9 +249,5 @@ var NAVTREEINDEX28 =
 "structTrackKernData.html#a1dc94d10d320f187993d4fc3c4cfdd21":[5,0,364,4],
 "structTrackKernData.html#a2afaf37eff72ce82344487d501c056c3":[5,0,364,1],
 "structTrackKernData.html#a5807db989d1817bbfd4fd663965440f1":[5,0,364,2],
-"structTrackKernData.html#ad8237a3f50243b4a2f38b14c9c3d5b7b":[5,0,364,3],
-"structTrackKernData.html#afb58f0fad4367324e1c02394b37ed26b":[5,0,364,0],
-"struct__CacheJobInfo.html":[5,0,3],
-"struct__CacheJobInfo.html#a182e875a86c05f3edfde38b638d77d5e":[5,0,3,3],
-"struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f":[5,0,3,11]
+"structTrackKernData.html#ad8237a3f50243b4a2f38b14c9c3d5b7b":[5,0,364,3]
 };

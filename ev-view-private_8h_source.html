@@ -361,67 +361,69 @@ $(document).ready(function(){initNavTree('ev-view-private_8h_source.html','');})
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                       <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>   *link);</div>
 <div class="line"><a name="l00254"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#abb0f806f6b91c4682a1a382666af2bde">  254</a></span>&#160;        void     (*<a class="code" href="struct__EvViewClass.html#abb0f806f6b91c4682a1a382666af2bde">annot_added</a>)       (<a class="code" href="struct__EvView.html">EvView</a>         *view,</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                       <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>   *annot);</div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#a170bf891da60d442530c9d007cfd5979">  256</a></span>&#160;        void     (*<a class="code" href="struct__EvViewClass.html#a170bf891da60d442530c9d007cfd5979">layers_changed</a>)    (<a class="code" href="struct__EvView.html">EvView</a>         *view);</div>
-<div class="line"><a name="l00257"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#a735bed3e899e5a56c88d11575c41c926">  257</a></span>&#160;        gboolean (*<a class="code" href="struct__EvViewClass.html#a735bed3e899e5a56c88d11575c41c926">move_cursor</a>)       (<a class="code" href="struct__EvView.html">EvView</a>         *view,</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                       GtkMovementStep step,</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                       gint            count,</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                       gboolean        <a class="code" href="ev-view_8c.html#afa236f661ae8a247fb2368bddac97bfd">extend_selection</a>);</div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#a137793787dfab18a906073548a1120bc">  261</a></span>&#160;    void     (*<a class="code" href="struct__EvViewClass.html#a137793787dfab18a906073548a1120bc">activate</a>)          (<a class="code" href="struct__EvView.html">EvView</a>         *view);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;};</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#af51d374635b49a10eb30711e9a5909c1">_get_page_size_for_scale_and_rotation</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document,</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                        gint        page,</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        gdouble     scale,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        gint        rotation,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                        gint       *page_width,</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                        gint       *page_height);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a103a33e3028683b204690cc6ff66a1ed">_ev_view_transform_view_point_to_doc_point</a> (<a class="code" href="struct__EvView.html">EvView</a>       *view,</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                         GdkPoint     *view_point,</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                         GdkRectangle *page_area,</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                         GtkBorder    *border,</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                         <span class="keywordtype">double</span>       *doc_point_x,</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                         <span class="keywordtype">double</span>       *doc_point_y);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a231b1221d672c5ee9781b519a1ae8e7d">_ev_view_transform_view_rect_to_doc_rect</a> (<a class="code" href="struct__EvView.html">EvView</a>       *view,</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                           GdkRectangle *view_rect,</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                           GdkRectangle *page_area,</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                           GtkBorder    *border,</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                           <a class="code" href="struct__EvRectangle.html">EvRectangle</a>  *doc_rect);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a3b05fea97420f6f5da941c85b21615cf">_ev_view_transform_doc_point_to_view_point</a> (<a class="code" href="struct__EvView.html">EvView</a>   *view,</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                         <span class="keywordtype">int</span>       page,</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                         <a class="code" href="struct__EvPoint.html">EvPoint</a>  *doc_point,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                         GdkPoint *view_point);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a> (<a class="code" href="struct__EvView.html">EvView</a>       *view,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                           <span class="keywordtype">int</span>           page,</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                           <a class="code" href="struct__EvRectangle.html">EvRectangle</a>  *doc_rect,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                           GdkRectangle *view_rect);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a60b52ce8d5e2aa3cb26fb9678cbcc558">_ev_view_get_selection_colors</a> (<a class="code" href="struct__EvView.html">EvView</a>  *view,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                    GdkRGBA *bg_color,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                    GdkRGBA *fg_color);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;gint <a class="code" href="ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                            gint    page,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                            gdouble doc_x,</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                            gdouble doc_y);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a> (<a class="code" href="struct__EvView.html">EvView</a>   *view);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a58e08a3b11353d7b0baa0fa57af59327">_ev_view_set_selection</a>   (<a class="code" href="struct__EvView.html">EvView</a>   *view,</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                   GdkPoint *start_point,</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                   GdkPoint *end_point);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                   <a class="code" href="struct__EvMapping.html">EvMapping</a> *element_mapping,</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                   gint page);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#afc17f1de1fe26ba8846a7d5d14a612a6">_ev_view_focus_form_field</a>    (<a class="code" href="struct__EvView.html">EvView</a>      *view,</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                   <a class="code" href="struct__EvFormField.html">EvFormField</a> *field);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* __EV_VIEW_PRIVATE_H__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#a980f375aefc5198dac52aab24f9a95ec">  256</a></span>&#160;        void     (*<a class="code" href="struct__EvViewClass.html#a980f375aefc5198dac52aab24f9a95ec">annot_removed</a>)     (<a class="code" href="struct__EvView.html">EvView</a>         *view,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                       <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>   *annot);</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#a170bf891da60d442530c9d007cfd5979">  258</a></span>&#160;        void     (*<a class="code" href="struct__EvViewClass.html#a170bf891da60d442530c9d007cfd5979">layers_changed</a>)    (<a class="code" href="struct__EvView.html">EvView</a>         *view);</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#a735bed3e899e5a56c88d11575c41c926">  259</a></span>&#160;        gboolean (*<a class="code" href="struct__EvViewClass.html#a735bed3e899e5a56c88d11575c41c926">move_cursor</a>)       (<a class="code" href="struct__EvView.html">EvView</a>         *view,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                       GtkMovementStep step,</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                       gint            count,</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                       gboolean        <a class="code" href="ev-view_8c.html#afa236f661ae8a247fb2368bddac97bfd">extend_selection</a>);</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="code" href="struct__EvViewClass.html#a137793787dfab18a906073548a1120bc">  263</a></span>&#160;    void     (*<a class="code" href="struct__EvViewClass.html#a137793787dfab18a906073548a1120bc">activate</a>)          (<a class="code" href="struct__EvView.html">EvView</a>         *view);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;};</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#af51d374635b49a10eb30711e9a5909c1">_get_page_size_for_scale_and_rotation</a> (<a class="code" href="struct__EvDocument.html">EvDocument</a> *document,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        gint        page,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                        gdouble     scale,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                        gint        rotation,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                        gint       *page_width,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                        gint       *page_height);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a103a33e3028683b204690cc6ff66a1ed">_ev_view_transform_view_point_to_doc_point</a> (<a class="code" href="struct__EvView.html">EvView</a>       *view,</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                         GdkPoint     *view_point,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                         GdkRectangle *page_area,</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                         GtkBorder    *border,</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                         <span class="keywordtype">double</span>       *doc_point_x,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                         <span class="keywordtype">double</span>       *doc_point_y);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a231b1221d672c5ee9781b519a1ae8e7d">_ev_view_transform_view_rect_to_doc_rect</a> (<a class="code" href="struct__EvView.html">EvView</a>       *view,</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                           GdkRectangle *view_rect,</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                           GdkRectangle *page_area,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                           GtkBorder    *border,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                           <a class="code" href="struct__EvRectangle.html">EvRectangle</a>  *doc_rect);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a3b05fea97420f6f5da941c85b21615cf">_ev_view_transform_doc_point_to_view_point</a> (<a class="code" href="struct__EvView.html">EvView</a>   *view,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                         <span class="keywordtype">int</span>       page,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                         <a class="code" href="struct__EvPoint.html">EvPoint</a>  *doc_point,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                         GdkPoint *view_point);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a> (<a class="code" href="struct__EvView.html">EvView</a>       *view,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                           <span class="keywordtype">int</span>           page,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                           <a class="code" href="struct__EvRectangle.html">EvRectangle</a>  *doc_rect,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                           GdkRectangle *view_rect);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a60b52ce8d5e2aa3cb26fb9678cbcc558">_ev_view_get_selection_colors</a> (<a class="code" href="struct__EvView.html">EvView</a>  *view,</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                    GdkRGBA *bg_color,</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                    GdkRGBA *fg_color);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;gint <a class="code" href="ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                            gint    page,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                            gdouble doc_x,</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                            gdouble doc_y);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a> (<a class="code" href="struct__EvView.html">EvView</a>   *view);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a58e08a3b11353d7b0baa0fa57af59327">_ev_view_set_selection</a>   (<a class="code" href="struct__EvView.html">EvView</a>   *view,</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                   GdkPoint *start_point,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                   GdkPoint *end_point);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a> (<a class="code" href="struct__EvView.html">EvView</a> *view,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                   <a class="code" href="struct__EvMapping.html">EvMapping</a> *element_mapping,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                   gint page);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-view-private_8h.html#afc17f1de1fe26ba8846a7d5d14a612a6">_ev_view_focus_form_field</a>    (<a class="code" href="struct__EvView.html">EvView</a>      *view,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                   <a class="code" href="struct__EvFormField.html">EvFormField</a> *field);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* __EV_VIEW_PRIVATE_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-private_8h.html">ev-view-private.h</a></li>
-    <li class="footer">Generated on Fri Aug 15 2014 10:48:28 for Evince by
+    <li class="footer">Generated on Fri Aug 15 2014 12:40:27 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -174,6 +174,8 @@ Functions</h2></td></tr>
 <tr class="separator:adfb8716a64f948a5253cd938447edeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b91d473ebfb431178910d88c443159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-sidebar-annotations_8h.html#ac2b91d473ebfb431178910d88c443159">ev_sidebar_annotations_annot_added</a> (<a class="el" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots, <a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot)</td></tr>
 <tr class="separator:ac2b91d473ebfb431178910d88c443159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7557fdf16db3992bef00a47229aebf0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-sidebar-annotations_8h.html#a7557fdf16db3992bef00a47229aebf0b">ev_sidebar_annotations_annot_removed</a> (<a class="el" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots)</td></tr>
+<tr class="separator:a7557fdf16db3992bef00a47229aebf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a349d8ce67407e1a9bb908dec01b2b8ac"></a>
@@ -378,6 +380,37 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7557fdf16db3992bef00a47229aebf0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_sidebar_annotations_annot_removed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *&#160;</td>
+          <td class="paramname"><em>sidebar_annots</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-annotations_8c_source.html#l00329">329</a> of file <a class="el" href="ev-sidebar-annotations_8c_source.html">ev-sidebar-annotations.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <a class="code" href="ev-sidebar-annotations_8c.html#aea775c22e305116e25b81b5c2c8e71e8">ev_sidebar_annotations_load</a> (sidebar_annots);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-annotations_8h_a7557fdf16db3992bef00a47229aebf0b_icgraph.svg" width="531" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a39f60e5f2950a0026758c4d1db0edc62"></a>
 <div class="memitem">
 <div class="memproto">
@@ -415,11 +448,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                         NULL));</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-annotations_8h_adfb8716a64f948a5253cd938447edeb3_icgraph.svg" width="366" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -433,7 +466,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-annotations_8h.html">ev-sidebar-annotations.h</a></li>
-    <li class="footer">Generated on Fri Aug 15 2014 10:48:40 for Evince by
+    <li class="footer">Generated on Fri Aug 15 2014 12:40:35 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

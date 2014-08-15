@@ -30,7 +30,7 @@ var searchData=
   ['hash_5ffunc',['hash_func',['../struct__DviHashTable.html#a95a9aa11971fa73a38a51be1c55ff6c5',1,'_DviHashTable']]],
   ['hash_5fremove',['hash_remove',['../hash_8c.html#a198e906c5cbdb404458770d3325f302a',1,'hash.c']]],
   ['hash_5fstring',['hash_string',['../hash_8c.html#ae5abc39aaeca88065bfc947a82d5a0d1',1,'hash.c']]],
-  ['hasmethod',['hasMethod',['../structNPClass.html#aa59d4bb55b6a5635a1adf5258209dd8b',1,'NPClass::hasMethod()'],['../classEvBrowserPlugin.html#a0d346b3a7c2e6102ae28398d276c6334',1,'EvBrowserPlugin::hasMethod()'],['../struct__NPNetscapeFuncs.html#a103582ab293188db74467558d961183f',1,'_NPNetscapeFuncs::hasmethod()']]],
+  ['hasmethod',['hasmethod',['../struct__NPNetscapeFuncs.html#a103582ab293188db74467558d961183f',1,'_NPNetscapeFuncs::hasmethod()'],['../structNPClass.html#aa59d4bb55b6a5635a1adf5258209dd8b',1,'NPClass::hasMethod()'],['../classEvBrowserPlugin.html#a0d346b3a7c2e6102ae28398d276c6334',1,'EvBrowserPlugin::hasMethod()']]],
   ['hasproperty',['hasproperty',['../struct__NPNetscapeFuncs.html#a089e7397f0daf0442f664908776f920d',1,'_NPNetscapeFuncs::hasproperty()'],['../structNPClass.html#a8a0d2cfeacb08cfd00f166ca3a5ae12d',1,'NPClass::hasProperty()'],['../classEvBrowserPlugin.html#a463eb756992cde4b1da239cdd76ef26e',1,'EvBrowserPlugin::hasProperty()']]],
   ['have_5flocale_5fh',['HAVE_LOCALE_H',['../synctex__parser_8c.html#aec3873a23961f50c1d92c8f75a50bd40',1,'synctex_parser.c']]],
   ['have_5fprototypes',['HAVE_PROTOTYPES',['../fontsrch_8c.html#a25c5e3dadd6709e3c6bc1a83425dd5f9',1,'HAVE_PROTOTYPES():&#160;fontsrch.c'],['../private_8h.html#a25c5e3dadd6709e3c6bc1a83425dd5f9',1,'HAVE_PROTOTYPES():&#160;private.h']]],

@@ -214,7 +214,6 @@ var NAVTREEINDEX13 =
 "ev-page-cache_8c.html#a0e9c307b73e70959ef4ca1f489ba581b":[6,0,0,5,16,9],
 "ev-page-cache_8c.html#a18748f9f5cb2306e03adbc66b3983d8e":[6,0,0,5,16,4],
 "ev-page-cache_8c.html#a1caa87e938322bc3df9a0ad31f0dc3e6":[6,0,0,5,16,14],
-"ev-page-cache_8c.html#a3555d3f3ab03648ae5fafffa2902255c":[6,0,0,5,16,23],
 "ev-page-cache_8c.html#a47fcfac00d1008109fcb9cdb1e529d2b":[6,0,0,5,16,13],
 "ev-page-cache_8c.html#a4ef8fb0e5ddc3fa51069705456e2cfa3":[6,0,0,5,16,16],
 "ev-page-cache_8c.html#a555070f976fc00a572a05779aaaa3479":[6,0,0,5,16,12],
@@ -231,6 +230,7 @@ var NAVTREEINDEX13 =
 "ev-page-cache_8c.html#aaaf64e68aa3eb00001f40bc16adb618e":[6,0,0,5,16,17],
 "ev-page-cache_8c.html#ab655496da270a9f4a87225ac809e1b08":[6,0,0,5,16,24],
 "ev-page-cache_8c.html#aba449b2cc9bfc6722973adfe4aefc8c5":[6,0,0,5,16,21],
+"ev-page-cache_8c.html#adb894744c67bbf999b513c550487f3ac":[6,0,0,5,16,23],
 "ev-page-cache_8c.html#add32cf4085a072bb5cbbbd47561efda2":[6,0,0,5,16,29],
 "ev-page-cache_8c.html#ae472ee9f37b0bf4b24483674141f6f47":[6,0,0,5,16,8],
 "ev-page-cache_8c.html#ae7f315a5b8005b8499f5b3d540f14eb4":[6,0,0,5,16,5],
@@ -238,7 +238,6 @@ var NAVTREEINDEX13 =
 "ev-page-cache_8c_source.html":[6,0,0,5,16],
 "ev-page-cache_8h.html":[6,0,0,5,17],
 "ev-page-cache_8h.html#a1caa87e938322bc3df9a0ad31f0dc3e6":[6,0,0,5,17,12],
-"ev-page-cache_8h.html#a3555d3f3ab03648ae5fafffa2902255c":[6,0,0,5,17,21],
 "ev-page-cache_8h.html#a47fcfac00d1008109fcb9cdb1e529d2b":[6,0,0,5,17,11],
 "ev-page-cache_8h.html#a4ef8fb0e5ddc3fa51069705456e2cfa3":[6,0,0,5,17,14],
 "ev-page-cache_8h.html#a5d0b5e6ff9510ea0fd510f1248ede7bb":[6,0,0,5,17,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "ev-page-cache_8h.html#a9575d7d26333a887ff93d9c0c3bbc12c":[6,0,0,5,17,19],
 "ev-page-cache_8h.html#a96c04358c16dc3ec1cf9290aa05161f1":[6,0,0,5,17,7],
 "ev-page-cache_8h.html#a98caf2933580b49cdc02e62761021156":[6,0,0,5,17,16],
-"ev-page-cache_8h.html#aa14283303685bd99a3787031cd3eab1b":[6,0,0,5,17,24]
+"ev-page-cache_8h.html#aa14283303685bd99a3787031cd3eab1b":[6,0,0,5,17,24],
+"ev-page-cache_8h.html#aa53dc3c5d68bbd28698eea283bc457d1":[6,0,0,5,17,23]
 };

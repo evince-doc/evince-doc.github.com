@@ -23,6 +23,7 @@ var ev_view_8c =
     [ "SIGNAL_SELECTION_CHANGED", "ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a8f27d962b0275bc775a2e76581ed1c4e", null ],
     [ "SIGNAL_SYNC_SOURCE", "ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a3280bcbf9ec2bb53ab982beaadc07d29", null ],
     [ "SIGNAL_ANNOT_ADDED", "ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a22ab1c1f49084ca47f185316562a8fbb", null ],
+    [ "SIGNAL_ANNOT_REMOVED", "ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a80fdef65d864e8d4b81994a44d76020e", null ],
     [ "SIGNAL_LAYERS_CHANGED", "ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a1c06cd1a294d12d66b6bc3a3bc0c7f05", null ],
     [ "SIGNAL_MOVE_CURSOR", "ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3abcf1e4e63aa60f8cd23aadae4d89c433", null ],
     [ "SIGNAL_CURSOR_MOVED", "ev-view_8c.html#af3520ff6d43011872bab77edd27d4de3a88d4855ce571ef6301476468ea72a974", null ],

@@ -42,7 +42,7 @@ var searchData=
   ['getintidentifier',['getintidentifier',['../struct__NPNetscapeFuncs.html#a75ce6f43bf287e21bdb04472b9054482',1,'_NPNetscapeFuncs']]],
   ['getjavaenv',['getJavaEnv',['../struct__NPNetscapeFuncs.html#ae3a96dc6ce6ce617f7663b4616dc9133',1,'_NPNetscapeFuncs']]],
   ['getjavapeer',['getJavaPeer',['../struct__NPNetscapeFuncs.html#a9e4679288da2ec16981c19bb76e7041a',1,'_NPNetscapeFuncs']]],
-  ['getproperty',['getproperty',['../struct__NPNetscapeFuncs.html#ad192f239da060e48b2ea96f43760f04d',1,'_NPNetscapeFuncs::getproperty()'],['../structNPClass.html#a0f9451c93e48b9be7db5f49a1703ac09',1,'NPClass::getProperty()']]],
+  ['getproperty',['getProperty',['../structNPClass.html#a0f9451c93e48b9be7db5f49a1703ac09',1,'NPClass::getProperty()'],['../struct__NPNetscapeFuncs.html#ad192f239da060e48b2ea96f43760f04d',1,'_NPNetscapeFuncs::getproperty()']]],
   ['getsiteswithdata',['getsiteswithdata',['../struct__NPPluginFuncs.html#af67d5a85ce501900c8f8c0a2bca7831e',1,'_NPPluginFuncs']]],
   ['getstringidentifier',['getstringidentifier',['../struct__NPNetscapeFuncs.html#a04a70f5a3c611c3bffbd7aa7d040978b',1,'_NPNetscapeFuncs']]],
   ['getstringidentifiers',['getstringidentifiers',['../struct__NPNetscapeFuncs.html#a3084cc52b18ba1ec455475d11515d03c',1,'_NPNetscapeFuncs']]],

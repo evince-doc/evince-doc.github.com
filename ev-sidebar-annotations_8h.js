@@ -12,6 +12,7 @@ var ev_sidebar_annotations_8h =
     [ "EvSidebarAnnotationsClass", "ev-sidebar-annotations_8h.html#a80283e1c60abeef9819ac62ac11fc94e", null ],
     [ "EvSidebarAnnotationsPrivate", "ev-sidebar-annotations_8h.html#a4c7b0ffbdabb0e7386577694029d816f", null ],
     [ "ev_sidebar_annotations_annot_added", "ev-sidebar-annotations_8h.html#ac2b91d473ebfb431178910d88c443159", null ],
+    [ "ev_sidebar_annotations_annot_removed", "ev-sidebar-annotations_8h.html#a7557fdf16db3992bef00a47229aebf0b", null ],
     [ "ev_sidebar_annotations_get_type", "ev-sidebar-annotations_8h.html#a39f60e5f2950a0026758c4d1db0edc62", null ],
     [ "ev_sidebar_annotations_new", "ev-sidebar-annotations_8h.html#adfb8716a64f948a5253cd938447edeb3", null ]
 ];

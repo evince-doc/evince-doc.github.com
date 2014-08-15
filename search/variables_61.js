@@ -36,6 +36,7 @@ var searchData=
   ['annot_5fadd_5fcancelled',['annot_add_cancelled',['../struct__EvSidebarAnnotationsClass.html#a421b5b9da31dddec1639ae9ff19e874c',1,'_EvSidebarAnnotationsClass']]],
   ['annot_5fadded',['annot_added',['../struct__EvViewClass.html#abb0f806f6b91c4682a1a382666af2bde',1,'_EvViewClass']]],
   ['annot_5fmapping',['annot_mapping',['../struct__EvJobPageData.html#ac19ef061a0ee1abc91a57b17d7756b47',1,'_EvJobPageData::annot_mapping()'],['../struct__EvPageCacheData.html#a154ac76c9594b0c157bf8eca740fc30b',1,'_EvPageCacheData::annot_mapping()']]],
+  ['annot_5fremoved',['annot_removed',['../struct__EvViewClass.html#a980f375aefc5198dac52aab24f9a95ec',1,'_EvViewClass']]],
   ['annot_5ftext_5fitem',['annot_text_item',['../struct__EvSidebarAnnotationsPrivate.html#adc28c0b4ab6a70f256e6f1ce8b8cfce9',1,'_EvSidebarAnnotationsPrivate']]],
   ['annot_5ftype',['annot_type',['../struct__EvAnnotationPropertiesDialog.html#a53c3197e43e26d1b1ee1c1591039f208',1,'_EvAnnotationPropertiesDialog']]],
   ['annotation',['annotation',['../struct__EvAnnotationWindow.html#acf30b17ba49f5527ec862fe22bfb3719',1,'_EvAnnotationWindow']]],
