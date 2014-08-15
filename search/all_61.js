@@ -72,6 +72,7 @@ var searchData=
   ['app',['app',['../struct__EvAttachmentPrivate.html#a1bc0f6bc41236d3ba52b687ff18d9486',1,'_EvAttachmentPrivate']]],
   ['app_5fabout_5fcb',['app_about_cb',['../ev-application_8c.html#ad96b173f96deb06b1dcb639cac2c4869',1,'ev-application.c']]],
   ['app_5fhelp_5fcb',['app_help_cb',['../ev-application_8c.html#a8a6d178614bc47b5c0a2e3dc3287a581',1,'ev-application.c']]],
+  ['app_5fnew_5fcb',['app_new_cb',['../ev-application_8c.html#af166c91c1ae20e713e50bc6219ac1aa0',1,'ev-application.c']]],
   ['archive',['archive',['../struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3',1,'_ComicsDocument']]],
   ['area',['area',['../struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2',1,'_EvMapping::area()'],['../struct__EvFormFieldAccessiblePrivate.html#a92dd69738fd14d1a0e45221427d6d07b',1,'_EvFormFieldAccessiblePrivate::area()'],['../struct__EvImageAccessiblePrivate.html#a445ef2ecb6d23a7e87e89f41721bdd05',1,'_EvImageAccessiblePrivate::area()'],['../struct__EvLinkAccessiblePrivate.html#a7444afc175c4900b08781549af61a3e5',1,'_EvLinkAccessiblePrivate::area()']]],
   ['ascender',['ascender',['../structGlobalFontInfo.html#ae7ece2c8f8d22ae9969a7ce010cf0ab5',1,'GlobalFontInfo']]],

@@ -7,7 +7,6 @@ var struct__EvToolbarPrivate =
     [ "navigation_action", "struct__EvToolbarPrivate.html#af08b62a6dc358f25c7faca66b0924da8", null ],
     [ "open_button", "struct__EvToolbarPrivate.html#a2fd69d8bdc4e7985d0eff7b25e40c6dd", null ],
     [ "page_selector", "struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6", null ],
-    [ "recent_view_button", "struct__EvToolbarPrivate.html#a697d00905b34dd81fcf15270a2230f18", null ],
     [ "toolbar_mode", "struct__EvToolbarPrivate.html#a0f2557f00e2191b4e58ebdc1c7801025", null ],
     [ "view_menu_button", "struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab", null ],
     [ "window", "struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b", null ],

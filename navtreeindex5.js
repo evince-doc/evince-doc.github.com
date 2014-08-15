@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"ev-backend-info_8c_source.html":[6,0,0,3,6],
+"ev-backend-info_8h.html":[6,0,0,3,7],
 "ev-backend-info_8h.html#a37667190ec08ffc8e145b68a95b0dc4b":[6,0,0,3,7,3],
 "ev-backend-info_8h.html#a3a763978519495d8b24a817bf19af013":[6,0,0,3,7,2],
 "ev-backend-info_8h.html#a4da82c67bbfe8097055803f0ce1f280e":[6,0,0,3,7,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "ev-document-fonts_8h.html#ad078a1788c3948d8d0d541192259f060":[6,0,0,3,20,16],
 "ev-document-fonts_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a53ae469cb8832548099bc18d144aef15":[6,0,0,3,20,11],
 "ev-document-fonts_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a8eb79c0c726f24bc43decd172ba55cbd":[6,0,0,3,20,10],
-"ev-document-fonts_8h.html#adb49720dc49f7d4e4cf9adbf2948e409af6c9821745df68dc93be857a33df6b45":[6,0,0,3,20,9],
-"ev-document-fonts_8h.html#ae60622f9176e69c4df43835a398d6df7":[6,0,0,3,20,13],
-"ev-document-fonts_8h.html#aeec0972b1a824cfa9347ffc3a224d419":[6,0,0,3,20,8]
+"ev-document-fonts_8h.html#adb49720dc49f7d4e4cf9adbf2948e409af6c9821745df68dc93be857a33df6b45":[6,0,0,3,20,9]
 };
