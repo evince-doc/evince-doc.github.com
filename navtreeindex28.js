@@ -1,5 +1,16 @@
 var NAVTREEINDEX28 =
 {
+"structBadTitleEntry.html#a263ebd78df10b8c6c3501f296811b705":[5,0,317,1],
+"structBadTitleEntry.html#a52bee56400ce058ee01cd70e9ec3260f":[5,0,317,0],
+"structBuffer.html":[5,0,320],
+"structBuffer.html#a24e94f119f4b386771c78cf37aaff41b":[5,0,320,2],
+"structBuffer.html#ab017cc01197319698565f0eab23148ea":[5,0,320,1],
+"structBuffer.html#aeec1fd4af0ddf6765b0187466d4361b8":[5,0,320,0],
+"structCharMetricInfo.html":[5,0,321],
+"structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40":[5,0,321,5],
+"structCharMetricInfo.html#a3b203ccd0888008f4b525b30030b6ab0":[5,0,321,3],
+"structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f":[5,0,321,4],
+"structCharMetricInfo.html#adb8e4767e585371e2f929149d7c223c7":[5,0,321,1],
 "structCharMetricInfo.html#ae4510ed299356e805c66dbfe5dd86202":[5,0,321,0],
 "structCharMetricInfo.html#af80521649706b11528a0614168d0d32f":[5,0,321,2],
 "structColorCache.html":[5,0,322],
@@ -238,16 +249,5 @@ var NAVTREEINDEX28 =
 "structTrackKernData.html#afb58f0fad4367324e1c02394b37ed26b":[5,0,364,0],
 "struct__CacheJobInfo.html":[5,0,3],
 "struct__CacheJobInfo.html#a182e875a86c05f3edfde38b638d77d5e":[5,0,3,3],
-"struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f":[5,0,3,11],
-"struct__CacheJobInfo.html#a4fcb3e37c95ccff4a7a5f5857f6dc7f0":[5,0,3,8],
-"struct__CacheJobInfo.html#a6542440c26769d264f60caf47e938f18":[5,0,3,13],
-"struct__CacheJobInfo.html#a6e2b8579f178894deecfccb3c90a1180":[5,0,3,5],
-"struct__CacheJobInfo.html#a7e79de464a690aad2fb8c5c2839ff091":[5,0,3,0],
-"struct__CacheJobInfo.html#a89c890e1a97289a4970801427e2e69f2":[5,0,3,10],
-"struct__CacheJobInfo.html#a98ce8d293c753ac0ee41dc4e8919b80b":[5,0,3,12],
-"struct__CacheJobInfo.html#aae599e8966157e8ece06abd6426ae4df":[5,0,3,2],
-"struct__CacheJobInfo.html#ab3466526281430e618f8e40391b5854d":[5,0,3,6],
-"struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786":[5,0,3,4],
-"struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322":[5,0,3,1],
-"struct__CacheJobInfo.html#ace59ca88d91a4575aec9adc9ebad406d":[5,0,3,7]
+"struct__CacheJobInfo.html#a418e800d8207d5aa192a474ec0c3ec7f":[5,0,3,11]
 };

@@ -11,6 +11,7 @@ var ev_mapping_list_8c =
     [ "ev_mapping_list_new", "ev-mapping-list_8c.html#adce8bd8904ae635a97ac6fc21920be70", null ],
     [ "ev_mapping_list_nth", "ev-mapping-list_8c.html#a5ce59fff70c3c67a5d861e7fffcc669b", null ],
     [ "ev_mapping_list_ref", "ev-mapping-list_8c.html#a3901e6244cece9d23ce24ee24e9222e0", null ],
+    [ "ev_mapping_list_remove", "ev-mapping-list_8c.html#ab3a78bad158a1ba903d631354153bf0a", null ],
     [ "ev_mapping_list_unref", "ev-mapping-list_8c.html#a4643b2ddd1ece13cbe8277f333af6375", null ],
     [ "mapping_list_free_foreach", "ev-mapping-list_8c.html#aaf59ae8ab96535858e24d4c83ff3b34a", null ]
 ];

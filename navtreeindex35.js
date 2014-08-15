@@ -1,5 +1,17 @@
 var NAVTREEINDEX35 =
 {
+"struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc":[5,0,269,2],
+"struct__EvViewSelection.html#abb4b7be54930cec3b1b4f956feaf294a":[5,0,269,3],
+"struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa":[5,0,269,1],
+"struct__EvWindow.html":[5,0,270],
+"struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf":[5,0,270,1],
+"struct__EvWindow.html#a2aee900cf1d55d7fab56c4212dc167af":[5,0,270,0],
+"struct__EvWindowClass.html":[5,0,271],
+"struct__EvWindowClass.html#a99715edba19ef67861872efd0cc810d2":[5,0,271,0],
+"struct__EvWindowPrivate.html":[5,0,272],
+"struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe":[5,0,272,1],
+"struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3":[5,0,272,27],
+"struct__EvWindowPrivate.html#a0fcf90a8e2385fcb8430b06cc1fa3ec7":[5,0,272,40],
 "struct__EvWindowPrivate.html#a1661a0fdbbe3ca825479fe483a79866f":[5,0,272,46],
 "struct__EvWindowPrivate.html#a1e3b0ea10182fffc59e462310d03f992":[5,0,272,13],
 "struct__EvWindowPrivate.html#a22220ddd73502e450597d59e89c74a23":[5,0,272,64],
@@ -237,17 +249,5 @@ var NAVTREEINDEX35 =
 "struct__NPPrint.html#a174d61020d21c2592bd1a2ddc0fb06c7":[5,0,292,3],
 "struct__NPPrint.html#ab35f85800a5a202edecad010baaf7a54":[5,0,292,2],
 "struct__NPPrint.html#afe1ab85defd77b5d27c30a1143205ab7":[5,0,292,0],
-"struct__NPRect.html":[5,0,293],
-"struct__NPRect.html#a1826abedd1c293aa024e4076bc82594a":[5,0,293,1],
-"struct__NPRect.html#a57f8ab1e02699596e144c491682222fc":[5,0,293,0],
-"struct__NPRect.html#aef857a950aa142671e4b70a0376cd521":[5,0,293,2],
-"struct__NPRect.html#af26bc130dfcbdf146f088c83a3d086d9":[5,0,293,3],
-"struct__NPSavedData.html":[5,0,294],
-"struct__NPSavedData.html#aa23b15e0b958019ac7dc5bce5a96db6b":[5,0,294,1],
-"struct__NPSavedData.html#acbee6e01aa8846a70ba05709b78fa6bc":[5,0,294,0],
-"struct__NPSize.html":[5,0,295],
-"struct__NPSize.html#a4ddfb83d602bf6f5eb7bf39cb02914ed":[5,0,295,0],
-"struct__NPSize.html#a4f3ac6a4b529274d4985c43cc324cdf5":[5,0,295,1],
-"struct__NPStream.html":[5,0,296],
-"struct__NPStream.html#a140226c99a9260cc421166c426973d31":[5,0,296,5]
+"struct__NPRect.html":[5,0,293]
 };

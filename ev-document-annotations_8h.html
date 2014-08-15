@@ -194,10 +194,14 @@ Functions</h2></td></tr>
 <tr class="separator:a643c74db7cbdc23bf3ed0dfe88c263a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a478fa75ef590cc346272ba75cd4e94b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-annotations_8h.html#a478fa75ef590cc346272ba75cd4e94b8">ev_document_annotations_add_annotation</a> (<a class="el" href="ev-document-annotations_8h.html#aea7aabeaa07a07324d94238225bc9c0a">EvDocumentAnnotations</a> *document_annots, <a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot, <a class="el" href="ev-document_8h.html#af8db5b0424c937f5cb5fee739ce7244b">EvRectangle</a> *rect)</td></tr>
 <tr class="separator:a478fa75ef590cc346272ba75cd4e94b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1fb6e3c896111cbc0494951875537c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-annotations_8h.html#afd1fb6e3c896111cbc0494951875537c">ev_document_annotations_remove_annotation</a> (<a class="el" href="ev-document-annotations_8h.html#aea7aabeaa07a07324d94238225bc9c0a">EvDocumentAnnotations</a> *document_annots, <a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot)</td></tr>
+<tr class="separator:afd1fb6e3c896111cbc0494951875537c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66b95454d1de8003d34c6747cf50e024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-annotations_8h.html#a66b95454d1de8003d34c6747cf50e024">ev_document_annotations_save_annotation</a> (<a class="el" href="ev-document-annotations_8h.html#aea7aabeaa07a07324d94238225bc9c0a">EvDocumentAnnotations</a> *document_annots, <a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot, <a class="el" href="ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2ba">EvAnnotationsSaveMask</a> mask)</td></tr>
 <tr class="separator:a66b95454d1de8003d34c6747cf50e024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a949c4f9d6927e8ddf53427a2942a7f7d"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-annotations_8h.html#a949c4f9d6927e8ddf53427a2942a7f7d">ev_document_annotations_can_add_annotation</a> (<a class="el" href="ev-document-annotations_8h.html#aea7aabeaa07a07324d94238225bc9c0a">EvDocumentAnnotations</a> *document_annots)</td></tr>
 <tr class="separator:a949c4f9d6927e8ddf53427a2942a7f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016b00d69dff150dc807a85f91563a81"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-document-annotations_8h.html#a016b00d69dff150dc807a85f91563a81">ev_document_annotations_can_remove_annotation</a> (<a class="el" href="ev-document-annotations_8h.html#aea7aabeaa07a07324d94238225bc9c0a">EvDocumentAnnotations</a> *document_annots)</td></tr>
+<tr class="separator:a016b00d69dff150dc807a85f91563a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a6cbdfd252f1304f584a264e2645bb128"></a>
@@ -477,6 +481,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a016b00d69dff150dc807a85f91563a81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean ev_document_annotations_can_remove_annotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-document-annotations_8h.html#aea7aabeaa07a07324d94238225bc9c0a">EvDocumentAnnotations</a> *&#160;</td>
+          <td class="paramname"><em>document_annots</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-document-annotations_8c_source.html#l00088">88</a> of file <a class="el" href="ev-document-annotations_8c_source.html">ev-document-annotations.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="struct__EvDocumentAnnotationsInterface.html">EvDocumentAnnotationsInterface</a> *iface = <a class="code" href="ev-document-annotations_8h.html#ad3b561d6fa03a58a22c286c6c8af073f">EV_DOCUMENT_ANNOTATIONS_GET_IFACE</a> (document_annots);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> iface-&gt;<a class="code" href="struct__EvDocumentAnnotationsInterface.html#aef0185761dd7874e8bd7ad4ebe983c52">remove_annotation</a> != NULL;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-document-annotations_8h_a016b00d69dff150dc807a85f91563a81_icgraph.svg" width="774" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a643c74db7cbdc23bf3ed0dfe88c263a0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -498,11 +535,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> (iface-&gt;<a class="code" href="struct__EvDocumentAnnotationsInterface.html#a6a9cd14313288784fe1dc0e5bcf902d9">document_is_modified</a>) ? iface-&gt;<a class="code" href="struct__EvDocumentAnnotationsInterface.html#a6a9cd14313288784fe1dc0e5bcf902d9">document_is_modified</a> (document_annots) : <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-document-annotations_8h_a643c74db7cbdc23bf3ed0dfe88c263a0_icgraph.svg" width="1024" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -541,11 +578,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> iface-&gt;<a class="code" href="struct__EvDocumentAnnotationsInterface.html#a12aae76c0154479c480a474015b2173a">get_annotations</a> (document_annots, page);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-document-annotations_8h_ade3d9757aa832409085a4f031d6de89e_icgraph.svg" width="638" height="90"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -566,6 +603,50 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd1fb6e3c896111cbc0494951875537c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_document_annotations_remove_annotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-document-annotations_8h.html#aea7aabeaa07a07324d94238225bc9c0a">EvDocumentAnnotations</a> *&#160;</td>
+          <td class="paramname"><em>document_annots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *&#160;</td>
+          <td class="paramname"><em>annot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-document-annotations_8c_source.html#l00078">78</a> of file <a class="el" href="ev-document-annotations_8c_source.html">ev-document-annotations.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="struct__EvDocumentAnnotationsInterface.html">EvDocumentAnnotationsInterface</a> *iface = <a class="code" href="ev-document-annotations_8h.html#ad3b561d6fa03a58a22c286c6c8af073f">EV_DOCUMENT_ANNOTATIONS_GET_IFACE</a> (document_annots);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (iface-&gt;<a class="code" href="struct__EvDocumentAnnotationsInterface.html#aef0185761dd7874e8bd7ad4ebe983c52">remove_annotation</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        iface-&gt;<a class="code" href="struct__EvDocumentAnnotationsInterface.html#aef0185761dd7874e8bd7ad4ebe983c52">remove_annotation</a> (document_annots, annot);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-document-annotations_8h_afd1fb6e3c896111cbc0494951875537c_icgraph.svg" width="643" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -606,11 +687,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    iface-&gt;<a class="code" href="struct__EvDocumentAnnotationsInterface.html#a253cdc8b01242e0f1ca9bf23023e6268">save_annotation</a> (document_annots, annot, mask);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-document-annotations_8h_a66b95454d1de8003d34c6747cf50e024_icgraph.svg" width="1262" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -624,7 +705,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document-annotations_8h.html">ev-document-annotations.h</a></li>
-    <li class="footer">Generated on Fri Aug 15 2014 08:56:25 for Evince by
+    <li class="footer">Generated on Fri Aug 15 2014 10:48:31 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

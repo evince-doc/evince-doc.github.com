@@ -1,5 +1,17 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvDocumentInfo.html":[5,0,75],
+"struct__EvDocumentInfo.html#a13359293d4cc3a36798de16ef3b5e3fb":[5,0,75,4],
+"struct__EvDocumentInfo.html#a2720573b441d9e88545889648dbb8acf":[5,0,75,3],
+"struct__EvDocumentInfo.html#a35a9ff984badb78f5e0d73d823d25d2e":[5,0,75,5],
+"struct__EvDocumentInfo.html#a396db4b6740db1ab8c5b988c4e9c849a":[5,0,75,8],
+"struct__EvDocumentInfo.html#a438c04bce85650d36a6d8368b927b016":[5,0,75,7],
+"struct__EvDocumentInfo.html#a4a75f1b26f93c5ef126f6e3b1a601cc1":[5,0,75,2],
+"struct__EvDocumentInfo.html#a52e9b79e9ecfd66457ffa7111c7e73a9":[5,0,75,12],
+"struct__EvDocumentInfo.html#a534788ac6111159d79973aeb2242ba15":[5,0,75,18],
+"struct__EvDocumentInfo.html#a544b3c7a01606378e39049bc490689d4":[5,0,75,11],
+"struct__EvDocumentInfo.html#a5c1437c98ad4deba4495a7e6e217228d":[5,0,75,17],
+"struct__EvDocumentInfo.html#a5cf65e376128562782ea6e759e180b6f":[5,0,75,19],
 "struct__EvDocumentInfo.html#a65db7188bb271fe107a7d875001623a8":[5,0,75,10],
 "struct__EvDocumentInfo.html#a75e628bfa7b21b6002fb97dcee2d8f19":[5,0,75,1],
 "struct__EvDocumentInfo.html#a96fd22cde6281f75080e1deac18b6b13":[5,0,75,6],
@@ -237,17 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvJob.html#ab1c83fd5270289f99eb54b856e16a0c2":[5,0,122,9],
 "struct__EvJob.html#ac7d19aa4f1c7fe25bd1cd73b0f13b6f8":[5,0,122,7],
 "struct__EvJob.html#ad299a781e4314b30d929970b4638eddd":[5,0,122,6],
-"struct__EvJob.html#ae7de0863fef7b4db03d3fee85d6aa3eb":[5,0,122,2],
-"struct__EvJobAnnots.html":[5,0,123],
-"struct__EvJobAnnots.html#aaa41aa1b66dbd974c6207fe720980a1f":[5,0,123,0],
-"struct__EvJobAnnots.html#ae195dbf30894ba971306f1746ac6ff9d":[5,0,123,1],
-"struct__EvJobAnnotsClass.html":[5,0,124],
-"struct__EvJobAnnotsClass.html#ad2298e0d0a5d1bb204b7530fe81a60e3":[5,0,124,0],
-"struct__EvJobAttachments.html":[5,0,125],
-"struct__EvJobAttachments.html#a6dd85a26dcadceb56314c9617f33ef5a":[5,0,125,0],
-"struct__EvJobAttachments.html#aec16e336ee54fb2286bd7df1b506ad4e":[5,0,125,1],
-"struct__EvJobAttachmentsClass.html":[5,0,126],
-"struct__EvJobAttachmentsClass.html#acdcf7be777afa723c1675546c147462e":[5,0,126,0],
-"struct__EvJobClass.html":[5,0,127],
-"struct__EvJobClass.html#a1d71270f4c411717b224f83dd6141027":[5,0,127,3]
+"struct__EvJob.html#ae7de0863fef7b4db03d3fee85d6aa3eb":[5,0,122,2]
 };

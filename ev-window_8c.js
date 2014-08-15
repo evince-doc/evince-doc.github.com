@@ -176,6 +176,7 @@ var ev_window_8c =
     [ "ev_window_popup_cmd_open_attachment", "ev-window_8c.html#a4a44ac7ac952e6f213794c8599e88f16", null ],
     [ "ev_window_popup_cmd_open_link", "ev-window_8c.html#ae991f928ac0df0f348ac9909a7e8094d", null ],
     [ "ev_window_popup_cmd_open_link_new_window", "ev-window_8c.html#ab5e2137b005fb1b774ce83c986e9c966", null ],
+    [ "ev_window_popup_cmd_remove_annotation", "ev-window_8c.html#a2a32d5c2105c30f79307731e3b552e11", null ],
     [ "ev_window_popup_cmd_save_attachment_as", "ev-window_8c.html#a42a6cd05d2fb50954104f86c1098aa64", null ],
     [ "ev_window_popup_cmd_save_image_as", "ev-window_8c.html#a1fd411404f5aeb7a91d791b1c5775904", null ],
     [ "ev_window_print", "ev-window_8c.html#abefcfbe2568841852795399a173f9fd2", null ],

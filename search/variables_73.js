@@ -53,7 +53,7 @@ var searchData=
   ['set_5fprint_5fsettings',['set_print_settings',['../struct__EvPrintOperationClass.html#a099d92f564007d9aae88ef044b83e1c3',1,'_EvPrintOperationClass']]],
   ['setcurrentasyncsurface',['setcurrentasyncsurface',['../struct__NPNetscapeFuncs.html#a41d4ef74611a52ed8dabc03a969a4185',1,'_NPNetscapeFuncs']]],
   ['setexception',['setexception',['../struct__NPNetscapeFuncs.html#ad6202270465f2a18a80bd87bb277277c',1,'_NPNetscapeFuncs']]],
-  ['setproperty',['setProperty',['../structNPClass.html#ace75075a0c879d88182c73636d725533',1,'NPClass::setProperty()'],['../struct__NPNetscapeFuncs.html#afd2b00c4af81353b3c360925b10c3bb6',1,'_NPNetscapeFuncs::setproperty()']]],
+  ['setproperty',['setproperty',['../struct__NPNetscapeFuncs.html#afd2b00c4af81353b3c360925b10c3bb6',1,'_NPNetscapeFuncs::setproperty()'],['../structNPClass.html#ace75075a0c879d88182c73636d725533',1,'NPClass::setProperty()']]],
   ['settings',['settings',['../struct__EvWindowPrivate.html#a8f50aeca439d5351996b5dc38c9e1ff8',1,'_EvWindowPrivate']]],
   ['setup_5fdocument_5fidle',['setup_document_idle',['../struct__EvWindowPrivate.html#a4829f836db59024b95bae56762187609',1,'_EvWindowPrivate']]],
   ['setvalue',['setvalue',['../struct__NPPluginFuncs.html#ae0c7a9ca048cad9eec7d7d69df311bdf',1,'_NPPluginFuncs::setvalue()'],['../struct__NPNetscapeFuncs.html#a4a1bcc9851bc92312bcdbd2c30b50827',1,'_NPNetscapeFuncs::setvalue()']]],

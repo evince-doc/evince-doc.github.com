@@ -1,5 +1,17 @@
 var NAVTREEINDEX36 =
 {
+"struct__NPRect.html#a1826abedd1c293aa024e4076bc82594a":[5,0,293,1],
+"struct__NPRect.html#a57f8ab1e02699596e144c491682222fc":[5,0,293,0],
+"struct__NPRect.html#aef857a950aa142671e4b70a0376cd521":[5,0,293,2],
+"struct__NPRect.html#af26bc130dfcbdf146f088c83a3d086d9":[5,0,293,3],
+"struct__NPSavedData.html":[5,0,294],
+"struct__NPSavedData.html#aa23b15e0b958019ac7dc5bce5a96db6b":[5,0,294,1],
+"struct__NPSavedData.html#acbee6e01aa8846a70ba05709b78fa6bc":[5,0,294,0],
+"struct__NPSize.html":[5,0,295],
+"struct__NPSize.html#a4ddfb83d602bf6f5eb7bf39cb02914ed":[5,0,295,0],
+"struct__NPSize.html#a4f3ac6a4b529274d4985c43cc324cdf5":[5,0,295,1],
+"struct__NPStream.html":[5,0,296],
+"struct__NPStream.html#a140226c99a9260cc421166c426973d31":[5,0,296,5],
 "struct__NPStream.html#a54536dc05130cae4e6fea0d000eec74e":[5,0,296,3],
 "struct__NPStream.html#a5a7c75fa7838035e29cfe03822e5a38c":[5,0,296,1],
 "struct__NPStream.html#a9a7484e81a72b591f97bb176536c5a83":[5,0,296,6],
@@ -237,17 +249,5 @@ var NAVTREEINDEX36 =
 "synctex__parser_8c.html#a1f88acaec0a713bd3c3a745a99922dc1":[6,0,0,2,2,0,253],
 "synctex__parser_8c.html#a2146f8467ec2ada1f05735385f17fa0c":[6,0,0,2,2,0,82],
 "synctex__parser_8c.html#a217666d5440dd42c05959508475977ab":[6,0,0,2,2,0,205],
-"synctex__parser_8c.html#a22f4be53ffa2bb7f504ddc0a16fd5604":[6,0,0,2,2,0,140],
-"synctex__parser_8c.html#a2532dadee7348697e784de0ce13c4b69":[6,0,0,2,2,0,229],
-"synctex__parser_8c.html#a28afc2255158c14f2a2fbf497da99b06":[6,0,0,2,2,0,84],
-"synctex__parser_8c.html#a28c81cffbe6b4c6cc6ae803d342ae66f":[6,0,0,2,2,0,173],
-"synctex__parser_8c.html#a29b1cd48e4ea95bd73da74b019c04239":[6,0,0,2,2,0,174],
-"synctex__parser_8c.html#a29d49976f0f2b901a3296d467308025c":[6,0,0,2,2,0,259],
-"synctex__parser_8c.html#a29dbafec945d9f5655c9d34e32417766":[6,0,0,2,2,0,111],
-"synctex__parser_8c.html#a2ac12d14e089293ea89e19e4e7f48b2c":[6,0,0,2,2,0,119],
-"synctex__parser_8c.html#a2aecfbd6d2abb758a754f462c8cf22aa":[6,0,0,2,2,0,248],
-"synctex__parser_8c.html#a2b712fd4dac5720df55bb855c4db605d":[6,0,0,2,2,0,178],
-"synctex__parser_8c.html#a2c4b621dae38ac5134a248303a183ef2":[6,0,0,2,2,0,74],
-"synctex__parser_8c.html#a2ceee763583070b40c7c158c9fa9894b":[6,0,0,2,2,0,156],
-"synctex__parser_8c.html#a300f350237627dc6e830feb5a31147a5":[6,0,0,2,2,0,33]
+"synctex__parser_8c.html#a22f4be53ffa2bb7f504ddc0a16fd5604":[6,0,0,2,2,0,140]
 };

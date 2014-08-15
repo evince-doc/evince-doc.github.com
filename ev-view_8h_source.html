@@ -227,25 +227,27 @@ $(document).ready(function(){initNavTree('ev-view_8h_source.html','');});
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-view_8c.html#aa49963d34c4251df044c3d7422e2965b">ev_view_begin_add_annotation</a>  (<a class="code" href="struct__EvView.html">EvView</a>          *view,</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                          <a class="code" href="ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568">EvAnnotationType</a> annot_type);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-view_8c.html#abb7abf428b083b1ba823fc281efea770">ev_view_cancel_add_annotation</a> (<a class="code" href="struct__EvView.html">EvView</a>          *view);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">/* Caret navigation */</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;gboolean       <a class="code" href="ev-view_8c.html#a4c42acdf6c13434a1c99764b14ee747f">ev_view_supports_caret_navigation</a>    (<a class="code" href="struct__EvView.html">EvView</a>  *view);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;gboolean       <a class="code" href="ev-view_8c.html#a4b1e8f5d374cde8a895b422077ddc6fc">ev_view_is_caret_navigation_enabled</a>  (<a class="code" href="struct__EvView.html">EvView</a>  *view);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-view_8c.html#af968df50ffca1525bf5c4242cd7569c7">ev_view_set_caret_navigation_enabled</a> (<a class="code" href="struct__EvView.html">EvView</a>  *view,</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                     gboolean enabled);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70">ev_view_set_caret_cursor_position</a>    (<a class="code" href="struct__EvView.html">EvView</a>  *view,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                     guint    page,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                                     guint    offset);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EV_VIEW_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-view_8c.html#ac6da081ef72b7691ed4e6ffd1df3a230">ev_view_remove_annotation</a>     (<a class="code" href="struct__EvView.html">EvView</a>          *view,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                          <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>    *annot);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">/* Caret navigation */</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;gboolean       <a class="code" href="ev-view_8c.html#a4c42acdf6c13434a1c99764b14ee747f">ev_view_supports_caret_navigation</a>    (<a class="code" href="struct__EvView.html">EvView</a>  *view);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;gboolean       <a class="code" href="ev-view_8c.html#a4b1e8f5d374cde8a895b422077ddc6fc">ev_view_is_caret_navigation_enabled</a>  (<a class="code" href="struct__EvView.html">EvView</a>  *view);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-view_8c.html#af968df50ffca1525bf5c4242cd7569c7">ev_view_set_caret_navigation_enabled</a> (<a class="code" href="struct__EvView.html">EvView</a>  *view,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                     gboolean enabled);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70">ev_view_set_caret_cursor_position</a>    (<a class="code" href="struct__EvView.html">EvView</a>  *view,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                                     guint    page,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                                     guint    offset);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EV_VIEW_H__ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view_8h.html">ev-view.h</a></li>
-    <li class="footer">Generated on Fri Aug 15 2014 08:56:22 for Evince by
+    <li class="footer">Generated on Fri Aug 15 2014 10:48:28 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

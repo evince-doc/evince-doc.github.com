@@ -1,5 +1,16 @@
 var NAVTREEINDEX27 =
 {
+"npfunctions_8h.html#a7b41d0ecd3b2e29cd27ccf2a14372393":[6,0,0,1,0,1,19],
+"npfunctions_8h.html#a841c8428c16397110326a1df07a5ff3e":[6,0,0,1,0,1,37],
+"npfunctions_8h.html#a8b35606871e05748cd9543129097515b":[6,0,0,1,0,1,55],
+"npfunctions_8h.html#a8c62437fcf492d7d0c5df2f2822f7363":[6,0,0,1,0,1,42],
+"npfunctions_8h.html#a92922cad43459ffb4f2ee53a1fd3e078":[6,0,0,1,0,1,53],
+"npfunctions_8h.html#a9b9d4f280ff712506aef3d080a2bfdbc":[6,0,0,1,0,1,40],
+"npfunctions_8h.html#aa0ddcb2395bc6ef545284af04607bcf4":[6,0,0,1,0,1,47],
+"npfunctions_8h.html#aa46982a3908f30432966e259e44c66f1":[6,0,0,1,0,1,27],
+"npfunctions_8h.html#aa6542ccf190de76f1706c3be2c01ec20":[6,0,0,1,0,1,17],
+"npfunctions_8h.html#aaf1639f4616ea75498c71c929815923d":[6,0,0,1,0,1,45],
+"npfunctions_8h.html#aafe711e2de33f7c2cd7917889462664f":[6,0,0,1,0,1,41],
 "npfunctions_8h.html#ab264b3e75241c5d251a909ce09ed9c6f":[6,0,0,1,0,1,63],
 "npfunctions_8h.html#ab34dcd687147418886c34a114c730b34":[6,0,0,1,0,1,31],
 "npfunctions_8h.html#ab46cce89d4444491a34db13c5fa16dbb":[6,0,0,1,0,1,14],
@@ -238,16 +249,5 @@ var NAVTREEINDEX27 =
 "structBITMAP.html#a2b72c426cabec9d895384364c657a426":[5,0,319,3],
 "structBITMAP.html#a5d80a4cf27b3b9f390d81ea7caf61c1f":[5,0,319,2],
 "structBITMAP.html#ac0d5017ccb00d92a65e782d1f3d15ba4":[5,0,319,1],
-"structBadTitleEntry.html":[5,0,317],
-"structBadTitleEntry.html#a263ebd78df10b8c6c3501f296811b705":[5,0,317,1],
-"structBadTitleEntry.html#a52bee56400ce058ee01cd70e9ec3260f":[5,0,317,0],
-"structBuffer.html":[5,0,320],
-"structBuffer.html#a24e94f119f4b386771c78cf37aaff41b":[5,0,320,2],
-"structBuffer.html#ab017cc01197319698565f0eab23148ea":[5,0,320,1],
-"structBuffer.html#aeec1fd4af0ddf6765b0187466d4361b8":[5,0,320,0],
-"structCharMetricInfo.html":[5,0,321],
-"structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40":[5,0,321,5],
-"structCharMetricInfo.html#a3b203ccd0888008f4b525b30030b6ab0":[5,0,321,3],
-"structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f":[5,0,321,4],
-"structCharMetricInfo.html#adb8e4767e585371e2f929149d7c223c7":[5,0,321,1]
+"structBadTitleEntry.html":[5,0,317]
 };

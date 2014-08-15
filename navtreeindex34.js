@@ -1,5 +1,17 @@
 var NAVTREEINDEX34 =
 {
+"struct__EvSidebarBookmarksPrivate.html#a23b6fc0f531c574fa5c08f54b17c2d6b":[5,0,236,1],
+"struct__EvSidebarBookmarksPrivate.html#a661b70c8b452e7393ae94672ee59374c":[5,0,236,4],
+"struct__EvSidebarBookmarksPrivate.html#ab0c7f26f63ddeedcae8020376f81b18e":[5,0,236,5],
+"struct__EvSidebarBookmarksPrivate.html#ad95b14f401e870db18c684ee3d361608":[5,0,236,6],
+"struct__EvSidebarBookmarksPrivate.html#addcac5348faa71c3def881d702625436":[5,0,236,2],
+"struct__EvSidebarBookmarksPrivate.html#ae2cefaea3bf993d90e5e123b334312b5":[5,0,236,3],
+"struct__EvSidebarBookmarksPrivate.html#aeb8afeb3d43d160da928ab6ad34fa616":[5,0,236,0],
+"struct__EvSidebarClass.html":[5,0,237],
+"struct__EvSidebarClass.html#ad2f0fbf1452aade3d50aa2a3a6a98b4e":[5,0,237,0],
+"struct__EvSidebarLayers.html":[5,0,238],
+"struct__EvSidebarLayers.html#a1d9ee6a7d6a5276f574796097aa19cb8":[5,0,238,1],
+"struct__EvSidebarLayers.html#a3b40dcda5f6af914a7e9c4c1650610e8":[5,0,238,0],
 "struct__EvSidebarLayersClass.html":[5,0,239],
 "struct__EvSidebarLayersClass.html#a89f10c33ded1f3f9fa66972b7da076da":[5,0,239,0],
 "struct__EvSidebarLayersClass.html#ada7c3f454547ce29750fa52f2371b9b1":[5,0,239,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX34 =
 "struct__EvViewPresentationClass.html#af7464ffeee5df9ed75bf8a509780a4b1":[5,0,268,1],
 "struct__EvViewPresentationClass.html#afc6dfbffa43cdbc00d20d352b34d8588":[5,0,268,2],
 "struct__EvViewSelection.html":[5,0,269],
-"struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc":[5,0,269,0],
-"struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc":[5,0,269,2],
-"struct__EvViewSelection.html#abb4b7be54930cec3b1b4f956feaf294a":[5,0,269,3],
-"struct__EvViewSelection.html#ac92fee8c784d3e9a6b8a9e7e9da566fa":[5,0,269,1],
-"struct__EvWindow.html":[5,0,270],
-"struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf":[5,0,270,1],
-"struct__EvWindow.html#a2aee900cf1d55d7fab56c4212dc167af":[5,0,270,0],
-"struct__EvWindowClass.html":[5,0,271],
-"struct__EvWindowClass.html#a99715edba19ef67861872efd0cc810d2":[5,0,271,0],
-"struct__EvWindowPrivate.html":[5,0,272],
-"struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe":[5,0,272,1],
-"struct__EvWindowPrivate.html#a040f9a65de0ef2cb09305e67aa7077b3":[5,0,272,27],
-"struct__EvWindowPrivate.html#a0fcf90a8e2385fcb8430b06cc1fa3ec7":[5,0,272,40]
+"struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc":[5,0,269,0]
 };

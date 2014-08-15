@@ -19,7 +19,7 @@ var searchData=
   ['hash_5fcomp',['hash_comp',['../struct__DviHashTable.html#a4e9b4ff7d7133182ac7ceea2f6eae161',1,'_DviHashTable']]],
   ['hash_5ffree',['hash_free',['../struct__DviHashTable.html#a6c2d3b6d5f949f76bbcb7364a1f9fd04',1,'_DviHashTable']]],
   ['hash_5ffunc',['hash_func',['../struct__DviHashTable.html#a95a9aa11971fa73a38a51be1c55ff6c5',1,'_DviHashTable']]],
-  ['hasmethod',['hasmethod',['../struct__NPNetscapeFuncs.html#a103582ab293188db74467558d961183f',1,'_NPNetscapeFuncs::hasmethod()'],['../structNPClass.html#aa59d4bb55b6a5635a1adf5258209dd8b',1,'NPClass::hasMethod()']]],
+  ['hasmethod',['hasMethod',['../structNPClass.html#aa59d4bb55b6a5635a1adf5258209dd8b',1,'NPClass::hasMethod()'],['../struct__NPNetscapeFuncs.html#a103582ab293188db74467558d961183f',1,'_NPNetscapeFuncs::hasmethod()']]],
   ['hasproperty',['hasproperty',['../struct__NPNetscapeFuncs.html#a089e7397f0daf0442f664908776f920d',1,'_NPNetscapeFuncs::hasproperty()'],['../structNPClass.html#a8a0d2cfeacb08cfd00f166ca3a5ae12d',1,'NPClass::hasProperty()']]],
   ['hbox',['hbox',['../struct__EvSidebarPrivate.html#a20e6a735e8c8bf3f08ebdebba70420a1',1,'_EvSidebarPrivate']]],
   ['hdpi',['hdpi',['../struct__DviFontSearch.html#ab0eea72730a57a9c7dc7f02da37a946d',1,'_DviFontSearch::hdpi()'],['../struct__DviFont.html#abbd86210e98277bd207173815e13b0aa',1,'_DviFont::hdpi()']]],

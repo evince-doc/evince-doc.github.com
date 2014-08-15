@@ -17,6 +17,7 @@ var searchData=
   ['pdf_5fdocument_5fannotations_5fadd_5fannotation',['pdf_document_annotations_add_annotation',['../ev-poppler_8cc.html#a8aa2c9e070998e3530a208c46988ca70',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fdocument_5fis_5fmodified',['pdf_document_annotations_document_is_modified',['../ev-poppler_8cc.html#a66c644172f8583f7053385d05e5d3f16',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fget_5fannotations',['pdf_document_annotations_get_annotations',['../ev-poppler_8cc.html#af6b808477903d5590addfd8e1a6480e1',1,'ev-poppler.cc']]],
+  ['pdf_5fdocument_5fannotations_5fremove_5fannotation',['pdf_document_annotations_remove_annotation',['../ev-poppler_8cc.html#aafbf13e6d03bcff3096d066ae28a1245',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fsave_5fannotation',['pdf_document_annotations_save_annotation',['../ev-poppler_8cc.html#a197c367b7aaf22710ad3606a8d71f31a',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fattachments_5fget_5fattachments',['pdf_document_attachments_get_attachments',['../ev-poppler_8cc.html#afb49d55a9cca2f789e14f9c83e8c6d4c',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fattachments_5fhas_5fattachments',['pdf_document_attachments_has_attachments',['../ev-poppler_8cc.html#af480dfb6195ca5eb9734e6942f233446',1,'ev-poppler.cc']]],
