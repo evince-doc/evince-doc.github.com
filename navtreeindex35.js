@@ -1,7 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"struct__EvViewPresentationClass.html#af7464ffeee5df9ed75bf8a509780a4b1":[5,0,268,1],
-"struct__EvViewPresentationClass.html#afc6dfbffa43cdbc00d20d352b34d8588":[5,0,268,2],
 "struct__EvViewSelection.html":[5,0,269],
 "struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc":[5,0,269,0],
 "struct__EvViewSelection.html#aa359352406bea38e79eebb23b909d8fc":[5,0,269,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX35 =
 "struct__NPPluginFuncs.html#af67d5a85ce501900c8f8c0a2bca7831e":[5,0,291,6],
 "struct__NPPluginFuncs.html#af8907d04c6f098575a278950473ac0e0":[5,0,291,18],
 "struct__NPPrint.html":[5,0,292],
-"struct__NPPrint.html#a115d1a36b9d19039a25689290949f654":[5,0,292,1]
+"struct__NPPrint.html#a115d1a36b9d19039a25689290949f654":[5,0,292,1],
+"struct__NPPrint.html#a174d61020d21c2592bd1a2ddc0fb06c7":[5,0,292,3],
+"struct__NPPrint.html#ab35f85800a5a202edecad010baaf7a54":[5,0,292,2]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"ev-poppler_8cc.html#af0bf3aa77acd536b4272160a9c72cf40":[6,0,0,0,3,0,23],
-"ev-poppler_8cc.html#af26f18620f5750d5e4fc82c77f353389":[6,0,0,0,3,0,92],
 "ev-poppler_8cc.html#af480dfb6195ca5eb9734e6942f233446":[6,0,0,0,3,0,31],
 "ev-poppler_8cc.html#af6344da64811c542f365e8f2b6fe536b":[6,0,0,0,3,0,85],
 "ev-poppler_8cc.html#af66c2b733064cbc958538f0a6ec4ea4f":[6,0,0,0,3,0,116],
@@ -249,5 +247,7 @@ var NAVTREEINDEX15 =
 "ev-properties-fonts_8h_source.html":[6,0,0,8,36],
 "ev-properties-license_8c.html":[6,0,0,8,37],
 "ev-properties-license_8c.html#a053cf110fbad3b15d5bae51d5a97daf0":[6,0,0,8,37,2],
-"ev-properties-license_8c.html#a34ccfeb0be28206714bd3dc0208d7e2c":[6,0,0,8,37,5]
+"ev-properties-license_8c.html#a34ccfeb0be28206714bd3dc0208d7e2c":[6,0,0,8,37,5],
+"ev-properties-license_8c.html#a5351b62aa5bc4964960f3c71d80e5ee7":[6,0,0,8,37,3],
+"ev-properties-license_8c.html#aa9415c77486c049273b208fcdcb53a81":[6,0,0,8,37,4]
 };

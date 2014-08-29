@@ -2,7 +2,6 @@ var ev_annotation_window_8c =
 [
     [ "_EvAnnotationWindow", "struct__EvAnnotationWindow.html", "struct__EvAnnotationWindow" ],
     [ "_EvAnnotationWindowClass", "struct__EvAnnotationWindowClass.html", "struct__EvAnnotationWindowClass" ],
-    [ "EV_ICON_SIZE_ANNOT_WINDOW", "ev-annotation-window_8c.html#ada9265070f4c41e06e0a778c95f12f7b", null ],
     [ "PROP_0", "ev-annotation-window_8c.html#a0ed680fdb405e7195d9f14032851eebbac37dda0da1a44e10c0504afeeb863f3c", null ],
     [ "PROP_ANNOTATION", "ev-annotation-window_8c.html#a0ed680fdb405e7195d9f14032851eebba30c76c52dfa5c30f002081357b553b9a", null ],
     [ "PROP_PARENT", "ev-annotation-window_8c.html#a0ed680fdb405e7195d9f14032851eebbada8ce269c7acea6dcb71668ba9969e89", null ],
@@ -19,7 +18,6 @@ var ev_annotation_window_8c =
     [ "ev_annotation_window_focus_in_event", "ev-annotation-window_8c.html#a199457b01eda971e24b320027f763418", null ],
     [ "ev_annotation_window_focus_out_event", "ev-annotation-window_8c.html#af7f85f7fa30e6d95e1b5cfb6cf448c26", null ],
     [ "ev_annotation_window_get_annotation", "ev-annotation-window_8c.html#a7f7deb9882b603abad41520be8102d46", null ],
-    [ "ev_annotation_window_get_icon_size", "ev-annotation-window_8c.html#a61724591400ecc01d56b2fdd10106306", null ],
     [ "ev_annotation_window_get_rectangle", "ev-annotation-window_8c.html#a5b46c23bcf92c08f4e59570ee011b27d", null ],
     [ "ev_annotation_window_grab_focus", "ev-annotation-window_8c.html#a168b014f2a45bdded037b8ec4652761d", null ],
     [ "ev_annotation_window_init", "ev-annotation-window_8c.html#a393869f2bee09d24fdf21763d47e7ee4", null ],

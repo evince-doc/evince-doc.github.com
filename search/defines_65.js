@@ -150,7 +150,6 @@ var searchData=
   ['ev_5fhistory_5fget_5fclass',['EV_HISTORY_GET_CLASS',['../ev-history_8h.html#a49a357c66835feb94267f84fa2ee15c9',1,'ev-history.h']]],
   ['ev_5fhistory_5fmax_5flength',['EV_HISTORY_MAX_LENGTH',['../ev-history_8c.html#ae70a489fc0823f76fee38f364096c818',1,'ev-history.c']]],
   ['ev_5fhyperlink',['EV_HYPERLINK',['../ev-link-accessible_8c.html#a8a40c9543d5dfbf7a38e80ba3b68ff22',1,'ev-link-accessible.c']]],
-  ['ev_5ficon_5fsize_5fannot_5fwindow',['EV_ICON_SIZE_ANNOT_WINDOW',['../ev-annotation-window_8c.html#ada9265070f4c41e06e0a778c95f12f7b',1,'ev-annotation-window.c']]],
   ['ev_5fimage',['EV_IMAGE',['../ev-image_8h.html#a4df800bfdb6fb2da13b3c39d0fb6ef88',1,'ev-image.h']]],
   ['ev_5fimage_5faccessible',['EV_IMAGE_ACCESSIBLE',['../ev-image-accessible_8h.html#abdcce0338edd76de0e5b18c868202324',1,'ev-image-accessible.h']]],
   ['ev_5fimage_5fclass',['EV_IMAGE_CLASS',['../ev-image_8h.html#a52fb29615a5b19c14f20cc27fb79870d',1,'ev-image.h']]],
