@@ -171,7 +171,7 @@ var searchData=
   ['document_5fprint_5fsettings',['document_print_settings',['../ev-window_8c.html#acc9347784398898cee59aa57577e71f9',1,'ev-window.c']]],
   ['document_5fquery_5finfo_5fcb',['document_query_info_cb',['../ev-recent-view_8c.html#aba9c034b80f6a0459af273f67fa465b4',1,'ev-recent-view.c']]],
   ['document_5furi',['document_uri',['../struct__EvJobSave.html#ab652961768e6493ccaf2b271faf9a143',1,'_EvJobSave']]],
-  ['done',['done',['../struct__EvPageCacheData.html#a0a33560cfb1241b067f4eb5b1fc73ff8',1,'_EvPageCacheData::done()'],['../struct__EvPrintOperationClass.html#a2700abe22ff6efd635c4f446a2d20ae5',1,'_EvPrintOperationClass::done()'],['../ev-print-operation_8c.html#a2970898e8a43ce21e1cc510d49f1b89da9c954bcf443428c80b0f107b3bc48749',1,'DONE():&#160;ev-print-operation.c']]],
+  ['done',['done',['../struct__EvPageCacheData.html#a0a33560cfb1241b067f4eb5b1fc73ff8',1,'_EvPageCacheData::done()'],['../struct__EvPrintOperationClass.html#a2700abe22ff6efd635c4f446a2d20ae5',1,'_EvPrintOperationClass::done()'],['../ev-print-operation_8c.html#afa231099d07583c3ed0981e0bb665f55a9c954bcf443428c80b0f107b3bc48749',1,'DONE():&#160;ev-print-operation.c']]],
   ['dot_5fdir',['dot_dir',['../struct__EvApplication.html#a9a89a524088b3e68a0ed85145030c689',1,'_EvApplication']]],
   ['double_5fto_5fnpvariant',['DOUBLE_TO_NPVARIANT',['../npruntime_8h.html#a5c15076ba02ebc90777684e9b7646a76',1,'npruntime.h']]],
   ['doublevalue',['doubleValue',['../struct__NPVariant.html#a8977f45878e22f3b9a51ee0f19998fbe',1,'_NPVariant']]],

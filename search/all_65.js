@@ -1718,6 +1718,7 @@ var searchData=
   ['ev_5fpage_5fcache_5fschedule_5fjob_5fif_5fneeded',['ev_page_cache_schedule_job_if_needed',['../ev-page-cache_8c.html#a087a54e4a0310bd13c054dce6941e316',1,'ev-page-cache.c']]],
   ['ev_5fpage_5fcache_5fset_5fflags',['ev_page_cache_set_flags',['../ev-page-cache_8c.html#aa53dc3c5d68bbd28698eea283bc457d1',1,'ev_page_cache_set_flags(EvPageCache *cache, EvJobPageDataFlags flags):&#160;ev-page-cache.c'],['../ev-page-cache_8h.html#aa53dc3c5d68bbd28698eea283bc457d1',1,'ev_page_cache_set_flags(EvPageCache *cache, EvJobPageDataFlags flags):&#160;ev-page-cache.c']]],
   ['ev_5fpage_5fcache_5fset_5fpage_5frange',['ev_page_cache_set_page_range',['../ev-page-cache_8c.html#aa14283303685bd99a3787031cd3eab1b',1,'ev_page_cache_set_page_range(EvPageCache *cache, gint start, gint end):&#160;ev-page-cache.c'],['../ev-page-cache_8h.html#aa14283303685bd99a3787031cd3eab1b',1,'ev_page_cache_set_page_range(EvPageCache *cache, gint start, gint end):&#160;ev-page-cache.c']]],
+  ['ev_5fpage_5fcache_5fsignals',['ev_page_cache_signals',['../ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb',1,'ev-page-cache.c']]],
   ['ev_5fpage_5fclass',['EV_PAGE_CLASS',['../ev-page_8h.html#aa405007e2c7ac948d2305268911a9d3b',1,'ev-page.h']]],
   ['ev_5fpage_5fclass_5finit',['ev_page_class_init',['../ev-page_8c.html#a964d247dbf7032d7dd38e08aaa1ee37c',1,'ev-page.c']]],
   ['ev_5fpage_5fdata_5fflags_5fdefault',['EV_PAGE_DATA_FLAGS_DEFAULT',['../ev-page-cache_8c.html#a63f9fa4062c39cc9196277f738ce7cf3',1,'ev-page-cache.c']]],

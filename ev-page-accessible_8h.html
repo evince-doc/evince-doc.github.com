@@ -296,25 +296,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l01228">1228</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;{</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    gint i;</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    <a class="code" href="ev-page-accessible_8c.html#afd19be39f2809ae29dd2a3335875860c">ev_page_accessible_initialize_children</a> (page_accessible);</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    <span class="keywordflow">if</span> (!mapping || !page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>)</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>-&gt;len; i++) {</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        AtkObject *child;</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        child = g_ptr_array_index (page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>, i);</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-form-field-accessible_8h.html#aa31f442e21b0e31713c3f9ca44d0781e">EV_IS_FORM_FIELD_ACCESSIBLE</a> (child) &amp;&amp;</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;            <a class="code" href="ev-form-field-accessible_8c.html#a5858b47bfdb2090e82a53164cfe1d346">ev_form_field_accessible_get_field</a> (<a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (child)) == mapping-&gt;<a class="code" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">data</a>)</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;            <span class="keywordflow">return</span> child;</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    }</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l01244">1244</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;{</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    gint i;</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    <a class="code" href="ev-page-accessible_8c.html#afd19be39f2809ae29dd2a3335875860c">ev_page_accessible_initialize_children</a> (page_accessible);</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    <span class="keywordflow">if</span> (!mapping || !page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>)</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>-&gt;len; i++) {</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;        AtkObject *child;</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;        child = g_ptr_array_index (page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#ab9644f8c1f671874159b52b7cd9d34f8">children</a>, i);</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-form-field-accessible_8h.html#aa31f442e21b0e31713c3f9ca44d0781e">EV_IS_FORM_FIELD_ACCESSIBLE</a> (child) &amp;&amp;</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;            <a class="code" href="ev-form-field-accessible_8c.html#a5858b47bfdb2090e82a53164cfe1d346">ev_form_field_accessible_get_field</a> (<a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (child)) == mapping-&gt;<a class="code" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">data</a>)</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;            <span class="keywordflow">return</span> child;</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    }</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -347,7 +347,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-accessible_8h_a3f7fdcc7c5ba27b22286f6d0c8b397bd_icgraph.svg" width="2806" height="652"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-accessible_8h_a3f7fdcc7c5ba27b22286f6d0c8b397bd_icgraph.svg" width="2803" height="1010"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -384,19 +384,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l00386">386</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;{</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-page-accessible_8h.html#a38925d874ecdbebabe90485360ff56ed">EV_IS_PAGE_ACCESSIBLE</a> (page_accessible), NULL);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (gtk_accessible_get_widget (GTK_ACCESSIBLE (page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#a930d0969b71e2d35f39bb6c1782bd719">view_accessible</a>)));</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l00384">384</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;{</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-page-accessible_8h.html#a38925d874ecdbebabe90485360ff56ed">EV_IS_PAGE_ACCESSIBLE</a> (page_accessible), NULL);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (gtk_accessible_get_widget (GTK_ACCESSIBLE (page_accessible-&gt;<a class="code" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;<a class="code" href="struct__EvPageAccessiblePrivate.html#a930d0969b71e2d35f39bb6c1782bd719">view_accessible</a>)));</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-accessible_8h_a4c6ebe3904af057d7d774fb2e05a1721_icgraph.svg" width="1467" height="1774"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-accessible_8h_a4c6ebe3904af057d7d774fb2e05a1721_icgraph.svg" width="1291" height="1826"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -429,7 +429,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-accessible_8h_a6987ddc4212f7c0c3617e92e1ba16abf_icgraph.svg" width="2771" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-page-accessible_8h_a6987ddc4212f7c0c3617e92e1ba16abf_icgraph.svg" width="2792" height="846"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -460,20 +460,29 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l01211">1211</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;{</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;        <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *atk_page;</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">EV_IS_VIEW_ACCESSIBLE</a> (view_accessible), NULL);</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    g_return_val_if_fail (page &gt;= 0, NULL);</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        atk_page = g_object_new (<a class="code" href="ev-page-accessible_8h.html#affea0fb18bfdfed06a53e5d949ea8c98">EV_TYPE_PAGE_ACCESSIBLE</a>,</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                 <span class="stringliteral">&quot;view-accessible&quot;</span>, view_accessible,</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;                 <span class="stringliteral">&quot;page&quot;</span>, page,</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;                 NULL);</div>
+<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l01218">1218</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;{</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;        <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *atk_page;</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;    <a class="code" href="struct__EvView.html">EvView</a> *view;</div>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_page);</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;}</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">EV_IS_VIEW_ACCESSIBLE</a> (view_accessible), NULL);</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    g_return_val_if_fail (page &gt;= 0, NULL);</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        atk_page = g_object_new (<a class="code" href="ev-page-accessible_8h.html#affea0fb18bfdfed06a53e5d949ea8c98">EV_TYPE_PAGE_ACCESSIBLE</a>,</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;                 <span class="stringliteral">&quot;view-accessible&quot;</span>, view_accessible,</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;                 <span class="stringliteral">&quot;page&quot;</span>, page,</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;                 NULL);</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    view = <a class="code" href="ev-page-accessible_8c.html#a4c6ebe3904af057d7d774fb2e05a1721">ev_page_accessible_get_view</a> (<a class="code" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_page));</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-page-cache_8c.html#aa5ef2306799155c69d8ffc0d0fbffbdd">ev_page_cache_is_page_cached</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, page))</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;        <a class="code" href="ev-page-accessible_8c.html#afd19be39f2809ae29dd2a3335875860c">ev_page_accessible_initialize_children</a> (<a class="code" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_page));</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        g_signal_connect (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, <span class="stringliteral">&quot;page-cached&quot;</span>,</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                  G_CALLBACK (<a class="code" href="ev-page-accessible_8c.html#af98f15bbea38bd09eac8355c52f5be82">page_cached_cb</a>),</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;                  atk_page);</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_page);</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -511,17 +520,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l01250">1250</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;{</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    AtkObject *child;</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    child = <a class="code" href="ev-page-accessible_8c.html#a1f19e0f0601d5e354892959d6e3b7740">ev_page_accessible_get_accessible_for_mapping</a> (page_accessible, mapping);</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    <span class="keywordflow">if</span> (!child)</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-form-field-accessible_8h.html#aa31f442e21b0e31713c3f9ca44d0781e">EV_IS_FORM_FIELD_ACCESSIBLE</a> (child))</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;        <a class="code" href="ev-form-field-accessible_8c.html#a2e81e5dbb86da962414c9214708389e7">ev_form_field_accessible_update_state</a> (<a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (child));</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-page-accessible_8c_source.html#l01266">1266</a> of file <a class="el" href="ev-page-accessible_8c_source.html">ev-page-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;{</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;    AtkObject *child;</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    child = <a class="code" href="ev-page-accessible_8c.html#a1f19e0f0601d5e354892959d6e3b7740">ev_page_accessible_get_accessible_for_mapping</a> (page_accessible, mapping);</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;    <span class="keywordflow">if</span> (!child)</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-form-field-accessible_8h.html#aa31f442e21b0e31713c3f9ca44d0781e">EV_IS_FORM_FIELD_ACCESSIBLE</a> (child))</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;        <a class="code" href="ev-form-field-accessible_8c.html#a2e81e5dbb86da962414c9214708389e7">ev_form_field_accessible_update_state</a> (<a class="code" href="ev-form-field-accessible_8h.html#adbb5cf7a96c33c59668155300e4a9f1f">EV_FORM_FIELD_ACCESSIBLE</a> (child));</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -541,7 +550,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-accessible_8h.html">ev-page-accessible.h</a></li>
-    <li class="footer">Generated on Sun Aug 31 2014 09:28:49 for Evince by
+    <li class="footer">Generated on Mon Sep 1 2014 15:20:53 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

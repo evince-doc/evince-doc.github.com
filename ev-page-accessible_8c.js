@@ -51,5 +51,6 @@ var ev_page_accessible_8c =
     [ "G_DEFINE_TYPE_WITH_CODE", "ev-page-accessible_8c.html#ab00e4fc51ac8f833595705069546491c", null ],
     [ "get_run_attributes", "ev-page-accessible_8c.html#a274c2a4509fa2c641f972ffeb7298802", null ],
     [ "get_selection_bounds", "ev-page-accessible_8c.html#af02d211fedd86fb5cbfb3e1249622d7d", null ],
+    [ "page_cached_cb", "ev-page-accessible_8c.html#af98f15bbea38bd09eac8355c52f5be82", null ],
     [ "treat_as_soft_return", "ev-page-accessible_8c.html#a6c7dd46ded8aac92c260c87a8b077c3b", null ]
 ];

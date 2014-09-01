@@ -26,6 +26,7 @@ var searchData=
   ['ev_5finit_5fcount',['ev_init_count',['../ev-init_8c.html#a94b0984a5e1683f4c1d610dcf9ce2302',1,'ev-init.c']]],
   ['ev_5fmodule_5fhash',['ev_module_hash',['../ev-document-factory_8c.html#a208e78c2360f5bcedacee469421572dd',1,'ev-document-factory.c']]],
   ['ev_5fnamed_5fdest',['ev_named_dest',['../main_8c.html#aa3de858b862f5b5c324dd4059d1fc48b',1,'main.c']]],
+  ['ev_5fpage_5fcache_5fsignals',['ev_page_cache_signals',['../ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb',1,'ev-page-cache.c']]],
   ['ev_5fpage_5findex',['ev_page_index',['../main_8c.html#a707beeec1ee9d8397a5d1411b1d47d7c',1,'main.c']]],
   ['ev_5fpage_5flabel',['ev_page_label',['../main_8c.html#aac307a6a8e8c49e600ff965b93ecfb61',1,'main.c']]],
   ['ev_5frecent_5fview',['ev_recent_view',['../structGetDocumentInfoAsyncData.html#a432baba3ee26fe0fbe7510e0358ef882',1,'GetDocumentInfoAsyncData']]],

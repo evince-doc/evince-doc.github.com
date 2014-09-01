@@ -1,6 +1,7 @@
 var searchData=
 [
   ['page_5fcache_5fsize_5fchanged',['page_cache_size_changed',['../ev-window_8c.html#a1c4a47eb3ffe13b716331eb66b596e5b',1,'ev-window.c']]],
+  ['page_5fcached_5fcb',['page_cached_cb',['../ev-page-accessible_8c.html#af98f15bbea38bd09eac8355c52f5be82',1,'ev-page-accessible.c']]],
   ['page_5fchanged_5fcb',['page_changed_cb',['../ev-page-action-widget_8c.html#a7b35fa9dba9d98df3f0d53210da86293',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvPageActionWidget *action_widget):&#160;ev-page-action-widget.c'],['../ev-view-accessible_8c.html#ac3b3b8499a3baca2c583c801b4cd273f',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvViewAccessible *accessible):&#160;ev-view-accessible.c'],['../ev-history_8c.html#a4e5024ca89ab0fc9394e26dcc1f65930',1,'page_changed_cb(EvDocumentModel *model, gint old_page, gint new_page, EvHistory *history):&#160;ev-history.c'],['../ev-sidebar-thumbnails_8c.html#acca28ecfc7059f0365d53be3a7f9b5d5',1,'page_changed_cb(EvSidebarThumbnails *sidebar, gint old_page, gint new_page):&#160;ev-sidebar-thumbnails.c']]],
   ['page_5fscroll_5fcb',['page_scroll_cb',['../ev-page-action-widget_8c.html#a41c0a3a7488c626df7e119abbd625ef7',1,'ev-page-action-widget.c']]],
   ['pagecount',['pageCount',['../classEvBrowserPlugin.html#a42ff0173b3a8b301b5ca05de6a9fcc42',1,'EvBrowserPlugin']]],
