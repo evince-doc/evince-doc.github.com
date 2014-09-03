@@ -27,6 +27,7 @@ var searchData=
   ['alignment',['alignment',['../structEvTransitionEffectPrivate.html#a603b1ce576078d5fb0dee0a93a5a8dbb',1,'EvTransitionEffectPrivate']]],
   ['alloc_5fcolors',['alloc_colors',['../struct__DviDevice.html#aeafbb8c4e69807ee8b7055eaf03ba4ba',1,'_DviDevice']]],
   ['allocate',['allocate',['../structNPClass.html#aadb6db95a941e877d1bcdd16d4546464',1,'NPClass']]],
+  ['allow_5flinks_5fchange_5fzoom',['allow_links_change_zoom',['../struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e',1,'_EvView']]],
   ['alpha',['alpha',['../struct__TIFF2PSContext.html#addc717aac6367ebf005b5ad150f3ad9e',1,'_TIFF2PSContext']]],
   ['alternative_5fcommand',['alternative_command',['../struct__ComicsDocument.html#a4bfd24430ad3276ed2da07c75233f15c',1,'_ComicsDocument']]],
   ['angle',['angle',['../structEpsfBox.html#a43fcbef6fc6a7ba99bc63f28ed78715c',1,'EpsfBox::angle()'],['../structEvTransitionEffectPrivate.html#ab6c8e1f8283f8b58da5827734b0d43a1',1,'EvTransitionEffectPrivate::angle()']]],

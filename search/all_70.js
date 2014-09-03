@@ -42,7 +42,7 @@ var searchData=
   ['page_5fscroll_5fcb',['page_scroll_cb',['../ev-page-action-widget_8c.html#a41c0a3a7488c626df7e119abbd625ef7',1,'ev-page-action-widget.c']]],
   ['page_5fselector',['page_selector',['../struct__EvToolbarPrivate.html#ad034a5dcb7c791b92570eac60753bea6',1,'_EvToolbarPrivate']]],
   ['page_5fsizes',['page_sizes',['../struct__EvDocumentPrivate.html#ae9c4831e828a83719bd3362bf0654e56',1,'_EvDocumentPrivate']]],
-  ['pagecount',['PageCount',['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68a66d5222994756a1c90ed3470246c9087',1,'EvBrowserPluginClass::PageCount()'],['../classEvBrowserPlugin.html#a42ff0173b3a8b301b5ca05de6a9fcc42',1,'EvBrowserPlugin::pageCount()']]],
+  ['pagecount',['pageCount',['../classEvBrowserPlugin.html#a42ff0173b3a8b301b5ca05de6a9fcc42',1,'EvBrowserPlugin::pageCount()'],['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68a66d5222994756a1c90ed3470246c9087',1,'EvBrowserPluginClass::PageCount()']]],
   ['pagemap',['pagemap',['../struct__DviContext.html#ae9999a51ef6544cef2b8a6f582ad13a5',1,'_DviContext']]],
   ['pagenum',['PageNum',['../mdvi_8h.html#a318f73f062df6f9f1f28f04a97af7c13',1,'mdvi.h']]],
   ['pages',['pages',['../struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c',1,'_EvJobFind']]],
