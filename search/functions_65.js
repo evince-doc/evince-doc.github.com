@@ -23,6 +23,7 @@ var searchData=
   ['egg_5ffind_5fbar_5fset_5fstatus_5ftext',['egg_find_bar_set_status_text',['../eggfindbar_8c.html#aaf779093f9f8a595706029a9375181b8',1,'egg_find_bar_set_status_text(EggFindBar *find_bar, const char *text):&#160;eggfindbar.c'],['../eggfindbar_8h.html#aaf779093f9f8a595706029a9375181b8',1,'egg_find_bar_set_status_text(EggFindBar *find_bar, const char *text):&#160;eggfindbar.c']]],
   ['egg_5ffind_5fbar_5fset_5fwhole_5fwords_5fonly',['egg_find_bar_set_whole_words_only',['../eggfindbar_8c.html#a279c790e7b7d9006389c87b562b6985b',1,'egg_find_bar_set_whole_words_only(EggFindBar *find_bar, gboolean whole_words_only):&#160;eggfindbar.c'],['../eggfindbar_8h.html#a279c790e7b7d9006389c87b562b6985b',1,'egg_find_bar_set_whole_words_only(EggFindBar *find_bar, gboolean whole_words_only):&#160;eggfindbar.c']]],
   ['emit_5ffinished',['emit_finished',['../ev-jobs_8c.html#a760e1960824d84f99620ac012feb1d6d',1,'ev-jobs.c']]],
+  ['end_5fjob',['end_job',['../ev-pixbuf-cache_8c.html#a3e5064686023ae2f4b452ab1a2111dee',1,'ev-pixbuf-cache.c']]],
   ['ensure_5frectangle_5fis_5fvisible',['ensure_rectangle_is_visible',['../ev-view_8c.html#a7238ef67387d9bbc9900dd22e5ed034e',1,'ev-view.c']]],
   ['entry_5factivate_5fcallback',['entry_activate_callback',['../eggfindbar_8c.html#a761963481346fa727dbb2d8ee524cfc7',1,'eggfindbar.c']]],
   ['entry_5factivated_5fcb',['entry_activated_cb',['../ev-zoom-action_8c.html#afb4155355f06a275df1a1fbb572f4ce5',1,'ev-zoom-action.c']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structBBox.html#a9f4faf7c8cc8f7d276322f93db63925d":[5,0,318,0],
 "structBITMAP.html":[5,0,319],
 "structBITMAP.html#a128c882f02a87946321988051e0fd48a":[5,0,319,0],
 "structBITMAP.html#a2b72c426cabec9d895384364c657a426":[5,0,319,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "structSelectionInfo.html#a91ba4eb93b504eb264ca8e0a20509773":[5,0,356,3],
 "structSelectionInfo.html#a91c6d3c3f4b55f69cf9d9b5e16baadb4":[5,0,356,2],
 "structTrackKernData.html":[5,0,364],
-"structTrackKernData.html#a1dc94d10d320f187993d4fc3c4cfdd21":[5,0,364,4],
-"structTrackKernData.html#a2afaf37eff72ce82344487d501c056c3":[5,0,364,1]
+"structTrackKernData.html#a1dc94d10d320f187993d4fc3c4cfdd21":[5,0,364,4]
 };

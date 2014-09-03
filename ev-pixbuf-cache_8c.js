@@ -24,6 +24,7 @@ var ev_pixbuf_cache_8c =
     [ "clear_selection_surface_if_needed", "ev-pixbuf-cache_8c.html#a21040b97ca50c8df7f056215271046cd", null ],
     [ "copy_job_to_job_info", "ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f", null ],
     [ "dispose_cache_job_info", "ev-pixbuf-cache_8c.html#a613bad79258280884bf2484f2903b890", null ],
+    [ "end_job", "ev-pixbuf-cache_8c.html#a3e5064686023ae2f4b452ab1a2111dee", null ],
     [ "ev_pixbuf_cache_add_jobs_if_needed", "ev-pixbuf-cache_8c.html#ab26c0227168ae0249f5e3b87e8b032ec", null ],
     [ "ev_pixbuf_cache_class_init", "ev-pixbuf-cache_8c.html#a7928e037e2a0c4c998f199b61f625bf9", null ],
     [ "ev_pixbuf_cache_clear", "ev-pixbuf-cache_8c.html#a78a8701b4ed7c195432fb3252ceb9ba8", null ],
