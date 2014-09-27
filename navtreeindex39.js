@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"union__synctex__info__t.html":[5,0,305],
 "union__synctex__info__t.html#a21f6dc493ca32c32112f6bba2aa5e491":[5,0,305,1],
 "union__synctex__info__t.html#a4c2a281dcceec2d9ef8c47d31d91144f":[5,0,305,0],
 "util_8c.html":[6,0,0,0,2,0,35],

@@ -4,6 +4,7 @@ var ev_window_title_8c =
     [ "_EvWindowTitle", "struct__EvWindowTitle.html", "struct__EvWindowTitle" ],
     [ "EV_BACKEND_PDF", "ev-window-title_8c.html#a933656aaed72b0045f0e81d961b8d818", null ],
     [ "EV_BACKEND_PS", "ev-window-title_8c.html#abd882420fdbcbefb69440c9469b0fa1f", null ],
+    [ "document_destroyed_cb", "ev-window-title_8c.html#a0169f1f2faa1c20c3d2a350fa1191fd7", null ],
     [ "ev_window_title_free", "ev-window-title_8c.html#af370901575f43371c259a964f5977651", null ],
     [ "ev_window_title_new", "ev-window-title_8c.html#a061e3e6be3246c64fec004a19e45d30f", null ],
     [ "ev_window_title_sanitize_title", "ev-window-title_8c.html#a99942ce00d7e9f0aaf1398f52d59ff64", null ],

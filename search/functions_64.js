@@ -71,6 +71,7 @@ var searchData=
   ['do_5faction_5fnamed',['do_action_named',['../ev-window_8c.html#a13523d0f6826b61011252781accdb72d',1,'ev-window.c']]],
   ['do_5fsample',['do_sample',['../bitmap_8c.html#a8edd57e6d43b9023e057163e2d94ba48',1,'bitmap.c']]],
   ['document_5fchanged_5fcb',['document_changed_cb',['../ev-view-accessible_8c.html#aac71dd9ebf16ae86e9e8a88e973c215e',1,'document_changed_cb(EvDocumentModel *model, GParamSpec *pspec, EvViewAccessible *accessible):&#160;ev-view-accessible.c'],['../ev-history_8c.html#af21da833d54e421dcecfd7aab92a70bd',1,'document_changed_cb(EvDocumentModel *model, GParamSpec *pspec, EvHistory *history):&#160;ev-history.c'],['../ev-zoom-action_8c.html#a46fdeaf31a61f962b9f74d5951afdcc9',1,'document_changed_cb(EvDocumentModel *model, GParamSpec *pspec, EvZoomAction *zoom_action):&#160;ev-zoom-action.c']]],
+  ['document_5fdestroyed_5fcb',['document_destroyed_cb',['../ev-window-title_8c.html#a0169f1f2faa1c20c3d2a350fa1191fd7',1,'ev-window-title.c']]],
   ['document_5fget_5fpage_5fsize',['document_get_page_size',['../djvu-document_8c.html#a9b139e47dbbb99e84799eae3c77523f7',1,'djvu-document.c']]],
   ['document_5fload_5fjob_5fcompleted_5fcallback',['document_load_job_completed_callback',['../ev-recent-view_8c.html#a9b8c08bd4b40c2762ccdf09eaa640679',1,'ev-recent-view.c']]],
   ['document_5floaded_5fcb',['document_loaded_cb',['../ev-daemon_8c.html#a0e72d2f453cb1011f84bdc1134125487',1,'ev-daemon.c']]],

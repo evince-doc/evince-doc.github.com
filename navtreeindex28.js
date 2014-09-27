@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structAutoScrollInfo.html#a53849b185cf422c80f18a4d0cb02be9b":[5,0,316,2],
 "structAutoScrollInfo.html#ae625528424261670faaa2bf5eecd21b9":[5,0,316,3],
 "structAutoScrollInfo.html#ae75c019aba0375997f39c6994266cd41":[5,0,316,0],
 "structBBox.html":[5,0,318],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "structSaveToBufferData.html":[5,0,355],
 "structSaveToBufferData.html#a39e2b692f6450b72a4f57fca0108f5eb":[5,0,355,1],
 "structSaveToBufferData.html#aa26c3417669b0765909439c4e2793a3a":[5,0,355,2],
-"structSaveToBufferData.html#acef3d227612571cebf20a612ae146a6e":[5,0,355,0],
-"structSelectionInfo.html":[5,0,356]
+"structSaveToBufferData.html#acef3d227612571cebf20a612ae146a6e":[5,0,355,0]
 };

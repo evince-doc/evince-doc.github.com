@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"struct__DviHashTable.html#ac54ff064d09c7835a297c7a5fa76ba53":[5,0,27,4],
 "struct__DviPageSpec.html":[5,0,28],
 "struct__DviPageSpec.html#a5e222c330e708deafd6d3e7efb2c5602":[5,0,28,1],
 "struct__DviPageSpec.html#af10a904cca6d36c050d3819d147e0c7b":[5,0,28,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvDocumentFormsInterface.html#a0d5d05c3ce205620aa219149e5c96f84":[5,0,73,14],
 "struct__EvDocumentFormsInterface.html#a11706a6ef95ac8765e2133ffb93187c0":[5,0,73,2],
 "struct__EvDocumentFormsInterface.html#a24fcb7b99a3e8b0cb3174f396e0e1592":[5,0,73,9],
-"struct__EvDocumentFormsInterface.html#a57b2ee03ccc1245ee30adc6ecb333025":[5,0,73,1],
-"struct__EvDocumentFormsInterface.html#a596e140b6aa0e728d618c61cc7a7b468":[5,0,73,10]
+"struct__EvDocumentFormsInterface.html#a57b2ee03ccc1245ee30adc6ecb333025":[5,0,73,1]
 };

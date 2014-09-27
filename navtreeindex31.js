@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvDocumentFormsInterface.html#a596e140b6aa0e728d618c61cc7a7b468":[5,0,73,10],
 "struct__EvDocumentFormsInterface.html#a59f4386a62f09257bf4336c2ec8d1b55":[5,0,73,4],
 "struct__EvDocumentFormsInterface.html#a736778bb2da6a193767cd128761b04d9":[5,0,73,5],
 "struct__EvDocumentFormsInterface.html#a96f165122e81bb0d60f2b32cac40fa70":[5,0,73,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvImageClass.html":[5,0,120],
 "struct__EvImageClass.html#a3182838ba7d1e72eb55af017d48837b3":[5,0,120,0],
 "struct__EvImagePrivate.html":[5,0,121],
-"struct__EvImagePrivate.html#a1727d1523338309a1e05dd645a72e11d":[5,0,121,3],
-"struct__EvImagePrivate.html#aa56b69b92d00486500c2a9e71e74d005":[5,0,121,0]
+"struct__EvImagePrivate.html#a1727d1523338309a1e05dd645a72e11d":[5,0,121,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"struct__NPPluginFuncs.html#a9a8a9425b6531d5b77f0bdc3ab779e7c":[5,0,291,17],
 "struct__NPPluginFuncs.html#aa55ed6ac4e90cb95225606b0b07d55bc":[5,0,291,11],
 "struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f":[5,0,291,21],
 "struct__NPPluginFuncs.html#ae0c7a9ca048cad9eec7d7d69df311bdf":[5,0,291,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "synctex__parser_8c.html#a115fbd71dc806e374e0b5bedb1857207":[6,0,0,2,2,0,121],
 "synctex__parser_8c.html#a11a6ac64f223a09fc622f559f0c71d00":[6,0,0,2,2,0,103],
 "synctex__parser_8c.html#a11cab992b6be4e7a0460d700f5a56380":[6,0,0,2,2,0,214],
-"synctex__parser_8c.html#a1249cb5b59924305482aefafde81b012":[6,0,0,2,2,0,210],
-"synctex__parser_8c.html#a125992d9033fff17dba4a3503f233cc1":[6,0,0,2,2,0,46]
+"synctex__parser_8c.html#a1249cb5b59924305482aefafde81b012":[6,0,0,2,2,0,210]
 };
