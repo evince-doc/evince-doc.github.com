@@ -558,7 +558,7 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8c_source.html','')
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (widget), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">EV_IS_VIEW_ACCESSIBLE</a> (<span class="keyword">self</span>), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">if</span> (self-&gt;priv-&gt;children == NULL)</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">if</span> (self-&gt;priv-&gt;children == NULL || self-&gt;priv-&gt;children-&gt;len == 0)</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    page_accessible = g_ptr_array_index (self-&gt;priv-&gt;children,</div>
@@ -740,7 +740,7 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8c.html">ev-view-accessible.c</a></li>
-    <li class="footer">Generated on Sat Sep 27 2014 15:01:49 for Evince by
+    <li class="footer">Generated on Tue Sep 30 2014 19:36:18 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
