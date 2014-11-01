@@ -342,21 +342,21 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00440">440</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;{</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    GObjectClass    *gobject_class = G_OBJECT_CLASS (klass);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *ev_document_class = <a class="code" href="ev-document_8h.html#a64dd590cd981f08430fee3c1a92d22a7">EV_DOCUMENT_CLASS</a> (klass);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    gobject_class-&gt;finalize = <a class="code" href="tiff-document_8c.html#a1b17118e84a9936f218041c9a3a17da1">tiff_document_finalize</a>;</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00442">442</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;{</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    GObjectClass    *gobject_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *ev_document_class = <a class="code" href="ev-document_8h.html#a64dd590cd981f08430fee3c1a92d22a7">EV_DOCUMENT_CLASS</a> (klass);</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a76bd65cef00f5be816f681a1fcefd21c">load</a> = <a class="code" href="tiff-document_8c.html#aff3be6f0186600805598dd72a93d6676">tiff_document_load</a>;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#addbd3fbe9018832441566ba14ee85f01">save</a> = <a class="code" href="tiff-document_8c.html#a668d2daffc97721c5150bc80a6bb34f2">tiff_document_save</a>;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a9564fb5a3e83bda242b7fcc7405a0972">get_n_pages</a> = <a class="code" href="tiff-document_8c.html#ae490f5b1c3137d6e17885b5d392ce8c0">tiff_document_get_n_pages</a>;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a4a9fa47c8ea0c87c584f4f1ebaf66659">get_page_size</a> = <a class="code" href="tiff-document_8c.html#a25e9772edc9bb073df25b85eb20c81a1">tiff_document_get_page_size</a>;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7">render</a> = <a class="code" href="tiff-document_8c.html#ae6c3918f1a32a7aaa54689842e869bb9">tiff_document_render</a>;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6">get_thumbnail</a> = <a class="code" href="tiff-document_8c.html#ac5a49c9250ab0f54bd95cf3d6bce856d">tiff_document_get_thumbnail</a>;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#aea85b7496821ccee8359e24d7f85163c">get_page_label</a> = <a class="code" href="tiff-document_8c.html#a3aa28d71a48ab924fca63f9aa4cd5260">tiff_document_get_page_label</a>;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;}</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    gobject_class-&gt;finalize = <a class="code" href="tiff-document_8c.html#a1b17118e84a9936f218041c9a3a17da1">tiff_document_finalize</a>;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a76bd65cef00f5be816f681a1fcefd21c">load</a> = <a class="code" href="tiff-document_8c.html#aff3be6f0186600805598dd72a93d6676">tiff_document_load</a>;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#addbd3fbe9018832441566ba14ee85f01">save</a> = <a class="code" href="tiff-document_8c.html#a668d2daffc97721c5150bc80a6bb34f2">tiff_document_save</a>;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a9564fb5a3e83bda242b7fcc7405a0972">get_n_pages</a> = <a class="code" href="tiff-document_8c.html#ae490f5b1c3137d6e17885b5d392ce8c0">tiff_document_get_n_pages</a>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a4a9fa47c8ea0c87c584f4f1ebaf66659">get_page_size</a> = <a class="code" href="tiff-document_8c.html#a25e9772edc9bb073df25b85eb20c81a1">tiff_document_get_page_size</a>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7">render</a> = <a class="code" href="tiff-document_8c.html#ae6c3918f1a32a7aaa54689842e869bb9">tiff_document_render</a>;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6">get_thumbnail</a> = <a class="code" href="tiff-document_8c.html#ac5a49c9250ab0f54bd95cf3d6bce856d">tiff_document_get_thumbnail</a>;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    ev_document_class-&gt;<a class="code" href="struct__EvDocumentClass.html#aea85b7496821ccee8359e24d7f85163c">get_page_label</a> = <a class="code" href="tiff-document_8c.html#a3aa28d71a48ab924fca63f9aa4cd5260">tiff_document_get_page_label</a>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -382,13 +382,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00500">500</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;{</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#a5bbfb59331bf110055d496c3f7b1050f">begin</a> = <a class="code" href="tiff-document_8c.html#a3f4d5a0e8b4094047e46feb88a3829ec">tiff_document_file_exporter_begin</a>;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#a8c81c94f95bf448502983b341a373190">do_page</a> = <a class="code" href="tiff-document_8c.html#a8fa45fc93d440b2207571695cee07a93">tiff_document_file_exporter_do_page</a>;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#a9fe72395dcdf9ab8fdc7fd78b9801e3a">end</a> = <a class="code" href="tiff-document_8c.html#ad64f993ca0aa70aff3a678f39afc0506">tiff_document_file_exporter_end</a>;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#acb7da15416b7d8791c0b4b640ef047bc">get_capabilities</a> = <a class="code" href="tiff-document_8c.html#a4d61b09838dcd60ddd0235aa645adc6d">tiff_document_file_exporter_get_capabilities</a>;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00502">502</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;{</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#a5bbfb59331bf110055d496c3f7b1050f">begin</a> = <a class="code" href="tiff-document_8c.html#a3f4d5a0e8b4094047e46feb88a3829ec">tiff_document_file_exporter_begin</a>;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#a8c81c94f95bf448502983b341a373190">do_page</a> = <a class="code" href="tiff-document_8c.html#a8fa45fc93d440b2207571695cee07a93">tiff_document_file_exporter_do_page</a>;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#a9fe72395dcdf9ab8fdc7fd78b9801e3a">end</a> = <a class="code" href="tiff-document_8c.html#ad64f993ca0aa70aff3a678f39afc0506">tiff_document_file_exporter_end</a>;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    iface-&gt;<a class="code" href="struct__EvFileExporterInterface.html#acb7da15416b7d8791c0b4b640ef047bc">get_capabilities</a> = <a class="code" href="tiff-document_8c.html#a4d61b09838dcd60ddd0235aa645adc6d">tiff_document_file_exporter_get_capabilities</a>;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -424,12 +424,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00458">458</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (exporter);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> = <a class="code" href="tiff2ps_8c.html#a3732c51227030d6f564af6a3c460c5c8">tiff2ps_context_new</a>(fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00460">460</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;{</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (exporter);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> = <a class="code" href="tiff2ps_8c.html#a3732c51227030d6f564af6a3c460c5c8">tiff2ps_context_new</a>(fc-&gt;<a class="code" href="struct__EvFileExporterContext.html#abfd93d4b424eb7d083bb8a3171c7a38a">filename</a>);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -475,17 +475,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00467">467</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;{</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (exporter);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordflow">if</span> (document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> == NULL)</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, rc-&gt;page-&gt;index) != 1)</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00469">469</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;{</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (exporter);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">if</span> (document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> == NULL)</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <a class="code" href="tiff2ps_8c.html#a803ed355f65bcbb3d8126749377d704f">tiff2ps_process_page</a> (document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a>, document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>,</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                  0, 0, 0, 0, 0);</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;}</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, rc-&gt;page-&gt;index) != 1)</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <a class="code" href="tiff2ps_8c.html#a803ed355f65bcbb3d8126749377d704f">tiff2ps_process_page</a> (document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a>, document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>,</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                  0, 0, 0, 0, 0);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -521,14 +521,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00480">480</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;{</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (exporter);</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keywordflow">if</span> (document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> == NULL)</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <a class="code" href="tiff2ps_8c.html#a6d30799c19a9bf3650c05fbe64921f3c">tiff2ps_context_finalize</a>(document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a>);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00482">482</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;{</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (exporter);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="keywordflow">if</span> (document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a> == NULL)</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <a class="code" href="tiff2ps_8c.html#a6d30799c19a9bf3650c05fbe64921f3c">tiff2ps_context_finalize</a>(document-&gt;<a class="code" href="struct__TiffDocument.html#a6497d833be8f6051f1f594f45117f924">ps_export_ctx</a>);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -564,14 +564,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00490">490</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;{</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">return</span>  <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8adf0faacc828e5c2b5fdfe3f5353651e6">EV_FILE_EXPORTER_CAN_PAGE_SET</a> |</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8ac1ca2df9565303e819ebad3e0eb33d4e">EV_FILE_EXPORTER_CAN_COPIES</a> |</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8a9e8684f722384fec0b377ff0c1254286">EV_FILE_EXPORTER_CAN_COLLATE</a> |</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8ae605015397fb11e6aad25ce505f1948c">EV_FILE_EXPORTER_CAN_REVERSE</a> |</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8a786ce701ffeacbb8486bcb9c6f8ab4f9">EV_FILE_EXPORTER_CAN_GENERATE_PS</a>;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00492">492</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;{</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordflow">return</span>  <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8adf0faacc828e5c2b5fdfe3f5353651e6">EV_FILE_EXPORTER_CAN_PAGE_SET</a> |</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8ac1ca2df9565303e819ebad3e0eb33d4e">EV_FILE_EXPORTER_CAN_COPIES</a> |</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8a9e8684f722384fec0b377ff0c1254286">EV_FILE_EXPORTER_CAN_COLLATE</a> |</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8ae605015397fb11e6aad25ce505f1948c">EV_FILE_EXPORTER_CAN_REVERSE</a> |</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <a class="code" href="ev-file-exporter_8h.html#a964473ce9e1a8f8d0c7c28b8703a10d8a786ce701ffeacbb8486bcb9c6f8ab4f9">EV_FILE_EXPORTER_CAN_GENERATE_PS</a>;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -607,17 +607,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00427">427</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;{</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordflow">if</span> (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>)</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        TIFFClose (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">if</span> (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a12ec5804d03694e821cc6078c37551cd">uri</a>)</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        g_free (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a12ec5804d03694e821cc6078c37551cd">uri</a>);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    G_OBJECT_CLASS (tiff_document_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00429">429</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;{</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">if</span> (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        TIFFClose (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordflow">if</span> (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a12ec5804d03694e821cc6078c37551cd">uri</a>)</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        g_free (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a12ec5804d03694e821cc6078c37551cd">uri</a>);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    G_OBJECT_CLASS (tiff_document_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -718,18 +718,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00412">412</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;{</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">static</span> gchar *<a class="code" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">if</span> (TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_PAGENAME, &amp;label) &amp;&amp;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        g_utf8_validate (label, -1, NULL)) {</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">return</span> g_strdup (label);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00414">414</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keyword">static</span> gchar *<a class="code" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">if</span> (TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_PAGENAME, &amp;label) &amp;&amp;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        g_utf8_validate (label, -1, NULL)) {</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">return</span> g_strdup (label);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -787,31 +787,31 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00193">193</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    guint32 w, h;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    gfloat x_res, y_res;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    g_return_if_fail (<a class="code" href="tiff-document_8h.html#a5604f3b911cba3bdeee085788de687f4">TIFF_IS_DOCUMENT</a> (document));</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    g_return_if_fail (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a> != NULL);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3">push_handlers</a> ();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>) != 1) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGEWIDTH, &amp;w);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGELENGTH, &amp;h);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="tiff-document_8c.html#aa1dbc602c1151e816701aa03252b5b35">tiff_document_get_resolution</a> (tiff_document, &amp;x_res, &amp;y_res);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    h = h * (x_res / y_res);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    *width = w;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    *height = h;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00195">195</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    guint32 w, h;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    gfloat x_res, y_res;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    g_return_if_fail (<a class="code" href="tiff-document_8h.html#a5604f3b911cba3bdeee085788de687f4">TIFF_IS_DOCUMENT</a> (document));</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    g_return_if_fail (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a> != NULL);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3">push_handlers</a> ();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, page-&gt;<a class="code" href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">index</a>) != 1) {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGEWIDTH, &amp;w);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGELENGTH, &amp;h);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <a class="code" href="tiff-document_8c.html#aa1dbc602c1151e816701aa03252b5b35">tiff_document_get_resolution</a> (tiff_document, &amp;x_res, &amp;y_res);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    h = h * (x_res / y_res);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    *width = w;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    *height = h;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -865,22 +865,24 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00171">171</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    gfloat x = 72.0, y = 72.0;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    gushort unit;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span> (TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_XRESOLUTION, &amp;x) &amp;&amp;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_YRESOLUTION, &amp;y)) {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">if</span> (TIFFGetFieldDefaulted (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_RESOLUTIONUNIT, &amp;unit)) {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">if</span> (unit == RESUNIT_CENTIMETER) {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                x *= 2.54;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                y *= 2.54;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    *x_res = x;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    *y_res = y;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    gfloat x = 0.0;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    gfloat y = 0.0;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    gushort unit;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">if</span> (TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_XRESOLUTION, &amp;x) &amp;&amp;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_YRESOLUTION, &amp;y)) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span> (TIFFGetFieldDefaulted (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_RESOLUTIONUNIT, &amp;unit)) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (unit == RESUNIT_CENTIMETER) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                x *= 2.54;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                y *= 2.54;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">/* Handle 0 values: some software set TIFF resolution as `0 , 0` see bug #646414 */</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    *x_res = x &gt; 0 ? x : 72.0;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    *y_res = y &gt; 0 ? y : 72.0;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -926,77 +928,77 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00338">338</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;{</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">int</span> width, height;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">float</span> x_res, y_res;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    gint rowstride, bytes;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    guchar *pixels = NULL;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    GdkPixbuf *pixbuf;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    GdkPixbuf *scaled_pixbuf;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    GdkPixbuf *rotated_pixbuf;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="code" href="tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3">push_handlers</a> ();</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, rc-&gt;page-&gt;index) != 1) {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">if</span> (!TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGEWIDTH, &amp;width)) {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">if</span> (! TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGELENGTH, &amp;height)) {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="tiff-document_8c.html#aa1dbc602c1151e816701aa03252b5b35">tiff_document_get_resolution</a> (tiff_document, &amp;x_res, &amp;y_res);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    </div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">/* Sanity check the doc */</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">if</span> (width &lt;= 0 || height &lt;= 0)</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    rowstride = width * 4;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">if</span> (rowstride / 4 != width)</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">/* overflow */</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    bytes = height * rowstride;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (bytes / rowstride != height)</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="comment">/* overflow */</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    pixels = g_try_malloc (bytes);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">if</span> (!pixels)</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    pixbuf = gdk_pixbuf_new_from_data (pixels, GDK_COLORSPACE_RGB, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 8, </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                       width, height, rowstride,</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                       (GdkPixbufDestroyNotify) g_free, NULL);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    TIFFReadRGBAImageOriented (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>,</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                   width, height,</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                   (uint32 *)pixels,</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                   ORIENTATION_TOPLEFT, 0);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width, height * (x_res / y_res),</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                           &amp;scaled_width, &amp;scaled_height);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    scaled_pixbuf = gdk_pixbuf_scale_simple (pixbuf,</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                         scaled_width, scaled_height,</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                         GDK_INTERP_BILINEAR);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    g_object_unref (pixbuf);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    rotated_pixbuf = gdk_pixbuf_rotate_simple (scaled_pixbuf, 360 - rc-&gt;rotation);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    g_object_unref (scaled_pixbuf);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">return</span> rotated_pixbuf;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00340">340</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;{</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">int</span> width, height;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordtype">float</span> x_res, y_res;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    gint rowstride, bytes;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    guchar *pixels = NULL;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    GdkPixbuf *pixbuf;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    GdkPixbuf *scaled_pixbuf;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    GdkPixbuf *rotated_pixbuf;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="code" href="tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3">push_handlers</a> ();</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, rc-&gt;page-&gt;index) != 1) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">if</span> (!TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGEWIDTH, &amp;width)) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordflow">if</span> (! TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGELENGTH, &amp;height)) {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="tiff-document_8c.html#aa1dbc602c1151e816701aa03252b5b35">tiff_document_get_resolution</a> (tiff_document, &amp;x_res, &amp;y_res);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">/* Sanity check the doc */</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">if</span> (width &lt;= 0 || height &lt;= 0)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    rowstride = width * 4;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span> (rowstride / 4 != width)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="comment">/* overflow */</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    bytes = height * rowstride;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordflow">if</span> (bytes / rowstride != height)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="comment">/* overflow */</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    pixels = g_try_malloc (bytes);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">if</span> (!pixels)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    pixbuf = gdk_pixbuf_new_from_data (pixels, GDK_COLORSPACE_RGB, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 8, </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                       width, height, rowstride,</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                       (GdkPixbufDestroyNotify) g_free, NULL);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    TIFFReadRGBAImageOriented (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>,</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                   width, height,</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                   (uint32 *)pixels,</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                   ORIENTATION_TOPLEFT, 0);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width, height * (x_res / y_res),</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                           &amp;scaled_width, &amp;scaled_height);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    scaled_pixbuf = gdk_pixbuf_scale_simple (pixbuf,</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                         scaled_width, scaled_height,</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                         GDK_INTERP_BILINEAR);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    g_object_unref (pixbuf);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    rotated_pixbuf = gdk_pixbuf_rotate_simple (scaled_pixbuf, 360 - rc-&gt;rotation);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    g_object_unref (scaled_pixbuf);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">return</span> rotated_pixbuf;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1032,10 +1034,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00509">509</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;{</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a45ddba3f0bdf15b6dfb39edfaa8c74a2">n_pages</a> = -1;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;}</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00511">511</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;{</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a45ddba3f0bdf15b6dfb39edfaa8c74a2">n_pages</a> = -1;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1176,118 +1178,118 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00223">223</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">int</span> width, height;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">float</span> x_res, y_res;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    gint rowstride, bytes;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    guchar *pixels = NULL;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    guchar *p;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">int</span> orientation;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    cairo_surface_t *surface;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    cairo_surface_t *rotated_surface;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> cairo_user_data_key_t key;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    g_return_val_if_fail (<a class="code" href="tiff-document_8h.html#a5604f3b911cba3bdeee085788de687f4">TIFF_IS_DOCUMENT</a> (document), NULL);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    g_return_val_if_fail (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a> != NULL, NULL);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3">push_handlers</a> ();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, rc-&gt;page-&gt;index) != 1) {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to select page %d&quot;</span>, rc-&gt;page-&gt;index);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span> (!TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGEWIDTH, &amp;width)) {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to read image width&quot;</span>);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">if</span> (! TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGELENGTH, &amp;height)) {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to read image height&quot;</span>);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (! TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_ORIENTATION, &amp;orientation)) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        orientation = ORIENTATION_TOPLEFT;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="tiff-document_8c.html#aa1dbc602c1151e816701aa03252b5b35">tiff_document_get_resolution</a> (tiff_document, &amp;x_res, &amp;y_res);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="comment">/* Sanity check the doc */</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">if</span> (width &lt;= 0 || height &lt;= 0) {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        g_warning(<span class="stringliteral">&quot;Invalid width or height.&quot;</span>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#ifdef HAVE_CAIRO_FORMAT_STRIDE_FOR_WIDTH</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor"></span>    rowstride = cairo_format_stride_for_width (CAIRO_FORMAT_RGB24, width);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span>    rowstride = width * 4;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (rowstride / 4 != width) {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        g_warning(<span class="stringliteral">&quot;Overflow while rendering document.&quot;</span>);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">/* overflow, or cairo was changed in an unsupported way */</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    bytes = height * rowstride;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> (bytes / rowstride != height) {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        g_warning(<span class="stringliteral">&quot;Overflow while rendering document.&quot;</span>);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="comment">/* overflow */</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    pixels = g_try_malloc (bytes);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">if</span> (!pixels) {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to allocate memory for rendering.&quot;</span>);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    surface = cairo_image_surface_create_for_data (pixels,</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                               CAIRO_FORMAT_RGB24,</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                               width, height,</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                               rowstride);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    cairo_surface_set_user_data (surface, &amp;key,</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                     pixels, (cairo_destroy_func_t)g_free);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    TIFFReadRGBAImageOriented (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>,</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                   width, height,</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                   (uint32 *)pixels,</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                   orientation, 0);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">/* Convert the format returned by libtiff to</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">    * what cairo expects</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    p = pixels;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">while</span> (p &lt; pixels + bytes) {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        guint32 *pixel = (guint32*)p;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        guint8 r = TIFFGetR(*pixel);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        guint8 g = TIFFGetG(*pixel);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        guint8 b = TIFFGetB(*pixel);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        guint8 a = TIFFGetA(*pixel);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        *pixel = (a &lt;&lt; 24) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | b;</div>
+<p>Definition at line <a class="el" href="tiff-document_8c_source.html#l00225">225</a> of file <a class="el" href="tiff-document_8c_source.html">tiff-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="struct__TiffDocument.html">TiffDocument</a> *tiff_document = <a class="code" href="tiff-document_8h.html#aba2247229e2b65652686c6b30cb3cc82">TIFF_DOCUMENT</a> (document);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">int</span> width, height;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">float</span> x_res, y_res;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    gint rowstride, bytes;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    guchar *pixels = NULL;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    guchar *p;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">int</span> orientation;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    cairo_surface_t *surface;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    cairo_surface_t *rotated_surface;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> cairo_user_data_key_t key;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    g_return_val_if_fail (<a class="code" href="tiff-document_8h.html#a5604f3b911cba3bdeee085788de687f4">TIFF_IS_DOCUMENT</a> (document), NULL);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    g_return_val_if_fail (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a> != NULL, NULL);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3">push_handlers</a> ();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span> (TIFFSetDirectory (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, rc-&gt;page-&gt;index) != 1) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to select page %d&quot;</span>, rc-&gt;page-&gt;index);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">if</span> (!TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGEWIDTH, &amp;width)) {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to read image width&quot;</span>);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span> (! TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_IMAGELENGTH, &amp;height)) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to read image height&quot;</span>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span> (! TIFFGetField (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>, TIFFTAG_ORIENTATION, &amp;orientation)) {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        orientation = ORIENTATION_TOPLEFT;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="tiff-document_8c.html#aa1dbc602c1151e816701aa03252b5b35">tiff_document_get_resolution</a> (tiff_document, &amp;x_res, &amp;y_res);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">/* Sanity check the doc */</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">if</span> (width &lt;= 0 || height &lt;= 0) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        g_warning(<span class="stringliteral">&quot;Invalid width or height.&quot;</span>);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#ifdef HAVE_CAIRO_FORMAT_STRIDE_FOR_WIDTH</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span>    rowstride = cairo_format_stride_for_width (CAIRO_FORMAT_RGB24, width);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span>    rowstride = width * 4;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (rowstride / 4 != width) {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        g_warning(<span class="stringliteral">&quot;Overflow while rendering document.&quot;</span>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">/* overflow, or cairo was changed in an unsupported way */</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">return</span> NULL;                </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    bytes = height * rowstride;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span> (bytes / rowstride != height) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        g_warning(<span class="stringliteral">&quot;Overflow while rendering document.&quot;</span>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">/* overflow */</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    pixels = g_try_malloc (bytes);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">if</span> (!pixels) {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        g_warning(<span class="stringliteral">&quot;Failed to allocate memory for rendering.&quot;</span>);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    surface = cairo_image_surface_create_for_data (pixels,</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                               CAIRO_FORMAT_RGB24,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                               width, height,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                               rowstride);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    cairo_surface_set_user_data (surface, &amp;key,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                     pixels, (cairo_destroy_func_t)g_free);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    TIFFReadRGBAImageOriented (tiff_document-&gt;<a class="code" href="struct__TiffDocument.html#a69fca53ff907e01e619e7ff82ef9a31b">tiff</a>,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                   width, height,</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                   (uint32 *)pixels,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                   orientation, 0);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <a class="code" href="tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4">pop_handlers</a> ();</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">/* Convert the format returned by libtiff to</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">    * what cairo expects</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    p = pixels;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">while</span> (p &lt; pixels + bytes) {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        guint32 *pixel = (guint32*)p;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        guint8 r = TIFFGetR(*pixel);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        guint8 g = TIFFGetG(*pixel);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        guint8 b = TIFFGetB(*pixel);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        guint8 a = TIFFGetA(*pixel);</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        p += 4;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width, height * (x_res / y_res),</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                           &amp;scaled_width, &amp;scaled_height);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    rotated_surface = <a class="code" href="ev-document-misc_8c.html#a0efd1589afa135bc99744859ecede365">ev_document_misc_surface_rotate_and_scale</a> (surface,</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                     scaled_width, scaled_height,</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                     rc-&gt;rotation);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    cairo_surface_destroy (surface);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> rotated_surface;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        *pixel = (a &lt;&lt; 24) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | b;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        p += 4;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width, height * (x_res / y_res),</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                           &amp;scaled_width, &amp;scaled_height);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    rotated_surface = <a class="code" href="ev-document-misc_8c.html#a0efd1589afa135bc99744859ecede365">ev_document_misc_surface_rotate_and_scale</a> (surface,</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                     scaled_width, scaled_height,</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                     rc-&gt;rotation);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    cairo_surface_destroy (surface);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">return</span> rotated_surface;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1409,7 +1411,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_f91c0c2ccd1873d3fde0d38a68adb014.html">tiff</a></li><li class="navelem"><a class="el" href="tiff-document_8c.html">tiff-document.c</a></li>
-    <li class="footer">Generated on Tue Oct 14 2014 13:13:07 for Evince by
+    <li class="footer">Generated on Sat Nov 1 2014 10:40:48 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
