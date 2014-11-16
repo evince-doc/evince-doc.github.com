@@ -8,5 +8,6 @@ var struct__EvAnnotationPropertiesDialog =
     [ "grid", "struct__EvAnnotationPropertiesDialog.html#a7ef94a85e3f5a447f38f5f2d89752e9d", null ],
     [ "icon", "struct__EvAnnotationPropertiesDialog.html#a1fca8ea3ab29a5ab6c4091a86eb27616", null ],
     [ "opacity", "struct__EvAnnotationPropertiesDialog.html#a9568abfa97b257492c14418a7137d3fb", null ],
-    [ "popup_state", "struct__EvAnnotationPropertiesDialog.html#a9be8115e2767177c68ae27a4ddd07377", null ]
+    [ "popup_state", "struct__EvAnnotationPropertiesDialog.html#a9be8115e2767177c68ae27a4ddd07377", null ],
+    [ "text_markup_type", "struct__EvAnnotationPropertiesDialog.html#ae18a4fa0e4243fac6b91fb3d07387141", null ]
 ];

@@ -12,6 +12,7 @@ var ev_annotation_properties_dialog_8c =
     [ "ev_annotation_properties_dialog_get_popup_is_open", "ev-annotation-properties-dialog_8c.html#ab48710d00b01a5c0d57d0d96f78f8eb1", null ],
     [ "ev_annotation_properties_dialog_get_rgba", "ev-annotation-properties-dialog_8c.html#ac2f0ea3e8c7ad1014dadf008e4c5044e", null ],
     [ "ev_annotation_properties_dialog_get_text_icon", "ev-annotation-properties-dialog_8c.html#a0c49f86860beeb518150ea5e104f173c", null ],
+    [ "ev_annotation_properties_dialog_get_text_markup_type", "ev-annotation-properties-dialog_8c.html#a35a97bd8a067fc3a7e0cf34692e640af", null ],
     [ "ev_annotation_properties_dialog_init", "ev-annotation-properties-dialog_8c.html#a461efa05b6fb17ad2f5a1f47ca841868", null ],
     [ "ev_annotation_properties_dialog_new", "ev-annotation-properties-dialog_8c.html#a663be34f53c1fc738b26c1c89e3ab7bf", null ],
     [ "ev_annotation_properties_dialog_new_with_annotation", "ev-annotation-properties-dialog_8c.html#a88b2f6728c3c855afdbe71e28b6f9c1c", null ],

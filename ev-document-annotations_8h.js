@@ -20,6 +20,7 @@ var ev_document_annotations_8h =
       [ "EV_ANNOTATIONS_SAVE_TEXT_IS_OPEN", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baafa62966d1858ef48524ef67fdb4e6289", null ],
       [ "EV_ANNOTATIONS_SAVE_TEXT_ICON", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baaea6d8468551b3a640747e407feee5cb7", null ],
       [ "EV_ANNOTATIONS_SAVE_ATTACHMENT", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa040b3c27d457315918b7ecbad3e06c12", null ],
+      [ "EV_ANNOTATIONS_SAVE_TEXT_MARKUP_TYPE", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baaecdfdedd71923924251733c242fc47d3", null ],
       [ "EV_ANNOTATIONS_SAVE_ALL", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa622b82ba684f033a4b2b1689776a1d1b", null ]
     ] ],
     [ "ev_document_annotations_add_annotation", "ev-document-annotations_8h.html#a478fa75ef590cc346272ba75cd4e94b8", null ],

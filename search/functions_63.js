@@ -48,6 +48,7 @@ var searchData=
   ['continuouschanged',['continuousChanged',['../EvBrowserPluginToolbar_8cpp.html#a26da5ad5254c5366e778bee1e736e023',1,'EvBrowserPluginToolbar.cpp']]],
   ['convert_5ferror',['convert_error',['../ev-poppler_8cc.html#a9456ee36df70fca6b1529f74873d6071',1,'ev-poppler.cc']]],
   ['copy_5fjob_5fto_5fjob_5finfo',['copy_job_to_job_info',['../ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f',1,'ev-pixbuf-cache.c']]],
+  ['copy_5fpoppler_5fannot',['copy_poppler_annot',['../ev-poppler_8cc.html#a3a507c2fb7ad7b4108017216b92e1b25',1,'ev-poppler.cc']]],
   ['create',['create',['../classEvBrowserPlugin.html#a04df0726a411940d21351e3b8b3b1725',1,'EvBrowserPlugin']]],
   ['create_5fblur_5ffilter',['create_blur_filter',['../ev-utils_8c.html#a94c637579ac9aef3ef422ddd85f6c69a',1,'ev-utils.c']]],
   ['create_5ffile_5ffrom_5furi_5ffor_5fformat',['create_file_from_uri_for_format',['../ev-window_8c.html#a9b91a8d01af0f6950d8513d95ff73464',1,'ev-window.c']]],

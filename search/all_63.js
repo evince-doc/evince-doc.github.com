@@ -136,6 +136,7 @@ var searchData=
   ['convertpoint',['convertpoint',['../struct__NPNetscapeFuncs.html#a6724f5ba92a477b4c571f224dedb419f',1,'_NPNetscapeFuncs']]],
   ['convfilter',['ConvFilter',['../structConvFilter.html',1,'']]],
   ['copy_5fjob_5fto_5fjob_5finfo',['copy_job_to_job_info',['../ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f',1,'ev-pixbuf-cache.c']]],
+  ['copy_5fpoppler_5fannot',['copy_poppler_annot',['../ev-poppler_8cc.html#a3a507c2fb7ad7b4108017216b92e1b25',1,'ev-poppler.cc']]],
   ['count',['count',['../structListHead.html#a0cc9a65fb26615f40dd8309dee79e435',1,'ListHead::count()'],['../struct____synctex__scanner__t.html#aa09bf8eca2508d26805b53e173ecfd65',1,'__synctex_scanner_t::count()']]],
   ['covered_5fregion',['covered_region',['../struct__EvViewSelection.html#a7009dd0e56dd2f17dfdef39dc02fc1dc',1,'_EvViewSelection']]],
   ['cr',['cr',['../structDviCairoDevice.html#afab8cf295aea744ab48a9b4b5b4dcf76',1,'DviCairoDevice::cr()'],['../struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7',1,'_EvJobPrint::cr()']]],

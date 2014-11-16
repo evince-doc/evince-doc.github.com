@@ -110,7 +110,7 @@ var searchData=
   ['setuppagestate',['setupPageState',['../tiff2ps_8c.html#a1b8fd951f4bb3f0b560b6b9f76d225be',1,'tiff2ps.c']]],
   ['setvalue',['setvalue',['../struct__NPPluginFuncs.html#ae0c7a9ca048cad9eec7d7d69df311bdf',1,'_NPPluginFuncs::setvalue()'],['../struct__NPNetscapeFuncs.html#a4a1bcc9851bc92312bcdbd2c30b50827',1,'_NPNetscapeFuncs::setvalue()']]],
   ['setvalueforurl',['setvalueforurl',['../struct__NPNetscapeFuncs.html#aa1bdcc127bbbb7bea5bdec1a8d4cbc6c',1,'_NPNetscapeFuncs']]],
-  ['setwindow',['setWindow',['../classEvBrowserPlugin.html#a86ba6ef51cb370e52c205d45b8434b7c',1,'EvBrowserPlugin::setWindow()'],['../struct__NPPluginFuncs.html#a5535af5c8168fe6e4d2ecfe3af1c5667',1,'_NPPluginFuncs::setwindow()']]],
+  ['setwindow',['setwindow',['../struct__NPPluginFuncs.html#a5535af5c8168fe6e4d2ecfe3af1c5667',1,'_NPPluginFuncs::setwindow()'],['../classEvBrowserPlugin.html#a86ba6ef51cb370e52c205d45b8434b7c',1,'EvBrowserPlugin::setWindow()']]],
   ['setzoom',['setZoom',['../classEvBrowserPlugin.html#a0b3d2576007257741cefd5ee6e6d16d8',1,'EvBrowserPlugin']]],
   ['sfround',['SFROUND',['../common_8h.html#a5771d6439a44a9f6a9b82037445c3fe3',1,'common.h']]],
   ['sheet',['sheet',['../struct____synctex__scanner__t.html#a8438cc8e64fd36c7dcb54b6f3c1450dd',1,'__synctex_scanner_t']]],

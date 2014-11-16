@@ -1285,13 +1285,56 @@ $(document).ready(function(){initNavTree('ev-annotation_8c_source.html','');});
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;                                                           NULL));</div>
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        <span class="keywordflow">return</span> annot;</div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;}</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;<a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *</div>
+<div class="line"><a name="l01344"></a><span class="lineno"><a class="code" href="ev-annotation_8h.html#a3f7e5801b8c38bae9b9ca8c45377f726"> 1344</a></span>&#160;<a class="code" href="ev-annotation_8c.html#a3f7e5801b8c38bae9b9ca8c45377f726">ev_annotation_text_markup_strike_out_new</a> (<a class="code" href="struct__EvPage.html">EvPage</a> *page)</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;{</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *annot = <a class="code" href="ev-annotation_8h.html#af4daed6c84a4e541336cf70ca74986ba">EV_ANNOTATION</a> (g_object_new (<a class="code" href="ev-annotation_8h.html#aa63500bdac17a5ed0ca8c46e129ccf91">EV_TYPE_ANNOTATION_TEXT_MARKUP</a>,</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;                                                           <span class="stringliteral">&quot;page&quot;</span>, page,</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                                                           <span class="stringliteral">&quot;type&quot;</span>, <a class="code" href="ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfaefe00c0d505e35402824429ba7e8301a">EV_ANNOTATION_TEXT_MARKUP_STRIKE_OUT</a>,</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                                                           NULL));</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        <span class="keywordflow">return</span> annot;</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;}</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;<a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *</div>
+<div class="line"><a name="l01354"></a><span class="lineno"><a class="code" href="ev-annotation_8h.html#a4b59fdf5540232fd46291f15a28fdac6"> 1354</a></span>&#160;<a class="code" href="ev-annotation_8c.html#a4b59fdf5540232fd46291f15a28fdac6">ev_annotation_text_markup_underline_new</a> (<a class="code" href="struct__EvPage.html">EvPage</a> *page)</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;{</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;        <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a> *annot = <a class="code" href="ev-annotation_8h.html#af4daed6c84a4e541336cf70ca74986ba">EV_ANNOTATION</a> (g_object_new (<a class="code" href="ev-annotation_8h.html#aa63500bdac17a5ed0ca8c46e129ccf91">EV_TYPE_ANNOTATION_TEXT_MARKUP</a>,</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                                                           <span class="stringliteral">&quot;page&quot;</span>, page,</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                                                           <span class="stringliteral">&quot;type&quot;</span>, <a class="code" href="ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfad880a104590efabf4f92b306634aaa1d">EV_ANNOTATION_TEXT_MARKUP_UNDERLINE</a>,</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                                                           NULL));</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;        <span class="keywordflow">return</span> annot;</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;}</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;<a class="code" href="ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcf">EvAnnotationTextMarkupType</a></div>
+<div class="line"><a name="l01364"></a><span class="lineno"><a class="code" href="ev-annotation_8h.html#a811374ea1c42aafd5f369227682712fd"> 1364</a></span>&#160;<a class="code" href="ev-annotation_8c.html#a811374ea1c42aafd5f369227682712fd">ev_annotation_text_markup_get_markup_type</a> (<a class="code" href="struct__EvAnnotationTextMarkup.html">EvAnnotationTextMarkup</a> *annot)</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;{</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-annotation_8h.html#a741e57e1592e95322fc0cc817f330a5a">EV_IS_ANNOTATION_TEXT_MARKUP</a> (annot), <a class="code" href="ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfa18287d95f5869d8ae2ef383346b088fa">EV_ANNOTATION_TEXT_MARKUP_HIGHLIGHT</a>);</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        <span class="keywordflow">return</span> annot-&gt;<a class="code" href="struct__EvAnnotationTextMarkup.html#ab67d4b972bdd2e09c89bf39286e216bd">type</a>;</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;}</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;gboolean</div>
+<div class="line"><a name="l01372"></a><span class="lineno"><a class="code" href="ev-annotation_8h.html#adf49f7e655c3e10736200407b4657b48"> 1372</a></span>&#160;<a class="code" href="ev-annotation_8c.html#adf49f7e655c3e10736200407b4657b48">ev_annotation_text_markup_set_markup_type</a> (<a class="code" href="struct__EvAnnotationTextMarkup.html">EvAnnotationTextMarkup</a>    *annot,</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;                                           <a class="code" href="ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcf">EvAnnotationTextMarkupType</a> markup_type)</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;{</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-annotation_8h.html#a741e57e1592e95322fc0cc817f330a5a">EV_IS_ANNOTATION_TEXT_MARKUP</a> (annot), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        <span class="keywordflow">if</span> (annot-&gt;<a class="code" href="struct__EvAnnotationTextMarkup.html#ab67d4b972bdd2e09c89bf39286e216bd">type</a> == markup_type)</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        annot-&gt;<a class="code" href="struct__EvAnnotationTextMarkup.html#ab67d4b972bdd2e09c89bf39286e216bd">type</a> = markup_type;</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;        g_object_notify (G_OBJECT (annot), <span class="stringliteral">&quot;type&quot;</span>);</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-annotation_8c.html">ev-annotation.c</a></li>
-    <li class="footer">Generated on Sun Nov 16 2014 11:14:25 for Evince by
+    <li class="footer">Generated on Sun Nov 16 2014 13:08:26 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

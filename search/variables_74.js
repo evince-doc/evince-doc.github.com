@@ -14,6 +14,7 @@ var searchData=
   ['text_5flog_5fattrs',['text_log_attrs',['../struct__EvJobPageData.html#adbb90e3ee4d0df00ca2676a60d3a5755',1,'_EvJobPageData::text_log_attrs()'],['../struct__EvPageCacheData.html#a190ed931c140e469811df89d5700e2cf',1,'_EvPageCacheData::text_log_attrs()']]],
   ['text_5flog_5fattrs_5flength',['text_log_attrs_length',['../struct__EvJobPageData.html#af0b599b5e04e87ac89e7cd32e328ef85',1,'_EvJobPageData::text_log_attrs_length()'],['../struct__EvPageCacheData.html#a648d18cdb83537e52646a18a8d2b34e5',1,'_EvPageCacheData::text_log_attrs_length()']]],
   ['text_5fmapping',['text_mapping',['../struct__EvJobPageData.html#a3dec6fb8004ff595cfa1056274a6f0e9',1,'_EvJobPageData::text_mapping()'],['../struct__EvPageCacheData.html#a7556a2bdbba4828fe05aa10da37e4229',1,'_EvPageCacheData::text_mapping()']]],
+  ['text_5fmarkup_5ftype',['text_markup_type',['../struct__EvAnnotationPropertiesDialog.html#ae18a4fa0e4243fac6b91fb3d07387141',1,'_EvAnnotationPropertiesDialog']]],
   ['text_5fstructure',['text_structure',['../struct__DjvuTextPage.html#ac16ef01f56142930874d2429f72f4df2',1,'_DjvuTextPage']]],
   ['text_5fview',['text_view',['../struct__EvAnnotationWindow.html#a9a5587d83ed6a48609ea59eead8c1725',1,'_EvAnnotationWindow']]],
   ['tf_5fbytesperrow',['tf_bytesperrow',['../struct__TIFF2PSContext.html#a9599813551ea1253347b840b50e55d89',1,'_TIFF2PSContext']]],
