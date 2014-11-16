@@ -241,17 +241,17 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            ev_link = <a class="code" href="ev-link_8c.html#a6690d4e0ffafb53cef0bbef77eab794e">ev_link_new</a> (utf8_title ? utf8_title : title, ev_action);</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            gtk_tree_store_append (GTK_TREE_STORE (model), &amp;tree_iter, parent);</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            gtk_tree_store_set (GTK_TREE_STORE (model), &amp;tree_iter,</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                        <a class="code" href="ev-document-links_8h.html#a39fca1837c5ce7715cbf571669660c13a941f25d3f7aa99d5c84c1f6a28472a1a">EV_DOCUMENT_LINKS_COLUMN_MARKUP</a>, title_markup,</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                        <a class="code" href="ev-document-links_8h.html#a39fca1837c5ce7715cbf571669660c13ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, ev_link,</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        <a class="code" href="ev-document-links_8h.html#a39fca1837c5ce7715cbf571669660c13a50a5421793422afe1e033c8519f09701">EV_DOCUMENT_LINKS_COLUMN_EXPAND</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                        <a class="code" href="ev-document-links_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a941f25d3f7aa99d5c84c1f6a28472a1a">EV_DOCUMENT_LINKS_COLUMN_MARKUP</a>, title_markup,</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                        <a class="code" href="ev-document-links_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, ev_link,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        <a class="code" href="ev-document-links_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a50a5421793422afe1e033c8519f09701">EV_DOCUMENT_LINKS_COLUMN_EXPAND</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                        -1);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            g_object_unref (ev_action);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            g_object_unref (ev_link);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            gtk_tree_store_append (GTK_TREE_STORE (model), &amp;tree_iter, parent);</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            gtk_tree_store_set (GTK_TREE_STORE (model), &amp;tree_iter,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                        <a class="code" href="ev-document-links_8h.html#a39fca1837c5ce7715cbf571669660c13a941f25d3f7aa99d5c84c1f6a28472a1a">EV_DOCUMENT_LINKS_COLUMN_MARKUP</a>, title_markup,</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        <a class="code" href="ev-document-links_8h.html#a39fca1837c5ce7715cbf571669660c13a50a5421793422afe1e033c8519f09701">EV_DOCUMENT_LINKS_COLUMN_EXPAND</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                        <a class="code" href="ev-document-links_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a941f25d3f7aa99d5c84c1f6a28472a1a">EV_DOCUMENT_LINKS_COLUMN_MARKUP</a>, title_markup,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        <a class="code" href="ev-document-links_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a50a5421793422afe1e033c8519f09701">EV_DOCUMENT_LINKS_COLUMN_EXPAND</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                        -1);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
@@ -487,7 +487,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <a class="code" href="djvu-document-private_8h.html#aece81d987f8a10511c8206746cdb5e1a">djvu_handle_events</a> (djvu_document, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, NULL);</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">if</span> (outline) {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        model = (GtkTreeModel *) gtk_tree_store_new (<a class="code" href="ev-document-links_8h.html#a39fca1837c5ce7715cbf571669660c13a30e066b8bd32b9fd61bc42c49d0e8420">EV_DOCUMENT_LINKS_COLUMN_NUM_COLUMNS</a>,</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        model = (GtkTreeModel *) gtk_tree_store_new (<a class="code" href="ev-document-links_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a30e066b8bd32b9fd61bc42c49d0e8420">EV_DOCUMENT_LINKS_COLUMN_NUM_COLUMNS</a>,</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                                 G_TYPE_STRING,</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                 G_TYPE_OBJECT,</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                 G_TYPE_BOOLEAN,</div>
@@ -1225,7 +1225,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_7f6fea2249a761309a503a3fea81b58a.html">djvu</a></li><li class="navelem"><a class="el" href="djvu-links_8c.html">djvu-links.c</a></li>
-    <li class="footer">Generated on Sat Nov 8 2014 19:03:38 for Evince by
+    <li class="footer">Generated on Sun Nov 16 2014 11:14:27 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -133,13 +133,13 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-bookmarks_8h.html">ev-bookmarks.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#ac9420823bfeba78fce625fc105e3b01dac37dda0da1a44e10c0504afeeb863f3c">   28</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#ac9420823bfeba78fce625fc105e3b01da8cbdba83acb6efdf61496dff9f70c1f3">   29</a></span>&#160;        <a class="code" href="ev-bookmarks_8c.html#ac9420823bfeba78fce625fc105e3b01da8cbdba83acb6efdf61496dff9f70c1f3">PROP_METADATA</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6eac37dda0da1a44e10c0504afeeb863f3c">   28</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea8cbdba83acb6efdf61496dff9f70c1f3">   29</a></span>&#160;        <a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea8cbdba83acb6efdf61496dff9f70c1f3">PROP_METADATA</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">   33</a></span>&#160;        <a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>,</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea1e7365ab36b084beff81fb1b96df4b11">   34</a></span>&#160;        <a class="code" href="ev-page-action_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">   33</a></span>&#160;        <a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a1e7365ab36b084beff81fb1b96df4b11">   34</a></span>&#160;        <a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="struct__EvBookmarks.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvBookmarks.html">_EvBookmarks</a> {</div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="gimpcellrenderertoggle_8c.html#a5147f916416de34ae15ae07402203071">G_DEFINE_TYPE</a> (<a class="code" href="struct__EvBookmarks.html">EvBookmarks</a>, ev_bookmarks, G_TYPE_OBJECT)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">   52</a></span>&#160;static guint <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>];</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">   52</a></span>&#160;static guint <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>];</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;static gint</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="ev-bookmarks_8c.html#a87d6b24b8bfb2beb17e5a0d968d60043">   55</a></span>&#160;<a class="code" href="ev-bookmarks_8c.html#a87d6b24b8bfb2beb17e5a0d968d60043">ev_bookmark_compare</a> (<a class="code" href="struct__EvBookmark.html">EvBookmark</a> *a,</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="struct__EvBookmarks.html">EvBookmarks</a> *bookmarks = <a class="code" href="ev-bookmarks_8h.html#a99daca52369ff0c35f4e9a1447938b86">EV_BOOKMARKS</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-bookmarks_8c.html#ac9420823bfeba78fce625fc105e3b01da8cbdba83acb6efdf61496dff9f70c1f3">PROP_METADATA</a>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea8cbdba83acb6efdf61496dff9f70c1f3">PROP_METADATA</a>:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                bookmarks-&gt;<a class="code" href="struct__EvBookmarks.html#a77641c9de6b11d2f8460ce8d02a0aadd">metadata</a> = (<a class="code" href="struct__EvMetadata.html">EvMetadata</a> *)g_value_dup_object (value);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">default</span>:</div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        gobject_class-&gt;constructed = <a class="code" href="ev-bookmarks_8c.html#ad76ecc9b67367e84af943736fab2fe5d">ev_bookmarks_constructed</a>;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        g_object_class_install_property (gobject_class,</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                         <a class="code" href="ev-bookmarks_8c.html#ac9420823bfeba78fce625fc105e3b01da8cbdba83acb6efdf61496dff9f70c1f3">PROP_METADATA</a>,</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                         <a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea8cbdba83acb6efdf61496dff9f70c1f3">PROP_METADATA</a>,</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;metadata&quot;</span>,</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                                              <span class="stringliteral">&quot;Metadata&quot;</span>,</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                                              <span class="stringliteral">&quot;The document metadata&quot;</span>,</div>
@@ -278,7 +278,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                              G_PARAM_CONSTRUCT_ONLY | G_PARAM_WRITABLE |</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                                              G_PARAM_STATIC_STRINGS));</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="comment">/* Signals */</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>] =</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>] =</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                g_signal_new (<span class="stringliteral">&quot;changed&quot;</span>,</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                              <a class="code" href="ev-bookmarks_8h.html#a19e035ceb73bca1a452904302d517640">EV_TYPE_BOOKMARKS</a>,</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                              G_SIGNAL_RUN_LAST,</div>
@@ -355,7 +355,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        bm = g_slice_new (<a class="code" href="struct__EvBookmark.html">EvBookmark</a>);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        *bm = *bookmark;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        bookmarks-&gt;<a class="code" href="struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9">items</a> = g_list_append (bookmarks-&gt;<a class="code" href="struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9">items</a>, bm);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        g_signal_emit (bookmarks, <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        g_signal_emit (bookmarks, <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="ev-bookmarks_8c.html#a537d7803ed4e1f4352dacf3c966ccb95">ev_bookmarks_save</a> (bookmarks);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        bookmarks-&gt;<a class="code" href="struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9">items</a> = g_list_delete_link (bookmarks-&gt;<a class="code" href="struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9">items</a>, bm_link);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        g_signal_emit (bookmarks, <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        g_signal_emit (bookmarks, <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="ev-bookmarks_8c.html#a537d7803ed4e1f4352dacf3c966ccb95">ev_bookmarks_save</a> (bookmarks);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
@@ -397,7 +397,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        g_free (bm-&gt;<a class="code" href="struct__EvBookmark.html#a8d69d86dababb2ee5db2adfe3585c4f5">title</a>);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        *bm = *bookmark;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        g_signal_emit (bookmarks, <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        g_signal_emit (bookmarks, <a class="code" href="ev-bookmarks_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="ev-bookmarks_8c.html#a537d7803ed4e1f4352dacf3c966ccb95">ev_bookmarks_save</a> (bookmarks);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('ev-bookmarks_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-bookmarks_8c.html">ev-bookmarks.c</a></li>
-    <li class="footer">Generated on Sat Nov 8 2014 19:03:37 for Evince by
+    <li class="footer">Generated on Sun Nov 16 2014 11:14:26 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

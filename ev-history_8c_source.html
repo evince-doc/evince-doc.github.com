@@ -133,15 +133,15 @@ $(document).ready(function(){initNavTree('ev-history_8c_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-history_8h.html">ev-history.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a2f80701c36e79c0640d91c788feee0b3a02950f589a2addc8bff690a59d33cee7">   28</a></span>&#160;    <a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>,</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a2f80701c36e79c0640d91c788feee0b3af1918f52a6f6ed218d3ce442157ba47d">   29</a></span>&#160;        <a class="code" href="ev-page-action_8c.html#a5d76b81b0ad4c19007a781d4edb8181faf1918f52a6f6ed218d3ce442157ba47d">ACTIVATE_LINK</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a02950f589a2addc8bff690a59d33cee7">   28</a></span>&#160;    <a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a531c35e38ede3ea4e5ba5afb24b29493af1918f52a6f6ed218d3ce442157ba47d">   29</a></span>&#160;        <a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034af1918f52a6f6ed218d3ce442157ba47d">ACTIVATE_LINK</a>,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a2f80701c36e79c0640d91c788feee0b3a1e7365ab36b084beff81fb1b96df4b11">   31</a></span>&#160;    <a class="code" href="ev-page-action_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a1e7365ab36b084beff81fb1b96df4b11">   31</a></span>&#160;    <a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="ev-history_8c.html#ae70a489fc0823f76fee38f364096c818">   34</a></span>&#160;<span class="preprocessor">#define EV_HISTORY_MAX_LENGTH (32)</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">   36</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>] = {0, };</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">   36</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>] = {0, };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="struct__EvHistoryPrivate.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvHistoryPrivate.html">_EvHistoryPrivate</a> {</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="struct__EvHistoryPrivate.html#ab35abf0ccc468348f2d3b7ccd2c7b0a0">   39</a></span>&#160;    GList           *<a class="code" href="struct__EvHistoryPrivate.html#ab35abf0ccc468348f2d3b7ccd2c7b0a0">list</a>;</div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('ev-history_8c_source.html','');});
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    object_class-&gt;finalize = <a class="code" href="ev-history_8c.html#a6677e8f80b34d1573fb0a76eed6937ad">ev_history_finalize</a>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>] =</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>] =</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                g_signal_new (<span class="stringliteral">&quot;changed&quot;</span>,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                              G_OBJECT_CLASS_TYPE (object_class),</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                              G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('ev-history_8c_source.html','');});
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                              g_cclosure_marshal_VOID__VOID,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                              G_TYPE_NONE, 0);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#a5d76b81b0ad4c19007a781d4edb8181faf1918f52a6f6ed218d3ce442157ba47d">ACTIVATE_LINK</a>] =</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034af1918f52a6f6ed218d3ce442157ba47d">ACTIVATE_LINK</a>] =</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                g_signal_new (<span class="stringliteral">&quot;activate-link&quot;</span>,</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                              G_OBJECT_CLASS_TYPE (object_class),</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                              G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('ev-history_8c_source.html','');});
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="ev-history_8c.html#a0eefa2ba53f53f2ab775fec9e4ee4dc3">ev_history_prune</a> (history);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    g_signal_emit (history, <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    g_signal_emit (history, <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -287,11 +287,11 @@ $(document).ready(function(){initNavTree('ev-history_8c_source.html','');});
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="ev-history_8c.html#ada0406dc281d1fcf78d5640f2d2f8823">ev_history_freeze</a> (history);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        g_signal_handler_block (history-&gt;<a class="code" href="struct__EvHistory.html#a4fc261c06b4c33cea09ff6d98ac94810">priv</a>-&gt;<a class="code" href="struct__EvHistoryPrivate.html#ae764dff779335387600ee403105647f3">model</a>, history-&gt;<a class="code" href="struct__EvHistory.html#a4fc261c06b4c33cea09ff6d98ac94810">priv</a>-&gt;<a class="code" href="struct__EvHistoryPrivate.html#a273cfe7bfe8fb853d8adb8d3fc7bb177">page_changed_handler_id</a>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        g_signal_emit (history, <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#a5d76b81b0ad4c19007a781d4edb8181faf1918f52a6f6ed218d3ce442157ba47d">ACTIVATE_LINK</a>], 0, history-&gt;<a class="code" href="struct__EvHistory.html#a4fc261c06b4c33cea09ff6d98ac94810">priv</a>-&gt;<a class="code" href="struct__EvHistoryPrivate.html#a42648c828c41885f26534d9bbd0ebf45">current</a>-&gt;data);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        g_signal_emit (history, <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034af1918f52a6f6ed218d3ce442157ba47d">ACTIVATE_LINK</a>], 0, history-&gt;<a class="code" href="struct__EvHistory.html#a4fc261c06b4c33cea09ff6d98ac94810">priv</a>-&gt;<a class="code" href="struct__EvHistoryPrivate.html#a42648c828c41885f26534d9bbd0ebf45">current</a>-&gt;data);</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        g_signal_handler_unblock (history-&gt;<a class="code" href="struct__EvHistory.html#a4fc261c06b4c33cea09ff6d98ac94810">priv</a>-&gt;<a class="code" href="struct__EvHistoryPrivate.html#ae764dff779335387600ee403105647f3">model</a>, history-&gt;<a class="code" href="struct__EvHistory.html#a4fc261c06b4c33cea09ff6d98ac94810">priv</a>-&gt;<a class="code" href="struct__EvHistoryPrivate.html#a273cfe7bfe8fb853d8adb8d3fc7bb177">page_changed_handler_id</a>);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="ev-history_8c.html#a6d5764a99490117f0f88f7eb80b86848">ev_history_thaw</a> (history);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        g_signal_emit (history, <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#afa9be5679ab03d785820f2474c5ccc6ea02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        g_signal_emit (history, <a class="code" href="ev-history_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;gboolean</div>
@@ -605,7 +605,7 @@ $(document).ready(function(){initNavTree('ev-history_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-history_8c.html">ev-history.c</a></li>
-    <li class="footer">Generated on Sat Nov 8 2014 19:03:37 for Evince by
+    <li class="footer">Generated on Sun Nov 16 2014 11:14:26 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

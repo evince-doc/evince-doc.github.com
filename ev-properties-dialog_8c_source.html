@@ -166,90 +166,82 @@ $(document).ready(function(){initNavTree('ev-properties-dialog_8c_source.html','
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    GtkBox *content_area;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    content_area = GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (properties)));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    gtk_window_set_title (GTK_WINDOW (properties), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Properties&quot;</span>));</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    gtk_window_set_destroy_with_parent (GTK_WINDOW (properties), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    gtk_container_set_border_width (GTK_CONTAINER (properties), 5);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    gtk_box_set_spacing (content_area, 2);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    gtk_dialog_add_button (GTK_DIALOG (properties), GTK_STOCK_CLOSE,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                   GTK_RESPONSE_CANCEL);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    gtk_dialog_set_default_response (GTK_DIALOG (properties), </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                             GTK_RESPONSE_CANCEL);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    gtk_container_set_border_width (GTK_CONTAINER (content_area), 0);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    gtk_window_set_title (GTK_WINDOW (properties), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Properties&quot;</span>));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    gtk_window_set_destroy_with_parent (GTK_WINDOW (properties), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    properties-&gt;notebook = gtk_notebook_new ();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    gtk_notebook_set_show_border (GTK_NOTEBOOK (properties-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    gtk_box_pack_start (content_area, properties-&gt;notebook, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    gtk_widget_show (properties-&gt;notebook);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    properties-&gt;notebook = gtk_notebook_new ();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    gtk_container_set_border_width (GTK_CONTAINER (properties-&gt;notebook), 5);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    gtk_box_pack_start (content_area, properties-&gt;notebook, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    gtk_widget_show (properties-&gt;notebook);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    g_signal_connect (properties, <span class="stringliteral">&quot;response&quot;</span>,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;              G_CALLBACK (gtk_widget_destroy), NULL);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="ev-properties-dialog_8h.html#acd50f21b4ce51db35ae04f74e445d486">   82</a></span>&#160;<a class="code" href="ev-properties-dialog_8c.html#acd50f21b4ce51db35ae04f74e445d486">ev_properties_dialog_set_document</a> (<a class="code" href="ev-properties-dialog_8h.html#a245dcfa0f0afb54881ea86b53d78c65a">EvPropertiesDialog</a> *<a class="code" href="gd-two-lines-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                   <span class="keyword">const</span> gchar        *uri,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                       <a class="code" href="struct__EvDocument.html">EvDocument</a>         *document)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    GtkWidget *<a class="code" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">const</span> <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *info;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    properties-&gt;document = document;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    info = <a class="code" href="ev-document_8c.html#a5023f163f3db4316ef9d4defa88a69a5">ev_document_get_info</a> (document);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="ev-properties-dialog_8h.html#acd50f21b4ce51db35ae04f74e445d486">   73</a></span>&#160;<a class="code" href="ev-properties-dialog_8c.html#acd50f21b4ce51db35ae04f74e445d486">ev_properties_dialog_set_document</a> (<a class="code" href="ev-properties-dialog_8h.html#a245dcfa0f0afb54881ea86b53d78c65a">EvPropertiesDialog</a> *<a class="code" href="gd-two-lines-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                   <span class="keyword">const</span> gchar        *uri,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                       <a class="code" href="struct__EvDocument.html">EvDocument</a>         *document)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    GtkWidget *<a class="code" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *info;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    properties-&gt;document = document;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    info = <a class="code" href="ev-document_8c.html#a5023f163f3db4316ef9d4defa88a69a5">ev_document_get_info</a> (document);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;general_page == NULL) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;General&quot;</span>));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        properties-&gt;general_page = <a class="code" href="ev-properties-view_8c.html#ad02ce786cea8df53e74fccd4b21d2db1">ev_properties_view_new</a> (uri);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        gtk_notebook_append_page (GTK_NOTEBOOK (properties-&gt;notebook),</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                      properties-&gt;general_page, label);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        gtk_widget_show (properties-&gt;general_page);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="ev-properties-view_8c.html#af91a394609bfdb228e97ca45f2045849">ev_properties_view_set_info</a> (<a class="code" href="ev-properties-view_8h.html#a544a2660d53e813e6548c8229c3fb152">EV_PROPERTIES_VIEW</a> (properties-&gt;general_page), info);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;general_page == NULL) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;General&quot;</span>));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        properties-&gt;general_page = <a class="code" href="ev-properties-view_8c.html#ad02ce786cea8df53e74fccd4b21d2db1">ev_properties_view_new</a> (uri);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        gtk_notebook_append_page (GTK_NOTEBOOK (properties-&gt;notebook),</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                      properties-&gt;general_page, label);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        gtk_widget_show (properties-&gt;general_page);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="ev-properties-view_8c.html#af91a394609bfdb228e97ca45f2045849">ev_properties_view_set_info</a> (<a class="code" href="ev-properties-view_8h.html#a544a2660d53e813e6548c8229c3fb152">EV_PROPERTIES_VIEW</a> (properties-&gt;general_page), info);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-document-fonts_8h.html#af80db25be0f35902323c8382d3e7b225">EV_IS_DOCUMENT_FONTS</a> (document)) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (properties-&gt;fonts_page == NULL) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Fonts&quot;</span>));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            properties-&gt;fonts_page = <a class="code" href="ev-properties-fonts_8c.html#acc6ded718a4a56f788939a798f4b2126">ev_properties_fonts_new</a> ();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            gtk_notebook_append_page (GTK_NOTEBOOK (properties-&gt;notebook),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                          properties-&gt;fonts_page, label);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            gtk_widget_show (properties-&gt;fonts_page);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-document-fonts_8h.html#af80db25be0f35902323c8382d3e7b225">EV_IS_DOCUMENT_FONTS</a> (document)) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (properties-&gt;fonts_page == NULL) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Fonts&quot;</span>));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            properties-&gt;fonts_page = <a class="code" href="ev-properties-fonts_8c.html#acc6ded718a4a56f788939a798f4b2126">ev_properties_fonts_new</a> ();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            gtk_notebook_append_page (GTK_NOTEBOOK (properties-&gt;notebook),</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                          properties-&gt;fonts_page, label);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            gtk_widget_show (properties-&gt;fonts_page);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="ev-properties-fonts_8c.html#a6cb48b7c699555ed0e300d14978b8056">ev_properties_fonts_set_document</a></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            (<a class="code" href="ev-properties-fonts_8h.html#a52859fdee1d560020847f6e73824c382">EV_PROPERTIES_FONTS</a> (properties-&gt;fonts_page), document);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="ev-properties-fonts_8c.html#a6cb48b7c699555ed0e300d14978b8056">ev_properties_fonts_set_document</a></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            (<a class="code" href="ev-properties-fonts_8h.html#a52859fdee1d560020847f6e73824c382">EV_PROPERTIES_FONTS</a> (properties-&gt;fonts_page), document);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (info-&gt;fields_mask &amp; <a class="code" href="ev-document-info_8h.html#a532b08c05369fea051a7270eacd7f9e7a1a586c46e5e8179438c39c419c6ddbcf">EV_DOCUMENT_INFO_LICENSE</a> &amp;&amp; info-&gt;license) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (properties-&gt;license_page == NULL) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Document License&quot;</span>));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            properties-&gt;license_page = <a class="code" href="ev-properties-license_8c.html#a34ccfeb0be28206714bd3dc0208d7e2c">ev_properties_license_new</a> ();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            gtk_notebook_append_page (GTK_NOTEBOOK (properties-&gt;notebook),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                          properties-&gt;license_page, label);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            gtk_widget_show (properties-&gt;license_page);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (info-&gt;fields_mask &amp; <a class="code" href="ev-document-info_8h.html#a532b08c05369fea051a7270eacd7f9e7a1a586c46e5e8179438c39c419c6ddbcf">EV_DOCUMENT_INFO_LICENSE</a> &amp;&amp; info-&gt;license) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (properties-&gt;license_page == NULL) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Document License&quot;</span>));</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            properties-&gt;license_page = <a class="code" href="ev-properties-license_8c.html#a34ccfeb0be28206714bd3dc0208d7e2c">ev_properties_license_new</a> ();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            gtk_notebook_append_page (GTK_NOTEBOOK (properties-&gt;notebook),</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                          properties-&gt;license_page, label);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            gtk_widget_show (properties-&gt;license_page);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="ev-properties-license_8c.html#ad411882afee423cf00b1931ac54b48fc">ev_properties_license_set_license</a></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            (<a class="code" href="ev-properties-license_8h.html#afdabb25c77b72a5e8f6fc95f0d6ddf3a">EV_PROPERTIES_LICENSE</a> (properties-&gt;license_page), info-&gt;license);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;GtkWidget *</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="ev-properties-dialog_8h.html#a70579e8e84faa5bcdd960f90e84d858a">  130</a></span>&#160;<a class="code" href="ev-properties-dialog_8c.html#a70579e8e84faa5bcdd960f90e84d858a">ev_properties_dialog_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="ev-properties-dialog_8h.html#a245dcfa0f0afb54881ea86b53d78c65a">EvPropertiesDialog</a> *<a class="code" href="gd-two-lines-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    properties = g_object_new (<a class="code" href="ev-properties-dialog_8h.html#a01f24776dfa22b7d83e62b00fad9626b">EV_TYPE_PROPERTIES_DIALOG</a>, NULL);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (properties);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="ev-properties-license_8c.html#ad411882afee423cf00b1931ac54b48fc">ev_properties_license_set_license</a></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            (<a class="code" href="ev-properties-license_8h.html#afdabb25c77b72a5e8f6fc95f0d6ddf3a">EV_PROPERTIES_LICENSE</a> (properties-&gt;license_page), info-&gt;license);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="ev-properties-dialog_8h.html#a70579e8e84faa5bcdd960f90e84d858a">  121</a></span>&#160;<a class="code" href="ev-properties-dialog_8c.html#a70579e8e84faa5bcdd960f90e84d858a">ev_properties_dialog_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="ev-properties-dialog_8h.html#a245dcfa0f0afb54881ea86b53d78c65a">EvPropertiesDialog</a> *<a class="code" href="gd-two-lines-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    properties = g_object_new (<a class="code" href="ev-properties-dialog_8h.html#a01f24776dfa22b7d83e62b00fad9626b">EV_TYPE_PROPERTIES_DIALOG</a>,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                   <span class="stringliteral">&quot;use-header-bar&quot;</span>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, NULL);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (properties);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-properties-dialog_8c.html">ev-properties-dialog.c</a></li>
-    <li class="footer">Generated on Sat Nov 8 2014 19:03:37 for Evince by
+    <li class="footer">Generated on Sun Nov 16 2014 11:14:26 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

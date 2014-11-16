@@ -2,6 +2,7 @@ var searchData=
 [
   ['evannotationssavemask',['EvAnnotationsSaveMask',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2ba',1,'ev-document-annotations.h']]],
   ['evannotationtexticon',['EvAnnotationTextIcon',['../ev-annotation_8h.html#a25560e72664a83222e0b251b5f95efbd',1,'ev-annotation.h']]],
+  ['evannotationtextmarkuptype',['EvAnnotationTextMarkupType',['../ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcf',1,'ev-annotation.h']]],
   ['evannotationtype',['EvAnnotationType',['../ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568',1,'ev-annotation.h']]],
   ['evchrome',['EvChrome',['../ev-window_8c.html#a84d7d18a061ad57bfa46e4ea379e1816',1,'ev-window.c']]],
   ['evcompressiontype',['EvCompressionType',['../ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c',1,'ev-file-helpers.h']]],

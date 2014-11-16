@@ -103,6 +103,8 @@ var searchData=
   ['_5fevannotationpropertiesdialogclass',['_EvAnnotationPropertiesDialogClass',['../struct__EvAnnotationPropertiesDialogClass.html',1,'']]],
   ['_5fevannotationtext',['_EvAnnotationText',['../struct__EvAnnotationText.html',1,'']]],
   ['_5fevannotationtextclass',['_EvAnnotationTextClass',['../struct__EvAnnotationTextClass.html',1,'']]],
+  ['_5fevannotationtextmarkup',['_EvAnnotationTextMarkup',['../struct__EvAnnotationTextMarkup.html',1,'']]],
+  ['_5fevannotationtextmarkupclass',['_EvAnnotationTextMarkupClass',['../struct__EvAnnotationTextMarkupClass.html',1,'']]],
   ['_5fevannotationwindow',['_EvAnnotationWindow',['../struct__EvAnnotationWindow.html',1,'']]],
   ['_5fevannotationwindowclass',['_EvAnnotationWindowClass',['../struct__EvAnnotationWindowClass.html',1,'']]],
   ['_5fevapplication',['_EvApplication',['../struct__EvApplication.html',1,'']]],

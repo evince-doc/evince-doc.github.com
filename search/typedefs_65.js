@@ -13,6 +13,8 @@ var searchData=
   ['evannotationpropertiesdialogclass',['EvAnnotationPropertiesDialogClass',['../ev-annotation-properties-dialog_8h.html#ac06b8936e4e57a907bdc45c40cd06f90',1,'ev-annotation-properties-dialog.h']]],
   ['evannotationtext',['EvAnnotationText',['../ev-annotation_8h.html#ac6c62ca76747535bc366f9fdce0b3975',1,'ev-annotation.h']]],
   ['evannotationtextclass',['EvAnnotationTextClass',['../ev-annotation_8h.html#a20011061f497b749a6a0f8b5f4fdecf8',1,'ev-annotation.h']]],
+  ['evannotationtextmarkup',['EvAnnotationTextMarkup',['../ev-annotation_8h.html#a518c73000c69970c6b53982aa90ce41c',1,'ev-annotation.h']]],
+  ['evannotationtextmarkupclass',['EvAnnotationTextMarkupClass',['../ev-annotation_8h.html#a012947043822081489e793f2081ec775',1,'ev-annotation.h']]],
   ['evannotationwindow',['EvAnnotationWindow',['../ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4',1,'ev-annotation-window.h']]],
   ['evannotationwindowclass',['EvAnnotationWindowClass',['../ev-annotation-window_8h.html#a21e50ed319c86ddd2dd54ba165c36483',1,'ev-annotation-window.h']]],
   ['evapplication',['EvApplication',['../ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77',1,'ev-application.h']]],

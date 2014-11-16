@@ -2,8 +2,8 @@ var ev_annotation_properties_dialog_8c =
 [
     [ "_EvAnnotationPropertiesDialog", "struct__EvAnnotationPropertiesDialog.html", "struct__EvAnnotationPropertiesDialog" ],
     [ "_EvAnnotationPropertiesDialogClass", "struct__EvAnnotationPropertiesDialogClass.html", "struct__EvAnnotationPropertiesDialogClass" ],
-    [ "PROP_0", "ev-annotation-properties-dialog_8c.html#a900dca9b26de42491763226e12dcd47bac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_ANNOT_TYPE", "ev-annotation-properties-dialog_8c.html#a900dca9b26de42491763226e12dcd47ba6ab1d6794153d3426e66880932fd32da", null ],
+    [ "PROP_0", "ev-annotation-properties-dialog_8c.html#a1be3860693af99a6c1da72580097294cac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_ANNOT_TYPE", "ev-annotation-properties-dialog_8c.html#a1be3860693af99a6c1da72580097294ca6ab1d6794153d3426e66880932fd32da", null ],
     [ "ev_annotation_properties_dialog_class_init", "ev-annotation-properties-dialog_8c.html#a1a9a0435a34ab03bfbe29d28f0ab5287", null ],
     [ "ev_annotation_properties_dialog_constructed", "ev-annotation-properties-dialog_8c.html#ad61269c195dbd0fd3550c2bf35f076b5", null ],
     [ "ev_annotation_properties_dialog_dispose", "ev-annotation-properties-dialog_8c.html#aa315b6434cd3fc6f632540d8ab7277d8", null ],

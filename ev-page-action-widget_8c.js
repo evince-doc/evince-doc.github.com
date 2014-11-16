@@ -2,8 +2,8 @@ var ev_page_action_widget_8c =
 [
     [ "_EvPageActionWidget", "struct__EvPageActionWidget.html", "struct__EvPageActionWidget" ],
     [ "EPA_FILTER_MODEL_DATA", "ev-page-action-widget_8c.html#a6ddebe9d82b35a9020f9763e036150e3", null ],
-    [ "WIDGET_ACTIVATE_LINK", "ev-page-action-widget_8c.html#aabfcbcb5ac86a1edac4035264bc7d2b8a37258872c8add6d4d6f3dbe8a8045360", null ],
-    [ "WIDGET_N_SIGNALS", "ev-page-action-widget_8c.html#aabfcbcb5ac86a1edac4035264bc7d2b8a4c4742324734dd1fad749cd69206244e", null ],
+    [ "WIDGET_ACTIVATE_LINK", "ev-page-action-widget_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa37258872c8add6d4d6f3dbe8a8045360", null ],
+    [ "WIDGET_N_SIGNALS", "ev-page-action-widget_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa4c4742324734dd1fad749cd69206244e", null ],
     [ "activate_cb", "ev-page-action-widget_8c.html#a764421a80b236735532280a0a47a8f80", null ],
     [ "build_new_tree_cb", "ev-page-action-widget_8c.html#aa1e6bf930e393d514942b1e272fb80c9", null ],
     [ "display_completion_text", "ev-page-action-widget_8c.html#a08975a6187eb0fd5d24eb0da44dfe59f", null ],
