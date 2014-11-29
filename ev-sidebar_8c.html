@@ -299,59 +299,59 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00432">432</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;{</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    GtkTreeIter iter;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    GtkWidget *menu_item;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    gchar *label_title;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">const</span> gchar *title;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordtype">int</span> index;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;       </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (ev_sidebar));</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar-page_8h.html#a6cf32d4e5c7737ccaec465a71d07ef19">EV_IS_SIDEBAR_PAGE</a> (main_widget));</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    g_return_if_fail (GTK_IS_WIDGET (main_widget));</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <a class="code" href="ev-sidebar-page_8c.html#a36170d4668090f65bcd60630cc64c948">ev_sidebar_page_set_model</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (main_widget),</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                   ev_sidebar-&gt;priv-&gt;model);</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    title = <a class="code" href="ev-sidebar-page_8c.html#a49310b7e3933e5dec9d0b96bab1244ba">ev_sidebar_page_get_label</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (main_widget));</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00429">429</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;{</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    GtkTreeIter iter;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    GtkWidget *menu_item;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    gchar *label_title;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keyword">const</span> gchar *title;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;       </div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (ev_sidebar));</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar-page_8h.html#a6cf32d4e5c7737ccaec465a71d07ef19">EV_IS_SIDEBAR_PAGE</a> (main_widget));</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    g_return_if_fail (GTK_IS_WIDGET (main_widget));</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <a class="code" href="ev-sidebar-page_8c.html#a36170d4668090f65bcd60630cc64c948">ev_sidebar_page_set_model</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (main_widget),</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                   ev_sidebar-&gt;priv-&gt;model);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    title = <a class="code" href="ev-sidebar-page_8c.html#a49310b7e3933e5dec9d0b96bab1244ba">ev_sidebar_page_get_label</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (main_widget));</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;       </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    index = gtk_notebook_append_page (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook),</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                      main_widget, NULL);</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;       </div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    index = gtk_notebook_append_page (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook),</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                      main_widget, NULL);</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;       </div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    menu_item = gtk_image_menu_item_new_with_label (title);</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    g_signal_connect (menu_item, <span class="stringliteral">&quot;activate&quot;</span>,</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#af44b036cbf37a292589f89adf2b9c390">ev_sidebar_menu_item_activate_cb</a>),</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;              ev_sidebar);</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    gtk_widget_show (menu_item);</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    gtk_menu_shell_append (GTK_MENU_SHELL (ev_sidebar-&gt;priv-&gt;menu),</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                   menu_item);</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="comment">/* Insert and move to end */</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    gtk_list_store_insert_with_values (GTK_LIST_STORE (ev_sidebar-&gt;priv-&gt;page_model),</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                       &amp;iter, 0,</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, title,</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, menu_item,</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, main_widget,</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, index,</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                       -1);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    gtk_list_store_move_before(GTK_LIST_STORE(ev_sidebar-&gt;priv-&gt;page_model),</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                       &amp;iter, NULL);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="comment">/* Set the first item added as active */</span></div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    gtk_tree_model_get_iter_first (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter);</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    gtk_tree_model_get (ev_sidebar-&gt;priv-&gt;page_model,</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                &amp;iter,</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, &amp;label_title,</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, &amp;index,</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                -1);</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    gtk_menu_set_active (GTK_MENU (ev_sidebar-&gt;priv-&gt;menu), index);</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    gtk_label_set_text (GTK_LABEL (ev_sidebar-&gt;priv-&gt;label), label_title);</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    gtk_notebook_set_current_page (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook),</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                       index);</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    g_free (label_title);</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;}</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    menu_item = gtk_image_menu_item_new_with_label (title);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    g_signal_connect (menu_item, <span class="stringliteral">&quot;activate&quot;</span>,</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#af44b036cbf37a292589f89adf2b9c390">ev_sidebar_menu_item_activate_cb</a>),</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;              ev_sidebar);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    gtk_widget_show (menu_item);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    gtk_menu_shell_append (GTK_MENU_SHELL (ev_sidebar-&gt;priv-&gt;menu),</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                   menu_item);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="comment">/* Insert and move to end */</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    gtk_list_store_insert_with_values (GTK_LIST_STORE (ev_sidebar-&gt;priv-&gt;page_model),</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                       &amp;iter, 0,</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, title,</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, menu_item,</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, main_widget,</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, index,</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                       -1);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    gtk_list_store_move_before(GTK_LIST_STORE(ev_sidebar-&gt;priv-&gt;page_model),</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                       &amp;iter, NULL);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="comment">/* Set the first item added as active */</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    gtk_tree_model_get_iter_first (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    gtk_tree_model_get (ev_sidebar-&gt;priv-&gt;page_model,</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                &amp;iter,</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, &amp;label_title,</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, &amp;index,</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                -1);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    gtk_menu_set_active (GTK_MENU (ev_sidebar-&gt;priv-&gt;menu), index);</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    gtk_label_set_text (GTK_LABEL (ev_sidebar-&gt;priv-&gt;label), label_title);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    gtk_notebook_set_current_page (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook),</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                       index);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    g_free (label_title);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -492,12 +492,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00488">488</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;{</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    GtkWidget *current_page = <a class="code" href="ev-sidebar_8c.html#a85bc4770d9c9b1bdcb0d5f57ed8b7d39">ev_sidebar_get_current_page</a> (sidebar);</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev_sidebar_page_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (current_page), document);</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00485">485</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;{</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    GtkWidget *current_page = <a class="code" href="ev-sidebar_8c.html#a85bc4770d9c9b1bdcb0d5f57ed8b7d39">ev_sidebar_get_current_page</a> (sidebar);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev_sidebar_page_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (current_page), document);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -601,46 +601,46 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00498">498</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;{</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <a class="code" href="struct__EvSidebarPrivate.html">EvSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    GtkTreeIter iter;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    gboolean valid;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    GtkWidget *first_supported_page = NULL;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="keywordflow">for</span> (valid = gtk_tree_model_get_iter_first (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;         valid;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;         valid = gtk_tree_model_iter_next (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter)) {</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        GtkWidget *widget;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        GtkWidget *menu_widget;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        gtk_tree_model_get (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter,</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, &amp;widget,</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, &amp;menu_widget,</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                    -1);</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev_sidebar_page_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (widget), document)) {</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            gtk_widget_set_sensitive (menu_widget, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            <span class="keywordflow">if</span> (!first_supported_page)</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                                first_supported_page = widget;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            gtk_widget_set_sensitive (menu_widget, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        }</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        g_object_unref (widget);</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        g_object_unref (menu_widget);</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    }</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordflow">if</span> (first_supported_page != NULL) {</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-sidebar_8c.html#a5d13b9c12c78b6592cd4439216736015">ev_sidebar_current_page_support_document</a> (sidebar, document)) {</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            <a class="code" href="ev-sidebar_8c.html#a5268901747270ea9f1a4733e5ac5543a">ev_sidebar_set_page</a> (sidebar, first_supported_page);</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        }</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;select_button), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        gtk_widget_hide (GTK_WIDGET (sidebar));</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    }</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00495">495</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;{</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <a class="code" href="struct__EvSidebarPrivate.html">EvSidebarPrivate</a> *priv = sidebar-&gt;priv;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    GtkTreeIter iter;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    gboolean valid;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    GtkWidget *first_supported_page = NULL;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keywordflow">for</span> (valid = gtk_tree_model_get_iter_first (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;         valid;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;         valid = gtk_tree_model_iter_next (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter)) {</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        GtkWidget *widget;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        GtkWidget *menu_widget;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        gtk_tree_model_get (priv-&gt;<a class="code" href="struct__EvSidebarPrivate.html#a8b3e445fa48c288b3fed3e303542ba55">page_model</a>, &amp;iter,</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, &amp;widget,</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, &amp;menu_widget,</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                    -1);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-sidebar-page_8c.html#ac1e3c3ccfb4221675f6eb145840414ab">ev_sidebar_page_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (widget), document)) {</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;            gtk_widget_set_sensitive (menu_widget, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;            <span class="keywordflow">if</span> (!first_supported_page)</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                                first_supported_page = widget;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            gtk_widget_set_sensitive (menu_widget, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        }</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        g_object_unref (widget);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        g_object_unref (menu_widget);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    }</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="keywordflow">if</span> (first_supported_page != NULL) {</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-sidebar_8c.html#a5d13b9c12c78b6592cd4439216736015">ev_sidebar_current_page_support_document</a> (sidebar, document)) {</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;            <a class="code" href="ev-sidebar_8c.html#a5268901747270ea9f1a4733e5ac5543a">ev_sidebar_set_page</a> (sidebar, first_supported_page);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        }</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        gtk_widget_set_sensitive (GTK_WIDGET (sidebar-&gt;priv-&gt;select_button), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        gtk_widget_hide (GTK_WIDGET (sidebar));</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -794,84 +794,81 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    GtkWidget *close_button;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    GtkWidget *select_hbox;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    GtkWidget *arrow;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    GtkWidget *image;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    ev_sidebar-&gt;priv = <a class="code" href="ev-sidebar_8c.html#af7918d4f7ed52084be69bf1b7e2c4b0f">EV_SIDEBAR_GET_PRIVATE</a> (ev_sidebar);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">/* data model */</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    ev_sidebar-&gt;priv-&gt;page_model = (GtkTreeModel *)</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            gtk_list_store_new (<a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ad87719e676dbf54f2943bcde2347f1d3">PAGE_COLUMN_NUM_COLS</a>,</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        G_TYPE_STRING,</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    ev_sidebar-&gt;priv = <a class="code" href="ev-sidebar_8c.html#af7918d4f7ed52084be69bf1b7e2c4b0f">EV_SIDEBAR_GET_PRIVATE</a> (ev_sidebar);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">/* data model */</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    ev_sidebar-&gt;priv-&gt;page_model = (GtkTreeModel *)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            gtk_list_store_new (<a class="code" href="ev-sidebar_8c.html#a634f9f55e799f3052a34590f08100017ad87719e676dbf54f2943bcde2347f1d3">PAGE_COLUMN_NUM_COLS</a>,</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                        G_TYPE_STRING,</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        GTK_TYPE_WIDGET,</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                        GTK_TYPE_WIDGET,</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                        GTK_TYPE_WIDGET,</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                        G_TYPE_INT);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">/* top option menu */</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    ev_sidebar-&gt;priv-&gt;hbox = hbox;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    gtk_box_pack_start (GTK_BOX (ev_sidebar), hbox, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    gtk_widget_show (hbox);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    ev_sidebar-&gt;priv-&gt;select_button = gtk_toggle_button_new ();</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    gtk_button_set_relief (GTK_BUTTON (ev_sidebar-&gt;priv-&gt;select_button), GTK_RELIEF_NONE);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    g_signal_connect (ev_sidebar-&gt;priv-&gt;select_button, <span class="stringliteral">&quot;button_press_event&quot;</span>,</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a4e7eb9adaef629aefacbdd6f2521909e">ev_sidebar_select_button_press_cb</a>),</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;              ev_sidebar);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    g_signal_connect (ev_sidebar-&gt;priv-&gt;select_button, <span class="stringliteral">&quot;key_press_event&quot;</span>,</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a49fb7275bb2bcf31e54a1ba1204c1b61">ev_sidebar_select_button_key_press_cb</a>),</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                        G_TYPE_INT);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">/* top option menu */</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    gtk_widget_set_margin_top (hbox, 2);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    gtk_widget_set_margin_bottom (hbox, 2);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    gtk_widget_set_margin_start (hbox, 2);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    gtk_widget_set_margin_end (hbox, 2);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    ev_sidebar-&gt;priv-&gt;hbox = hbox;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    gtk_box_pack_start (GTK_BOX (ev_sidebar), hbox, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    gtk_widget_show (hbox);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    ev_sidebar-&gt;priv-&gt;select_button = gtk_toggle_button_new ();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    gtk_button_set_relief (GTK_BUTTON (ev_sidebar-&gt;priv-&gt;select_button), GTK_RELIEF_NONE);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    g_signal_connect (ev_sidebar-&gt;priv-&gt;select_button, <span class="stringliteral">&quot;button_press_event&quot;</span>,</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a4e7eb9adaef629aefacbdd6f2521909e">ev_sidebar_select_button_press_cb</a>),</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;              ev_sidebar);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    select_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    ev_sidebar-&gt;priv-&gt;label = gtk_label_new (<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    gtk_box_pack_start (GTK_BOX (select_hbox),</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                ev_sidebar-&gt;priv-&gt;label,</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;label);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    arrow = gtk_arrow_new (GTK_ARROW_DOWN, GTK_SHADOW_NONE);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    gtk_box_pack_end (GTK_BOX (select_hbox), arrow, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    gtk_widget_show (arrow);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    gtk_container_add (GTK_CONTAINER (ev_sidebar-&gt;priv-&gt;select_button), select_hbox);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    gtk_widget_show (select_hbox);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    g_signal_connect (ev_sidebar-&gt;priv-&gt;select_button, <span class="stringliteral">&quot;key_press_event&quot;</span>,</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a49fb7275bb2bcf31e54a1ba1204c1b61">ev_sidebar_select_button_key_press_cb</a>),</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;              ev_sidebar);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    select_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    ev_sidebar-&gt;priv-&gt;label = gtk_label_new (<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    gtk_box_pack_start (GTK_BOX (select_hbox),</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                ev_sidebar-&gt;priv-&gt;label,</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;label);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    arrow = gtk_arrow_new (GTK_ARROW_DOWN, GTK_SHADOW_NONE);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    gtk_box_pack_end (GTK_BOX (select_hbox), arrow, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    gtk_widget_show (arrow);</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    gtk_box_pack_start (GTK_BOX (hbox), ev_sidebar-&gt;priv-&gt;select_button, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;select_button);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    gtk_container_add (GTK_CONTAINER (ev_sidebar-&gt;priv-&gt;select_button), select_hbox);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    gtk_widget_show (select_hbox);</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    close_button = gtk_button_new ();</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    gtk_button_set_relief (GTK_BUTTON (close_button), GTK_RELIEF_NONE);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    g_signal_connect (close_button, <span class="stringliteral">&quot;clicked&quot;</span>,</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a6936b0c7333abb8dd97f0436e09b9ef1">ev_sidebar_close_clicked_cb</a>),</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;              ev_sidebar);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;       </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    image = gtk_image_new_from_stock (GTK_STOCK_CLOSE,</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                      GTK_ICON_SIZE_MENU);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    gtk_container_add (GTK_CONTAINER (close_button), image);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    gtk_widget_show (image);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    gtk_box_pack_start (GTK_BOX (hbox), ev_sidebar-&gt;priv-&gt;select_button, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;select_button);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        close_button = gtk_button_new_from_icon_name (<span class="stringliteral">&quot;window-close-symbolic&quot;</span>, GTK_ICON_SIZE_BUTTON);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    gtk_button_set_relief (GTK_BUTTON (close_button), GTK_RELIEF_NONE);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    g_signal_connect (close_button, <span class="stringliteral">&quot;clicked&quot;</span>,</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a6936b0c7333abb8dd97f0436e09b9ef1">ev_sidebar_close_clicked_cb</a>),</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;              ev_sidebar);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    gtk_box_pack_end (GTK_BOX (hbox), close_button, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    gtk_widget_show (close_button);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;   </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    gtk_box_pack_end (GTK_BOX (hbox), close_button, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    gtk_widget_show (close_button);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;   </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    ev_sidebar-&gt;priv-&gt;menu = gtk_menu_new ();</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    g_signal_connect (ev_sidebar-&gt;priv-&gt;menu, <span class="stringliteral">&quot;deactivate&quot;</span>,</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a86d6a1df849ccf9adbbbe10fcd483364">ev_sidebar_menu_deactivate_cb</a>),</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;              ev_sidebar-&gt;priv-&gt;select_button);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    gtk_menu_attach_to_widget (GTK_MENU (ev_sidebar-&gt;priv-&gt;menu),</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                   GTK_WIDGET (ev_sidebar),</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                   <a class="code" href="ev-sidebar_8c.html#a7c2f28046736156188a2353283aef847">ev_sidebar_menu_detach_cb</a>);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;menu);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    ev_sidebar-&gt;priv-&gt;notebook = gtk_notebook_new ();</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    gtk_notebook_set_show_border (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    gtk_notebook_set_show_tabs (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    gtk_box_pack_start (GTK_BOX (ev_sidebar), ev_sidebar-&gt;priv-&gt;notebook,</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;notebook);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    gtk_widget_set_sensitive (GTK_WIDGET (ev_sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    gtk_widget_set_sensitive (GTK_WIDGET (ev_sidebar-&gt;priv-&gt;select_button), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;}</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    ev_sidebar-&gt;priv-&gt;menu = gtk_menu_new ();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    g_signal_connect (ev_sidebar-&gt;priv-&gt;menu, <span class="stringliteral">&quot;deactivate&quot;</span>,</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a86d6a1df849ccf9adbbbe10fcd483364">ev_sidebar_menu_deactivate_cb</a>),</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;              ev_sidebar-&gt;priv-&gt;select_button);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    gtk_menu_attach_to_widget (GTK_MENU (ev_sidebar-&gt;priv-&gt;menu),</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                   GTK_WIDGET (ev_sidebar),</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                   <a class="code" href="ev-sidebar_8c.html#a7c2f28046736156188a2353283aef847">ev_sidebar_menu_detach_cb</a>);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;menu);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    ev_sidebar-&gt;priv-&gt;notebook = gtk_notebook_new ();</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    gtk_notebook_set_show_border (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    gtk_notebook_set_show_tabs (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    gtk_box_pack_start (GTK_BOX (ev_sidebar), ev_sidebar-&gt;priv-&gt;notebook,</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;notebook);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    gtk_widget_set_sensitive (GTK_WIDGET (ev_sidebar-&gt;priv-&gt;notebook), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    gtk_widget_set_sensitive (GTK_WIDGET (ev_sidebar-&gt;priv-&gt;select_button), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1145,16 +1142,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00420">420</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;{</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    GtkWidget *ev_sidebar;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    ev_sidebar = g_object_new (<a class="code" href="ev-sidebar_8h.html#a8219c0f4d0ca265e152fb6a6fdf39df0">EV_TYPE_SIDEBAR</a>,</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                   NULL);</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">return</span> ev_sidebar;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00417">417</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;{</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    GtkWidget *ev_sidebar;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    ev_sidebar = g_object_new (<a class="code" href="ev-sidebar_8h.html#a8219c0f4d0ca265e152fb6a6fdf39df0">EV_TYPE_SIDEBAR</a>,</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                   NULL);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">return</span> ev_sidebar;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1399,19 +1396,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00542">542</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;{</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (sidebar));</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    g_return_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model));</div>
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00539">539</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;{</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (sidebar));</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    g_return_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model));</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordflow">if</span> (model == sidebar-&gt;priv-&gt;model)</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">if</span> (model == sidebar-&gt;priv-&gt;model)</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    sidebar-&gt;priv-&gt;model = model;</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a>),</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;              sidebar);</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    sidebar-&gt;priv-&gt;model = model;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a>),</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;              sidebar);</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1563,7 +1560,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar_8c.html">ev-sidebar.c</a></li>
-    <li class="footer">Generated on Sat Nov 29 2014 10:52:08 for Evince by
+    <li class="footer">Generated on Sat Nov 29 2014 12:46:06 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
