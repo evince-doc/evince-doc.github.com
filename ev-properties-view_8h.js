@@ -10,7 +10,7 @@ var ev_properties_view_8h =
     [ "EvPropertiesViewClass", "ev-properties-view_8h.html#a5a2937f30fda1be0562570b29a1c530b", null ],
     [ "EvPropertiesViewPrivate", "ev-properties-view_8h.html#a6a72beb6ad7bc5c33b9e27fc07c641c1", null ],
     [ "ev_properties_view_get_type", "ev-properties-view_8h.html#ab81eb07cb164265c2822f2d5fadf872e", null ],
-    [ "ev_properties_view_new", "ev-properties-view_8h.html#ad02ce786cea8df53e74fccd4b21d2db1", null ],
+    [ "ev_properties_view_new", "ev-properties-view_8h.html#aed7206683efe36316be691df0feca200", null ],
     [ "ev_properties_view_register_type", "ev-properties-view_8h.html#a166024037f9c160832f48a5543b1251e", null ],
     [ "ev_properties_view_set_info", "ev-properties-view_8h.html#af91a394609bfdb228e97ca45f2045849", null ]
 ];

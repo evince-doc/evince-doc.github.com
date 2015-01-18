@@ -1,5 +1,12 @@
 var NAVTREEINDEX36 =
 {
+"struct__NPNetscapeFuncs.html#a984d1c9a6879f01f2fbb0c714e87157d":[5,0,291,26],
+"struct__NPNetscapeFuncs.html#a9b2d33dafe33c38d073b590530aafd1c":[5,0,291,54],
+"struct__NPNetscapeFuncs.html#a9d71b40ff74987babae8490e047c1250":[5,0,291,25],
+"struct__NPNetscapeFuncs.html#a9d83bf86aa9fa1a5d8219ec1848914b9":[5,0,291,30],
+"struct__NPNetscapeFuncs.html#a9e4679288da2ec16981c19bb76e7041a":[5,0,291,11],
+"struct__NPNetscapeFuncs.html#a9f927a61eb6c431ef0279823c9511957":[5,0,291,31],
+"struct__NPNetscapeFuncs.html#a9fbc44c38e7381d354153088157dbe54":[5,0,291,56],
 "struct__NPNetscapeFuncs.html#aa0b293731d56e26320c1f927f8d6ac2f":[5,0,291,24],
 "struct__NPNetscapeFuncs.html#aa1bdcc127bbbb7bea5bdec1a8d4cbc6c":[5,0,291,50],
 "struct__NPNetscapeFuncs.html#aa294d94d33711d1bb9cfe3b54e90d134":[5,0,291,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX36 =
 "structpkread.html":[5,0,355],
 "structpkread.html#a8420ead44cb240069f2c38146a77d2ab":[5,0,355,2],
 "structpkread.html#a94dfb8b81d1082ea263eb7f7644d21f8":[5,0,355,0],
-"structpkread.html#ad87ac126f6f3441ca6065f6cf86d4efe":[5,0,355,1],
-"structsynctex__distances__t.html":[5,0,360],
-"structsynctex__distances__t.html#a4a9740a00d530e6c7b58eabe644a6d77":[5,0,360,1],
-"structsynctex__distances__t.html#ac03b2fb447b841c7cd1eaef882d9bb0e":[5,0,360,0],
-"structsynctex__node__set__t.html":[5,0,361],
-"structsynctex__node__set__t.html#a819d6d3bef5b6a0606612f9618316695":[5,0,361,0],
-"structsynctex__node__set__t.html#a99e18c2a2158cf33ced43ea92c96ebd8":[5,0,361,1],
-"structsynctex__node__sheet__t.html":[5,0,362]
+"structpkread.html#ad87ac126f6f3441ca6065f6cf86d4efe":[5,0,355,1]
 };

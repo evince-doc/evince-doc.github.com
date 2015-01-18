@@ -1,5 +1,9 @@
 var NAVTREEINDEX15 =
 {
+"ev-poppler_8cc.html#aa0183100d4c6c0d5cfa0ae7cd03ca9ad":[6,0,0,0,3,0,23],
+"ev-poppler_8cc.html#aa19920ef9d6525883f76ab370fb2e7eb":[6,0,0,0,3,0,105],
+"ev-poppler_8cc.html#aa309c6a04c5e2a872c60c604677db1b8":[6,0,0,0,3,0,40],
+"ev-poppler_8cc.html#aa34ea144e2cda9c7c5fe21bdf6693465":[6,0,0,0,3,0,43],
 "ev-poppler_8cc.html#aa5ebd310f1fad0bd85c0e74d797e836b":[6,0,0,0,3,0,18],
 "ev-poppler_8cc.html#aa92e0253c81f99f9feac74934bf7345b":[6,0,0,0,3,0,76],
 "ev-poppler_8cc.html#aaa2593765214a38922a7c79a34681135":[6,0,0,0,3,0,59],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "ev-properties-dialog_8c.html#a70579e8e84faa5bcdd960f90e84d858a":[6,0,0,8,33,4],
 "ev-properties-dialog_8c.html#a7f86ad1104d4f48e5c2113d02fcdc87a":[6,0,0,8,33,3],
 "ev-properties-dialog_8c.html#acd50f21b4ce51db35ae04f74e445d486":[6,0,0,8,33,5],
-"ev-properties-dialog_8c_source.html":[6,0,0,8,33],
-"ev-properties-dialog_8h.html":[6,0,0,8,34],
-"ev-properties-dialog_8h.html#a01f24776dfa22b7d83e62b00fad9626b":[6,0,0,8,34,5],
-"ev-properties-dialog_8h.html#a0453a34bab32cf13f2ef7489d46a82ab":[6,0,0,8,34,7],
-"ev-properties-dialog_8h.html#a245dcfa0f0afb54881ea86b53d78c65a":[6,0,0,8,34,6]
+"ev-properties-dialog_8c_source.html":[6,0,0,8,33]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX30 =
 {
+"struct__DviFontMapEnt.html#a8c20097421fbe04adaf1954ac1aacbad":[5,0,22,1],
+"struct__DviFontMapEnt.html#a97e09ee9acad5d06906e8316a5916c3c":[5,0,22,9],
+"struct__DviFontMapEnt.html#ab1e7f26b8b22a542addc9c838f359e56":[5,0,22,2],
+"struct__DviFontMapEnt.html#abf8e131c0f5f6a60a2764ff104a58bbc":[5,0,22,0],
+"struct__DviFontMapEnt.html#ac27eee617d78a41b4de679cb17bfd3e6":[5,0,22,7],
 "struct__DviFontMapEnt.html#ac38137254ea0f7c86751e5cbe413c636":[5,0,22,3],
 "struct__DviFontMapEnt.html#adfc592f373c52b857c3260ef9c123ad3":[5,0,22,6],
 "struct__DviFontMapEnt.html#ae3c1c72c2f18d0a984209dfef65c7284":[5,0,22,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvDocument.html":[5,0,68],
 "struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72":[5,0,68,1],
 "struct__EvDocument.html#a5e82b9e76bd9d89602f141c02c8507f2":[5,0,68,0],
-"struct__EvDocumentAnnotationsInterface.html":[5,0,69],
-"struct__EvDocumentAnnotationsInterface.html#a12aae76c0154479c480a474015b2173a":[5,0,69,3],
-"struct__EvDocumentAnnotationsInterface.html#a253cdc8b01242e0f1ca9bf23023e6268":[5,0,69,5],
-"struct__EvDocumentAnnotationsInterface.html#a6a9cd14313288784fe1dc0e5bcf902d9":[5,0,69,2],
-"struct__EvDocumentAnnotationsInterface.html#a708dff264e2af8e7b82539346611f5a6":[5,0,69,1],
-"struct__EvDocumentAnnotationsInterface.html#aa62e53e975dfa674796c987b951d1f8f":[5,0,69,0]
+"struct__EvDocumentAnnotationsInterface.html":[5,0,69]
 };
