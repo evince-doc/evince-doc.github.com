@@ -47,7 +47,6 @@ var ev_print_operation_8c =
     [ "ev_print_operation_print_get_error", "ev-print-operation_8c.html#a3f0c7b6c614d98d4befa637b52a19b32", null ],
     [ "ev_print_operation_print_get_job_name", "ev-print-operation_8c.html#ac23394b01abf4433e518ab7c6eb3e515", null ],
     [ "ev_print_operation_print_get_print_settings", "ev-print-operation_8c.html#af50ea2da9bad09087dc0fcdb81ca05a6", null ],
-    [ "ev_print_operation_print_get_scaled_page_size", "ev-print-operation_8c.html#a97933732a885ed3c55eb2d1f2bd8465c", null ],
     [ "ev_print_operation_print_get_type", "ev-print-operation_8c.html#abe96b10d417bd5d4539c5efcf664f075", null ],
     [ "ev_print_operation_print_init", "ev-print-operation_8c.html#a82d612adaabaa899818ba1123eea4799", null ],
     [ "ev_print_operation_print_preview", "ev-print-operation_8c.html#a1556b67a9bbb282b4e60dee418ca4992", null ],
