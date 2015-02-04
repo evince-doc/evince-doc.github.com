@@ -263,6 +263,8 @@ Functions</h2></td></tr>
 <tr class="separator:a89943f46e0a241d2e3366c0fed92ecb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2407a8fccb0c79c280da63f2be4b719b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-print-operation_8c.html#a2407a8fccb0c79c280da63f2be4b719b">_print_context_get_hard_margins</a> (GtkPrintContext *context, gdouble *top, gdouble *bottom, gdouble *left, gdouble *right)</td></tr>
 <tr class="separator:a2407a8fccb0c79c280da63f2be4b719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e682ae261b1d4b2783ecdbe68069e2c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-print-operation_8c.html#a4e682ae261b1d4b2783ecdbe68069e2c">ev_print_operation_print_get_scaled_page_size</a> (<a class="el" href="ev-print-operation_8c.html#aad519bd71f90fa1482e921a8c5d5cf62">EvPrintOperationPrint</a> *print, gint page, gdouble *width, gdouble *height, gdouble *manual_scale)</td></tr>
+<tr class="separator:a4e682ae261b1d4b2783ecdbe68069e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d8e131b8ff6a5aa6cc461a7aa7b607"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-print-operation_8c.html#a82d8e131b8ff6a5aa6cc461a7aa7b607">ev_print_operation_print_draw_page</a> (<a class="el" href="ev-print-operation_8c.html#aad519bd71f90fa1482e921a8c5d5cf62">EvPrintOperationPrint</a> *print, GtkPrintContext *context, gint page)</td></tr>
 <tr class="separator:a82d8e131b8ff6a5aa6cc461a7aa7b607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a480744e94fd529108e770434d4861576"><td class="memItemLeft" align="right" valign="top">static GObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-print-operation_8c.html#a480744e94fd529108e770434d4861576">ev_print_operation_print_create_custom_widget</a> (<a class="el" href="ev-print-operation_8c.html#aad519bd71f90fa1482e921a8c5d5cf62">EvPrintOperationPrint</a> *print, GtkPrintContext *context)</td></tr>
@@ -717,14 +719,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02100">2100</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;{</div>
-<div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;<span class="preprocessor">#if GTKUNIXPRINT_ENABLED</span></div>
-<div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> (<a class="code" href="ev-file-exporter_8h.html#a19b7770a05b863cdcecef7aa74ba5acb">EV_IS_FILE_EXPORTER</a>(document) || <a class="code" href="ev-document-print_8h.html#a9d5494c40a55d9037f536d8b5cc91337">EV_IS_DOCUMENT_PRINT</a>(document));</div>
-<div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="ev-document-print_8h.html#a9d5494c40a55d9037f536d8b5cc91337">EV_IS_DOCUMENT_PRINT</a>(document);</div>
-<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GTKUNIXPRINT_ENABLED */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02122">2122</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02123"></a><span class="lineno"> 2123</span>&#160;{</div>
+<div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160;<span class="preprocessor">#if GTKUNIXPRINT_ENABLED</span></div>
+<div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> (<a class="code" href="ev-file-exporter_8h.html#a19b7770a05b863cdcecef7aa74ba5acb">EV_IS_FILE_EXPORTER</a>(document) || <a class="code" href="ev-document-print_8h.html#a9d5494c40a55d9037f536d8b5cc91337">EV_IS_DOCUMENT_PRINT</a>(document));</div>
+<div class="line"><a name="l02126"></a><span class="lineno"> 2126</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="ev-document-print_8h.html#a9d5494c40a55d9037f536d8b5cc91337">EV_IS_DOCUMENT_PRINT</a>(document);</div>
+<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GTKUNIXPRINT_ENABLED */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;<span class="preprocessor"></span>}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1086,24 +1088,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02111">2111</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02112"></a><span class="lineno"> 2112</span>&#160;{</div>
-<div class="line"><a name="l02113"></a><span class="lineno"> 2113</span>&#160;    <a class="code" href="ev-print-operation_8h.html#abf62d4e670ad39601312aefd31d17931">EvPrintOperation</a> *op = NULL;</div>
-<div class="line"><a name="l02114"></a><span class="lineno"> 2114</span>&#160;</div>
-<div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-print-operation_8c.html#af7ad787cf0a09b99baf852f463c303f1">ev_print_operation_exists_for_document</a> (document), NULL);</div>
-<div class="line"><a name="l02116"></a><span class="lineno"> 2116</span>&#160;</div>
-<div class="line"><a name="l02117"></a><span class="lineno"> 2117</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-document-print_8h.html#a9d5494c40a55d9037f536d8b5cc91337">EV_IS_DOCUMENT_PRINT</a> (document))</div>
-<div class="line"><a name="l02118"></a><span class="lineno"> 2118</span>&#160;        op = <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (g_object_new (<a class="code" href="ev-print-operation_8c.html#acaeef245eb067cb69fe10fe788a356d7">EV_TYPE_PRINT_OPERATION_PRINT</a>,</div>
-<div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;                               <span class="stringliteral">&quot;document&quot;</span>, document, NULL));</div>
-<div class="line"><a name="l02120"></a><span class="lineno"> 2120</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l02121"></a><span class="lineno"> 2121</span>&#160;<span class="preprocessor">#if GTKUNIXPRINT_ENABLED</span></div>
-<div class="line"><a name="l02122"></a><span class="lineno"> 2122</span>&#160;<span class="preprocessor"></span>        op = <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (g_object_new (EV_TYPE_PRINT_OPERATION_EXPORT,</div>
-<div class="line"><a name="l02123"></a><span class="lineno"> 2123</span>&#160;                               <span class="stringliteral">&quot;document&quot;</span>, document, NULL));</div>
-<div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;<span class="preprocessor"></span>        op = NULL;</div>
-<div class="line"><a name="l02126"></a><span class="lineno"> 2126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> op;</div>
-<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02133">2133</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;{</div>
+<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;    <a class="code" href="ev-print-operation_8h.html#abf62d4e670ad39601312aefd31d17931">EvPrintOperation</a> *op = NULL;</div>
+<div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;</div>
+<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-print-operation_8c.html#af7ad787cf0a09b99baf852f463c303f1">ev_print_operation_exists_for_document</a> (document), NULL);</div>
+<div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;</div>
+<div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-document-print_8h.html#a9d5494c40a55d9037f536d8b5cc91337">EV_IS_DOCUMENT_PRINT</a> (document))</div>
+<div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;        op = <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (g_object_new (<a class="code" href="ev-print-operation_8c.html#acaeef245eb067cb69fe10fe788a356d7">EV_TYPE_PRINT_OPERATION_PRINT</a>,</div>
+<div class="line"><a name="l02141"></a><span class="lineno"> 2141</span>&#160;                               <span class="stringliteral">&quot;document&quot;</span>, document, NULL));</div>
+<div class="line"><a name="l02142"></a><span class="lineno"> 2142</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160;<span class="preprocessor">#if GTKUNIXPRINT_ENABLED</span></div>
+<div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;<span class="preprocessor"></span>        op = <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (g_object_new (EV_TYPE_PRINT_OPERATION_EXPORT,</div>
+<div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;                               <span class="stringliteral">&quot;document&quot;</span>, document, NULL));</div>
+<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;<span class="preprocessor"></span>        op = NULL;</div>
+<div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> op;</div>
+<div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1239,26 +1241,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02078">2078</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;{</div>
-<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;    GObjectClass          *g_object_class = G_OBJECT_CLASS (klass);</div>
-<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;    <a class="code" href="struct__EvPrintOperationClass.html">EvPrintOperationClass</a> *ev_print_op_class = <a class="code" href="ev-print-operation_8h.html#a35ef4a289bbea83a2ca8e81a826e6ab8">EV_PRINT_OPERATION_CLASS</a> (klass);</div>
-<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;</div>
-<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a8fcd4589790090ca3838c687a2c577e0">set_current_page</a> = <a class="code" href="ev-print-operation_8c.html#aaff1688aab18a05f933d24c82a5b86ee">ev_print_operation_print_set_current_page</a>;</div>
-<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a099d92f564007d9aae88ef044b83e1c3">set_print_settings</a> = <a class="code" href="ev-print-operation_8c.html#a4e826d3f56324c9ab6be2b7e74616636">ev_print_operation_print_set_print_settings</a>;</div>
-<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a86c0ec9d538bf04e5a131b511d94687b">get_print_settings</a> = <a class="code" href="ev-print-operation_8c.html#af50ea2da9bad09087dc0fcdb81ca05a6">ev_print_operation_print_get_print_settings</a>;</div>
-<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#aaa923d3ab505d0211fff22ffb4b8745e">set_default_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#a641e21c77797d23e9f40ce7134b6ab4a">ev_print_operation_print_set_default_page_setup</a>;</div>
-<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a289bec35bc8975b951b76aebe1219b5d">get_default_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#a8c499a39e173cf6721e7ff9ed36292fd">ev_print_operation_print_get_default_page_setup</a>;</div>
-<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#aa117ceb317c7159fdf93754367c5305c">set_job_name</a> = <a class="code" href="ev-print-operation_8c.html#a37fd566dac1f0000a62d31eb1e2b4bb3">ev_print_operation_print_set_job_name</a>;</div>
-<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a78e12472e82f2400a2392eda206015ab">get_job_name</a> = <a class="code" href="ev-print-operation_8c.html#ac23394b01abf4433e518ab7c6eb3e515">ev_print_operation_print_get_job_name</a>;</div>
-<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a34151c018ac48e9d52307a06a0d4cd31">run</a> = <a class="code" href="ev-print-operation_8c.html#a0bd10d9c1735eb4f009e1a21aba038b9">ev_print_operation_print_run</a>;</div>
-<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a0ef86384e2cc5cf288cd7a3b92450324">cancel</a> = <a class="code" href="ev-print-operation_8c.html#a00f890863af99809f4f3282c16223043">ev_print_operation_print_cancel</a>;</div>
-<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a2eb3df0e1635b6b7c42c0e890013bd47">get_error</a> = <a class="code" href="ev-print-operation_8c.html#a3f0c7b6c614d98d4befa637b52a19b32">ev_print_operation_print_get_error</a>;</div>
-<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a88614473189ac8fb73e714fb476bcbfd">set_embed_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#a094c1c23a2c42e1478f8f9e3e758fc30">ev_print_operation_print_set_embed_page_setup</a>;</div>
-<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a1d97e44ce6a270e0b075e04112cf6947">get_embed_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#aed911a46df1df74e1890cc52de7f2b76">ev_print_operation_print_get_embed_page_setup</a>;</div>
-<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;</div>
-<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;    g_object_class-&gt;finalize = <a class="code" href="ev-print-operation_8c.html#af37ff29ec09ec3e6b4245ebf20e95ea9">ev_print_operation_print_finalize</a>;</div>
-<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02100">2100</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;{</div>
+<div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;    GObjectClass          *g_object_class = G_OBJECT_CLASS (klass);</div>
+<div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;    <a class="code" href="struct__EvPrintOperationClass.html">EvPrintOperationClass</a> *ev_print_op_class = <a class="code" href="ev-print-operation_8h.html#a35ef4a289bbea83a2ca8e81a826e6ab8">EV_PRINT_OPERATION_CLASS</a> (klass);</div>
+<div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;</div>
+<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a8fcd4589790090ca3838c687a2c577e0">set_current_page</a> = <a class="code" href="ev-print-operation_8c.html#aaff1688aab18a05f933d24c82a5b86ee">ev_print_operation_print_set_current_page</a>;</div>
+<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a099d92f564007d9aae88ef044b83e1c3">set_print_settings</a> = <a class="code" href="ev-print-operation_8c.html#a4e826d3f56324c9ab6be2b7e74616636">ev_print_operation_print_set_print_settings</a>;</div>
+<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a86c0ec9d538bf04e5a131b511d94687b">get_print_settings</a> = <a class="code" href="ev-print-operation_8c.html#af50ea2da9bad09087dc0fcdb81ca05a6">ev_print_operation_print_get_print_settings</a>;</div>
+<div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#aaa923d3ab505d0211fff22ffb4b8745e">set_default_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#a641e21c77797d23e9f40ce7134b6ab4a">ev_print_operation_print_set_default_page_setup</a>;</div>
+<div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a289bec35bc8975b951b76aebe1219b5d">get_default_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#a8c499a39e173cf6721e7ff9ed36292fd">ev_print_operation_print_get_default_page_setup</a>;</div>
+<div class="line"><a name="l02110"></a><span class="lineno"> 2110</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#aa117ceb317c7159fdf93754367c5305c">set_job_name</a> = <a class="code" href="ev-print-operation_8c.html#a37fd566dac1f0000a62d31eb1e2b4bb3">ev_print_operation_print_set_job_name</a>;</div>
+<div class="line"><a name="l02111"></a><span class="lineno"> 2111</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a78e12472e82f2400a2392eda206015ab">get_job_name</a> = <a class="code" href="ev-print-operation_8c.html#ac23394b01abf4433e518ab7c6eb3e515">ev_print_operation_print_get_job_name</a>;</div>
+<div class="line"><a name="l02112"></a><span class="lineno"> 2112</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a34151c018ac48e9d52307a06a0d4cd31">run</a> = <a class="code" href="ev-print-operation_8c.html#a0bd10d9c1735eb4f009e1a21aba038b9">ev_print_operation_print_run</a>;</div>
+<div class="line"><a name="l02113"></a><span class="lineno"> 2113</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a0ef86384e2cc5cf288cd7a3b92450324">cancel</a> = <a class="code" href="ev-print-operation_8c.html#a00f890863af99809f4f3282c16223043">ev_print_operation_print_cancel</a>;</div>
+<div class="line"><a name="l02114"></a><span class="lineno"> 2114</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a2eb3df0e1635b6b7c42c0e890013bd47">get_error</a> = <a class="code" href="ev-print-operation_8c.html#a3f0c7b6c614d98d4befa637b52a19b32">ev_print_operation_print_get_error</a>;</div>
+<div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a88614473189ac8fb73e714fb476bcbfd">set_embed_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#a094c1c23a2c42e1478f8f9e3e758fc30">ev_print_operation_print_set_embed_page_setup</a>;</div>
+<div class="line"><a name="l02116"></a><span class="lineno"> 2116</span>&#160;    ev_print_op_class-&gt;<a class="code" href="struct__EvPrintOperationClass.html#a1d97e44ce6a270e0b075e04112cf6947">get_embed_page_setup</a> = <a class="code" href="ev-print-operation_8c.html#aed911a46df1df74e1890cc52de7f2b76">ev_print_operation_print_get_embed_page_setup</a>;</div>
+<div class="line"><a name="l02117"></a><span class="lineno"> 2117</span>&#160;</div>
+<div class="line"><a name="l02118"></a><span class="lineno"> 2118</span>&#160;    g_object_class-&gt;finalize = <a class="code" href="ev-print-operation_8c.html#af37ff29ec09ec3e6b4245ebf20e95ea9">ev_print_operation_print_finalize</a>;</div>
+<div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1294,67 +1296,67 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l01915">1915</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;{</div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;    GtkPrintSettings *settings;</div>
-<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;    GtkWidget        *<a class="code" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;    GtkWidget        *grid;</div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;    <a class="code" href="ev-print-operation_8c.html#ad9f671c30ef3f812da594dee7a2b4e65">EvPrintScale</a>      page_scale;</div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;    gboolean          autorotate;</div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;    gboolean          use_source_size;</div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;</div>
-<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;    settings = gtk_print_operation_get_print_settings (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
-<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;    page_scale = gtk_print_settings_get_int_with_default (settings, <a class="code" href="ev-print-operation_8c.html#a6d27ad9947c4864a1bae18d59e689abc">EV_PRINT_SETTING_PAGE_SCALE</a>, 1);</div>
-<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;    autorotate = gtk_print_settings_has_key (settings, <a class="code" href="ev-print-operation_8c.html#a1e8deb343b6f30089774411fab5d7366">EV_PRINT_SETTING_AUTOROTATE</a>) ?</div>
-<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;        gtk_print_settings_get_bool (settings, <a class="code" href="ev-print-operation_8c.html#a1e8deb343b6f30089774411fab5d7366">EV_PRINT_SETTING_AUTOROTATE</a>) :</div>
-<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;        <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;    use_source_size = gtk_print_settings_get_bool (settings, <a class="code" href="ev-print-operation_8c.html#aa13e03ae5dc7f8c45885526f744349e0">EV_PRINT_SETTING_PAGE_SIZE</a>);</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;</div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;    grid = gtk_grid_new ();</div>
-<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;    gtk_grid_set_row_spacing (GTK_GRID (grid), 6);</div>
-<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;    gtk_grid_set_column_spacing (GTK_GRID (grid), 12);</div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;    gtk_container_set_border_width (GTK_CONTAINER (grid), 12);</div>
-<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;</div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;    label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Page Scaling:&quot;</span>));</div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;    gtk_grid_attach (GTK_GRID (grid), label, 0, 0, 1, 1);</div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;    gtk_widget_show (label);</div>
-<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;</div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a> = gtk_combo_box_text_new ();</div>
-<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;    <span class="comment">/* translators: Value for &#39;Page Scaling:&#39; to not scale the document pages on printing */</span></div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;None&quot;</span>));</div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Shrink to Printable Area&quot;</span>));</div>
-<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Fit to Printable Area&quot;</span>));</div>
-<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;    gtk_combo_box_set_active (GTK_COMBO_BOX (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), page_scale);</div>
-<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;    gtk_widget_set_tooltip_text (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>,</div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;        <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Scale document pages to fit the selected printer page. Select from one of the following:\n&quot;</span></div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;          <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;          <span class="stringliteral">&quot;• \&quot;None\&quot;: No page scaling is performed.\n&quot;</span></div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;          <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;          <span class="stringliteral">&quot;• \&quot;Shrink to Printable Area\&quot;: Document pages larger than the printable area&quot;</span></div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;          <span class="stringliteral">&quot; are reduced to fit the printable area of the printer page.\n&quot;</span></div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;          <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;          <span class="stringliteral">&quot;• \&quot;Fit to Printable Area\&quot;: Document pages are enlarged or reduced as&quot;</span></div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;          <span class="stringliteral">&quot; required to fit the printable area of the printer page.\n&quot;</span>));</div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;    gtk_grid_attach (GTK_GRID (grid), print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>, 1, 0, 1, 1);</div>
-<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;    gtk_widget_show (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>);</div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;</div>
-<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a> = gtk_check_button_new_with_label (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Auto Rotate and Center&quot;</span>));</div>
-<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>), autorotate);</div>
-<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;    gtk_widget_set_tooltip_text (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>,</div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;        <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Rotate printer page orientation of each page to match orientation of each document page. &quot;</span></div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;          <span class="stringliteral">&quot;Document pages will be centered within the printer page.&quot;</span>));</div>
-<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;    gtk_grid_attach (GTK_GRID (grid), print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>, 0, 1, 2, 1);</div>
-<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;    gtk_widget_show (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>);</div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;</div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a> = gtk_check_button_new_with_label (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Select page size using document page size&quot;</span>));</div>
-<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>), use_source_size);</div>
-<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;    gtk_widget_set_tooltip_text (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;When enabled, each page will be printed on &quot;</span></div>
-<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;                                 <span class="stringliteral">&quot;the same size paper as the document page.&quot;</span>));</div>
-<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;    gtk_grid_attach (GTK_GRID (grid), print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>, 0, 2, 2, 1);</div>
-<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;    gtk_widget_show (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>);</div>
-<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;</div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;    <span class="keywordflow">return</span> G_OBJECT (grid);</div>
-<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l01937">1937</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;{</div>
+<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;    GtkPrintSettings *settings;</div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;    GtkWidget        *<a class="code" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
+<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;    GtkWidget        *grid;</div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;    <a class="code" href="ev-print-operation_8c.html#ad9f671c30ef3f812da594dee7a2b4e65">EvPrintScale</a>      page_scale;</div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;    gboolean          autorotate;</div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;    gboolean          use_source_size;</div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;</div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;    settings = gtk_print_operation_get_print_settings (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;    page_scale = gtk_print_settings_get_int_with_default (settings, <a class="code" href="ev-print-operation_8c.html#a6d27ad9947c4864a1bae18d59e689abc">EV_PRINT_SETTING_PAGE_SCALE</a>, 1);</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;    autorotate = gtk_print_settings_has_key (settings, <a class="code" href="ev-print-operation_8c.html#a1e8deb343b6f30089774411fab5d7366">EV_PRINT_SETTING_AUTOROTATE</a>) ?</div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;        gtk_print_settings_get_bool (settings, <a class="code" href="ev-print-operation_8c.html#a1e8deb343b6f30089774411fab5d7366">EV_PRINT_SETTING_AUTOROTATE</a>) :</div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;        <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;    use_source_size = gtk_print_settings_get_bool (settings, <a class="code" href="ev-print-operation_8c.html#aa13e03ae5dc7f8c45885526f744349e0">EV_PRINT_SETTING_PAGE_SIZE</a>);</div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;</div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;    grid = gtk_grid_new ();</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;    gtk_grid_set_row_spacing (GTK_GRID (grid), 6);</div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;    gtk_grid_set_column_spacing (GTK_GRID (grid), 12);</div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;    gtk_container_set_border_width (GTK_CONTAINER (grid), 12);</div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;</div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;    label = gtk_label_new (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Page Scaling:&quot;</span>));</div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;    gtk_grid_attach (GTK_GRID (grid), label, 0, 0, 1, 1);</div>
+<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;    gtk_widget_show (label);</div>
+<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;</div>
+<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a> = gtk_combo_box_text_new ();</div>
+<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;    <span class="comment">/* translators: Value for &#39;Page Scaling:&#39; to not scale the document pages on printing */</span></div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;None&quot;</span>));</div>
+<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Shrink to Printable Area&quot;</span>));</div>
+<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Fit to Printable Area&quot;</span>));</div>
+<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;    gtk_combo_box_set_active (GTK_COMBO_BOX (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>), page_scale);</div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;    gtk_widget_set_tooltip_text (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>,</div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;        <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Scale document pages to fit the selected printer page. Select from one of the following:\n&quot;</span></div>
+<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;          <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;          <span class="stringliteral">&quot;• \&quot;None\&quot;: No page scaling is performed.\n&quot;</span></div>
+<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;          <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;          <span class="stringliteral">&quot;• \&quot;Shrink to Printable Area\&quot;: Document pages larger than the printable area&quot;</span></div>
+<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;          <span class="stringliteral">&quot; are reduced to fit the printable area of the printer page.\n&quot;</span></div>
+<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;          <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;          <span class="stringliteral">&quot;• \&quot;Fit to Printable Area\&quot;: Document pages are enlarged or reduced as&quot;</span></div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;          <span class="stringliteral">&quot; required to fit the printable area of the printer page.\n&quot;</span>));</div>
+<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;    gtk_grid_attach (GTK_GRID (grid), print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>, 1, 0, 1, 1);</div>
+<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;    gtk_widget_show (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>);</div>
+<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;</div>
+<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a> = gtk_check_button_new_with_label (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Auto Rotate and Center&quot;</span>));</div>
+<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>), autorotate);</div>
+<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;    gtk_widget_set_tooltip_text (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>,</div>
+<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;        <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Rotate printer page orientation of each page to match orientation of each document page. &quot;</span></div>
+<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;          <span class="stringliteral">&quot;Document pages will be centered within the printer page.&quot;</span>));</div>
+<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;    gtk_grid_attach (GTK_GRID (grid), print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>, 0, 1, 2, 1);</div>
+<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;    gtk_widget_show (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>);</div>
+<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;</div>
+<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a> = gtk_check_button_new_with_label (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Select page size using document page size&quot;</span>));</div>
+<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>), use_source_size);</div>
+<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;    gtk_widget_set_tooltip_text (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;When enabled, each page will be printed on &quot;</span></div>
+<div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;                                 <span class="stringliteral">&quot;the same size paper as the document page.&quot;</span>));</div>
+<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;    gtk_grid_attach (GTK_GRID (grid), print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>, 0, 2, 2, 1);</div>
+<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;    gtk_widget_show (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>);</div>
+<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;</div>
+<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;    <span class="keywordflow">return</span> G_OBJECT (grid);</div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1400,18 +1402,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l01979">1979</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;{</div>
-<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;    GtkPrintSettings *settings;</div>
-<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;</div>
-<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> = gtk_combo_box_get_active (GTK_COMBO_BOX (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>));</div>
-<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a> = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>));</div>
-<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#aa5d38c98049b8d3d8436e0bef5b4ebaf">use_source_size</a> = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>));</div>
-<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;    settings = gtk_print_operation_get_print_settings (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
-<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;    gtk_print_settings_set_int (settings, <a class="code" href="ev-print-operation_8c.html#a6d27ad9947c4864a1bae18d59e689abc">EV_PRINT_SETTING_PAGE_SCALE</a>, print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a>);</div>
-<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;    gtk_print_settings_set_bool (settings, <a class="code" href="ev-print-operation_8c.html#a1e8deb343b6f30089774411fab5d7366">EV_PRINT_SETTING_AUTOROTATE</a>, print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a>);</div>
-<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;    gtk_print_settings_set_bool (settings, <a class="code" href="ev-print-operation_8c.html#aa13e03ae5dc7f8c45885526f744349e0">EV_PRINT_SETTING_PAGE_SIZE</a>, print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#aa5d38c98049b8d3d8436e0bef5b4ebaf">use_source_size</a>);</div>
-<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02001">2001</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;{</div>
+<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;    GtkPrintSettings *settings;</div>
+<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;</div>
+<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> = gtk_combo_box_get_active (GTK_COMBO_BOX (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a554b15706c1b3f300b8834fb1ebd04ec">scale_combo</a>));</div>
+<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a> = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#afccd5cf3e74b2c8122026aa9d5d2f03e">autorotate_button</a>));</div>
+<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#aa5d38c98049b8d3d8436e0bef5b4ebaf">use_source_size</a> = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad093002b736915ee58af8477a4b2e83b">source_button</a>));</div>
+<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;    settings = gtk_print_operation_get_print_settings (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
+<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;    gtk_print_settings_set_int (settings, <a class="code" href="ev-print-operation_8c.html#a6d27ad9947c4864a1bae18d59e689abc">EV_PRINT_SETTING_PAGE_SCALE</a>, print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a>);</div>
+<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;    gtk_print_settings_set_bool (settings, <a class="code" href="ev-print-operation_8c.html#a1e8deb343b6f30089774411fab5d7366">EV_PRINT_SETTING_AUTOROTATE</a>, print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a>);</div>
+<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;    gtk_print_settings_set_bool (settings, <a class="code" href="ev-print-operation_8c.html#aa13e03ae5dc7f8c45885526f744349e0">EV_PRINT_SETTING_PAGE_SIZE</a>, print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#aa5d38c98049b8d3d8436e0bef5b4ebaf">use_source_size</a>);</div>
+<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1516,89 +1518,90 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l01828">1828</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;{</div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;    <a class="code" href="ev-print-operation_8h.html#abf62d4e670ad39601312aefd31d17931">EvPrintOperation</a> *op = <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (print);</div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;    cairo_t          *cr;</div>
-<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;    gdouble           cr_width, cr_height;</div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;    gdouble           width, height, scale;</div>
-<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;    gdouble           x_scale, y_scale;</div>
-<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;    gdouble           top, bottom, left, right;</div>
-<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;</div>
-<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;    gtk_print_operation_set_defer_drawing (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;</div>
-<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;    <span class="keywordflow">if</span> (!print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>) {</div>
-<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a> = <a class="code" href="ev-jobs_8c.html#a0c6cd586ecc93f2ad415c5f299aead91">ev_job_print_new</a> (op-&gt;document);</div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;        g_signal_connect (G_OBJECT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), <span class="stringliteral">&quot;finished&quot;</span>,</div>
-<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#abb3ebd3e05a5b80cc6042b91d12cae83">print_job_finished</a>),</div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;                  (gpointer)print);</div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;                g_signal_connect (G_OBJECT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), <span class="stringliteral">&quot;cancelled&quot;</span>,</div>
-<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;                                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a9c9903f7e1b8944414800b3e3cee7dc3">print_job_cancelled</a>),</div>
-<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;                                  (gpointer)print);</div>
-<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_cancellable_is_cancelled (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>-&gt;cancellable)) {</div>
-<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;                gtk_print_operation_cancel (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
-<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;                <a class="code" href="ev-jobs_8c.html#ade2a6d3b8ef0f21e796c59ca8581ad37">ev_job_print_set_cairo</a> (<a class="code" href="ev-jobs_8h.html#a2cb4b95980e07f0e71f5d843c01826a4">EV_JOB_PRINT</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), NULL);</div>
-<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;        }</div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;</div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;    <a class="code" href="ev-jobs_8c.html#ab925c4a455017a9eb008519ab5ca06ee">ev_job_print_set_page</a> (<a class="code" href="ev-jobs_8h.html#a2cb4b95980e07f0e71f5d843c01826a4">EV_JOB_PRINT</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), page);</div>
-<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;</div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;    cr = gtk_print_context_get_cairo_context (context);</div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;    cr_width = gtk_print_context_get_width (context);</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;    cr_height = gtk_print_context_get_height (context);</div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;    <a class="code" href="ev-document_8c.html#a5a01bc5acbf69d30bed5717ad796b3d8">ev_document_get_page_size</a> (op-&gt;document, page, &amp;width, &amp;height);</div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> == EV_SCALE_NONE) {</div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;        <span class="comment">/* Center document page on the printed page */</span></div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;        <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a>)</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;            cairo_translate (cr, (cr_width - width) / 2, (cr_height - height) / 2);</div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;        <a class="code" href="ev-print-operation_8c.html#a2407a8fccb0c79c280da63f2be4b719b">_print_context_get_hard_margins</a> (context, &amp;top, &amp;bottom, &amp;left, &amp;right);</div>
-<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;</div>
-<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;        x_scale = (cr_width - left - right) / width;</div>
-<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;        y_scale = (cr_height - top - bottom) / height;</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;                scale = MIN (x_scale, y_scale);</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;</div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;                <span class="comment">/* Ignore scale &gt; 1 when shrinking to printable area */</span></div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;                <span class="keywordflow">if</span> (scale &gt; 1.0 &amp;&amp; print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> == EV_SCALE_SHRINK_TO_PRINTABLE_AREA)</div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;                        scale = 1.0;</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l01849">1849</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;{</div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;    <a class="code" href="ev-print-operation_8h.html#abf62d4e670ad39601312aefd31d17931">EvPrintOperation</a> *op = <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (print);</div>
+<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;    cairo_t          *cr;</div>
+<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;    gdouble           cr_width, cr_height;</div>
+<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;    gdouble           width, height, manual_scale, scale;</div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;    gdouble           x_scale, y_scale;</div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;        gdouble           x_offset, y_offset;</div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;    gdouble           top, bottom, left, right;</div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;</div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;    gtk_print_operation_set_defer_drawing (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;</div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;    <span class="keywordflow">if</span> (!print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>) {</div>
+<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a> = <a class="code" href="ev-jobs_8c.html#a0c6cd586ecc93f2ad415c5f299aead91">ev_job_print_new</a> (op-&gt;document);</div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;        g_signal_connect (G_OBJECT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), <span class="stringliteral">&quot;finished&quot;</span>,</div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#abb3ebd3e05a5b80cc6042b91d12cae83">print_job_finished</a>),</div>
+<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;                  (gpointer)print);</div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;                g_signal_connect (G_OBJECT (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), <span class="stringliteral">&quot;cancelled&quot;</span>,</div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;                                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a9c9903f7e1b8944414800b3e3cee7dc3">print_job_cancelled</a>),</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;                                  (gpointer)print);</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_cancellable_is_cancelled (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>-&gt;cancellable)) {</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;                gtk_print_operation_cancel (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;                <a class="code" href="ev-jobs_8c.html#ade2a6d3b8ef0f21e796c59ca8581ad37">ev_job_print_set_cairo</a> (<a class="code" href="ev-jobs_8h.html#a2cb4b95980e07f0e71f5d843c01826a4">EV_JOB_PRINT</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), NULL);</div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;        }</div>
 <div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;</div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;        <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a>) {</div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;            <span class="keywordtype">double</span> left_right_sides, top_bottom_sides;</div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;</div>
-<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;            cairo_translate (cr, (cr_width - scale * width) / 2,</div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;                     (cr_height - scale * height) / 2);</div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;</div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;            <span class="comment">/* Ensure document page is within the margins. The</span></div>
-<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;<span class="comment">             * scale guarantees the document will fit in the</span></div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;<span class="comment">             * margins so we just need to check each side and</span></div>
-<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;<span class="comment">             * if it overhangs the margin, translate it to the</span></div>
-<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;<span class="comment">             * margin. */</span></div>
-<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;            left_right_sides = (cr_width - width*scale)/2;</div>
-<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;            top_bottom_sides = (cr_height - height*scale)/2;</div>
-<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;            <span class="keywordflow">if</span> (left_right_sides &lt; left)</div>
-<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;                cairo_translate (cr, left - left_right_sides, 0);</div>
-<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;</div>
-<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;            <span class="keywordflow">if</span> (left_right_sides &lt; right)</div>
-<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;                cairo_translate (cr, -(right - left_right_sides), 0);</div>
-<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;</div>
-<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;            <span class="keywordflow">if</span> (top_bottom_sides &lt; top)</div>
-<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;                cairo_translate (cr, 0, top - top_bottom_sides);</div>
-<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;</div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;            <span class="keywordflow">if</span> (top_bottom_sides &lt; bottom)</div>
-<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;                cairo_translate (cr, 0, -(bottom - top_bottom_sides));</div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;            cairo_translate (cr, left, top);</div>
-<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;        }</div>
-<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;</div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;        <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> == EV_SCALE_FIT_TO_PRINTABLE_AREA || scale &lt; 1.0) {</div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;            cairo_scale (cr, scale, scale);</div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;        }</div>
-<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;    }</div>
-<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;</div>
-<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;    <a class="code" href="ev-jobs_8c.html#ade2a6d3b8ef0f21e796c59ca8581ad37">ev_job_print_set_cairo</a> (<a class="code" href="ev-jobs_8h.html#a2cb4b95980e07f0e71f5d843c01826a4">EV_JOB_PRINT</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), cr);</div>
-<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
-<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;}</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;    <a class="code" href="ev-jobs_8c.html#ab925c4a455017a9eb008519ab5ca06ee">ev_job_print_set_page</a> (<a class="code" href="ev-jobs_8h.html#a2cb4b95980e07f0e71f5d843c01826a4">EV_JOB_PRINT</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), page);</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;</div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;    cr = gtk_print_context_get_cairo_context (context);</div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;    cr_width = gtk_print_context_get_width (context);</div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;    cr_height = gtk_print_context_get_height (context);</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;        <a class="code" href="ev-print-operation_8c.html#a4e682ae261b1d4b2783ecdbe68069e2c">ev_print_operation_print_get_scaled_page_size</a> (print, page, &amp;width, &amp;height, &amp;manual_scale);</div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;</div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> == EV_SCALE_NONE) {</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;        <span class="comment">/* Center document page on the printed page */</span></div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;        <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a>) {</div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;                        x_offset = (cr_width - width) / (2 * manual_scale);</div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;                        y_offset = (cr_height - height) / (2 * manual_scale);</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;                        cairo_translate (cr, x_offset, y_offset);</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;                }</div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;        <a class="code" href="ev-print-operation_8c.html#a2407a8fccb0c79c280da63f2be4b719b">_print_context_get_hard_margins</a> (context, &amp;top, &amp;bottom, &amp;left, &amp;right);</div>
+<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;</div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;        x_scale = (cr_width - left - right) / width;</div>
+<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;        y_scale = (cr_height - top - bottom) / height;</div>
+<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;                scale = MIN (x_scale, y_scale);</div>
+<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;</div>
+<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;                <span class="comment">/* Ignore scale &gt; 1 when shrinking to printable area */</span></div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;                <span class="keywordflow">if</span> (scale &gt; 1.0 &amp;&amp; print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> == EV_SCALE_SHRINK_TO_PRINTABLE_AREA)</div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;                        scale = 1.0;</div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;</div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;        <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a41c7dab1704bd35c9bfd2fc3c94619eb">autorotate</a>) {</div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;                        x_offset = (cr_width - scale * width) / (2 * manual_scale);</div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;                        y_offset = (cr_height - scale * height) / (2 * manual_scale);</div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;                        cairo_translate (cr, x_offset, y_offset);</div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;</div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;            <span class="comment">/* Ensure document page is within the margins. The</span></div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;<span class="comment">             * scale guarantees the document will fit in the</span></div>
+<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;<span class="comment">             * margins so we just need to check each side and</span></div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;<span class="comment">             * if it overhangs the margin, translate it to the</span></div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;<span class="comment">                         * margin. */</span></div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;            <span class="keywordflow">if</span> (x_offset &lt; left)</div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;                cairo_translate (cr, left - x_offset, 0);</div>
+<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;</div>
+<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;            <span class="keywordflow">if</span> (x_offset &lt; right)</div>
+<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;                cairo_translate (cr, -(right - x_offset), 0);</div>
+<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;</div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;            <span class="keywordflow">if</span> (y_offset &lt; top)</div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;                cairo_translate (cr, 0, top - y_offset);</div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;</div>
+<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;            <span class="keywordflow">if</span> (y_offset &lt; bottom)</div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;                cairo_translate (cr, 0, -(bottom - y_offset));</div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;            cairo_translate (cr, left, top);</div>
+<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;        }</div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;</div>
+<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;        <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ae956b0049715d1cf8282d95da02f0ae2">page_scale</a> == EV_SCALE_FIT_TO_PRINTABLE_AREA || scale &lt; 1.0) {</div>
+<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;            cairo_scale (cr, scale, scale);</div>
+<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;        }</div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;    }</div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;</div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;    <a class="code" href="ev-jobs_8c.html#ade2a6d3b8ef0f21e796c59ca8581ad37">ev_job_print_set_cairo</a> (<a class="code" href="ev-jobs_8h.html#a2cb4b95980e07f0e71f5d843c01826a4">EV_JOB_PRINT</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>), cr);</div>
+<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
+<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1634,40 +1637,40 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02002">2002</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;{</div>
-<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;    <a class="code" href="struct__EvPrintOperationPrint.html">EvPrintOperationPrint</a> *print = <a class="code" href="ev-print-operation_8c.html#a6510967bb61079bdde9dfccae81715e7">EV_PRINT_OPERATION_PRINT</a> (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;    GApplication *application;</div>
-<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;</div>
-<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>) {</div>
-<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;        g_object_unref (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
-<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a> = NULL;</div>
-<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;    }</div>
-<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;</div>
-<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad19c282c9c739d6eaa2357658f052fc2">job_name</a>) {</div>
-<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;        g_free (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad19c282c9c739d6eaa2357658f052fc2">job_name</a>);</div>
-<div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad19c282c9c739d6eaa2357658f052fc2">job_name</a> = NULL;</div>
-<div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;    }</div>
-<div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;</div>
-<div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>) {</div>
-<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>))</div>
-<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;            <a class="code" href="ev-jobs_8c.html#a3d29a0151f777cef7b568d8359f7acea">ev_job_cancel</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>);</div>
-<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;        g_signal_handlers_disconnect_by_func (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>,</div>
-<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;                              <a class="code" href="ev-print-operation_8c.html#abb3ebd3e05a5b80cc6042b91d12cae83">print_job_finished</a>,</div>
-<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;                              print);</div>
-<div class="line"><a name="l02023"></a><span class="lineno"> 2023</span>&#160;        g_signal_handlers_disconnect_by_func (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>,</div>
-<div class="line"><a name="l02024"></a><span class="lineno"> 2024</span>&#160;                              <a class="code" href="ev-print-operation_8c.html#a9c9903f7e1b8944414800b3e3cee7dc3">print_job_cancelled</a>,</div>
-<div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;                              print);</div>
-<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;        g_object_unref (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>);</div>
-<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a> = NULL;</div>
-<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;    }</div>
-<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;</div>
-<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;    (* G_OBJECT_CLASS (ev_print_operation_print_parent_class)-&gt;finalize) (<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;</div>
-<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;        application = g_application_get_default ();</div>
-<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;        <span class="keywordflow">if</span> (application)</div>
-<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;            g_application_release (application);</div>
-<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02024">2024</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;{</div>
+<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;    <a class="code" href="struct__EvPrintOperationPrint.html">EvPrintOperationPrint</a> *print = <a class="code" href="ev-print-operation_8c.html#a6510967bb61079bdde9dfccae81715e7">EV_PRINT_OPERATION_PRINT</a> (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;    GApplication *application;</div>
+<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;</div>
+<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>) {</div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;        g_object_unref (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
+<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a> = NULL;</div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;    }</div>
+<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;</div>
+<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad19c282c9c739d6eaa2357658f052fc2">job_name</a>) {</div>
+<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;        g_free (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad19c282c9c739d6eaa2357658f052fc2">job_name</a>);</div>
+<div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad19c282c9c739d6eaa2357658f052fc2">job_name</a> = NULL;</div>
+<div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;    }</div>
+<div class="line"><a name="l02038"></a><span class="lineno"> 2038</span>&#160;</div>
+<div class="line"><a name="l02039"></a><span class="lineno"> 2039</span>&#160;    <span class="keywordflow">if</span> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>) {</div>
+<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>))</div>
+<div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;            <a class="code" href="ev-jobs_8c.html#a3d29a0151f777cef7b568d8359f7acea">ev_job_cancel</a> (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>);</div>
+<div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;        g_signal_handlers_disconnect_by_func (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>,</div>
+<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;                              <a class="code" href="ev-print-operation_8c.html#abb3ebd3e05a5b80cc6042b91d12cae83">print_job_finished</a>,</div>
+<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;                              print);</div>
+<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;        g_signal_handlers_disconnect_by_func (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>,</div>
+<div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;                              <a class="code" href="ev-print-operation_8c.html#a9c9903f7e1b8944414800b3e3cee7dc3">print_job_cancelled</a>,</div>
+<div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;                              print);</div>
+<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;        g_object_unref (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a>);</div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a739cf492433275e199b9bc1db3b745bc">job_print</a> = NULL;</div>
+<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;    }</div>
+<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;</div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;    (* G_OBJECT_CLASS (ev_print_operation_print_parent_class)-&gt;finalize) (<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;</div>
+<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;        application = g_application_get_default ();</div>
+<div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160;        <span class="keywordflow">if</span> (application)</div>
+<div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;            g_application_release (application);</div>
+<div class="line"><a name="l02057"></a><span class="lineno"> 2057</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1903,6 +1906,84 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4e682ae261b1d4b2783ecdbe68069e2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ev_print_operation_print_get_scaled_page_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-print-operation_8c.html#aad519bd71f90fa1482e921a8c5d5cf62">EvPrintOperationPrint</a> *&#160;</td>
+          <td class="paramname"><em>print</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble *&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble *&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble *&#160;</td>
+          <td class="paramname"><em>manual_scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l01828">1828</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;{</div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;        GtkPrintSettings *settings;</div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;        <a class="code" href="ev-document_8c.html#a5a01bc5acbf69d30bed5717ad796b3d8">ev_document_get_page_size</a> (<a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (print)-&gt;document,</div>
+<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;                                   page, width, height);</div>
+<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;</div>
+<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        settings = gtk_print_operation_get_print_settings (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
+<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;        *manual_scale = gtk_print_settings_get_scale (settings) / 100.0;</div>
+<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="keywordflow">if</span> (*manual_scale == 1.0)</div>
+<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;</div>
+<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;        *width *= *manual_scale;</div>
+<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;        *height *= *manual_scale;</div>
+<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a4e682ae261b1d4b2783ecdbe68069e2c_icgraph.svg" width="568" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="abe96b10d417bd5d4539c5efcf664f075"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1956,44 +2037,44 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02038">2038</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02039"></a><span class="lineno"> 2039</span>&#160;{</div>
-<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;    GApplication *application;</div>
-<div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;</div>
-<div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a> = gtk_print_operation_new ();</div>
-<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;begin_print&quot;</span>,</div>
-<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a2a33ed0dbb279167119abca79233d820">ev_print_operation_print_begin_print</a>),</div>
-<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;                  print);</div>
-<div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;done&quot;</span>,</div>
-<div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#ad290fafdcf28abb35c00307583a18ae3">ev_print_operation_print_done</a>),</div>
-<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;                  print);</div>
-<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;draw_page&quot;</span>,</div>
-<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a82d8e131b8ff6a5aa6cc461a7aa7b607">ev_print_operation_print_draw_page</a>),</div>
-<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;                  print);</div>
-<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;status_changed&quot;</span>,</div>
-<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a0dfd3d036f8d3058b4f335c6be90a34c">ev_print_operation_print_status_changed</a>),</div>
-<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;                  print);</div>
-<div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;request_page_setup&quot;</span>,</div>
-<div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a89943f46e0a241d2e3366c0fed92ecb6">ev_print_operation_print_request_page_setup</a>),</div>
-<div class="line"><a name="l02057"></a><span class="lineno"> 2057</span>&#160;                  print);</div>
-<div class="line"><a name="l02058"></a><span class="lineno"> 2058</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;create_custom_widget&quot;</span>,</div>
-<div class="line"><a name="l02059"></a><span class="lineno"> 2059</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a480744e94fd529108e770434d4861576">ev_print_operation_print_create_custom_widget</a>),</div>
-<div class="line"><a name="l02060"></a><span class="lineno"> 2060</span>&#160;                  print);</div>
-<div class="line"><a name="l02061"></a><span class="lineno"> 2061</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;custom_widget_apply&quot;</span>,</div>
-<div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#ae0ea68d5d5d733e6071126e42adc9380">ev_print_operation_print_custom_widget_apply</a>),</div>
-<div class="line"><a name="l02063"></a><span class="lineno"> 2063</span>&#160;                  print);</div>
-<div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;        g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;preview&quot;</span>,</div>
-<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a1556b67a9bbb282b4e60dee418ca4992">ev_print_operation_print_preview</a>),</div>
-<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;                  print);</div>
-<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;    gtk_print_operation_set_allow_async (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;    gtk_print_operation_set_use_full_page (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;    gtk_print_operation_set_unit (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, GTK_UNIT_POINTS);</div>
-<div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;    gtk_print_operation_set_custom_tab_label (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Page Handling&quot;</span>));</div>
-<div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;</div>
-<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;    application = g_application_get_default ();</div>
-<div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;    <span class="keywordflow">if</span> (application)</div>
-<div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;            g_application_hold (application);</div>
-<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02060">2060</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02061"></a><span class="lineno"> 2061</span>&#160;{</div>
+<div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;    GApplication *application;</div>
+<div class="line"><a name="l02063"></a><span class="lineno"> 2063</span>&#160;</div>
+<div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;    print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a> = gtk_print_operation_new ();</div>
+<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;begin_print&quot;</span>,</div>
+<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a2a33ed0dbb279167119abca79233d820">ev_print_operation_print_begin_print</a>),</div>
+<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;                  print);</div>
+<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;done&quot;</span>,</div>
+<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#ad290fafdcf28abb35c00307583a18ae3">ev_print_operation_print_done</a>),</div>
+<div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;                  print);</div>
+<div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;draw_page&quot;</span>,</div>
+<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a82d8e131b8ff6a5aa6cc461a7aa7b607">ev_print_operation_print_draw_page</a>),</div>
+<div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;                  print);</div>
+<div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;status_changed&quot;</span>,</div>
+<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a0dfd3d036f8d3058b4f335c6be90a34c">ev_print_operation_print_status_changed</a>),</div>
+<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;                  print);</div>
+<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;request_page_setup&quot;</span>,</div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a89943f46e0a241d2e3366c0fed92ecb6">ev_print_operation_print_request_page_setup</a>),</div>
+<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;                  print);</div>
+<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;create_custom_widget&quot;</span>,</div>
+<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a480744e94fd529108e770434d4861576">ev_print_operation_print_create_custom_widget</a>),</div>
+<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;                  print);</div>
+<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;    g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;custom_widget_apply&quot;</span>,</div>
+<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#ae0ea68d5d5d733e6071126e42adc9380">ev_print_operation_print_custom_widget_apply</a>),</div>
+<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;                  print);</div>
+<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;        g_signal_connect_swapped (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <span class="stringliteral">&quot;preview&quot;</span>,</div>
+<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;                  G_CALLBACK (<a class="code" href="ev-print-operation_8c.html#a1556b67a9bbb282b4e60dee418ca4992">ev_print_operation_print_preview</a>),</div>
+<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;                  print);</div>
+<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;    gtk_print_operation_set_allow_async (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;    gtk_print_operation_set_use_full_page (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;    gtk_print_operation_set_unit (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, GTK_UNIT_POINTS);</div>
+<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;    gtk_print_operation_set_custom_tab_label (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Page Handling&quot;</span>));</div>
+<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;</div>
+<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;    application = g_application_get_default ();</div>
+<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;    <span class="keywordflow">if</span> (application)</div>
+<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;            g_application_hold (application);</div>
+<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2019,18 +2100,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l01994">1994</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;{</div>
-<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;    <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (print)-&gt;print_preview = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;</div>
-<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-print-operation_8c_source.html#l02016">2016</a> of file <a class="el" href="ev-print-operation_8c_source.html">ev-print-operation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;{</div>
+<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;    <a class="code" href="ev-print-operation_8h.html#aaa826e94a46b1f546ad0367577ee1fa5">EV_PRINT_OPERATION</a> (print)-&gt;print_preview = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;</div>
+<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a1556b67a9bbb282b4e60dee418ca4992_icgraph.svg" width="326" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2106,11 +2187,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;    }</div>
 <div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a89943f46e0a241d2e3366c0fed92ecb6_icgraph.svg" width="376" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2159,11 +2240,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;                 parent, NULL);</div>
 <div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a0bd10d9c1735eb4f009e1a21aba038b9_icgraph.svg" width="326" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2210,11 +2291,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;    gtk_print_operation_set_current_page (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, current_page);</div>
 <div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_aaff1688aab18a05f933d24c82a5b86ee_icgraph.svg" width="358" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2261,11 +2342,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;    gtk_print_operation_set_default_page_setup (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, page_setup);</div>
 <div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a641e21c77797d23e9f40ce7134b6ab4a_icgraph.svg" width="398" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2312,11 +2393,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;    gtk_print_operation_set_embed_page_setup (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, embed);</div>
 <div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a094c1c23a2c42e1478f8f9e3e758fc30_icgraph.svg" width="398" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2366,11 +2447,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;    gtk_print_operation_set_job_name (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#ad19c282c9c739d6eaa2357658f052fc2">job_name</a>);</div>
 <div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a37fd566dac1f0000a62d31eb1e2b4bb3_icgraph.svg" width="339" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2417,11 +2498,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;    gtk_print_operation_set_print_settings (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>, <a class="code" href="ev-previewer_8c.html#a20cee399606cef5d4b035ff7aa255199">print_settings</a>);</div>
 <div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a4e826d3f56324c9ab6be2b7e74616636_icgraph.svg" width="360" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2460,11 +2541,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;        print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a50be47fa1f971a1241411a65b88a6165">n_pages_to_print</a> = gtk_print_operation_get_n_pages_to_print (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
 <div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a0dfd3d036f8d3058b4f335c6be90a34c_icgraph.svg" width="350" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2505,11 +2586,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">class</span>-&gt;run (op, parent);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a0934340fb5922553716b0b2a39038da5_icgraph.svg" width="1336" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2551,11 +2632,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">class</span>-&gt;set_current_page (op, current_page);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a9ba3be5e5e720c2e8cb00ce4822090c8_icgraph.svg" width="1310" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2597,11 +2678,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">class</span>-&gt;set_default_page_setup (op, page_setup);</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-37-content" class="dyncontent" style="display:none;">
+<div id="dynsection-38-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a8705b340af8ea0891d1657eb04786692_icgraph.svg" width="1347" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2642,11 +2723,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keyword">class</span>-&gt;set_embed_page_setup (op, embed);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-38-content" class="dyncontent" style="display:none;">
+<div id="dynsection-39-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_ab20f70066716c6e3afbef965c6c39371_icgraph.svg" width="1350" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2688,11 +2769,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">class</span>-&gt;set_job_name (op, job_name);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-39-content" class="dyncontent" style="display:none;">
+<div id="dynsection-40-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a4b1034b8fbe28a8cb70e07f109bfcbfa_icgraph.svg" width="1310" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2734,11 +2815,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">class</span>-&gt;set_print_settings (op, <a class="code" href="ev-previewer_8c.html#a20cee399606cef5d4b035ff7aa255199">print_settings</a>);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-40-content" class="dyncontent" style="display:none;">
+<div id="dynsection-41-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a81243a8b528d4ca30d122ec50146719a_icgraph.svg" width="1310" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2803,11 +2884,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-41-content" class="dyncontent" style="display:none;">
+<div id="dynsection-42-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a1b0387814ec01fa68f481b758827c34c_icgraph.svg" width="326" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2893,11 +2974,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    g_signal_emit (op, <a class="code" href="ev-print-operation_8c.html#a2789048f8a6d2a6541405994727738a1">signals</a>[<a class="code" href="ev-print-operation_8c.html#a394b3903fbf00ba2b6243f60689a5a5fa1d772deb7ca80ddbfed6b64115049e9b">STATUS_CHANGED</a>], 0);</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-42-content" class="dyncontent" style="display:none;">
+<div id="dynsection-43-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a77f7d2f87403dd1700146e193e207fb0_icgraph.svg" width="688" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2950,11 +3031,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;                gtk_print_operation_draw_page_finish (print-&gt;<a class="code" href="struct__EvPrintOperationPrint.html#a4d0c33c54f3ed27420ab181482f77158">op</a>);</div>
 <div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-43-content" class="dyncontent" style="display:none;">
+<div id="dynsection-44-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_a9c9903f7e1b8944414800b3e3cee7dc3_icgraph.svg" width="510" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -3007,11 +3088,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;    <a class="code" href="ev-jobs_8c.html#ade2a6d3b8ef0f21e796c59ca8581ad37">ev_job_print_set_cairo</a> (job, NULL);</div>
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-44-content" class="dyncontent" style="display:none;">
+<div id="dynsection-45-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ev-print-operation_8c_abb3ebd3e05a5b80cc6042b91d12cae83_icgraph.svg" width="499" height="122"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -3062,7 +3143,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-print-operation_8c.html">ev-print-operation.c</a></li>
-    <li class="footer">Generated on Wed Feb 4 2015 12:51:38 for Evince by
+    <li class="footer">Generated on Wed Feb 4 2015 14:46:21 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

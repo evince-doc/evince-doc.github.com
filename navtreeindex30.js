@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"struct__DviFontMapEnt.html#a8c20097421fbe04adaf1954ac1aacbad":[5,0,22,1],
 "struct__DviFontMapEnt.html#a97e09ee9acad5d06906e8316a5916c3c":[5,0,22,9],
 "struct__DviFontMapEnt.html#ab1e7f26b8b22a542addc9c838f359e56":[5,0,22,2],
 "struct__DviFontMapEnt.html#abf8e131c0f5f6a60a2764ff104a58bbc":[5,0,22,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvDocument.html":[5,0,68],
 "struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72":[5,0,68,1],
 "struct__EvDocument.html#a5e82b9e76bd9d89602f141c02c8507f2":[5,0,68,0],
-"struct__EvDocumentAnnotationsInterface.html":[5,0,69],
-"struct__EvDocumentAnnotationsInterface.html#a12aae76c0154479c480a474015b2173a":[5,0,69,3]
+"struct__EvDocumentAnnotationsInterface.html":[5,0,69]
 };

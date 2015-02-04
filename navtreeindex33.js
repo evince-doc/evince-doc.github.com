@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"struct__EvLinkPrivate.html#a2f18a5c1dcc6c8a5f03d8a38b24c111c":[5,0,170,1],
 "struct__EvLoadingMessage.html":[5,0,171],
 "struct__EvLoadingMessage.html#a5db34220b3bcd6ee8f0229637efdb218":[5,0,171,0],
 "struct__EvLoadingMessage.html#aff305c7656fde1b21a6853129ba755f6":[5,0,171,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "struct__EvRecentViewPrivate.html#a15f7d8664b2f51d2deef60356a24f941":[5,0,223,1],
 "struct__EvRecentViewPrivate.html#a502eef22ef17a6bb3e32bdf121d703ba":[5,0,223,2],
 "struct__EvRecentViewPrivate.html#a8d05254c7d2ac595987be6de0d3dddf3":[5,0,223,0],
-"struct__EvRecentViewPrivate.html#aa7c3e6d12f79928c2c02b6d049da8851":[5,0,223,3],
-"struct__EvRecentViewPrivate.html#ae6c8a0a12d57ca199fa3527f74bf4280":[5,0,223,4]
+"struct__EvRecentViewPrivate.html#aa7c3e6d12f79928c2c02b6d049da8851":[5,0,223,3]
 };

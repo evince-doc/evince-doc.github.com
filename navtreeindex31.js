@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvDocumentAnnotationsInterface.html#a12aae76c0154479c480a474015b2173a":[5,0,69,3],
 "struct__EvDocumentAnnotationsInterface.html#a253cdc8b01242e0f1ca9bf23023e6268":[5,0,69,5],
 "struct__EvDocumentAnnotationsInterface.html#a6a9cd14313288784fe1dc0e5bcf902d9":[5,0,69,2],
 "struct__EvDocumentAnnotationsInterface.html#a708dff264e2af8e7b82539346611f5a6":[5,0,69,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvFormFieldTextClass.html":[5,0,108],
 "struct__EvFormFieldTextClass.html#a0ebacfa1303f5b2196818f969ae31ee2":[5,0,108,0],
 "struct__EvHeightToPageCache.html":[5,0,109],
-"struct__EvHeightToPageCache.html#a1c1bc0d8054dfab802372bc0984f9f5c":[5,0,109,0],
-"struct__EvHeightToPageCache.html#a3ab2ae3856ea28b7db0d3a5ed6d3ff6d":[5,0,109,1]
+"struct__EvHeightToPageCache.html#a1c1bc0d8054dfab802372bc0984f9f5c":[5,0,109,0]
 };
