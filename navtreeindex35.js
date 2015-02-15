@@ -1,11 +1,13 @@
 var NAVTREEINDEX35 =
 {
+"struct__EvView.html#af5682a326f7914290cdd7f775ea96991":[5,0,264,64],
 "struct__EvView.html#af73aa2a6aac60a16c6b1f5028bb93533":[5,0,264,18],
 "struct__EvView.html#afae115efaf929b387f6b047305efcefb":[5,0,264,55],
 "struct__EvView.html#afb6184ea28c35aef7c9f586567cbd03f":[5,0,264,23],
 "struct__EvView.html#afc7d973e82c9d56691a9c4242ad6fd16":[5,0,264,61],
 "struct__EvView.html#aff39640210b007a8ecb07bde95da266e":[5,0,264,63],
-"struct__EvView.html#aff559faac95d88cf600ac7508551df38":[5,0,264,74],
+"struct__EvView.html#aff559faac95d88cf600ac7508551df38":[5,0,264,76],
+"struct__EvView.html#afffd5c37fd24c3b1eea11c75845820e6":[5,0,264,74],
 "struct__EvViewAccessible.html":[5,0,265],
 "struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44":[5,0,265,1],
 "struct__EvViewAccessible.html#af3230e51a90ef5f9ffd51b09f6d68195":[5,0,265,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "struct__NPNetscapeFuncs.html#a7a1fc0cbc134940b6594dbdfbcc2c2dc":[5,0,291,36],
 "struct__NPNetscapeFuncs.html#a8181873fe5447743593b347ad0687460":[5,0,291,41],
 "struct__NPNetscapeFuncs.html#a86d9a0fc8a59532aca76b188920b253f":[5,0,291,58],
-"struct__NPNetscapeFuncs.html#a8983d6eb42039db521b05657703ee1ce":[5,0,291,4],
-"struct__NPNetscapeFuncs.html#a8d506c5362f327e92164640da92d0e13":[5,0,291,16],
-"struct__NPNetscapeFuncs.html#a960064bd4fdc5cf7115d52cf95584ea9":[5,0,291,8]
+"struct__NPNetscapeFuncs.html#a8983d6eb42039db521b05657703ee1ce":[5,0,291,4]
 };

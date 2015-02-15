@@ -9,7 +9,7 @@ var searchData=
   ['handle_5fmessage',['handle_message',['../djvu-document_8c.html#ac323bb3102c0024c8b193f7393037831',1,'djvu-document.c']]],
   ['handle_5fregister_5fdocument_5fcb',['handle_register_document_cb',['../ev-daemon_8c.html#aee57288130b75c2735e5bf51a145f05f',1,'ev-daemon.c']]],
   ['handle_5funregister_5fdocument_5fcb',['handle_unregister_document_cb',['../ev-daemon_8c.html#a669a24fe4c09f2671b2de1e6bd8d320c',1,'ev-daemon.c']]],
-  ['handleevent',['handleevent',['../struct__NPNetscapeFuncs.html#ab852b906fe8021b1041b289a68679b26',1,'_NPNetscapeFuncs::handleevent()'],['../classEvBrowserPlugin.html#a3ca21fc6d83b90d24d70b1a09b708720',1,'EvBrowserPlugin::handleEvent()']]],
+  ['handleevent',['handleEvent',['../classEvBrowserPlugin.html#a3ca21fc6d83b90d24d70b1a09b708720',1,'EvBrowserPlugin::handleEvent()'],['../struct__NPNetscapeFuncs.html#ab852b906fe8021b1041b289a68679b26',1,'_NPNetscapeFuncs::handleevent()']]],
   ['handler',['handler',['../struct__DviSpecial.html#ac09fac1f9565ceab0fdba4cbab8af47d',1,'_DviSpecial::handler()'],['../special_8c.html#ab7325ca26998ed4516ad54b02ca22c0d',1,'handler():&#160;special.c']]],
   ['has_5fattachments',['has_attachments',['../struct__EvDocumentAttachmentsInterface.html#a13162af285099c5cdd563c15c9a63715',1,'_EvDocumentAttachmentsInterface']]],
   ['has_5fdocument_5flinks',['has_document_links',['../struct__EvDocumentLinksInterface.html#a146245e7fd305a73dcdd229643e5d587',1,'_EvDocumentLinksInterface']]],

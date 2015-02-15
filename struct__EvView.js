@@ -74,5 +74,7 @@ var struct__EvView =
     [ "vscroll_policy", "struct__EvView.html#a950f73c278c9602a1a746591c5775eed", null ],
     [ "window_child_focus", "struct__EvView.html#ad5bb1734f0dbe2d9a9e88a6096274638", null ],
     [ "window_children", "struct__EvView.html#a43d7d7edef088def8542eacf1a96bb58", null ],
+    [ "zoom_center_x", "struct__EvView.html#afffd5c37fd24c3b1eea11c75845820e6", null ],
+    [ "zoom_center_y", "struct__EvView.html#a6ac15cf77c4d750b46fba51fd426d531", null ],
     [ "zoom_gesture", "struct__EvView.html#aff559faac95d88cf600ac7508551df38", null ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"structpkread.html#a94dfb8b81d1082ea263eb7f7644d21f8":[5,0,355,0],
+"structpkread.html#ad87ac126f6f3441ca6065f6cf86d4efe":[5,0,355,1],
 "structsynctex__distances__t.html":[5,0,360],
 "structsynctex__distances__t.html#a4a9740a00d530e6c7b58eabe644a6d77":[5,0,360,1],
 "structsynctex__distances__t.html#ac03b2fb447b841c7cd1eaef882d9bb0e":[5,0,360,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "synctex__parser_8c.html#ada037216861f2ab4c0705d3fd14a8420":[6,0,0,2,2,0,254],
 "synctex__parser_8c.html#ada45f8d6545bb11d74bca1c08fb4d913":[6,0,0,2,2,0,228],
 "synctex__parser_8c.html#ada79e48902c5764d6c4739535ff4a9d7":[6,0,0,2,2,0,56],
-"synctex__parser_8c.html#adac15c233680f0df9ac52b846929a9e7":[6,0,0,2,2,0,265],
-"synctex__parser_8c.html#adad50e5c92ccceb8a6719f1a9a22bd17":[6,0,0,2,2,0,262],
-"synctex__parser_8c.html#adf02c66b9b0db37d3890c7656b649f05":[6,0,0,2,2,0,48]
+"synctex__parser_8c.html#adac15c233680f0df9ac52b846929a9e7":[6,0,0,2,2,0,265]
 };
