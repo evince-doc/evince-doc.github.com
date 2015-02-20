@@ -618,4 +618,141 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="common_8c.html#a7c9d8f5974add4c981a8261294e95e5a">buff_init</a>(&amp;buffer);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="common_8c.html#a268442a36dafcc7fa91734eb18e675ff">buff_add</a>(&amp;buffer, <span class="stringliteral">&quot;@beginspecial &quot;</span>, 0);</div>
-<div class="line"><a name="l00122"></a><span
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">while</span>(*ptr) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *keyname;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">char</span>    *val;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordtype">char</span>    *p;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">while</span>(*ptr == <span class="charliteral">&#39; &#39;</span> || *ptr == <span class="charliteral">&#39;\t&#39;</span>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            ptr++;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        keyname = ptr;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">/* get the whole key=value pair */</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">for</span>(; *ptr &amp;&amp; *ptr != <span class="charliteral">&#39; &#39;</span> &amp;&amp; *ptr != <span class="charliteral">&#39;\t&#39;</span>; ptr++);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">if</span>(*ptr) *ptr++ = 0;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">/* now we shouldn&#39;t touch `ptr&#39; anymore */</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">/* now work on this pair */</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        p = <a class="code" href="common_8h.html#a907b5e1042ad1a6bb4914ecc7d12f55c">strchr</a>(keyname, <span class="charliteral">&#39;=&#39;</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">if</span>(p == NULL)</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            val = NULL;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            *p++ = 0;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;&quot;&#39;</span>) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                val = ++p;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="comment">/* skip until closing quote */</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordflow">while</span>(*p &amp;&amp; *p != <span class="charliteral">&#39;&quot;&#39;</span>)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    p++;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <span class="keywordflow">if</span>(*p != <span class="charliteral">&#39;&quot;&#39;</span>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    <a class="code" href="util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: malformed value for key `%s&#39;\n&quot;</span>),</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                        filename, keyname);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                val = p;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">/* lookup the key */</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">for</span>(i = 0; i &lt; NKEYS; i++)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="common_8h.html#ac3825452b77ab7f4bb77ef5c893db7fc">STRCEQ</a>(keys[i].name, keyname))</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span>(i == NKEYS) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: unknown key `%s&#39; ignored\n&quot;</span>),</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                     filename, keyname);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">if</span>(keys[i].has_arg &amp;&amp; val == NULL) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <a class="code" href="util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: no argument for key `%s&#39;, using defaults\n&quot;</span>),</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                     filename, keyname);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            val = keys[i].value;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!keys[i].has_arg &amp;&amp; val) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <a class="code" href="util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: argument `%s&#39; ignored for key `%s&#39;\n&quot;</span>),</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                     filename, val, keyname);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            val = NULL;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span>(val)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            value[i] = atof(val);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="comment">/* put the argument */</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="common_8c.html#a268442a36dafcc7fa91734eb18e675ff">buff_add</a>(&amp;buffer, val, 0);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="common_8c.html#a268442a36dafcc7fa91734eb18e675ff">buff_add</a>(&amp;buffer, <span class="stringliteral">&quot; @&quot;</span>, 2);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="common_8c.html#a268442a36dafcc7fa91734eb18e675ff">buff_add</a>(&amp;buffer, keyname, 0);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <a class="code" href="common_8c.html#a268442a36dafcc7fa91734eb18e675ff">buff_add</a>(&amp;buffer, <span class="stringliteral">&quot; &quot;</span>, 1);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="comment">/* remember that this option was given */</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        present[i] = 0xff;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="common_8c.html#a268442a36dafcc7fa91734eb18e675ff">buff_add</a>(&amp;buffer, <span class="stringliteral">&quot; @setspecial&quot;</span>, 0);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">/* now compute the bounding box (code comes from dvips) */</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    originx = 0;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    originy = 0;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    hscale = 1;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    vscale = 1;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    hsize = 0;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    vsize = 0;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#accbc671b9a49dadd822cddd2ef6af38f">HSIZE</a>])</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        hsize = value[<a class="code" href="sp-epsf_8c.html#accbc671b9a49dadd822cddd2ef6af38f">HSIZE</a>];</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#adc4aa88206975c031eda44fd773e70a6">VSIZE</a>])</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        vsize = value[<a class="code" href="sp-epsf_8c.html#adc4aa88206975c031eda44fd773e70a6">VSIZE</a>];</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#a6556156866fcaa4a928a8882476002e0">HOFF</a>])</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        originx = value[<a class="code" href="sp-epsf_8c.html#a6556156866fcaa4a928a8882476002e0">HOFF</a>];</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#add7754528eeb00584945e550e03535ca">VOFF</a>])</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        originy = value[<a class="code" href="sp-epsf_8c.html#add7754528eeb00584945e550e03535ca">VOFF</a>];</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#a20c11344ee0b81dc530d07448b17028b">HSCALE</a>])</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        hscale = value[<a class="code" href="sp-epsf_8c.html#a20c11344ee0b81dc530d07448b17028b">HSCALE</a>] / 100.0;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#ac51ccb923f4c4f470f00c1f9aa6e2c2b">VSCALE</a>])</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        vscale = value[<a class="code" href="sp-epsf_8c.html#ac51ccb923f4c4f470f00c1f9aa6e2c2b">VSCALE</a>] / 100.0;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#ae2728699e9d12c7aa8b00a6d23bbe5ef">URX</a>] &amp;&amp; present[<a class="code" href="sp-epsf_8c.html#a8f83188756efa6092294fca26269025c">LLX</a>])</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        hsize = value[<a class="code" href="sp-epsf_8c.html#ae2728699e9d12c7aa8b00a6d23bbe5ef">URX</a>] - value[<a class="code" href="sp-epsf_8c.html#a8f83188756efa6092294fca26269025c">LLX</a>];</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#abaebb23ddefa1ee787fffc4f59a28390">URY</a>] &amp;&amp; present[<a class="code" href="sp-epsf_8c.html#ad239c4e1fbcba2095cd502de3fd18ed0">LLY</a>])</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        vsize = value[<a class="code" href="sp-epsf_8c.html#abaebb23ddefa1ee787fffc4f59a28390">URY</a>] - value[<a class="code" href="sp-epsf_8c.html#ad239c4e1fbcba2095cd502de3fd18ed0">LLY</a>];</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#a761113af46208ad1fbd040908ac75d58">RWI</a>] || present[<a class="code" href="sp-epsf_8c.html#a213607fbdcece1fe72b07f4350452431">RHI</a>]) {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">if</span>(present[<a class="code" href="sp-epsf_8c.html#a761113af46208ad1fbd040908ac75d58">RWI</a>] &amp;&amp; !present[RHI])</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            hscale = vscale = value[<a class="code" href="sp-epsf_8c.html#a761113af46208ad1fbd040908ac75d58">RWI</a>] / (10.0 * hsize);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(present[RHI] &amp;&amp; !present[<a class="code" href="sp-epsf_8c.html#a761113af46208ad1fbd040908ac75d58">RWI</a>])</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            hscale = vscale = value[<a class="code" href="sp-epsf_8c.html#a213607fbdcece1fe72b07f4350452431">RHI</a>] / (10.0 * vsize);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            hscale = value[<a class="code" href="sp-epsf_8c.html#a761113af46208ad1fbd040908ac75d58">RWI</a>] / (10.0 * hsize);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            vscale = value[<a class="code" href="sp-epsf_8c.html#a213607fbdcece1fe72b07f4350452431">RHI</a>] / (10.0 * vsize);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    box-&gt;<a class="code" href="structEpsfBox.html#ad7d26931cedf46d83cd809d269a87962">ox</a> = originx;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    box-&gt;<a class="code" href="structEpsfBox.html#add0dbcf214e9a92acbd7b11d5ff33a43">oy</a> = originy;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    box-&gt;<a class="code" href="structEpsfBox.html#a529b5fadeff82e021653ca3549372fe9">bw</a> = hsize * hscale;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    box-&gt;<a class="code" href="structEpsfBox.html#a045671ebcf269681973c5e09c3584986">bh</a> = vsize * vscale;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    box-&gt;<a class="code" href="structEpsfBox.html#a43fcbef6fc6a7ba99bc63f28ed78715c">angle</a> = value[<a class="code" href="sp-epsf_8c.html#a8a7f485573c16394fc0792a66bd02c7a">ANGLE</a>];</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    *ret = buffer.<a class="code" href="structBuffer.html#aeec1fd4af0ddf6765b0187466d4361b8">data</a>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> filename;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sp-epsf_8c_a410e949e8e8ca8aae1805933a91c4e3c_icgraph.svg" width="291" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="sp-epsf_8c.html">sp-epsf.c</a></li>
+    <li class="footer">Generated on Fri Feb 20 2015 09:34:25 for Evince by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

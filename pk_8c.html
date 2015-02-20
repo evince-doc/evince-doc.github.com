@@ -728,4 +728,736 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <span class="comment">/* copy entire lines */</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <a class="code" href="common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(t, r, bm-&gt;<a class="code" href="structBITMAP.html#a5d80a4cf27b3b9f390d81ea7caf61c1f">stride</a>);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                r = t;</div>
-<div class="line"><a n
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                row++;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            repeat_count = 0;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="comment">/* count first row we drew */</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            row++;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="comment">/* update run count */</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            count -= inrow;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="comment">/* now r points to the beginning of the last row we finished */</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">if</span>(paint)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                mask = ~((<a class="code" href="bitmap_8h.html#a1ffa76a2f167a079c19e47d7fdf05802">BmUnit</a>)0);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                mask = 0;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="comment">/* goto next row */</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            a = (<a class="code" href="bitmap_8h.html#a1ffa76a2f167a079c19e47d7fdf05802">BmUnit</a> *)(r + bm-&gt;<a class="code" href="structBITMAP.html#a5d80a4cf27b3b9f390d81ea7caf61c1f">stride</a>);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="comment">/* deal with entirely with/black rows */</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordflow">while</span>(count &gt;= w) {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <span class="comment">/* count number of atoms in a row */</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                i = <a class="code" href="pk_8c.html#a40383559ec63c966285f8c983e039eeb">ROUND</a>(w, <a class="code" href="bitmap_8h.html#ae7685877d8718ffc890ca2b87266ecc0">BITMAP_BITS</a>);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="keywordflow">while</span>(i-- &gt; 0)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                    *a++ = mask;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                count -= w;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                row++;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            inrow = w;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span>(count &gt; 0)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <a class="code" href="bitmap_8c.html#a3741142eed461d40f0eefe1b13690ead">bitmap_set_row</a>(bm, row, w - inrow, count, paint);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        inrow -= count;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        paint = !paint;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">if</span>(row != h || inrow != w) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Bad PK file: More bits than required\n&quot;</span>));</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <a class="code" href="bitmap_8c.html#a80fbc7d7c257d612207e54d647fa9d4a">bitmap_destroy</a>(bm);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">return</span> bm;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="pk_8c_a22ec56dca8d1638aba9d03de00c172b0_icgraph.svg" width="403" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a15fe44d1374b28b8308373f9285d7448"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int pk_font_get_glyph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mdvi_8h.html#a3990f59d2e42a5fdd1ee1f009d754f99">DviParams</a> *&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="mdvi_8h.html#a69f2a520bfad2e76f36f6ca7f98fc337">DviFont</a> *&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00544">544</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;{</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <a class="code" href="struct__DviFontChar.html">DviFontChar</a> *ch;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">if</span>((ch = <a class="code" href="mdvi_8h.html#a81a9a7d6197953f35cc43ef37809b5e6">FONTCHAR</a>(font, code)) == NULL)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    </div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordflow">if</span>(ch-&gt;<a class="code" href="struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff">offset</a> == 0)</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <a class="code" href="common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code" href="common_8h.html#a96fc5b07e07265765ce20e9c2b19ad36">DBG_GLYPHS</a>, <span class="stringliteral">&quot;(pk) loading glyph for character %d (%dx%d) in font `%s&#39;\n&quot;</span>,</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        code, ch-&gt;<a class="code" href="struct__DviFontChar.html#aa8b9a5ffa7bf026e72c94b6dfba6b825">width</a>, ch-&gt;<a class="code" href="struct__DviFontChar.html#aba3391b177884f3d1f0574b52a2774ec">height</a>, font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>));</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">if</span>(font-&gt;<a class="code" href="struct__DviFont.html#aca6eace6b1df935146b75f3f2e77aa7c">in</a> == NULL &amp;&amp; <a class="code" href="font_8c.html#a23f8f1fa4f09a46b4600cab6097d3c44">font_reopen</a>(font) &lt; 0)</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">if</span>(!ch-&gt;<a class="code" href="struct__DviFontChar.html#aa8b9a5ffa7bf026e72c94b6dfba6b825">width</a> || !ch-&gt;<a class="code" href="struct__DviFontChar.html#aba3391b177884f3d1f0574b52a2774ec">height</a>) {</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <span class="comment">/* this happens for ` &#39; (ASCII 32) in some fonts */</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#ab71a1f2f66995d292ab6cc3a5278aa97">x</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#afd4df703ad4a184c9e109c098f74a6fd">x</a>;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#aba038ef683f62f8691c6ab1082ca4b5e">y</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#ac79e872ae0cd7ebacac2a59c5fa106b1">y</a>;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#a642daa10b01dd9d14e3f9c653a1e4235">w</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#aa8b9a5ffa7bf026e72c94b6dfba6b825">width</a>;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6">h</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#aba3391b177884f3d1f0574b52a2774ec">height</a>;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a> = NULL;</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="keywordflow">return</span> 0; </div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    }</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keywordflow">if</span>(fseek(font-&gt;<a class="code" href="struct__DviFont.html#aca6eace6b1df935146b75f3f2e77aa7c">in</a>, ch-&gt;<a class="code" href="struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff">offset</a>, SEEK_SET) == -1)</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a> = <a class="code" href="pk_8c.html#a701440801d8af9e90c2dc1e6c1d98b0c">get_char</a>(font-&gt;<a class="code" href="struct__DviFont.html#aca6eace6b1df935146b75f3f2e77aa7c">in</a>, </div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#aa8b9a5ffa7bf026e72c94b6dfba6b825">width</a>, ch-&gt;<a class="code" href="struct__DviFontChar.html#aba3391b177884f3d1f0574b52a2774ec">height</a>, ch-&gt;<a class="code" href="struct__DviFontChar.html#a3c8ed6e7ac9d896fdb92a4b4300dbf08">flags</a>);</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keywordflow">if</span>(ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a>) {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="comment">/* restore original settings */</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#ab71a1f2f66995d292ab6cc3a5278aa97">x</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#afd4df703ad4a184c9e109c098f74a6fd">x</a>;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#aba038ef683f62f8691c6ab1082ca4b5e">y</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#ac79e872ae0cd7ebacac2a59c5fa106b1">y</a>;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#a642daa10b01dd9d14e3f9c653a1e4235">w</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#aa8b9a5ffa7bf026e72c94b6dfba6b825">width</a>;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        ch-&gt;<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6">h</a> = ch-&gt;<a class="code" href="struct__DviFontChar.html#aba3391b177884f3d1f0574b52a2774ec">height</a>;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    ch-&gt;<a class="code" href="struct__DviFontChar.html#a7916bb23cc180158b960e4bdcf1fcb3b">loaded</a> = 1;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2f9bbb636a1b7502fdf1bfcc60332ba3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int pk_get_nyb </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpkread.html">pkread</a> *&#160;</td>
+          <td class="paramname"><em>pk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00138">138</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">unsigned</span> t;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">int</span> nb;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">char</span>    c;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    t = c = pk-&gt;<a class="code" href="structpkread.html#a94dfb8b81d1082ea263eb7f7644d21f8">currbyte</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    nb = pk-&gt;<a class="code" href="structpkread.html#a8420ead44cb240069f2c38146a77d2ab">nybpos</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">switch</span>(nb) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        c = pk-&gt;<a class="code" href="structpkread.html#a94dfb8b81d1082ea263eb7f7644d21f8">currbyte</a> = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        t = (c &gt;&gt; 4);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        t = c;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    pk-&gt;<a class="code" href="structpkread.html#a8420ead44cb240069f2c38146a77d2ab">nybpos</a> = !nb;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">return</span> (t &amp; 0xf);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="pk_8c_a2f9bbb636a1b7502fdf1bfcc60332ba3_icgraph.svg" width="710" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb6df923ec4bb5eee9beacbdccf2d933"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int pk_load_font </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mdvi_8h.html#a3990f59d2e42a5fdd1ee1f009d754f99">DviParams</a> *&#160;</td>
+          <td class="paramname"><em>unused</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="mdvi_8h.html#a69f2a520bfad2e76f36f6ca7f98fc337">DviFont</a> *&#160;</td>
+          <td class="paramname"><em>font</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00327">327</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">int</span> flag_byte;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">int</span> hic, maxch;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    Int32   checksum;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    FILE    *p;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#ifndef NODEBUG</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">char</span>    s[256];</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">long</span>    alpha, beta, z;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> loc;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a> = <a class="code" href="common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code" href="struct__DviFontChar.html">DviFontChar</a>, 256);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    p = font-&gt;<a class="code" href="struct__DviFont.html#aca6eace6b1df935146b75f3f2e77aa7c">in</a>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <a class="code" href="common_8h.html#acac48d904f71736160c602d4fb906443">memzero</a>(font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>, 256 * <span class="keyword">sizeof</span>(<a class="code" href="struct__DviFontChar.html">DviFontChar</a>));</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">for</span>(i = 0; i &lt; 256; i++)</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[i].<a class="code" href="struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff">offset</a> = 0;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">/* check the preamble */</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    loc = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p); hic = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">if</span>(loc != <a class="code" href="pk_8c.html#a5d2baae585f7f60e50b4dffab482fcd9">PK_PRE</a> || hic != <a class="code" href="pk_8c.html#ab646d7275e3436677dad57b30c071f53">PK_ID</a>)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">goto</span> badpk;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    i = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#ifndef NODEBUG</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span>(loc = 0; loc &lt; i; loc++)</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        s[loc] = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    s[loc] = 0;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code" href="common_8h.html#a718ee717dc0298e3e2c58509ca8f1684">DBG_FONTS</a>, <span class="stringliteral">&quot;(pk) %s: %s\n&quot;</span>, font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>, s));</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor"></span>    fseek(in, (<span class="keywordtype">long</span>)i, SEEK_CUR);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor"></span>    <span class="comment">/* get the design size */</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    font-&gt;<a class="code" href="struct__DviFont.html#a09ce4702cd098c3abb121c77c37e2f10">design</a> = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">/* get the checksum */</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    checksum = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">if</span>(checksum &amp;&amp; font-&gt;<a class="code" href="struct__DviFont.html#a47feda7ada625d042192be0946b3d294">checksum</a> &amp;&amp; font-&gt;<a class="code" href="struct__DviFont.html#a47feda7ada625d042192be0946b3d294">checksum</a> != checksum) {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <a class="code" href="util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: checksum mismatch (expected %u, got %u)\n&quot;</span>),</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                 font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>, font-&gt;<a class="code" href="struct__DviFont.html#a47feda7ada625d042192be0946b3d294">checksum</a>, checksum);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!font-&gt;<a class="code" href="struct__DviFont.html#a47feda7ada625d042192be0946b3d294">checksum</a>)</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        font-&gt;<a class="code" href="struct__DviFont.html#a47feda7ada625d042192be0946b3d294">checksum</a> = checksum;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">/* skip pixel per point ratios */</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">if</span>(feof(p))</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keywordflow">goto</span> badpk; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">/* now start reading the font */</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    loc = 256; hic = -1; maxch = 256;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="comment">/* initialize alpha and beta for TFM width computation */</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <a class="code" href="common_8h.html#abc7ce8ecb19249a370682beeb47995ea">TFMPREPARE</a>(font-&gt;<a class="code" href="struct__DviFont.html#a3ac91d8ea508e81013e245ee26920d93">scale</a>, z, alpha, beta);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">while</span>((flag_byte = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p)) != <a class="code" href="pk_8c.html#a98929e28205fb5513dc9633c5cdd0671">PK_POST</a>) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span>(feof(p))</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">if</span>(flag_byte &gt;= <a class="code" href="pk_8c.html#acf1cf2774b85afa5226d96b553b05eb6">PK_CMD_START</a>) {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordflow">switch</span>(flag_byte) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#a1e087cad49cd2c37c7b095d77558641a">PK_X1</a>:</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#ab67d175d40cd5873362b604312c47815">PK_X2</a>:</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#aa5067cb856a0f0d8c66c06a58bd214f3">PK_X3</a>:</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#a90384ba63457988dbdfc0ded6ce56ddb">PK_X4</a>: {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#ifndef NODEBUG</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor"></span>                <span class="keywordtype">char</span>    *t;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                <span class="keywordtype">int</span> n;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                i = <a class="code" href="common_8c.html#af37ba60dbe38330486f6f1b75e3744d9">fugetn</a>(p, flag_byte - <a class="code" href="pk_8c.html#a1e087cad49cd2c37c7b095d77558641a">PK_X1</a> + 1);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                <span class="keywordflow">if</span>(i &lt; 256)</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                    t = &amp;s[0];</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                    t = <a class="code" href="util_8c.html#a8dabe6220971562f98f90c6e028b173d">mdvi_malloc</a>(i + 1);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                <span class="keywordflow">for</span>(n = 0; n &lt; i; n++)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                    t[n] = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                t[n] = 0;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                <a class="code" href="common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code" href="common_8h.html#acfdc81d5a0eb745fec9b99ae50083ebd">DBG_SPECIAL</a>, <span class="stringliteral">&quot;(pk) %s: Special \&quot;%s\&quot;\n&quot;</span>,</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>, t));</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                <span class="keywordflow">if</span>(t != &amp;s[0])</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                    <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(t);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor"></span>                i = <a class="code" href="common_8c.html#af37ba60dbe38330486f6f1b75e3744d9">fugetn</a>(p, flag_byte - <a class="code" href="pk_8c.html#a1e087cad49cd2c37c7b095d77558641a">PK_X1</a> + 1);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                <span class="keywordflow">while</span>(i-- &gt; 0)</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                    <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            }</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#a17141f16b62819791e983b66d7a6112c">PK_Y</a>:</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                i = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                <a class="code" href="common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code" href="common_8h.html#acfdc81d5a0eb745fec9b99ae50083ebd">DBG_SPECIAL</a>, <span class="stringliteral">&quot;(pk) %s: MF special %u\n&quot;</span>,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                    font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>, (<span class="keywordtype">unsigned</span>)i));</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#a98929e28205fb5513dc9633c5cdd0671">PK_POST</a>:</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#a23e20214b9a9b813e42ef1dd8e15ca17">PK_NOOP</a>:</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="pk_8c.html#a5d2baae585f7f60e50b4dffab482fcd9">PK_PRE</a>:</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                <a class="code" href="util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: unexpected preamble\n&quot;</span>), font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                <span class="keywordflow">goto</span> error;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            <span class="keywordtype">int</span> pl;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            <span class="keywordtype">int</span> cc;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            <span class="keywordtype">int</span> w, h;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            <span class="keywordtype">int</span> x, y;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            <span class="keywordtype">int</span> offset;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            <span class="keywordtype">long</span>    tfm;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            <span class="keywordflow">switch</span>(flag_byte &amp; 0x7) {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            <span class="keywordflow">case</span> 7:</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                pl = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                cc = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                offset = ftell(p) + pl;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                tfm = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                <a class="code" href="common_8h.html#acfcbf59a59c108609325eba7a7adc41f">fsget4</a>(p); <span class="comment">/* skip dx */</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                <a class="code" href="common_8h.html#acfcbf59a59c108609325eba7a7adc41f">fsget4</a>(p); <span class="comment">/* skip dy */</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                w  = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                h  = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p); </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                x  = <a class="code" href="common_8h.html#acfcbf59a59c108609325eba7a7adc41f">fsget4</a>(p);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                y  = <a class="code" href="common_8h.html#acfcbf59a59c108609325eba7a7adc41f">fsget4</a>(p);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            <span class="keywordflow">case</span> 6:             </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                pl = (flag_byte % 4) * 65536 + <a class="code" href="common_8h.html#a6d95e4479ad12ae002ab1b4036918504">fuget2</a>(p);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                cc = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                offset = ftell(p) + pl;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                tfm = <a class="code" href="common_8h.html#a4a4c82da3ef4a73fc9744ef9bafa822c">fuget3</a>(p);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <a class="code" href="common_8h.html#a4a7e4cc2e1a5eb4968583fb79019d7ea">fsget2</a>(p); <span class="comment">/* skip dx */</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                           <span class="comment">/* dy assumed 0 */</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                w = <a class="code" href="common_8h.html#a6d95e4479ad12ae002ab1b4036918504">fuget2</a>(p);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                h = <a class="code" href="common_8h.html#a6d95e4479ad12ae002ab1b4036918504">fuget2</a>(p);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                x = <a class="code" href="common_8h.html#a4a7e4cc2e1a5eb4968583fb79019d7ea">fsget2</a>(p);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                y = <a class="code" href="common_8h.html#a4a7e4cc2e1a5eb4968583fb79019d7ea">fsget2</a>(p);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                pl = (flag_byte % 4) * 256 + <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                cc = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                offset = ftell(p) + pl;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                tfm = <a class="code" href="common_8h.html#a4a4c82da3ef4a73fc9744ef9bafa822c">fuget3</a>(p);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                <a class="code" href="common_8h.html#a6d959f8c282f3618ebbef8d902caf340">fsget1</a>(p); <span class="comment">/* skip dx */</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                           <span class="comment">/* dy assumed 0 */</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                w = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                h = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                x = <a class="code" href="common_8h.html#a6d959f8c282f3618ebbef8d902caf340">fsget1</a>(p);</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                y = <a class="code" href="common_8h.html#a6d959f8c282f3618ebbef8d902caf340">fsget1</a>(p);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            }</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="keywordflow">if</span>(feof(p))</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            <span class="comment">/* Although the PK format support bigger char codes,</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment">                         * XeTeX and other extended TeX engines support charcodes up to</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">                         * 65536, while normal TeX engine supports only charcode up to 255.*/</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            <span class="keywordflow">if</span> (cc &lt; 0 || cc &gt; 65536) {</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                <a class="code" href="util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a> (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: unexpected charcode (%d)\n&quot;</span>),</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                        font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>,cc);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                <span class="keywordflow">goto</span> error;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            } </div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            <span class="keywordflow">if</span>(cc &lt; loc)</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                loc = cc;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            <span class="keywordflow">if</span>(cc &gt; hic)</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                hic = cc;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            <span class="keywordflow">if</span>(cc &gt; maxch) {</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a> = <a class="code" href="common_8h.html#a697791a48690414944aa62d64f305fba">xresize</a>(font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>, </div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                    <a class="code" href="struct__DviFontChar.html">DviFontChar</a>, cc + 16);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                <span class="keywordflow">for</span>(i = maxch; i &lt; cc + 16; i++)</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                    font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[i].<a class="code" href="struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff">offset</a> = 0;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                maxch = cc + 16;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            }</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#a5c33d1165b6fdebe5edd5a41a34214ce">code</a> = cc;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#a3c8ed6e7ac9d896fdb92a4b4300dbf08">flags</a> = flag_byte;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#a2c288b6bc14a2fcc402f7327148b6bff">offset</a> = ftell(p);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#aa8b9a5ffa7bf026e72c94b6dfba6b825">width</a> = w;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#aba3391b177884f3d1f0574b52a2774ec">height</a> = h;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a> = NULL;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#afd4df703ad4a184c9e109c098f74a6fd">x</a> = x;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#ac79e872ae0cd7ebacac2a59c5fa106b1">y</a> = y;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#ab71a1f2f66995d292ab6cc3a5278aa97">x</a> = x;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#aba038ef683f62f8691c6ab1082ca4b5e">y</a> = y;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#a642daa10b01dd9d14e3f9c653a1e4235">w</a> = w;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996">glyph</a>.<a class="code" href="struct__DviGlyph.html#af837aa85c84dd092615a584dcafd79e6">h</a> = h;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#a3033510cc3827364c66eeafc8cc772ee">grey</a>.<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a> = NULL;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#a5d2007e5810ba14a642f3c53d66fe369">shrunk</a>.<a class="code" href="struct__DviGlyph.html#a72202dc8ad0bfd1bf75846b7b31c2686">data</a> = NULL;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#a6ac753dd3afffdc13b9dfd2550d263ca">tfmwidth</a> = <a class="code" href="common_8h.html#a563cbd0fff070fc90d243c7d495bccbe">TFMSCALE</a>(z, tfm, alpha, beta);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;            font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>[cc].<a class="code" href="struct__DviFontChar.html#a7916bb23cc180158b960e4bdcf1fcb3b">loaded</a> = 0;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            fseek(p, (<span class="keywordtype">long</span>)offset, SEEK_SET);</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        }</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">if</span>(flag_byte != <a class="code" href="pk_8c.html#a98929e28205fb5513dc9633c5cdd0671">PK_POST</a>) {</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <a class="code" href="util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: unexpected end of file (no postamble)\n&quot;</span>),</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;               font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordflow">goto</span> error;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keywordflow">while</span>((flag_byte = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p)) != EOF) {</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">if</span>(flag_byte != <a class="code" href="pk_8c.html#a23e20214b9a9b813e42ef1dd8e15ca17">PK_NOOP</a>) {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <a class="code" href="util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;invalid PK file! (junk in postamble)\n&quot;</span>));</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            <span class="keywordflow">goto</span> error;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        }</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    }</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="comment">/* resize font char data */</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keywordflow">if</span>(loc &gt; 0 || hic &lt; maxch-1) {</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <a class="code" href="common_8h.html#aebdcbf007a7755881de8c7503e296603">memmove</a>(font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>, font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a> + loc, </div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            (hic - loc + 1) * <span class="keyword">sizeof</span>(<a class="code" href="struct__DviFontChar.html">DviFontChar</a>));</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a> = <a class="code" href="common_8h.html#a697791a48690414944aa62d64f305fba">xresize</a>(font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>,</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;            <a class="code" href="struct__DviFontChar.html">DviFontChar</a>, hic - loc + 1);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    }</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    font-&gt;<a class="code" href="struct__DviFont.html#a7cffb6ea0d3009cddac2066753532505">loc</a> = loc;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    font-&gt;<a class="code" href="struct__DviFont.html#a321e8128fa0b603d2b356b8d069c1c28">hic</a> = hic;        </div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;badpk:</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <a class="code" href="util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: File corrupted, or not a PK file\n&quot;</span>), font-&gt;<a class="code" href="struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437">fontname</a>);</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;error:</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a>);</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    font-&gt;<a class="code" href="struct__DviFont.html#a97cbc0a7c5332e0f41d9bdcfe738e1e4">chars</a> = NULL;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    font-&gt;<a class="code" href="struct__DviFont.html#a7cffb6ea0d3009cddac2066753532505">loc</a> = font-&gt;<a class="code" href="struct__DviFont.html#a321e8128fa0b603d2b356b8d069c1c28">hic</a> = 0;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aadb30623ea9078c01619338c415861c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* pk_lookup </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *&#160;</td>
+          <td class="paramname"><em>hdpi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *&#160;</td>
+          <td class="paramname"><em>vdpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00098">98</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    kpse_glyph_file_type type;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">char</span> *filename;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="pk_8c.html#a574338b075fc3db982432f13ed965259">pk_auto_generate</a> == 0) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        kpse_set_program_enabled(kpse_pk_format, 1, kpse_src_cmdline);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="pk_8c.html#a574338b075fc3db982432f13ed965259">pk_auto_generate</a> = 1;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    filename = kpse_find_glyph(<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <a class="code" href="common_8h.html#a4886a8f966a69949cefc46a6a3468006">Max</a>(*hdpi, *vdpi),</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        kpse_pk_format, &amp;type);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span>(filename &amp;&amp; type.source == kpse_glyph_source_fallback) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(filename);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        filename = NULL;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(filename) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        *hdpi = *vdpi = type.dpi;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> filename;    </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a55c82f3398af021217219725125109a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* pk_lookupn </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *&#160;</td>
+          <td class="paramname"><em>hdpi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sysdeps_8h.html#a918d39ae34d3ec6e05d65d2c9cb0a91c">Ushort</a> *&#160;</td>
+          <td class="paramname"><em>vdpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00118">118</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    kpse_glyph_file_type type;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">char</span> *filename;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="pk_8c.html#a574338b075fc3db982432f13ed965259">pk_auto_generate</a>) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        kpse_set_program_enabled(kpse_pk_format, 0, kpse_src_cmdline);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="pk_8c.html#a574338b075fc3db982432f13ed965259">pk_auto_generate</a> = 0;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    filename = kpse_find_glyph(<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>, <a class="code" href="common_8h.html#a4886a8f966a69949cefc46a6a3468006">Max</a>(*hdpi, *vdpi),</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        kpse_pk_format, &amp;type);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span>(filename &amp;&amp; type.source == kpse_glyph_source_fallback) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(filename);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        filename = NULL;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(filename) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        *hdpi = *vdpi = type.dpi;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> filename;    </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a20e8279dd4a18b5d23c67b87b31dbbfe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int pk_packed_num </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpkread.html">pkread</a> *&#160;</td>
+          <td class="paramname"><em>pkr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>repeat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00164">164</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">int</span> i, j;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">int</span> dyn_f = pkr-&gt;<a class="code" href="structpkread.html#ad87ac126f6f3441ca6065f6cf86d4efe">dyn_f</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    i = <a class="code" href="pk_8c.html#a2f9bbb636a1b7502fdf1bfcc60332ba3">pk_get_nyb</a>(p, pkr);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span>(i == 0) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            j = <a class="code" href="pk_8c.html#a2f9bbb636a1b7502fdf1bfcc60332ba3">pk_get_nyb</a>(p, pkr);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            i++;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        } <span class="keywordflow">while</span>(j == 0);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">while</span>(i-- &gt; 0)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            j = (j &lt;&lt; 4) + <a class="code" href="pk_8c.html#a2f9bbb636a1b7502fdf1bfcc60332ba3">pk_get_nyb</a>(p, pkr);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> (j - 15 + ((13 - dyn_f) &lt;&lt; 4) + </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            dyn_f);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(i &lt;= dyn_f)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(i &lt; 14)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> ((i - dyn_f - 1) &lt;&lt; 4) + </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <a class="code" href="pk_8c.html#a2f9bbb636a1b7502fdf1bfcc60332ba3">pk_get_nyb</a>(p, pkr) + dyn_f + 1;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        *repeat = 1;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">if</span>(i == 14)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            *repeat = <a class="code" href="pk_8c.html#a20e8279dd4a18b5d23c67b87b31dbbfe">pk_packed_num</a>(p, pkr, repeat);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="pk_8c.html#a20e8279dd4a18b5d23c67b87b31dbbfe">pk_packed_num</a>(p, pkr, repeat);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="pk_8c_a20e8279dd4a18b5d23c67b87b31dbbfe_icgraph.svg" width="571" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a574338b075fc3db982432f13ed965259"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pk_auto_generate = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00058">58</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aedd787cbe8e44bccd07c1b131dc73f10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mdvi_8h.html#a6ab504be3d21e14e6fe79666e5d40a60">DviFontInfo</a> pk_font_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="stringliteral">&quot;PK&quot;</span>,</div>
+<div class="line">    0, </div>
+<div class="line">    <a class="code" href="pk_8c.html#abb6df923ec4bb5eee9beacbdccf2d933">pk_load_font</a>,</div>
+<div class="line">    <a class="code" href="pk_8c.html#a15fe44d1374b28b8308373f9285d7448">pk_font_get_glyph</a>,</div>
+<div class="line">    <a class="code" href="bitmap_8c.html#a09984f40dd7b49c36e638a78e7127df4">mdvi_shrink_glyph</a>,</div>
+<div class="line">    <a class="code" href="bitmap_8c.html#ac2ec32ebbb9850875c83d3a19f567426">mdvi_shrink_glyph_grey</a>,</div>
+<div class="line">    NULL,   </div>
+<div class="line">    NULL,   </div>
+<div class="line">    <a class="code" href="pk_8c.html#aadb30623ea9078c01619338c415861c1">pk_lookup</a>,  </div>
+<div class="line">    kpse_pk_format,</div>
+<div class="line">    NULL</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00070">70</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa48eaec4f5f599a664f913139f47d55d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mdvi_8h.html#a6ab504be3d21e14e6fe79666e5d40a60">DviFontInfo</a> pkn_font_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="stringliteral">&quot;PKN&quot;</span>,</div>
+<div class="line">    0, </div>
+<div class="line">    <a class="code" href="pk_8c.html#abb6df923ec4bb5eee9beacbdccf2d933">pk_load_font</a>,</div>
+<div class="line">    <a class="code" href="pk_8c.html#a15fe44d1374b28b8308373f9285d7448">pk_font_get_glyph</a>,</div>
+<div class="line">    <a class="code" href="bitmap_8c.html#a09984f40dd7b49c36e638a78e7127df4">mdvi_shrink_glyph</a>,</div>
+<div class="line">    <a class="code" href="bitmap_8c.html#ac2ec32ebbb9850875c83d3a19f567426">mdvi_shrink_glyph_grey</a>,</div>
+<div class="line">    NULL,   </div>
+<div class="line">    NULL,   </div>
+<div class="line">    <a class="code" href="pk_8c.html#a55c82f3398af021217219725125109a3">pk_lookupn</a>, </div>
+<div class="line">    kpse_pk_format,</div>
+<div class="line">    NULL</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="pk_8c_source.html#l00084">84</a> of file <a class="el" href="pk_8c_source.html">pk.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="pk_8c.html">pk.c</a></li>
+    <li class="footer">Generated on Fri Feb 20 2015 09:34:25 for Evince by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

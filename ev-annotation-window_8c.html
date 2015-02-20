@@ -1692,4 +1692,274 @@ Variables</h2></td></tr>
 <a class="anchor" id="af62d5ffc6f871ffba653cab9bd2255c4"></a>
 <div class="memitem">
 <div class="memproto">
-<table 
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ev_annotation_window_sync_contents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-annotation-window_8c_source.html#l00106">106</a> of file <a class="el" href="ev-annotation-window_8c_source.html">ev-annotation-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    gchar         *contents;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    GtkTextIter    start, end;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    GtkTextBuffer *buffer;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>  *annot = <a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>-&gt;annotation;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>-&gt;text_view));</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    gtk_text_buffer_get_bounds (buffer, &amp;start, &amp;end);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    contents = gtk_text_buffer_get_text (buffer, &amp;start, &amp;end, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="ev-annotation_8c.html#ab6d531903349d6b01191778e67525816">ev_annotation_set_contents</a> (annot, contents);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    g_free (contents);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation-window_8c_af62d5ffc6f871ffba653cab9bd2255c4_icgraph.svg" width="1451" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a865d3cd3dfa9252cfdbe4f6daa15d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_annotation_window_ungrab_focus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-annotation-window_8c_source.html#l00667">667</a> of file <a class="el" href="ev-annotation-window_8c_source.html">ev-annotation-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;{</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    g_return_if_fail (<a class="code" href="ev-annotation-window_8h.html#a7d53285f2b2d3c9e420acf44fb9bf036">EV_IS_ANNOTATION_WINDOW</a> (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>));</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keywordflow">if</span> (gtk_widget_has_focus (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>-&gt;text_view)) {</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        <a class="code" href="ev-annotation-window_8c.html#ab1f0de9c90c80722db3907a49d6356b4">send_focus_change</a> (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>-&gt;text_view, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    }</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <a class="code" href="ev-annotation-window_8c.html#af62d5ffc6f871ffba653cab9bd2255c4">ev_annotation_window_sync_contents</a> (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation-window_8c_a2a865d3cd3dfa9252cfdbe4f6daa15d9_icgraph.svg" width="1246" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af92f40031a52f8beae1734b57ae698f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gdouble get_screen_dpi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-annotation-window_8h.html#aa294cf216032dd668fea8e1d600580a4">EvAnnotationWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-annotation-window_8c_source.html#l00097">97</a> of file <a class="el" href="ev-annotation-window_8c_source.html">ev-annotation-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    GdkScreen *screen;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    screen = gtk_window_get_screen (GTK_WINDOW (<a class="code" href="ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387">window</a>));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document-misc_8c.html#a12cdffc37d69bc91af6cd4d9304f6731">ev_document_misc_get_screen_dpi</a> (screen);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation-window_8c_af92f40031a52f8beae1734b57ae698f1_icgraph.svg" width="534" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1f0de9c90c80722db3907a49d6356b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_focus_change </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gboolean&#160;</td>
+          <td class="paramname"><em>in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-annotation-window_8c_source.html#l00080">80</a> of file <a class="el" href="ev-annotation-window_8c_source.html">ev-annotation-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    GdkEvent *fevent = gdk_event_new (GDK_FOCUS_CHANGE);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    fevent-&gt;focus_change.type = GDK_FOCUS_CHANGE;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    fevent-&gt;focus_change.window = gtk_widget_get_window (widget);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    fevent-&gt;focus_change.in = in;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (fevent-&gt;focus_change.window)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        g_object_ref (fevent-&gt;focus_change.window);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    gtk_widget_send_focus_change (widget, fevent);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    gdk_event_free (fevent);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation-window_8c_ab1f0de9c90c80722db3907a49d6356b4_icgraph.svg" width="1435" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ada4548ce36b31e867f1ff9104bd7befb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void text_view_state_flags_changed </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkStateFlags&#160;</td>
+          <td class="paramname"><em>previous_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-annotation-window_8c_source.html#l00262">262</a> of file <a class="el" href="ev-annotation-window_8c_source.html">ev-annotation-window.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    GtkStateFlags current_flags = gtk_widget_get_state_flags (widget);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span> (current_flags &amp; GTK_STATE_FLAG_BACKDROP)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (widget), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-annotation-window_8c_ada4548ce36b31e867f1ff9104bd7befb_icgraph.svg" width="390" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a0a1f3b4115443be584fb31149d06f84c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">guint signals[<a class="el" href="ev-sidebar-links_8c.html#a4b4213b1f9d54da7c7e36bde32fc7c80a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-annotation-window_8c_source.html#l00074">74</a> of file <a class="el" href="ev-annotation-window_8c_source.html">ev-annotation-window.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-annotation-window_8c.html">ev-annotation-window.c</a></li>
+    <li class="footer">Generated on Fri Feb 20 2015 09:34:28 for Evince by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>
