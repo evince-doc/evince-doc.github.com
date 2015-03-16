@@ -98,6 +98,7 @@ var searchData=
   ['merge_5fselection_5fregion',['merge_selection_region',['../ev-view_8c.html#a583b0e25a46bc171dab799d858049006',1,'ev-view.c']]],
   ['metadata_5fset_5fcallback',['metadata_set_callback',['../ev-metadata_8c.html#ad5f2ad120f91c10d32ac78f2d8270ab9',1,'ev-metadata.c']]],
   ['model',['model',['../classEvBrowserPlugin.html#a8b6f815c81de85b07d2ef10acaa43709',1,'EvBrowserPlugin']]],
+  ['model_5fpage_5fchanged',['model_page_changed',['../ev-previewer-window_8c.html#a2a21582efd54ae51dc189f1481754179',1,'ev-previewer-window.c']]],
   ['mount_5fvolume_5fready_5fcb',['mount_volume_ready_cb',['../ev-window_8c.html#af5d90a7a45888f5b2038d4c2bdbbc2fa',1,'ev-window.c']]],
   ['move_5fdown',['move_down',['../dviread_8c.html#ab5e58133614fd972ab64675879b892be',1,'dviread.c']]],
   ['move_5fhorizontal',['move_horizontal',['../dviread_8c.html#abc2079efe3ddbfdbf86e4578de3cff00',1,'dviread.c']]],

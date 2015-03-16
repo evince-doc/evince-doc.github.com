@@ -27,6 +27,7 @@ var ev_previewer_window_8c =
     [ "ev_previewer_window_zoom_in", "ev-previewer-window_8c.html#a51f4f05ad0ddac717ef85c1ee973b966", null ],
     [ "ev_previewer_window_zoom_out", "ev-previewer-window_8c.html#a4368fad3baee0bcd5d1c5da9ca9e8bca", null ],
     [ "get_screen_dpi", "ev-previewer-window_8c.html#a6909209a02cc20fb567b0549858f4e2f", null ],
+    [ "model_page_changed", "ev-previewer-window_8c.html#a2a21582efd54ae51dc189f1481754179", null ],
     [ "view_focus_changed", "ev-previewer-window_8c.html#a8647a6f2915f6a3f0ef303a38ea9db2f", null ],
     [ "view_sizing_mode_changed", "ev-previewer-window_8c.html#a92dce66c75c80a9b04da8158cdbd1072", null ],
     [ "accel_entries", "ev-previewer-window_8c.html#afbc208b1b879ed1551663c1c63f516da", null ],
