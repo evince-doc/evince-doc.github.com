@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['whole_5fwords_5fonly_5ftoggled_5fcallback',['whole_words_only_toggled_callback',['../eggfindbar_8c.html#a844373dd6d08fd707eca0436d69ef6e7',1,'eggfindbar.c']]],
+  ['whole_5fwords_5fonly_5ftoggled_5fcb',['whole_words_only_toggled_cb',['../ev-search-box_8c.html#a1c295061c8e8b7cf8cc1bc612b474d71',1,'ev-search-box.c']]],
   ['window_5fconfigure_5fevent_5fcb',['window_configure_event_cb',['../ev-window_8c.html#a4e0983c661cce969e373c268c121751d',1,'ev-window.c']]],
   ['window_5fopen_5ffile_5fcopy_5fprogress_5fcb',['window_open_file_copy_progress_cb',['../ev-window_8c.html#a6998ef0067464a3c70cd7435515d646d',1,'ev-window.c']]],
   ['window_5fopen_5ffile_5fcopy_5fready_5fcb',['window_open_file_copy_ready_cb',['../ev-window_8c.html#a13129f4a42cb8ac96e6c0736803c2270',1,'ev-window.c']]],

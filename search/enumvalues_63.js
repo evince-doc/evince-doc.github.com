@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['cancelled',['CANCELLED',['../ev-jobs_8c.html#ab48899087cc647f0f791ed0c459adc53a3c862c356e44394920d592cde81bec7b',1,'ev-jobs.c']]],
-  ['change_5fpage',['CHANGE_PAGE',['../ev-view-presentation_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0ab233a438a8f9dc97039c1b3acf1bef95',1,'ev-view-presentation.c']]],
+  ['cancelled',['CANCELLED',['../ev-jobs_8c.html#a1f9aebf1de3ebbf4283a4dcf73308562a3c862c356e44394920d592cde81bec7b',1,'ev-jobs.c']]],
+  ['change_5fpage',['CHANGE_PAGE',['../ev-view-presentation_8c.html#afb730582952b7ceec73d7dc9bf7bef39ab233a438a8f9dc97039c1b3acf1bef95',1,'ev-view-presentation.c']]],
   ['changed',['CHANGED',['../ev-bookmarks_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a02950f589a2addc8bff690a59d33cee7',1,'CHANGED():&#160;ev-bookmarks.c'],['../ev-file-monitor_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173a02950f589a2addc8bff690a59d33cee7',1,'CHANGED():&#160;ev-file-monitor.c'],['../ev-history_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a02950f589a2addc8bff690a59d33cee7',1,'CHANGED():&#160;ev-history.c']]],
+  ['cleared',['CLEARED',['../ev-search-box_8c.html#a0944a4353780132eeab7b06e3e42291dad36a93186556876262e5cc4c14fe197e',1,'ev-search-box.c']]],
   ['clicked',['CLICKED',['../gimpcellrenderertoggle_8c.html#a385c44f6fb256e5716a2302a5b940388ad37324c719e7d564128110e054a550e4',1,'gimpcellrenderertoggle.c']]],
-  ['close',['CLOSE',['../eggfindbar_8c.html#a900dca9b26de42491763226e12dcd47ba685f73194ad125cbc784c3210cdb3449',1,'eggfindbar.c']]],
-  ['closed',['CLOSED',['../ev-annotation-window_8c.html#a4790f45dcc812c1b00184a2edccdddf5a929f0327e17604ce9713b2a6117bd603',1,'ev-annotation-window.c']]],
+  ['closed',['CLOSED',['../ev-annotation-window_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea929f0327e17604ce9713b2a6117bd603',1,'ev-annotation-window.c']]],
   ['column_5fannot_5fmapping',['COLUMN_ANNOT_MAPPING',['../ev-sidebar-annotations_8c.html#a550cb4231d535863c55643bbd2d3c6baa264bdc9f2054fa3c2aceff41e8535ae8',1,'ev-sidebar-annotations.c']]],
   ['column_5fattachment',['COLUMN_ATTACHMENT',['../ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90afb27a384ab10ec1041f886684c86b1c4',1,'ev-sidebar-attachments.c']]],
   ['column_5fdescription',['COLUMN_DESCRIPTION',['../ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a2b5800a4f0c421463c40f47e4d8a09e2',1,'ev-sidebar-attachments.c']]],

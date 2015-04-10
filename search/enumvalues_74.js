@@ -1,9 +1,9 @@
 var searchData=
 [
   ['tar',['TAR',['../comics-document_8c.html#af40458a768dbbfcedefd3c17e83aeeb7a9a787819b090cfdd39a676fbb8b2ca44',1,'comics-document.c']]],
-  ['target_5fdnd_5fimage',['TARGET_DND_IMAGE',['../ev-view_8c.html#afb730582952b7ceec73d7dc9bf7bef39ac3c51f123db9455ee26b6488fa349ffd',1,'ev-view.c']]],
-  ['target_5fdnd_5ftext',['TARGET_DND_TEXT',['../ev-view_8c.html#afb730582952b7ceec73d7dc9bf7bef39ac26accde5ff91c54e83ae83423d0c16d',1,'ev-view.c']]],
-  ['target_5fdnd_5furi',['TARGET_DND_URI',['../ev-view_8c.html#afb730582952b7ceec73d7dc9bf7bef39a6e3994dcfcfa5316f60813bb50eeabd4',1,'ev-view.c']]],
+  ['target_5fdnd_5fimage',['TARGET_DND_IMAGE',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aac3c51f123db9455ee26b6488fa349ffd',1,'ev-view.c']]],
+  ['target_5fdnd_5ftext',['TARGET_DND_TEXT',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aac26accde5ff91c54e83ae83423d0c16d',1,'ev-view.c']]],
+  ['target_5fdnd_5furi',['TARGET_DND_URI',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa6e3994dcfcfa5316f60813bb50eeabd4',1,'ev-view.c']]],
   ['text_5fcolumn',['TEXT_COLUMN',['../ev-find-sidebar_8c.html#aa156d1cebb38c8a65846c4d9c006012aa658268753d26e20db642708403b7e96c',1,'ev-find-sidebar.c']]],
   ['title_5fproperty',['TITLE_PROPERTY',['../ev-properties-view_8c.html#a80e3abfdceb5f0f2ef6e0e50ab2fd1aaa7df502ca1803b4f3f3aa0b77006e79ac',1,'ev-properties-view.c']]],
   ['togglecontinuous',['ToggleContinuous',['../structEvBrowserPluginClass.html#a54090d6391234119c71902b665f1692aa8cbda86a4a38a858be0dfc3871d1bf69',1,'EvBrowserPluginClass']]],

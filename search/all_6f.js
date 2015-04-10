@@ -23,7 +23,7 @@ var searchData=
   ['opendvi',['opendvi',['../dviread_8c.html#a182bfe28b827b43f1295ccf8fa573da2',1,'dviread.c']]],
   ['operator_28_29',['operator()',['../structunique__gptr__deleter.html#a0c35dd48300a5af721e314628bb2b678',1,'unique_gptr_deleter']]],
   ['option_5fversion_5fcb',['option_version_cb',['../main_8c.html#aed4aa084a07ca3e29e4012020f34ec45',1,'main.c']]],
-  ['options',['options',['../struct__EvJobFind.html#a3e273b1de436e529202535f1db807787',1,'_EvJobFind']]],
+  ['options',['options',['../struct__EvSearchBoxPrivate.html#a96b14f53f55db64d76ebab0c3cb39b89',1,'_EvSearchBoxPrivate::options()'],['../struct__EvJobFind.html#a3e273b1de436e529202535f1db807787',1,'_EvJobFind::options()']]],
   ['opts',['opts',['../struct__DjvuDocument.html#a34943233231251f9da01c851cfaff486',1,'_DjvuDocument']]],
   ['orientation',['orientation',['../struct__DviParams.html#a468fd59ca8f0bd6be8b0327fbc57540a',1,'_DviParams']]],
   ['orig_5ferror_5fhandler',['orig_error_handler',['../tiff-document_8c.html#a189babdddcfa01b010de56c1b9b144d5',1,'tiff-document.c']]],

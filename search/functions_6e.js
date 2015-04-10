@@ -10,7 +10,7 @@ var searchData=
   ['new_5fselection_5fregion_5fneeded',['new_selection_region_needed',['../ev-pixbuf-cache_8c.html#a67b7c58f9e776abbf82faa93292b680d',1,'ev-pixbuf-cache.c']]],
   ['new_5fselection_5fsurface_5fneeded',['new_selection_surface_needed',['../ev-pixbuf-cache_8c.html#a606e19d48e66beb0791b865b2f4e50ab',1,'ev-pixbuf-cache.c']]],
   ['newstream',['newStream',['../classEvBrowserPlugin.html#ad642f2e42b546124cec4d46800f6327a',1,'EvBrowserPlugin']]],
-  ['next_5fclicked_5fcallback',['next_clicked_callback',['../eggfindbar_8c.html#af4fdbe3fb531c225c724829e61fc318e',1,'eggfindbar.c']]],
+  ['next_5fclicked_5fcb',['next_clicked_cb',['../ev-search-box_8c.html#a6d163e53662d0cd1ee6e5f3bf1c59a14',1,'ev-search-box.c']]],
   ['no_5fop',['no_op',['../dviread_8c.html#acde70860e30a57a7019914605e16c843',1,'dviread.c']]],
   ['np_5fgetmimedescription',['NP_GetMIMEDescription',['../EvBrowserPluginMain_8cpp.html#af876f4815285e3249ff6e546dd0740bd',1,'EvBrowserPluginMain.cpp']]],
   ['np_5fgetvalue',['NP_GetValue',['../EvBrowserPluginMain_8cpp.html#ac12a2cc870e8f28bd0b9a1be2a75cdfd',1,'EvBrowserPluginMain.cpp']]],

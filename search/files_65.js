@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['eggfindbar_2ec',['eggfindbar.c',['../eggfindbar_8c.html',1,'']]],
-  ['eggfindbar_2eh',['eggfindbar.h',['../eggfindbar_8h.html',1,'']]],
   ['ev_2dannotation_2dproperties_2ddialog_2ec',['ev-annotation-properties-dialog.c',['../ev-annotation-properties-dialog_8c.html',1,'']]],
   ['ev_2dannotation_2dproperties_2ddialog_2eh',['ev-annotation-properties-dialog.h',['../ev-annotation-properties-dialog_8h.html',1,'']]],
   ['ev_2dannotation_2dwindow_2ec',['ev-annotation-window.c',['../ev-annotation-window_8c.html',1,'']]],
@@ -144,6 +142,8 @@ var searchData=
   ['ev_2drecent_2dview_2eh',['ev-recent-view.h',['../ev-recent-view_8h.html',1,'']]],
   ['ev_2drender_2dcontext_2ec',['ev-render-context.c',['../ev-render-context_8c.html',1,'']]],
   ['ev_2drender_2dcontext_2eh',['ev-render-context.h',['../ev-render-context_8h.html',1,'']]],
+  ['ev_2dsearch_2dbox_2ec',['ev-search-box.c',['../ev-search-box_8c.html',1,'']]],
+  ['ev_2dsearch_2dbox_2eh',['ev-search-box.h',['../ev-search-box_8h.html',1,'']]],
   ['ev_2dselection_2ec',['ev-selection.c',['../ev-selection_8c.html',1,'']]],
   ['ev_2dselection_2eh',['ev-selection.h',['../ev-selection_8h.html',1,'']]],
   ['ev_2dsidebar_2dannotations_2ec',['ev-sidebar-annotations.c',['../ev-sidebar-annotations_8c.html',1,'']]],

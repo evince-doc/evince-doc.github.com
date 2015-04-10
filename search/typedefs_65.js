@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['eggfindbar',['EggFindBar',['../eggfindbar_8h.html#a7a54022ab656665cb57d89bb472b70bc',1,'eggfindbar.h']]],
-  ['eggfindbarclass',['EggFindBarClass',['../eggfindbar_8h.html#a625314a73f80df475a3e1f35dfd91aaa',1,'eggfindbar.h']]],
-  ['eggfindbarprivate',['EggFindBarPrivate',['../eggfindbar_8h.html#af14a633018e8d93cb9404ef8422312cf',1,'eggfindbar.h']]],
   ['evannotation',['EvAnnotation',['../ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6',1,'ev-annotation.h']]],
   ['evannotationattachment',['EvAnnotationAttachment',['../ev-annotation_8h.html#a62ff016338ee24dd92430feb96d1b437',1,'ev-annotation.h']]],
   ['evannotationattachmentclass',['EvAnnotationAttachmentClass',['../ev-annotation_8h.html#af30b62bf157c804fb16ca35404ca68ae',1,'ev-annotation.h']]],
@@ -215,6 +212,9 @@ var searchData=
   ['evrendercontext',['EvRenderContext',['../ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14',1,'ev-render-context.h']]],
   ['evrendercontextclass',['EvRenderContextClass',['../ev-render-context_8h.html#a001a300872ef47b57edcea66109915ba',1,'ev-render-context.h']]],
   ['evschedulerjob',['EvSchedulerJob',['../ev-job-scheduler_8c.html#a84a9580c13dacd6ff1c8f73e87ec0727',1,'ev-job-scheduler.c']]],
+  ['evsearchbox',['EvSearchBox',['../ev-search-box_8h.html#a75d7f45dd19f7ac701e240ea63b5e01a',1,'ev-search-box.h']]],
+  ['evsearchboxclass',['EvSearchBoxClass',['../ev-search-box_8h.html#ae9baedcbf3e300f8b5fa1b9c59ac29c7',1,'ev-search-box.h']]],
+  ['evsearchboxprivate',['EvSearchBoxPrivate',['../ev-search-box_8h.html#a18286cef3ef63e2cc27fd858a5718dd6',1,'ev-search-box.h']]],
   ['evselection',['EvSelection',['../ev-selection_8h.html#a0dfbf8df2877eaeab522cadb92aaec93',1,'ev-selection.h']]],
   ['evselectioninterface',['EvSelectionInterface',['../ev-selection_8h.html#acc2dbc5c3f4e26047a8b5a893aa9df34',1,'ev-selection.h']]],
   ['evsidebar',['EvSidebar',['../ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3',1,'ev-sidebar.h']]],

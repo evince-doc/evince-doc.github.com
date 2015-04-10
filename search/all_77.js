@@ -6,9 +6,7 @@ var searchData=
   ['web_5fstatement',['web_statement',['../struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641',1,'_EvDocumentLicense']]],
   ['weight',['weight',['../structGlobalFontInfo.html#a06ae98179cd0917834e0a629cff13d7b',1,'GlobalFontInfo']]],
   ['white',['white',['../ev-view-presentation_8c.html#a003ae2837cf4da075d1ee603d41abeaa',1,'white():&#160;ev-view-presentation.c'],['../gf_8c.html#a87b537f5fa5c109d3c05c13d6b18f382',1,'WHITE():&#160;gf.c']]],
-  ['whole_5fwords_5fonly',['whole_words_only',['../struct__EggFindBarPrivate.html#a429350eb9b9a75f047ea44b2f907e188',1,'_EggFindBarPrivate']]],
-  ['whole_5fwords_5fonly_5fenabled',['whole_words_only_enabled',['../struct__EggFindBarPrivate.html#a0d65596eaf85ee7a9c9043ac54238540',1,'_EggFindBarPrivate']]],
-  ['whole_5fwords_5fonly_5ftoggled_5fcallback',['whole_words_only_toggled_callback',['../eggfindbar_8c.html#a844373dd6d08fd707eca0436d69ef6e7',1,'eggfindbar.c']]],
+  ['whole_5fwords_5fonly_5ftoggled_5fcb',['whole_words_only_toggled_cb',['../ev-search-box_8c.html#a1c295061c8e8b7cf8cc1bc612b474d71',1,'ev-search-box.c']]],
   ['widget',['widget',['../structEvViewChild.html#aafbfbf57ef07076706bd118cc62dbc1a',1,'EvViewChild']]],
   ['widget_5factivate_5flink',['WIDGET_ACTIVATE_LINK',['../ev-page-action-widget_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa37258872c8add6d4d6f3dbe8a8045360',1,'ev-page-action-widget.c']]],
   ['widget_5fn_5fsignals',['WIDGET_N_SIGNALS',['../ev-page-action-widget_8c.html#a5d76b81b0ad4c19007a781d4edb8181fa4c4742324734dd1fad749cd69206244e',1,'ev-page-action-widget.c']]],
@@ -27,7 +25,7 @@ var searchData=
   ['word_5flittle_5fendian',['WORD_LITTLE_ENDIAN',['../sysdeps_8h.html#a7a41cd57109448451a9cf8a4428c1dd9',1,'sysdeps.h']]],
   ['word_5fsymbol',['word_symbol',['../struct__DjvuTextPage.html#a4a846e51f6e416f882ff909580024501',1,'_DjvuTextPage']]],
   ['write',['write',['../struct__NPPluginFuncs.html#a4469cc48ef16ecb1f4f62aab97b977c4',1,'_NPPluginFuncs::write()'],['../struct__NPNetscapeFuncs.html#a518bb065983fb31dd5d2e9b9aefa9111',1,'_NPNetscapeFuncs::write()'],['../classEvBrowserPlugin.html#ab8447887c623e5e77492afd8d4b29cf2',1,'EvBrowserPlugin::write()']]],
-  ['writeready',['writeReady',['../classEvBrowserPlugin.html#a9d7e3973e9325395f7223869320444db',1,'EvBrowserPlugin::writeReady()'],['../struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f',1,'_NPPluginFuncs::writeready()']]],
+  ['writeready',['writeready',['../struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f',1,'_NPPluginFuncs::writeready()'],['../classEvBrowserPlugin.html#a9d7e3973e9325395f7223869320444db',1,'EvBrowserPlugin::writeReady()']]],
   ['wx',['wx',['../structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f',1,'CharMetricInfo']]],
   ['wy',['wy',['../structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40',1,'CharMetricInfo']]]
 ];

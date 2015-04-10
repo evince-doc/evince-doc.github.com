@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">enum</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-sidebar_8c.html#aa57e16cd48de3b9a989056ff8df26f84ac37dda0da1a44e10c0504afeeb863f3c">   37</a></span>&#160;    <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="ev-sidebar_8c.html#aa57e16cd48de3b9a989056ff8df26f84af682451cd41bc4903accca9390349485">   38</a></span>&#160;    <a class="code" href="ev-view-presentation_8c.html#af3520ff6d43011872bab77edd27d4de3af682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="ev-sidebar_8c.html#aa57e16cd48de3b9a989056ff8df26f84af682451cd41bc4903accca9390349485">   38</a></span>&#160;    <a class="code" href="ev-view-presentation_8c.html#af715e26dfffd1f8de1c18449e2770cffaf682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">enum</span></div>
@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">switch</span> (prop_id)</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-presentation_8c.html#af3520ff6d43011872bab77edd27d4de3af682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a>:</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-presentation_8c.html#af715e26dfffd1f8de1c18449e2770cffaf682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a>:</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="ev-sidebar_8c.html#a5268901747270ea9f1a4733e5ac5543a">ev_sidebar_set_page</a> (sidebar, g_value_get_object (value));  </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">switch</span> (prop_id)</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-presentation_8c.html#af3520ff6d43011872bab77edd27d4de3af682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a>:</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-view-presentation_8c.html#af715e26dfffd1f8de1c18449e2770cffaf682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a>:</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        g_value_set_object (value, <a class="code" href="ev-sidebar_8c.html#a85bc4770d9c9b1bdcb0d5f57ed8b7d39">ev_sidebar_get_current_page</a> (sidebar));</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    g_object_class-&gt;set_property = <a class="code" href="ev-sidebar_8c.html#a903896e2ae9a92e281594c74010733af">ev_sidebar_set_property</a>;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    g_object_class_install_property (g_object_class,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                     <a class="code" href="ev-view-presentation_8c.html#af3520ff6d43011872bab77edd27d4de3af682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a>,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                     <a class="code" href="ev-view-presentation_8c.html#af715e26dfffd1f8de1c18449e2770cffaf682451cd41bc4903accca9390349485">PROP_CURRENT_PAGE</a>,</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                     g_param_spec_object (<span class="stringliteral">&quot;current-page&quot;</span>,</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                  <span class="stringliteral">&quot;Current page&quot;</span>,</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                  <span class="stringliteral">&quot;The currently visible page&quot;</span>,</div>
@@ -664,7 +664,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar_8c.html">ev-sidebar.c</a></li>
-    <li class="footer">Generated on Thu Apr 9 2015 18:15:04 for Evince by
+    <li class="footer">Generated on Fri Apr 10 2015 12:09:24 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -1,7 +1,5 @@
 var dir_03d4a7bd78ff53a92be90255bc24db97 =
 [
-    [ "eggfindbar.c", "eggfindbar_8c.html", "eggfindbar_8c" ],
-    [ "eggfindbar.h", "eggfindbar_8h.html", "eggfindbar_8h" ],
     [ "ev-annotation-properties-dialog.c", "ev-annotation-properties-dialog_8c.html", "ev-annotation-properties-dialog_8c" ],
     [ "ev-annotation-properties-dialog.h", "ev-annotation-properties-dialog_8h.html", "ev-annotation-properties-dialog_8h" ],
     [ "ev-application.c", "ev-application_8c.html", "ev-application_8c" ],

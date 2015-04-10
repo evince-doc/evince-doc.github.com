@@ -1,7 +1,7 @@
 var searchData=
 [
   ['z',['z',['../struct__DviState.html#a1230f7f183b70c63bb2fc0d60493a11e',1,'_DviState']]],
-  ['zoom',['zoom',['../struct__EvLinkDestPrivate.html#a03685c24cea2399958e70bd223c138ab',1,'_EvLinkDestPrivate::zoom()'],['../classEvBrowserPlugin.html#a85a1b3cd1e54a8681c6aee3a684508de',1,'EvBrowserPlugin::zoom()'],['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68ab497020d61ea95eeda5fa36d6a963e3a',1,'EvBrowserPluginClass::Zoom()']]],
+  ['zoom',['Zoom',['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68ab497020d61ea95eeda5fa36d6a963e3a',1,'EvBrowserPluginClass::Zoom()'],['../struct__EvLinkDestPrivate.html#a03685c24cea2399958e70bd223c138ab',1,'_EvLinkDestPrivate::zoom()'],['../classEvBrowserPlugin.html#a85a1b3cd1e54a8681c6aee3a684508de',1,'EvBrowserPlugin::zoom()']]],
   ['zoom_5faction',['zoom_action',['../struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6',1,'_EvToolbarPrivate']]],
   ['zoom_5fcenter_5fx',['zoom_center_x',['../struct__EvView.html#afffd5c37fd24c3b1eea11c75845820e6',1,'_EvView']]],
   ['zoom_5fcenter_5fy',['zoom_center_y',['../struct__EvView.html#a6ac15cf77c4d750b46fba51fd426d531',1,'_EvView']]],
@@ -25,7 +25,7 @@ var searchData=
   ['zoomfitpagetoggled',['zoomFitPageToggled',['../EvBrowserPluginToolbar_8cpp.html#ad46dda7d33d268abaf438f21ed3a677f',1,'EvBrowserPluginToolbar.cpp']]],
   ['zoomfitwidthradiobutton',['zoomFitWidthRadioButton',['../struct__EvBrowserPluginToolbarPrivate.html#ac7f855482c2932e57c2c167d5c2cc8fc',1,'_EvBrowserPluginToolbarPrivate']]],
   ['zoomfitwidthtoggled',['zoomFitWidthToggled',['../EvBrowserPluginToolbar_8cpp.html#aa17328bc67cf3597315d84303eb758d4',1,'EvBrowserPluginToolbar.cpp']]],
-  ['zoomin',['zoomIn',['../classEvBrowserPlugin.html#a6d5e751533d8b21db19fac61377e2583',1,'EvBrowserPlugin::zoomIn()'],['../structEvBrowserPluginClass.html#a54090d6391234119c71902b665f1692aa2e95fe29d75c604c2767856b91ae7645',1,'EvBrowserPluginClass::ZoomIn()'],['../EvBrowserPluginToolbar_8cpp.html#a60c6bbf7a035af33f307e9ea44d419bf',1,'zoomIn():&#160;EvBrowserPluginToolbar.cpp']]],
+  ['zoomin',['ZoomIn',['../structEvBrowserPluginClass.html#a54090d6391234119c71902b665f1692aa2e95fe29d75c604c2767856b91ae7645',1,'EvBrowserPluginClass::ZoomIn()'],['../classEvBrowserPlugin.html#a6d5e751533d8b21db19fac61377e2583',1,'EvBrowserPlugin::zoomIn()'],['../EvBrowserPluginToolbar_8cpp.html#a60c6bbf7a035af33f307e9ea44d419bf',1,'zoomIn():&#160;EvBrowserPluginToolbar.cpp']]],
   ['zoommode',['ZoomMode',['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68a70f3773b6e9a94d4aafe095c499a7656',1,'EvBrowserPluginClass']]],
-  ['zoomout',['ZoomOut',['../structEvBrowserPluginClass.html#a54090d6391234119c71902b665f1692aa87014b0d28fad8e45e16c26e742cfc9b',1,'EvBrowserPluginClass::ZoomOut()'],['../classEvBrowserPlugin.html#aa40fb2be71528e43c427c7f24b13240e',1,'EvBrowserPlugin::zoomOut()'],['../EvBrowserPluginToolbar_8cpp.html#aedfd50a816e80a04fad4ebf7d6b4ed60',1,'zoomOut():&#160;EvBrowserPluginToolbar.cpp']]]
+  ['zoomout',['zoomOut',['../classEvBrowserPlugin.html#aa40fb2be71528e43c427c7f24b13240e',1,'EvBrowserPlugin::zoomOut()'],['../structEvBrowserPluginClass.html#a54090d6391234119c71902b665f1692aa87014b0d28fad8e45e16c26e742cfc9b',1,'EvBrowserPluginClass::ZoomOut()'],['../EvBrowserPluginToolbar_8cpp.html#aedfd50a816e80a04fad4ebf7d6b4ed60',1,'zoomOut():&#160;EvBrowserPluginToolbar.cpp']]]
 ];

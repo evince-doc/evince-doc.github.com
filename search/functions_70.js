@@ -129,7 +129,7 @@ var searchData=
   ['position_5fcaret_5fcursor_5ffor_5fevent',['position_caret_cursor_for_event',['../ev-view_8c.html#a17563aba8da777e124059b090f8878c1',1,'ev-view.c']]],
   ['pow2',['pow2',['../util_8c.html#a0c5ecb3f927aa55002830822f25daba3',1,'util.c']]],
   ['preload_5fpages_5ffor_5fcaret_5fnavigation',['preload_pages_for_caret_navigation',['../ev-view_8c.html#ae668d045235bc6069147438aa606dd70',1,'ev-view.c']]],
-  ['previous_5fclicked_5fcallback',['previous_clicked_callback',['../eggfindbar_8c.html#a442b6957d6d0143cb3fb5208c7b2a10f',1,'eggfindbar.c']]],
+  ['previous_5fclicked_5fcb',['previous_clicked_cb',['../ev-search-box_8c.html#acc5814a33118bc1e68b3c3ab6eddf9aa',1,'ev-search-box.c']]],
   ['print',['print',['../classEvBrowserPlugin.html#ae65a172a7d6a27accf71bbddf968a77f',1,'EvBrowserPlugin::print(NPPrint *)'],['../classEvBrowserPlugin.html#a210591301e6a87db84fa1fb4c1cad289',1,'EvBrowserPlugin::print() const ']]],
   ['print_5fjob_5fcancelled',['print_job_cancelled',['../ev-print-operation_8c.html#a9c9903f7e1b8944414800b3e3cee7dc3',1,'ev-print-operation.c']]],
   ['print_5fjob_5ffinished',['print_job_finished',['../ev-print-operation_8c.html#abb3ebd3e05a5b80cc6042b91d12cae83',1,'ev-print-operation.c']]],

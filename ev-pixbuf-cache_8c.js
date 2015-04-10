@@ -8,8 +8,8 @@ var ev_pixbuf_cache_8c =
     [ "PAGE_CACHE_LEN", "ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b", null ],
     [ "VISIBLE_NEXT_LEN", "ev-pixbuf-cache_8c.html#a204b545bb8ede269c4f109f8ae5b5c78", null ],
     [ "CacheJobInfo", "ev-pixbuf-cache_8c.html#ae54fa05d9c02e5b7120e8eeb9a51e38a", null ],
-    [ "JOB_FINISHED", "ev-pixbuf-cache_8c.html#a2970898e8a43ce21e1cc510d49f1b89dad1052010c1be02e582a503d9b823e825", null ],
-    [ "N_SIGNALS", "ev-pixbuf-cache_8c.html#a2970898e8a43ce21e1cc510d49f1b89da1e7365ab36b084beff81fb1b96df4b11", null ],
+    [ "JOB_FINISHED", "ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fad1052010c1be02e582a503d9b823e825", null ],
+    [ "N_SIGNALS", "ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fa1e7365ab36b084beff81fb1b96df4b11", null ],
     [ "ScrollDirection", "ev-pixbuf-cache_8c.html#aee4c3efeb138d256f50c53e528abb243", [
       [ "SCROLL_DIRECTION_DOWN", "ev-pixbuf-cache_8c.html#aee4c3efeb138d256f50c53e528abb243a8f6a9a8bc6bf0dfb948cd789c3e65292", null ],
       [ "SCROLL_DIRECTION_UP", "ev-pixbuf-cache_8c.html#aee4c3efeb138d256f50c53e528abb243a83d83821f147735f5641f79284dd4bd0", null ]

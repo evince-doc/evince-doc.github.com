@@ -140,8 +140,8 @@ $(document).ready(function(){initNavTree('ev-page-cache_8c_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-page-cache_8h.html">ev-page-cache.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ev-page-cache_8c.html#a16685eea158879e41b101ca3634de462a9ae69254575e9d427b9abcd50334e47d">   35</a></span>&#160;  <a class="code" href="ev-page-cache_8c.html#a16685eea158879e41b101ca3634de462a9ae69254575e9d427b9abcd50334e47d">PAGE_CACHED</a>,</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-page-cache_8c.html#a16685eea158879e41b101ca3634de462a0c34d85df8279641afad9e3c9b3a54ce">   36</a></span>&#160;  <a class="code" href="gimpcellrenderertoggle_8c.html#a385c44f6fb256e5716a2302a5b940388a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ev-page-cache_8c.html#afa231099d07583c3ed0981e0bb665f55a9ae69254575e9d427b9abcd50334e47d">   35</a></span>&#160;  <a class="code" href="ev-page-cache_8c.html#afa231099d07583c3ed0981e0bb665f55a9ae69254575e9d427b9abcd50334e47d">PAGE_CACHED</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-page-cache_8c.html#afa231099d07583c3ed0981e0bb665f55a0c34d85df8279641afad9e3c9b3a54ce">   36</a></span>&#160;  <a class="code" href="gimpcellrenderertoggle_8c.html#a385c44f6fb256e5716a2302a5b940388a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb">   39</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb">ev_page_cache_signals</a>[<a class="code" href="gimpcellrenderertoggle_8c.html#a385c44f6fb256e5716a2302a5b940388a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a>] = {0};</div>
@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('ev-page-cache_8c_source.html','');});
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    g_object_class-&gt;finalize = <a class="code" href="ev-page-cache_8c.html#a0e9c307b73e70959ef4ca1f489ba581b">ev_page_cache_finalize</a>;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <a class="code" href="ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb">ev_page_cache_signals</a> [<a class="code" href="ev-page-cache_8c.html#a16685eea158879e41b101ca3634de462a9ae69254575e9d427b9abcd50334e47d">PAGE_CACHED</a>] =</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <a class="code" href="ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb">ev_page_cache_signals</a> [<a class="code" href="ev-page-cache_8c.html#afa231099d07583c3ed0981e0bb665f55a9ae69254575e9d427b9abcd50334e47d">PAGE_CACHED</a>] =</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                  g_signal_new (<span class="stringliteral">&quot;page-cached&quot;</span>,</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                <a class="code" href="ev-page-cache_8h.html#ab60018f54cfc6af2e747e7a5d818996d">EV_TYPE_PAGE_CACHE</a>,</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                G_SIGNAL_RUN_LAST,</div>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('ev-page-cache_8c_source.html','');});
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    g_object_unref (data-&gt;<a class="code" href="struct__EvPageCacheData.html#a918fa76894477ac5b1a274648e452400">job</a>);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    data-&gt;<a class="code" href="struct__EvPageCacheData.html#a918fa76894477ac5b1a274648e452400">job</a> = NULL;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        g_signal_emit (cache, <a class="code" href="ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb">ev_page_cache_signals</a>[<a class="code" href="ev-page-cache_8c.html#a16685eea158879e41b101ca3634de462a9ae69254575e9d427b9abcd50334e47d">PAGE_CACHED</a>], 0, job_data-&gt;<a class="code" href="struct__EvJobPageData.html#a536928b4f29353de1ff7c8a1e61de71f">page</a>);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        g_signal_emit (cache, <a class="code" href="ev-page-cache_8c.html#a111fd5c721e9bd67c724c47c5ac787cb">ev_page_cache_signals</a>[<a class="code" href="ev-page-cache_8c.html#afa231099d07583c3ed0981e0bb665f55a9ae69254575e9d427b9abcd50334e47d">PAGE_CACHED</a>], 0, job_data-&gt;<a class="code" href="struct__EvJobPageData.html#a536928b4f29353de1ff7c8a1e61de71f">page</a>);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -820,7 +820,7 @@ $(document).ready(function(){initNavTree('ev-page-cache_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-cache_8c.html">ev-page-cache.c</a></li>
-    <li class="footer">Generated on Thu Apr 9 2015 18:15:03 for Evince by
+    <li class="footer">Generated on Fri Apr 10 2015 12:09:24 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

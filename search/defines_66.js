@@ -2,7 +2,7 @@ var searchData=
 [
   ['false',['FALSE',['../afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1',1,'afmparse.h']]],
   ['fgetbyte',['fgetbyte',['../common_8h.html#a28862b1d2d998012c6f88014c84fd16a',1,'common.h']]],
-  ['find_5fpage_5frate_5frefresh',['FIND_PAGE_RATE_REFRESH',['../ev-window_8c.html#a9284999ddb9ef5739eb97d6db2687c27',1,'ev-window.c']]],
+  ['find_5fpage_5frate_5frefresh',['FIND_PAGE_RATE_REFRESH',['../ev-search-box_8c.html#a9284999ddb9ef5739eb97d6db2687c27',1,'ev-search-box.c']]],
   ['finfo',['finfo',['../font_8c.html#aceb74a334dea19475630620fadfcb684',1,'font.c']]],
   ['first_5fvisible_5fprev',['FIRST_VISIBLE_PREV',['../ev-pixbuf-cache_8c.html#a616a2c64ff2ef0aae5b3bc5a3739592d',1,'ev-pixbuf-cache.c']]],
   ['firstmask',['FIRSTMASK',['../bitmap_8h.html#afb89a8d5aa71a1b03e6f915af9a57a00',1,'bitmap.h']]],

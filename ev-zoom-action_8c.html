@@ -271,7 +271,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a950bf8e3371138ceb9649d45e9a96340a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="ev-search-box_8c.html#a4790f45dcc812c1b00184a2edccdddf5a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>,</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="ev-zoom-action_8c.html#a950bf8e3371138ceb9649d45e9a96340a4eeefc644a379d0b127c793b061d3bbb">PROP_MENU</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 </div><!-- fragment -->
@@ -537,7 +537,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        widget_class-&gt;get_preferred_width = <a class="code" href="ev-zoom-action_8c.html#ae6ba47b95653c5fa0776278ab54d846c">ev_zoom_action_get_preferred_width</a>;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        g_object_class_install_property (object_class,</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                                         <a class="code" href="ev-zoom-action_8c.html#a950bf8e3371138ceb9649d45e9a96340a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>,</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                                         <a class="code" href="ev-search-box_8c.html#a4790f45dcc812c1b00184a2edccdddf5a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>,</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;document-model&quot;</span>,</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                                                              <span class="stringliteral">&quot;DocumentModel&quot;</span>,</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                                              <span class="stringliteral">&quot;The document model&quot;</span>,</div>
@@ -986,7 +986,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="struct__EvZoomAction.html">EvZoomAction</a> *zoom_action = <a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-zoom-action_8c.html#a950bf8e3371138ceb9649d45e9a96340a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>:</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-search-box_8c.html#a4790f45dcc812c1b00184a2edccdddf5a60c51d72a7cb10f001abe9f680cc4540">PROP_DOCUMENT_MODEL</a>:</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                zoom_action-&gt;<a class="code" href="struct__EvZoomAction.html#a8818c29b500349e03c6a7e1834b0f150">priv</a>-&gt;<a class="code" href="struct__EvZoomActionPrivate.html#a0457067cb8c19a6aca94252f0199c03a">model</a> = g_value_get_object (value);</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-zoom-action_8c.html#a950bf8e3371138ceb9649d45e9a96340a4eeefc644a379d0b127c793b061d3bbb">PROP_MENU</a>:</div>
@@ -1555,7 +1555,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-zoom-action_8c.html">ev-zoom-action.c</a></li>
-    <li class="footer">Generated on Thu Apr 9 2015 18:15:15 for Evince by
+    <li class="footer">Generated on Fri Apr 10 2015 12:09:33 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
