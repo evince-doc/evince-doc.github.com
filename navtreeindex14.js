@@ -1,5 +1,8 @@
 var NAVTREEINDEX14 =
 {
+"ev-page_8h.html#a6dd1dc9d64e876b4fef8d09672d7da10":[6,0,0,3,66,11],
+"ev-page_8h.html#a803f747a0aeeabb6e7ad3f3961702379":[6,0,0,3,66,13],
+"ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10":[6,0,0,3,66,10],
 "ev-page_8h.html#aa405007e2c7ac948d2305268911a9d3b":[6,0,0,3,66,5],
 "ev-page_8h.html#ac0b93893b0959fdeb56c430869aa3657":[6,0,0,3,66,6],
 "ev-page_8h.html#accc3273278a688ab3c990538aff80e6e":[6,0,0,3,66,3],
@@ -181,6 +184,7 @@ var NAVTREEINDEX14 =
 "ev-poppler_8cc.html#a9370bf1e359822e08dc5d4f6f68df2ac":[6,0,0,0,3,0,73],
 "ev-poppler_8cc.html#a9456ee36df70fca6b1529f74873d6071":[6,0,0,0,3,0,13],
 "ev-poppler_8cc.html#a95f7cee9b05ca2fee6087c8c924d7e6f":[6,0,0,0,3,0,69],
+"ev-poppler_8cc.html#a9771411e9c52211f3d4320b6ab17089b":[6,0,0,0,3,0,120],
 "ev-poppler_8cc.html#a9a3a9816de56cd4be251200c30abb452":[6,0,0,0,3,0,4],
 "ev-poppler_8cc.html#a9bfb47f1475b54b121bbcf7d6dddbe4e":[6,0,0,0,3,0,99],
 "ev-poppler_8cc.html#a9c31c3cac46472810b30006ceddbe957":[6,0,0,0,3,0,115],
@@ -224,7 +228,7 @@ var NAVTREEINDEX14 =
 "ev-poppler_8cc.html#ae269467532bf2811f62d8263ad1f3ac2":[6,0,0,0,3,0,48],
 "ev-poppler_8cc.html#ae2c46768b538e07bdd169834f5e74a63":[6,0,0,0,3,0,56],
 "ev-poppler_8cc.html#ae31e181686bdd6554c30da13d478e877":[6,0,0,0,3,0,84],
-"ev-poppler_8cc.html#ae3c95ed30dd5d62fc8bf092040056e86":[6,0,0,0,3,0,120],
+"ev-poppler_8cc.html#ae3c95ed30dd5d62fc8bf092040056e86":[6,0,0,0,3,0,121],
 "ev-poppler_8cc.html#aeee00913b7128dbba97d128540f8eacf":[6,0,0,0,3,0,104],
 "ev-poppler_8cc.html#af0bf3aa77acd536b4272160a9c72cf40":[6,0,0,0,3,0,24],
 "ev-poppler_8cc.html#af26f18620f5750d5e4fc82c77f353389":[6,0,0,0,3,0,93],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "ev-poppler_8h.html#adc5f28f41bd3969bedd0e30a0d55371f":[6,0,0,0,3,1,1],
 "ev-poppler_8h.html#ae0f79c4feff1ee5751f8a08e526812a5":[6,0,0,0,3,1,3],
 "ev-poppler_8h.html#ae8c61014810a6309975b7511846e7ce2":[6,0,0,0,3,1,2],
-"ev-poppler_8h_source.html":[6,0,0,0,3,1],
-"ev-previewer-window_8c.html":[6,0,0,6,0],
-"ev-previewer-window_8c.html#a0706168c32c39d519133d981a3df0687":[6,0,0,6,0,2],
-"ev-previewer-window_8c.html#a0a5285d50e1df06dd850a0cd5d0761de":[6,0,0,6,0,6],
-"ev-previewer-window_8c.html#a15031d5f2d94509f7d7f619c5f38398d":[6,0,0,6,0,18]
+"ev-poppler_8h_source.html":[6,0,0,0,3,1]
 };

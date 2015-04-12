@@ -649,177 +649,175 @@ $(document).ready(function(){initNavTree('ev-sidebar-attachments_8c_source.html'
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swindow),</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                    GTK_POLICY_NEVER,</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                    GTK_POLICY_AUTOMATIC);</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (swindow),</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;                         GTK_SHADOW_IN);</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="comment">/* Data Model */</span></div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    ev_attachbar-&gt;priv-&gt;model = gtk_list_store_new (<a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a598aba41b84bc4ac7eb3db1e272d7425">N_COLS</a>,</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                            GDK_TYPE_PIXBUF, </div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                            G_TYPE_STRING,  </div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                            G_TYPE_STRING,</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                            <a class="code" href="ev-attachment_8h.html#adff9c07ef1236fbd90def6b2f22a463c">EV_TYPE_ATTACHMENT</a>);</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="comment">/* Icon View */</span></div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    ev_attachbar-&gt;priv-&gt;icon_view =</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        gtk_icon_view_new_with_model (GTK_TREE_MODEL (ev_attachbar-&gt;priv-&gt;model));</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    gtk_icon_view_set_selection_mode (GTK_ICON_VIEW (ev_attachbar-&gt;priv-&gt;icon_view),</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                      GTK_SELECTION_MULTIPLE);</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    gtk_icon_view_set_columns (GTK_ICON_VIEW (ev_attachbar-&gt;priv-&gt;icon_view), -1);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    g_object_set (G_OBJECT (ev_attachbar-&gt;priv-&gt;icon_view),</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;              <span class="stringliteral">&quot;text-column&quot;</span>, <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a4a1ecd08f0dbff454b52d14ae9285102">COLUMN_NAME</a>,</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;              <span class="stringliteral">&quot;pixbuf-column&quot;</span>, <a class="code" href="ev-sidebar-annotations_8c.html#a550cb4231d535863c55643bbd2d3c6baaabefd6151383bb4353f1920b3f53610d">COLUMN_ICON</a>,</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;              NULL);</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    g_signal_connect_swapped (ev_attachbar-&gt;priv-&gt;icon_view,</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                  <span class="stringliteral">&quot;button-press-event&quot;</span>,</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                  G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a6135f20f2e3e70dc68ac9e32df3f4d0c">ev_sidebar_attachments_button_press</a>),</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                  (gpointer) ev_attachbar);</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    gtk_container_add (GTK_CONTAINER (swindow),</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;               ev_attachbar-&gt;priv-&gt;icon_view);</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        gtk_box_pack_start (GTK_BOX (ev_attachbar), swindow, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    gtk_widget_show_all (GTK_WIDGET (ev_attachbar));</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="comment">/* Icon Theme */</span></div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    ev_attachbar-&gt;priv-&gt;icon_theme = NULL;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="comment">/* Icon Cache */</span></div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    ev_attachbar-&gt;priv-&gt;icon_cache = g_hash_table_new_full (g_str_hash,</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                                g_str_equal,</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                                g_free,</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                                g_object_unref);</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="comment">/* Drag and Drop */</span></div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    gtk_icon_view_enable_model_drag_source (</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        GTK_ICON_VIEW (ev_attachbar-&gt;priv-&gt;icon_view),</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        GDK_BUTTON1_MASK,</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        NULL, 0,</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        GDK_ACTION_COPY);</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        gtk_drag_source_add_uri_targets (ev_attachbar-&gt;priv-&gt;icon_view);</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    g_signal_connect (ev_attachbar-&gt;priv-&gt;icon_view,</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;              <span class="stringliteral">&quot;drag-data-get&quot;</span>,</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a8db54473599a0287d12a92ab134177e8">ev_sidebar_attachments_drag_data_get</a>),</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;              (gpointer) ev_attachbar); </div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;}</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;GtkWidget *</div>
-<div class="line"><a name="l00598"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8h.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">  598</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">ev_sidebar_attachments_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;{</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    GtkWidget *ev_attachbar;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    ev_attachbar = g_object_new (<a class="code" href="ev-sidebar-attachments_8h.html#adbea95b0c36ee1e2bcb68e75a133e901">EV_TYPE_SIDEBAR_ATTACHMENTS</a>,</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                                     <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                                     NULL);</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordflow">return</span> ev_attachbar;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;}</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00610"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#aa62c7f369fc6d7786402e7d9a3128286">  610</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#aa62c7f369fc6d7786402e7d9a3128286">job_finished_callback</a> (<a class="code" href="struct__EvJobAttachments.html">EvJobAttachments</a>     *job,</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;               <a class="code" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *ev_attachbar)</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;{</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    GList *l;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    </div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keywordflow">for</span> (l = job-&gt;<a class="code" href="struct__EvJobAttachments.html#a6dd85a26dcadceb56314c9617f33ef5a">attachments</a>; l &amp;&amp; l-&gt;data; l = g_list_next (l)) {</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="ev-attachment_8h.html#a35bb865453308867533846546743ae1c">EvAttachment</a> *attachment;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        GtkTreeIter   iter;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        GdkPixbuf    *pixbuf = NULL;</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="keyword">const</span> gchar  *mime_type;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="comment">/* Data Model */</span></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    ev_attachbar-&gt;priv-&gt;model = gtk_list_store_new (<a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a598aba41b84bc4ac7eb3db1e272d7425">N_COLS</a>,</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                            GDK_TYPE_PIXBUF, </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                            G_TYPE_STRING,  </div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                            G_TYPE_STRING,</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                            <a class="code" href="ev-attachment_8h.html#adff9c07ef1236fbd90def6b2f22a463c">EV_TYPE_ATTACHMENT</a>);</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="comment">/* Icon View */</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    ev_attachbar-&gt;priv-&gt;icon_view =</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        gtk_icon_view_new_with_model (GTK_TREE_MODEL (ev_attachbar-&gt;priv-&gt;model));</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    gtk_icon_view_set_selection_mode (GTK_ICON_VIEW (ev_attachbar-&gt;priv-&gt;icon_view),</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                      GTK_SELECTION_MULTIPLE);</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    gtk_icon_view_set_columns (GTK_ICON_VIEW (ev_attachbar-&gt;priv-&gt;icon_view), -1);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    g_object_set (G_OBJECT (ev_attachbar-&gt;priv-&gt;icon_view),</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;              <span class="stringliteral">&quot;text-column&quot;</span>, <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a4a1ecd08f0dbff454b52d14ae9285102">COLUMN_NAME</a>,</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;              <span class="stringliteral">&quot;pixbuf-column&quot;</span>, <a class="code" href="ev-sidebar-annotations_8c.html#a550cb4231d535863c55643bbd2d3c6baaabefd6151383bb4353f1920b3f53610d">COLUMN_ICON</a>,</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;              NULL);</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    g_signal_connect_swapped (ev_attachbar-&gt;priv-&gt;icon_view,</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                  <span class="stringliteral">&quot;button-press-event&quot;</span>,</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                  G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a6135f20f2e3e70dc68ac9e32df3f4d0c">ev_sidebar_attachments_button_press</a>),</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                  (gpointer) ev_attachbar);</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    gtk_container_add (GTK_CONTAINER (swindow),</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;               ev_attachbar-&gt;priv-&gt;icon_view);</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        gtk_box_pack_start (GTK_BOX (ev_attachbar), swindow, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    gtk_widget_show_all (GTK_WIDGET (ev_attachbar));</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="comment">/* Icon Theme */</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    ev_attachbar-&gt;priv-&gt;icon_theme = NULL;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="comment">/* Icon Cache */</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    ev_attachbar-&gt;priv-&gt;icon_cache = g_hash_table_new_full (g_str_hash,</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                                g_str_equal,</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                                g_free,</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                                g_object_unref);</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="comment">/* Drag and Drop */</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    gtk_icon_view_enable_model_drag_source (</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        GTK_ICON_VIEW (ev_attachbar-&gt;priv-&gt;icon_view),</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        GDK_BUTTON1_MASK,</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        NULL, 0,</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        GDK_ACTION_COPY);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        gtk_drag_source_add_uri_targets (ev_attachbar-&gt;priv-&gt;icon_view);</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    g_signal_connect (ev_attachbar-&gt;priv-&gt;icon_view,</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;              <span class="stringliteral">&quot;drag-data-get&quot;</span>,</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a8db54473599a0287d12a92ab134177e8">ev_sidebar_attachments_drag_data_get</a>),</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;              (gpointer) ev_attachbar); </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;}</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l00596"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8h.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">  596</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a78b6ecd6b1675bd0d5595c4cc27ebd81">ev_sidebar_attachments_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;{</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    GtkWidget *ev_attachbar;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    ev_attachbar = g_object_new (<a class="code" href="ev-sidebar-attachments_8h.html#adbea95b0c36ee1e2bcb68e75a133e901">EV_TYPE_SIDEBAR_ATTACHMENTS</a>,</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                                     <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                                     NULL);</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <span class="keywordflow">return</span> ev_attachbar;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;}</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#aa62c7f369fc6d7786402e7d9a3128286">  608</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#aa62c7f369fc6d7786402e7d9a3128286">job_finished_callback</a> (<a class="code" href="struct__EvJobAttachments.html">EvJobAttachments</a>     *job,</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;               <a class="code" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *ev_attachbar)</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    GList *l;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    </div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">for</span> (l = job-&gt;<a class="code" href="struct__EvJobAttachments.html#a6dd85a26dcadceb56314c9617f33ef5a">attachments</a>; l &amp;&amp; l-&gt;data; l = g_list_next (l)) {</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <a class="code" href="ev-attachment_8h.html#a35bb865453308867533846546743ae1c">EvAttachment</a> *attachment;</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        GtkTreeIter   iter;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        GdkPixbuf    *pixbuf = NULL;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="keyword">const</span> gchar  *mime_type;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        attachment = <a class="code" href="ev-attachment_8h.html#a0aa63ebcafdf80cf0e53cfa87edd549a">EV_ATTACHMENT</a> (l-&gt;data);</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        attachment = <a class="code" href="ev-attachment_8h.html#a0aa63ebcafdf80cf0e53cfa87edd549a">EV_ATTACHMENT</a> (l-&gt;data);</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        mime_type = <a class="code" href="ev-attachment_8c.html#a757cc2c4dce2fb0f979466ab00aa737a">ev_attachment_get_mime_type</a> (attachment);</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        pixbuf = <a class="code" href="ev-sidebar-attachments_8c.html#a746b7dc47dd268c599f9f193b82019e1">ev_sidebar_attachments_icon_cache_get</a> (ev_attachbar,</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                                mime_type);</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        gtk_list_store_append (ev_attachbar-&gt;priv-&gt;model, &amp;iter);</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        gtk_list_store_set (ev_attachbar-&gt;priv-&gt;model, &amp;iter,</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                    <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a4a1ecd08f0dbff454b52d14ae9285102">COLUMN_NAME</a>, <a class="code" href="ev-attachment_8c.html#abdaaf411662fde95e0bc81465ef2a985">ev_attachment_get_name</a> (attachment),</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                    <a class="code" href="ev-sidebar-annotations_8c.html#a550cb4231d535863c55643bbd2d3c6baaabefd6151383bb4353f1920b3f53610d">COLUMN_ICON</a>, pixbuf,</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                    <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90afb27a384ab10ec1041f886684c86b1c4">COLUMN_ATTACHMENT</a>, attachment, </div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                    -1);</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    }</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    g_object_unref (job);</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;}</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae">  640</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae">ev_sidebar_attachments_document_changed_cb</a> (<a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a>      *model,</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;                        GParamSpec           *pspec,</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                        <a class="code" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *ev_attachbar)</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;{</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-attachments_8h.html#a5c6095c8ce6b4336f5f8626a7b5972cc">EV_IS_DOCUMENT_ATTACHMENTS</a> (document))</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-attachments_8c.html#afed9f32a483488821a898e6a4e3b05db">ev_document_attachments_has_attachments</a> (<a class="code" href="ev-document-attachments_8h.html#a00b7e7363b0357ce2f56f28f8311e527">EV_DOCUMENT_ATTACHMENTS</a> (document)))</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordflow">if</span> (!ev_attachbar-&gt;priv-&gt;icon_theme) {</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        GdkScreen *screen;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        screen = gtk_widget_get_screen (GTK_WIDGET (ev_attachbar));</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        ev_attachbar-&gt;priv-&gt;icon_theme = gtk_icon_theme_get_for_screen (screen);</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        g_signal_connect_swapped (ev_attachbar-&gt;priv-&gt;icon_theme,</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                      <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                      G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a3e4437ad273f004cb2753223c88e6de5">ev_sidebar_attachments_update_icons</a>),</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                      (gpointer) ev_attachbar);</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    }</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        </div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    gtk_list_store_clear (ev_attachbar-&gt;priv-&gt;model);</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    job = <a class="code" href="ev-jobs_8c.html#aafa59a3df7f9f3c10df55c20d939daae">ev_job_attachments_new</a> (document);</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    g_signal_connect (job, <span class="stringliteral">&quot;finished&quot;</span>,</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#aa62c7f369fc6d7786402e7d9a3128286">job_finished_callback</a>),</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;              ev_attachbar);</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    g_signal_connect (job, <span class="stringliteral">&quot;cancelled&quot;</span>,</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;              G_CALLBACK (g_object_unref),</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;              NULL);</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="comment">/* The priority doesn&#39;t matter for this job */</span></div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (job, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;}</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00678"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a90e70f4e6c5482cb184d847e072ae22b">  678</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a90e70f4e6c5482cb184d847e072ae22b">ev_sidebar_attachments_set_model</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a>   *page,</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                  <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model)</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;{</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae">ev_sidebar_attachments_document_changed_cb</a>),</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;              page);</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;}</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00687"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a27c4f40a341be2bc4377b036a0a8d181">  687</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a27c4f40a341be2bc4377b036a0a8d181">ev_sidebar_attachments_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a>   *sidebar_page,</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                     <a class="code" href="struct__EvDocument.html">EvDocument</a>      *document)</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;{</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ev-document-attachments_8h.html#a5c6095c8ce6b4336f5f8626a7b5972cc">EV_IS_DOCUMENT_ATTACHMENTS</a> (document) &amp;&amp;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <a class="code" href="ev-document-attachments_8c.html#afed9f32a483488821a898e6a4e3b05db">ev_document_attachments_has_attachments</a> (<a class="code" href="ev-document-attachments_8h.html#a00b7e7363b0357ce2f56f28f8311e527">EV_DOCUMENT_ATTACHMENTS</a> (document)));</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;}</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar*</div>
-<div class="line"><a name="l00695"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#adfa87cb0a2e75c4bf97834fe888cb88a">  695</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#adfa87cb0a2e75c4bf97834fe888cb88a">ev_sidebar_attachments_get_label</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *sidebar_page)</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;{</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Attachments&quot;</span>);</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;}</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00701"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a6ec1a6e955a49a40b5f34b9f104e47e7">  701</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a6ec1a6e955a49a40b5f34b9f104e47e7">ev_sidebar_attachments_page_iface_init</a> (<a class="code" href="struct__EvSidebarPageInterface.html">EvSidebarPageInterface</a> *iface)</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;{</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1">support_document</a> = <a class="code" href="ev-sidebar-attachments_8c.html#a27c4f40a341be2bc4377b036a0a8d181">ev_sidebar_attachments_support_document</a>;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0">set_model</a> = <a class="code" href="ev-sidebar-attachments_8c.html#a90e70f4e6c5482cb184d847e072ae22b">ev_sidebar_attachments_set_model</a>;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58">get_label</a> = <a class="code" href="ev-sidebar-attachments_8c.html#adfa87cb0a2e75c4bf97834fe888cb88a">ev_sidebar_attachments_get_label</a>;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;}</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        mime_type = <a class="code" href="ev-attachment_8c.html#a757cc2c4dce2fb0f979466ab00aa737a">ev_attachment_get_mime_type</a> (attachment);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        pixbuf = <a class="code" href="ev-sidebar-attachments_8c.html#a746b7dc47dd268c599f9f193b82019e1">ev_sidebar_attachments_icon_cache_get</a> (ev_attachbar,</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                                mime_type);</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        gtk_list_store_append (ev_attachbar-&gt;priv-&gt;model, &amp;iter);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        gtk_list_store_set (ev_attachbar-&gt;priv-&gt;model, &amp;iter,</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                    <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a4a1ecd08f0dbff454b52d14ae9285102">COLUMN_NAME</a>, <a class="code" href="ev-attachment_8c.html#abdaaf411662fde95e0bc81465ef2a985">ev_attachment_get_name</a> (attachment),</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                    <a class="code" href="ev-sidebar-annotations_8c.html#a550cb4231d535863c55643bbd2d3c6baaabefd6151383bb4353f1920b3f53610d">COLUMN_ICON</a>, pixbuf,</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                    <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90afb27a384ab10ec1041f886684c86b1c4">COLUMN_ATTACHMENT</a>, attachment, </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                    -1);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    }</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    g_object_unref (job);</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;}</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae">  638</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae">ev_sidebar_attachments_document_changed_cb</a> (<a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a>      *model,</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                        GParamSpec           *pspec,</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                        <a class="code" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *ev_attachbar)</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;{</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-attachments_8h.html#a5c6095c8ce6b4336f5f8626a7b5972cc">EV_IS_DOCUMENT_ATTACHMENTS</a> (document))</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-attachments_8c.html#afed9f32a483488821a898e6a4e3b05db">ev_document_attachments_has_attachments</a> (<a class="code" href="ev-document-attachments_8h.html#a00b7e7363b0357ce2f56f28f8311e527">EV_DOCUMENT_ATTACHMENTS</a> (document)))</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="keywordflow">if</span> (!ev_attachbar-&gt;priv-&gt;icon_theme) {</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        GdkScreen *screen;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        screen = gtk_widget_get_screen (GTK_WIDGET (ev_attachbar));</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        ev_attachbar-&gt;priv-&gt;icon_theme = gtk_icon_theme_get_for_screen (screen);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        g_signal_connect_swapped (ev_attachbar-&gt;priv-&gt;icon_theme,</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                      <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                      G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a3e4437ad273f004cb2753223c88e6de5">ev_sidebar_attachments_update_icons</a>),</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                      (gpointer) ev_attachbar);</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    }</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        </div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    gtk_list_store_clear (ev_attachbar-&gt;priv-&gt;model);</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    job = <a class="code" href="ev-jobs_8c.html#aafa59a3df7f9f3c10df55c20d939daae">ev_job_attachments_new</a> (document);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    g_signal_connect (job, <span class="stringliteral">&quot;finished&quot;</span>,</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#aa62c7f369fc6d7786402e7d9a3128286">job_finished_callback</a>),</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;              ev_attachbar);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    g_signal_connect (job, <span class="stringliteral">&quot;cancelled&quot;</span>,</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;              G_CALLBACK (g_object_unref),</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;              NULL);</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="comment">/* The priority doesn&#39;t matter for this job */</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (job, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;}</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a90e70f4e6c5482cb184d847e072ae22b">  676</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a90e70f4e6c5482cb184d847e072ae22b">ev_sidebar_attachments_set_model</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a>   *page,</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;                  <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model)</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;{</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae">ev_sidebar_attachments_document_changed_cb</a>),</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;              page);</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;}</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00685"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a27c4f40a341be2bc4377b036a0a8d181">  685</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a27c4f40a341be2bc4377b036a0a8d181">ev_sidebar_attachments_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a>   *sidebar_page,</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                     <a class="code" href="struct__EvDocument.html">EvDocument</a>      *document)</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;{</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ev-document-attachments_8h.html#a5c6095c8ce6b4336f5f8626a7b5972cc">EV_IS_DOCUMENT_ATTACHMENTS</a> (document) &amp;&amp;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <a class="code" href="ev-document-attachments_8c.html#afed9f32a483488821a898e6a4e3b05db">ev_document_attachments_has_attachments</a> (<a class="code" href="ev-document-attachments_8h.html#a00b7e7363b0357ce2f56f28f8311e527">EV_DOCUMENT_ATTACHMENTS</a> (document)));</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;}</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar*</div>
+<div class="line"><a name="l00693"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#adfa87cb0a2e75c4bf97834fe888cb88a">  693</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#adfa87cb0a2e75c4bf97834fe888cb88a">ev_sidebar_attachments_get_label</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *sidebar_page)</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;{</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Attachments&quot;</span>);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;}</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno"><a class="code" href="ev-sidebar-attachments_8c.html#a6ec1a6e955a49a40b5f34b9f104e47e7">  699</a></span>&#160;<a class="code" href="ev-sidebar-attachments_8c.html#a6ec1a6e955a49a40b5f34b9f104e47e7">ev_sidebar_attachments_page_iface_init</a> (<a class="code" href="struct__EvSidebarPageInterface.html">EvSidebarPageInterface</a> *iface)</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;{</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1">support_document</a> = <a class="code" href="ev-sidebar-attachments_8c.html#a27c4f40a341be2bc4377b036a0a8d181">ev_sidebar_attachments_support_document</a>;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0">set_model</a> = <a class="code" href="ev-sidebar-attachments_8c.html#a90e70f4e6c5482cb184d847e072ae22b">ev_sidebar_attachments_set_model</a>;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58">get_label</a> = <a class="code" href="ev-sidebar-attachments_8c.html#adfa87cb0a2e75c4bf97834fe888cb88a">ev_sidebar_attachments_get_label</a>;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;}</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-attachments_8c.html">ev-sidebar-attachments.c</a></li>
-    <li class="footer">Generated on Fri Apr 10 2015 12:09:24 for Evince by
+    <li class="footer">Generated on Sun Apr 12 2015 09:54:21 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

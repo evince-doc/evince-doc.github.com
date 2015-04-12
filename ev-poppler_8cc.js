@@ -120,5 +120,6 @@ var ev_poppler_8cc =
     [ "pdf_selection_get_selection_region", "ev-poppler_8cc.html#af66c2b733064cbc958538f0a6ec4ea4f", null ],
     [ "pdf_selection_iface_init", "ev-poppler_8cc.html#a69ee8b8d5304dfc2a21a63329036dbc1", null ],
     [ "pdf_selection_render_selection", "ev-poppler_8cc.html#a896e9d2c708a96be9cc62a11ac2f4ed6", null ],
+    [ "poppler_annot_can_have_popup_window", "ev-poppler_8cc.html#a9771411e9c52211f3d4320b6ab17089b", null ],
     [ "poppler_annot_color_to_gdk_color", "ev-poppler_8cc.html#ae3c95ed30dd5d62fc8bf092040056e86", null ]
 ];

@@ -258,6 +258,7 @@ var searchData=
   ['ev_5fannotation_5fget_5ftype',['ev_annotation_get_type',['../ev-annotation_8h.html#adddaa17f76f5d7e40cbbe82a83ef8df5',1,'ev-annotation.h']]],
   ['ev_5fannotation_5finit',['ev_annotation_init',['../ev-annotation_8c.html#a9dd836b42949b6aefd39b9e41d698f98',1,'ev-annotation.c']]],
   ['ev_5fannotation_5fmarkup',['EV_ANNOTATION_MARKUP',['../ev-annotation_8h.html#acde9e98235437b8efbca1ad55873850e',1,'ev-annotation.h']]],
+  ['ev_5fannotation_5fmarkup_5fcan_5fhave_5fpopup',['ev_annotation_markup_can_have_popup',['../ev-annotation_8c.html#ac843018d40233a107635f97aefe2efb7',1,'ev_annotation_markup_can_have_popup(EvAnnotationMarkup *markup):&#160;ev-annotation.c'],['../ev-annotation_8h.html#ac843018d40233a107635f97aefe2efb7',1,'ev_annotation_markup_can_have_popup(EvAnnotationMarkup *markup):&#160;ev-annotation.c']]],
   ['ev_5fannotation_5fmarkup_5fclass_5finstall_5fproperties',['ev_annotation_markup_class_install_properties',['../ev-annotation_8c.html#abe4dff0de1474549a9d5564b10a313c0',1,'ev-annotation.c']]],
   ['ev_5fannotation_5fmarkup_5fdefault_5finit',['ev_annotation_markup_default_init',['../ev-annotation_8c.html#adecb6441acbb877ba00baef281b4b662',1,'ev-annotation.c']]],
   ['ev_5fannotation_5fmarkup_5fget_5fiface',['EV_ANNOTATION_MARKUP_GET_IFACE',['../ev-annotation_8h.html#a85eee2de541a32c1740fedd8963b6dfe',1,'ev-annotation.h']]],

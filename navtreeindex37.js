@@ -1,5 +1,12 @@
 var NAVTREEINDEX37 =
 {
+"structsynctex__offsets__t.html":[5,0,363],
+"structsynctex__offsets__t.html#a2cd149f6eb10f953dd9636717dfb2852":[5,0,363,1],
+"structsynctex__offsets__t.html#a346cfb4972abd9c20f73f5f25a51dd72":[5,0,363,0],
+"structsynctex__point__t.html":[5,0,364],
+"structsynctex__point__t.html#a47fa1080adf9e08e535c80b9854cf186":[5,0,364,1],
+"structsynctex__point__t.html#ac3f7563da1a5c828a3c5f73da1437336":[5,0,364,0],
+"structtfmpool.html":[5,0,365],
 "structtfmpool.html#a01ea26451d4308a5ce5713333f1a01de":[5,0,365,0],
 "structtfmpool.html#a084262693e121647f31e3ff17c76512e":[5,0,365,3],
 "structtfmpool.html#a37ef2d9f07944bea5818f3c5216f3b88":[5,0,365,2],
@@ -123,8 +130,8 @@ var NAVTREEINDEX37 =
 "synctex__parser_8c.html#a68b44db81f044e077838608b634440ed":[6,0,0,2,2,0,196],
 "synctex__parser_8c.html#a68d11a2cb22716e7abd35cffed7d54c5":[6,0,0,2,2,0,124],
 "synctex__parser_8c.html#a6b6dc9b8b0b48e947a9df8fcd4a6aff5":[6,0,0,2,2,0,18],
-"synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[6,0,0,2,2,0,55],
 "synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[6,0,0,2,2,0,54],
+"synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[6,0,0,2,2,0,55],
 "synctex__parser_8c.html#a6c85cf5e084187eaea7fd439896dec66":[6,0,0,2,2,0,179],
 "synctex__parser_8c.html#a6e54f8b897b0065313e6100a2d0e407d":[6,0,0,2,2,0,225],
 "synctex__parser_8c.html#a6e6a7e16779fd7e7a03c73c9717bf116":[6,0,0,2,2,0,37],
@@ -242,12 +249,5 @@ var NAVTREEINDEX37 =
 "synctex__parser_8c.html#ae8a816584b1b3208355d0fcefd60458d":[6,0,0,2,2,0,246],
 "synctex__parser_8c.html#ae8adfbe8ea9cf13680e08eeec278480c":[6,0,0,2,2,0,147],
 "synctex__parser_8c.html#ae91fb6c0ce3404ec568a456dca4730f7":[6,0,0,2,2,0,112],
-"synctex__parser_8c.html#ae971d6978ab6471053525acd4ee14bbd":[6,0,0,2,2,0,109],
-"synctex__parser_8c.html#ae9ad334747a248fd9ab9efd6518116c5":[6,0,0,2,2,0,185],
-"synctex__parser_8c.html#aeba646fee2eb92507ffbb095ea482c85":[6,0,0,2,2,0,202],
-"synctex__parser_8c.html#aec3873a23961f50c1d92c8f75a50bd40":[6,0,0,2,2,0,13],
-"synctex__parser_8c.html#aeeac4c6cf0c385d0d0277eeeca4136bd":[6,0,0,2,2,0,209],
-"synctex__parser_8c.html#aeee9a8fb4c8439b692f51aa3a208bd94":[6,0,0,2,2,0,120],
-"synctex__parser_8c.html#aef855344b4c1f2873d77ee339389d10d":[6,0,0,2,2,0,113],
-"synctex__parser_8c.html#aef8b14f5cc3e40e6386f2cb102a70f1e":[6,0,0,2,2,0,264]
+"synctex__parser_8c.html#ae971d6978ab6471053525acd4ee14bbd":[6,0,0,2,2,0,109]
 };

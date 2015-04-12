@@ -354,12 +354,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar-layers_8c_source.html#l00329">329</a> of file <a class="el" href="ev-sidebar-layers_8c_source.html">ev-sidebar-layers.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-sidebar-layers_8h.html#ae3999004fa172e601f45bbba1727eb93">EV_TYPE_SIDEBAR_LAYERS</a>,</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                         NULL));</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar-layers_8c_source.html#l00327">327</a> of file <a class="el" href="ev-sidebar-layers_8c_source.html">ev-sidebar-layers.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-sidebar-layers_8h.html#ae3999004fa172e601f45bbba1727eb93">EV_TYPE_SIDEBAR_LAYERS</a>,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                         NULL));</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -387,17 +387,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar-layers_8c_source.html#l00367">367</a> of file <a class="el" href="ev-sidebar-layers_8c_source.html">ev-sidebar-layers.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;{</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    GtkTreeModel     *model;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    GtkTreeIter       iter;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="code" href="ev-document-layers_8h.html#a3737cf86c4424563622104576b7c0c7f">EvDocumentLayers</a> *document_layers;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    document_layers = <a class="code" href="ev-document-layers_8h.html#a3810c94c5afd38f051d2761d15c83a43">EV_DOCUMENT_LAYERS</a> (sidebar_layers-&gt;priv-&gt;document);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    model = gtk_tree_view_get_model (GTK_TREE_VIEW (sidebar_layers-&gt;priv-&gt;tree_view));</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">if</span> (gtk_tree_model_get_iter_first (model, &amp;iter))</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (model, &amp;iter, document_layers);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar-layers_8c_source.html#l00365">365</a> of file <a class="el" href="ev-sidebar-layers_8c_source.html">ev-sidebar-layers.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    GtkTreeModel     *model;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    GtkTreeIter       iter;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="ev-document-layers_8h.html#a3737cf86c4424563622104576b7c0c7f">EvDocumentLayers</a> *document_layers;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    document_layers = <a class="code" href="ev-document-layers_8h.html#a3810c94c5afd38f051d2761d15c83a43">EV_DOCUMENT_LAYERS</a> (sidebar_layers-&gt;priv-&gt;document);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    model = gtk_tree_view_get_model (GTK_TREE_VIEW (sidebar_layers-&gt;priv-&gt;tree_view));</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">if</span> (gtk_tree_model_get_iter_first (model, &amp;iter))</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (model, &amp;iter, document_layers);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -417,7 +417,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-layers_8h.html">ev-sidebar-layers.h</a></li>
-    <li class="footer">Generated on Fri Apr 10 2015 12:09:32 for Evince by
+    <li class="footer">Generated on Sun Apr 12 2015 09:54:28 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

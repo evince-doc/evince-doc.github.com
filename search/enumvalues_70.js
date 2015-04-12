@@ -64,6 +64,7 @@ var searchData=
   ['prop_5fline_5ftwo',['PROP_LINE_TWO',['../gd-two-lines-renderer_8c.html#ac36f475ca5b446f4fde4c9b90bec77c8a54a9f92f50cf66c59fc04930e3f3783c',1,'gd-two-lines-renderer.c']]],
   ['prop_5floop',['PROP_LOOP',['../ev-timeline_8c.html#a1fb9092bcdeada2d206bdc74afbbe122a54913311726d18f981d28cfc0adf5775',1,'ev-timeline.c']]],
   ['prop_5fmarkup_5f0',['PROP_MARKUP_0',['../ev-annotation_8c.html#aba01db17f4a2bfbc3db60dc172972a25ac05ad5dae7c86a145fd3c24f006aa52e',1,'ev-annotation.c']]],
+  ['prop_5fmarkup_5fcan_5fhave_5fpopup',['PROP_MARKUP_CAN_HAVE_POPUP',['../ev-annotation_8c.html#aba01db17f4a2bfbc3db60dc172972a25a8bbd5ddc53ab33724a6db05860b34117',1,'ev-annotation.c']]],
   ['prop_5fmarkup_5fhas_5fpopup',['PROP_MARKUP_HAS_POPUP',['../ev-annotation_8c.html#aba01db17f4a2bfbc3db60dc172972a25adba79968f62380dfbe51cde6ea54ee79',1,'ev-annotation.c']]],
   ['prop_5fmarkup_5flabel',['PROP_MARKUP_LABEL',['../ev-annotation_8c.html#aba01db17f4a2bfbc3db60dc172972a25a5e28a244c769e5ae58c15ed96d3e325d',1,'ev-annotation.c']]],
   ['prop_5fmarkup_5fopacity',['PROP_MARKUP_OPACITY',['../ev-annotation_8c.html#aba01db17f4a2bfbc3db60dc172972a25a86238efa1586ec195d164103fd835dc6',1,'ev-annotation.c']]],

@@ -1,6 +1,8 @@
 var ev_view_8c =
 [
     [ "EvViewChild", "structEvViewChild.html", "structEvViewChild" ],
+    [ "ANNOT_POPUP_WINDOW_DEFAULT_HEIGHT", "ev-view_8c.html#abaaa9dd745602e02aa3c1f6fcd438667", null ],
+    [ "ANNOT_POPUP_WINDOW_DEFAULT_WIDTH", "ev-view_8c.html#a697d61d5a9a8f45589dd7e457d2afe32", null ],
     [ "CURSOR_DIVIDER", "ev-view_8c.html#a7b7ce94c62841b6a2ca044bc01f85cf8", null ],
     [ "CURSOR_OFF_MULTIPLIER", "ev-view_8c.html#a226485a540de86ba8676ec0aaa05e980", null ],
     [ "CURSOR_ON_MULTIPLIER", "ev-view_8c.html#a3cdddd7ddb5c37f953ffc494e4a75a40", null ],

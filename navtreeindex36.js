@@ -1,5 +1,12 @@
 var NAVTREEINDEX36 =
 {
+"struct__NPNetscapeFuncs.html#aa294d94d33711d1bb9cfe3b54e90d134":[5,0,291,7],
+"struct__NPNetscapeFuncs.html#aa8e3dd22598324e65d22b479280209e1":[5,0,291,55],
+"struct__NPNetscapeFuncs.html#aa9bf7b277fbd3cb0a7fcc3880571a311":[5,0,291,37],
+"struct__NPNetscapeFuncs.html#ab852b906fe8021b1041b289a68679b26":[5,0,291,19],
+"struct__NPNetscapeFuncs.html#abd4c8e78fb64bd8393bd2126ae7bd2bf":[5,0,291,43],
+"struct__NPNetscapeFuncs.html#ac58c9b914bab8df89e7c38d4c56bab0b":[5,0,291,17],
+"struct__NPNetscapeFuncs.html#ac7728c9afdc5da4f3f6286f8fd713725":[5,0,291,40],
 "struct__NPNetscapeFuncs.html#ad192f239da060e48b2ea96f43760f04d":[5,0,291,12],
 "struct__NPNetscapeFuncs.html#ad6202270465f2a18a80bd87bb277277c":[5,0,291,47],
 "struct__NPNetscapeFuncs.html#ade12712a7e29707ffbc87e6b29a583a6":[5,0,291,53],
@@ -242,12 +249,5 @@ var NAVTREEINDEX36 =
 "structsynctex__node__set__t.html#a99e18c2a2158cf33ced43ea92c96ebd8":[5,0,361,1],
 "structsynctex__node__sheet__t.html":[5,0,362],
 "structsynctex__node__sheet__t.html#a289d56fa323e16a695932c355eb83cc0":[5,0,362,0],
-"structsynctex__node__sheet__t.html#a676d15581587febbd5493958c7cc2b1f":[5,0,362,1],
-"structsynctex__offsets__t.html":[5,0,363],
-"structsynctex__offsets__t.html#a2cd149f6eb10f953dd9636717dfb2852":[5,0,363,1],
-"structsynctex__offsets__t.html#a346cfb4972abd9c20f73f5f25a51dd72":[5,0,363,0],
-"structsynctex__point__t.html":[5,0,364],
-"structsynctex__point__t.html#a47fa1080adf9e08e535c80b9854cf186":[5,0,364,1],
-"structsynctex__point__t.html#ac3f7563da1a5c828a3c5f73da1437336":[5,0,364,0],
-"structtfmpool.html":[5,0,365]
+"structsynctex__node__sheet__t.html#a676d15581587febbd5493958c7cc2b1f":[5,0,362,1]
 };

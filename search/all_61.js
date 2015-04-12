@@ -60,6 +60,8 @@ var searchData=
   ['annot_5fadd_5fcancelled',['annot_add_cancelled',['../struct__EvSidebarAnnotationsClass.html#a421b5b9da31dddec1639ae9ff19e874c',1,'_EvSidebarAnnotationsClass::annot_add_cancelled()'],['../ev-sidebar-annotations_8c.html#a83e8bc15645f9d99ab91a152bb3dc8ceaab99ae8f6f253efd97fdea0e2d7db60e',1,'ANNOT_ADD_CANCELLED():&#160;ev-sidebar-annotations.c']]],
   ['annot_5fadded',['annot_added',['../struct__EvViewClass.html#abb0f806f6b91c4682a1a382666af2bde',1,'_EvViewClass']]],
   ['annot_5fmapping',['annot_mapping',['../struct__EvJobPageData.html#ac19ef061a0ee1abc91a57b17d7756b47',1,'_EvJobPageData::annot_mapping()'],['../struct__EvPageCacheData.html#a154ac76c9594b0c157bf8eca740fc30b',1,'_EvPageCacheData::annot_mapping()']]],
+  ['annot_5fpopup_5fwindow_5fdefault_5fheight',['ANNOT_POPUP_WINDOW_DEFAULT_HEIGHT',['../ev-view_8c.html#abaaa9dd745602e02aa3c1f6fcd438667',1,'ev-view.c']]],
+  ['annot_5fpopup_5fwindow_5fdefault_5fwidth',['ANNOT_POPUP_WINDOW_DEFAULT_WIDTH',['../ev-view_8c.html#a697d61d5a9a8f45589dd7e457d2afe32',1,'ev-view.c']]],
   ['annot_5fremoved',['annot_removed',['../struct__EvViewClass.html#a980f375aefc5198dac52aab24f9a95ec',1,'_EvViewClass']]],
   ['annot_5fset_5funique_5fname',['annot_set_unique_name',['../ev-poppler_8cc.html#ab0d387392f5359a4c8be7e7540844f32',1,'ev-poppler.cc']]],
   ['annot_5ftext_5fitem',['annot_text_item',['../struct__EvSidebarAnnotationsPrivate.html#adc28c0b4ab6a70f256e6f1ce8b8cfce9',1,'_EvSidebarAnnotationsPrivate']]],

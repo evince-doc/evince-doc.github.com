@@ -394,181 +394,179 @@ $(document).ready(function(){initNavTree('ev-sidebar-layers_8c_source.html','');
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (swindow),</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    GTK_POLICY_NEVER,</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                    GTK_POLICY_AUTOMATIC);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (swindow),</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                         GTK_SHADOW_IN);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">/* Data Model */</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    model = <a class="code" href="ev-sidebar-layers_8c.html#a3d33bee2c5e69591aeae43ed598defbc">ev_sidebar_layers_create_loading_model</a> ();</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">/* Layers list */</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    ev_layers-&gt;priv-&gt;tree_view = <a class="code" href="ev-sidebar-layers_8c.html#adf1e302d6a2c10ed162fbf879477298d">ev_sidebar_layers_create_tree_view</a> (ev_layers);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    gtk_tree_view_set_model (ev_layers-&gt;priv-&gt;tree_view, model);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    g_object_unref (model);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    gtk_container_add (GTK_CONTAINER (swindow),</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;               GTK_WIDGET (ev_layers-&gt;priv-&gt;tree_view));</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        gtk_box_pack_start (GTK_BOX (ev_layers), swindow, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    gtk_widget_show_all (GTK_WIDGET (ev_layers));</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a39e69302d310c13e1b47c202c1e57e0b">  307</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a39e69302d310c13e1b47c202c1e57e0b">ev_sidebar_layers_class_init</a> (<a class="code" href="struct__EvSidebarLayersClass.html">EvSidebarLayersClass</a> *ev_layers_class)</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    GObjectClass *g_object_class = G_OBJECT_CLASS (ev_layers_class);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    g_object_class-&gt;get_property = <a class="code" href="ev-sidebar-layers_8c.html#a4eefb707719b548d5b3dc8fa7b848ffd">ev_sidebar_layers_get_property</a>;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    g_object_class-&gt;dispose = ev_sidebar_layers_dispose;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">/* Data Model */</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    model = <a class="code" href="ev-sidebar-layers_8c.html#a3d33bee2c5e69591aeae43ed598defbc">ev_sidebar_layers_create_loading_model</a> ();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">/* Layers list */</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    ev_layers-&gt;priv-&gt;tree_view = <a class="code" href="ev-sidebar-layers_8c.html#adf1e302d6a2c10ed162fbf879477298d">ev_sidebar_layers_create_tree_view</a> (ev_layers);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    gtk_tree_view_set_model (ev_layers-&gt;priv-&gt;tree_view, model);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    g_object_unref (model);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    gtk_container_add (GTK_CONTAINER (swindow),</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;               GTK_WIDGET (ev_layers-&gt;priv-&gt;tree_view));</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        gtk_box_pack_start (GTK_BOX (ev_layers), swindow, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    gtk_widget_show_all (GTK_WIDGET (ev_layers));</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a39e69302d310c13e1b47c202c1e57e0b">  305</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a39e69302d310c13e1b47c202c1e57e0b">ev_sidebar_layers_class_init</a> (<a class="code" href="struct__EvSidebarLayersClass.html">EvSidebarLayersClass</a> *ev_layers_class)</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    GObjectClass *g_object_class = G_OBJECT_CLASS (ev_layers_class);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    g_object_class-&gt;get_property = <a class="code" href="ev-sidebar-layers_8c.html#a4eefb707719b548d5b3dc8fa7b848ffd">ev_sidebar_layers_get_property</a>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    g_object_class-&gt;dispose = ev_sidebar_layers_dispose;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    g_type_class_add_private (g_object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvSidebarLayersPrivate.html">EvSidebarLayersPrivate</a>));</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    g_type_class_add_private (g_object_class, <span class="keyword">sizeof</span> (<a class="code" href="struct__EvSidebarLayersPrivate.html">EvSidebarLayersPrivate</a>));</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    g_object_class_override_property (g_object_class, <a class="code" href="ev-sidebar-annotations_8c.html#a109bfaad92bd6d348dab484aec11edbbabf7866167c9f740bdacaa103a372b335">PROP_WIDGET</a>, <span class="stringliteral">&quot;main-widget&quot;</span>);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    g_object_class_override_property (g_object_class, <a class="code" href="ev-sidebar-annotations_8c.html#a109bfaad92bd6d348dab484aec11edbbabf7866167c9f740bdacaa103a372b335">PROP_WIDGET</a>, <span class="stringliteral">&quot;main-widget&quot;</span>);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="ev-sidebar-layers_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-sidebar-layers_8c.html#a1b70d876770ccff427513794d6b0b2a7acd13b984c6cfe5d9ffa4e0e22295cb61">LAYERS_VISIBILITY_CHANGED</a>] =</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        g_signal_new (<span class="stringliteral">&quot;layers_visibility_changed&quot;</span>,</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                  G_TYPE_FROM_CLASS (g_object_class),</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                  G_STRUCT_OFFSET (<a class="code" href="struct__EvSidebarLayersClass.html">EvSidebarLayersClass</a>, layers_visibility_changed),</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                  NULL, NULL,</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                  g_cclosure_marshal_VOID__VOID,</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                  G_TYPE_NONE, 0, G_TYPE_NONE);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;GtkWidget *</div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8h.html#a20cfa71f38ef8ee2c6959211daf7ac78">  329</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a20cfa71f38ef8ee2c6959211daf7ac78">ev_sidebar_layers_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-sidebar-layers_8h.html#ae3999004fa172e601f45bbba1727eb93">EV_TYPE_SIDEBAR_LAYERS</a>,</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                         NULL));</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">  337</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (GtkTreeModel     *model,</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;             GtkTreeIter      *iter,</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;             <a class="code" href="ev-document-layers_8h.html#a3737cf86c4424563622104576b7c0c7f">EvDocumentLayers</a> *document_layers)</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;{</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="ev-layer_8h.html#a3e02e0b29fb08b694dcfc3ac2bf24c90">EvLayer</a>    *layer;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    gboolean    visible;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    GtkTreeIter child_iter;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        gtk_tree_model_get (model, iter,</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                    <a class="code" href="ev-document-layers_8h.html#a39fca1837c5ce7715cbf571669660c13ae51cf8e4705d86a3f53b66c3b11637db">EV_DOCUMENT_LAYERS_COLUMN_VISIBLE</a>, &amp;visible,</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                    <a class="code" href="ev-document-layers_8h.html#a39fca1837c5ce7715cbf571669660c13adb5c411661db9d2c97fe64221254bebc">EV_DOCUMENT_LAYERS_COLUMN_LAYER</a>, &amp;layer,</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                    -1);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">if</span> (layer) {</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            gboolean layer_visible;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            layer_visible = <a class="code" href="ev-document-layers_8c.html#aa9bb6ab872b8a802e24093ed1a8d0705">ev_document_layers_layer_is_visible</a> (document_layers, layer);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">if</span> (layer_visible != visible) {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                gtk_tree_store_set (GTK_TREE_STORE (model), iter,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                            <a class="code" href="ev-document-layers_8h.html#a39fca1837c5ce7715cbf571669660c13ae51cf8e4705d86a3f53b66c3b11637db">EV_DOCUMENT_LAYERS_COLUMN_VISIBLE</a>, layer_visible,</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                            -1);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">if</span> (gtk_tree_model_iter_children (model, &amp;child_iter, iter))</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (model, &amp;child_iter, document_layers);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    } <span class="keywordflow">while</span> (gtk_tree_model_iter_next (model, iter));</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8h.html#aa6152a056f2a9ce2a91841ef01a2306b">  367</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#aa6152a056f2a9ce2a91841ef01a2306b">ev_sidebar_layers_update_layers_state</a> (<a class="code" href="ev-sidebar-layers_8h.html#a62af72f0ecb212024272578326dd45ba">EvSidebarLayers</a> *sidebar_layers)</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;{</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    GtkTreeModel     *model;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    GtkTreeIter       iter;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="code" href="ev-document-layers_8h.html#a3737cf86c4424563622104576b7c0c7f">EvDocumentLayers</a> *document_layers;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    document_layers = <a class="code" href="ev-document-layers_8h.html#a3810c94c5afd38f051d2761d15c83a43">EV_DOCUMENT_LAYERS</a> (sidebar_layers-&gt;priv-&gt;document);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    model = gtk_tree_view_get_model (GTK_TREE_VIEW (sidebar_layers-&gt;priv-&gt;tree_view));</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">if</span> (gtk_tree_model_get_iter_first (model, &amp;iter))</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (model, &amp;iter, document_layers);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">  380</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">job_finished_callback</a> (<a class="code" href="struct__EvJobLayers.html">EvJobLayers</a>     *job,</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;               <a class="code" href="ev-sidebar-layers_8h.html#a62af72f0ecb212024272578326dd45ba">EvSidebarLayers</a> *sidebar_layers)</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;{</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <a class="code" href="struct__EvSidebarLayersPrivate.html">EvSidebarLayersPrivate</a> *priv;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="ev-sidebar-layers_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-sidebar-layers_8c.html#a1b70d876770ccff427513794d6b0b2a7acd13b984c6cfe5d9ffa4e0e22295cb61">LAYERS_VISIBILITY_CHANGED</a>] =</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        g_signal_new (<span class="stringliteral">&quot;layers_visibility_changed&quot;</span>,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                  G_TYPE_FROM_CLASS (g_object_class),</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                  G_STRUCT_OFFSET (<a class="code" href="struct__EvSidebarLayersClass.html">EvSidebarLayersClass</a>, layers_visibility_changed),</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                  NULL, NULL,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                  g_cclosure_marshal_VOID__VOID,</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                  G_TYPE_NONE, 0, G_TYPE_NONE);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;GtkWidget *</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8h.html#a20cfa71f38ef8ee2c6959211daf7ac78">  327</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a20cfa71f38ef8ee2c6959211daf7ac78">ev_sidebar_layers_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">return</span> GTK_WIDGET (g_object_new (<a class="code" href="ev-sidebar-layers_8h.html#ae3999004fa172e601f45bbba1727eb93">EV_TYPE_SIDEBAR_LAYERS</a>,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                         NULL));</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">  335</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (GtkTreeModel     *model,</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;             GtkTreeIter      *iter,</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;             <a class="code" href="ev-document-layers_8h.html#a3737cf86c4424563622104576b7c0c7f">EvDocumentLayers</a> *document_layers)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;{</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="ev-layer_8h.html#a3e02e0b29fb08b694dcfc3ac2bf24c90">EvLayer</a>    *layer;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    gboolean    visible;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    GtkTreeIter child_iter;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        gtk_tree_model_get (model, iter,</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                    <a class="code" href="ev-document-layers_8h.html#a39fca1837c5ce7715cbf571669660c13ae51cf8e4705d86a3f53b66c3b11637db">EV_DOCUMENT_LAYERS_COLUMN_VISIBLE</a>, &amp;visible,</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    <a class="code" href="ev-document-layers_8h.html#a39fca1837c5ce7715cbf571669660c13adb5c411661db9d2c97fe64221254bebc">EV_DOCUMENT_LAYERS_COLUMN_LAYER</a>, &amp;layer,</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                    -1);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span> (layer) {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            gboolean layer_visible;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            layer_visible = <a class="code" href="ev-document-layers_8c.html#aa9bb6ab872b8a802e24093ed1a8d0705">ev_document_layers_layer_is_visible</a> (document_layers, layer);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordflow">if</span> (layer_visible != visible) {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                gtk_tree_store_set (GTK_TREE_STORE (model), iter,</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                            <a class="code" href="ev-document-layers_8h.html#a39fca1837c5ce7715cbf571669660c13ae51cf8e4705d86a3f53b66c3b11637db">EV_DOCUMENT_LAYERS_COLUMN_VISIBLE</a>, layer_visible,</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                            -1);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">if</span> (gtk_tree_model_iter_children (model, &amp;child_iter, iter))</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (model, &amp;child_iter, document_layers);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    } <span class="keywordflow">while</span> (gtk_tree_model_iter_next (model, iter));</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8h.html#aa6152a056f2a9ce2a91841ef01a2306b">  365</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#aa6152a056f2a9ce2a91841ef01a2306b">ev_sidebar_layers_update_layers_state</a> (<a class="code" href="ev-sidebar-layers_8h.html#a62af72f0ecb212024272578326dd45ba">EvSidebarLayers</a> *sidebar_layers)</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    GtkTreeModel     *model;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    GtkTreeIter       iter;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="ev-document-layers_8h.html#a3737cf86c4424563622104576b7c0c7f">EvDocumentLayers</a> *document_layers;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    document_layers = <a class="code" href="ev-document-layers_8h.html#a3810c94c5afd38f051d2761d15c83a43">EV_DOCUMENT_LAYERS</a> (sidebar_layers-&gt;priv-&gt;document);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    model = gtk_tree_view_get_model (GTK_TREE_VIEW (sidebar_layers-&gt;priv-&gt;tree_view));</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">if</span> (gtk_tree_model_get_iter_first (model, &amp;iter))</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <a class="code" href="ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200">update_layers_state</a> (model, &amp;iter, document_layers);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">  378</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">job_finished_callback</a> (<a class="code" href="struct__EvJobLayers.html">EvJobLayers</a>     *job,</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;               <a class="code" href="ev-sidebar-layers_8h.html#a62af72f0ecb212024272578326dd45ba">EvSidebarLayers</a> *sidebar_layers)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;{</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <a class="code" href="struct__EvSidebarLayersPrivate.html">EvSidebarLayersPrivate</a> *priv;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    priv = sidebar_layers-&gt;priv;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    priv = sidebar_layers-&gt;priv;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    gtk_tree_view_set_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a242e903dc28143a4326a07f470bd9aa4">tree_view</a>), job-&gt;<a class="code" href="struct__EvJobLayers.html#a30d6ab28a5b5e579331df3a5c2000a99">model</a>);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    g_object_unref (job);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a> = NULL;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a9f1b29504622fff40aa69a1f796a8387">  394</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a9f1b29504622fff40aa69a1f796a8387">ev_sidebar_layers_document_changed_cb</a> (<a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model,</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                       GParamSpec      *pspec,</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                       <a class="code" href="ev-sidebar-layers_8h.html#a62af72f0ecb212024272578326dd45ba">EvSidebarLayers</a> *sidebar_layers)</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="struct__EvSidebarLayersPrivate.html">EvSidebarLayersPrivate</a> *priv = sidebar_layers-&gt;priv;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-layers_8h.html#ac9e17dd462de8ddeddfc36f51394e119">EV_IS_DOCUMENT_LAYERS</a> (document))</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">document</a>) {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        gtk_tree_view_set_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a242e903dc28143a4326a07f470bd9aa4">tree_view</a>), NULL);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        g_object_unref (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">document</a>);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    gtk_tree_view_set_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a242e903dc28143a4326a07f470bd9aa4">tree_view</a>), job-&gt;<a class="code" href="struct__EvJobLayers.html#a30d6ab28a5b5e579331df3a5c2000a99">model</a>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    g_object_unref (job);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a> = NULL;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a9f1b29504622fff40aa69a1f796a8387">  392</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a9f1b29504622fff40aa69a1f796a8387">ev_sidebar_layers_document_changed_cb</a> (<a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model,</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                       GParamSpec      *pspec,</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                       <a class="code" href="ev-sidebar-layers_8h.html#a62af72f0ecb212024272578326dd45ba">EvSidebarLayers</a> *sidebar_layers)</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;{</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="struct__EvDocument.html">EvDocument</a> *document = <a class="code" href="ev-document-model_8c.html#a99100f45aaa11b4cf3965183a090160d">ev_document_model_get_document</a> (model);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="code" href="struct__EvSidebarLayersPrivate.html">EvSidebarLayersPrivate</a> *priv = sidebar_layers-&gt;priv;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="ev-document-layers_8h.html#ac9e17dd462de8ddeddfc36f51394e119">EV_IS_DOCUMENT_LAYERS</a> (document))</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">document</a>) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        gtk_tree_view_set_model (GTK_TREE_VIEW (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a242e903dc28143a4326a07f470bd9aa4">tree_view</a>), NULL);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        g_object_unref (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">document</a>);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">document</a> = g_object_ref (document);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#ad1722fb03d281864efffb5e1ede0f793">document</a> = g_object_ref (document);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>) {</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        g_signal_handlers_disconnect_by_func (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>,</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                              <a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">job_finished_callback</a>,</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                              sidebar_layers);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        g_object_unref (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a> = <a class="code" href="ev-jobs_8c.html#a556df3e0dd35ce057bba4540f066b423">ev_job_layers_new</a> (document);</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    g_signal_connect (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>, <span class="stringliteral">&quot;finished&quot;</span>,</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">job_finished_callback</a>),</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;              sidebar_layers);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="comment">/* The priority doesn&#39;t matter for this job */</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;}</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a2394e9e9a12b4d7946b19b5e7aead3e2">  427</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a2394e9e9a12b4d7946b19b5e7aead3e2">ev_sidebar_layers_set_model</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a>   *sidebar_page,</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                 <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-layers_8c.html#a9f1b29504622fff40aa69a1f796a8387">ev_sidebar_layers_document_changed_cb</a>),</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;              sidebar_page);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keyword">static</span> gboolean</div>
-<div class="line"><a name="l00436"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a02a504c11310f1d787b16c21af321c9a">  436</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a02a504c11310f1d787b16c21af321c9a">ev_sidebar_layers_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *sidebar_page,</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                    <a class="code" href="struct__EvDocument.html">EvDocument</a>    *document)</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;{</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ev-document-layers_8h.html#ac9e17dd462de8ddeddfc36f51394e119">EV_IS_DOCUMENT_LAYERS</a> (document) &amp;&amp;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <a class="code" href="ev-document-layers_8c.html#af7e0cffa937ab2dd93aed58d5f527d7d">ev_document_layers_has_layers</a> (<a class="code" href="ev-document-layers_8h.html#a3810c94c5afd38f051d2761d15c83a43">EV_DOCUMENT_LAYERS</a> (document)));</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar*</div>
-<div class="line"><a name="l00444"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a577abea98b17fd2a082544deee30c26d">  444</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a577abea98b17fd2a082544deee30c26d">ev_sidebar_layers_get_label</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *sidebar_page)</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;{</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Layers&quot;</span>);</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a92d27cc0edddb2be3145344ad828a30c">  450</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a92d27cc0edddb2be3145344ad828a30c">ev_sidebar_layers_page_iface_init</a> (<a class="code" href="struct__EvSidebarPageInterface.html">EvSidebarPageInterface</a> *iface)</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;{</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1">support_document</a> = <a class="code" href="ev-sidebar-layers_8c.html#a02a504c11310f1d787b16c21af321c9a">ev_sidebar_layers_support_document</a>;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0">set_model</a> = <a class="code" href="ev-sidebar-layers_8c.html#a2394e9e9a12b4d7946b19b5e7aead3e2">ev_sidebar_layers_set_model</a>;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58">get_label</a> = <a class="code" href="ev-sidebar-layers_8c.html#a577abea98b17fd2a082544deee30c26d">ev_sidebar_layers_get_label</a>;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;}</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>) {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        g_signal_handlers_disconnect_by_func (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>,</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                              <a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">job_finished_callback</a>,</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                              sidebar_layers);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        g_object_unref (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    }</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a> = <a class="code" href="ev-jobs_8c.html#a556df3e0dd35ce057bba4540f066b423">ev_job_layers_new</a> (document);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    g_signal_connect (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>, <span class="stringliteral">&quot;finished&quot;</span>,</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-layers_8c.html#a330f64bc722d26b7b04dfea748cb9aad">job_finished_callback</a>),</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;              sidebar_layers);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">/* The priority doesn&#39;t matter for this job */</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="ev-job-scheduler_8c.html#a54d8d9865f5947aa240b46d3fc058522">ev_job_scheduler_push_job</a> (priv-&gt;<a class="code" href="struct__EvSidebarLayersPrivate.html#a8dda6f4a22e0c8cda2433704c8a6fecc">job</a>, <a class="code" href="ev-job-scheduler_8h.html#a7ca8d4c3693ddbf9d4f0c568126373b1a1cd4f2789bbaf232fc63dc4cfbcac357">EV_JOB_PRIORITY_NONE</a>);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;}</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a2394e9e9a12b4d7946b19b5e7aead3e2">  425</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a2394e9e9a12b4d7946b19b5e7aead3e2">ev_sidebar_layers_set_model</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a>   *sidebar_page,</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                 <a class="code" href="struct__EvDocumentModel.html">EvDocumentModel</a> *model)</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;{</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-layers_8c.html#a9f1b29504622fff40aa69a1f796a8387">ev_sidebar_layers_document_changed_cb</a>),</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;              sidebar_page);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;}</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keyword">static</span> gboolean</div>
+<div class="line"><a name="l00434"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a02a504c11310f1d787b16c21af321c9a">  434</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a02a504c11310f1d787b16c21af321c9a">ev_sidebar_layers_support_document</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *sidebar_page,</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                    <a class="code" href="struct__EvDocument.html">EvDocument</a>    *document)</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;{</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ev-document-layers_8h.html#ac9e17dd462de8ddeddfc36f51394e119">EV_IS_DOCUMENT_LAYERS</a> (document) &amp;&amp;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <a class="code" href="ev-document-layers_8c.html#af7e0cffa937ab2dd93aed58d5f527d7d">ev_document_layers_has_layers</a> (<a class="code" href="ev-document-layers_8h.html#a3810c94c5afd38f051d2761d15c83a43">EV_DOCUMENT_LAYERS</a> (document)));</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> gchar*</div>
+<div class="line"><a name="l00442"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a577abea98b17fd2a082544deee30c26d">  442</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a577abea98b17fd2a082544deee30c26d">ev_sidebar_layers_get_label</a> (<a class="code" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *sidebar_page)</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;{</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Layers&quot;</span>);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;}</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno"><a class="code" href="ev-sidebar-layers_8c.html#a92d27cc0edddb2be3145344ad828a30c">  448</a></span>&#160;<a class="code" href="ev-sidebar-layers_8c.html#a92d27cc0edddb2be3145344ad828a30c">ev_sidebar_layers_page_iface_init</a> (<a class="code" href="struct__EvSidebarPageInterface.html">EvSidebarPageInterface</a> *iface)</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;{</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1">support_document</a> = <a class="code" href="ev-sidebar-layers_8c.html#a02a504c11310f1d787b16c21af321c9a">ev_sidebar_layers_support_document</a>;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0">set_model</a> = <a class="code" href="ev-sidebar-layers_8c.html#a2394e9e9a12b4d7946b19b5e7aead3e2">ev_sidebar_layers_set_model</a>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58">get_label</a> = <a class="code" href="ev-sidebar-layers_8c.html#a577abea98b17fd2a082544deee30c26d">ev_sidebar_layers_get_label</a>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;}</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-layers_8c.html">ev-sidebar-layers.c</a></li>
-    <li class="footer">Generated on Fri Apr 10 2015 12:09:24 for Evince by
+    <li class="footer">Generated on Sun Apr 12 2015 09:54:21 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

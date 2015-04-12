@@ -77,6 +77,7 @@ var ev_annotation_8h =
     [ "ev_annotation_get_page_index", "ev-annotation_8h.html#a1ebf665b1d8497a84a71c65cd2b20034", null ],
     [ "ev_annotation_get_rgba", "ev-annotation_8h.html#a91a6696fb6b0fbca6e3eecb7d096790b", null ],
     [ "ev_annotation_get_type", "ev-annotation_8h.html#adddaa17f76f5d7e40cbbe82a83ef8df5", null ],
+    [ "ev_annotation_markup_can_have_popup", "ev-annotation_8h.html#ac843018d40233a107635f97aefe2efb7", null ],
     [ "ev_annotation_markup_get_label", "ev-annotation_8h.html#a70b2f57d1920f5473692035ea7887996", null ],
     [ "ev_annotation_markup_get_opacity", "ev-annotation_8h.html#a78cd49374569fd22584dd583d89fb7d0", null ],
     [ "ev_annotation_markup_get_popup_is_open", "ev-annotation_8h.html#a41aa284c8048b1e798ce2273d9215a7d", null ],

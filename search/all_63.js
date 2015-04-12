@@ -3,6 +3,7 @@ var searchData=
   ['cachejobinfo',['CacheJobInfo',['../ev-pixbuf-cache_8c.html#ae54fa05d9c02e5b7120e8eeb9a51e38a',1,'ev-pixbuf-cache.c']]],
   ['cairo_2ddevice_2ec',['cairo-device.c',['../cairo-device_8c.html',1,'']]],
   ['cairo_2ddevice_2eh',['cairo-device.h',['../cairo-device_8h.html',1,'']]],
+  ['can_5fhave_5fpopup',['can_have_popup',['../structEvAnnotationMarkupProps.html#a70a0bb0460ce381d565d91feb492dd69',1,'EvAnnotationMarkupProps']]],
   ['can_5fzoom_5fin',['can_zoom_in',['../struct__EvView.html#a60f9d92e5cbc011d977c2f3cb9015f45',1,'_EvView']]],
   ['can_5fzoom_5fout',['can_zoom_out',['../struct__EvView.html#aeec1146610c7b3420413afad600fed33',1,'_EvView']]],
   ['cancel',['cancel',['../struct__EvPrintOperationClass.html#a0ef86384e2cc5cf288cd7a3b92450324',1,'_EvPrintOperationClass']]],

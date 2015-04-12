@@ -120,6 +120,7 @@ var searchData=
   ['pluginforinstance',['pluginForInstance',['../EvBrowserPluginMain_8cpp.html#aae2e45aad598e359783e54f2ef47017e',1,'EvBrowserPluginMain.cpp']]],
   ['pop',['pop',['../dviread_8c.html#af67ceff58c440f9cb9ed375b6dbb67bd',1,'dviread.c']]],
   ['pop_5fhandlers',['pop_handlers',['../tiff-document_8c.html#a9f82ec038b723f69b435be12f1735cc4',1,'tiff-document.c']]],
+  ['poppler_5fannot_5fcan_5fhave_5fpopup_5fwindow',['poppler_annot_can_have_popup_window',['../ev-poppler_8cc.html#a9771411e9c52211f3d4320b6ab17089b',1,'ev-poppler.cc']]],
   ['poppler_5fannot_5fcolor_5fto_5fgdk_5fcolor',['poppler_annot_color_to_gdk_color',['../ev-poppler_8cc.html#ae3c95ed30dd5d62fc8bf092040056e86',1,'ev-poppler.cc']]],
   ['popup_5fmenu_5fcb',['popup_menu_cb',['../ev-sidebar-links_8c.html#abe1a4034faf4b70391744d2ff4a820de',1,'ev-sidebar-links.c']]],
   ['popup_5fmenu_5fclosed',['popup_menu_closed',['../ev-zoom-action_8c.html#a69486e205a10a887652385e14b18a402',1,'ev-zoom-action.c']]],
