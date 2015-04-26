@@ -25,7 +25,7 @@ var searchData=
   ['word_5flittle_5fendian',['WORD_LITTLE_ENDIAN',['../sysdeps_8h.html#a7a41cd57109448451a9cf8a4428c1dd9',1,'sysdeps.h']]],
   ['word_5fsymbol',['word_symbol',['../struct__DjvuTextPage.html#a4a846e51f6e416f882ff909580024501',1,'_DjvuTextPage']]],
   ['write',['write',['../struct__NPPluginFuncs.html#a4469cc48ef16ecb1f4f62aab97b977c4',1,'_NPPluginFuncs::write()'],['../struct__NPNetscapeFuncs.html#a518bb065983fb31dd5d2e9b9aefa9111',1,'_NPNetscapeFuncs::write()'],['../classEvBrowserPlugin.html#ab8447887c623e5e77492afd8d4b29cf2',1,'EvBrowserPlugin::write()']]],
-  ['writeready',['writeready',['../struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f',1,'_NPPluginFuncs::writeready()'],['../classEvBrowserPlugin.html#a9d7e3973e9325395f7223869320444db',1,'EvBrowserPlugin::writeReady()']]],
+  ['writeready',['writeReady',['../classEvBrowserPlugin.html#a9d7e3973e9325395f7223869320444db',1,'EvBrowserPlugin::writeReady()'],['../struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f',1,'_NPPluginFuncs::writeready()']]],
   ['wx',['wx',['../structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f',1,'CharMetricInfo']]],
   ['wy',['wy',['../structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40',1,'CharMetricInfo']]]
 ];

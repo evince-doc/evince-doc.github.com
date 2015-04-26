@@ -52,6 +52,7 @@ var searchData=
   ['resident',['resident',['../struct__EvBackendInfo.html#a886d538767ef5b844dd55bc1897405aa',1,'_EvBackendInfo::resident()'],['../struct__EvModule.html#ac0813c5d681e866acd730df24e295704',1,'_EvModule::resident()']]],
   ['resize_5fse',['resize_se',['../struct__EvAnnotationWindow.html#aa78b9167d0190a7ba5ae533a9a91f5ac',1,'_EvAnnotationWindow']]],
   ['resize_5fsw',['resize_sw',['../struct__EvAnnotationWindow.html#ab6ad3e9c18dd73eb5dbaf50c8dcb5d31',1,'_EvAnnotationWindow']]],
+  ['restartsearch',['restartSearch',['../classEvBrowserPlugin.html#ade1d7269fca8b4228465d0357763343a',1,'EvBrowserPlugin']]],
   ['result_5factivated',['RESULT_ACTIVATED',['../ev-find-sidebar_8c.html#af8654c714018c6241d9ebd01f3fb5a26a01e040de4c34c6e23487c8844c476331',1,'ev-find-sidebar.c']]],
   ['result_5fcolumn',['RESULT_COLUMN',['../ev-find-sidebar_8c.html#aa156d1cebb38c8a65846c4d9c006012aa797f705710f0877986a4506215661fb4',1,'ev-find-sidebar.c']]],
   ['results',['results',['../struct__DjvuTextPage.html#a42593faa99b95ffea631d0e990c28159',1,'_DjvuTextPage']]],

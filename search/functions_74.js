@@ -33,6 +33,7 @@ var searchData=
   ['tip_5ffrom_5flink',['tip_from_link',['../ev-view_8c.html#a0aa49647f69f0c9b773ced02c1d0a2de',1,'ev-view.c']]],
   ['togglecontinuous',['toggleContinuous',['../classEvBrowserPlugin.html#a12d0775a9e8ceea76b44d387e363c141',1,'EvBrowserPlugin::toggleContinuous()'],['../EvBrowserPluginToolbar_8cpp.html#a64983d82cfed6b8c06b78d2e0721d614',1,'toggleContinuous():&#160;EvBrowserPluginToolbar.cpp']]],
   ['toggledual',['toggleDual',['../classEvBrowserPlugin.html#a1cfa488c4d3576a4690ea17227b8168d',1,'EvBrowserPlugin::toggleDual()'],['../EvBrowserPluginToolbar_8cpp.html#a5d2821023a9e8ec02050f808ae42b423',1,'toggleDual():&#160;EvBrowserPluginToolbar.cpp']]],
+  ['togglesearch',['toggleSearch',['../EvBrowserPluginToolbar_8cpp.html#a4f1c31a6be2b379b7db564e54229a32e',1,'EvBrowserPluginToolbar.cpp']]],
   ['toolbarvisible',['toolbarVisible',['../classEvBrowserPlugin.html#aa138c13159c6b38cf106b5f491980b03',1,'EvBrowserPlugin']]],
   ['transition_5fnext_5fpage',['transition_next_page',['../ev-view-presentation_8c.html#afb24ef6823f7ffffa5e743212f732174',1,'ev-view-presentation.c']]],
   ['treat_5fas_5fsoft_5freturn',['treat_as_soft_return',['../ev-page-accessible_8c.html#a6c7dd46ded8aac92c260c87a8b077c3b',1,'ev-page-accessible.c']]]

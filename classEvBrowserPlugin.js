@@ -1,10 +1,15 @@
 var classEvBrowserPlugin =
 [
+    [ "SearchDirection", "classEvBrowserPlugin.html#a0880e6fca0ffa155a275ad43da71583d", [
+      [ "Next", "classEvBrowserPlugin.html#a0880e6fca0ffa155a275ad43da71583da5032b7247d5dc1e70c3cc0852a2f8ae9", null ],
+      [ "Previous", "classEvBrowserPlugin.html#a0880e6fca0ffa155a275ad43da71583daeee6015723ebc2d8e27ed4530a39bbe1", null ]
+    ] ],
     [ "EvBrowserPlugin", "classEvBrowserPlugin.html#a0ec937abddb16ea775f1dcbd823cbc31", null ],
     [ "~EvBrowserPlugin", "classEvBrowserPlugin.html#acf4ed97309b61c7ef10c4bfc7c8c04ea", null ],
     [ "activateLink", "classEvBrowserPlugin.html#a8b4c429ae5abf0f0a138209e58cef33f", null ],
     [ "allocate", "classEvBrowserPlugin.html#a14943665274f8d18e5711dddc32a4c44", null ],
     [ "canDownload", "classEvBrowserPlugin.html#a7d2e8ff63f00d0a04df532ca2929c61c", null ],
+    [ "clearSearch", "classEvBrowserPlugin.html#a26e56eb3f738d36ccdd1b5bd4bd286a3", null ],
     [ "create", "classEvBrowserPlugin.html#a04df0726a411940d21351e3b8b3b1725", null ],
     [ "currentPage", "classEvBrowserPlugin.html#a19e504be3843e71b629977cf0c238259", null ],
     [ "deallocate", "classEvBrowserPlugin.html#a8b7109c013ee7b58967957d1ddb9c5a4", null ],
@@ -30,9 +35,13 @@ var classEvBrowserPlugin =
     [ "pageCount", "classEvBrowserPlugin.html#a42ff0173b3a8b301b5ca05de6a9fcc42", null ],
     [ "print", "classEvBrowserPlugin.html#ae65a172a7d6a27accf71bbddf968a77f", null ],
     [ "print", "classEvBrowserPlugin.html#a210591301e6a87db84fa1fb4c1cad289", null ],
+    [ "restartSearch", "classEvBrowserPlugin.html#ade1d7269fca8b4228465d0357763343a", null ],
+    [ "search", "classEvBrowserPlugin.html#a5e2047e59152a3b2cb5a85e82ceeff45", null ],
+    [ "search", "classEvBrowserPlugin.html#a8bdc76f29f48474bf37f958a9889b70c", null ],
     [ "setContinuous", "classEvBrowserPlugin.html#a6931fc1e0491f7e82ea60ba91edc51ca", null ],
     [ "setDual", "classEvBrowserPlugin.html#ac876cd78053b16a624b0d805782daeb5", null ],
     [ "setProperty", "classEvBrowserPlugin.html#a7d1bb75068e61b29d48d979fb0195374", null ],
+    [ "setSearchModeEnabled", "classEvBrowserPlugin.html#ae4646bc7937890f35d7eb76ee32c7e64", null ],
     [ "setSizingMode", "classEvBrowserPlugin.html#a8716e21d6156298f21f48482ee79f9a9", null ],
     [ "setToolbarVisible", "classEvBrowserPlugin.html#a6e50e4968efc21d356e78c0498810619", null ],
     [ "setWindow", "classEvBrowserPlugin.html#a86ba6ef51cb370e52c205d45b8434b7c", null ],

@@ -49,6 +49,7 @@ var searchData=
   ['clear_5fselection_5fregion_5fif_5fneeded',['clear_selection_region_if_needed',['../ev-pixbuf-cache_8c.html#aa754959da54a884a746bfdfef6a4ab1e',1,'ev-pixbuf-cache.c']]],
   ['clear_5fselection_5fsurface_5fif_5fneeded',['clear_selection_surface_if_needed',['../ev-pixbuf-cache_8c.html#a21040b97ca50c8df7f056215271046cd',1,'ev-pixbuf-cache.c']]],
   ['cleared',['CLEARED',['../ev-search-box_8c.html#a0944a4353780132eeab7b06e3e42291dad36a93186556876262e5cc4c14fe197e',1,'ev-search-box.c']]],
+  ['clearsearch',['clearSearch',['../classEvBrowserPlugin.html#a26e56eb3f738d36ccdd1b5bd4bd286a3',1,'EvBrowserPlugin']]],
   ['clearsitedata',['clearsitedata',['../struct__NPPluginFuncs.html#a28dd62937b8a6924042604f61093a3df',1,'_NPPluginFuncs']]],
   ['clicked',['clicked',['../struct__GimpCellRendererToggleClass.html#a8758087698c0d3c92bdf3a2e5f7bd2a0',1,'_GimpCellRendererToggleClass::clicked()'],['../gimpcellrenderertoggle_8c.html#a385c44f6fb256e5716a2302a5b940388ad37324c719e7d564128110e054a550e4',1,'CLICKED():&#160;gimpcellrenderertoggle.c']]],
   ['clip',['CLIP',['../sp-epsf_8c.html#aeb447a7da70893212e1e61e6086c6e80',1,'sp-epsf.c']]],

@@ -13,5 +13,6 @@ var searchData=
   ['reload_5fremote_5fcopy_5fready_5fcb',['reload_remote_copy_ready_cb',['../ev-window_8c.html#a8a7b51a26db558fbf6162e1ec6239cd0',1,'ev-window.c']]],
   ['render_5fpixbuf_5fsize_5fprepared_5fcb',['render_pixbuf_size_prepared_cb',['../comics-document_8c.html#a62cca497214947fc43cadd8c81522d99',1,'comics-document.c']]],
   ['reset_5fprogress_5fidle',['reset_progress_idle',['../ev-window_8c.html#abc2edb074fc3daf0c27af79081f089c9',1,'ev-window.c']]],
+  ['restartsearch',['restartSearch',['../classEvBrowserPlugin.html#ade1d7269fca8b4228465d0357763343a',1,'EvBrowserPlugin']]],
   ['row_5factivated_5fcallback',['row_activated_callback',['../ev-sidebar-links_8c.html#a7c779a52b17ae313f0d1bdb4af0f4cb2',1,'ev-sidebar-links.c']]]
 ];
