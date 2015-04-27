@@ -1369,4 +1369,520 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *ev_attachbar = <a class="code" href="ev-sidebar-attachments_8h.html#a3e894e5715b0f17692767425cceb07e1">EV_SIDEBAR_ATTACHMENTS</a> (widget);</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    GdkScreen            *screen;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="ke
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">if</span> (!ev_attachbar-&gt;priv-&gt;icon_theme)</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    screen = gtk_widget_get_screen (widget);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">if</span> (screen == old_screen)</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">if</span> (old_screen) {</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        g_signal_handlers_disconnect_by_func (</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            gtk_icon_theme_get_for_screen (old_screen),</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a3e4437ad273f004cb2753223c88e6de5">ev_sidebar_attachments_update_icons</a>),</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            ev_attachbar);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    ev_attachbar-&gt;priv-&gt;icon_theme = gtk_icon_theme_get_for_screen (screen);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    g_signal_connect_swapped (ev_attachbar-&gt;priv-&gt;icon_theme,</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                  <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                  G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a3e4437ad273f004cb2753223c88e6de5">ev_sidebar_attachments_update_icons</a>),</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                  (gpointer) ev_attachbar);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordflow">if</span> (GTK_WIDGET_CLASS (ev_sidebar_attachments_parent_class)-&gt;screen_changed) {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        GTK_WIDGET_CLASS (ev_sidebar_attachments_parent_class)-&gt;screen_changed (widget, old_screen);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-attachments_8c_a40b9f3868b8fc5b030e15a0c502d9e17_icgraph.svg" width="395" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a90e70f4e6c5482cb184d847e072ae22b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ev_sidebar_attachments_set_model </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *&#160;</td>
+          <td class="paramname"><em>page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00676">676</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;{</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar-attachments_8c.html#a62b930dad30935610de2a4c10955beae">ev_sidebar_attachments_document_changed_cb</a>),</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;              page);</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-attachments_8c_a90e70f4e6c5482cb184d847e072ae22b_icgraph.svg" width="395" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a27c4f40a341be2bc4377b036a0a8d181"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gboolean ev_sidebar_attachments_support_document </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar-page_8h.html#af252738c8770dbe3127733f29bb1dfec">EvSidebarPage</a> *&#160;</td>
+          <td class="paramname"><em>sidebar_page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *&#160;</td>
+          <td class="paramname"><em>document</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00685">685</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;{</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ev-document-attachments_8h.html#a5c6095c8ce6b4336f5f8626a7b5972cc">EV_IS_DOCUMENT_ATTACHMENTS</a> (document) &amp;&amp;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <a class="code" href="ev-document-attachments_8c.html#afed9f32a483488821a898e6a4e3b05db">ev_document_attachments_has_attachments</a> (<a class="code" href="ev-document-attachments_8h.html#a00b7e7363b0357ce2f56f28f8311e527">EV_DOCUMENT_ATTACHMENTS</a> (document)));</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-attachments_8c_a27c4f40a341be2bc4377b036a0a8d181_icgraph.svg" width="395" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e4437ad273f004cb2753223c88e6de5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ev_sidebar_attachments_update_icons </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *&#160;</td>
+          <td class="paramname"><em>ev_attachbar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00319">319</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    GtkTreeIter iter;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    gboolean    valid;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="ev-sidebar-attachments_8c.html#ab30da1eb684dbfbc227b19cf62fb8601">ev_sidebar_attachments_icon_cache_refresh</a> (ev_attachbar);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    valid = gtk_tree_model_get_iter_first (</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        GTK_TREE_MODEL (ev_attachbar-&gt;priv-&gt;model),</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        &amp;iter);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">while</span> (valid) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="ev-attachment_8h.html#a35bb865453308867533846546743ae1c">EvAttachment</a> *attachment = NULL;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        GdkPixbuf    *pixbuf = NULL;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keyword">const</span> gchar  *mime_type;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        gtk_tree_model_get (GTK_TREE_MODEL (ev_attachbar-&gt;priv-&gt;model), &amp;iter,</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                    <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90afb27a384ab10ec1041f886684c86b1c4">COLUMN_ATTACHMENT</a>, &amp;attachment,</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                    -1);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        mime_type = <a class="code" href="ev-attachment_8c.html#a757cc2c4dce2fb0f979466ab00aa737a">ev_attachment_get_mime_type</a> (attachment);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (attachment)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            g_object_unref (attachment);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        pixbuf = <a class="code" href="ev-sidebar-attachments_8c.html#a746b7dc47dd268c599f9f193b82019e1">ev_sidebar_attachments_icon_cache_get</a> (ev_attachbar,</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                                mime_type);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        gtk_list_store_set (ev_attachbar-&gt;priv-&gt;model, &amp;iter,</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                    <a class="code" href="ev-sidebar-annotations_8c.html#a550cb4231d535863c55643bbd2d3c6baaabefd6151383bb4353f1920b3f53610d">COLUMN_ICON</a>, pixbuf,</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                    -1);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        valid = gtk_tree_model_iter_next (</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            GTK_TREE_MODEL (ev_attachbar-&gt;priv-&gt;model),</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            &amp;iter);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-attachments_8c_a3e4437ad273f004cb2753223c88e6de5_icgraph.svg" width="827" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ea9de8722fb11754f256dae2ec7ccf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">G_DEFINE_TYPE_EXTENDED </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ev_sidebar_attachments&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GTK_TYPE_BOX&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">G_IMPLEMENT_INTERFACE(<a class="el" href="ev-sidebar-page_8h.html#ae9241d58b250dd32a6b98437e835a94a">EV_TYPE_SIDEBAR_PAGE</a>,<a class="el" href="ev-sidebar-attachments_8c.html#a6ec1a6e955a49a40b5f34b9f104e47e7">ev_sidebar_attachments_page_iface_init</a>)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00073">73</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    g_assert (mime_type != NULL);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    g_assert (GDK_IS_PIXBUF (pixbuf));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    g_hash_table_insert (ev_attachbar-&gt;priv-&gt;icon_cache,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                 (gpointer)g_strdup (mime_type),</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                 (gpointer)pixbuf);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                 </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac305f828fad0c90b346b6260ebc6a47b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gboolean icon_cache_update_icon </td>
+          <td>(</td>
+          <td class="paramtype">gchar *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GdkPixbuf *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *&#160;</td>
+          <td class="paramname"><em>ev_attachbar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00153">153</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    GdkPixbuf *pixbuf = NULL;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    pixbuf = <a class="code" href="ev-sidebar-attachments_8c.html#aaf8ba7c97f3cc7db0ba1f15542843439">icon_theme_get_pixbuf_from_mime_type</a> (ev_attachbar-&gt;priv-&gt;icon_theme,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                               key);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    ev_sidebar_attachments_icon_cache_add (ev_attachbar,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                           key,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                           pixbuf);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-attachments_8c_ac305f828fad0c90b346b6260ebc6a47b_icgraph.svg" width="1262" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf8ba7c97f3cc7db0ba1f15542843439"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static GdkPixbuf* icon_theme_get_pixbuf_from_mime_type </td>
+          <td>(</td>
+          <td class="paramtype">GtkIconTheme *&#160;</td>
+          <td class="paramname"><em>icon_theme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gchar *&#160;</td>
+          <td class="paramname"><em>mime_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00099">99</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *separator;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    GString *icon_name;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    GdkPixbuf *pixbuf;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    separator = <a class="code" href="common_8h.html#a907b5e1042ad1a6bb4914ecc7d12f55c">strchr</a> (mime_type, <span class="charliteral">&#39;/&#39;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (!separator)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> NULL; <span class="comment">/* maybe we should return a GError with &quot;invalid MIME-type&quot; */</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    icon_name = g_string_new (<span class="stringliteral">&quot;gnome-mime-&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    g_string_append_len (icon_name, mime_type, separator - mime_type);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    g_string_append_c (icon_name, <span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    g_string_append (icon_name, separator + 1);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    pixbuf = gtk_icon_theme_load_icon (icon_theme, icon_name-&gt;str, 48, 0, NULL);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    g_string_free (icon_name, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (pixbuf)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> pixbuf;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    icon_name = g_string_new (<span class="stringliteral">&quot;gnome-mime-&quot;</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    g_string_append_len (icon_name, mime_type, separator - mime_type);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    pixbuf = gtk_icon_theme_load_icon (icon_theme, icon_name-&gt;str, 48, 0, NULL);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    g_string_free (icon_name, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> pixbuf;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-attachments_8c_aaf8ba7c97f3cc7db0ba1f15542843439_icgraph.svg" width="1470" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa62c7f369fc6d7786402e7d9a3128286"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void job_finished_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-jobs_8h.html#a44800736b684940d079d190c759c294f">EvJobAttachments</a> *&#160;</td>
+          <td class="paramname"><em>job</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-sidebar-attachments_8h.html#a5c24734bceda45d1e8054efdd7f8d345">EvSidebarAttachments</a> *&#160;</td>
+          <td class="paramname"><em>ev_attachbar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00608">608</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    GList *l;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    </div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">for</span> (l = job-&gt;<a class="code" href="struct__EvJobAttachments.html#a6dd85a26dcadceb56314c9617f33ef5a">attachments</a>; l &amp;&amp; l-&gt;data; l = g_list_next (l)) {</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <a class="code" href="ev-attachment_8h.html#a35bb865453308867533846546743ae1c">EvAttachment</a> *attachment;</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        GtkTreeIter   iter;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        GdkPixbuf    *pixbuf = NULL;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="keyword">const</span> gchar  *mime_type;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        attachment = <a class="code" href="ev-attachment_8h.html#a0aa63ebcafdf80cf0e53cfa87edd549a">EV_ATTACHMENT</a> (l-&gt;data);</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        mime_type = <a class="code" href="ev-attachment_8c.html#a757cc2c4dce2fb0f979466ab00aa737a">ev_attachment_get_mime_type</a> (attachment);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        pixbuf = <a class="code" href="ev-sidebar-attachments_8c.html#a746b7dc47dd268c599f9f193b82019e1">ev_sidebar_attachments_icon_cache_get</a> (ev_attachbar,</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                                mime_type);</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        gtk_list_store_append (ev_attachbar-&gt;priv-&gt;model, &amp;iter);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        gtk_list_store_set (ev_attachbar-&gt;priv-&gt;model, &amp;iter,</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                    <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90a4a1ecd08f0dbff454b52d14ae9285102">COLUMN_NAME</a>, <a class="code" href="ev-attachment_8c.html#abdaaf411662fde95e0bc81465ef2a985">ev_attachment_get_name</a> (attachment),</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                    <a class="code" href="ev-sidebar-annotations_8c.html#a550cb4231d535863c55643bbd2d3c6baaabefd6151383bb4353f1920b3f53610d">COLUMN_ICON</a>, pixbuf,</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                    <a class="code" href="ev-sidebar-attachments_8c.html#a68c01102755fc7d1c810bb0b0635fa90afb27a384ab10ec1041f886684c86b1c4">COLUMN_ATTACHMENT</a>, attachment, </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                    -1);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    }</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    g_object_unref (job);</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar-attachments_8c_aa62c7f369fc6d7786402e7d9a3128286_icgraph.svg" width="808" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a0a1f3b4115443be584fb31149d06f84c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">guint signals[<a class="el" href="ev-sidebar-links_8c.html#a4b4213b1f9d54da7c7e36bde32fc7c80a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar-attachments_8c_source.html#l00060">60</a> of file <a class="el" href="ev-sidebar-attachments_8c_source.html">ev-sidebar-attachments.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-attachments_8c.html">ev-sidebar-attachments.c</a></li>
+    <li class="footer">Generated on Mon Apr 27 2015 22:01:06 for Evince by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>
