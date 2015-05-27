@@ -191,48 +191,49 @@ $(document).ready(function(){initNavTree('ev-debug_8h_source.html','');});
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        EV_DEBUG_BORDER_FORMS      = 1 &lt;&lt; 2,</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        EV_DEBUG_BORDER_ANNOTS     = 1 &lt;&lt; 3,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        EV_DEBUG_BORDER_IMAGES     = 1 &lt;&lt; 4,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        EV_DEBUG_BORDER_SELECTIONS = 1 &lt;&lt; 5,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        EV_DEBUG_BORDER_ALL        = (1 &lt;&lt; 6) - 1</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} EvDebugBorders;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#define DEBUG_JOBS      EV_DEBUG_JOBS,    __FILE__, __LINE__, G_STRFUNC</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * Set an environmental var of the same name to turn on</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * profiling. Setting EV_PROFILE will turn on all</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * sections.</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    EV_NO_PROFILE   = 0,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    EV_PROFILE_JOBS = 1 &lt;&lt; 0</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} EvProfileSection;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#a09ce846fb0be4f32abb22b2363500077">_ev_debug_init</a>     (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#a5f383214e42b0713c707d04f2de36dd0">_ev_debug_shutdown</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a>  (EvDebugSection   section,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">const</span> gchar     *file,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            gint             line,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keyword">const</span> gchar     *<span class="keyword">function</span>,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">const</span> gchar     *format, ...) <a class="code" href="tiff2ps_8c.html#ae33dcb84ffee66ad961471bd2417848d">G_GNUC_PRINTF</a>(5, 6);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#a9823f3abd390cae932cb1094034b1c6e">ev_profiler_start</a> (EvProfileSection section,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            const gchar     *format, ...) <a class="code" href="tiff2ps_8c.html#ae33dcb84ffee66ad961471bd2417848d">G_GNUC_PRINTF</a>(2, 3);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#aadc21b518f1e881e0038475563bdcb3f">ev_profiler_stop</a>  (EvProfileSection section,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            const gchar     *format, ...) G_GNUC_PRINTF(2, 3);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;EvDebugBorders ev_debug_get_debug_borders (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_ENABLE_DEBUG */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* __EV_DEBUG_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        EV_DEBUG_BORDER_MEDIA      = 1 &lt;&lt; 5,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        EV_DEBUG_BORDER_SELECTIONS = 1 &lt;&lt; 6,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        EV_DEBUG_BORDER_ALL        = (1 &lt;&lt; 7) - 1</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} EvDebugBorders;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#define DEBUG_JOBS      EV_DEBUG_JOBS,    __FILE__, __LINE__, G_STRFUNC</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * Set an environmental var of the same name to turn on</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * profiling. Setting EV_PROFILE will turn on all</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * sections.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    EV_NO_PROFILE   = 0,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    EV_PROFILE_JOBS = 1 &lt;&lt; 0</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} EvProfileSection;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#a09ce846fb0be4f32abb22b2363500077">_ev_debug_init</a>     (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#a5f383214e42b0713c707d04f2de36dd0">_ev_debug_shutdown</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a>  (EvDebugSection   section,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keyword">const</span> gchar     *file,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            gint             line,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">const</span> gchar     *<span class="keyword">function</span>,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keyword">const</span> gchar     *format, ...) <a class="code" href="tiff2ps_8c.html#ae33dcb84ffee66ad961471bd2417848d">G_GNUC_PRINTF</a>(5, 6);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#a9823f3abd390cae932cb1094034b1c6e">ev_profiler_start</a> (EvProfileSection section,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            const gchar     *format, ...) <a class="code" href="tiff2ps_8c.html#ae33dcb84ffee66ad961471bd2417848d">G_GNUC_PRINTF</a>(2, 3);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ev-debug_8h.html#aadc21b518f1e881e0038475563bdcb3f">ev_profiler_stop</a>  (EvProfileSection section,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            const gchar     *format, ...) G_GNUC_PRINTF(2, 3);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;EvDebugBorders ev_debug_get_debug_borders (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_ENABLE_DEBUG */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* __EV_DEBUG_H__ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-debug_8h.html">ev-debug.h</a></li>
-    <li class="footer">Generated on Wed May 27 2015 11:27:34 for Evince by
+    <li class="footer">Generated on Wed May 27 2015 13:28:32 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -14,6 +14,7 @@ var ev_page_cache_8h =
     [ "ev_page_cache_get_form_field_mapping", "ev-page-cache_8h.html#a47fcfac00d1008109fcb9cdb1e529d2b", null ],
     [ "ev_page_cache_get_image_mapping", "ev-page-cache_8h.html#a1caa87e938322bc3df9a0ad31f0dc3e6", null ],
     [ "ev_page_cache_get_link_mapping", "ev-page-cache_8h.html#a736acbec8cb3572509f117011bb6927b", null ],
+    [ "ev_page_cache_get_media_mapping", "ev-page-cache_8h.html#aa5df4ca2c02ac3088fafdd7d0c051a98", null ],
     [ "ev_page_cache_get_text", "ev-page-cache_8h.html#a4ef8fb0e5ddc3fa51069705456e2cfa3", null ],
     [ "ev_page_cache_get_text_attrs", "ev-page-cache_8h.html#aaaf64e68aa3eb00001f40bc16adb618e", null ],
     [ "ev_page_cache_get_text_layout", "ev-page-cache_8h.html#a98caf2933580b49cdc02e62761021156", null ],

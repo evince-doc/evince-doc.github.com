@@ -21,6 +21,7 @@ var searchData=
   ['get_5flayers',['get_layers',['../struct__EvDocumentLayersInterface.html#a69c43434abb29e31ef9fba06b692bc2d',1,'_EvDocumentLayersInterface']]],
   ['get_5flinks',['get_links',['../struct__EvDocumentLinksInterface.html#a8e90e53b9fd366f0b45cb9fe0b104f3a',1,'_EvDocumentLinksInterface']]],
   ['get_5flinks_5fmodel',['get_links_model',['../struct__EvDocumentLinksInterface.html#ae719cb518c2e8862c3720d659ada8b68',1,'_EvDocumentLinksInterface']]],
+  ['get_5fmedia_5fmapping',['get_media_mapping',['../struct__EvDocumentMediaInterface.html#acc350bea18e66fb6b633bb9d5076d616',1,'_EvDocumentMediaInterface']]],
   ['get_5fn_5fpages',['get_n_pages',['../struct__EvDocumentClass.html#a9564fb5a3e83bda242b7fcc7405a0972',1,'_EvDocumentClass']]],
   ['get_5fpage',['get_page',['../struct__EvDocumentClass.html#a6758efda10d71df9247167ce4371edb0',1,'_EvDocumentClass']]],
   ['get_5fpage_5fduration',['get_page_duration',['../struct__EvDocumentTransitionInterface.html#aa192955f19fa6746d6ac380b45c0e4bf',1,'_EvDocumentTransitionInterface']]],

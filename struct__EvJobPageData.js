@@ -5,6 +5,7 @@ var struct__EvJobPageData =
     [ "form_field_mapping", "struct__EvJobPageData.html#a274a5bedff0e527add66da51496d80d1", null ],
     [ "image_mapping", "struct__EvJobPageData.html#a35baece3ce2c16dd0c06f029fae12f50", null ],
     [ "link_mapping", "struct__EvJobPageData.html#aff27888cd63950e4129181b697061505", null ],
+    [ "media_mapping", "struct__EvJobPageData.html#aa71b1cf0c7f905d8a6ad57fda72ea2eb", null ],
     [ "page", "struct__EvJobPageData.html#a536928b4f29353de1ff7c8a1e61de71f", null ],
     [ "parent", "struct__EvJobPageData.html#a86e211b5bf3585ef6f5e58e6f7aae096", null ],
     [ "text", "struct__EvJobPageData.html#aca98fd408159001b5b9f0da86bd3ca4b", null ],

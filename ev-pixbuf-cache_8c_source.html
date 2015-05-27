@@ -183,8 +183,8 @@ $(document).ready(function(){initNavTree('ev-pixbuf-cache_8c_source.html','');})
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">enum</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fad1052010c1be02e582a503d9b823e825">   78</a></span>&#160;    <a class="code" href="ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>,</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fa1e7365ab36b084beff81fb1b96df4b11">   79</a></span>&#160;    <a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="ev-pixbuf-cache_8c.html#a157d5577a5b2f5986037d0d09c7dc77dad1052010c1be02e582a503d9b823e825">   78</a></span>&#160;    <a class="code" href="ev-pixbuf-cache_8c.html#a157d5577a5b2f5986037d0d09c7dc77dad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="ev-pixbuf-cache_8c.html#a157d5577a5b2f5986037d0d09c7dc77da1e7365ab36b084beff81fb1b96df4b11">   79</a></span>&#160;    <a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">   82</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#aac34dfe6c6b73b43a4656c9dce041034a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>] = {0, };</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('ev-pixbuf-cache_8c_source.html','');})
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    object_class-&gt;finalize = <a class="code" href="ev-pixbuf-cache_8c.html#a3ce846e2c66649fd996f7fc9f48e7438">ev_pixbuf_cache_finalize</a>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    object_class-&gt;dispose = <a class="code" href="ev-pixbuf-cache_8c.html#ad5c5588d1eb5ac8b88ed382a5e5f9507">ev_pixbuf_cache_dispose</a>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>] =</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#a157d5577a5b2f5986037d0d09c7dc77dad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>] =</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        g_signal_new (<span class="stringliteral">&quot;job-finished&quot;</span>,</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                  G_OBJECT_CLASS_TYPE (object_class),</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
@@ -446,7 +446,7 @@ $(document).ready(function(){initNavTree('ev-pixbuf-cache_8c_source.html','');})
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    job_info = <a class="code" href="ev-pixbuf-cache_8c.html#acdac353ae4d2292dccc6a3c44d02ae86">find_job_cache</a> (pixbuf_cache, job_render-&gt;<a class="code" href="struct__EvJobRender.html#ad9490e3b86dd85ddbf536dbd12cd46a9">page</a>);</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <a class="code" href="ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f">copy_job_to_job_info</a> (job_render, job_info, pixbuf_cache);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    g_signal_emit (pixbuf_cache, <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>], 0, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786">region</a>);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    g_signal_emit (pixbuf_cache, <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#a157d5577a5b2f5986037d0d09c7dc77dad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>], 0, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786">region</a>);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">/* This checks a job to see if the job would generate the right sized pixbuf</span></div>
@@ -1021,7 +1021,7 @@ $(document).ready(function(){initNavTree('ev-pixbuf-cache_8c_source.html','');})
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp;</div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;        <a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;page_ready) {</div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f">copy_job_to_job_info</a> (<a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>), job_info, pixbuf_cache);</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        g_signal_emit (pixbuf_cache, <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#a394b3903fbf00ba2b6243f60689a5a5fad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>], 0, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786">region</a>);</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        g_signal_emit (pixbuf_cache, <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#a157d5577a5b2f5986037d0d09c7dc77dad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>], 0, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786">region</a>);</div>
 <div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    }</div>
 <div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a98ce8d293c753ac0ee41dc4e8919b80b">surface</a>;</div>
@@ -1489,7 +1489,7 @@ $(document).ready(function(){initNavTree('ev-pixbuf-cache_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-pixbuf-cache_8c.html">ev-pixbuf-cache.c</a></li>
-    <li class="footer">Generated on Wed May 27 2015 11:27:34 for Evince by
+    <li class="footer">Generated on Wed May 27 2015 13:28:33 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

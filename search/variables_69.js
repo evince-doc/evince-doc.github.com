@@ -44,8 +44,10 @@ var searchData=
   ['is_5fopen',['is_open',['../struct__EvAnnotationText.html#a16e4abcc7777133ab4b1d430f21e1418',1,'_EvAnnotationText::is_open()'],['../struct__EvAnnotationWindow.html#aeda5827d69fe6cf687aa94820f2dc664',1,'_EvAnnotationWindow::is_open()']]],
   ['is_5fparent',['is_parent',['../struct__EvLayerPrivate.html#a7225a86f68d7b35fe93ad0868fa4b005',1,'_EvLayerPrivate']]],
   ['is_5fpassword',['is_password',['../struct__EvFormFieldText.html#a94974c38dac8050e8656dae7ff316910',1,'_EvFormFieldText']]],
+  ['is_5fplaying',['is_playing',['../struct__EvMediaPlayer.html#ab282a79a5732064c2483be366df89a0a',1,'_EvMediaPlayer']]],
   ['is_5fread_5fonly',['is_read_only',['../struct__EvFormField.html#aa89a3c2152176fb9ac3b8c1a5aaf15e9',1,'_EvFormField']]],
   ['is_5frich_5ftext',['is_rich_text',['../struct__EvFormFieldText.html#aaef52a5257556cbb648fc085286a333a',1,'_EvFormFieldText']]],
+  ['is_5fseeking',['is_seeking',['../struct__EvMediaPlayer.html#a9021f62d7f501b8c945803f7608c9d8c',1,'_EvMediaPlayer']]],
   ['isfixedpitch',['isFixedPitch',['../structGlobalFontInfo.html#a57a51fafb29ae8edcfedd918cdaed010',1,'GlobalFontInfo']]],
   ['italicangle',['italicAngle',['../structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff',1,'GlobalFontInfo']]],
   ['items',['items',['../struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9',1,'_EvBookmarks::items()'],['../struct__EvMetadata.html#aebc19339308c1ad2790fab4e7e64948b',1,'_EvMetadata::items()']]]

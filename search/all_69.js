@@ -61,9 +61,11 @@ var searchData=
   ['is_5fopen',['is_open',['../struct__EvAnnotationText.html#a16e4abcc7777133ab4b1d430f21e1418',1,'_EvAnnotationText::is_open()'],['../struct__EvAnnotationWindow.html#aeda5827d69fe6cf687aa94820f2dc664',1,'_EvAnnotationWindow::is_open()']]],
   ['is_5fparent',['is_parent',['../struct__EvLayerPrivate.html#a7225a86f68d7b35fe93ad0868fa4b005',1,'_EvLayerPrivate']]],
   ['is_5fpassword',['is_password',['../struct__EvFormFieldText.html#a94974c38dac8050e8656dae7ff316910',1,'_EvFormFieldText']]],
+  ['is_5fplaying',['is_playing',['../struct__EvMediaPlayer.html#ab282a79a5732064c2483be366df89a0a',1,'_EvMediaPlayer']]],
   ['is_5fprefix_5fdelimiter',['IS_PREFIX_DELIMITER',['../special_8c.html#ae87964109ddd692df8ab9c40dbdf392b',1,'special.c']]],
   ['is_5fread_5fonly',['is_read_only',['../struct__EvFormField.html#aa89a3c2152176fb9ac3b8c1a5aaf15e9',1,'_EvFormField']]],
   ['is_5frich_5ftext',['is_rich_text',['../struct__EvFormFieldText.html#aaef52a5257556cbb648fc085286a333a',1,'_EvFormFieldText']]],
+  ['is_5fseeking',['is_seeking',['../struct__EvMediaPlayer.html#a9021f62d7f501b8c945803f7608c9d8c',1,'_EvMediaPlayer']]],
   ['is_5fstandard_5ffont',['is_standard_font',['../ev-poppler_8cc.html#af0bf3aa77acd536b4272160a9c72cf40',1,'ev-poppler.cc']]],
   ['isccittcompression',['isCCITTCompression',['../tiff2ps_8c.html#aae3aba0db67ce59004d38642f320e5e6',1,'tiff2ps.c']]],
   ['iscontinuous',['isContinuous',['../classEvBrowserPlugin.html#a4ce74865cb791f2ceb9032a794d70c6f',1,'EvBrowserPlugin']]],
@@ -72,7 +74,7 @@ var searchData=
   ['issp',['ISSP',['../private_8h.html#aa3cad8c2f334773ed3f31478e63e636b',1,'private.h']]],
   ['isvirtual',['ISVIRTUAL',['../mdvi_8h.html#a5d9faef015549a2847491f53961e8bcf',1,'mdvi.h']]],
   ['italicangle',['italicAngle',['../structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff',1,'GlobalFontInfo']]],
-  ['item_5factivated',['ITEM_ACTIVATED',['../ev-recent-view_8c.html#aeb8e1c282570d629a6b603a94a4650d6af4adf678107ef39e690a65618cdc19ee',1,'ev-recent-view.c']]],
+  ['item_5factivated',['ITEM_ACTIVATED',['../ev-recent-view_8c.html#a550cb4231d535863c55643bbd2d3c6baaf4adf678107ef39e690a65618cdc19ee',1,'ev-recent-view.c']]],
   ['items',['items',['../struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9',1,'_EvBookmarks::items()'],['../struct__EvMetadata.html#aebc19339308c1ad2790fab4e7e64948b',1,'_EvMetadata::items()']]],
   ['index_20for_20this_20mapping',['index for this mapping',['../page.html',1,'']]]
 ];

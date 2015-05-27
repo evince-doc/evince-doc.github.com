@@ -1,9 +1,9 @@
 var ev_view_accessible_8c =
 [
     [ "_EvViewAccessiblePrivate", "struct__EvViewAccessiblePrivate.html", "struct__EvViewAccessiblePrivate" ],
-    [ "ACTION_SCROLL_UP", "ev-view-accessible_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a27b7ddcfdb7e37f273d319451f642da6", null ],
-    [ "ACTION_SCROLL_DOWN", "ev-view-accessible_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0acbed98e0a19d9cc6cc75278f34654314", null ],
-    [ "LAST_ACTION", "ev-view-accessible_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0ab200c2448192c350db7584f8a180e783", null ],
+    [ "ACTION_SCROLL_UP", "ev-view-accessible_8c.html#afb730582952b7ceec73d7dc9bf7bef39a27b7ddcfdb7e37f273d319451f642da6", null ],
+    [ "ACTION_SCROLL_DOWN", "ev-view-accessible_8c.html#afb730582952b7ceec73d7dc9bf7bef39acbed98e0a19d9cc6cc75278f34654314", null ],
+    [ "LAST_ACTION", "ev-view-accessible_8c.html#afb730582952b7ceec73d7dc9bf7bef39ab200c2448192c350db7584f8a180e783", null ],
     [ "_transform_doc_rect_to_atk_rect", "ev-view-accessible_8c.html#adf7a1febb1c508528289b7941c3e6d82", null ],
     [ "clear_children", "ev-view-accessible_8c.html#a21e962d0a7a768ba09ab4f07edfd424f", null ],
     [ "document_changed_cb", "ev-view-accessible_8c.html#aac71dd9ebf16ae86e9e8a88e973c215e", null ],

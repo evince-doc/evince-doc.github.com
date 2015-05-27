@@ -169,144 +169,145 @@ $(document).ready(function(){initNavTree('ev-debug_8c_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                { <span class="stringliteral">&quot;forms&quot;</span>,      EV_DEBUG_BORDER_FORMS      },</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                { <span class="stringliteral">&quot;annots&quot;</span>,     EV_DEBUG_BORDER_ANNOTS     },</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                { <span class="stringliteral">&quot;images&quot;</span>,     EV_DEBUG_BORDER_IMAGES     },</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                { <span class="stringliteral">&quot;selections&quot;</span>, EV_DEBUG_BORDER_SELECTIONS }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        };</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        ev_debug = g_parse_debug_string (g_getenv (<span class="stringliteral">&quot;EV_DEBUG&quot;</span>), keys, G_N_ELEMENTS (keys));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (ev_debug &amp; EV_DEBUG_SHOW_BORDERS)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                ev_debug_borders = g_parse_debug_string (g_getenv (<span class="stringliteral">&quot;EV_DEBUG_SHOW_BORDERS&quot;</span>),</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                         border_keys, G_N_ELEMENTS (border_keys));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;profile_init (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (g_getenv (<span class="stringliteral">&quot;EV_PROFILE&quot;</span>) != NULL) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">/* enable all profiling */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        ev_profile = ~EV_NO_PROFILE;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (g_getenv (<span class="stringliteral">&quot;EV_PROFILE_JOBS&quot;</span>) != NULL)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            ev_profile |= EV_PROFILE_JOBS;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (ev_profile) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        timers = g_hash_table_new_full (g_str_hash,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        g_str_equal,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        (GDestroyNotify) g_free,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        (GDestroyNotify) g_timer_destroy);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<a class="code" href="ev-debug_8h.html#a09ce846fb0be4f32abb22b2363500077">_ev_debug_init</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    debug_init ();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    profile_init ();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<a class="code" href="ev-debug_8h.html#a5f383214e42b0713c707d04f2de36dd0">_ev_debug_shutdown</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (timers) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        g_hash_table_destroy (timers);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        timers = NULL;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (EvDebugSection  section,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          <span class="keyword">const</span> gchar    *file,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          gint            line,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          <span class="keyword">const</span> gchar    *<span class="keyword">function</span>,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <span class="keyword">const</span> gchar    *format, ...)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (G_UNLIKELY (ev_debug &amp; section)) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        gchar *msg = NULL;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (format) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            va_list args;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            va_start (args, format);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            msg = g_strdup_vprintf (format, args);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            va_end (args);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        g_print (<span class="stringliteral">&quot;%s:%d (%s) %s\n&quot;</span>, file, line, <span class="keyword">function</span>, msg ? msg : <span class="stringliteral">&quot;&quot;</span>);  </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        fflush (stdout);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        g_free (msg);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<a class="code" href="ev-debug_8h.html#a9823f3abd390cae932cb1094034b1c6e">ev_profiler_start</a> (EvProfileSection section,</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;           <span class="keyword">const</span> gchar     *format, ...)</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">if</span> (G_UNLIKELY (ev_profile &amp; section)) {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        GTimer *timer;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        gchar  *<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        va_list args;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">if</span> (!format)</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        va_start (args, format);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        name = g_strdup_vprintf (format, args);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        va_end (args);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        timer = g_hash_table_lookup (timers, name);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (!timer) {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            timer = g_timer_new ();</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            g_hash_table_insert (timers, g_strdup (name), timer);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            g_timer_start (timer);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<a class="code" href="ev-debug_8h.html#aadc21b518f1e881e0038475563bdcb3f">ev_profiler_stop</a> (EvProfileSection section,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;          <span class="keyword">const</span> gchar     *format, ...)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">if</span> (G_UNLIKELY (ev_profile &amp; section)) {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        GTimer *timer;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        gchar  *<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        va_list args;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        gdouble seconds;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (!format)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        va_start (args, format);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        name = g_strdup_vprintf (format, args);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        va_end (args);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        timer = g_hash_table_lookup (timers, name);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">if</span> (!timer)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        g_timer_stop (timer);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        seconds = g_timer_elapsed (timer, NULL);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        g_print (<span class="stringliteral">&quot;[ %s ] %f s elapsed\n&quot;</span>, name, seconds);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        fflush (stdout);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;EvDebugBorders</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;ev_debug_get_debug_borders (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> ev_debug_borders;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_ENABLE_DEBUG */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                { <span class="stringliteral">&quot;media&quot;</span>,      EV_DEBUG_BORDER_MEDIA      },</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                { <span class="stringliteral">&quot;selections&quot;</span>, EV_DEBUG_BORDER_SELECTIONS }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ev_debug = g_parse_debug_string (g_getenv (<span class="stringliteral">&quot;EV_DEBUG&quot;</span>), keys, G_N_ELEMENTS (keys));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (ev_debug &amp; EV_DEBUG_SHOW_BORDERS)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                ev_debug_borders = g_parse_debug_string (g_getenv (<span class="stringliteral">&quot;EV_DEBUG_SHOW_BORDERS&quot;</span>),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                         border_keys, G_N_ELEMENTS (border_keys));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;profile_init (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (g_getenv (<span class="stringliteral">&quot;EV_PROFILE&quot;</span>) != NULL) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">/* enable all profiling */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        ev_profile = ~EV_NO_PROFILE;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (g_getenv (<span class="stringliteral">&quot;EV_PROFILE_JOBS&quot;</span>) != NULL)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            ev_profile |= EV_PROFILE_JOBS;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (ev_profile) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        timers = g_hash_table_new_full (g_str_hash,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        g_str_equal,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        (GDestroyNotify) g_free,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        (GDestroyNotify) g_timer_destroy);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="ev-debug_8h.html#a09ce846fb0be4f32abb22b2363500077">_ev_debug_init</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    debug_init ();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    profile_init ();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="ev-debug_8h.html#a5f383214e42b0713c707d04f2de36dd0">_ev_debug_shutdown</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (timers) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        g_hash_table_destroy (timers);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        timers = NULL;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (EvDebugSection  section,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          <span class="keyword">const</span> gchar    *file,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          gint            line,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <span class="keyword">const</span> gchar    *<span class="keyword">function</span>,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          <span class="keyword">const</span> gchar    *format, ...)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (G_UNLIKELY (ev_debug &amp; section)) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        gchar *msg = NULL;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (format) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            va_list args;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            va_start (args, format);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            msg = g_strdup_vprintf (format, args);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            va_end (args);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        g_print (<span class="stringliteral">&quot;%s:%d (%s) %s\n&quot;</span>, file, line, <span class="keyword">function</span>, msg ? msg : <span class="stringliteral">&quot;&quot;</span>);  </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        fflush (stdout);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        g_free (msg);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<a class="code" href="ev-debug_8h.html#a9823f3abd390cae932cb1094034b1c6e">ev_profiler_start</a> (EvProfileSection section,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;           <span class="keyword">const</span> gchar     *format, ...)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (G_UNLIKELY (ev_profile &amp; section)) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        GTimer *timer;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        gchar  *<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        va_list args;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (!format)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        va_start (args, format);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        name = g_strdup_vprintf (format, args);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        va_end (args);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        timer = g_hash_table_lookup (timers, name);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span> (!timer) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            timer = g_timer_new ();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            g_hash_table_insert (timers, g_strdup (name), timer);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            g_timer_start (timer);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<a class="code" href="ev-debug_8h.html#aadc21b518f1e881e0038475563bdcb3f">ev_profiler_stop</a> (EvProfileSection section,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          <span class="keyword">const</span> gchar     *format, ...)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (G_UNLIKELY (ev_profile &amp; section)) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        GTimer *timer;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        gchar  *<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        va_list args;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        gdouble seconds;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">if</span> (!format)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        va_start (args, format);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        name = g_strdup_vprintf (format, args);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        va_end (args);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        timer = g_hash_table_lookup (timers, name);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">if</span> (!timer)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        g_timer_stop (timer);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        seconds = g_timer_elapsed (timer, NULL);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        g_print (<span class="stringliteral">&quot;[ %s ] %f s elapsed\n&quot;</span>, name, seconds);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        fflush (stdout);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;EvDebugBorders</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;ev_debug_get_debug_borders (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;{</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> ev_debug_borders;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_ENABLE_DEBUG */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-debug_8c.html">ev-debug.c</a></li>
-    <li class="footer">Generated on Wed May 27 2015 11:27:34 for Evince by
+    <li class="footer">Generated on Wed May 27 2015 13:28:32 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

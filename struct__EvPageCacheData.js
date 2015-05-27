@@ -8,6 +8,7 @@ var struct__EvPageCacheData =
     [ "image_mapping", "struct__EvPageCacheData.html#ac5d835b6dc82042eab5e7c6d40c41b87", null ],
     [ "job", "struct__EvPageCacheData.html#a918fa76894477ac5b1a274648e452400", null ],
     [ "link_mapping", "struct__EvPageCacheData.html#a26ba6960e33b08836277ed79b6d66bbc", null ],
+    [ "media_mapping", "struct__EvPageCacheData.html#a429f0f6f58e0562feec4aa7628bdde41", null ],
     [ "text", "struct__EvPageCacheData.html#a88e9d75e52510f0e2e2082bd4a5a81b6", null ],
     [ "text_attrs", "struct__EvPageCacheData.html#acf4213cf0ebffadcf746cd11fbda1327", null ],
     [ "text_layout", "struct__EvPageCacheData.html#a2e52eb2cc415cded218b6a5111d5197a", null ],
