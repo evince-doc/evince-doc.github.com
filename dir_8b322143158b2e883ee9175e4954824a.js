@@ -14,8 +14,6 @@ var dir_8b322143158b2e883ee9175e4954824a =
     [ "ev-jobs.h", "ev-jobs_8h.html", "ev-jobs_8h" ],
     [ "ev-link-accessible.c", "ev-link-accessible_8c.html", "ev-link-accessible_8c" ],
     [ "ev-link-accessible.h", "ev-link-accessible_8h.html", "ev-link-accessible_8h" ],
-    [ "ev-media-controls.c", "ev-media-controls_8c.html", "ev-media-controls_8c" ],
-    [ "ev-media-controls.h", "ev-media-controls_8h.html", "ev-media-controls_8h" ],
     [ "ev-media-player.c", "ev-media-player_8c.html", "ev-media-player_8c" ],
     [ "ev-media-player.h", "ev-media-player_8h.html", "ev-media-player_8h" ],
     [ "ev-page-accessible.c", "ev-page-accessible_8c.html", "ev-page-accessible_8c" ],

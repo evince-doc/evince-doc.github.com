@@ -158,8 +158,6 @@ var searchData=
   ['evmappinglist',['EvMappingList',['../ev-mapping-list_8h.html#ab18386dfd19fa0b956374f0d189af7e4',1,'ev-mapping-list.h']]],
   ['evmedia',['EvMedia',['../ev-media_8h.html#a944dcbc5d22dc7ab1133e2532016a87f',1,'ev-media.h']]],
   ['evmediaclass',['EvMediaClass',['../ev-media_8h.html#a07050d3dbef73a8ddca6b5405095d3a2',1,'ev-media.h']]],
-  ['evmediacontrols',['EvMediaControls',['../ev-media-controls_8h.html#a9491820597ec077657744d4f18f0831c',1,'ev-media-controls.h']]],
-  ['evmediacontrolsclass',['EvMediaControlsClass',['../ev-media-controls_8h.html#af909ed2edb35b4491260ff8e08ed8b53',1,'ev-media-controls.h']]],
   ['evmediaplayer',['EvMediaPlayer',['../ev-media-player_8h.html#ae437df7177adcf072dec694cc6c0aba8',1,'ev-media-player.h']]],
   ['evmediaplayerclass',['EvMediaPlayerClass',['../ev-media-player_8h.html#af424e48b6d76e345405d090fd06fb161',1,'ev-media-player.h']]],
   ['evmediaplayerkeys',['EvMediaPlayerKeys',['../ev-media-player-keys_8h.html#a16986e14e00bf9abb04003df6789a6e0',1,'ev-media-player-keys.h']]],

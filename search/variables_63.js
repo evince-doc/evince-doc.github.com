@@ -51,6 +51,7 @@ var searchData=
   ['context',['context',['../struct__DviDocument.html#a03ec6f7c7470b8a0d9eb45616d106936',1,'_DviDocument']]],
   ['continuous',['continuous',['../struct__EvDocumentModel.html#a36c94175e4830e94890f6dadb0b509f4',1,'_EvDocumentModel::continuous()'],['../struct__EvView.html#aa22cff27441457edfb23ef5abc4f33b4',1,'_EvView::continuous()']]],
   ['continuoustogglebutton',['continuousToggleButton',['../struct__EvBrowserPluginToolbarPrivate.html#a06280c40e47aca3714b6362a661572d2',1,'_EvBrowserPluginToolbarPrivate']]],
+  ['controls',['controls',['../struct__EvMediaPlayer.html#acc162393e6503c3f67f018ba71b7978b',1,'_EvMediaPlayer']]],
   ['conv',['conv',['../struct__DviParams.html#a2dc3028c00da865b30603cd34d9c3e38',1,'_DviParams']]],
   ['convertpoint',['convertpoint',['../struct__NPNetscapeFuncs.html#a6724f5ba92a477b4c571f224dedb419f',1,'_NPNetscapeFuncs']]],
   ['count',['count',['../structListHead.html#a0cc9a65fb26615f40dd8309dee79e435',1,'ListHead::count()'],['../struct____synctex__scanner__t.html#aa09bf8eca2508d26805b53e173ecfd65',1,'__synctex_scanner_t::count()']]],

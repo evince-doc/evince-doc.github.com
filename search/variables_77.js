@@ -12,7 +12,7 @@ var searchData=
   ['window',['window',['../struct__NPWindow.html#aba7452f14f927e3261ad97861838b494',1,'_NPWindow::window()'],['../struct__NPEmbedPrint.html#a875099b1a13499d56ae6c84ade550a94',1,'_NPEmbedPrint::window()'],['../structEvViewWindowChild.html#afb4c9aeb299619a2931474883469edda',1,'EvViewWindowChild::window()'],['../struct__EvToolbarPrivate.html#a8c9eb0df5fa54ebcc24f71588559d66b',1,'_EvToolbarPrivate::window()'],['../struct__EvWindowTitle.html#abd3fdc5b7291439d176b09133dceabd9',1,'_EvWindowTitle::window()'],['../ev-previewer_8c.html#a36ae0e951201c2966ddbe053697c9387',1,'window():&#160;ev-previewer.c']]],
   ['window_5fchild_5ffocus',['window_child_focus',['../struct__EvView.html#ad5bb1734f0dbe2d9a9e88a6096274638',1,'_EvView']]],
   ['window_5fchildren',['window_children',['../struct__EvView.html#a43d7d7edef088def8542eacf1a96bb58',1,'_EvView']]],
-  ['window_5fid',['window_id',['../struct__EvMediaPlayer.html#ad8d0f1b0de08afbbd2850bfb4634438c',1,'_EvMediaPlayer']]],
+  ['window_5fhandle',['window_handle',['../struct__EvMediaPlayer.html#a634203689ec145d9863bfa0e64b8cbe1',1,'_EvMediaPlayer']]],
   ['window_5fmode',['window_mode',['../struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa',1,'_EvWindowPrivate']]],
   ['word_5fsymbol',['word_symbol',['../struct__DjvuTextPage.html#a4a846e51f6e416f882ff909580024501',1,'_DjvuTextPage']]],
   ['write',['write',['../struct__NPPluginFuncs.html#a4469cc48ef16ecb1f4f62aab97b977c4',1,'_NPPluginFuncs::write()'],['../struct__NPNetscapeFuncs.html#a518bb065983fb31dd5d2e9b9aefa9111',1,'_NPNetscapeFuncs::write()']]],

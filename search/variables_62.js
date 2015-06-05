@@ -40,6 +40,5 @@ var searchData=
   ['buffer_5fstart',['buffer_start',['../struct____synctex__scanner__t.html#ab45b78f37503ecad42a2d59db482aa84',1,'__synctex_scanner_t']]],
   ['builtins',['builtins',['../special_8c.html#a1b4d307070e19d7e28ae0e2442463614',1,'special.c']]],
   ['bus',['bus',['../struct__EvMediaPlayer.html#a710a3a4d5db2aa55f399c2b803042ec8',1,'_EvMediaPlayer']]],
-  ['button',['button',['../struct__EvMediaControls.html#a2e51f8dae8e9830a907690be360a89a1',1,'_EvMediaControls']]],
   ['bw',['bw',['../structEpsfBox.html#a529b5fadeff82e021653ca3549372fe9',1,'EpsfBox']]]
 ];

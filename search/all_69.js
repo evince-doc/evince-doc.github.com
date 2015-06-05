@@ -74,7 +74,7 @@ var searchData=
   ['issp',['ISSP',['../private_8h.html#aa3cad8c2f334773ed3f31478e63e636b',1,'private.h']]],
   ['isvirtual',['ISVIRTUAL',['../mdvi_8h.html#a5d9faef015549a2847491f53961e8bcf',1,'mdvi.h']]],
   ['italicangle',['italicAngle',['../structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff',1,'GlobalFontInfo']]],
-  ['item_5factivated',['ITEM_ACTIVATED',['../ev-recent-view_8c.html#a550cb4231d535863c55643bbd2d3c6baaf4adf678107ef39e690a65618cdc19ee',1,'ev-recent-view.c']]],
+  ['item_5factivated',['ITEM_ACTIVATED',['../ev-recent-view_8c.html#a109bfaad92bd6d348dab484aec11edbbaf4adf678107ef39e690a65618cdc19ee',1,'ev-recent-view.c']]],
   ['items',['items',['../struct__EvBookmarks.html#aaa5e4aff4258f3e3c648a1797ed1bcc9',1,'_EvBookmarks::items()'],['../struct__EvMetadata.html#aebc19339308c1ad2790fab4e7e64948b',1,'_EvMetadata::items()']]],
   ['index_20for_20this_20mapping',['index for this mapping',['../page.html',1,'']]]
 ];

@@ -175,8 +175,6 @@ var annotated =
     [ "_EvMappingList", "struct__EvMappingList.html", "struct__EvMappingList" ],
     [ "_EvMedia", "struct__EvMedia.html", "struct__EvMedia" ],
     [ "_EvMediaClass", "struct__EvMediaClass.html", "struct__EvMediaClass" ],
-    [ "_EvMediaControls", "struct__EvMediaControls.html", "struct__EvMediaControls" ],
-    [ "_EvMediaControlsClass", "struct__EvMediaControlsClass.html", "struct__EvMediaControlsClass" ],
     [ "_EvMediaPlayer", "struct__EvMediaPlayer.html", "struct__EvMediaPlayer" ],
     [ "_EvMediaPlayerClass", "struct__EvMediaPlayerClass.html", "struct__EvMediaPlayerClass" ],
     [ "_EvMediaPlayerKeys", "struct__EvMediaPlayerKeys.html", "struct__EvMediaPlayerKeys" ],

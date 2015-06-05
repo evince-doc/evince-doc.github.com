@@ -175,8 +175,6 @@ var hierarchy =
     [ "_EvMappingList", "struct__EvMappingList.html", null ],
     [ "_EvMedia", "struct__EvMedia.html", null ],
     [ "_EvMediaClass", "struct__EvMediaClass.html", null ],
-    [ "_EvMediaControls", "struct__EvMediaControls.html", null ],
-    [ "_EvMediaControlsClass", "struct__EvMediaControlsClass.html", null ],
     [ "_EvMediaPlayer", "struct__EvMediaPlayer.html", null ],
     [ "_EvMediaPlayerClass", "struct__EvMediaPlayerClass.html", null ],
     [ "_EvMediaPlayerKeys", "struct__EvMediaPlayerKeys.html", null ],

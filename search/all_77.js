@@ -16,7 +16,7 @@ var searchData=
   ['window_5fchild_5ffocus',['window_child_focus',['../struct__EvView.html#ad5bb1734f0dbe2d9a9e88a6096274638',1,'_EvView']]],
   ['window_5fchildren',['window_children',['../struct__EvView.html#a43d7d7edef088def8542eacf1a96bb58',1,'_EvView']]],
   ['window_5fconfigure_5fevent_5fcb',['window_configure_event_cb',['../ev-window_8c.html#a4e0983c661cce969e373c268c121751d',1,'ev-window.c']]],
-  ['window_5fid',['window_id',['../struct__EvMediaPlayer.html#ad8d0f1b0de08afbbd2850bfb4634438c',1,'_EvMediaPlayer']]],
+  ['window_5fhandle',['window_handle',['../struct__EvMediaPlayer.html#a634203689ec145d9863bfa0e64b8cbe1',1,'_EvMediaPlayer']]],
   ['window_5fmode',['window_mode',['../struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa',1,'_EvWindowPrivate']]],
   ['window_5fopen_5ffile_5fcopy_5fprogress_5fcb',['window_open_file_copy_progress_cb',['../ev-window_8c.html#a6998ef0067464a3c70cd7435515d646d',1,'ev-window.c']]],
   ['window_5fopen_5ffile_5fcopy_5fready_5fcb',['window_open_file_copy_ready_cb',['../ev-window_8c.html#a13129f4a42cb8ac96e6c0736803c2270',1,'ev-window.c']]],
@@ -26,7 +26,7 @@ var searchData=
   ['word_5flittle_5fendian',['WORD_LITTLE_ENDIAN',['../sysdeps_8h.html#a7a41cd57109448451a9cf8a4428c1dd9',1,'sysdeps.h']]],
   ['word_5fsymbol',['word_symbol',['../struct__DjvuTextPage.html#a4a846e51f6e416f882ff909580024501',1,'_DjvuTextPage']]],
   ['write',['write',['../struct__NPPluginFuncs.html#a4469cc48ef16ecb1f4f62aab97b977c4',1,'_NPPluginFuncs::write()'],['../struct__NPNetscapeFuncs.html#a518bb065983fb31dd5d2e9b9aefa9111',1,'_NPNetscapeFuncs::write()'],['../classEvBrowserPlugin.html#ab8447887c623e5e77492afd8d4b29cf2',1,'EvBrowserPlugin::write()']]],
-  ['writeready',['writeready',['../struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f',1,'_NPPluginFuncs::writeready()'],['../classEvBrowserPlugin.html#a9d7e3973e9325395f7223869320444db',1,'EvBrowserPlugin::writeReady()']]],
+  ['writeready',['writeReady',['../classEvBrowserPlugin.html#a9d7e3973e9325395f7223869320444db',1,'EvBrowserPlugin::writeReady()'],['../struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f',1,'_NPPluginFuncs::writeready()']]],
   ['wx',['wx',['../structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f',1,'CharMetricInfo']]],
   ['wy',['wy',['../structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40',1,'CharMetricInfo']]]
 ];

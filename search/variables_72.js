@@ -26,7 +26,6 @@ var searchData=
   ['remove_5fannotation',['remove_annotation',['../struct__EvDocumentAnnotationsInterface.html#aef0185761dd7874e8bd7ad4ebe983c52',1,'_EvDocumentAnnotationsInterface']]],
   ['removeproperty',['removeProperty',['../structNPClass.html#abfd93f88c9a41e31be0f8419531ecf71',1,'NPClass::removeProperty()'],['../struct__NPNetscapeFuncs.html#affa8e64bd0fbf11ed26f0aacb51fabf2',1,'_NPNetscapeFuncs::removeproperty()']]],
   ['render',['render',['../struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7',1,'_EvDocumentClass']]],
-  ['render_5farea',['render_area',['../struct__EvMediaPlayer.html#a88f47d9a1aaa716a3c4fe7b74f7c9dd7',1,'_EvMediaPlayer']]],
   ['render_5ffinished',['render_finished',['../struct__EvAsyncRendererInterface.html#a4a42164dbdd0ce665ae5dbbacb5f675b',1,'_EvAsyncRendererInterface']]],
   ['render_5fpixbuf',['render_pixbuf',['../struct__EvAsyncRendererInterface.html#a3ca67cdef9363e99e669b89c262cae3a',1,'_EvAsyncRendererInterface']]],
   ['render_5fselection',['render_selection',['../struct__EvSelectionInterface.html#adf006871b52534fdde70a538f395114a',1,'_EvSelectionInterface']]],

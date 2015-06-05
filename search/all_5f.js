@@ -233,8 +233,6 @@ var searchData=
   ['_5fevmappinglist',['_EvMappingList',['../struct__EvMappingList.html',1,'']]],
   ['_5fevmedia',['_EvMedia',['../struct__EvMedia.html',1,'']]],
   ['_5fevmediaclass',['_EvMediaClass',['../struct__EvMediaClass.html',1,'']]],
-  ['_5fevmediacontrols',['_EvMediaControls',['../struct__EvMediaControls.html',1,'']]],
-  ['_5fevmediacontrolsclass',['_EvMediaControlsClass',['../struct__EvMediaControlsClass.html',1,'']]],
   ['_5fevmediaplayer',['_EvMediaPlayer',['../struct__EvMediaPlayer.html',1,'']]],
   ['_5fevmediaplayerclass',['_EvMediaPlayerClass',['../struct__EvMediaPlayerClass.html',1,'']]],
   ['_5fevmediaplayerkeys',['_EvMediaPlayerKeys',['../struct__EvMediaPlayerKeys.html',1,'']]],

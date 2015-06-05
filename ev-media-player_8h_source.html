@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('ev-media-player_8h_source.html','');})
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EV_MEDIA_PLAYER_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;glib-object.h&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;gdk/gdk.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;gtk/gtk.h&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-media_8h.html">ev-media.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;G_BEGIN_DECLS</div>
@@ -150,29 +150,20 @@ $(document).ready(function(){initNavTree('ev-media-player_8h_source.html','');})
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="ev-media-player_8h.html#ae437df7177adcf072dec694cc6c0aba8">   42</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvMediaPlayer.html">_EvMediaPlayer</a>      <a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="ev-media-player_8h.html#af424e48b6d76e345405d090fd06fb161">   43</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__EvMediaPlayerClass.html">_EvMediaPlayerClass</a> <a class="code" href="struct__EvMediaPlayerClass.html">EvMediaPlayerClass</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;GType          <a class="code" href="ev-media-player_8h.html#a259e1e785de9feddaa648d990fd4a93c">ev_media_player_get_type</a>        (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *<a class="code" href="ev-media-player_8c.html#a33fca36588b619b643630b5aafb05ebd">ev_media_player_new</a>             (<a class="code" href="ev-media_8h.html#a944dcbc5d22dc7ab1133e2532016a87f">EvMedia</a>       *media,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                guint64        window_id,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                GdkRectangle  *area);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-media-player_8c.html#a8ae0f6513aae4056e6396a874a19a6ea">ev_media_player_set_render_area</a> (<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *player,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                GdkRectangle  *area);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-media-player_8c.html#afd2128a4c76af7dff6fecd034e65f4ea">ev_media_player_expose</a>          (<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *player);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;gdouble        <a class="code" href="ev-media-player_8c.html#a2d91640e3c804cecc49bbfe3ef05d295">ev_media_player_get_duration</a>    (<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *player);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;gdouble        <a class="code" href="ev-media-player_8c.html#a54d7a2746be77b48075c3201cffe855f">ev_media_player_get_position</a>    (<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *player);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-media-player_8c.html#a627e7783d0d31883545d938eade0bfd5">ev_media_player_toggle_state</a>    (<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *player);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="ev-media-player_8c.html#a907232ed2add65b9f506afd1d205ebf0">ev_media_player_seek</a>            (<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *player,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                gdouble        position);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_MEDIA_PLAYER_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;GType      <a class="code" href="ev-media-player_8h.html#a259e1e785de9feddaa648d990fd4a93c">ev_media_player_get_type</a>  (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;GtkWidget *<a class="code" href="ev-media-player_8c.html#a25525cb9693348d2dce6571ae5949a2d">ev_media_player_new</a>       (<a class="code" href="ev-media_8h.html#a944dcbc5d22dc7ab1133e2532016a87f">EvMedia</a>       *media);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="ev-media_8h.html#a944dcbc5d22dc7ab1133e2532016a87f">EvMedia</a>   *<a class="code" href="ev-media-player_8c.html#af655303923d3f9f562515d30994a153c">ev_media_player_get_media</a> (<a class="code" href="struct__EvMediaPlayer.html">EvMediaPlayer</a> *player);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EV_MEDIA_PLAYER_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-media-player_8h.html">ev-media-player.h</a></li>
-    <li class="footer">Generated on Thu Jun 4 2015 12:06:53 for Evince by
+    <li class="footer">Generated on Fri Jun 5 2015 12:30:07 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

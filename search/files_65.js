@@ -100,8 +100,6 @@ var searchData=
   ['ev_2dmacros_2eh',['ev-macros.h',['../ev-macros_8h.html',1,'']]],
   ['ev_2dmapping_2dlist_2ec',['ev-mapping-list.c',['../ev-mapping-list_8c.html',1,'']]],
   ['ev_2dmapping_2dlist_2eh',['ev-mapping-list.h',['../ev-mapping-list_8h.html',1,'']]],
-  ['ev_2dmedia_2dcontrols_2ec',['ev-media-controls.c',['../ev-media-controls_8c.html',1,'']]],
-  ['ev_2dmedia_2dcontrols_2eh',['ev-media-controls.h',['../ev-media-controls_8h.html',1,'']]],
   ['ev_2dmedia_2dplayer_2dkeys_2ec',['ev-media-player-keys.c',['../ev-media-player-keys_8c.html',1,'']]],
   ['ev_2dmedia_2dplayer_2dkeys_2eh',['ev-media-player-keys.h',['../ev-media-player-keys_8h.html',1,'']]],
   ['ev_2dmedia_2dplayer_2ec',['ev-media-player.c',['../ev-media-player_8c.html',1,'']]],

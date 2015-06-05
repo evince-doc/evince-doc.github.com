@@ -57,6 +57,7 @@ var searchData=
   ['draw_5fglyph',['draw_glyph',['../struct__DviDevice.html#abfb00c9040b5b53aab2f862d1fefb105',1,'_DviDevice']]],
   ['draw_5fps',['draw_ps',['../struct__DviDevice.html#ac28972a8a7036cfb8c7eae6c5e7bbcbc',1,'_DviDevice']]],
   ['draw_5frule',['draw_rule',['../struct__DviDevice.html#a632cd8adca4ac14962cadcfb880b0180',1,'_DviDevice']]],
+  ['drawing_5farea',['drawing_area',['../struct__EvMediaPlayer.html#ab068ba1420c2cbfa1098cc66f0fb0ff6',1,'_EvMediaPlayer']]],
   ['dual_5feven_5fleft',['dual_even_left',['../struct__EvHeightToPageCache.html#a1c1bc0d8054dfab802372bc0984f9f5c',1,'_EvHeightToPageCache::dual_even_left()'],['../struct__EvView.html#adb0cc2d86164c184286847fc3df14cc7',1,'_EvView::dual_even_left()']]],
   ['dual_5fheight_5fto_5fpage',['dual_height_to_page',['../struct__EvHeightToPageCache.html#a3ab2ae3856ea28b7db0d3a5ed6d3ff6d',1,'_EvHeightToPageCache']]],
   ['dual_5fpage',['dual_page',['../struct__EvDocumentModel.html#a2f2cacb8083d4a910932ff2f3d15160c',1,'_EvDocumentModel']]],

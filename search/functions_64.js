@@ -89,6 +89,7 @@ var searchData=
   ['draw_5fselection_5fregion',['draw_selection_region',['../ev-view_8c.html#a65504a1338e7d4703f8cc8d27b42d9cb',1,'ev-view.c']]],
   ['draw_5fshrink_5frule',['draw_shrink_rule',['../dviread_8c.html#a8827624eff6a85188c0f6d8984212292',1,'dviread.c']]],
   ['draw_5fsurface',['draw_surface',['../ev-view_8c.html#aff2bda17dceb3c75bc8c370bbeec5fbb',1,'ev-view.c']]],
+  ['drawing_5farea_5frealize_5fcb',['drawing_area_realize_cb',['../ev-media-player_8c.html#ad91620927edcd5824179a775cccd744c',1,'ev-media-player.c']]],
   ['dread',['dread',['../dviread_8c.html#ab12b5c98a54ba5e76e7ec3524d9c47b6',1,'dviread.c']]],
   ['dreset',['dreset',['../dviread_8c.html#a45d8268db955bc348cfebcdf474bc83a',1,'dviread.c']]],
   ['dsgetn',['dsgetn',['../dviread_8c.html#aaccc1c956c93a3d2b204ff1654a501fa',1,'dviread.c']]],
