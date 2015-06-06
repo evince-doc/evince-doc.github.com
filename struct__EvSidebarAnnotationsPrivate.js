@@ -1,5 +1,6 @@
 var struct__EvSidebarAnnotationsPrivate =
 [
+    [ "annot_highlight_item", "struct__EvSidebarAnnotationsPrivate.html#a739f737f1efd41310d53d16c9e6ee579", null ],
     [ "annot_text_item", "struct__EvSidebarAnnotationsPrivate.html#adc28c0b4ab6a70f256e6f1ce8b8cfce9", null ],
     [ "document", "struct__EvSidebarAnnotationsPrivate.html#a90c754e358d7cec9a2ee9cf7f1a40369", null ],
     [ "job", "struct__EvSidebarAnnotationsPrivate.html#a4630cf1bee145988d710690be7b013e2", null ],

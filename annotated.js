@@ -323,6 +323,7 @@ var annotated =
     [ "_TiffDocumentClass", "struct__TiffDocumentClass.html", "struct__TiffDocumentClass" ],
     [ "_XPSDocument", "struct__XPSDocument.html", "struct__XPSDocument" ],
     [ "_XPSDocumentClass", "struct__XPSDocumentClass.html", "struct__XPSDocumentClass" ],
+    [ "AddingAnnotInfo", "structAddingAnnotInfo.html", "structAddingAnnotInfo" ],
     [ "AsyncData", "structAsyncData.html", "structAsyncData" ],
     [ "AutoScrollInfo", "structAutoScrollInfo.html", "structAutoScrollInfo" ],
     [ "BadTitleEntry", "structBadTitleEntry.html", "structBadTitleEntry" ],

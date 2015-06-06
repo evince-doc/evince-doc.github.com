@@ -81,6 +81,7 @@ var searchData=
   ['get_5fprint_5fpage_5fsetup',['get_print_page_setup',['../ev-window_8c.html#a36a8224ba9a7ab6fdd110c0829d7e8d4',1,'ev-window.c']]],
   ['get_5fprint_5fsettings',['get_print_settings',['../ev-window_8c.html#a67cbe1687ef98f36179af60ae168c620',1,'ev-window.c']]],
   ['get_5fprint_5fsettings_5ffile',['get_print_settings_file',['../ev-window_8c.html#a6324776b1a8ffdfe2885209bb6d95b87',1,'ev-window.c']]],
+  ['get_5fquads_5ffor_5farea',['get_quads_for_area',['../ev-poppler_8cc.html#aa2574293395e1f0b2e9e5f0c0e283b26',1,'ev-poppler.cc']]],
   ['get_5frun_5fattributes',['get_run_attributes',['../ev-page-accessible_8c.html#a274c2a4509fa2c641f972ffeb7298802',1,'ev-page-accessible.c']]],
   ['get_5fscreen_5fdpi',['get_screen_dpi',['../ev-annotation-window_8c.html#af92f40031a52f8beae1734b57ae698f1',1,'get_screen_dpi(EvAnnotationWindow *window):&#160;ev-annotation-window.c'],['../ev-previewer-window_8c.html#a6909209a02cc20fb567b0549858f4e2f',1,'get_screen_dpi(EvPreviewerWindow *window):&#160;ev-previewer-window.c'],['../ev-window_8c.html#ab2e74bd5c00e287161ac1ad9f614cd9a',1,'get_screen_dpi(EvWindow *window):&#160;ev-window.c']]],
   ['get_5fselected_5ftext',['get_selected_text',['../ev-view_8c.html#ab7ac19fd5a561a7257a654cb2966a4a4',1,'ev-view.c']]],

@@ -22,6 +22,7 @@ var searchData=
   ['prop_5falignment',['PROP_ALIGNMENT',['../ev-transition-effect_8c.html#aabfcbcb5ac86a1edac4035264bc7d2b8a9f5868e2541f479b140448b948cf7db2',1,'ev-transition-effect.c']]],
   ['prop_5fangle',['PROP_ANGLE',['../ev-transition-effect_8c.html#aabfcbcb5ac86a1edac4035264bc7d2b8a515e44f4ccd8703340c398e753101c6a',1,'ev-transition-effect.c']]],
   ['prop_5fannot_5f0',['PROP_ANNOT_0',['../ev-annotation_8c.html#a16af7b253440dadd46a80a4b9fddba4da0d18d9a3e7d44e637dad778a0fd7d67a',1,'ev-annotation.c']]],
+  ['prop_5fannot_5farea',['PROP_ANNOT_AREA',['../ev-annotation_8c.html#a16af7b253440dadd46a80a4b9fddba4da202b2ecec72f7d48587bb0d6a2a0b33e',1,'ev-annotation.c']]],
   ['prop_5fannot_5fcolor',['PROP_ANNOT_COLOR',['../ev-annotation_8c.html#a16af7b253440dadd46a80a4b9fddba4da973c60f16e3d4cf860864d54fe96b755',1,'ev-annotation.c']]],
   ['prop_5fannot_5fcontents',['PROP_ANNOT_CONTENTS',['../ev-annotation_8c.html#a16af7b253440dadd46a80a4b9fddba4da7751ef92c4c01f5aec80d6afd3d28664',1,'ev-annotation.c']]],
   ['prop_5fannot_5fmodified',['PROP_ANNOT_MODIFIED',['../ev-annotation_8c.html#a16af7b253440dadd46a80a4b9fddba4dac821bf27506be4b568a4ba72d79506c3',1,'ev-annotation.c']]],

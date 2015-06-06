@@ -324,6 +324,7 @@ var hierarchy =
     [ "_TiffDocumentClass", "struct__TiffDocumentClass.html", null ],
     [ "_XPSDocument", "struct__XPSDocument.html", null ],
     [ "_XPSDocumentClass", "struct__XPSDocumentClass.html", null ],
+    [ "AddingAnnotInfo", "structAddingAnnotInfo.html", null ],
     [ "AsyncData", "structAsyncData.html", null ],
     [ "AutoScrollInfo", "structAutoScrollInfo.html", null ],
     [ "BadTitleEntry", "structBadTitleEntry.html", null ],

@@ -13,6 +13,7 @@ var ev_document_annotations_8h =
       [ "EV_ANNOTATIONS_SAVE_NONE", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa56f7e6573bc4217e0ed47efae12485d5", null ],
       [ "EV_ANNOTATIONS_SAVE_CONTENTS", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baabb72a1a2899d0bab64ddc9b6ec8f2eb3", null ],
       [ "EV_ANNOTATIONS_SAVE_COLOR", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa20ccb38d9613a2758ba47e9bf85ac008", null ],
+      [ "EV_ANNOTATIONS_SAVE_AREA", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa5b2e4c09d088d4fae2047b8a007ae50c", null ],
       [ "EV_ANNOTATIONS_SAVE_LABEL", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa54050653b7487ea64945e98bc676c721", null ],
       [ "EV_ANNOTATIONS_SAVE_OPACITY", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa6d0a82bdd455b0f8029cdd7616aefb77", null ],
       [ "EV_ANNOTATIONS_SAVE_POPUP_RECT", "ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa97c04fe8fd06d215b6b1766c4f778242", null ],

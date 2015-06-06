@@ -18,6 +18,7 @@ var searchData=
   ['ev_5fannotation_5ftype_5ftext_5fmarkup',['EV_ANNOTATION_TYPE_TEXT_MARKUP',['../ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568a980a3e204c465606dbeb819bdb4aa81e',1,'ev-annotation.h']]],
   ['ev_5fannotation_5ftype_5funknown',['EV_ANNOTATION_TYPE_UNKNOWN',['../ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568a43d8b36cf604987cd84655e10f55debd',1,'ev-annotation.h']]],
   ['ev_5fannotations_5fsave_5fall',['EV_ANNOTATIONS_SAVE_ALL',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa622b82ba684f033a4b2b1689776a1d1b',1,'ev-document-annotations.h']]],
+  ['ev_5fannotations_5fsave_5farea',['EV_ANNOTATIONS_SAVE_AREA',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa5b2e4c09d088d4fae2047b8a007ae50c',1,'ev-document-annotations.h']]],
   ['ev_5fannotations_5fsave_5fattachment',['EV_ANNOTATIONS_SAVE_ATTACHMENT',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa040b3c27d457315918b7ecbad3e06c12',1,'ev-document-annotations.h']]],
   ['ev_5fannotations_5fsave_5fcolor',['EV_ANNOTATIONS_SAVE_COLOR',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baa20ccb38d9613a2758ba47e9bf85ac008',1,'ev-document-annotations.h']]],
   ['ev_5fannotations_5fsave_5fcontents',['EV_ANNOTATIONS_SAVE_CONTENTS',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2baabb72a1a2899d0bab64ddc9b6ec8f2eb3',1,'ev-document-annotations.h']]],

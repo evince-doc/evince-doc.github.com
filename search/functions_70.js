@@ -15,7 +15,7 @@ var searchData=
   ['parsedouble',['parseDouble',['../EvBrowserPlugin_8cpp.html#a36ccddec9ad17d03d30b7a955d98814f',1,'EvBrowserPlugin.cpp']]],
   ['parseinteger',['parseInteger',['../EvBrowserPlugin_8cpp.html#a7e6972f5b3451725ec39fae6418b7bc7',1,'EvBrowserPlugin.cpp']]],
   ['parsezoommode',['parseZoomMode',['../EvBrowserPlugin_8cpp.html#a9258b33cf06d2444b91b18555fe3e1be',1,'EvBrowserPlugin.cpp']]],
-  ['pdf_5fdocument_5fannotations_5fadd_5fannotation',['pdf_document_annotations_add_annotation',['../ev-poppler_8cc.html#a8aa2c9e070998e3530a208c46988ca70',1,'ev-poppler.cc']]],
+  ['pdf_5fdocument_5fannotations_5fadd_5fannotation',['pdf_document_annotations_add_annotation',['../ev-poppler_8cc.html#ab580997d57604b5b9979866db6db8910',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fdocument_5fis_5fmodified',['pdf_document_annotations_document_is_modified',['../ev-poppler_8cc.html#a66c644172f8583f7053385d05e5d3f16',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fget_5fannotations',['pdf_document_annotations_get_annotations',['../ev-poppler_8cc.html#af6b808477903d5590addfd8e1a6480e1',1,'ev-poppler.cc']]],
   ['pdf_5fdocument_5fannotations_5fremove_5fannotation',['pdf_document_annotations_remove_annotation',['../ev-poppler_8cc.html#aafbf13e6d03bcff3096d066ae28a1245',1,'ev-poppler.cc']]],

@@ -1,8 +1,7 @@
 var struct__EvView =
 [
     [ "accessible", "struct__EvView.html#a668333354f59a1fbc86e87322cd4295d", null ],
-    [ "adding_annot", "struct__EvView.html#a04dd9cbb00c6389160fc3f2f62c73bb0", null ],
-    [ "adding_annot_type", "struct__EvView.html#a5261fe542057456b4b81c3d8b5cca3d2", null ],
+    [ "adding_annot_info", "struct__EvView.html#a3439f919a805b03b56daafc41d4cd713", null ],
     [ "allow_links_change_zoom", "struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e", null ],
     [ "can_zoom_in", "struct__EvView.html#a60f9d92e5cbc011d977c2f3cb9015f45", null ],
     [ "can_zoom_out", "struct__EvView.html#aeec1146610c7b3420413afad600fed33", null ],
