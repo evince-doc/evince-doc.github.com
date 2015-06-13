@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"structEpsfBox.html#a045671ebcf269681973c5e09c3584986":[5,0,339,1],
+"structEpsfBox.html#a43fcbef6fc6a7ba99bc63f28ed78715c":[5,0,339,0],
+"structEpsfBox.html#a529b5fadeff82e021653ca3549372fe9":[5,0,339,2],
 "structEpsfBox.html#ad7d26931cedf46d83cd809d269a87962":[5,0,339,3],
 "structEpsfBox.html#add0dbcf214e9a92acbd7b11d5ff33a43":[5,0,339,4],
 "structEvAnnotationMarkupProps.html":[5,0,340],
@@ -246,8 +249,5 @@ var NAVTREEINDEX29 =
 "struct__DviColorPair.html":[5,0,11],
 "struct__DviColorPair.html#a13123118337be2153653123d80f10e51":[5,0,11,1],
 "struct__DviColorPair.html#a66ec32154e4e74f53b6df392db0c1932":[5,0,11,0],
-"struct__DviContext.html":[5,0,12],
-"struct__DviContext.html#a00528363f3d46490e2523d013b73a583":[5,0,12,7],
-"struct__DviContext.html#a0494c1a791958fa88de9f8f43e91a667":[5,0,12,28],
-"struct__DviContext.html#a04982a6f2097b9b1fa73ac0a082f4724":[5,0,12,5]
+"struct__DviContext.html":[5,0,12]
 };

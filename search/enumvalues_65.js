@@ -11,6 +11,7 @@ var searchData=
   ['ev_5fannotation_5ftext_5ficon_5fparagraph',['EV_ANNOTATION_TEXT_ICON_PARAGRAPH',['../ev-annotation_8h.html#a25560e72664a83222e0b251b5f95efbdad148c5b6ad4eb8dd82020f7c7f04d8a1',1,'ev-annotation.h']]],
   ['ev_5fannotation_5ftext_5ficon_5funknown',['EV_ANNOTATION_TEXT_ICON_UNKNOWN',['../ev-annotation_8h.html#a25560e72664a83222e0b251b5f95efbdab91c30cd315aa5dc03454bdf4d9e103b',1,'ev-annotation.h']]],
   ['ev_5fannotation_5ftext_5fmarkup_5fhighlight',['EV_ANNOTATION_TEXT_MARKUP_HIGHLIGHT',['../ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfa18287d95f5869d8ae2ef383346b088fa',1,'ev-annotation.h']]],
+  ['ev_5fannotation_5ftext_5fmarkup_5fsquiggly',['EV_ANNOTATION_TEXT_MARKUP_SQUIGGLY',['../ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfa9d6ccabe69bc7d57dccb27e979c90add',1,'ev-annotation.h']]],
   ['ev_5fannotation_5ftext_5fmarkup_5fstrike_5fout',['EV_ANNOTATION_TEXT_MARKUP_STRIKE_OUT',['../ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfaefe00c0d505e35402824429ba7e8301a',1,'ev-annotation.h']]],
   ['ev_5fannotation_5ftext_5fmarkup_5funderline',['EV_ANNOTATION_TEXT_MARKUP_UNDERLINE',['../ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfad880a104590efabf4f92b306634aaa1d',1,'ev-annotation.h']]],
   ['ev_5fannotation_5ftype_5fattachment',['EV_ANNOTATION_TYPE_ATTACHMENT',['../ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568afc575b64ccaca159b75231ef3d25f855',1,'ev-annotation.h']]],

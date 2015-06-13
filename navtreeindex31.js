@@ -1,5 +1,8 @@
 var NAVTREEINDEX31 =
 {
+"struct__EvAnnotationPropertiesDialog.html#a654257319a9cda42b45952de9da86e92":[5,0,40,0],
+"struct__EvAnnotationPropertiesDialog.html#a7ef94a85e3f5a447f38f5f2d89752e9d":[5,0,40,5],
+"struct__EvAnnotationPropertiesDialog.html#a9568abfa97b257492c14418a7137d3fb":[5,0,40,7],
 "struct__EvAnnotationPropertiesDialog.html#a9be8115e2767177c68ae27a4ddd07377":[5,0,40,8],
 "struct__EvAnnotationPropertiesDialog.html#aad1581e7008abecd2a3d2aaa7c3fc504":[5,0,40,4],
 "struct__EvAnnotationPropertiesDialog.html#ac1db7248bfad0eedf03092bb6d88d38e":[5,0,40,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX31 =
 "struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d":[5,0,82,2],
 "struct__EvDocumentPrivate.html#af1324ddfa6189f753467a8613327491b":[5,0,82,0],
 "struct__EvDocumentPrivate.html#af3876b2ce4abe50f9dd292e47076d148":[5,0,82,3],
-"struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48":[5,0,82,5],
-"struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528":[5,0,82,7],
-"struct__EvDocumentSecurityInterface.html":[5,0,83],
-"struct__EvDocumentSecurityInterface.html#a3a12241a88d05d901bf2115991ee2aad":[5,0,83,2]
+"struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48":[5,0,82,5]
 };

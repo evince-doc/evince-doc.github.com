@@ -91,6 +91,7 @@ var ev_annotation_8c =
     [ "ev_annotation_text_markup_markup_iface_init", "ev-annotation_8c.html#a7609ba5aac93658773209f14b992577e", null ],
     [ "ev_annotation_text_markup_set_markup_type", "ev-annotation_8c.html#adf49f7e655c3e10736200407b4657b48", null ],
     [ "ev_annotation_text_markup_set_property", "ev-annotation_8c.html#abee6d4981c081dd2cd4af7ddb4f378b8", null ],
+    [ "ev_annotation_text_markup_squiggly_new", "ev-annotation_8c.html#afa0f993fe25e644c5598a5c8140e4954", null ],
     [ "ev_annotation_text_markup_strike_out_new", "ev-annotation_8c.html#a3f7e5801b8c38bae9b9ca8c45377f726", null ],
     [ "ev_annotation_text_markup_underline_new", "ev-annotation_8c.html#a4b59fdf5540232fd46291f15a28fdac6", null ],
     [ "ev_annotation_text_new", "ev-annotation_8c.html#af425fd5a300d88d6ef69253d735410fe", null ],

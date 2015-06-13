@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528":[5,0,82,7],
+"struct__EvDocumentSecurityInterface.html":[5,0,83],
+"struct__EvDocumentSecurityInterface.html#a3a12241a88d05d901bf2115991ee2aad":[5,0,83,2],
 "struct__EvDocumentSecurityInterface.html#aa9c9e03c75aa783548f0aeccf4634183":[5,0,83,1],
 "struct__EvDocumentSecurityInterface.html#ad374269be6eb5e3df98cff19baf82f05":[5,0,83,0],
 "struct__EvDocumentTextInterface.html":[5,0,84],
@@ -246,8 +249,5 @@ var NAVTREEINDEX32 =
 "struct__EvJobPageData.html#a274a5bedff0e527add66da51496d80d1":[5,0,144,2],
 "struct__EvJobPageData.html#a35baece3ce2c16dd0c06f029fae12f50":[5,0,144,3],
 "struct__EvJobPageData.html#a3dec6fb8004ff595cfa1056274a6f0e9":[5,0,144,14],
-"struct__EvJobPageData.html#a536928b4f29353de1ff7c8a1e61de71f":[5,0,144,6],
-"struct__EvJobPageData.html#a85a3f4b909ee5ff3b0a91113ff7438e2":[5,0,144,10],
-"struct__EvJobPageData.html#a86e211b5bf3585ef6f5e58e6f7aae096":[5,0,144,7],
-"struct__EvJobPageData.html#a9fb86c284c48a14bb1b63a75330beea6":[5,0,144,9]
+"struct__EvJobPageData.html#a536928b4f29353de1ff7c8a1e61de71f":[5,0,144,6]
 };

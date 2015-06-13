@@ -55,7 +55,8 @@ var ev_annotation_8h =
     [ "EvAnnotationTextMarkupType", "ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcf", [
       [ "EV_ANNOTATION_TEXT_MARKUP_HIGHLIGHT", "ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfa18287d95f5869d8ae2ef383346b088fa", null ],
       [ "EV_ANNOTATION_TEXT_MARKUP_STRIKE_OUT", "ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfaefe00c0d505e35402824429ba7e8301a", null ],
-      [ "EV_ANNOTATION_TEXT_MARKUP_UNDERLINE", "ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfad880a104590efabf4f92b306634aaa1d", null ]
+      [ "EV_ANNOTATION_TEXT_MARKUP_UNDERLINE", "ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfad880a104590efabf4f92b306634aaa1d", null ],
+      [ "EV_ANNOTATION_TEXT_MARKUP_SQUIGGLY", "ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcfa9d6ccabe69bc7d57dccb27e979c90add", null ]
     ] ],
     [ "EvAnnotationType", "ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568", [
       [ "EV_ANNOTATION_TYPE_UNKNOWN", "ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568a43d8b36cf604987cd84655e10f55debd", null ],
@@ -104,6 +105,7 @@ var ev_annotation_8h =
     [ "ev_annotation_text_markup_get_type", "ev-annotation_8h.html#af6dde607daeb0b9735f302f5bc94f945", null ],
     [ "ev_annotation_text_markup_highlight_new", "ev-annotation_8h.html#a4fa816911aeb0a291a68ed5306184a15", null ],
     [ "ev_annotation_text_markup_set_markup_type", "ev-annotation_8h.html#adf49f7e655c3e10736200407b4657b48", null ],
+    [ "ev_annotation_text_markup_squiggly_new", "ev-annotation_8h.html#afa0f993fe25e644c5598a5c8140e4954", null ],
     [ "ev_annotation_text_markup_strike_out_new", "ev-annotation_8h.html#a3f7e5801b8c38bae9b9ca8c45377f726", null ],
     [ "ev_annotation_text_markup_underline_new", "ev-annotation_8h.html#a4b59fdf5540232fd46291f15a28fdac6", null ],
     [ "ev_annotation_text_new", "ev-annotation_8h.html#af425fd5a300d88d6ef69253d735410fe", null ],
