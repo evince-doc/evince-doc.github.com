@@ -2411,13 +2411,13 @@ Functions</h2></td></tr>
 <div class="line"><a name="l03230"></a><span class="lineno"> 3230</span>&#160;        PopplerQuadrilateral *quad = &amp;g_array_index (quads, PopplerQuadrilateral, i);</div>
 <div class="line"><a name="l03231"></a><span class="lineno"> 3231</span>&#160;</div>
 <div class="line"><a name="l03232"></a><span class="lineno"> 3232</span>&#160;        quad-&gt;p1.x = r-&gt;x1;</div>
-<div class="line"><a name="l03233"></a><span class="lineno"> 3233</span>&#160;        quad-&gt;p1.y = height - r-&gt;y2;</div>
+<div class="line"><a name="l03233"></a><span class="lineno"> 3233</span>&#160;        quad-&gt;p1.y = height - r-&gt;y1;</div>
 <div class="line"><a name="l03234"></a><span class="lineno"> 3234</span>&#160;        quad-&gt;p2.x = r-&gt;x2;</div>
-<div class="line"><a name="l03235"></a><span class="lineno"> 3235</span>&#160;        quad-&gt;p2.y = height - r-&gt;y2;</div>
+<div class="line"><a name="l03235"></a><span class="lineno"> 3235</span>&#160;        quad-&gt;p2.y = height - r-&gt;y1;</div>
 <div class="line"><a name="l03236"></a><span class="lineno"> 3236</span>&#160;        quad-&gt;p3.x = r-&gt;x1;</div>
-<div class="line"><a name="l03237"></a><span class="lineno"> 3237</span>&#160;        quad-&gt;p3.y = height - r-&gt;y1;</div>
+<div class="line"><a name="l03237"></a><span class="lineno"> 3237</span>&#160;        quad-&gt;p3.y = height - r-&gt;y2;</div>
 <div class="line"><a name="l03238"></a><span class="lineno"> 3238</span>&#160;        quad-&gt;p4.x = r-&gt;x2;</div>
-<div class="line"><a name="l03239"></a><span class="lineno"> 3239</span>&#160;        quad-&gt;p4.y = height - r-&gt;y1;</div>
+<div class="line"><a name="l03239"></a><span class="lineno"> 3239</span>&#160;        quad-&gt;p4.y = height - r-&gt;y2;</div>
 <div class="line"><a name="l03240"></a><span class="lineno"> 3240</span>&#160;        poppler_rectangle_free (r);</div>
 <div class="line"><a name="l03241"></a><span class="lineno"> 3241</span>&#160;</div>
 <div class="line"><a name="l03242"></a><span class="lineno"> 3242</span>&#160;        <span class="keywordflow">if</span> (!bbox)</div>
@@ -9202,7 +9202,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_84e2aa76b1453f8a5599fb6e12c6cb43.html">pdf</a></li><li class="navelem"><a class="el" href="ev-poppler_8cc.html">ev-poppler.cc</a></li>
-    <li class="footer">Generated on Wed Jun 10 2015 20:36:48 for Evince by
+    <li class="footer">Generated on Sat Jun 13 2015 07:35:16 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
