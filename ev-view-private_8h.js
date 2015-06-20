@@ -7,6 +7,7 @@ var ev_view_private_8h =
     [ "EvViewWindowChild", "structEvViewWindowChild.html", "structEvViewWindowChild" ],
     [ "_EvHeightToPageCache", "struct__EvHeightToPageCache.html", "struct__EvHeightToPageCache" ],
     [ "AddingAnnotInfo", "structAddingAnnotInfo.html", "structAddingAnnotInfo" ],
+    [ "MovingAnnotInfo", "structMovingAnnotInfo.html", "structMovingAnnotInfo" ],
     [ "_EvView", "struct__EvView.html", "struct__EvView" ],
     [ "_EvViewClass", "struct__EvViewClass.html", "struct__EvViewClass" ],
     [ "DRAG_HISTORY", "ev-view-private_8h.html#a6d7420fbc2a33a8b7eaaae40e844cba5", null ],

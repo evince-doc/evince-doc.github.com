@@ -351,12 +351,13 @@ var hierarchy =
     [ "EvTransitionEffectPrivate", "structEvTransitionEffectPrivate.html", null ],
     [ "EvViewChild", "structEvViewChild.html", null ],
     [ "EvViewWindowChild", "structEvViewWindowChild.html", null ],
-    [ "fontinfo", "structfontinfo.html", null ],
     [ "FontInfo", "structFontInfo.html", null ],
+    [ "fontinfo", "structfontinfo.html", null ],
     [ "GetDocumentInfoAsyncData", "structGetDocumentInfoAsyncData.html", null ],
     [ "GlobalFontInfo", "structGlobalFontInfo.html", null ],
     [ "ImageDNDInfo", "structImageDNDInfo.html", null ],
     [ "ListHead", "structListHead.html", null ],
+    [ "MovingAnnotInfo", "structMovingAnnotInfo.html", null ],
     [ "NPClass", "structNPClass.html", null ],
     [ "NPObject", "structNPObject.html", [
       [ "EvBrowserPlugin", "classEvBrowserPlugin.html", null ]

@@ -99,7 +99,7 @@ var searchData=
   ['fontchar',['FONTCHAR',['../mdvi_8h.html#a81a9a7d6197953f35cc43ef37809b5e6',1,'mdvi.h']]],
   ['fontfile',['fontfile',['../structDviFontMapInfo.html#a7ba1d0dfd2f94fdb411e683c07b903e0',1,'DviFontMapInfo::fontfile()'],['../struct__DviFontMapEnt.html#ac38137254ea0f7c86751e5cbe413c636',1,'_DviFontMapEnt::fontfile()']]],
   ['fontid',['fontid',['../struct__DviFontRef.html#abf9f7be963de5336f986264bfb6c3aa3',1,'_DviFontRef']]],
-  ['fontinfo',['fontinfo',['../structfontinfo.html',1,'fontinfo'],['../structFontInfo.html',1,'FontInfo']]],
+  ['fontinfo',['FontInfo',['../structFontInfo.html',1,'FontInfo'],['../structfontinfo.html',1,'fontinfo']]],
   ['fontlist',['fontlist',['../font_8c.html#a2cfd1d9b67732f39d5e07921ce0b5d26',1,'font.c']]],
   ['fontmap',['fontmap',['../struct__DviContext.html#a1dd1c99d9b9c13724ccde3218e3eabe7',1,'_DviContext']]],
   ['fontmap_2ec',['fontmap.c',['../fontmap_8c.html',1,'']]],

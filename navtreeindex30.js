@@ -1,5 +1,11 @@
 var NAVTREEINDEX30 =
 {
+"struct__DviBuffer.html#abaeaab555bc2de292b7530bfd1db1169":[5,0,10,0],
+"struct__DviBuffer.html#af557979240d8c051f4c553d866a5f7ef":[5,0,10,3],
+"struct__DviColorPair.html":[5,0,11],
+"struct__DviColorPair.html#a13123118337be2153653123d80f10e51":[5,0,11,1],
+"struct__DviColorPair.html#a66ec32154e4e74f53b6df392db0c1932":[5,0,11,0],
+"struct__DviContext.html":[5,0,12],
 "struct__DviContext.html#a00528363f3d46490e2523d013b73a583":[5,0,12,7],
 "struct__DviContext.html#a0494c1a791958fa88de9f8f43e91a667":[5,0,12,28],
 "struct__DviContext.html#a04982a6f2097b9b1fa73ac0a082f4724":[5,0,12,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX30 =
 "struct__EvAnnotationAttachmentClass.html":[5,0,37],
 "struct__EvAnnotationAttachmentClass.html#aa7c00325750fced5f786d335ad16a2de":[5,0,37,0],
 "struct__EvAnnotationClass.html":[5,0,38],
-"struct__EvAnnotationClass.html#a6f082aa321296e56bb7c3d1f3f48c844":[5,0,38,0],
-"struct__EvAnnotationMarkupInterface.html":[5,0,39],
-"struct__EvAnnotationMarkupInterface.html#ab61d8cef64b35dfdad47e29e2110461b":[5,0,39,0],
-"struct__EvAnnotationPropertiesDialog.html":[5,0,40],
-"struct__EvAnnotationPropertiesDialog.html#a1fca8ea3ab29a5ab6c4091a86eb27616":[5,0,40,6],
-"struct__EvAnnotationPropertiesDialog.html#a5166269d92223d571ef4503d06102c78":[5,0,40,3],
-"struct__EvAnnotationPropertiesDialog.html#a53c3197e43e26d1b1ee1c1591039f208":[5,0,40,1]
+"struct__EvAnnotationClass.html#a6f082aa321296e56bb7c3d1f3f48c844":[5,0,38,0]
 };

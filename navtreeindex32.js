@@ -1,5 +1,11 @@
 var NAVTREEINDEX32 =
 {
+"struct__EvDocumentPrivate.html#ae78b7a7a5fc01dcf803364f94f6e7549":[5,0,82,11],
+"struct__EvDocumentPrivate.html#ae9c4831e828a83719bd3362bf0654e56":[5,0,82,9],
+"struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d":[5,0,82,2],
+"struct__EvDocumentPrivate.html#af1324ddfa6189f753467a8613327491b":[5,0,82,0],
+"struct__EvDocumentPrivate.html#af3876b2ce4abe50f9dd292e47076d148":[5,0,82,3],
+"struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48":[5,0,82,5],
 "struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528":[5,0,82,7],
 "struct__EvDocumentSecurityInterface.html":[5,0,83],
 "struct__EvDocumentSecurityInterface.html#a3a12241a88d05d901bf2115991ee2aad":[5,0,83,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX32 =
 "struct__EvJobLoadStream.html#a508f8d3020797b0af7e1f338e2c4e54e":[5,0,142,2],
 "struct__EvJobLoadStream.html#aa7858bd64e1007e6c2f511d0359e3a9f":[5,0,142,1],
 "struct__EvJobLoadStream.html#ad02e2039d063c8023a03e525d04d0cb3":[5,0,142,3],
-"struct__EvJobLoadStreamClass.html":[5,0,143],
-"struct__EvJobLoadStreamClass.html#a202e9254dbe5cf6d3cf36e242f1fbf5b":[5,0,143,0],
-"struct__EvJobPageData.html":[5,0,144],
-"struct__EvJobPageData.html#a274a5bedff0e527add66da51496d80d1":[5,0,144,2],
-"struct__EvJobPageData.html#a35baece3ce2c16dd0c06f029fae12f50":[5,0,144,3],
-"struct__EvJobPageData.html#a3dec6fb8004ff595cfa1056274a6f0e9":[5,0,144,14],
-"struct__EvJobPageData.html#a536928b4f29353de1ff7c8a1e61de71f":[5,0,144,6]
+"struct__EvJobLoadStreamClass.html":[5,0,143]
 };

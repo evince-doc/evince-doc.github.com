@@ -65,17 +65,17 @@ var NAVTREEINDEX =
 "npapi_8h.html#a40cf0dc408ee49290fb1c1cb822cfb61",
 "npruntime_8h.html#a7666f07d00764582bede1b6d491a9ec7",
 "structEpsfBox.html#a045671ebcf269681973c5e09c3584986",
-"struct__DviContext.html#a00528363f3d46490e2523d013b73a583",
-"struct__EvAnnotationPropertiesDialog.html#a654257319a9cda42b45952de9da86e92",
-"struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528",
-"struct__EvJobPageData.html#a85a3f4b909ee5ff3b0a91113ff7438e2",
-"struct__EvPageCacheData.html#acf4213cf0ebffadcf746cd11fbda1327",
-"struct__EvSidebarLinksPrivate.html#a9fe956ba44bba7d247af95997de0b674",
-"struct__EvWindowPrivate.html#a5afc6de8583dc2582c7dbd65479b3a92",
-"struct__NPVariant.html#a8977f45878e22f3b9a51ee0f19998fbe",
-"synctex__parser_8c.html#a3f549859bab1bbb7122365073552d252",
-"synctex__parser_8h.html#abf429cea3ab8edc549b78175a4541dc7",
-"vf_8c.html"
+"struct__DviBuffer.html#abaeaab555bc2de292b7530bfd1db1169",
+"struct__EvAnnotationMarkupInterface.html",
+"struct__EvDocumentPrivate.html#ae78b7a7a5fc01dcf803364f94f6e7549",
+"struct__EvJobLoadStreamClass.html#a202e9254dbe5cf6d3cf36e242f1fbf5b",
+"struct__EvPageCacheData.html#a648d18cdb83537e52646a18a8d2b34e5",
+"struct__EvSidebarLinksClass.html#ada26748d74730dcfeb5fda32b8620521",
+"struct__EvWindowPrivate.html#a4829f836db59024b95bae56762187609",
+"struct__NPVariant.html",
+"synctex__parser_8c.html#a3ad4666bed6117f9276248ce657c21d0",
+"synctex__parser_8h.html#aa63d24cee9895dd74897954114560e14",
+"util_8c.html#ae6696efdd382a84e143806d245e4da1f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

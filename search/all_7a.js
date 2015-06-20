@@ -1,7 +1,7 @@
 var searchData=
 [
   ['z',['z',['../struct__DviState.html#a1230f7f183b70c63bb2fc0d60493a11e',1,'_DviState']]],
-  ['zoom',['Zoom',['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68ab497020d61ea95eeda5fa36d6a963e3a',1,'EvBrowserPluginClass::Zoom()'],['../struct__EvLinkDestPrivate.html#a03685c24cea2399958e70bd223c138ab',1,'_EvLinkDestPrivate::zoom()'],['../classEvBrowserPlugin.html#a85a1b3cd1e54a8681c6aee3a684508de',1,'EvBrowserPlugin::zoom()']]],
+  ['zoom',['zoom',['../struct__EvLinkDestPrivate.html#a03685c24cea2399958e70bd223c138ab',1,'_EvLinkDestPrivate::zoom()'],['../classEvBrowserPlugin.html#a85a1b3cd1e54a8681c6aee3a684508de',1,'EvBrowserPlugin::zoom()'],['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68ab497020d61ea95eeda5fa36d6a963e3a',1,'EvBrowserPluginClass::Zoom()']]],
   ['zoom_5faction',['zoom_action',['../struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6',1,'_EvToolbarPrivate']]],
   ['zoom_5fcenter_5fx',['zoom_center_x',['../struct__EvView.html#afffd5c37fd24c3b1eea11c75845820e6',1,'_EvView']]],
   ['zoom_5fcenter_5fy',['zoom_center_y',['../struct__EvView.html#a6ac15cf77c4d750b46fba51fd426d531',1,'_EvView']]],

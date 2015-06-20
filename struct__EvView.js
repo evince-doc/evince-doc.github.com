@@ -44,6 +44,7 @@ var struct__EvView =
     [ "loading_window", "struct__EvView.html#ae628b1d26c1d6ecd4f1fd513a6340b79", null ],
     [ "model", "struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365", null ],
     [ "motion", "struct__EvView.html#a17633e9f3f1d859b759e27269e13e289", null ],
+    [ "moving_annot_info", "struct__EvView.html#a8856d00c5d1d85eef9532552a3e3e8ad", null ],
     [ "page_cache", "struct__EvView.html#a0370c47abe01a07c23239c5796997308", null ],
     [ "page_layout", "struct__EvView.html#a89ed4ae2b083bbf712a000d2250f143c", null ],
     [ "pan_action", "struct__EvView.html#a407b1ff1a500bd9d008fc2e4723461c9", null ],

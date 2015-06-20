@@ -198,7 +198,7 @@ var searchData=
   ['cursor_5fis_5fin_5fvisible_5fpage',['cursor_is_in_visible_page',['../ev-view_8c.html#a691f0db8c7f2b66ded75e4dcf7a727a8',1,'ev-view.c']]],
   ['cursor_5fline_5foffset',['cursor_line_offset',['../struct__EvView.html#a3e1c24e80b40b6ed0284663b0d7f6696',1,'_EvView']]],
   ['cursor_5foff_5fmultiplier',['CURSOR_OFF_MULTIPLIER',['../ev-view_8c.html#a226485a540de86ba8676ec0aaa05e980',1,'ev-view.c']]],
-  ['cursor_5foffset',['cursor_offset',['../struct__EvView.html#a674071b2fb11ae2c6027e53524318b19',1,'_EvView']]],
+  ['cursor_5foffset',['cursor_offset',['../structMovingAnnotInfo.html#a448b3f01e0729bdb8dc8a35416b42f61',1,'MovingAnnotInfo::cursor_offset()'],['../struct__EvView.html#a674071b2fb11ae2c6027e53524318b19',1,'_EvView::cursor_offset()']]],
   ['cursor_5fon_5fmultiplier',['CURSOR_ON_MULTIPLIER',['../ev-view_8c.html#a3cdddd7ddb5c37f953ffc494e4a75a40',1,'ev-view.c']]],
   ['cursor_5fpage',['cursor_page',['../struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec',1,'_EvView']]],
   ['cursor_5fpend_5fmultiplier',['CURSOR_PEND_MULTIPLIER',['../ev-view_8c.html#ab3ebef6a342b62c1c77f6c5e3a914d96',1,'ev-view.c']]],

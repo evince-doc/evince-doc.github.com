@@ -78,7 +78,7 @@ var searchData=
   ['cursor_5fblink_5ftime',['cursor_blink_time',['../struct__EvView.html#a345529e775963005b85922ee2126243a',1,'_EvView']]],
   ['cursor_5fblink_5ftimeout_5fid',['cursor_blink_timeout_id',['../struct__EvView.html#a778f87ef442a7adc7528ded5a8cfaec3',1,'_EvView']]],
   ['cursor_5fline_5foffset',['cursor_line_offset',['../struct__EvView.html#a3e1c24e80b40b6ed0284663b0d7f6696',1,'_EvView']]],
-  ['cursor_5foffset',['cursor_offset',['../struct__EvView.html#a674071b2fb11ae2c6027e53524318b19',1,'_EvView']]],
+  ['cursor_5foffset',['cursor_offset',['../structMovingAnnotInfo.html#a448b3f01e0729bdb8dc8a35416b42f61',1,'MovingAnnotInfo::cursor_offset()'],['../struct__EvView.html#a674071b2fb11ae2c6027e53524318b19',1,'_EvView::cursor_offset()']]],
   ['cursor_5fpage',['cursor_page',['../struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec',1,'_EvView']]],
   ['cursor_5fvisible',['cursor_visible',['../struct__EvView.html#af73aa2a6aac60a16c6b1f5028bb93533',1,'_EvView']]],
   ['cwi',['cwi',['../structFontInfo.html#a106ea659d8fd1904ce9f77095b99fa38',1,'FontInfo']]]
