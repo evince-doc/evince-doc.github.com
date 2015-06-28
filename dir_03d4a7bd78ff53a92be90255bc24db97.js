@@ -2,6 +2,8 @@ var dir_03d4a7bd78ff53a92be90255bc24db97 =
 [
     [ "ev-annotation-properties-dialog.c", "ev-annotation-properties-dialog_8c.html", "ev-annotation-properties-dialog_8c" ],
     [ "ev-annotation-properties-dialog.h", "ev-annotation-properties-dialog_8h.html", "ev-annotation-properties-dialog_8h" ],
+    [ "ev-annotations-toolbar.c", "ev-annotations-toolbar_8c.html", "ev-annotations-toolbar_8c" ],
+    [ "ev-annotations-toolbar.h", "ev-annotations-toolbar_8h.html", "ev-annotations-toolbar_8h" ],
     [ "ev-application.c", "ev-application_8c.html", "ev-application_8c" ],
     [ "ev-application.h", "ev-application_8h.html", "ev-application_8h" ],
     [ "ev-bookmark-action.c", "ev-bookmark-action_8c.html", "ev-bookmark-action_8c" ],

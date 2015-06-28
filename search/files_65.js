@@ -6,6 +6,8 @@ var searchData=
   ['ev_2dannotation_2dwindow_2eh',['ev-annotation-window.h',['../ev-annotation-window_8h.html',1,'']]],
   ['ev_2dannotation_2ec',['ev-annotation.c',['../ev-annotation_8c.html',1,'']]],
   ['ev_2dannotation_2eh',['ev-annotation.h',['../ev-annotation_8h.html',1,'']]],
+  ['ev_2dannotations_2dtoolbar_2ec',['ev-annotations-toolbar.c',['../ev-annotations-toolbar_8c.html',1,'']]],
+  ['ev_2dannotations_2dtoolbar_2eh',['ev-annotations-toolbar.h',['../ev-annotations-toolbar_8h.html',1,'']]],
   ['ev_2dapplication_2ec',['ev-application.c',['../ev-application_8c.html',1,'']]],
   ['ev_2dapplication_2eh',['ev-application.h',['../ev-application_8h.html',1,'']]],
   ['ev_2dasync_2drenderer_2ec',['ev-async-renderer.c',['../ev-async-renderer_8c.html',1,'']]],

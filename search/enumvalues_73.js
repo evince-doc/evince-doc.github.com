@@ -15,7 +15,7 @@ var searchData=
   ['signal_5fhandle_5flink',['SIGNAL_HANDLE_LINK',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa4e96c390423f28d509edad4f3c79bc9b',1,'ev-view.c']]],
   ['signal_5flayers_5fchanged',['SIGNAL_LAYERS_CHANGED',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa1c06cd1a294d12d66b6bc3a3bc0c7f05',1,'ev-view.c']]],
   ['signal_5fmove_5fcursor',['SIGNAL_MOVE_CURSOR',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aabcf1e4e63aa60f8cd23aadae4d89c433',1,'ev-view.c']]],
-  ['signal_5fpopup_5fmenu',['SIGNAL_POPUP_MENU',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa55d7f80237501e6ebd069f1f556f6217',1,'SIGNAL_POPUP_MENU():&#160;ev-view.c'],['../ev-sidebar-attachments_8c.html#a7859c0a3efa8b1c360f5c2376baf051ea55d7f80237501e6ebd069f1f556f6217',1,'SIGNAL_POPUP_MENU():&#160;ev-sidebar-attachments.c']]],
+  ['signal_5fpopup_5fmenu',['SIGNAL_POPUP_MENU',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa55d7f80237501e6ebd069f1f556f6217',1,'SIGNAL_POPUP_MENU():&#160;ev-view.c'],['../ev-sidebar-attachments_8c.html#a79e9f285d34216706a748fd7ba8941b7a55d7f80237501e6ebd069f1f556f6217',1,'SIGNAL_POPUP_MENU():&#160;ev-sidebar-attachments.c']]],
   ['signal_5fscroll',['SIGNAL_SCROLL',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa410ae632c7bd6d100f22f30e48398c9e',1,'ev-view.c']]],
   ['signal_5fselection_5fchanged',['SIGNAL_SELECTION_CHANGED',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa8f27d962b0275bc775a2e76581ed1c4e',1,'ev-view.c']]],
   ['signal_5fsync_5fsource',['SIGNAL_SYNC_SOURCE',['../ev-view_8c.html#a7cc2e4244ca368f68e5746185eda6c4aa3280bcbf9ec2bb53ab982beaadc07d29',1,'ev-view.c']]],

@@ -42,6 +42,8 @@ var annotated =
     [ "_EvAnnotationMarkupInterface", "struct__EvAnnotationMarkupInterface.html", "struct__EvAnnotationMarkupInterface" ],
     [ "_EvAnnotationPropertiesDialog", "struct__EvAnnotationPropertiesDialog.html", "struct__EvAnnotationPropertiesDialog" ],
     [ "_EvAnnotationPropertiesDialogClass", "struct__EvAnnotationPropertiesDialogClass.html", "struct__EvAnnotationPropertiesDialogClass" ],
+    [ "_EvAnnotationsToolbar", "struct__EvAnnotationsToolbar.html", "struct__EvAnnotationsToolbar" ],
+    [ "_EvAnnotationsToolbarClass", "struct__EvAnnotationsToolbarClass.html", "struct__EvAnnotationsToolbarClass" ],
     [ "_EvAnnotationText", "struct__EvAnnotationText.html", "struct__EvAnnotationText" ],
     [ "_EvAnnotationTextClass", "struct__EvAnnotationTextClass.html", "struct__EvAnnotationTextClass" ],
     [ "_EvAnnotationTextMarkup", "struct__EvAnnotationTextMarkup.html", "struct__EvAnnotationTextMarkup" ],

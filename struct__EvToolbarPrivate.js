@@ -1,6 +1,7 @@
 var struct__EvToolbarPrivate =
 [
     [ "action_menu_button", "struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b", null ],
+    [ "annots_button", "struct__EvToolbarPrivate.html#a2d18fbcba86da89752e0e2addc4c0b0b", null ],
     [ "bookmarks_section", "struct__EvToolbarPrivate.html#a27b414f8284e374bceb08fc92e3b795e", null ],
     [ "find_button", "struct__EvToolbarPrivate.html#a4a9c22d1a9dc73906bffd10fe315e08e", null ],
     [ "history_action", "struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9", null ],

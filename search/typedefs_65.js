@@ -8,6 +8,8 @@ var searchData=
   ['evannotationmarkupinterface',['EvAnnotationMarkupInterface',['../ev-annotation_8h.html#a6f77853b4c68ad7bb2054faa3f6bb4a1',1,'ev-annotation.h']]],
   ['evannotationpropertiesdialog',['EvAnnotationPropertiesDialog',['../ev-annotation-properties-dialog_8h.html#aed0eb0d4c77a70b1280c075bee658e37',1,'ev-annotation-properties-dialog.h']]],
   ['evannotationpropertiesdialogclass',['EvAnnotationPropertiesDialogClass',['../ev-annotation-properties-dialog_8h.html#ac06b8936e4e57a907bdc45c40cd06f90',1,'ev-annotation-properties-dialog.h']]],
+  ['evannotationstoolbar',['EvAnnotationsToolbar',['../ev-annotations-toolbar_8h.html#a07e121c6cce9249abe1b2828a31b9db0',1,'ev-annotations-toolbar.h']]],
+  ['evannotationstoolbarclass',['EvAnnotationsToolbarClass',['../ev-annotations-toolbar_8h.html#ae044399cc6c6c737d38f6e7bc4d5cd2b',1,'ev-annotations-toolbar.h']]],
   ['evannotationtext',['EvAnnotationText',['../ev-annotation_8h.html#ac6c62ca76747535bc366f9fdce0b3975',1,'ev-annotation.h']]],
   ['evannotationtextclass',['EvAnnotationTextClass',['../ev-annotation_8h.html#a20011061f497b749a6a0f8b5f4fdecf8',1,'ev-annotation.h']]],
   ['evannotationtextmarkup',['EvAnnotationTextMarkup',['../ev-annotation_8h.html#a518c73000c69970c6b53982aa90ce41c',1,'ev-annotation.h']]],

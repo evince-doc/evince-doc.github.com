@@ -26,7 +26,6 @@ var searchData=
   ['pages_5fy',['pages_y',['../structPdfPrintContext.html#a7a7084deba0e7f1b7760bdcafdef0473',1,'PdfPrintContext']]],
   ['pagesel',['pagesel',['../struct__DviContext.html#a0494c1a791958fa88de9f8f43e91a667',1,'_DviContext']]],
   ['pair',['pair',['../struct__DjvuTextLink.html#a5ffdc9ab4f4c3f353e7499d3fbf9c8fa',1,'_DjvuTextLink']]],
-  ['palette',['palette',['../struct__EvSidebarAnnotationsPrivate.html#a6f6f3c1e1575913e0be98e8c74722ed3',1,'_EvSidebarAnnotationsPrivate']]],
   ['pan_5faction',['pan_action',['../struct__EvView.html#a407b1ff1a500bd9d008fc2e4723461c9',1,'_EvView']]],
   ['pan_5fgesture',['pan_gesture',['../struct__EvView.html#ad56a36c471427aeb59d54c8a11eb85db',1,'_EvView']]],
   ['paper',['paper',['../struct__DviContext.html#ab920ca247f78f00dd39179ae73082e28',1,'_DviContext']]],

@@ -24,7 +24,7 @@ var searchData=
   ['nkeys',['nkeys',['../struct__DviHashTable.html#a6cdd3cd639a5e9c8fd9e77d8c06b6885',1,'_DviHashTable']]],
   ['nlevels',['nlevels',['../structColorCache.html#adec207a4d45ea409abc719192d4092ac',1,'ColorCache']]],
   ['no_5fgz',['no_gz',['../struct____synctex__updater__t_1_1__flags.html#a7f827bf39798bea0e45acf68573b038d',1,'__synctex_updater_t::_flags']]],
-  ['notebook',['notebook',['../struct__EvPropertiesDialog.html#a8ee1ff9f261b8ab641800f44753fd4a1',1,'_EvPropertiesDialog::notebook()'],['../struct__EvSidebarAnnotationsPrivate.html#a1ce129bc5455f56a166b3bea10d66a7b',1,'_EvSidebarAnnotationsPrivate::notebook()'],['../struct__EvSidebarPrivate.html#ace5aff48de6fd9e7bde2c86bf86a288d',1,'_EvSidebarPrivate::notebook()']]],
+  ['notebook',['notebook',['../struct__EvPropertiesDialog.html#a8ee1ff9f261b8ab641800f44753fd4a1',1,'_EvPropertiesDialog::notebook()'],['../struct__EvSidebarPrivate.html#ace5aff48de6fd9e7bde2c86bf86a288d',1,'_EvSidebarPrivate::notebook()']]],
   ['notice',['notice',['../structGlobalFontInfo.html#a93b3bec3f5990d421ddba7130095b6ec',1,'GlobalFontInfo']]],
   ['notifydata',['notifyData',['../struct__NPStream.html#af1d340c461ec06c3b763a644b63e7d0f',1,'_NPStream']]],
   ['npages',['npages',['../struct__DviContext.html#a1c7135dbe99d9ce1c68a37dfd7da6fb9',1,'_DviContext::npages()'],['../struct__TIFF2PSContext.html#a4fb2087f636db2394b18c259277a6ce9',1,'_TIFF2PSContext::npages()']]],

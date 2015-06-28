@@ -35,6 +35,7 @@ var searchData=
   ['hide_5fcursor_5ftimeout_5fid',['hide_cursor_timeout_id',['../struct__EvViewPresentation.html#aece8da31d394f5084372bca25dd35a05',1,'_EvViewPresentation']]],
   ['hide_5flayer',['hide_layer',['../struct__EvDocumentLayersInterface.html#aa2e6d169b05a8d20c1eb49866b85d145',1,'_EvDocumentLayersInterface']]],
   ['hide_5flist',['hide_list',['../struct__EvLinkActionPrivate.html#ac4d1d8b1d34de807cd0a45df6e79758e',1,'_EvLinkActionPrivate']]],
+  ['highlight_5fbutton',['highlight_button',['../struct__EvAnnotationsToolbar.html#a6796e00e50f5390770bef064cd16aac6',1,'_EvAnnotationsToolbar']]],
   ['highlight_5ffind_5fresults',['highlight_find_results',['../struct__EvView.html#a9b297e2d79c17cc95c3888ef52bb0661',1,'_EvView']]],
   ['highlighted_5fresult',['highlighted_result',['../struct__EvFindSidebarPrivate.html#a5a7e2107318b098632dcf07b1a336f5b',1,'_EvFindSidebarPrivate']]],
   ['history',['history',['../struct__EvHistoryActionPrivate.html#ab1fba00a89ad883ce6df1cef51548ffd',1,'_EvHistoryActionPrivate::history()'],['../struct__EvWindowPrivate.html#aa7b0b393d55556b8bc1e21fd0978fe0e',1,'_EvWindowPrivate::history()']]],

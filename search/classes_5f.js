@@ -42,6 +42,8 @@ var searchData=
   ['_5fevannotationmarkupinterface',['_EvAnnotationMarkupInterface',['../struct__EvAnnotationMarkupInterface.html',1,'']]],
   ['_5fevannotationpropertiesdialog',['_EvAnnotationPropertiesDialog',['../struct__EvAnnotationPropertiesDialog.html',1,'']]],
   ['_5fevannotationpropertiesdialogclass',['_EvAnnotationPropertiesDialogClass',['../struct__EvAnnotationPropertiesDialogClass.html',1,'']]],
+  ['_5fevannotationstoolbar',['_EvAnnotationsToolbar',['../struct__EvAnnotationsToolbar.html',1,'']]],
+  ['_5fevannotationstoolbarclass',['_EvAnnotationsToolbarClass',['../struct__EvAnnotationsToolbarClass.html',1,'']]],
   ['_5fevannotationtext',['_EvAnnotationText',['../struct__EvAnnotationText.html',1,'']]],
   ['_5fevannotationtextclass',['_EvAnnotationTextClass',['../struct__EvAnnotationTextClass.html',1,'']]],
   ['_5fevannotationtextmarkup',['_EvAnnotationTextMarkup',['../struct__EvAnnotationTextMarkup.html',1,'']]],

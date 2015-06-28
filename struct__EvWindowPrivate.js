@@ -1,6 +1,7 @@
 var struct__EvWindowPrivate =
 [
     [ "annot", "struct__EvWindowPrivate.html#a9533d726d289aa7472543c243a0ec563", null ],
+    [ "annots_toolbar", "struct__EvWindowPrivate.html#a330c48cfd3680222407aa225cd0114de", null ],
     [ "ask_caret_navigation_check", "struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe", null ],
     [ "attach_list", "struct__EvWindowPrivate.html#a2a2a2714cefa31573971203929c308ca", null ],
     [ "attachment_popup", "struct__EvWindowPrivate.html#ac524b0fb82b7643de50a2d19fd84f810", null ],

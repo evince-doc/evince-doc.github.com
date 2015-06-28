@@ -156,26 +156,23 @@ $(document).ready(function(){initNavTree('ev-sidebar-annotations_8h_source.html'
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="struct__EvSidebarAnnotationsClass.html#aed7231979744e3802321a01476ea4ff5">   49</a></span>&#160;    void    (* <a class="code" href="struct__EvSidebarAnnotationsClass.html#aed7231979744e3802321a01476ea4ff5">annot_activated</a>)     (<a class="code" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                     <a class="code" href="struct__EvMapping.html">EvMapping</a>            *mapping);</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="struct__EvSidebarAnnotationsClass.html#adde7fa8616ab9a3e5e73a2a5026cee14">   51</a></span>&#160;    void    (* <a class="code" href="struct__EvSidebarAnnotationsClass.html#adde7fa8616ab9a3e5e73a2a5026cee14">begin_annot_add</a>)     (<a class="code" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                     <a class="code" href="ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568">EvAnnotationType</a>      annot_type);</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="struct__EvSidebarAnnotationsClass.html#a421b5b9da31dddec1639ae9ff19e874c">   53</a></span>&#160;    void    (* <a class="code" href="struct__EvSidebarAnnotationsClass.html#a421b5b9da31dddec1639ae9ff19e874c">annot_add_cancelled</a>) (<a class="code" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;GType      <a class="code" href="ev-sidebar-annotations_8h.html#a39f60e5f2950a0026758c4d1db0edc62">ev_sidebar_annotations_get_type</a>      (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;GtkWidget *<a class="code" href="ev-sidebar-annotations_8c.html#adfb8716a64f948a5253cd938447edeb3">ev_sidebar_annotations_new</a>           (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-sidebar-annotations_8c.html#ac2b91d473ebfb431178910d88c443159">ev_sidebar_annotations_annot_added</a>   (<a class="code" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                             <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>         *annot);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-sidebar-annotations_8c.html#a7557fdf16db3992bef00a47229aebf0b">ev_sidebar_annotations_annot_removed</a> (<a class="code" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EV_SIDEBAR_ANNOTATIONS_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;GType      <a class="code" href="ev-sidebar-annotations_8h.html#a39f60e5f2950a0026758c4d1db0edc62">ev_sidebar_annotations_get_type</a>      (<span class="keywordtype">void</span>) G_GNUC_CONST;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;GtkWidget *<a class="code" href="ev-sidebar-annotations_8c.html#adfb8716a64f948a5253cd938447edeb3">ev_sidebar_annotations_new</a>           (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-sidebar-annotations_8c.html#ac2b91d473ebfb431178910d88c443159">ev_sidebar_annotations_annot_added</a>   (<a class="code" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                             <a class="code" href="struct__EvAnnotation.html">EvAnnotation</a>         *annot);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-sidebar-annotations_8c.html#a7557fdf16db3992bef00a47229aebf0b">ev_sidebar_annotations_annot_removed</a> (<a class="code" href="ev-sidebar-annotations_8h.html#a9eab00526229e48a79bd29ac791c9c12">EvSidebarAnnotations</a> *sidebar_annots);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EV_SIDEBAR_ANNOTATIONS_H__ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-annotations_8h.html">ev-sidebar-annotations.h</a></li>
-    <li class="footer">Generated on Thu Jun 25 2015 10:17:52 for Evince by
+    <li class="footer">Generated on Sun Jun 28 2015 11:30:17 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

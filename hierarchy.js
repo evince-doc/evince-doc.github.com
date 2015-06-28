@@ -42,6 +42,8 @@ var hierarchy =
     [ "_EvAnnotationMarkupInterface", "struct__EvAnnotationMarkupInterface.html", null ],
     [ "_EvAnnotationPropertiesDialog", "struct__EvAnnotationPropertiesDialog.html", null ],
     [ "_EvAnnotationPropertiesDialogClass", "struct__EvAnnotationPropertiesDialogClass.html", null ],
+    [ "_EvAnnotationsToolbar", "struct__EvAnnotationsToolbar.html", null ],
+    [ "_EvAnnotationsToolbarClass", "struct__EvAnnotationsToolbarClass.html", null ],
     [ "_EvAnnotationText", "struct__EvAnnotationText.html", null ],
     [ "_EvAnnotationTextClass", "struct__EvAnnotationTextClass.html", null ],
     [ "_EvAnnotationTextMarkup", "struct__EvAnnotationTextMarkup.html", null ],
