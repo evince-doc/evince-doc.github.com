@@ -304,12 +304,12 @@ Functions</h2></td></tr>
 <p>It is the caller's responsibility to unlink the temp file after use.</p>
 <p>Returns: a newly allocated string URI, or NULL on error </p>
 
-<p>Definition at line <a class="el" href="ev-file-helpers_8c_source.html#l00734">734</a> of file <a class="el" href="ev-file-helpers_8c_source.html">ev-file-helpers.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;{</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    g_return_val_if_fail (uri != NULL, NULL);</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8c.html#a7cfdca906277dce77c724c0f3c1d8e16">compression_run</a> (uri, type, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, error);</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-file-helpers_8c_source.html#l00735">735</a> of file <a class="el" href="ev-file-helpers_8c_source.html">ev-file-helpers.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;{</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    g_return_val_if_fail (uri != NULL, NULL);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8c.html#a7cfdca906277dce77c724c0f3c1d8e16">compression_run</a> (uri, type, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, error);</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -370,14 +370,15 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        target_file = g_file_new_for_uri (to);</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        result = g_file_copy_attributes (source_file, target_file,</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                         G_FILE_COPY_ALL_METADATA,</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                                         NULL, error);</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        g_object_unref (target_file);</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        g_object_unref (source_file);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;}</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                         G_FILE_COPY_ALL_METADATA |</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                                         G_FILE_COPY_TARGET_DEFAULT_PERMS,</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                                         NULL, error);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        g_object_unref (target_file);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        g_object_unref (source_file);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -423,10 +424,10 @@ Functions</h2></td></tr>
 <p>ev_file_get_mime_type: : the URI : whether to use fast MIME type detection : a #GError location to store an error, or NULL</p>
 <p>Returns: a newly allocated string with the MIME type of the file at , or NULL on error or if the MIME type could not be determined </p>
 
-<p>Definition at line <a class="el" href="ev-file-helpers_8c_source.html#l00572">572</a> of file <a class="el" href="ev-file-helpers_8c_source.html">ev-file-helpers.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;{</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keywordflow">return</span> fast ? <a class="code" href="ev-file-helpers_8c.html#a7236eb9d6ff0a786b2e9e988a6122f6c">get_mime_type_from_uri</a> (uri, error) : <a class="code" href="ev-file-helpers_8c.html#a3d18cebef235320393581c80ac4e08ef">get_mime_type_from_data</a> (uri, error);</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-file-helpers_8c_source.html#l00573">573</a> of file <a class="el" href="ev-file-helpers_8c_source.html">ev-file-helpers.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;{</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keywordflow">return</span> fast ? <a class="code" href="ev-file-helpers_8c.html#a7236eb9d6ff0a786b2e9e988a6122f6c">get_mime_type_from_uri</a> (uri, error) : <a class="code" href="ev-file-helpers_8c.html#a3d18cebef235320393581c80ac4e08ef">get_mime_type_from_data</a> (uri, error);</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -520,12 +521,12 @@ Functions</h2></td></tr>
 <p>It is the caller's responsibility to unlink the temp file after use.</p>
 <p>Returns: a newly allocated string URI, or NULL on error </p>
 
-<p>Definition at line <a class="el" href="ev-file-helpers_8c_source.html#l00705">705</a> of file <a class="el" href="ev-file-helpers_8c_source.html">ev-file-helpers.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;{</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    g_return_val_if_fail (uri != NULL, NULL);</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8c.html#a7cfdca906277dce77c724c0f3c1d8e16">compression_run</a> (uri, type, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, error);</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-file-helpers_8c_source.html#l00706">706</a> of file <a class="el" href="ev-file-helpers_8c_source.html">ev-file-helpers.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;{</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    g_return_val_if_fail (uri != NULL, NULL);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-file-helpers_8c.html#a7cfdca906277dce77c724c0f3c1d8e16">compression_run</a> (uri, type, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, error);</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -937,7 +938,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-file-helpers_8h.html">ev-file-helpers.h</a></li>
-    <li class="footer">Generated on Sun Aug 30 2015 10:49:34 for Evince by
+    <li class="footer">Generated on Wed Sep 2 2015 17:21:58 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
