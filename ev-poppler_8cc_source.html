@@ -3032,7 +3032,7 @@ $(document).ready(function(){initNavTree('ev-poppler_8cc_source.html','');});
 <div class="line"><a name="l02924"></a><span class="lineno"> 2924</span>&#160;</div>
 <div class="line"><a name="l02925"></a><span class="lineno"> 2925</span>&#160;            <span class="comment">/* Ignore screen annots containing a rendition action */</span></div>
 <div class="line"><a name="l02926"></a><span class="lineno"> 2926</span>&#160;            action = poppler_annot_screen_get_action (POPPLER_ANNOT_SCREEN (poppler_annot));</div>
-<div class="line"><a name="l02927"></a><span class="lineno"> 2927</span>&#160;            <span class="keywordflow">if</span> (action-&gt;type == POPPLER_ACTION_RENDITION)</div>
+<div class="line"><a name="l02927"></a><span class="lineno"> 2927</span>&#160;            <span class="keywordflow">if</span> (action &amp;&amp; action-&gt;type == POPPLER_ACTION_RENDITION)</div>
 <div class="line"><a name="l02928"></a><span class="lineno"> 2928</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l02929"></a><span class="lineno"> 2929</span>&#160;        }</div>
 <div class="line"><a name="l02930"></a><span class="lineno"> 2930</span>&#160;            <span class="comment">/* Fall through */</span></div>
@@ -3895,7 +3895,7 @@ $(document).ready(function(){initNavTree('ev-poppler_8cc_source.html','');});
 <div class="line"><a name="l03787"></a><span class="lineno"> 3787</span>&#160;            PopplerAction *action;</div>
 <div class="line"><a name="l03788"></a><span class="lineno"> 3788</span>&#160;</div>
 <div class="line"><a name="l03789"></a><span class="lineno"> 3789</span>&#160;            action = poppler_annot_screen_get_action (POPPLER_ANNOT_SCREEN (mapping-&gt;annot));</div>
-<div class="line"><a name="l03790"></a><span class="lineno"> 3790</span>&#160;            <span class="keywordflow">if</span> (action-&gt;type == POPPLER_ACTION_RENDITION) {</div>
+<div class="line"><a name="l03790"></a><span class="lineno"> 3790</span>&#160;            <span class="keywordflow">if</span> (action &amp;&amp; action-&gt;type == POPPLER_ACTION_RENDITION) {</div>
 <div class="line"><a name="l03791"></a><span class="lineno"> 3791</span>&#160;                media = <a class="code" href="ev-poppler_8cc.html#afd4346ad3c58a85c7ce156d61748b025">ev_media_from_poppler_rendition</a> (<a class="code" href="ev-document_8h.html#a24cd97eeba61d168e08b60b1192f5624">EV_DOCUMENT</a> (pdf_document), page,</div>
 <div class="line"><a name="l03792"></a><span class="lineno"> 3792</span>&#160;                                     action-&gt;rendition.media);</div>
 <div class="line"><a name="l03793"></a><span class="lineno"> 3793</span>&#160;            }</div>
@@ -4189,7 +4189,7 @@ $(document).ready(function(){initNavTree('ev-poppler_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_84e2aa76b1453f8a5599fb6e12c6cb43.html">pdf</a></li><li class="navelem"><a class="el" href="ev-poppler_8cc.html">ev-poppler.cc</a></li>
-    <li class="footer">Generated on Thu Oct 15 2015 06:55:38 for Evince by
+    <li class="footer">Generated on Thu Oct 15 2015 17:22:37 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
