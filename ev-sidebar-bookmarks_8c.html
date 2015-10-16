@@ -520,7 +520,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        gtk_tree_path_free (path);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        bm.<a class="code" href="struct__EvBookmark.html#aa2fb944394772eac33502d0ed60ef476">page</a> = page;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        bm.<a class="code" href="struct__EvBookmark.html#a8d69d86dababb2ee5db2adfe3585c4f5">title</a> = g_strdup (new_text);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        bm.<a class="code" href="struct__EvBookmark.html#a8d69d86dababb2ee5db2adfe3585c4f5">title</a> = g_markup_escape_text (new_text, -1);</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="ev-bookmarks_8c.html#a1f0c24b7990fc06caa0d60cbb7a662c9">ev_bookmarks_update</a> (priv-&gt;<a class="code" href="struct__EvSidebarBookmarksPrivate.html#addcac5348faa71c3def881d702625436">bookmarks</a>, &amp;bm);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
 </div><!-- fragment -->
@@ -1713,7 +1713,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-bookmarks_8c.html">ev-sidebar-bookmarks.c</a></li>
-    <li class="footer">Generated on Thu Oct 15 2015 21:33:59 for Evince by
+    <li class="footer">Generated on Fri Oct 16 2015 14:17:57 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

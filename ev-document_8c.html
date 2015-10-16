@@ -301,7 +301,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01095">1095</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01097">1097</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
 
 </div>
 </div>
@@ -661,14 +661,16 @@ Variables</h2></td></tr>
 <p>Definition at line <a class="el" href="ev-document_8c_source.html#l00723">723</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;{</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    cairo_surface_t *surface;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    GdkPixbuf       *pixbuf;</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    GdkPixbuf       *pixbuf = NULL;</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    surface = <a class="code" href="ev-document_8c.html#a6d5150d56d708dbbe555d737de51d68c">ev_document_render</a> (document, rc);</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    pixbuf = <a class="code" href="ev-document-misc_8c.html#a6fadb7103c73480a241085595b4ecf82">ev_document_misc_pixbuf_from_surface</a> (surface);</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    cairo_surface_destroy (surface);</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="keywordflow">return</span> pixbuf;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;}</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">if</span> (surface != NULL) {</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        pixbuf = <a class="code" href="ev-document-misc_8c.html#a6fadb7103c73480a241085595b4ecf82">ev_document_misc_pixbuf_from_surface</a> (surface);</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        cairo_surface_destroy (surface);</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    }</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keywordflow">return</span> pixbuf;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -737,12 +739,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00829">829</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;{</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a> &gt; 0 &amp;&amp; document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a> &gt; 0);</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00831">831</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;{</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a> &gt; 0 &amp;&amp; document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a> &gt; 0);</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1105,51 +1107,51 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00861">861</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;{</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    gint i, page;</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    glong value;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    gchar *endptr = NULL;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    <a class="code" href="struct__EvDocumentPrivate.html">EvDocumentPrivate</a> *priv = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>;</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    g_return_val_if_fail (page_label != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    g_return_val_if_fail (page_index != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <span class="comment">/* First, look for a literal label match */</span></div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i ++) {</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;            ! strcmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            *page_index = i;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        }</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    }</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <span class="comment">/* Second, look for a match with case insensitively */</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i++) {</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;            ! strcasecmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;            *page_index = i;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        }</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    }</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="comment">/* Next, parse the label, and see if the number fits */</span></div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    value = strtol (page_label, &amp;endptr, 10);</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="keywordflow">if</span> (endptr[0] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        <span class="comment">/* Page number is an integer */</span></div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        page = MIN (G_MAXINT, value);</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <span class="comment">/* convert from a page label to a page offset */</span></div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        page --;</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        <span class="keywordflow">if</span> (page &gt;= 0 &amp;&amp; page &lt; priv-&gt;n_pages) {</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;            *page_index = page;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        }</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    }</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00863">863</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;{</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    gint i, page;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    glong value;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    gchar *endptr = NULL;</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    <a class="code" href="struct__EvDocumentPrivate.html">EvDocumentPrivate</a> *priv = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    g_return_val_if_fail (page_label != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    g_return_val_if_fail (page_index != NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <span class="comment">/* First, look for a literal label match */</span></div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i ++) {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            ! strcmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            *page_index = i;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        }</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    }</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="comment">/* Second, look for a match with case insensitively */</span></div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <span class="keywordflow">for</span> (i = 0; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> &amp;&amp; i &lt; priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528">n_pages</a>; i++) {</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        <span class="keywordflow">if</span> (priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i] != NULL &amp;&amp;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;            ! strcasecmp (page_label, priv-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a>[i])) {</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;            *page_index = i;</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        }</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    }</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="comment">/* Next, parse the label, and see if the number fits */</span></div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    value = strtol (page_label, &amp;endptr, 10);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keywordflow">if</span> (endptr[0] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="comment">/* Page number is an integer */</span></div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        page = MIN (G_MAXINT, value);</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        <span class="comment">/* convert from a page label to a page offset */</span></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        page --;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        <span class="keywordflow">if</span> (page &gt;= 0 &amp;&amp; page &lt; priv-&gt;n_pages) {</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;            *page_index = page;</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        }</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    }</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1249,12 +1251,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00845">845</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;{</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), -1);</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3876b2ce4abe50f9dd292e47076d148">max_label</a>;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00847">847</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;{</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), -1);</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3876b2ce4abe50f9dd292e47076d148">max_label</a>;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1298,15 +1300,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00803">803</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;{</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <span class="keywordflow">if</span> (width)</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a>;</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <span class="keywordflow">if</span> (height)</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a>;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00805">805</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;{</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <span class="keywordflow">if</span> (width)</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a55294a9ca59086fa2c01b6a01c37154d">max_width</a>;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    <span class="keywordflow">if</span> (height)</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d">max_height</a>;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1350,15 +1352,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00816">816</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;{</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <span class="keywordflow">if</span> (width)</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2f5e7cae08e7ae92a2f9f1cccad92216">min_width</a>;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <span class="keywordflow">if</span> (height)</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48">min_height</a>;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00818">818</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;{</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    g_return_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document));</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <span class="keywordflow">if</span> (width)</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        *width = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2f5e7cae08e7ae92a2f9f1cccad92216">min_width</a>;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keywordflow">if</span> (height)</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        *height = document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48">min_height</a>;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1564,12 +1566,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00837">837</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;{</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), 0);</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af1324ddfa6189f753467a8613327491b">file_size</a>;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00839">839</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;{</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), 0);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#af1324ddfa6189f753467a8613327491b">file_size</a>;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1609,15 +1611,15 @@ Variables</h2></td></tr>
 <p>ev_document_get_thumbnail: : an <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> : an <a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a></p>
 <p>Returns: (transfer full): a #GdkPixbuf </p>
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00744">744</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;{</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *klass = <a class="code" href="ev-document_8h.html#a3b72ea4df9a7e6feb774584591694a4c">EV_DOCUMENT_GET_CLASS</a> (document);</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keywordflow">if</span> (klass-&gt;<a class="code" href="struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6">get_thumbnail</a>)</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <span class="keywordflow">return</span> klass-&gt;<a class="code" href="struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6">get_thumbnail</a> (document, rc);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document_8c.html#a2d64f2a0d11c1e94a70136eba0753857">_ev_document_get_thumbnail</a> (document, rc);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00746">746</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;{</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *klass = <a class="code" href="ev-document_8h.html#a3b72ea4df9a7e6feb774584591694a4c">EV_DOCUMENT_GET_CLASS</a> (document);</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">if</span> (klass-&gt;<a class="code" href="struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6">get_thumbnail</a>)</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <span class="keywordflow">return</span> klass-&gt;<a class="code" href="struct__EvDocumentClass.html#a5e0e2747d2f94ac6519ff3bcdee830e6">get_thumbnail</a> (document, rc);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document_8c.html#a2d64f2a0d11c1e94a70136eba0753857">_ev_document_get_thumbnail</a> (document, rc);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1658,15 +1660,15 @@ Variables</h2></td></tr>
 <p>Returns: (transfer full): a #cairo_surface_t</p>
 <p>Since: 3.14 </p>
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00765">765</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;{</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *klass = <a class="code" href="ev-document_8h.html#a3b72ea4df9a7e6feb774584591694a4c">EV_DOCUMENT_GET_CLASS</a> (document);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordflow">if</span> (klass-&gt;<a class="code" href="struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f">get_thumbnail_surface</a>)</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        <span class="keywordflow">return</span> klass-&gt;<a class="code" href="struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f">get_thumbnail_surface</a> (document, rc);</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document_8c.html#a6d5150d56d708dbbe555d737de51d68c">ev_document_render</a> (document, rc);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00767">767</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;{</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <a class="code" href="struct__EvDocumentClass.html">EvDocumentClass</a> *klass = <a class="code" href="ev-document_8h.html#a3b72ea4df9a7e6feb774584591694a4c">EV_DOCUMENT_GET_CLASS</a> (document);</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <span class="keywordflow">if</span> (klass-&gt;<a class="code" href="struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f">get_thumbnail_surface</a>)</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keywordflow">return</span> klass-&gt;<a class="code" href="struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f">get_thumbnail_surface</a> (document, rc);</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-document_8c.html#a6d5150d56d708dbbe555d737de51d68c">ev_document_render</a> (document, rc);</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1694,13 +1696,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00786">786</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;{</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;fields_mask &amp; <a class="code" href="ev-document-info_8h.html#a532b08c05369fea051a7270eacd7f9e7a9d022959651a52ab559fbe248b1e95fb">EV_DOCUMENT_INFO_TITLE</a>) ?</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;title : NULL;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00788">788</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;{</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordflow">return</span> (document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;fields_mask &amp; <a class="code" href="ev-document-info_8h.html#a532b08c05369fea051a7270eacd7f9e7a9d022959651a52ab559fbe248b1e95fb">EV_DOCUMENT_INFO_TITLE</a>) ?</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6">info</a>-&gt;title : NULL;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1728,12 +1730,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00778">778</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;{</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a82ea870f8f60eb45e9248d205b28221f">uri</a>;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00780">780</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;{</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), NULL);</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a82ea870f8f60eb45e9248d205b28221f">uri</a>;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1794,12 +1796,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00853">853</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;{</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> != NULL;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00855">855</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;{</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#a4d169c0a37f17f12497fd24f051f0304">page_labels</a> != NULL;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1915,36 +1917,36 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00955">955</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;{</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *copy;</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    </div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    g_return_val_if_fail (info != NULL, NULL);</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    copy = g_new0 (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, 1);</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    copy-&gt;title = g_strdup (info-&gt;title);</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    copy-&gt;format = g_strdup (info-&gt;format);</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    copy-&gt;author = g_strdup (info-&gt;author);</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    copy-&gt;subject = g_strdup (info-&gt;subject);</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    copy-&gt;keywords = g_strdup (info-&gt;keywords);</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    copy-&gt;security = g_strdup (info-&gt;security);</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    copy-&gt;creator = g_strdup (info-&gt;creator);</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    copy-&gt;producer = g_strdup (info-&gt;producer);</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    copy-&gt;linearized = g_strdup (info-&gt;linearized);</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    </div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    copy-&gt;creation_date = info-&gt;creation_date;</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    copy-&gt;modified_date = info-&gt;modified_date;</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    copy-&gt;layout = info-&gt;layout;</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    copy-&gt;mode = info-&gt;mode;</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    copy-&gt;ui_hints = info-&gt;ui_hints;</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    copy-&gt;permissions = info-&gt;permissions;</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    copy-&gt;n_pages = info-&gt;n_pages;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    copy-&gt;license = <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (info-&gt;license);</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    copy-&gt;fields_mask = info-&gt;fields_mask;</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00957">957</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;{</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    <a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a> *copy;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    </div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    g_return_val_if_fail (info != NULL, NULL);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    copy = g_new0 (<a class="code" href="ev-document-info_8h.html#ae371d75759f0ed0f18284b5698f015ea">EvDocumentInfo</a>, 1);</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    copy-&gt;title = g_strdup (info-&gt;title);</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    copy-&gt;format = g_strdup (info-&gt;format);</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    copy-&gt;author = g_strdup (info-&gt;author);</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    copy-&gt;subject = g_strdup (info-&gt;subject);</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    copy-&gt;keywords = g_strdup (info-&gt;keywords);</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    copy-&gt;security = g_strdup (info-&gt;security);</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    copy-&gt;creator = g_strdup (info-&gt;creator);</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    copy-&gt;producer = g_strdup (info-&gt;producer);</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    copy-&gt;linearized = g_strdup (info-&gt;linearized);</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    </div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    copy-&gt;creation_date = info-&gt;creation_date;</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    copy-&gt;modified_date = info-&gt;modified_date;</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    copy-&gt;layout = info-&gt;layout;</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    copy-&gt;mode = info-&gt;mode;</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    copy-&gt;ui_hints = info-&gt;ui_hints;</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    copy-&gt;permissions = info-&gt;permissions;</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    copy-&gt;n_pages = info-&gt;n_pages;</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    copy-&gt;license = <a class="code" href="ev-document-info_8h.html#a19fcd80506087afcfef9b6f8d224853c">ev_document_license_copy</a> (info-&gt;license);</div>
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    <span class="keywordflow">return</span> copy;</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;}</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    copy-&gt;fields_mask = info-&gt;fields_mask;</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    <span class="keywordflow">return</span> copy;</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1962,24 +1964,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00987">987</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;{</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <span class="keywordflow">if</span> (info == NULL)</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    g_free (info-&gt;title);</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    g_free (info-&gt;format);</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    g_free (info-&gt;author);</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    g_free (info-&gt;subject);</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    g_free (info-&gt;keywords);</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    g_free (info-&gt;creator);</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    g_free (info-&gt;producer);</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    g_free (info-&gt;linearized);</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    g_free (info-&gt;security);</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;    <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (info-&gt;license);</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    g_free (info);</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00989">989</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;{</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    <span class="keywordflow">if</span> (info == NULL)</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    g_free (info-&gt;title);</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    g_free (info-&gt;format);</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    g_free (info-&gt;author);</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    g_free (info-&gt;subject);</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    g_free (info-&gt;keywords);</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    g_free (info-&gt;creator);</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    g_free (info-&gt;producer);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;    g_free (info-&gt;linearized);</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    g_free (info-&gt;security);</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    <a class="code" href="ev-document-info_8h.html#acacd3c784d5ba10599e50ede4f84a80e">ev_document_license_free</a> (info-&gt;license);</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    g_free (info);</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2099,12 +2101,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00795">795</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;{</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#ae78b7a7a5fc01dcf803364f94f6e7549">uniform</a>;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00797">797</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;{</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    g_return_val_if_fail (<a class="code" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (document), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    <span class="keywordflow">return</span> document-&gt;<a class="code" href="struct__EvDocument.html#a517ae7ee979d38cbd66769e30f01cb72">priv</a>-&gt;<a class="code" href="struct__EvDocumentPrivate.html#ae78b7a7a5fc01dcf803364f94f6e7549">uniform</a>;</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2132,24 +2134,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01016">1016</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;{</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *new_license;</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;</div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;</div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;    new_license = <a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> ();</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01018">1018</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;{</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;    <a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a> *new_license;</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;</div>
-<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>)</div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>)</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>)</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;    <span class="keywordflow">return</span> new_license;</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;}</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;    new_license = <a class="code" href="ev-document-info_8h.html#a10d9a3ac4087a7d3da897b4270e2f9a3">ev_document_license_new</a> ();</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>)</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>)</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;    <span class="keywordflow">if</span> (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>)</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;        new_license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a> = g_strdup (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    <span class="keywordflow">return</span> new_license;</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2177,17 +2179,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01036">1036</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;{</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    g_free (license);</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01038">1038</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;{</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    <span class="keywordflow">if</span> (!license)</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>);</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>);</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    g_free (license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>);</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;    g_free (license);</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2215,10 +2217,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01049">1049</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;{</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>;</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01051">1051</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;{</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a50a9e4446261d76eb28371de62394cb9">text</a>;</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2246,10 +2248,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01055">1055</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;{</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>;</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01057">1057</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;{</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#add0319fe8ee94f8ab75321156dddbe08">uri</a>;</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2277,10 +2279,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01061">1061</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;{</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>;</div>
-<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01063">1063</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;{</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;    <span class="keywordflow">return</span> license-&gt;<a class="code" href="struct__EvDocumentLicense.html#a4ee671e578b94bb21178d0856c962641">web_statement</a>;</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2308,10 +2310,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01010">1010</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;{</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, 1);</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01012">1012</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;{</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvDocumentLicense.html">EvDocumentLicense</a>, 1);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2942,18 +2944,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01098">1098</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;{</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    <span class="keywordflow">if</span> (a == b)</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <span class="keywordflow">if</span> (a == NULL || b == NULL)</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    <span class="keywordflow">return</span> ! ((ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>));</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01100">1100</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;{</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <span class="keywordflow">if</span> (a == b)</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    <span class="keywordflow">if</span> (a == NULL || b == NULL)</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    <span class="keywordflow">return</span> ! ((ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>) &amp;&amp;</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;          (ABS (a-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - b-&gt;<a class="code" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>) &lt; <a class="code" href="ev-document_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>));</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-51-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -2981,17 +2983,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01076">1076</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;{</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *new_rectangle;</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    g_return_val_if_fail (rectangle != NULL, NULL);</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01078">1078</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;{</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    <a class="code" href="struct__EvRectangle.html">EvRectangle</a> *new_rectangle;</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;    new_rectangle = g_new (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    *new_rectangle = *rectangle;</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;    <span class="keywordflow">return</span> new_rectangle;</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;}</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;    g_return_val_if_fail (rectangle != NULL, NULL);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    new_rectangle = g_new (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;    *new_rectangle = *rectangle;</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    <span class="keywordflow">return</span> new_rectangle;</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3019,10 +3021,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01089">1089</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;{</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    g_free (rectangle);</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01091">1091</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;{</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    g_free (rectangle);</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-53" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-53-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3050,10 +3052,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01070">1070</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;{</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l01072">1072</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;{</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    <span class="keywordflow">return</span> g_new0 (<a class="code" href="struct__EvRectangle.html">EvRectangle</a>, 1);</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-54" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-54-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3081,19 +3083,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00927">927</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;{</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *copy;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    g_return_val_if_fail (link != NULL, NULL);</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00929">929</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;{</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *copy;</div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    copy = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    g_return_val_if_fail (link != NULL, NULL);</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    *copy = *link;</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    copy-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    <span class="keywordflow">return</span> copy;</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;}</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    copy = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    *copy = *link;</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    copy-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <span class="keywordflow">return</span> copy;</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3111,14 +3113,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00942">942</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;{</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordflow">if</span> (link == NULL)</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    g_free (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;    g_slice_free (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>, link);</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00944">944</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;{</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <span class="keywordflow">if</span> (link == NULL)</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;    g_free (link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a>);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    g_slice_free (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>, link);</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-55" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-55-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3162,16 +3164,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00913">913</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;{</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (filename);</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#ac48f6422979fb999255c4a9e8e081c64">line</a> = line;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#aab823cba5648ca3e12c4a0b97f88db95">col</a> = col;</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    <span class="keywordflow">return</span> link;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document_8c_source.html#l00915">915</a> of file <a class="el" href="ev-document_8c_source.html">ev-document.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;{</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <a class="code" href="struct__EvSourceLink.html">EvSourceLink</a> *link = g_slice_new (<a class="code" href="struct__EvSourceLink.html">EvSourceLink</a>);</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#a83e4cf1ce1029a578f578f779dce40d3">filename</a> = g_strdup (filename);</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#ac48f6422979fb999255c4a9e8e081c64">line</a> = line;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    link-&gt;<a class="code" href="struct__EvSourceLink.html#aab823cba5648ca3e12c4a0b97f88db95">col</a> = col;</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keywordflow">return</span> link;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-56" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-56-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3236,7 +3238,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document_8c.html">ev-document.c</a></li>
-    <li class="footer">Generated on Thu Oct 15 2015 21:33:53 for Evince by
+    <li class="footer">Generated on Fri Oct 16 2015 14:17:52 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
