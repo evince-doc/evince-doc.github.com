@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"structDragInfo.html#ae0c00368ebb010fbfc3b475e6fd8a03f":[5,0,337,1],
 "structDstring.html":[5,0,338],
 "structDstring.html#a52a5c2dc3102921ae01c219d27d2f00d":[5,0,338,0],
 "structDstring.html#a66824d6165711a46519bea353f99a22c":[5,0,338,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "struct__DjvuDocument.html#a53558d616864c24d05b2390dd1c4f5e6":[5,0,6,9],
 "struct__DjvuDocument.html#a70476b1f815ed99b90b08c9c9d837e97":[5,0,6,7],
 "struct__DjvuDocument.html#a826801310fb176b43d0c1408efe5f189":[5,0,6,1],
-"struct__DjvuDocument.html#ab2c5a968e71299c28ee6be286971e2ac":[5,0,6,10],
-"struct__DjvuDocument.html#abac010ab9853b5689907ab9200147f29":[5,0,6,3]
+"struct__DjvuDocument.html#ab2c5a968e71299c28ee6be286971e2ac":[5,0,6,10]
 };

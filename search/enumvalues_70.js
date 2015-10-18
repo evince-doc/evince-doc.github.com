@@ -9,6 +9,7 @@ var searchData=
   ['page_5fcolumn_5fnotebook_5findex',['PAGE_COLUMN_NOTEBOOK_INDEX',['../ev-sidebar_8c.html#ae33c78feb670de33d2abf21ec0624531ade8fa87c9986c2060f46240d132d3017',1,'ev-sidebar.c']]],
   ['page_5fcolumn_5fnum_5fcols',['PAGE_COLUMN_NUM_COLS',['../ev-sidebar_8c.html#ae33c78feb670de33d2abf21ec0624531ad87719e676dbf54f2943bcde2347f1d3',1,'ev-sidebar.c']]],
   ['page_5fcolumn_5ftitle',['PAGE_COLUMN_TITLE',['../ev-sidebar_8c.html#ae33c78feb670de33d2abf21ec0624531a1aba6a96869acbeca4c6482366672f74',1,'ev-sidebar.c']]],
+  ['page_5flabel_5fcolumn',['PAGE_LABEL_COLUMN',['../ev-find-sidebar_8c.html#a2f80701c36e79c0640d91c788feee0b3ac51cb1efb1a653c479b19c49cc060add',1,'ev-find-sidebar.c']]],
   ['page_5fmode_5fdocument',['PAGE_MODE_DOCUMENT',['../ev-window_8c.html#a4c5954daa150ebce59e691b805987ea4a418e90080b6707c6154bdba412d5fb51',1,'ev-window.c']]],
   ['page_5fmode_5fpassword',['PAGE_MODE_PASSWORD',['../ev-window_8c.html#a4c5954daa150ebce59e691b805987ea4ab11706a57bc9f365c283d3037d7bc48b',1,'ev-window.c']]],
   ['pagecount',['PageCount',['../structEvBrowserPluginClass.html#a50bd5d8edafcdaafba28e923d2eb9d68a66d5222994756a1c90ed3470246c9087',1,'EvBrowserPluginClass']]],

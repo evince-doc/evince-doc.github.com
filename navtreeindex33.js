@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"struct__EvJobLayers.html":[5,0,136],
 "struct__EvJobLayers.html#a30d6ab28a5b5e579331df3a5c2000a99":[5,0,136,0],
 "struct__EvJobLayers.html#aa5ff1fdff8e9915815c61877d2d77f5b":[5,0,136,1],
 "struct__EvJobLayersClass.html":[5,0,137],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "struct__EvPageActionPrivate.html#a650ba0dd90093e341a8afbed36383a06":[5,0,195,0],
 "struct__EvPageActionPrivate.html#afebc32dd5f9c127dbc4b250638bd7915":[5,0,195,1],
 "struct__EvPageActionWidget.html":[5,0,196],
-"struct__EvPageActionWidget.html#a119ab02eae54e302250005218d914e26":[5,0,196,4],
-"struct__EvPageActionWidget.html#a199a40d25a4e27d2107b946dd915497a":[5,0,196,3]
+"struct__EvPageActionWidget.html#a119ab02eae54e302250005218d914e26":[5,0,196,4]
 };

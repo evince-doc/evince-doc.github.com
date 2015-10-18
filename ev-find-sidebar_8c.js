@@ -2,6 +2,7 @@ var ev_find_sidebar_8c =
 [
     [ "_EvFindSidebarPrivate", "struct__EvFindSidebarPrivate.html", "struct__EvFindSidebarPrivate" ],
     [ "TEXT_COLUMN", "ev-find-sidebar_8c.html#a2f80701c36e79c0640d91c788feee0b3a658268753d26e20db642708403b7e96c", null ],
+    [ "PAGE_LABEL_COLUMN", "ev-find-sidebar_8c.html#a2f80701c36e79c0640d91c788feee0b3ac51cb1efb1a653c479b19c49cc060add", null ],
     [ "PAGE_COLUMN", "ev-find-sidebar_8c.html#a2f80701c36e79c0640d91c788feee0b3acebfe1e1ba71692b7abde0f8a7fc9bcc", null ],
     [ "RESULT_COLUMN", "ev-find-sidebar_8c.html#a2f80701c36e79c0640d91c788feee0b3a797f705710f0877986a4506215661fb4", null ],
     [ "N_COLUMNS", "ev-find-sidebar_8c.html#a2f80701c36e79c0640d91c788feee0b3ac70d28409ca79aa291cc0e58244f1fe4", null ],
