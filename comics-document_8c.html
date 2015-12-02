@@ -1587,7 +1587,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordflow">if</span> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a25c4db124b5ca2782f5104d99e582ce0">regex_arg</a>) {</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        quoted_archive = <a class="code" href="comics-document_8c.html#a0b3d70a485ae4859ad5e7adfd12ea57d">comics_regex_quote</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        quoted_archive = g_shell_quote (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#ab42e8e0fcc2db2b08b481d01499efca3">archive</a>);</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        quoted_filename =</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;            <a class="code" href="comics-document_8c.html#a0b3d70a485ae4859ad5e7adfd12ea57d">comics_regex_quote</a> (comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821">page_names</a>-&gt;pdata[page]);</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    } <span class="keywordflow">else</span> {</div>
@@ -1889,7 +1889,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_62d5c4fd963ae06962ef732fa75a9902.html">comics</a></li><li class="navelem"><a class="el" href="comics-document_8c.html">comics-document.c</a></li>
-    <li class="footer">Generated on Wed Dec 2 2015 12:37:57 for Evince by
+    <li class="footer">Generated on Wed Dec 2 2015 16:53:13 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
