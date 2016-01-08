@@ -793,8 +793,14 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ev-sidebar-links_8c_source.html#l00720">720</a> of file <a class="el" href="ev-sidebar-links_8c_source.html">ev-sidebar-links.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;{</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Outline&quot;</span>);</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;}</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="comment">/* Translators: This is the title for the sidebar pane that</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="comment">     * shows the Outline or Table of Contents of the document.</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="comment">     * Use a short text, otherwise it can make Evince unusable in</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="comment">     * your language.  The sidebar cannot be shrinked smaller than</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment">     * the longest title in there.</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Outline&quot;</span>);</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1022,12 +1028,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-sidebar-links_8c_source.html#l00726">726</a> of file <a class="el" href="ev-sidebar-links_8c_source.html">ev-sidebar-links.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;{</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1">support_document</a> = <a class="code" href="ev-sidebar-links_8c.html#acbcec9a2842df81bbc3ea2c81e00de3b">ev_sidebar_links_support_document</a>;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0">set_model</a> = <a class="code" href="ev-sidebar-links_8c.html#aebc5db4abd8800c1606d10f230e2fc80">ev_sidebar_links_set_model</a>;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58">get_label</a> = <a class="code" href="ev-sidebar-links_8c.html#a88f9580d5a7fa580f660c80c1ea2039b">ev_sidebar_links_get_label</a>;</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-sidebar-links_8c_source.html#l00732">732</a> of file <a class="el" href="ev-sidebar-links_8c_source.html">ev-sidebar-links.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;{</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1">support_document</a> = <a class="code" href="ev-sidebar-links_8c.html#acbcec9a2842df81bbc3ea2c81e00de3b">ev_sidebar_links_support_document</a>;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0">set_model</a> = <a class="code" href="ev-sidebar-links_8c.html#aebc5db4abd8800c1606d10f230e2fc80">ev_sidebar_links_set_model</a>;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    iface-&gt;<a class="code" href="struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58">get_label</a> = <a class="code" href="ev-sidebar-links_8c.html#a88f9580d5a7fa580f660c80c1ea2039b">ev_sidebar_links_get_label</a>;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1964,7 +1970,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar-links_8c.html">ev-sidebar-links.c</a></li>
-    <li class="footer">Generated on Wed Jan 6 2016 13:24:40 for Evince by
+    <li class="footer">Generated on Fri Jan 8 2016 21:30:48 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
