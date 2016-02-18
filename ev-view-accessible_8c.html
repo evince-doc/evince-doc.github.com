@@ -1102,7 +1102,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-accessible_8c_aad4098f74b6005b57e8bbf43642017a9_icgraph.svg" width="534" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-view-accessible_8c_aad4098f74b6005b57e8bbf43642017a9_icgraph.svg" width="1358" height="423"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1545,23 +1545,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view-accessible_8c_source.html#l00599">599</a> of file <a class="el" href="ev-view-accessible_8c_source.html">ev-view-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;{</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keywordflow">if</span> (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>) {</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        atk_object_notify_state_change (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>, ATK_STATE_FOCUSED, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a> = NULL;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    }</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <span class="keywordflow">if</span> (!new_focus || new_focus_page == -1)</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        <span class="keywordflow">return</span>;</div>
+<p>Definition at line <a class="el" href="ev-view-accessible_8c_source.html#l00607">607</a> of file <a class="el" href="ev-view-accessible_8c_source.html">ev-view-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page;</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, new_focus_page);</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a> = <a class="code" href="ev-page-accessible_8c.html#a1f19e0f0601d5e354892959d6e3b7740">ev_page_accessible_get_accessible_for_mapping</a> (page, new_focus);</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keywordflow">if</span> (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>)</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        atk_object_notify_state_change (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>, ATK_STATE_FOCUSED, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;}</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">if</span> (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>) {</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        atk_object_notify_state_change (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>, ATK_STATE_FOCUSED, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a> = NULL;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    }</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keywordflow">if</span> (!new_focus || new_focus_page == -1)</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, new_focus_page);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a> = <a class="code" href="ev-page-accessible_8c.html#a1f19e0f0601d5e354892959d6e3b7740">ev_page_accessible_get_accessible_for_mapping</a> (page, new_focus);</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <span class="keywordflow">if</span> (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>)</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        atk_object_notify_state_change (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ae60e9189da250ca51aca75dc4526a5ad">focused_element</a>, ATK_STATE_FOCUSED, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1671,23 +1671,31 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    g_return_if_fail (<a class="code" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">EV_IS_VIEW_ACCESSIBLE</a> (accessible));</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="keywordflow">for</span> (i = accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a27d3f6409343e1243c944f0894fd7413">start_page</a>; i &lt;= accessible-&gt;priv-&gt;end_page; i++) {</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">if</span> (i &lt; start || i &gt; end) {</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, i);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;            atk_object_notify_state_change (page, ATK_STATE_SHOWING, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        }</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    }</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keywordflow">for</span> (i = start; i &lt;= end; i++) {</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">if</span> (i &lt; accessible-&gt;priv-&gt;start_page || i &gt; accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac10d31590516d7f836728b0554f9f8f8">end_page</a>) {</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;            page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, i);</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            atk_object_notify_state_change (page, ATK_STATE_SHOWING, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        }</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    }</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a27d3f6409343e1243c944f0894fd7413">start_page</a> = start;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac10d31590516d7f836728b0554f9f8f8">end_page</a> = end;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;}</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <span class="comment">/* When a document is reloaded, the accessible-&gt;priv-&gt;children is</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="comment">         * cleaned up and updated with the new document information.</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="comment">         * In specific cases, where the document is smaller, priv-&gt;end_page</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="comment">         * will be higher than the current number of pages. Therefore, we</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="comment">         * check the number of pages to avoid access to non-existent pages</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="comment">         * in priv-&gt;children).</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="comment">         * See https://bugzilla.gnome.org/show_bug.cgi?id=735744</span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordflow">for</span> (i = accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a27d3f6409343e1243c944f0894fd7413">start_page</a>; i &lt;= accessible-&gt;priv-&gt;end_page; i++) {</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordflow">if</span> ((i &lt; start || i &gt; end) &amp;&amp; i &lt; <a class="code" href="ev-view-accessible_8c.html#aad4098f74b6005b57e8bbf43642017a9">ev_view_accessible_get_n_pages</a> (accessible)) {</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, i);</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            atk_object_notify_state_change (page, ATK_STATE_SHOWING, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        }</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    }</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">for</span> (i = start; i &lt;= end; i++) {</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordflow">if</span> (i &lt; accessible-&gt;priv-&gt;start_page || i &gt; accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac10d31590516d7f836728b0554f9f8f8">end_page</a>) {</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, i);</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            atk_object_notify_state_change (page, ATK_STATE_SHOWING, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        }</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    }</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a27d3f6409343e1243c944f0894fd7413">start_page</a> = start;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#ac10d31590516d7f836728b0554f9f8f8">end_page</a> = end;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1731,13 +1739,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-view-accessible_8c_source.html#l00620">620</a> of file <a class="el" href="ev-view-accessible_8c_source.html">ev-view-accessible.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;{</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, element_page);</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <a class="code" href="ev-page-accessible_8c.html#a6c9320443001a36abfa9f9f6e5798038">ev_page_accessible_update_element_state</a> (page, element);</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-view-accessible_8c_source.html#l00628">628</a> of file <a class="el" href="ev-view-accessible_8c_source.html">ev-view-accessible.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;{</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <a class="code" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    page = g_ptr_array_index (accessible-&gt;<a class="code" href="struct__EvViewAccessible.html#a53e74e543b39948f9e3a723c9591ae44">priv</a>-&gt;<a class="code" href="struct__EvViewAccessiblePrivate.html#a71a11e2ec27cd6e6c193cffa2895ebc5">children</a>, element_page);</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <a class="code" href="ev-page-accessible_8c.html#a6c9320443001a36abfa9f9f6e5798038">ev_page_accessible_update_element_state</a> (page, element);</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1969,7 +1977,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8c.html">ev-view-accessible.c</a></li>
-    <li class="footer">Generated on Mon Feb 15 2016 00:37:16 for Evince by
+    <li class="footer">Generated on Thu Feb 18 2016 18:05:33 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
