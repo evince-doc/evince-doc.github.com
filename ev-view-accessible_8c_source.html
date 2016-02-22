@@ -503,8 +503,8 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8c_source.html','')
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">         * invalid access to self-&gt;priv-&gt;children</span></div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">         * See https://bugzilla.gnome.org/show_bug.cgi?id=735744</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">if</span> (self-&gt;priv-&gt;end_page &gt; n_pages)</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keyword">self</span>-&gt;priv-&gt;end_page = n_pages;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">if</span> (self-&gt;priv-&gt;end_page &gt;= n_pages)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keyword">self</span>-&gt;priv-&gt;end_page = n_pages - 1;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -748,7 +748,7 @@ $(document).ready(function(){initNavTree('ev-view-accessible_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-view-accessible_8c.html">ev-view-accessible.c</a></li>
-    <li class="footer">Generated on Sun Feb 21 2016 15:57:11 for Evince by
+    <li class="footer">Generated on Mon Feb 22 2016 02:52:11 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
