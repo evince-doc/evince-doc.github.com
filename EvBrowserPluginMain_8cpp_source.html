@@ -360,106 +360,107 @@ $(document).ready(function(){initNavTree('EvBrowserPluginMain_8cpp_source.html',
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        { <span class="stringliteral">&quot;application/x-cbt&quot;</span>, <span class="stringliteral">&quot;cbt&quot;</span> },</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        { <span class="stringliteral">&quot;application/x-ext-cbt&quot;</span>, <span class="stringliteral">&quot;cbt&quot;</span> },</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        { <span class="stringliteral">&quot;image/vnd.djvu&quot;</span>, <span class="stringliteral">&quot;djvu,djv&quot;</span> },</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        { <span class="stringliteral">&quot;application/x-ext-djv&quot;</span>, <span class="stringliteral">&quot;djv&quot;</span> },</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        { <span class="stringliteral">&quot;application/x-ext-djvu&quot;</span>, <span class="stringliteral">&quot;djvu&quot;</span> },</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        { <span class="stringliteral">&quot;application/oxps&quot;</span>, <span class="stringliteral">&quot;xps,oxps&quot;</span> },</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        { <span class="stringliteral">&quot;application/vnd.ms-xpsdocument&quot;</span>, <span class="stringliteral">&quot;xps,oxps&quot;</span> }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;};</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#af876f4815285e3249ff6e546dd0740bd">  261</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#af876f4815285e3249ff6e546dd0740bd">NP_GetMIMEDescription</a>()</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>)</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>.get();</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-init_8c.html#ab2afbda257866b06281ff86e3cf87242">ev_init</a>())</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        GString *mimeDescriptionStr = g_string_new(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        GList *typesInfo = <a class="code" href="ev-backends-manager_8h.html#a50939de52d3b4089d7477b851d8c2c7a">ev_backends_manager_get_all_types_info</a>();</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">for</span> (GList *l = typesInfo; l; l = g_list_next(l)) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <a class="code" href="ev-backends-manager_8h.html#a4901e440c825d505d526325cfbdc5e56">EvTypeInfo</a> *info = <span class="keyword">static_cast&lt;</span><a class="code" href="ev-backends-manager_8h.html#a4901e440c825d505d526325cfbdc5e56">EvTypeInfo</a> *<span class="keyword">&gt;</span>(l-&gt;data);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; info-&gt;mime_types[i]; ++i) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#a311e9e9a2d67f6907cf6c736a572b965">extensions</a> = [](<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#ae8d4351c34fff5317b75f2dc62ae30df">mime</a>) -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span> * {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; G_N_ELEMENTS(<a class="code" href="EvBrowserPluginMain_8cpp.html#a8aadedd51d76663594301f1ccf66b962">mimeExtensions</a>); ++i) {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                        <span class="keywordflow">if</span> (g_ascii_strcasecmp(<a class="code" href="EvBrowserPluginMain_8cpp.html#a8aadedd51d76663594301f1ccf66b962">mimeExtensions</a>[i].<a class="code" href="EvBrowserPluginMain_8cpp.html#ae8d4351c34fff5317b75f2dc62ae30df">mime</a>, mime) == 0)</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                                <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#a8aadedd51d76663594301f1ccf66b962">mimeExtensions</a>[i].extensions;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        }(info-&gt;mime_types[i]);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        <span class="keywordflow">if</span> (!extensions)</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        g_string_append_printf(mimeDescriptionStr, <span class="stringliteral">&quot;%s:%s:%s;&quot;</span>,</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                               info-&gt;mime_types[i],</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                               extensions,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                               info-&gt;desc);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        }</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        g_list_free(typesInfo);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>.reset(g_string_free(mimeDescriptionStr, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>));</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <a class="code" href="ev-init_8c.html#a10db453f3cac55224b42458ed0c5ea83">ev_shutdown</a>();</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>.get();</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#ac12a2cc870e8f28bd0b9a1be2a75cdfd">  303</a></span>&#160;<a class="code" href="npapi_8h.html#a56715bc92ac93f0447a05f852ce18828">NPError</a> <a class="code" href="EvBrowserPluginMain_8cpp.html#ac12a2cc870e8f28bd0b9a1be2a75cdfd">NP_GetValue</a>(<span class="keywordtype">void</span> *, <a class="code" href="npapi_8h.html#a1b56dde896277605195e0fad69cbca7d">NPPVariable</a> variable, <span class="keywordtype">void</span> *value)</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#aae56cbb0b1b9e955b67b98f8178fbeef">NPP_GetValue</a>(<span class="keyword">nullptr</span>, variable, value);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno"><a class="code" href="npruntime_8h.html#a6811d13755a9ee725d6c2eb3ddd97136">  308</a></span>&#160;<a class="code" href="structNPObject.html">NPObject</a> *<a class="code" href="EvBrowserPluginMain_8cpp.html#af66df0225c4fdcdb034f79e8dfc322dd">NPN_CreateObject</a>(<a class="code" href="struct__NPP.html">NPP</a> instance, <a class="code" href="structNPClass.html">NPClass</a> *npClass)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#ae35f1751abb98537df3f7ac17be59431">createobject</a>(instance, npClass);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno"><a class="code" href="npruntime_8h.html#ab3271bf37c4a808e6dcffc98fbb61f3a">  313</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#ab3271bf37c4a808e6dcffc98fbb61f3a">NPN_GetStringIdentifiers</a>(<span class="keyword">const</span> <a class="code" href="npruntime_8h.html#a066f20dfec6b18e91931750b4a7bd65d">NPUTF8</a> **names, int32_t nameCount, <a class="code" href="npruntime_8h.html#a3ce51391e08bd3e24128c342b1d055b9">NPIdentifier</a> *identifiers)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;{</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#a3084cc52b18ba1ec455475d11515d03c">getstringidentifiers</a>(names, nameCount, identifiers);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="code" href="npapi_8h.html#a1da3dad7dc28abed88d9f2fc10f27c22">  318</a></span>&#160;<a class="code" href="npapi_8h.html#a56715bc92ac93f0447a05f852ce18828">NPError</a> <a class="code" href="EvBrowserPluginMain_8cpp.html#ab49667d4b8d48dc470e13d55a43f4b98">NPN_GetURL</a>(<a class="code" href="struct__NPP.html">NPP</a> instance, <span class="keyword">const</span> <span class="keywordtype">char</span>* url, <span class="keyword">const</span> <span class="keywordtype">char</span>* target)</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;{</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#a3eb8d8bc2b46828db0b605d7e186c094">geturl</a>(instance, url, target);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno"><a class="code" href="npapi_8h.html#a86b044f4b0f3b25a607c61b884f53525">  323</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#a429c28d2a34108f8c9fe92889d459d08">NPN_UserAgent</a>(<a class="code" href="struct__NPP.html">NPP</a> instance)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#ade12712a7e29707ffbc87e6b29a583a6">uagent</a>(instance);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno"><a class="code" href="npapi_8h.html#a891dcc0692dd6f097659e5e2b7b555d2">  328</a></span>&#160;<span class="keywordtype">void</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#a017c484c45f03e468e50d0da27055fec">NPN_MemAlloc</a>(uint32_t size)</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;{</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#af047506347dbe2840ddfa395ba758fe2">memalloc</a>(size);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno"><a class="code" href="npapi_8h.html#aad187842843cf8edb39e04db8db3ee6a">  333</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#ae848db711e00d49fef0665c880c0df97">NPN_MemFree</a>(<span class="keywordtype">void</span>* ptr)</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">if</span> (ptr)</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#a9f927a61eb6c431ef0279823c9511957">memfree</a>(ptr);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#a5735d7b96ea13f68c51d000c50b80b3b">  339</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#a5735d7b96ea13f68c51d000c50b80b3b">__attribute__</a>((constructor)) browserPluginConstructor()</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;{</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <a class="code" href="ev-init_8c.html#ab2afbda257866b06281ff86e3cf87242">ev_init</a>();</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#ac2d3926ebd13771a9de5e814bb9e5601">  344</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#a5735d7b96ea13f68c51d000c50b80b3b">__attribute__</a>((destructor)) browserPluginDestructor()</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <a class="code" href="ev-init_8c.html#a10db453f3cac55224b42458ed0c5ea83">ev_shutdown</a>();</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        { <span class="stringliteral">&quot;image/vnd.djvu+multipage&quot;</span>, <span class="stringliteral">&quot;djvu,djv&quot;</span> },</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        { <span class="stringliteral">&quot;application/x-ext-djv&quot;</span>, <span class="stringliteral">&quot;djv&quot;</span> },</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        { <span class="stringliteral">&quot;application/x-ext-djvu&quot;</span>, <span class="stringliteral">&quot;djvu&quot;</span> },</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        { <span class="stringliteral">&quot;application/oxps&quot;</span>, <span class="stringliteral">&quot;xps,oxps&quot;</span> },</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        { <span class="stringliteral">&quot;application/vnd.ms-xpsdocument&quot;</span>, <span class="stringliteral">&quot;xps,oxps&quot;</span> }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;};</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#af876f4815285e3249ff6e546dd0740bd">  262</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#af876f4815285e3249ff6e546dd0740bd">NP_GetMIMEDescription</a>()</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>.get();</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-init_8c.html#ab2afbda257866b06281ff86e3cf87242">ev_init</a>())</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        GString *mimeDescriptionStr = g_string_new(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        GList *typesInfo = <a class="code" href="ev-backends-manager_8h.html#a50939de52d3b4089d7477b851d8c2c7a">ev_backends_manager_get_all_types_info</a>();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">for</span> (GList *l = typesInfo; l; l = g_list_next(l)) {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                <a class="code" href="ev-backends-manager_8h.html#a4901e440c825d505d526325cfbdc5e56">EvTypeInfo</a> *info = <span class="keyword">static_cast&lt;</span><a class="code" href="ev-backends-manager_8h.html#a4901e440c825d505d526325cfbdc5e56">EvTypeInfo</a> *<span class="keyword">&gt;</span>(l-&gt;data);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; info-&gt;mime_types[i]; ++i) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#a311e9e9a2d67f6907cf6c736a572b965">extensions</a> = [](<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#ae8d4351c34fff5317b75f2dc62ae30df">mime</a>) -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span> * {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; G_N_ELEMENTS(<a class="code" href="EvBrowserPluginMain_8cpp.html#a8aadedd51d76663594301f1ccf66b962">mimeExtensions</a>); ++i) {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                        <span class="keywordflow">if</span> (g_ascii_strcasecmp(<a class="code" href="EvBrowserPluginMain_8cpp.html#a8aadedd51d76663594301f1ccf66b962">mimeExtensions</a>[i].<a class="code" href="EvBrowserPluginMain_8cpp.html#ae8d4351c34fff5317b75f2dc62ae30df">mime</a>, mime) == 0)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                                <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#a8aadedd51d76663594301f1ccf66b962">mimeExtensions</a>[i].extensions;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                        }(info-&gt;mime_types[i]);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        <span class="keywordflow">if</span> (!extensions)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                        g_string_append_printf(mimeDescriptionStr, <span class="stringliteral">&quot;%s:%s:%s;&quot;</span>,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                               info-&gt;mime_types[i],</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                               extensions,</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                               info-&gt;desc);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        g_list_free(typesInfo);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>.reset(g_string_free(mimeDescriptionStr, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>));</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="ev-init_8c.html#a10db453f3cac55224b42458ed0c5ea83">ev_shutdown</a>();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#af2781725fa2fc34fe4ec025b7434aa2d">mimeDescription</a>.get();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#ac12a2cc870e8f28bd0b9a1be2a75cdfd">  304</a></span>&#160;<a class="code" href="npapi_8h.html#a56715bc92ac93f0447a05f852ce18828">NPError</a> <a class="code" href="EvBrowserPluginMain_8cpp.html#ac12a2cc870e8f28bd0b9a1be2a75cdfd">NP_GetValue</a>(<span class="keywordtype">void</span> *, <a class="code" href="npapi_8h.html#a1b56dde896277605195e0fad69cbca7d">NPPVariable</a> variable, <span class="keywordtype">void</span> *value)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#aae56cbb0b1b9e955b67b98f8178fbeef">NPP_GetValue</a>(<span class="keyword">nullptr</span>, variable, value);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="code" href="npruntime_8h.html#a6811d13755a9ee725d6c2eb3ddd97136">  309</a></span>&#160;<a class="code" href="structNPObject.html">NPObject</a> *<a class="code" href="EvBrowserPluginMain_8cpp.html#af66df0225c4fdcdb034f79e8dfc322dd">NPN_CreateObject</a>(<a class="code" href="struct__NPP.html">NPP</a> instance, <a class="code" href="structNPClass.html">NPClass</a> *npClass)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#ae35f1751abb98537df3f7ac17be59431">createobject</a>(instance, npClass);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="code" href="npruntime_8h.html#ab3271bf37c4a808e6dcffc98fbb61f3a">  314</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#ab3271bf37c4a808e6dcffc98fbb61f3a">NPN_GetStringIdentifiers</a>(<span class="keyword">const</span> <a class="code" href="npruntime_8h.html#a066f20dfec6b18e91931750b4a7bd65d">NPUTF8</a> **names, int32_t nameCount, <a class="code" href="npruntime_8h.html#a3ce51391e08bd3e24128c342b1d055b9">NPIdentifier</a> *identifiers)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#a3084cc52b18ba1ec455475d11515d03c">getstringidentifiers</a>(names, nameCount, identifiers);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="code" href="npapi_8h.html#a1da3dad7dc28abed88d9f2fc10f27c22">  319</a></span>&#160;<a class="code" href="npapi_8h.html#a56715bc92ac93f0447a05f852ce18828">NPError</a> <a class="code" href="EvBrowserPluginMain_8cpp.html#ab49667d4b8d48dc470e13d55a43f4b98">NPN_GetURL</a>(<a class="code" href="struct__NPP.html">NPP</a> instance, <span class="keyword">const</span> <span class="keywordtype">char</span>* url, <span class="keyword">const</span> <span class="keywordtype">char</span>* target)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#a3eb8d8bc2b46828db0b605d7e186c094">geturl</a>(instance, url, target);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="code" href="npapi_8h.html#a86b044f4b0f3b25a607c61b884f53525">  324</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#a429c28d2a34108f8c9fe92889d459d08">NPN_UserAgent</a>(<a class="code" href="struct__NPP.html">NPP</a> instance)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#ade12712a7e29707ffbc87e6b29a583a6">uagent</a>(instance);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno"><a class="code" href="npapi_8h.html#a891dcc0692dd6f097659e5e2b7b555d2">  329</a></span>&#160;<span class="keywordtype">void</span> *<a class="code" href="EvBrowserPluginMain_8cpp.html#a017c484c45f03e468e50d0da27055fec">NPN_MemAlloc</a>(uint32_t size)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">return</span> browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#af047506347dbe2840ddfa395ba758fe2">memalloc</a>(size);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="code" href="npapi_8h.html#aad187842843cf8edb39e04db8db3ee6a">  334</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#ae848db711e00d49fef0665c880c0df97">NPN_MemFree</a>(<span class="keywordtype">void</span>* ptr)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">if</span> (ptr)</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                browser-&gt;<a class="code" href="struct__NPNetscapeFuncs.html#a9f927a61eb6c431ef0279823c9511957">memfree</a>(ptr);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#a5735d7b96ea13f68c51d000c50b80b3b">  340</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#a5735d7b96ea13f68c51d000c50b80b3b">__attribute__</a>((constructor)) browserPluginConstructor()</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <a class="code" href="ev-init_8c.html#ab2afbda257866b06281ff86e3cf87242">ev_init</a>();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="code" href="EvBrowserPluginMain_8cpp.html#ac2d3926ebd13771a9de5e814bb9e5601">  345</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginMain_8cpp.html#a5735d7b96ea13f68c51d000c50b80b3b">__attribute__</a>((destructor)) browserPluginDestructor()</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;{</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <a class="code" href="ev-init_8c.html#a10db453f3cac55224b42458ed0c5ea83">ev_shutdown</a>();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_4749fc399d07762408107c351fb51f81.html">browser-plugin</a></li><li class="navelem"><a class="el" href="EvBrowserPluginMain_8cpp.html">EvBrowserPluginMain.cpp</a></li>
-    <li class="footer">Generated on Mon Feb 22 2016 02:52:10 for Evince by
+    <li class="footer">Generated on Tue Feb 23 2016 18:10:11 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
