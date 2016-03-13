@@ -3047,6 +3047,7 @@ var searchData=
   ['evbrowserplugintoolbar_2eh',['EvBrowserPluginToolbar.h',['../EvBrowserPluginToolbar_8h.html',1,'']]],
   ['evbrowserplugintoolbarclass',['EvBrowserPluginToolbarClass',['../EvBrowserPluginToolbar_8h.html#a701d7bba0414f9a1b057b0f8fb237eb7',1,'EvBrowserPluginToolbar.h']]],
   ['evbrowserplugintoolbarconstructed',['evBrowserPluginToolbarConstructed',['../EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef',1,'EvBrowserPluginToolbar.cpp']]],
+  ['evbrowserplugintoolbardispose',['evBrowserPluginToolbarDispose',['../EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94',1,'EvBrowserPluginToolbar.cpp']]],
   ['evbrowserplugintoolbarprivate',['EvBrowserPluginToolbarPrivate',['../EvBrowserPluginToolbar_8h.html#aaa4d084bd516e8b5cb71581122a1a7f9',1,'EvBrowserPluginToolbar.h']]],
   ['evbrowserplugintoolbarsetproperty',['evBrowserPluginToolbarSetProperty',['../EvBrowserPluginToolbar_8cpp.html#ad7187a715edd639216ce4945238c668f',1,'EvBrowserPluginToolbar.cpp']]],
   ['evchrome',['EvChrome',['../ev-window_8c.html#a84d7d18a061ad57bfa46e4ea379e1816',1,'ev-window.c']]],

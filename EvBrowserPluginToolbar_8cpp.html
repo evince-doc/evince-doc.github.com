@@ -198,6 +198,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae0faeb816242bd89dac35a421e96657a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c8ad04a3eed7c30e2bd33b2d7627ef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef">evBrowserPluginToolbarConstructed</a> (GObject *object)</td></tr>
 <tr class="separator:a41c8ad04a3eed7c30e2bd33b2d7627ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119d7fcbbab54aa8d805fb3f9500ad94"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94">evBrowserPluginToolbarDispose</a> (GObject *object)</td></tr>
+<tr class="separator:a119d7fcbbab54aa8d805fb3f9500ad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0f4d351846ede0f1b717104263bb62"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EvBrowserPluginToolbar_8cpp.html#aaa0f4d351846ede0f1b717104263bb62">ev_browser_plugin_toolbar_class_init</a> (<a class="el" href="EvBrowserPluginToolbar_8h.html#a701d7bba0414f9a1b057b0f8fb237eb7">EvBrowserPluginToolbarClass</a> *klass)</td></tr>
 <tr class="separator:aaa0f4d351846ede0f1b717104263bb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1df6d2388cdbb00d0888971494582e21"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EvBrowserPluginToolbar_8cpp.html#a1df6d2388cdbb00d0888971494582e21">ev_browser_plugin_toolbar_init</a> (<a class="el" href="EvBrowserPluginToolbar_8h.html#a3c7a1faf2bb67fe9a0e7e984bb0f0890">EvBrowserPluginToolbar</a> *toolbar)</td></tr>
@@ -786,21 +788,22 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html#l00459">459</a> of file <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html">EvBrowserPluginToolbar.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        GObjectClass *gObjectClass = G_OBJECT_CLASS(klass);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        gObjectClass-&gt;set_property = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#ad7187a715edd639216ce4945238c668f">evBrowserPluginToolbarSetProperty</a>;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        gObjectClass-&gt;constructed = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef">evBrowserPluginToolbarConstructed</a>;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        g_object_class_install_property(gObjectClass,</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                                         <a class="code" href="EvBrowserPluginToolbar_8cpp.html#adc29c2ff13d900c2f185ee95427fb06ca1161c19555e5cf9a73597285fb5ffacd">PROP_PLUGIN</a>,</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                                         g_param_spec_pointer(<span class="stringliteral">&quot;plugin&quot;</span>,</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                                              <span class="stringliteral">&quot;Plugin&quot;</span>,</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                                              <span class="stringliteral">&quot;The plugin&quot;</span>,</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                                              static_cast&lt;GParamFlags&gt;(G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS)));</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        g_type_class_add_private(gObjectClass, <span class="keyword">sizeof</span>(<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>));</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;}</div>
+<p>Definition at line <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html#l00470">470</a> of file <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html">EvBrowserPluginToolbar.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;{</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        GObjectClass *gObjectClass = G_OBJECT_CLASS(klass);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        gObjectClass-&gt;set_property = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#ad7187a715edd639216ce4945238c668f">evBrowserPluginToolbarSetProperty</a>;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        gObjectClass-&gt;constructed = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef">evBrowserPluginToolbarConstructed</a>;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        gObjectClass-&gt;dispose = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94">evBrowserPluginToolbarDispose</a>;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        g_object_class_install_property(gObjectClass,</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                                         <a class="code" href="EvBrowserPluginToolbar_8cpp.html#adc29c2ff13d900c2f185ee95427fb06ca1161c19555e5cf9a73597285fb5ffacd">PROP_PLUGIN</a>,</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                                         g_param_spec_pointer(<span class="stringliteral">&quot;plugin&quot;</span>,</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                                                              <span class="stringliteral">&quot;Plugin&quot;</span>,</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                                                              <span class="stringliteral">&quot;The plugin&quot;</span>,</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                                                              static_cast&lt;GParamFlags&gt;(G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS)));</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        g_type_class_add_private(gObjectClass, <span class="keyword">sizeof</span>(<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>));</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -826,10 +829,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html#l00475">475</a> of file <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html">EvBrowserPluginToolbar.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;{</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE(toolbar, <a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>);</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;}</div>
+<p>Definition at line <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html#l00487">487</a> of file <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html">EvBrowserPluginToolbar.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE(toolbar, <a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -847,10 +850,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html#l00480">480</a> of file <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html">EvBrowserPluginToolbar.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;{</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET(g_object_new(<a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <span class="stringliteral">&quot;plugin&quot;</span>, plugin, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;}</div>
+<p>Definition at line <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html#l00492">492</a> of file <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html">EvBrowserPluginToolbar.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;{</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET(g_object_new(<a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <span class="stringliteral">&quot;plugin&quot;</span>, plugin, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1036,6 +1039,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a119d7fcbbab54aa8d805fb3f9500ad94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void evBrowserPluginToolbarDispose </td>
+          <td>(</td>
+          <td class="paramtype">GObject *&#160;</td>
+          <td class="paramname"><em>object</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html#l00459">459</a> of file <a class="el" href="EvBrowserPluginToolbar_8cpp_source.html">EvBrowserPluginToolbar.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <a class="code" href="struct__EvBrowserPluginToolbar.html">EvBrowserPluginToolbar</a> *toolbar = <a class="code" href="EvBrowserPluginToolbar_8h.html#a35d3fb692832d4e181f889798de2ac51">EV_BROWSER_PLUGIN_TOOLBAR</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="keywordflow">if</span> (toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#aea4b11cee3f04f75f4e47a67bea3ef8e">searchPopover</a>) {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                gtk_widget_destroy(toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#aea4b11cee3f04f75f4e47a67bea3ef8e">searchPopover</a>);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#aea4b11cee3f04f75f4e47a67bea3ef8e">searchPopover</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        }</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        G_OBJECT_CLASS(ev_browser_plugin_toolbar_parent_class)-&gt;dispose(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a119d7fcbbab54aa8d805fb3f9500ad94_icgraph.svg" width="456" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ad7187a715edd639216ce4945238c668f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1093,11 +1141,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_ad7187a715edd639216ce4945238c668f_icgraph.svg" width="427" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1132,11 +1180,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a2beddac257e6df4d302c5c844d733942">goToNextPage</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a687d55d04e4f7793c19fa61c909a15b0_icgraph.svg" width="640" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1171,11 +1219,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a9f2752b769d57384867cf4837ecfb3bb">goToPreviousPage</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_ab376685bc293e733707acdc7c93b54a4_icgraph.svg" width="664" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1210,11 +1258,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#ae65a172a7d6a27accf71bbddf968a77f">print</a>();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a8795dd112435371a3a576ed7d9d55b77_icgraph.svg" width="638" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1249,11 +1297,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a26e56eb3f738d36ccdd1b5bd4bd286a3">clearSearch</a>();</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a962869a18e4f951b55738ec7c6286a93_icgraph.svg" width="787" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1288,11 +1336,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a5e2047e59152a3b2cb5a85e82ceeff45">search</a>(EvBrowserPlugin::SearchDirection::Next);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a4f03184f8318d947b0cae8dad90e2560_icgraph.svg" width="768" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1328,11 +1376,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#a8fd3ecf2df76656695e0bdc8a0e0776c">searchToggleButton</a>), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_af05659666cbceee0739b48836211c61b_icgraph.svg" width="830" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1367,11 +1415,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a5e2047e59152a3b2cb5a85e82ceeff45">search</a>(EvBrowserPlugin::SearchDirection::Previous);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a173158142afd172ae0aff65ea9148626_icgraph.svg" width="792" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1416,11 +1464,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a5e2047e59152a3b2cb5a85e82ceeff45">search</a>(job);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a1363b35ad21484e5e142b1c0b80c85b0_icgraph.svg" width="782" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1487,11 +1535,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a9758ac390cd5750aafd2d28e4b68c99f_icgraph.svg" width="883" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1526,11 +1574,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a12d0775a9e8ceea76b44d387e363c141">toggleContinuous</a>();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a64983d82cfed6b8c06b78d2e0721d614_icgraph.svg" width="843" height="74"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1565,11 +1613,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a1cfa488c4d3576a4690ea17227b8168d">toggleDual</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a5d2821023a9e8ec02050f808ae42b423_icgraph.svg" width="795" height="74"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1628,11 +1676,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a4f1c31a6be2b379b7db564e54229a32e_icgraph.svg" width="630" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1668,11 +1716,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a8716e21d6156298f21f48482ee79f9a9">setSizingMode</a>(<a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a3ee364089627d0c203123a73618052be">EV_SIZING_AUTOMATIC</a>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_adc6d71136134d61fccaebe216553243c_icgraph.svg" width="1094" height="74"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1708,11 +1756,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a8716e21d6156298f21f48482ee79f9a9">setSizingMode</a>(<a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a8e95315100c606ec6ee143a0b56fdd77">EV_SIZING_FIT_PAGE</a>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_ad46dda7d33d268abaf438f21ed3a677f_icgraph.svg" width="1080" height="74"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1748,11 +1796,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a8716e21d6156298f21f48482ee79f9a9">setSizingMode</a>(<a class="code" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5af0918597e0016e797f7886d0601b1c6b">EV_SIZING_FIT_WIDTH</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_aa17328bc67cf3597315d84303eb758d4_icgraph.svg" width="1083" height="74"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1787,11 +1835,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#a6d5e751533d8b21db19fac61377e2583">zoomIn</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_a60c6bbf7a035af33f307e9ea44d419bf_icgraph.svg" width="595" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1826,11 +1874,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#abb2aac758b14f36b41bba8b834dabb04">plugin</a>-&gt;<a class="code" href="classEvBrowserPlugin.html#aa40fb2be71528e43c427c7f24b13240e">zoomOut</a>();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment -->
-<p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="EvBrowserPluginToolbar_8cpp_aedfd50a816e80a04fad4ebf7d6b4ed60_icgraph.svg" width="606" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1844,7 +1892,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_4749fc399d07762408107c351fb51f81.html">browser-plugin</a></li><li class="navelem"><a class="el" href="EvBrowserPluginToolbar_8cpp.html">EvBrowserPluginToolbar.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 8 2016 20:48:16 for Evince by
+    <li class="footer">Generated on Sun Mar 13 2016 10:14:16 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

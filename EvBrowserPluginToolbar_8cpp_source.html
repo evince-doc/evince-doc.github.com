@@ -564,38 +564,50 @@ $(document).ready(function(){initNavTree('EvBrowserPluginToolbar_8cpp_source.htm
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        gtk_widget_show(toolItem);</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno"><a class="code" href="EvBrowserPluginToolbar_8cpp.html#aaa0f4d351846ede0f1b717104263bb62">  459</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginToolbar_8cpp.html#aaa0f4d351846ede0f1b717104263bb62">ev_browser_plugin_toolbar_class_init</a>(<a class="code" href="struct__EvBrowserPluginToolbarClass.html">EvBrowserPluginToolbarClass</a> *klass)</div>
+<div class="line"><a name="l00459"></a><span class="lineno"><a class="code" href="EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94">  459</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94">evBrowserPluginToolbarDispose</a>(GObject *<span class="keywordtype">object</span>)</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        GObjectClass *gObjectClass = G_OBJECT_CLASS(klass);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        gObjectClass-&gt;set_property = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#ad7187a715edd639216ce4945238c668f">evBrowserPluginToolbarSetProperty</a>;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        gObjectClass-&gt;constructed = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef">evBrowserPluginToolbarConstructed</a>;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        g_object_class_install_property(gObjectClass,</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                                         <a class="code" href="EvBrowserPluginToolbar_8cpp.html#adc29c2ff13d900c2f185ee95427fb06ca1161c19555e5cf9a73597285fb5ffacd">PROP_PLUGIN</a>,</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                                         g_param_spec_pointer(<span class="stringliteral">&quot;plugin&quot;</span>,</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                                              <span class="stringliteral">&quot;Plugin&quot;</span>,</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                                              <span class="stringliteral">&quot;The plugin&quot;</span>,</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                                              static_cast&lt;GParamFlags&gt;(G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS)));</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        g_type_class_add_private(gObjectClass, <span class="keyword">sizeof</span>(<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>));</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;}</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
-<div class="line"><a name="l00475"></a><span class="lineno"><a class="code" href="EvBrowserPluginToolbar_8cpp.html#a1df6d2388cdbb00d0888971494582e21">  475</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a1df6d2388cdbb00d0888971494582e21">ev_browser_plugin_toolbar_init</a>(<a class="code" href="struct__EvBrowserPluginToolbar.html">EvBrowserPluginToolbar</a> *toolbar)</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;{</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE(toolbar, <a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>);</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;}</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
-<div class="line"><a name="l00480"></a><span class="lineno"><a class="code" href="EvBrowserPluginToolbar_8h.html#a1f34ea2ec177974c4ab60471f5440b02">  480</a></span>&#160;GtkWidget *<a class="code" href="EvBrowserPluginToolbar_8cpp.html#a1f34ea2ec177974c4ab60471f5440b02">ev_browser_plugin_toolbar_new</a>(<a class="code" href="classEvBrowserPlugin.html">EvBrowserPlugin</a> *plugin)</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;{</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET(g_object_new(<a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <span class="stringliteral">&quot;plugin&quot;</span>, plugin, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;}</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <a class="code" href="struct__EvBrowserPluginToolbar.html">EvBrowserPluginToolbar</a> *toolbar = <a class="code" href="EvBrowserPluginToolbar_8h.html#a35d3fb692832d4e181f889798de2ac51">EV_BROWSER_PLUGIN_TOOLBAR</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="keywordflow">if</span> (toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#aea4b11cee3f04f75f4e47a67bea3ef8e">searchPopover</a>) {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                gtk_widget_destroy(toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#aea4b11cee3f04f75f4e47a67bea3ef8e">searchPopover</a>);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a>-&gt;<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html#aea4b11cee3f04f75f4e47a67bea3ef8e">searchPopover</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        }</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        G_OBJECT_CLASS(ev_browser_plugin_toolbar_parent_class)-&gt;dispose(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno"><a class="code" href="EvBrowserPluginToolbar_8cpp.html#aaa0f4d351846ede0f1b717104263bb62">  470</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginToolbar_8cpp.html#aaa0f4d351846ede0f1b717104263bb62">ev_browser_plugin_toolbar_class_init</a>(<a class="code" href="struct__EvBrowserPluginToolbarClass.html">EvBrowserPluginToolbarClass</a> *klass)</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;{</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        GObjectClass *gObjectClass = G_OBJECT_CLASS(klass);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        gObjectClass-&gt;set_property = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#ad7187a715edd639216ce4945238c668f">evBrowserPluginToolbarSetProperty</a>;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        gObjectClass-&gt;constructed = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef">evBrowserPluginToolbarConstructed</a>;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        gObjectClass-&gt;dispose = <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94">evBrowserPluginToolbarDispose</a>;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        g_object_class_install_property(gObjectClass,</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                                         <a class="code" href="EvBrowserPluginToolbar_8cpp.html#adc29c2ff13d900c2f185ee95427fb06ca1161c19555e5cf9a73597285fb5ffacd">PROP_PLUGIN</a>,</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                                         g_param_spec_pointer(<span class="stringliteral">&quot;plugin&quot;</span>,</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                                                              <span class="stringliteral">&quot;Plugin&quot;</span>,</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                                                              <span class="stringliteral">&quot;The plugin&quot;</span>,</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                                                              static_cast&lt;GParamFlags&gt;(G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS)));</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        g_type_class_add_private(gObjectClass, <span class="keyword">sizeof</span>(<a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>));</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;}</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
+<div class="line"><a name="l00487"></a><span class="lineno"><a class="code" href="EvBrowserPluginToolbar_8cpp.html#a1df6d2388cdbb00d0888971494582e21">  487</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EvBrowserPluginToolbar_8cpp.html#a1df6d2388cdbb00d0888971494582e21">ev_browser_plugin_toolbar_init</a>(<a class="code" href="struct__EvBrowserPluginToolbar.html">EvBrowserPluginToolbar</a> *toolbar)</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        toolbar-&gt;<a class="code" href="struct__EvBrowserPluginToolbar.html#a5645c1ee19ff09556e7d87b89f74ba45">priv</a> = G_TYPE_INSTANCE_GET_PRIVATE(toolbar, <a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <a class="code" href="struct__EvBrowserPluginToolbarPrivate.html">EvBrowserPluginToolbarPrivate</a>);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;}</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
+<div class="line"><a name="l00492"></a><span class="lineno"><a class="code" href="EvBrowserPluginToolbar_8h.html#a1f34ea2ec177974c4ab60471f5440b02">  492</a></span>&#160;GtkWidget *<a class="code" href="EvBrowserPluginToolbar_8cpp.html#a1f34ea2ec177974c4ab60471f5440b02">ev_browser_plugin_toolbar_new</a>(<a class="code" href="classEvBrowserPlugin.html">EvBrowserPlugin</a> *plugin)</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;{</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keywordflow">return</span> GTK_WIDGET(g_object_new(<a class="code" href="EvBrowserPluginToolbar_8h.html#a1b8b2e97e8616f20009e83a9f264930d">EV_TYPE_BROWSER_PLUGIN_TOOLBAR</a>, <span class="stringliteral">&quot;plugin&quot;</span>, plugin, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_4749fc399d07762408107c351fb51f81.html">browser-plugin</a></li><li class="navelem"><a class="el" href="EvBrowserPluginToolbar_8cpp.html">EvBrowserPluginToolbar.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 8 2016 20:48:14 for Evince by
+    <li class="footer">Generated on Sun Mar 13 2016 10:14:14 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

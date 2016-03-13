@@ -17,6 +17,7 @@ var EvBrowserPluginToolbar_8cpp =
     [ "ev_browser_plugin_toolbar_init", "EvBrowserPluginToolbar_8cpp.html#a1df6d2388cdbb00d0888971494582e21", null ],
     [ "ev_browser_plugin_toolbar_new", "EvBrowserPluginToolbar_8cpp.html#a1f34ea2ec177974c4ab60471f5440b02", null ],
     [ "evBrowserPluginToolbarConstructed", "EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef", null ],
+    [ "evBrowserPluginToolbarDispose", "EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94", null ],
     [ "evBrowserPluginToolbarSetProperty", "EvBrowserPluginToolbar_8cpp.html#ad7187a715edd639216ce4945238c668f", null ],
     [ "goToNextPage", "EvBrowserPluginToolbar_8cpp.html#a687d55d04e4f7793c19fa61c909a15b0", null ],
     [ "goToPreviousPage", "EvBrowserPluginToolbar_8cpp.html#ab376685bc293e733707acdc7c93b54a4", null ],

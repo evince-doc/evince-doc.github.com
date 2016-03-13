@@ -1847,6 +1847,7 @@ var searchData=
   ['ev_5fzoom_5faction_5fupdate_5fzoom_5flevel',['ev_zoom_action_update_zoom_level',['../ev-zoom-action_8c.html#a769ac354433bd1a33cb20f240684720e',1,'ev-zoom-action.c']]],
   ['evbrowserplugin',['EvBrowserPlugin',['../classEvBrowserPlugin.html#a0ec937abddb16ea775f1dcbd823cbc31',1,'EvBrowserPlugin']]],
   ['evbrowserplugintoolbarconstructed',['evBrowserPluginToolbarConstructed',['../EvBrowserPluginToolbar_8cpp.html#a41c8ad04a3eed7c30e2bd33b2d7627ef',1,'EvBrowserPluginToolbar.cpp']]],
+  ['evbrowserplugintoolbardispose',['evBrowserPluginToolbarDispose',['../EvBrowserPluginToolbar_8cpp.html#a119d7fcbbab54aa8d805fb3f9500ad94',1,'EvBrowserPluginToolbar.cpp']]],
   ['evbrowserplugintoolbarsetproperty',['evBrowserPluginToolbarSetProperty',['../EvBrowserPluginToolbar_8cpp.html#ad7187a715edd639216ce4945238c668f',1,'EvBrowserPluginToolbar.cpp']]],
   ['evince_5fthumbnail_5fpngenc_5fget',['evince_thumbnail_pngenc_get',['../evince-thumbnailer_8c.html#a638f5f8576c92621c95ed21261b9243a',1,'evince-thumbnailer.c']]],
   ['evince_5fthumbnail_5fpngenc_5fget_5fasync',['evince_thumbnail_pngenc_get_async',['../evince-thumbnailer_8c.html#ae5b98cb09afa471ed82b935a45a04b3d',1,'evince-thumbnailer.c']]],
