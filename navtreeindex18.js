@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"ev-sidebar-bookmarks_8h.html#a20d7941f14e7ef20ec972b2dca30103e":[6,0,0,8,46,7],
 "ev-sidebar-bookmarks_8h.html#a248d6b8ffe01e41985502320b6dc0e30":[6,0,0,8,46,13],
 "ev-sidebar-bookmarks_8h.html#a2fea54fd3236a3e174feeb109051ecf4":[6,0,0,8,46,6],
 "ev-sidebar-bookmarks_8h.html#a3448b46a6a56776e615e0902fffc8dcd":[6,0,0,8,46,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "ev-spectre_8c.html#aa66070c1089b1f00d8d8630eedf7b566":[6,0,0,0,4,0,5],
 "ev-spectre_8c.html#accf2928a7a410c40822feee45e533da6":[6,0,0,0,4,0,9],
 "ev-spectre_8c.html#acee962811e47be6242249f81461a1370":[6,0,0,0,4,0,19],
-"ev-spectre_8c.html#ad1697671c89c2e0aefb577f622074fc2":[6,0,0,0,4,0,12],
-"ev-spectre_8c.html#adbb563b00d083d4a86583d28fa8d53af":[6,0,0,0,4,0,6]
+"ev-spectre_8c.html#ad1697671c89c2e0aefb577f622074fc2":[6,0,0,0,4,0,12]
 };

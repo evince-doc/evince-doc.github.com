@@ -34,6 +34,7 @@ var ev_recent_view_8c =
     [ "on_button_press_event", "ev-recent-view_8c.html#af3b43359e572a59427ae3a935b95428e", null ],
     [ "on_button_release_event", "ev-recent-view_8c.html#a62889a83d4f624e3f5c5611c04bba480", null ],
     [ "on_icon_view_item_activated", "ev-recent-view_8c.html#ae7c0f9d72f141be682cff9c2d29f639a", null ],
+    [ "on_query_tooltip_event", "ev-recent-view_8c.html#af3119dd182868cf05fe33b411fc3f4a6", null ],
     [ "save_document_thumbnail_in_cache", "ev-recent-view_8c.html#a9d1f3dc6b0b60b58fb6e7217faed9cb6", null ],
     [ "thumbnail_job_completed_callback", "ev-recent-view_8c.html#aead9d7d4dd6e98e562cf2cedd316ed61", null ],
     [ "signals", "ev-recent-view_8c.html#a6acb406b7c05b0dcf2d36218bb5cf699", null ]
