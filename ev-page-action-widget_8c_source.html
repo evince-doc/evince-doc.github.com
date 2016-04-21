@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        max_page_label = <a class="code" href="ev-document_8c.html#a4721b322507b11b0d36ffbcdd0ff8d65">ev_document_get_page_label</a> (action_widget-&gt;<a class="code" href="struct__EvPageActionWidget.html#a3186127c5570568ce424c15ee85d82e6">document</a>, n_pages - 1);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        max_page_numeric_label = g_strdup_printf (<span class="stringliteral">&quot;%d&quot;</span>, n_pages);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (strcmp (max_page_label, max_page_numeric_label) != 0) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-document_8c.html#a4bd68a33d4e8d13f5dbf6f41c6ef58f9">ev_document_has_text_page_labels</a> (action_widget-&gt;<a class="code" href="struct__EvPageActionWidget.html#a3186127c5570568ce424c15ee85d82e6">document</a>) != 0) {</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                max_label = g_strdup_printf (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;(%d of %d)&quot;</span>), n_pages, n_pages);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="comment">/* Do not take into account the parentheses for the size computation */</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                max_label_len = g_utf8_strlen (max_label, -1) - 2;</div>
@@ -697,7 +697,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_08b887202959c421d24191eda7d5b732.html">libmisc</a></li><li class="navelem"><a class="el" href="ev-page-action-widget_8c.html">ev-page-action-widget.c</a></li>
-    <li class="footer">Generated on Thu Apr 14 2016 15:28:52 for Evince by
+    <li class="footer">Generated on Thu Apr 21 2016 16:07:46 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
