@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"struct__EvPageActionWidget.html#a119ab02eae54e302250005218d914e26":[5,0,196,4],
 "struct__EvPageActionWidget.html#a199a40d25a4e27d2107b946dd915497a":[5,0,196,3],
 "struct__EvPageActionWidget.html#a2e8bc83f8b41671a2094e11a85f1252e":[5,0,196,2],
 "struct__EvPageActionWidget.html#a3186127c5570568ce424c15ee85d82e6":[5,0,196,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "struct__EvSidebarBookmarksClass.html":[5,0,245],
 "struct__EvSidebarBookmarksClass.html#a43c7b0c0b94e2eed80303cc1616a7067":[5,0,245,1],
 "struct__EvSidebarBookmarksClass.html#a504e83d787761ed80beb2e381d0d4af1":[5,0,245,0],
-"struct__EvSidebarBookmarksPrivate.html":[5,0,246],
-"struct__EvSidebarBookmarksPrivate.html#a18af5165a46b8f62ae2eeeb856b0e825":[5,0,246,7]
+"struct__EvSidebarBookmarksPrivate.html":[5,0,246]
 };

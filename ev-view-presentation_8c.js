@@ -51,6 +51,7 @@ var ev_view_presentation_8c =
     [ "ev_view_presentation_hide_cursor_timeout_start", "ev-view-presentation_8c.html#a95a4dd622bce8996b4126bedb5d1c43d", null ],
     [ "ev_view_presentation_hide_cursor_timeout_stop", "ev-view-presentation_8c.html#a802c698597b00557c3ea2a2e61f56236", null ],
     [ "ev_view_presentation_init", "ev-view-presentation_8c.html#a9fbd74534c10c20f43ce25920df5a115", null ],
+    [ "ev_view_presentation_init_css", "ev-view-presentation_8c.html#aa598fcd774b297074e6d0748e8f0cf9f", null ],
     [ "ev_view_presentation_key_press_event", "ev-view-presentation_8c.html#a2d9fa1716ad00b49b11442a5ef7a0adf", null ],
     [ "ev_view_presentation_link_is_supported", "ev-view-presentation_8c.html#a8cc0259b9bf8e69d358b89908a7304b4", null ],
     [ "ev_view_presentation_motion_notify_event", "ev-view-presentation_8c.html#a251400083fe44b28ed285b6d68986ebf", null ],
