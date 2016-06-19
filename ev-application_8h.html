@@ -355,13 +355,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01287">1287</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;{</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;        <span class="keywordflow">if</span> (create)</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;                g_mkdir_with_parents (application-&gt;dot_dir, 0700);</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;    <span class="keywordflow">return</span> application-&gt;dot_dir;</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01289">1289</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;{</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;        <span class="keywordflow">if</span> (create)</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;                g_mkdir_with_parents (application-&gt;dot_dir, 0700);</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;    <span class="keywordflow">return</span> application-&gt;dot_dir;</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -392,14 +392,14 @@ Functions</h2></td></tr>
 <p>It gives you access to the media player keys handler object.</p>
 <p>Returns: A <a class="el" href="ev-media-player-keys_8h.html#a16986e14e00bf9abb04003df6789a6e0">EvMediaPlayerKeys</a>. </p>
 
-<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01277">1277</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;{</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;<span class="preprocessor">#ifdef ENABLE_DBUS</span></div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> G_OBJECT (application-&gt;keys);</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ENABLE_DBUS */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01279">1279</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;{</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;<span class="preprocessor">#ifdef ENABLE_DBUS</span></div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> G_OBJECT (application-&gt;keys);</div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ENABLE_DBUS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;<span class="preprocessor"></span>}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -427,21 +427,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01246">1246</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;{</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;        GList *l, *windows;</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;        guint retval = 0;</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        windows = gtk_application_get_windows (GTK_APPLICATION (application));</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;        <span class="keywordflow">for</span> (l = windows; l != NULL &amp;&amp; !retval; l = l-&gt;next) {</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (l-&gt;data))</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;                retval++;</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    }</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01248">1248</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;{</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;        GList *l, *windows;</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        guint retval = 0;</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;        windows = gtk_application_get_windows (GTK_APPLICATION (application));</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;        <span class="keywordflow">for</span> (l = windows; l != NULL &amp;&amp; !retval; l = l-&gt;next) {</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (l-&gt;data))</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;                retval++;</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    }</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;    <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -475,10 +475,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01263">1263</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;{</div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <span class="keywordflow">return</span> application-&gt;uri;</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01265">1265</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;{</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    <span class="keywordflow">return</span> application-&gt;uri;</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -506,20 +506,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01230">1230</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;{</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    GList *l, *windows;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    windows = gtk_application_get_windows (GTK_APPLICATION (application));</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    <span class="keywordflow">for</span> (l = windows; l != NULL; l = l-&gt;next) {</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (l-&gt;data))</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;    }</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01232">1232</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;{</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    GList *l, *windows;</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    windows = gtk_application_get_windows (GTK_APPLICATION (application));</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    <span class="keywordflow">for</span> (l = windows; l != NULL; l = l-&gt;next) {</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="ev-window_8h.html#a99e17323bb0720910679fd84dd083511">EV_IS_WINDOW</a> (l-&gt;data))</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    }</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -775,21 +775,21 @@ Functions</h2></td></tr>
 <p>ev_application_show_help: : the <a class="el" href="ev-application_8h.html#aa8649430f5a660a76136bb0871fc3a77">EvApplication</a> : (allow-none): a #GdkScreen, or NULL to use the default screen : (allow-none): the help topic, or NULL to show the index</p>
 <p>Launches the help viewer on  to show the evince help. If  is NULL, shows the help index; otherwise the topic. </p>
 
-<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01306">1306</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;{</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        <span class="keywordtype">char</span> *escaped_topic, *uri;</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        <span class="keywordflow">if</span> (topic != NULL) {</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                escaped_topic = g_uri_escape_string (topic, NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                uri = g_strdup_printf (<span class="stringliteral">&quot;help:evince/%s&quot;</span>, escaped_topic);</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;                g_free (escaped_topic);</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                uri = g_strdup (<span class="stringliteral">&quot;help:evince&quot;</span>);</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        }</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        gtk_show_uri (screen, uri, gtk_get_current_event_time (), NULL);</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        g_free (uri);</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-application_8c_source.html#l01308">1308</a> of file <a class="el" href="ev-application_8c_source.html">ev-application.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;{</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        <span class="keywordtype">char</span> *escaped_topic, *uri;</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        <span class="keywordflow">if</span> (topic != NULL) {</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;                escaped_topic = g_uri_escape_string (topic, NULL, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>);</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;                uri = g_strdup_printf (<span class="stringliteral">&quot;help:evince/%s&quot;</span>, escaped_topic);</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;                g_free (escaped_topic);</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;                uri = g_strdup (<span class="stringliteral">&quot;help:evince&quot;</span>);</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        }</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;        gtk_show_uri (screen, uri, gtk_get_current_event_time (), NULL);</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        g_free (uri);</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -809,7 +809,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-application_8h.html">ev-application.h</a></li>
-    <li class="footer">Generated on Tue Jun 14 2016 02:24:31 for Evince by
+    <li class="footer">Generated on Sun Jun 19 2016 08:50:00 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

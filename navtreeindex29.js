@@ -1,8 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"structDragInfo.html#a6087c9199ed5c1ed2fa9b02b05dd334e":[5,0,337,7],
-"structDragInfo.html#aa8d13cc79d2f985b629250713868a2a3":[5,0,337,6],
-"structDragInfo.html#ad5d9125942f247055fc65052c507af58":[5,0,337,2],
 "structDragInfo.html#ae0c00368ebb010fbfc3b475e6fd8a03f":[5,0,337,1],
 "structDstring.html":[5,0,338],
 "structDstring.html#a52a5c2dc3102921ae01c219d27d2f00d":[5,0,338,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX29 =
 "struct__DjvuDocument.html#a23aa53059c94ac3cedb152b5deba3335":[5,0,6,5],
 "struct__DjvuDocument.html#a34943233231251f9da01c851cfaff486":[5,0,6,6],
 "struct__DjvuDocument.html#a40d71f61e3be6c8bc1440923f9417d8e":[5,0,6,2],
-"struct__DjvuDocument.html#a53558d616864c24d05b2390dd1c4f5e6":[5,0,6,9]
+"struct__DjvuDocument.html#a53558d616864c24d05b2390dd1c4f5e6":[5,0,6,9],
+"struct__DjvuDocument.html#a70476b1f815ed99b90b08c9c9d837e97":[5,0,6,7],
+"struct__DjvuDocument.html#a826801310fb176b43d0c1408efe5f189":[5,0,6,1],
+"struct__DjvuDocument.html#ab2c5a968e71299c28ee6be286971e2ac":[5,0,6,10]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX33 =
 {
-"struct__EvJobFontsClass.html":[5,0,135],
-"struct__EvJobFontsClass.html#aa0c163f85f27b21913e7fe56fa6f6b45":[5,0,135,0],
-"struct__EvJobFontsClass.html#afe5309a00ad7f9a4641c05720dae309d":[5,0,135,1],
 "struct__EvJobLayers.html":[5,0,136],
 "struct__EvJobLayers.html#a30d6ab28a5b5e579331df3a5c2000a99":[5,0,136,0],
 "struct__EvJobLayers.html#aa5ff1fdff8e9915815c61877d2d77f5b":[5,0,136,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX33 =
 "struct__EvPageActionClass.html#a2c964892f5e3a12593336d0a3acedff7":[5,0,194,0],
 "struct__EvPageActionClass.html#abc7dbbc2772af1098719d4f7ece69e48":[5,0,194,1],
 "struct__EvPageActionPrivate.html":[5,0,195],
-"struct__EvPageActionPrivate.html#a650ba0dd90093e341a8afbed36383a06":[5,0,195,0]
+"struct__EvPageActionPrivate.html#a650ba0dd90093e341a8afbed36383a06":[5,0,195,0],
+"struct__EvPageActionPrivate.html#afebc32dd5f9c127dbc4b250638bd7915":[5,0,195,1],
+"struct__EvPageActionWidget.html":[5,0,196],
+"struct__EvPageActionWidget.html#a119ab02eae54e302250005218d914e26":[5,0,196,4]
 };

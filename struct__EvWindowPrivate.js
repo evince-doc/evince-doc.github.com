@@ -64,7 +64,6 @@ var struct__EvWindowPrivate =
     [ "sidebar_layers", "struct__EvWindowPrivate.html#a7951619da09042ab9ab287319bbf1e79", null ],
     [ "sidebar_links", "struct__EvWindowPrivate.html#a8a39062e05cde2062d4878a8e557ec09", null ],
     [ "sidebar_thumbs", "struct__EvWindowPrivate.html#aafbb555546215af3ee52ce65502e399d", null ],
-    [ "thumbnail_job", "struct__EvWindowPrivate.html#a6f69bc944034b10522fe353decae5c03", null ],
     [ "title", "struct__EvWindowPrivate.html#a22220ddd73502e450597d59e89c74a23", null ],
     [ "toolbar", "struct__EvWindowPrivate.html#ac4255b88c5a4659d8202a6b135bfec3a", null ],
     [ "uri", "struct__EvWindowPrivate.html#adc936804fcf1d4add66a85ed8398e523", null ],

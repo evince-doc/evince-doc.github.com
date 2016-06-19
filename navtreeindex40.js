@@ -1,9 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"util_8c.html#a1ed23d18783d2898b9d83517d7628637":[6,0,0,0,2,0,35,20],
-"util_8c.html#a2c98d8a02d26d9321f918c5962aefdcd":[6,0,0,0,2,0,35,34],
-"util_8c.html#a3af50d790e4b443cdf5428560351e459":[6,0,0,0,2,0,35,2],
-"util_8c.html#a4506f6dcd530218719701b6766f4801e":[6,0,0,0,2,0,35,28],
 "util_8c.html#a4ae7622edf8bcc460370292831a319d0":[6,0,0,0,2,0,35,24],
 "util_8c.html#a52e7fc7ab3f01e9c7db487ee9003fe33":[6,0,0,0,2,0,35,22],
 "util_8c.html#a542043cb4bd48294c5e7efdcef21cb5d":[6,0,0,0,2,0,35,6],
