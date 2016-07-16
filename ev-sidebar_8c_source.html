@@ -456,8 +456,8 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                        G_TYPE_INT);</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">/* top option menu */</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    gtk_container_set_border_width (GTK_CONTAINER (hbox), 2);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    gtk_container_set_border_width (GTK_CONTAINER (hbox), 6);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    ev_sidebar-&gt;priv-&gt;hbox = hbox;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    gtk_box_pack_start (GTK_BOX (ev_sidebar), hbox, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 0);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    gtk_widget_show (hbox);</div>
@@ -476,7 +476,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a49fb7275bb2bcf31e54a1ba1204c1b61">ev_sidebar_select_button_key_press_cb</a>),</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;              ev_sidebar);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    select_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    select_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    ev_sidebar-&gt;priv-&gt;label = gtk_label_new (<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    gtk_box_pack_start (GTK_BOX (select_hbox),</div>
@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    gtk_container_add (GTK_CONTAINER (ev_sidebar-&gt;priv-&gt;select_button), select_hbox);</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    gtk_widget_show (select_hbox);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    gtk_box_pack_start (GTK_BOX (hbox), ev_sidebar-&gt;priv-&gt;select_button, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    gtk_box_set_center_widget (GTK_BOX (hbox), ev_sidebar-&gt;priv-&gt;select_button);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    gtk_widget_show (ev_sidebar-&gt;priv-&gt;select_button);</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        close_button = gtk_button_new_from_icon_name (<span class="stringliteral">&quot;window-close-symbolic&quot;</span>, GTK_ICON_SIZE_BUTTON);</div>
@@ -667,7 +667,7 @@ $(document).ready(function(){initNavTree('ev-sidebar_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar_8c.html">ev-sidebar.c</a></li>
-    <li class="footer">Generated on Fri Jul 15 2016 23:10:42 for Evince by
+    <li class="footer">Generated on Sat Jul 16 2016 10:30:36 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

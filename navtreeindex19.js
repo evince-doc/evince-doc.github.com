@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"ev-spectre_8c.html#ad1697671c89c2e0aefb577f622074fc2":[6,0,0,0,4,0,12],
 "ev-spectre_8c.html#adbb563b00d083d4a86583d28fa8d53af":[6,0,0,0,4,0,6],
 "ev-spectre_8c.html#af521e8fbc1f8c1d4e065a28f639beaa7":[6,0,0,0,4,0,18],
 "ev-spectre_8c_source.html":[6,0,0,0,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "ev-utils_8c.html#a47bd383086c9f5d0e94a488a2cee2602":[6,0,0,8,59,7],
 "ev-utils_8c.html#a7d35f401e54db3d6227a96af5a248edf":[6,0,0,8,59,9],
 "ev-utils_8c.html#a94c637579ac9aef3ef422ddd85f6c69a":[6,0,0,8,59,1],
-"ev-utils_8c.html#a9af39ac454bfcf69118dcbb76f919eac":[6,0,0,8,59,8],
-"ev-utils_8c.html#aee1d680384b5eae7018b579d7e7cb0fb":[6,0,0,8,59,4]
+"ev-utils_8c.html#a9af39ac454bfcf69118dcbb76f919eac":[6,0,0,8,59,8]
 };

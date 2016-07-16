@@ -22,6 +22,7 @@ var ev_annotation_window_8c =
     [ "ev_annotation_window_grab_focus", "ev-annotation-window_8c.html#a168b014f2a45bdded037b8ec4652761d", null ],
     [ "ev_annotation_window_init", "ev-annotation-window_8c.html#a393869f2bee09d24fdf21763d47e7ee4", null ],
     [ "ev_annotation_window_is_open", "ev-annotation-window_8c.html#aad6df8f62ccfeffc1203c0ff49ae0783", null ],
+    [ "ev_annotation_window_key_press_event", "ev-annotation-window_8c.html#aa49906580201893f73e32b736d50b481", null ],
     [ "ev_annotation_window_label_changed", "ev-annotation-window_8c.html#aed4f911701482cbfdd714f7b0e93ec17", null ],
     [ "ev_annotation_window_new", "ev-annotation-window_8c.html#ad9d832dca9a724335987dbc633b2325a", null ],
     [ "ev_annotation_window_opacity_changed", "ev-annotation-window_8c.html#abbe8ccacc0a384ef7a371776271dae1d", null ],
