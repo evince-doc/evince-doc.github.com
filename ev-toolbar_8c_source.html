@@ -426,19 +426,19 @@ $(document).ready(function(){initNavTree('ev-toolbar_8c_source.html','');});
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;gboolean</div>
 <div class="line"><a name="l00319"></a><span class="lineno"><a class="code" href="ev-toolbar_8h.html#adb2193128641c0e817dbcc396e896570">  319</a></span>&#160;<a class="code" href="ev-toolbar_8c.html#adb2193128641c0e817dbcc396e896570">ev_toolbar_has_visible_popups</a> (<a class="code" href="struct__EvToolbar.html">EvToolbar</a> *ev_toolbar)</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        GtkMenu          *popup_menu;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        GtkPopover       *popover;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="struct__EvToolbarPrivate.html">EvToolbarPrivate</a> *priv;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        g_return_val_if_fail (<a class="code" href="ev-toolbar_8h.html#a2688cf7897704c807ee30b374af343c3">EV_IS_TOOLBAR</a> (ev_toolbar), <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>);</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        priv = ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>));</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        popover = gtk_menu_button_get_popover (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#aef78ca85f527d55434b1af32afa0f6ab">view_menu_button</a>));</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popover)))</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        popup_menu = gtk_menu_button_get_popup (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>));</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popup_menu)))</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        popover = gtk_menu_button_get_popover (GTK_MENU_BUTTON (priv-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a7d2ddace101a9f4d5c39177682ff396b">action_menu_button</a>));</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">if</span> (gtk_widget_get_visible (GTK_WIDGET (popover)))</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ev-zoom-action_8c.html#a3d0ad6565b1c5a1d0907a68304c848fc">ev_zoom_action_get_popup_shown</a> (<a class="code" href="ev-zoom-action_8h.html#ae8a30f2f27efa2c477206c5b02c9e54e">EV_ZOOM_ACTION</a> (ev_toolbar-&gt;<a class="code" href="struct__EvToolbar.html#ac0a3d69fb109081f1c4a1150a4e36182">priv</a>-&gt;<a class="code" href="struct__EvToolbarPrivate.html#a4f230cbd3542c6b1faa43e45a3f817b6">zoom_action</a>)))</div>
@@ -525,7 +525,7 @@ $(document).ready(function(){initNavTree('ev-toolbar_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-toolbar_8c.html">ev-toolbar.c</a></li>
-    <li class="footer">Generated on Sat Jul 16 2016 12:46:38 for Evince by
+    <li class="footer">Generated on Sun Jul 17 2016 09:10:37 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
