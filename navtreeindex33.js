@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"struct__EvJobFonts.html#af4ebd692ffd3a3d4b06370c4fada5438":[5,0,134,0],
+"struct__EvJobFontsClass.html":[5,0,135],
 "struct__EvJobFontsClass.html#aa0c163f85f27b21913e7fe56fa6f6b45":[5,0,135,0],
 "struct__EvJobFontsClass.html#afe5309a00ad7f9a4641c05720dae309d":[5,0,135,1],
 "struct__EvJobLayers.html":[5,0,136],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "struct__EvPageActionClass.html":[5,0,194],
 "struct__EvPageActionClass.html#a2c964892f5e3a12593336d0a3acedff7":[5,0,194,0],
 "struct__EvPageActionClass.html#abc7dbbc2772af1098719d4f7ece69e48":[5,0,194,1],
-"struct__EvPageActionPrivate.html":[5,0,195],
-"struct__EvPageActionPrivate.html#a650ba0dd90093e341a8afbed36383a06":[5,0,195,0],
-"struct__EvPageActionPrivate.html#afebc32dd5f9c127dbc4b250638bd7915":[5,0,195,1]
+"struct__EvPageActionPrivate.html":[5,0,195]
 };

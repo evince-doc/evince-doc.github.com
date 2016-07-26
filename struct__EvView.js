@@ -3,6 +3,7 @@ var struct__EvView =
     [ "accessible", "struct__EvView.html#a668333354f59a1fbc86e87322cd4295d", null ],
     [ "adding_annot_info", "struct__EvView.html#a3439f919a805b03b56daafc41d4cd713", null ],
     [ "allow_links_change_zoom", "struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e", null ],
+    [ "annot_window_map", "struct__EvView.html#abd760a8b4d1fc84f3d52669bb01f59b7", null ],
     [ "can_zoom_in", "struct__EvView.html#a60f9d92e5cbc011d977c2f3cb9015f45", null ],
     [ "can_zoom_out", "struct__EvView.html#aeec1146610c7b3420413afad600fed33", null ],
     [ "caret_enabled", "struct__EvView.html#a7d08cd0176dfb04c95e43d5236b6323a", null ],

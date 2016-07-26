@@ -39,6 +39,7 @@ var searchData=
   ['annot_5fmapping',['annot_mapping',['../struct__EvJobPageData.html#ac19ef061a0ee1abc91a57b17d7756b47',1,'_EvJobPageData::annot_mapping()'],['../struct__EvPageCacheData.html#a154ac76c9594b0c157bf8eca740fc30b',1,'_EvPageCacheData::annot_mapping()']]],
   ['annot_5fremoved',['annot_removed',['../struct__EvViewClass.html#a980f375aefc5198dac52aab24f9a95ec',1,'_EvViewClass']]],
   ['annot_5ftype',['annot_type',['../struct__EvAnnotationPropertiesDialog.html#a53c3197e43e26d1b1ee1c1591039f208',1,'_EvAnnotationPropertiesDialog']]],
+  ['annot_5fwindow_5fmap',['annot_window_map',['../struct__EvView.html#abd760a8b4d1fc84f3d52669bb01f59b7',1,'_EvView']]],
   ['annotation',['annotation',['../struct__EvAnnotationWindow.html#acf30b17ba49f5527ec862fe22bfb3719',1,'_EvAnnotationWindow']]],
   ['annots',['annots',['../struct__PdfDocument.html#a0d75ac18ce3958b1a1f8b7604d7653c9',1,'_PdfDocument::annots()'],['../struct__EvJobAnnots.html#aaa41aa1b66dbd974c6207fe720980a1f',1,'_EvJobAnnots::annots()']]],
   ['annots_5fbutton',['annots_button',['../struct__EvToolbarPrivate.html#a2d18fbcba86da89752e0e2addc4c0b0b',1,'_EvToolbarPrivate']]],

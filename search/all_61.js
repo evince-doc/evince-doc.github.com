@@ -67,6 +67,7 @@ var searchData=
   ['annot_5fremoved',['annot_removed',['../struct__EvViewClass.html#a980f375aefc5198dac52aab24f9a95ec',1,'_EvViewClass']]],
   ['annot_5fset_5funique_5fname',['annot_set_unique_name',['../ev-poppler_8cc.html#ab0d387392f5359a4c8be7e7540844f32',1,'ev-poppler.cc']]],
   ['annot_5ftype',['annot_type',['../struct__EvAnnotationPropertiesDialog.html#a53c3197e43e26d1b1ee1c1591039f208',1,'_EvAnnotationPropertiesDialog']]],
+  ['annot_5fwindow_5fmap',['annot_window_map',['../struct__EvView.html#abd760a8b4d1fc84f3d52669bb01f59b7',1,'_EvView']]],
   ['annotation',['annotation',['../struct__EvAnnotationWindow.html#acf30b17ba49f5527ec862fe22bfb3719',1,'_EvAnnotationWindow']]],
   ['annotation_5ficon_5fsize',['ANNOTATION_ICON_SIZE',['../ev-view_8c.html#a7a2ac2d2a587031d4736d3b2ac74676f',1,'ev-view.c']]],
   ['annotation_5fwindow_5fclosed',['annotation_window_closed',['../ev-view_8c.html#aac8b6f00e32b258568546293557e9009',1,'ev-view.c']]],

@@ -98,6 +98,7 @@ var searchData=
   ['get_5ftfm_5fchars',['get_tfm_chars',['../tfm_8c.html#ac6dc474c097e2904d0fe3683b262a4c6',1,'tfm.c']]],
   ['get_5ftolerance',['get_tolerance',['../ev-properties-view_8c.html#a2b2a86ee6d0eb8e8e34f4e0ac5aabeab',1,'ev-properties-view.c']]],
   ['get_5fwidget_5fpadding',['get_widget_padding',['../ev-loading-message_8c.html#aa39e96a21298ad722478930f0679c650',1,'ev-loading-message.c']]],
+  ['get_5fwindow_5ffor_5fannot',['get_window_for_annot',['../ev-view_8c.html#a37a96d6460bcc3bad57a25d05dfb409a',1,'ev-view.c']]],
   ['getproperty',['getProperty',['../classEvBrowserPlugin.html#aeac4c272cde54e96f673fe435ecf5762',1,'EvBrowserPlugin']]],
   ['getstring',['getstring',['../util_8c.html#a851bbe43ff1a2995af0aaa33e3e85944',1,'util.c']]],
   ['getword',['getword',['../util_8c.html#af089aaaccf87a8142502cb1ce45a4281',1,'util.c']]],

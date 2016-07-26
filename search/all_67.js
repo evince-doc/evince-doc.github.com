@@ -151,6 +151,7 @@ var searchData=
   ['get_5fthumbnail_5fsurface',['get_thumbnail_surface',['../struct__EvDocumentClass.html#ad6e612518baf24809909d5bbef69965f',1,'_EvDocumentClass']]],
   ['get_5ftolerance',['get_tolerance',['../ev-properties-view_8c.html#a2b2a86ee6d0eb8e8e34f4e0ac5aabeab',1,'ev-properties-view.c']]],
   ['get_5fwidget_5fpadding',['get_widget_padding',['../ev-loading-message_8c.html#aa39e96a21298ad722478930f0679c650',1,'ev-loading-message.c']]],
+  ['get_5fwindow_5ffor_5fannot',['get_window_for_annot',['../ev-view_8c.html#a37a96d6460bcc3bad57a25d05dfb409a',1,'ev-view.c']]],
   ['getauthenticationinfo',['getauthenticationinfo',['../struct__NPNetscapeFuncs.html#a960064bd4fdc5cf7115d52cf95584ea9',1,'_NPNetscapeFuncs']]],
   ['getdocumentinfoasyncdata',['GetDocumentInfoAsyncData',['../structGetDocumentInfoAsyncData.html',1,'']]],
   ['getglyph',['getglyph',['../struct__DviFontInfo.html#adcb16a2cb97759e8e7881ab87c683482',1,'_DviFontInfo']]],
