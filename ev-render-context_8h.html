@@ -176,4 +176,562 @@ Functions</h2></td></tr>
 <tr class="memitem:a82d69e01bc2df1e684d1313c2cba3423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-render-context_8h.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (<a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc, double width_points, double height_points, int *scaled_width, int *scaled_height)</td></tr>
 <tr class="separator:a82d69e01bc2df1e684d1313c2cba3423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a760bc053be7ef3eef52bd7b0ab6e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-render-context_8h.html#a63a760bc053be7ef3eef52bd7b0ab6e7">ev_render_context_compute_transformed_size</a> (<a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc, double width_points, double height_points, int *transformed_width, int *transformed_height)</td></tr>
-<tr class="separator:a63a7
+<tr class="separator:a63a760bc053be7ef3eef52bd7b0ab6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab646313af51c2358c6686d31736fc752"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-render-context_8h.html#ab646313af51c2358c6686d31736fc752">ev_render_context_compute_scales</a> (<a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc, double width_points, double height_points, double *scale_x, double *scale_y)</td></tr>
+<tr class="separator:ab646313af51c2358c6686d31736fc752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ac8e43b672af2a0b0937c1b605580eb96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_IS_RENDER_CONTEXT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">object)</td><td></td>
+          <td>&#160;&#160;&#160;(G_TYPE_CHECK_INSTANCE_TYPE((object), <a class="el" href="ev-render-context_8h.html#adeb01fdff379ed2f8ed04eea3b327cda">EV_TYPE_RENDER_CONTEXT</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8h_source.html#l00039">39</a> of file <a class="el" href="ev-render-context_8h_source.html">ev-render-context.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e401ae56edd70e531bd3d8dce723bb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_RENDER_CONTEXT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">object)</td><td></td>
+          <td>&#160;&#160;&#160;(G_TYPE_CHECK_INSTANCE_CAST((object), <a class="el" href="ev-render-context_8h.html#adeb01fdff379ed2f8ed04eea3b327cda">EV_TYPE_RENDER_CONTEXT</a>, <a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8h_source.html#l00037">37</a> of file <a class="el" href="ev-render-context_8h_source.html">ev-render-context.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72d08a4f092e2faca2d624e433a4673d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_RENDER_CONTEXT_CLASS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">klass)</td><td></td>
+          <td>&#160;&#160;&#160;(G_TYPE_CHECK_CLASS_CAST((klass), <a class="el" href="ev-render-context_8h.html#adeb01fdff379ed2f8ed04eea3b327cda">EV_TYPE_RENDER_CONTEXT</a>, <a class="el" href="ev-render-context_8h.html#a001a300872ef47b57edcea66109915ba">EvRenderContextClass</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8h_source.html#l00038">38</a> of file <a class="el" href="ev-render-context_8h_source.html">ev-render-context.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adeb01fdff379ed2f8ed04eea3b327cda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_TYPE_RENDER_CONTEXT&#160;&#160;&#160;(<a class="el" href="ev-render-context_8h.html#a870511695fd31c837eb17a2baecdbaf8">ev_render_context_get_type</a>())</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8h_source.html#l00036">36</a> of file <a class="el" href="ev-render-context_8h_source.html">ev-render-context.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a57b42028c97ffd916c4e56b26db7db14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef typedefG_BEGIN_DECLS struct <a class="el" href="struct__EvRenderContext.html">_EvRenderContext</a> <a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8h_source.html#l00033">33</a> of file <a class="el" href="ev-render-context_8h_source.html">ev-render-context.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a001a300872ef47b57edcea66109915ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__EvRenderContextClass.html">_EvRenderContextClass</a> <a class="el" href="ev-render-context_8h.html#a001a300872ef47b57edcea66109915ba">EvRenderContextClass</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8h_source.html#l00034">34</a> of file <a class="el" href="ev-render-context_8h_source.html">ev-render-context.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a82d69e01bc2df1e684d1313c2cba3423"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_render_context_compute_scaled_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>width_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>height_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>scaled_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>scaled_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8c_source.html#l00117">117</a> of file <a class="el" href="ev-render-context_8c_source.html">ev-render-context.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    g_return_if_fail (rc != NULL);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">if</span> (scaled_width) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (rc-&gt;target_width &gt;= 0) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            *scaled_width = <a class="code" href="ev-render-context_8c.html#a562aa998be31272bda9417c22bf6a1e7">FLIP_DIMENSIONS</a> (rc) ? rc-&gt;target_height : rc-&gt;target_width;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            *scaled_width = (int) (width_points * rc-&gt;scale + 0.5);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span> (scaled_height) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span> (rc-&gt;target_height &gt;= 0) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            *scaled_height = <a class="code" href="ev-render-context_8c.html#a562aa998be31272bda9417c22bf6a1e7">FLIP_DIMENSIONS</a> (rc) ? rc-&gt;target_width : rc-&gt;target_height;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            *scaled_height = (int) (height_points * rc-&gt;scale + 0.5);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-render-context_8h_a82d69e01bc2df1e684d1313c2cba3423_icgraph.svg" width="1400" height="884"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab646313af51c2358c6686d31736fc752"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_render_context_compute_scales </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>width_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>height_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>scale_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>scale_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8c_source.html#l00164">164</a> of file <a class="el" href="ev-render-context_8c_source.html">ev-render-context.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    g_return_if_fail (rc != NULL);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width_points, height_points,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                           &amp;scaled_width, &amp;scaled_height);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span> (scale_x)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        *scale_x = scaled_width / width_points;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (scale_y)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        *scale_y = scaled_height / height_points;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-render-context_8h_ab646313af51c2358c6686d31736fc752_icgraph.svg" width="1126" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a63a760bc053be7ef3eef52bd7b0ab6e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_render_context_compute_transformed_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>width_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>height_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>transformed_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>transformed_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8c_source.html#l00143">143</a> of file <a class="el" href="ev-render-context_8c_source.html">ev-render-context.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> scaled_width, scaled_height;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    g_return_if_fail (rc != NULL);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="ev-render-context_8c.html#a82d69e01bc2df1e684d1313c2cba3423">ev_render_context_compute_scaled_size</a> (rc, width_points, height_points,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                           &amp;scaled_width, &amp;scaled_height);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (transformed_width)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        *transformed_width = <a class="code" href="ev-render-context_8c.html#a562aa998be31272bda9417c22bf6a1e7">FLIP_DIMENSIONS</a> (rc) ? scaled_height : scaled_width;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span> (transformed_height)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        *transformed_height = <a class="code" href="ev-render-context_8c.html#a562aa998be31272bda9417c22bf6a1e7">FLIP_DIMENSIONS</a> (rc) ? scaled_width : scaled_height;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-render-context_8h_a63a760bc053be7ef3eef52bd7b0ab6e7_icgraph.svg" width="920" height="303"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a870511695fd31c837eb17a2baecdbaf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GType ev_render_context_get_type </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9bbcf2e371b12de18631e834d58847b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a>* ev_render_context_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *&#160;</td>
+          <td class="paramname"><em>page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>rotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8c_source.html#l00058">58</a> of file <a class="el" href="ev-render-context_8c_source.html">ev-render-context.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *rc;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    rc = (<a class="code" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *) g_object_new (<a class="code" href="ev-render-context_8h.html#adeb01fdff379ed2f8ed04eea3b327cda">EV_TYPE_RENDER_CONTEXT</a>, NULL);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    rc-&gt;page = page ? g_object_ref (page) : NULL;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    rc-&gt;rotation = rotation;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    rc-&gt;scale = scale;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    rc-&gt;target_width = -1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    rc-&gt;target_height = -1;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> rc;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-render-context_8h_ae9bbcf2e371b12de18631e834d58847b_icgraph.svg" width="2011" height="1063"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3e3147feeb16372af72d2e3ef9724a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_render_context_set_page </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *&#160;</td>
+          <td class="paramname"><em>page</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8c_source.html#l00076">76</a> of file <a class="el" href="ev-render-context_8c_source.html">ev-render-context.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    g_return_if_fail (rc != NULL);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    g_return_if_fail (<a class="code" href="ev-page_8h.html#adfeeb9bccf41e862f076e8929c046805">EV_IS_PAGE</a> (page));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (rc-&gt;page)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        g_object_unref (rc-&gt;page);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    rc-&gt;page = g_object_ref (page);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-render-context_8h_ad3e3147feeb16372af72d2e3ef9724a9_icgraph.svg" width="603" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9136cedd9252cffb19281c6edff40a4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_render_context_set_rotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a303e16f3ab4ae00cf97f9b03975a7a67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_render_context_set_scale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdouble&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8c_source.html#l00097">97</a> of file <a class="el" href="ev-render-context_8c_source.html">ev-render-context.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    g_return_if_fail (rc != NULL);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    rc-&gt;scale = scale;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9f3d3fea4f37c9bd54682eae5c7e38d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_render_context_set_target_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-render-context_8h.html#a57b42028c97ffd916c4e56b26db7db14">EvRenderContext</a> *&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>target_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>target_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-render-context_8c_source.html#l00106">106</a> of file <a class="el" href="ev-render-context_8c_source.html">ev-render-context.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    g_return_if_fail (rc != NULL);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    rc-&gt;target_width = target_width;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    rc-&gt;target_height = target_height;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-render-context_8h_a9f3d3fea4f37c9bd54682eae5c7e38d4_icgraph.svg" width="2198" height="1136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-render-context_8h.html">ev-render-context.h</a></li>
+    <li class="footer">Generated on Tue Aug 2 2016 11:37:44 for Evince by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>
