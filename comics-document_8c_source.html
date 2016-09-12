@@ -404,8 +404,8 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">/* FIXME, use proper cbr/cbz mime types once they&#39;re</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">     * included in shared-mime-info */</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span> (!strcmp (mime_type, <span class="stringliteral">&quot;application/x-cbr&quot;</span>) ||</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        !strcmp (mime_type, <span class="stringliteral">&quot;application/x-rar&quot;</span>)) {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span> (g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/x-cbr&quot;</span>) ||</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/x-rar&quot;</span>)) {</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="comment">/* The RARLAB provides a no-charge proprietary (freeware) </span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">            * decompress-only client for Linux called unrar. Another </span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">        * option is a GPLv2-licensed command-line tool developed by </span></div>
@@ -460,8 +460,8 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (mime_type, <span class="stringliteral">&quot;application/x-cbz&quot;</span>) ||</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;           !strcmp (mime_type, <span class="stringliteral">&quot;application/zip&quot;</span>)) {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/x-cbz&quot;</span>) ||</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;           g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/zip&quot;</span>)) {</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="comment">/* InfoZIP&#39;s unzip program */</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644">selected_command</a> = </div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                g_find_program_in_path (<span class="stringliteral">&quot;unzip&quot;</span>);</div>
@@ -492,8 +492,8 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (mime_type, <span class="stringliteral">&quot;application/x-cb7&quot;</span>) ||</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;           !strcmp (mime_type, <span class="stringliteral">&quot;application/x-7z-compressed&quot;</span>)) {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/x-cb7&quot;</span>) ||</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;           g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/x-7z-compressed&quot;</span>)) {</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="comment">/* 7zr, 7za and 7z are the commands from the p7zip project able </span></div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">         * to decompress .7z files */</span> </div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644">selected_command</a> =</div>
@@ -520,8 +520,8 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682">command_usage</a> = <a class="code" href="comics-document_8c.html#af40458a768dbbfcedefd3c17e83aeeb7a9a787819b090cfdd39a676fbb8b2ca44">TAR</a>;</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        }</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (mime_type, <span class="stringliteral">&quot;application/x-cbt&quot;</span>) ||</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;           !strcmp (mime_type, <span class="stringliteral">&quot;application/x-tar&quot;</span>)) {</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/x-cbt&quot;</span>) ||</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;           g_content_type_is_a (mime_type, <span class="stringliteral">&quot;application/x-tar&quot;</span>)) {</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="comment">/* tar utility (Tape ARchive) */</span></div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        comics_document-&gt;<a class="code" href="struct__ComicsDocument.html#a42736a502486e44e7eb19a939bbe9644">selected_command</a> =</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                g_find_program_in_path (<span class="stringliteral">&quot;tar&quot;</span>);</div>
@@ -1006,7 +1006,7 @@ $(document).ready(function(){initNavTree('comics-document_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_62d5c4fd963ae06962ef732fa75a9902.html">comics</a></li><li class="navelem"><a class="el" href="comics-document_8c.html">comics-document.c</a></li>
-    <li class="footer">Generated on Mon Sep 12 2016 12:30:13 for Evince by
+    <li class="footer">Generated on Mon Sep 12 2016 19:29:16 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
