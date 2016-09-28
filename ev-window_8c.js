@@ -43,6 +43,10 @@ var ev_window_8c =
       [ "EV_SAVE_ATTACHMENT", "ev-window_8c.html#a0f9e34e0f58801ff959d153e044faabdacc3495ad8786f87a6e80941a8ddef193", null ],
       [ "EV_SAVE_IMAGE", "ev-window_8c.html#a0f9e34e0f58801ff959d153e044faabda1604b569123eac30698a026371189398", null ]
     ] ],
+    [ "EvWindowAction", "ev-window_8c.html#a7426e18d4277e3900a7359275e6bc254", [
+      [ "EV_WINDOW_ACTION_RELOAD", "ev-window_8c.html#a7426e18d4277e3900a7359275e6bc254aec8bf573facd9932d159dc82da369be6", null ],
+      [ "EV_WINDOW_ACTION_CLOSE", "ev-window_8c.html#a7426e18d4277e3900a7359275e6bc254a62e0b2ddf773b5c2deb5bfcf385323b6", null ]
+    ] ],
     [ "EvWindowPageMode", "ev-window_8c.html#a4c5954daa150ebce59e691b805987ea4", [
       [ "PAGE_MODE_DOCUMENT", "ev-window_8c.html#a4c5954daa150ebce59e691b805987ea4a418e90080b6707c6154bdba412d5fb51", null ],
       [ "PAGE_MODE_PASSWORD", "ev-window_8c.html#a4c5954daa150ebce59e691b805987ea4ab11706a57bc9f365c283d3037d7bc48b", null ]
@@ -57,6 +61,7 @@ var ev_window_8c =
     [ "destroy_window", "ev-window_8c.html#a09574ec0cf66a0efd7f855d033a970a2", null ],
     [ "do_action_named", "ev-window_8c.html#a13523d0f6826b61011252781accdb72d", null ],
     [ "document_modified_confirmation_dialog_response", "ev-window_8c.html#a878d5a2118b3ac594c2e7f37b886838a", null ],
+    [ "document_modified_reload_dialog_response", "ev-window_8c.html#a71acf41225f993f3f7343c2fa5fdf2f8", null ],
     [ "ev_window_activate_goto_bookmark_action", "ev-window_8c.html#a0f6ab357afc35d6e328a31c0d1d9ac3e", null ],
     [ "ev_window_add_fullscreen_timeout", "ev-window_8c.html#ace2ef0341bd28cf4af5307f16a40ec7e", null ],
     [ "ev_window_add_recent", "ev-window_8c.html#af60a33be2915ae7bd2f65369d1ed9dc9", null ],
@@ -64,7 +69,7 @@ var ev_window_8c =
     [ "ev_window_cancel_add_annot", "ev-window_8c.html#a5dbc7926069a8ab90c4416258e196d38", null ],
     [ "ev_window_caret_navigation_message_area_response_cb", "ev-window_8c.html#a906188643ff74475c489a3fb0e4b6fbd", null ],
     [ "ev_window_change_sizing_mode_action_state", "ev-window_8c.html#a5a82e1855cc4a7db23446967c3474dfd", null ],
-    [ "ev_window_check_document_modified", "ev-window_8c.html#aec75ceffadbe0b70a5a19a546298418a", null ],
+    [ "ev_window_check_document_modified", "ev-window_8c.html#afe344d7bfe14fd6ab4ae028ba10e6de3", null ],
     [ "ev_window_check_print_queue", "ev-window_8c.html#acd2c0b0802d5b36d7ea8d4e988b84b5f", null ],
     [ "ev_window_class_init", "ev-window_8c.html#af30d7e1634b486a38a15e7d89ac07b51", null ],
     [ "ev_window_clear_load_job", "ev-window_8c.html#a2577e2835e9d6ad055adaf8b9225423e", null ],

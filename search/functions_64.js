@@ -77,6 +77,7 @@ var searchData=
   ['document_5fload_5fjob_5fcompleted_5fcallback',['document_load_job_completed_callback',['../ev-recent-view_8c.html#a9b8c08bd4b40c2762ccdf09eaa640679',1,'ev-recent-view.c']]],
   ['document_5floaded_5fcb',['document_loaded_cb',['../ev-daemon_8c.html#a0e72d2f453cb1011f84bdc1134125487',1,'ev-daemon.c']]],
   ['document_5fmodified_5fconfirmation_5fdialog_5fresponse',['document_modified_confirmation_dialog_response',['../ev-window_8c.html#a878d5a2118b3ac594c2e7f37b886838a',1,'ev-window.c']]],
+  ['document_5fmodified_5freload_5fdialog_5fresponse',['document_modified_reload_dialog_response',['../ev-window_8c.html#a71acf41225f993f3f7343c2fa5fdf2f8',1,'ev-window.c']]],
   ['document_5fquery_5finfo_5fcb',['document_query_info_cb',['../ev-recent-view_8c.html#aba9c034b80f6a0459af273f67fa465b4',1,'ev-recent-view.c']]],
   ['download',['download',['../classEvBrowserPlugin.html#a2df36ff10e4f4cd52bfba8659552813e',1,'EvBrowserPlugin']]],
   ['downloaddocument',['downloadDocument',['../EvBrowserPluginToolbar_8cpp.html#a9faa5865916ac1257d4cf1366fbf3c19',1,'EvBrowserPluginToolbar.cpp']]],

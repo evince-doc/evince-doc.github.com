@@ -1,5 +1,9 @@
 var NAVTREEINDEX29 =
 {
+"structDragInfo.html":[5,0,337],
+"structDragInfo.html#a0c1c9ebf1dd1a62f830f4585bbb24ebb":[5,0,337,5],
+"structDragInfo.html#a169ed1fe9242d88ade1043a51106da8b":[5,0,337,4],
+"structDragInfo.html#a1ce46f64213be376accb0d737544b901":[5,0,337,0],
 "structDragInfo.html#a2ebab2c57acf1ce487039afcd1761c53":[5,0,337,3],
 "structDragInfo.html#a6087c9199ed5c1ed2fa9b02b05dd334e":[5,0,337,7],
 "structDragInfo.html#aa8d13cc79d2f985b629250713868a2a3":[5,0,337,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX29 =
 "struct__ComicsDocument.html#af75bb314a4aa0a5fe02a55b54a71f682":[5,0,4,2],
 "struct__ComicsDocument.html#afaa62901bb7a73668ffc840839365821":[5,0,4,8],
 "struct__ComicsDocumentClass.html":[5,0,5],
-"struct__ComicsDocumentClass.html#a644ae0682e2f9d46d8426a66a2cb74a3":[5,0,5,0],
-"struct__DjvuDocument.html":[5,0,6],
-"struct__DjvuDocument.html#a23aa53059c94ac3cedb152b5deba3335":[5,0,6,5],
-"struct__DjvuDocument.html#a34943233231251f9da01c851cfaff486":[5,0,6,6],
-"struct__DjvuDocument.html#a40d71f61e3be6c8bc1440923f9417d8e":[5,0,6,2]
+"struct__ComicsDocumentClass.html#a644ae0682e2f9d46d8426a66a2cb74a3":[5,0,5,0]
 };

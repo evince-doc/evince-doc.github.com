@@ -1,5 +1,9 @@
 var NAVTREEINDEX34 =
 {
+"struct__EvPageActionClass.html":[5,0,194],
+"struct__EvPageActionClass.html#a2c964892f5e3a12593336d0a3acedff7":[5,0,194,0],
+"struct__EvPageActionClass.html#abc7dbbc2772af1098719d4f7ece69e48":[5,0,194,1],
+"struct__EvPageActionPrivate.html":[5,0,195],
 "struct__EvPageActionPrivate.html#a650ba0dd90093e341a8afbed36383a06":[5,0,195,0],
 "struct__EvPageActionPrivate.html#afebc32dd5f9c127dbc4b250638bd7915":[5,0,195,1],
 "struct__EvPageActionWidget.html":[5,0,196],
@@ -245,9 +249,5 @@ var NAVTREEINDEX34 =
 "struct__EvSidebarAttachmentsPrivate.html#a3b22553fb6fc66cf9ae969e957e5d673":[5,0,243,2],
 "struct__EvSidebarAttachmentsPrivate.html#a691f3d7a759ec09d782575922a405987":[5,0,243,3],
 "struct__EvSidebarAttachmentsPrivate.html#a7280c6799f7d80415925c8273400ecc7":[5,0,243,0],
-"struct__EvSidebarAttachmentsPrivate.html#aa364a06eacb41b49e10d13c3ff0814dc":[5,0,243,1],
-"struct__EvSidebarBookmarks.html":[5,0,244],
-"struct__EvSidebarBookmarks.html#a143c03b92a687e9a80af26b328d947de":[5,0,244,0],
-"struct__EvSidebarBookmarks.html#adeb2a19409d7bdb5a0f7764a3bb488a5":[5,0,244,1],
-"struct__EvSidebarBookmarksClass.html":[5,0,245]
+"struct__EvSidebarAttachmentsPrivate.html#aa364a06eacb41b49e10d13c3ff0814dc":[5,0,243,1]
 };
