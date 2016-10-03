@@ -3,6 +3,7 @@ var comics_document_8c =
     [ "_ComicsDocumentClass", "struct__ComicsDocumentClass.html", "struct__ComicsDocumentClass" ],
     [ "_ComicsDocument", "struct__ComicsDocument.html", "struct__ComicsDocument" ],
     [ "ComicBookDecompressCommand", "structComicBookDecompressCommand.html", "structComicBookDecompressCommand" ],
+    [ "_GNU_SOURCE", "comics-document_8c.html#a369266c24eacffb87046522897a570d5", null ],
     [ "EV_EOL", "comics-document_8c.html#a6c1e04ff214bec59246d71a1bfd1440a", null ],
     [ "NO_OFFSET", "comics-document_8c.html#aa1d2aa206e89cc4340ade4e98561a656", null ],
     [ "OFFSET_7Z", "comics-document_8c.html#a8b4f48bd603fb40d124f75362ee0d1ad", null ],
