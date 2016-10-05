@@ -357,7 +357,6 @@ var searchData=
   ['_5fgimp_5freserved4',['_gimp_reserved4',['../struct__GimpCellRendererToggleClass.html#a74a4909d61a91bfd22553befd031dc00',1,'_GimpCellRendererToggleClass']]],
   ['_5fgimpcellrenderertoggle',['_GimpCellRendererToggle',['../struct__GimpCellRendererToggle.html',1,'']]],
   ['_5fgimpcellrenderertoggleclass',['_GimpCellRendererToggleClass',['../struct__GimpCellRendererToggleClass.html',1,'']]],
-  ['_5fgnu_5fsource',['_GNU_SOURCE',['../comics-document_8c.html#a369266c24eacffb87046522897a570d5',1,'comics-document.c']]],
   ['_5fgtk_5fcss_5fprovider_5fload_5ffrom_5fresource',['_gtk_css_provider_load_from_resource',['../ev-previewer-window_8c.html#a0a5285d50e1df06dd850a0cd5d0761de',1,'_gtk_css_provider_load_from_resource(GtkCssProvider *provider, const char *resource_path, GError **error):&#160;ev-previewer-window.c'],['../ev-window_8c.html#a0a5285d50e1df06dd850a0cd5d0761de',1,'_gtk_css_provider_load_from_resource(GtkCssProvider *provider, const char *resource_path, GError **error):&#160;ev-window.c']]],
   ['_5flinktitledata',['_LinkTitleData',['../struct__LinkTitleData.html',1,'']]],
   ['_5flist',['_List',['../struct__List.html',1,'']]],

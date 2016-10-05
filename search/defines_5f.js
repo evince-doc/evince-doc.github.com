@@ -13,7 +13,6 @@ var searchData=
   ['_5fev_5fdebug_5finit',['_ev_debug_init',['../ev-debug_8h.html#a09ce846fb0be4f32abb22b2363500077',1,'ev-debug.h']]],
   ['_5fev_5fdebug_5fshutdown',['_ev_debug_shutdown',['../ev-debug_8h.html#a5f383214e42b0713c707d04f2de36dd0',1,'ev-debug.h']]],
   ['_5fg',['_G',['../private_8h.html#a8f08d607dbcb89f99706b534fc38fffc',1,'private.h']]],
-  ['_5fgnu_5fsource',['_GNU_SOURCE',['../comics-document_8c.html#a369266c24eacffb87046522897a570d5',1,'comics-document.c']]],
   ['_5fnp_5fabi_5fmixin_5ffor_5fgcc3',['_NP_ABI_MIXIN_FOR_GCC3',['../npapi_8h.html#a942625c4ee32c820694213952a867e0f',1,'npapi.h']]],
   ['_5fnp_5fabi_5fmixin_5ffor_5fmacho',['_NP_ABI_MIXIN_FOR_MACHO',['../npapi_8h.html#ad9bcf10196e71201d37c9b614026b9d1',1,'npapi.h']]],
   ['_5fpermissions_5ffull',['_PERMISSIONS_FULL',['../ev-document-info_8h.html#ab0bef5918b34f887d3a061dd493bfde4',1,'ev-document-info.h']]]

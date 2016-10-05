@@ -1,6 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"struct__EvDocumentLinksInterface.html#a8e90e53b9fd366f0b45cb9fe0b104f3a":[5,0,79,3],
 "struct__EvDocumentLinksInterface.html#adc2b22859560b1b9dfa4ac42252bc222":[5,0,79,2],
 "struct__EvDocumentLinksInterface.html#ae686a0e02f849e5c5b954db3952917a4":[5,0,79,0],
 "struct__EvDocumentLinksInterface.html#ae719cb518c2e8862c3720d659ada8b68":[5,0,79,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX32 =
 "struct__EvJobFind.html#aa6693a0753a31260db8489b05bec046d":[5,0,132,0],
 "struct__EvJobFind.html#abf9c24ee0045a37f09786b70ef72e51d":[5,0,132,8],
 "struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f":[5,0,132,1],
-"struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743":[5,0,132,7]
+"struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743":[5,0,132,7],
+"struct__EvJobFindClass.html":[5,0,133]
 };
