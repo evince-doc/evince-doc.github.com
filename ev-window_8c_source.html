@@ -3644,7 +3644,7 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l03561"></a><span class="lineno"> 3561</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l03562"></a><span class="lineno"> 3562</span>&#160;        text = g_markup_printf_escaped (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Save a copy of document “%s” before closing?&quot;</span>),</div>
 <div class="line"><a name="l03563"></a><span class="lineno"> 3563</span>&#160;                                                gtk_window_get_title (GTK_WINDOW (ev_window)));</div>
-<div class="line"><a name="l03564"></a><span class="lineno"> 3564</span>&#160;        secondary_text_command = <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;If you don&#39;t save a copy, changes will be permanently lost.&quot;</span>);</div>
+<div class="line"><a name="l03564"></a><span class="lineno"> 3564</span>&#160;        secondary_text_command = <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;If you don’t save a copy, changes will be permanently lost.&quot;</span>);</div>
 <div class="line"><a name="l03565"></a><span class="lineno"> 3565</span>&#160;        gtk_dialog_add_buttons (GTK_DIALOG (dialog),</div>
 <div class="line"><a name="l03566"></a><span class="lineno"> 3566</span>&#160;                <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Close _without Saving&quot;</span>),</div>
 <div class="line"><a name="l03567"></a><span class="lineno"> 3567</span>&#160;                GTK_RESPONSE_NO,</div>
@@ -5451,7 +5451,7 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l05368"></a><span class="lineno"> 5368</span>&#160;                          <span class="stringliteral">&quot;allowing you to move around and select text with your keyboard. &quot;</span></div>
 <div class="line"><a name="l05369"></a><span class="lineno"> 5369</span>&#160;                          <span class="stringliteral">&quot;Do you want to enable the caret navigation?&quot;</span>));</div>
 <div class="line"><a name="l05370"></a><span class="lineno"> 5370</span>&#160;</div>
-<div class="line"><a name="l05371"></a><span class="lineno"> 5371</span>&#160;    window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe">ask_caret_navigation_check</a> = gtk_check_button_new_with_label (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Don&#39;t show this message again&quot;</span>));</div>
+<div class="line"><a name="l05371"></a><span class="lineno"> 5371</span>&#160;    window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe">ask_caret_navigation_check</a> = gtk_check_button_new_with_label (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Don’t show this message again&quot;</span>));</div>
 <div class="line"><a name="l05372"></a><span class="lineno"> 5372</span>&#160;    hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);</div>
 <div class="line"><a name="l05373"></a><span class="lineno"> 5373</span>&#160;    gtk_box_pack_start (GTK_BOX (hbox), window-&gt;<a class="code" href="struct__EvWindow.html#a26b090efbe710dd0e7afec177b6fbcdf">priv</a>-&gt;<a class="code" href="struct__EvWindowPrivate.html#a03de6fcf30153accadb280b9489f3ebe">ask_caret_navigation_check</a>,</div>
 <div class="line"><a name="l05374"></a><span class="lineno"> 5374</span>&#160;                <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa82764c3079aea4e60c80e45befbb839">TRUE</a>, 0);</div>
@@ -6242,7 +6242,7 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div class="line"><a name="l06159"></a><span class="lineno"> 6159</span>&#160;    <span class="keywordflow">if</span> (format == NULL) {</div>
 <div class="line"><a name="l06160"></a><span class="lineno"> 6160</span>&#160;        ev_window_error_message (ev_window, NULL, </div>
 <div class="line"><a name="l06161"></a><span class="lineno"> 6161</span>&#160;                     <span class="stringliteral">&quot;%s&quot;</span>,</div>
-<div class="line"><a name="l06162"></a><span class="lineno"> 6162</span>&#160;                     <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Couldn&#39;t find appropriate format to save image&quot;</span>));</div>
+<div class="line"><a name="l06162"></a><span class="lineno"> 6162</span>&#160;                     <a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Couldn’t find appropriate format to save image&quot;</span>));</div>
 <div class="line"><a name="l06163"></a><span class="lineno"> 6163</span>&#160;        g_free (uri);</div>
 <div class="line"><a name="l06164"></a><span class="lineno"> 6164</span>&#160;        gtk_widget_destroy (fc);</div>
 <div class="line"><a name="l06165"></a><span class="lineno"> 6165</span>&#160;</div>
@@ -7244,7 +7244,7 @@ $(document).ready(function(){initNavTree('ev-window_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-window_8c.html">ev-window.c</a></li>
-    <li class="footer">Generated on Sat Nov 5 2016 00:05:11 for Evince by
+    <li class="footer">Generated on Sun Nov 6 2016 20:01:08 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
