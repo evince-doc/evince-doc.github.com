@@ -3023,17 +3023,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01951">1951</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;{</div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;</div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01953">1953</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;{</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
 <div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;</div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#adaf7ccc3517464fa235e70411e097125">EV_TYPE_JOB_EXPORT</a>, NULL);</div>
-<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;    job-&gt;document = g_object_ref (document);</div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;    </div>
-<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;    <span class="keywordflow">return</span> job;</div>
-<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;}</div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;</div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#adaf7ccc3517464fa235e70411e097125">EV_TYPE_JOB_EXPORT</a>, NULL);</div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;    job-&gt;document = g_object_ref (document);</div>
+<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;    </div>
+<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;    <span class="keywordflow">return</span> job;</div>
+<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3061,10 +3061,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01964">1964</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;{</div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;    job-&gt;<a class="code" href="struct__EvJobExport.html#ab91046a9efcdf677d654162d6540f78d">page</a> = page;</div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01966">1966</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;{</div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;    job-&gt;<a class="code" href="struct__EvJobExport.html#ab91046a9efcdf677d654162d6540f78d">page</a> = page;</div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3187,10 +3187,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01774">1774</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;{</div>
-<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;    <span class="keywordflow">return</span> g_list_length (job-&gt;<a class="code" href="struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c">pages</a>[page]);</div>
-<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01776">1776</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;{</div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    <span class="keywordflow">return</span> g_list_length (job-&gt;<a class="code" href="struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c">pages</a>[page]);</div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3221,10 +3221,10 @@ Functions</h2></td></tr>
 <p>Returns: the job's find options</p>
 <p>Since: 3.6 </p>
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01768">1768</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;{</div>
-<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;        <span class="keywordflow">return</span> job-&gt;<a class="code" href="struct__EvJobFind.html#a3e273b1de436e529202535f1db807787">options</a>;</div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01770">1770</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;{</div>
+<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;        <span class="keywordflow">return</span> job-&gt;<a class="code" href="struct__EvJobFind.html#a3e273b1de436e529202535f1db807787">options</a>;</div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3242,23 +3242,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01781">1781</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;{</div>
-<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    gint pages_done;</div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;</div>
-<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (<a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job)))</div>
-<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;        <span class="keywordflow">return</span> 1.0;</div>
-<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;    </div>
-<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;    <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> &gt; job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>) {</div>
-<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;        pages_done = job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> - job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a> + 1;</div>
-<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> == job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>) {</div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;        pages_done = job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a>;</div>
-<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;        pages_done = job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a> - job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a> + job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a>;</div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;    }</div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;</div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;    <span class="keywordflow">return</span> pages_done / (gdouble) job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a>;</div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01783">1783</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;{</div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;    gint pages_done;</div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;</div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ev-jobs_8c.html#a9330410cbc3b79a0dc46c388ff91a7ba">ev_job_is_finished</a> (<a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job)))</div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;        <span class="keywordflow">return</span> 1.0;</div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;    </div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> &gt; job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>) {</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;        pages_done = job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> - job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a> + 1;</div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> == job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a>) {</div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;        pages_done = job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a>;</div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;        pages_done = job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a> - job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a> + job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a>;</div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;    }</div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;</div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;    <span class="keywordflow">return</span> pages_done / (gdouble) job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a>;</div>
+<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3278,10 +3278,10 @@ Functions</h2></td></tr>
 <p>ev_job_find_get_results: (skip) : an <a class="el" href="ev-jobs_8h.html#aa253e7bcf6f5ec6b70778035877980ad">EvJobFind</a></p>
 <p>Returns: a #GList of #GLists containing #EvRectangles </p>
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01812">1812</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;{</div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;    <span class="keywordflow">return</span> job-&gt;<a class="code" href="struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c">pages</a>;</div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01814">1814</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;{</div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;    <span class="keywordflow">return</span> job-&gt;<a class="code" href="struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c">pages</a>;</div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3325,10 +3325,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01800">1800</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;{</div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;    <span class="keywordflow">return</span> job-&gt;<a class="code" href="struct__EvJobFind.html#a8ba9a105844128bade72fda996bb7a53">has_results</a>;</div>
-<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01802">1802</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;{</div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;    <span class="keywordflow">return</span> job-&gt;<a class="code" href="struct__EvJobFind.html#a8ba9a105844128bade72fda996bb7a53">has_results</a>;</div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3384,28 +3384,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01716">1716</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;{</div>
-<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;    <a class="code" href="struct__EvJobFind.html">EvJobFind</a> *job;</div>
-<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;    </div>
-<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01718">1718</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;{</div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;    <a class="code" href="struct__EvJobFind.html">EvJobFind</a> *job;</div>
 <div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;    </div>
-<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#ac5b5ddb98fc7ed4395cbb301e31badf0">EV_TYPE_JOB_FIND</a>, NULL);</div>
-<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;</div>
-<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;    <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job)-&gt;document = g_object_ref (document);</div>
-<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a> = start_page;</div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> = start_page;</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a> = n_pages;</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c">pages</a> = g_new0 (GList *, n_pages);</div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#abf9c24ee0045a37f09786b70ef72e51d">text</a> = g_strdup (text);</div>
-<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;        <span class="comment">/* Keep for compatibility */</span></div>
-<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#aa6693a0753a31260db8489b05bec046d">case_sensitive</a> = case_sensitive;</div>
-<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#a8ba9a105844128bade72fda996bb7a53">has_results</a> = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
-<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;        <span class="keywordflow">if</span> (case_sensitive)</div>
-<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;                job-&gt;<a class="code" href="struct__EvJobFind.html#a3e273b1de436e529202535f1db807787">options</a> |= <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea17677a80114b27e85d826ebd89ce40bd">EV_FIND_CASE_SENSITIVE</a>;</div>
-<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;</div>
-<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job);</div>
-<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;}</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;    </div>
+<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#ac5b5ddb98fc7ed4395cbb301e31badf0">EV_TYPE_JOB_FIND</a>, NULL);</div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;</div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;    <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job)-&gt;document = g_object_ref (document);</div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">start_page</a> = start_page;</div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#af3e7411728f3865367d98a914ce2413f">current_page</a> = start_page;</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#a7364625a6ef5c21015fe643cefd14df1">n_pages</a> = n_pages;</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#a89445b42ded8a1dd035522209f48390c">pages</a> = g_new0 (GList *, n_pages);</div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#abf9c24ee0045a37f09786b70ef72e51d">text</a> = g_strdup (text);</div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;        <span class="comment">/* Keep for compatibility */</span></div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#aa6693a0753a31260db8489b05bec046d">case_sensitive</a> = case_sensitive;</div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;    job-&gt;<a class="code" href="struct__EvJobFind.html#a8ba9a105844128bade72fda996bb7a53">has_results</a> = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;        <span class="keywordflow">if</span> (case_sensitive)</div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;                job-&gt;<a class="code" href="struct__EvJobFind.html#a3e273b1de436e529202535f1db807787">options</a> |= <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea17677a80114b27e85d826ebd89ce40bd">EV_FIND_CASE_SENSITIVE</a>;</div>
+<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;</div>
+<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job);</div>
+<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3445,12 +3445,12 @@ Functions</h2></td></tr>
 <p>ev_job_find_set_options: : :</p>
 <p>Since: 3.6 </p>
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01751">1751</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;{</div>
-<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;        job-&gt;<a class="code" href="struct__EvJobFind.html#a3e273b1de436e529202535f1db807787">options</a> = options;</div>
-<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;        <span class="comment">/* Keep compatibility */</span></div>
-<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;        job-&gt;<a class="code" href="struct__EvJobFind.html#aa6693a0753a31260db8489b05bec046d">case_sensitive</a> = options &amp; <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea17677a80114b27e85d826ebd89ce40bd">EV_FIND_CASE_SENSITIVE</a>;</div>
-<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01753">1753</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;{</div>
+<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;        job-&gt;<a class="code" href="struct__EvJobFind.html#a3e273b1de436e529202535f1db807787">options</a> = options;</div>
+<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;        <span class="comment">/* Keep compatibility */</span></div>
+<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;        job-&gt;<a class="code" href="struct__EvJobFind.html#aa6693a0753a31260db8489b05bec046d">case_sensitive</a> = options &amp; <a class="code" href="ev-document-find_8h.html#a38d6f2e4e4086647bb857d8c9e369cbea17677a80114b27e85d826ebd89ce40bd">EV_FIND_CASE_SENSITIVE</a>;</div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3658,17 +3658,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01869">1869</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;{</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;</div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01871">1871</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;{</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
 <div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;</div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#a737e2282b4bb5b032f7e26281a64c144">EV_TYPE_JOB_LAYERS</a>, NULL);</div>
-<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;    job-&gt;document = g_object_ref (document);</div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;    </div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;    <span class="keywordflow">return</span> job;</div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;}</div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#a737e2282b4bb5b032f7e26281a64c144">EV_TYPE_JOB_LAYERS</a>, NULL);</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;    job-&gt;document = g_object_ref (document);</div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;    </div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;    <span class="keywordflow">return</span> job;</div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -4346,17 +4346,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l02050">2050</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;{</div>
-<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
-<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;</div>
-<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l02052">2052</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;{</div>
+<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;    <a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job;</div>
 <div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160;</div>
-<div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#a1db5112ec5a904dfb1d2a95381e45a09">EV_TYPE_JOB_PRINT</a>, NULL);</div>
-<div class="line"><a name="l02057"></a><span class="lineno"> 2057</span>&#160;    job-&gt;document = g_object_ref (document);</div>
-<div class="line"><a name="l02058"></a><span class="lineno"> 2058</span>&#160;</div>
-<div class="line"><a name="l02059"></a><span class="lineno"> 2059</span>&#160;    <span class="keywordflow">return</span> job;</div>
-<div class="line"><a name="l02060"></a><span class="lineno"> 2060</span>&#160;}</div>
+<div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, NULL);</div>
+<div class="line"><a name="l02057"></a><span class="lineno"> 2057</span>&#160;</div>
+<div class="line"><a name="l02058"></a><span class="lineno"> 2058</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#a1db5112ec5a904dfb1d2a95381e45a09">EV_TYPE_JOB_PRINT</a>, NULL);</div>
+<div class="line"><a name="l02059"></a><span class="lineno"> 2059</span>&#160;    job-&gt;document = g_object_ref (document);</div>
+<div class="line"><a name="l02060"></a><span class="lineno"> 2060</span>&#160;</div>
+<div class="line"><a name="l02061"></a><span class="lineno"> 2061</span>&#160;    <span class="keywordflow">return</span> job;</div>
+<div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -4394,15 +4394,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l02070">2070</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;{</div>
-<div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;    <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a> == cr)</div>
-<div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;</div>
-<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;    <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a>)</div>
-<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;        cairo_destroy (job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a>);</div>
-<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;    job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a> = cr ? cairo_reference (cr) : NULL;</div>
-<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l02072">2072</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;{</div>
+<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;    <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a> == cr)</div>
+<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;</div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;    <span class="keywordflow">if</span> (job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a>)</div>
+<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;        cairo_destroy (job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a>);</div>
+<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;    job-&gt;<a class="code" href="struct__EvJobPrint.html#a9f8c4da7b7a6387972119146249b00e7">cr</a> = cr ? cairo_reference (cr) : NULL;</div>
+<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -4440,10 +4440,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l02063">2063</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;{</div>
-<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;    job-&gt;<a class="code" href="struct__EvJobPrint.html#ae075c21ac507c5f9d68e23dcea38fe0e">page</a> = page;</div>
-<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l02065">2065</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;{</div>
+<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;    job-&gt;<a class="code" href="struct__EvJobPrint.html#ae075c21ac507c5f9d68e23dcea38fe0e">page</a> = page;</div>
+<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -4694,20 +4694,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01601">1601</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;{</div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;    <a class="code" href="struct__EvJobSave.html">EvJobSave</a> *job;</div>
-<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;</div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, <span class="stringliteral">&quot;uri: %s, document_uri: %s&quot;</span>, uri, document_uri);</div>
+<p>Definition at line <a class="el" href="ev-jobs_8c_source.html#l01603">1603</a> of file <a class="el" href="ev-jobs_8c_source.html">ev-jobs.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;{</div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;    <a class="code" href="struct__EvJobSave.html">EvJobSave</a> *job;</div>
 <div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;</div>
-<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#aca80774314b54872faa143607e411b29">EV_TYPE_JOB_SAVE</a>, NULL);</div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;    <a class="code" href="ev-debug_8h.html#aa53d71cec487c7311a5a507a097b84ba">ev_debug_message</a> (DEBUG_JOBS, <span class="stringliteral">&quot;uri: %s, document_uri: %s&quot;</span>, uri, document_uri);</div>
 <div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;</div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;    <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job)-&gt;document = g_object_ref (document);</div>
-<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;    job-&gt;<a class="code" href="struct__EvJobSave.html#a81eea26c53bdaff55ea230d3746ff061">uri</a> = g_strdup (uri);</div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;    job-&gt;<a class="code" href="struct__EvJobSave.html#ab652961768e6493ccaf2b271faf9a143">document_uri</a> = g_strdup (document_uri);</div>
-<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;</div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job);</div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;}</div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;    job = g_object_new (<a class="code" href="ev-jobs_8h.html#aca80774314b54872faa143607e411b29">EV_TYPE_JOB_SAVE</a>, NULL);</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;    <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job)-&gt;document = g_object_ref (document);</div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;    job-&gt;<a class="code" href="struct__EvJobSave.html#a81eea26c53bdaff55ea230d3746ff061">uri</a> = g_strdup (uri);</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    job-&gt;<a class="code" href="struct__EvJobSave.html#ab652961768e6493ccaf2b271faf9a143">document_uri</a> = g_strdup (document_uri);</div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;</div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ev-jobs_8h.html#a23aff2215e8be2934d85ba191b3daa3f">EV_JOB</a> (job);</div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -5031,7 +5031,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-jobs_8h.html">ev-jobs.h</a></li>
-    <li class="footer">Generated on Thu Dec 8 2016 22:15:48 for Evince by
+    <li class="footer">Generated on Fri Dec 9 2016 17:27:40 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
