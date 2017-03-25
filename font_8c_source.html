@@ -262,12 +262,12 @@ $(document).ready(function(){initNavTree('font_8c_source.html','');});
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<a class="code" href="struct__DviFontRef.html">DviFontRef</a> *</div>
 <div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="font_8c.html#a561f07acd83aad06a0235e44c8bf87b2">  155</a></span>&#160;<a class="code" href="font_8c.html#a561f07acd83aad06a0235e44c8bf87b2">font_reference</a>(</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="struct__DviParams.html">DviParams</a> *params,  <span class="comment">/* rendering parameters */</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    Int32 <span class="keywordtype">id</span>,       <span class="comment">/* external id number */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> <span class="keywordtype">id</span>,       <span class="comment">/* external id number */</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="ev-zoom-action_8c.html#a7ba8c993f973b5168e57f9538b46699d">name</a>,   <span class="comment">/* font name */</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    Int32 sum,      <span class="comment">/* checksum (from DVI of VF) */</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> sum,      <span class="comment">/* checksum (from DVI of VF) */</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">int</span> hdpi,       <span class="comment">/* resolution */</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">int</span> vdpi,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Int32 scale)        <span class="comment">/* scaling factor (from DVI or VF) */</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> scale)        <span class="comment">/* scaling factor (from DVI or VF) */</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="struct__DviFont.html">DviFont</a> *font;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="struct__DviFontRef.html">DviFontRef</a> *ref;</div>
@@ -590,7 +590,7 @@ $(document).ready(function(){initNavTree('font_8c_source.html','');});
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    dvi-&gt;<a class="code" href="struct__DviContext.html#a1dd1c99d9b9c13724ccde3218e3eabe7">fontmap</a> = map;</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;}</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
-<div class="line"><a name="l00485"></a><span class="lineno"><a class="code" href="font_8c.html#a8ae6e2a30a37aa015c4a076ed7d37e0c">  485</a></span>&#160;<a class="code" href="struct__DviFontRef.html">DviFontRef</a> *<a class="code" href="font_8c.html#a8ae6e2a30a37aa015c4a076ed7d37e0c">font_find_flat</a>(<a class="code" href="struct__DviContext.html">DviContext</a> *dvi, Int32 <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00485"></a><span class="lineno"><a class="code" href="font_8c.html#a8ae6e2a30a37aa015c4a076ed7d37e0c">  485</a></span>&#160;<a class="code" href="struct__DviFontRef.html">DviFontRef</a> *<a class="code" href="font_8c.html#a8ae6e2a30a37aa015c4a076ed7d37e0c">font_find_flat</a>(<a class="code" href="struct__DviContext.html">DviContext</a> *dvi, <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;{</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="struct__DviFontRef.html">DviFontRef</a> *ref;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    </div>
@@ -600,7 +600,7 @@ $(document).ready(function(){initNavTree('font_8c_source.html','');});
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">return</span> ref;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;}</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00495"></a><span class="lineno"><a class="code" href="font_8c.html#a8cf3348891ff61de99fe832838fdb917">  495</a></span>&#160;<a class="code" href="struct__DviFontRef.html">DviFontRef</a> *<a class="code" href="font_8c.html#a8cf3348891ff61de99fe832838fdb917">font_find_mapped</a>(<a class="code" href="struct__DviContext.html">DviContext</a> *dvi, Int32 <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00495"></a><span class="lineno"><a class="code" href="font_8c.html#a8cf3348891ff61de99fe832838fdb917">  495</a></span>&#160;<a class="code" href="struct__DviFontRef.html">DviFontRef</a> *<a class="code" href="font_8c.html#a8cf3348891ff61de99fe832838fdb917">font_find_mapped</a>(<a class="code" href="struct__DviContext.html">DviContext</a> *dvi, <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;{</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">int</span> lo, hi, n;</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <a class="code" href="struct__DviFontRef.html">DviFontRef</a> **map;</div>
@@ -631,7 +631,7 @@ $(document).ready(function(){initNavTree('font_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="font_8c.html">font.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 10:37:50 for Evince by
+    <li class="footer">Generated on Sat Mar 25 2017 13:05:50 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

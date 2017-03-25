@@ -502,10 +502,10 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">int</span> n;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    Int32   *tfm;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    Int32   *widths;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    Int32   *heights;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    Int32   *depths;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *tfm;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *widths;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *heights;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *depths;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <a class="code" href="struct__TFMChar.html">TFMChar</a> *tch;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <a class="code" href="struct__TFMChar.html">TFMChar</a> *end;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    </div>
@@ -588,7 +588,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="comment">/* get the widths, heights and depths */</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    size = nw + nh + nd;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    tfm = <a class="code" href="common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(Int32, size);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    tfm = <a class="code" href="common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>, size);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">/* read them in one sweep */</span></div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">if</span>(fread(tfm, 4, size, in) != size) {</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(tfm);</div>
@@ -674,15 +674,15 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">int</span> lf, lh, bc, ec, nw, nh, nd;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordtype">int</span> i, n;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    Int32   *tfm;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *tfm;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <a class="code" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a>   *ptr;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    FILE    *in;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    Int32   *cb;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    Int32   *charinfo;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    Int32   *widths;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    Int32   *heights;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    Int32   *depths;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *cb;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *charinfo;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *widths;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *heights;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *depths;</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    Uint32  checksum;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordtype">int</span> olevel;</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordtype">int</span> nwords;</div>
@@ -774,7 +774,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    fseek(in, 4L*(nwords + lh), SEEK_SET);</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="comment">/* and read everything at once */</span></div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    size = 2*(ec - bc + 1) + nw + nh + nd;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    tfm = <a class="code" href="common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(Int32, size * <span class="keyword">sizeof</span>(Int32));</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    tfm = <a class="code" href="common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>, size * <span class="keyword">sizeof</span>(<a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>));</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="keywordflow">if</span>(fread(tfm, 4, size, in) != size) {</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <a class="code" href="util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(tfm);</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="keywordflow">goto</span> bad_tfm;</div>
@@ -936,11 +936,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">struct </span>stat st;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    FILE    *in;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    Int32   *cb;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    Int32   *charinfo;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Int32   *widths;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Int32   *heights;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Int32   *depths;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *cb;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *charinfo;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *widths;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *heights;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   *depths;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    Uint32  checksum;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    in = fopen(filename, <span class="stringliteral">&quot;rb&quot;</span>);</div>
@@ -988,7 +988,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    checksum += <a class="code" href="common_8h.html#afee99e09c70493cf413b3c4829560868">muget2</a>(ptr); <span class="comment">/* skip # of font parameters */</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    size = ec - bc + 1;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    cb = (Int32 *)tfm; cb += 6 + lh;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    cb = (<a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> *)tfm; cb += 6 + lh;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    charinfo    = cb;  cb += size;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    widths      = cb;  cb += nw;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    heights     = cb;  cb += nh;</div>
@@ -1140,7 +1140,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="tfmfile_8c.html">tfmfile.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 10:37:52 for Evince by
+    <li class="footer">Generated on Sat Mar 25 2017 13:05:51 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -19,6 +19,12 @@ var searchData=
   ['bitmap_5fset_5fcol',['bitmap_set_col',['../bitmap_8c.html#a3a4dc4583805316f8420e077f4c4c96d',1,'bitmap.c']]],
   ['bitmap_5fset_5frow',['bitmap_set_row',['../bitmap_8c.html#a3741142eed461d40f0eefe1b13690ead',1,'bitmap.c']]],
   ['blink_5fcb',['blink_cb',['../ev-view_8c.html#a1a1ddfca38a59914881bf03a8e5dc257',1,'ev-view.c']]],
+  ['br_5favailable',['br_available',['../filter-rar_8c.html#a57d2a95e783297e2c95c778425b9eea1',1,'filter-rar.c']]],
+  ['br_5fbits',['br_bits',['../filter-rar_8c.html#ad07bca6ed08985347d9971c0e4efe02c',1,'br_bits(struct MemBitReader *br, int bits):&#160;filter-rar.c'],['../uncompress-rar_8c.html#aa24ee0eb9182f740dd471ff8cb8c2bf0',1,'br_bits(ar_archive_rar *rar, int bits):&#160;uncompress-rar.c']]],
+  ['br_5fcheck',['br_check',['../uncompress-rar_8c.html#a0b24bef140ead65233ecf963f01b7b5e',1,'uncompress-rar.c']]],
+  ['br_5fclear_5fleftover_5fbits',['br_clear_leftover_bits',['../rar_8h.html#aec7d94d181f6fb4480bb95e960baebea',1,'rar.h']]],
+  ['br_5ffill',['br_fill',['../filter-rar_8c.html#ab5d1ab786fac1ac943a771fb5eb3d04d',1,'br_fill(struct MemBitReader *br, int bits):&#160;filter-rar.c'],['../uncompress-rar_8c.html#a01ddec606f8d904deeb306da6b0f6bff',1,'br_fill(ar_archive_rar *rar, int bits):&#160;uncompress-rar.c']]],
+  ['br_5fnext_5frarvm_5fnumber',['br_next_rarvm_number',['../filter-rar_8c.html#a865266394c62f09e4f3017e0ea89c412',1,'filter-rar.c']]],
   ['buff_5fadd',['buff_add',['../common_8c.html#a268442a36dafcc7fa91734eb18e675ff',1,'common.c']]],
   ['buff_5ffree',['buff_free',['../common_8c.html#a4265551dba818120071a9671dfb84904',1,'common.c']]],
   ['buff_5fgets',['buff_gets',['../common_8c.html#a595544ff3273044e8e372a20423cbfbc',1,'common.c']]],
@@ -30,5 +36,8 @@ var searchData=
   ['bus_5fmessage_5fhandle',['bus_message_handle',['../ev-media-player_8c.html#aae4f83edf67f1d2e39b206e2c0e525f2',1,'ev-media-player.c']]],
   ['bus_5fsync_5fhandle',['bus_sync_handle',['../ev-media-player_8c.html#a1d0dbcc8ca91f38d5bb0ab870aa75d51',1,'ev-media-player.c']]],
   ['button_5fpress_5fcb',['button_press_cb',['../ev-sidebar-links_8c.html#a50dee19bf2e19a0d2ae2a68fe1346c3d',1,'ev-sidebar-links.c']]],
-  ['button_5fpressed',['button_pressed',['../ev-history-action_8c.html#a06773c62de06da879047a8dcd047d2ab',1,'ev-history-action.c']]]
+  ['button_5fpressed',['button_pressed',['../ev-history-action_8c.html#a06773c62de06da879047a8dcd047d2ab',1,'ev-history-action.c']]],
+  ['bw_5fwrite32le',['bw_write32le',['../filter-rar_8c.html#a396c85e24ea57e57ef670d7d4f023679',1,'filter-rar.c']]],
+  ['bytein_5fcreatevtable',['ByteIn_CreateVTable',['../uncompress-rar_8c.html#a75214f97ef7b73771396183ed0e698fd',1,'uncompress-rar.c']]],
+  ['bytein_5fread',['ByteIn_Read',['../uncompress-rar_8c.html#a98bb078a2fa1e3ddd0069ace763e4875',1,'uncompress-rar.c']]]
 ];

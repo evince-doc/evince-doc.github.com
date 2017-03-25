@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['comicbookdecompresstype',['ComicBookDecompressType',['../comics-document_8c.html#af40458a768dbbfcedefd3c17e83aeeb7',1,'comics-document.c']]]
+  ['compression_5fmethod',['compression_method',['../rar_8h.html#a1e459517f01bb9dac9511086b04d11c3',1,'rar.h']]]
 ];

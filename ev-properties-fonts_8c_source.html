@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('ev-properties-fonts_8c_source.html',''
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="ev-properties-fonts_8c.html#a80a2f7c12ea37cb8af997ab4f4f9154f">job_fonts_finished_cb</a> (<a class="code" href="ev-jobs_8h.html#a12a456a9baf8a02bbda13b2105e3b2e0">EvJob</a> *job, <a class="code" href="ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d">EvPropertiesFonts</a> *<a class="code" href="gd-two-lines-renderer_8c.html#ad4ed594d119f20e3faa8aa33f9f5c595">properties</a>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="gimpcellrenderertoggle_8c.html#a5147f916416de34ae15ae07402203071">G_DEFINE_TYPE</a> (<a class="code" href="ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d">EvPropertiesFonts</a>, ev_properties_fonts, GTK_TYPE_BOX)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a> (<a class="code" href="ev-properties-fonts_8h.html#a7a7697c9cdd4641fd9aa30827f32348d">EvPropertiesFonts</a>, ev_properties_fonts, GTK_TYPE_BOX)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;static <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="ev-properties-fonts_8c.html#a04d4b9e0e47c1081810ae96f5b490b29">   54</a></span>&#160;<a class="code" href="ev-properties-fonts_8c.html#a04d4b9e0e47c1081810ae96f5b490b29">ev_properties_fonts_dispose</a> (GObject *<span class="keywordtype">object</span>)</div>
@@ -193,8 +193,8 @@ $(document).ready(function(){initNavTree('ev-properties-fonts_8c_source.html',''
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">char</span> *markup;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    gtk_tree_model_get (model, iter,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="ev-document-fonts_8h.html#aae05225933a42f81e7c4a9fb286596f9af6c9821745df68dc93be857a33df6b45">EV_DOCUMENT_FONTS_COLUMN_NAME</a>, &amp;name,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <a class="code" href="ev-document-fonts_8h.html#aae05225933a42f81e7c4a9fb286596f9a8eb79c0c726f24bc43decd172ba55cbd">EV_DOCUMENT_FONTS_COLUMN_DETAILS</a>, &amp;details,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="ev-document-fonts_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8af6c9821745df68dc93be857a33df6b45">EV_DOCUMENT_FONTS_COLUMN_NAME</a>, &amp;name,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <a class="code" href="ev-document-fonts_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8a8eb79c0c726f24bc43decd172ba55cbd">EV_DOCUMENT_FONTS_COLUMN_DETAILS</a>, &amp;details,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                -1);    </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (details) {</div>
@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('ev-properties-fonts_8c_source.html',''
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    properties-&gt;document = document;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    list_store = gtk_list_store_new (<a class="code" href="ev-document-fonts_8h.html#aae05225933a42f81e7c4a9fb286596f9a53ae469cb8832548099bc18d144aef15">EV_DOCUMENT_FONTS_COLUMN_NUM_COLUMNS</a>,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    list_store = gtk_list_store_new (<a class="code" href="ev-document-fonts_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8a53ae469cb8832548099bc18d144aef15">EV_DOCUMENT_FONTS_COLUMN_NUM_COLUMNS</a>,</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                     G_TYPE_STRING, G_TYPE_STRING);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    gtk_tree_view_set_model (tree_view, GTK_TREE_MODEL (list_store));</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('ev-properties-fonts_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-properties-fonts_8c.html">ev-properties-fonts.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 10:37:51 for Evince by
+    <li class="footer">Generated on Sat Mar 25 2017 13:05:51 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

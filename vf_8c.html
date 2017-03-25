@@ -258,7 +258,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a>   *macros;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> msize;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> mlen;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Int32   checksum;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   checksum;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">long</span>    alpha, beta, z;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> op;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> i;</div>
@@ -291,7 +291,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    op = <a class="code" href="common_8h.html#af033b968fa4b0ed3bf932fd9c826e206">fuget1</a>(p); </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">while</span>(op &gt;= <a class="code" href="dviopcodes_8h.html#a6740017932eb44abc7aa509996c00043">DVI_FNT_DEF1</a> &amp;&amp; op &lt;= <a class="code" href="dviopcodes_8h.html#ac73a38ff4babc3fb965c2b44381050b2">DVI_FNT_DEF4</a>) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="struct__DviFontRef.html">DviFontRef</a> *ref;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        Int32   scale, design;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   scale, design;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        Uint32  checksum;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">int</span> id;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> n;</div>
@@ -350,8 +350,8 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">/* now read the characters themselves */</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">while</span>(op &lt;= 242) {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordtype">int</span> pl;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        Int32   cc;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        Int32   tfm;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   cc;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   tfm;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span>(op == 242) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            pl = <a class="code" href="common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(p);</div>
@@ -501,7 +501,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="vf_8c.html">vf.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 10:37:52 for Evince by
+    <li class="footer">Generated on Sat Mar 25 2017 13:05:51 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

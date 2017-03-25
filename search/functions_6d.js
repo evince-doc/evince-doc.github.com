@@ -97,6 +97,10 @@ var searchData=
   ['media_5fsave_5fto_5ffile_5fcallback',['media_save_to_file_callback',['../ev-poppler_8cc.html#ace1000867d5c28679267770fd8aa57ae',1,'ev-poppler.cc']]],
   ['mediakeys_5fname_5fowner_5fchanged',['mediakeys_name_owner_changed',['../ev-media-player-keys_8c.html#ab66da4d866e08a1cbf9f5dfb6c2d88de',1,'ev-media-player-keys.c']]],
   ['mediakeys_5fservice_5fappeared_5fcb',['mediakeys_service_appeared_cb',['../ev-media-player-keys_8c.html#a100dccdcf74e0659e6b3248a886ee69a',1,'ev-media-player-keys.c']]],
+  ['memory_5fclose',['memory_close',['../stream_8c.html#a380bbca548e6ab5f6f4f4295216ec73f',1,'stream.c']]],
+  ['memory_5fread',['memory_read',['../stream_8c.html#adda3f84df7ec5a31adcd73fa89bad000',1,'stream.c']]],
+  ['memory_5fseek',['memory_seek',['../stream_8c.html#a656331cb63020674db753b440a0fa406',1,'stream.c']]],
+  ['memory_5ftell',['memory_tell',['../stream_8c.html#aeb87a1987871964e3cf1eadb77d7d822',1,'stream.c']]],
   ['merge_5fselection_5fregion',['merge_selection_region',['../ev-view_8c.html#a583b0e25a46bc171dab799d858049006',1,'ev-view.c']]],
   ['metadata_5fset_5fcallback',['metadata_set_callback',['../ev-metadata_8c.html#ad5f2ad120f91c10d32ac78f2d8270ab9',1,'ev-metadata.c']]],
   ['model',['model',['../classEvBrowserPlugin.html#a8b6f815c81de85b07d2ef10acaa43709',1,'EvBrowserPlugin']]],
@@ -111,6 +115,7 @@ var searchData=
   ['move_5fx',['move_x',['../dviread_8c.html#a99c4e7134cbd4d1a84cd99920a25fedd',1,'dviread.c']]],
   ['move_5fy',['move_y',['../dviread_8c.html#a29f4997ac89ea58dfb27c3c6b612342c',1,'dviread.c']]],
   ['move_5fz',['move_z',['../dviread_8c.html#a3cb98ada90c16cab1fdb22ce14604e9a',1,'dviread.c']]],
+  ['moveunitsup',['MoveUnitsUp',['../Ppmd8_8c.html#a975bd2a7a36dac036e138cffd56da13d',1,'Ppmd8.c']]],
   ['msgetn',['msgetn',['../common_8c.html#aefefa3f7d6b18ee580459699f8f5772c',1,'common.c']]],
   ['mugetn',['mugetn',['../common_8c.html#a46591b6d2597df232456e0285559e34b',1,'common.c']]]
 ];

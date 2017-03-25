@@ -180,7 +180,6 @@ var mdvi_8h =
     [ "__PROTO", "mdvi_8h.html#a0f5b155946d1946de883327fb766b73c", null ],
     [ "__PROTO", "mdvi_8h.html#aed93fe93940aecef19bcb65f42033d13", null ],
     [ "__PROTO", "mdvi_8h.html#ad35bd6a45b946508c4c55b3407583b5c", null ],
-    [ "__PROTO", "mdvi_8h.html#a3db2f8870d293de339f712d4bb63b0ab", null ],
     [ "__PROTO", "mdvi_8h.html#a7cfa3b7d669343655d5eff57a468d6de", null ],
     [ "__PROTO", "mdvi_8h.html#ac0fd8f3c7746b592f7c7def273bb9c12", null ],
     [ "__PROTO", "mdvi_8h.html#a7b702650c7c60db5cfaf53fd626d3073", null ],

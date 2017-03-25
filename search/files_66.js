@@ -1,6 +1,7 @@
 var searchData=
 [
   ['files_2ec',['files.c',['../files_8c.html',1,'']]],
+  ['filter_2drar_2ec',['filter-rar.c',['../filter-rar_8c.html',1,'']]],
   ['font_2ec',['font.c',['../font_8c.html',1,'']]],
   ['fontmap_2ec',['fontmap.c',['../fontmap_8c.html',1,'']]],
   ['fontmap_2eh',['fontmap.h',['../fontmap_8h.html',1,'']]],

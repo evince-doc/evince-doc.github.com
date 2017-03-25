@@ -2,8 +2,8 @@ var ev_media_player_8c =
 [
     [ "_EvMediaPlayer", "struct__EvMediaPlayer.html", "struct__EvMediaPlayer" ],
     [ "_EvMediaPlayerClass", "struct__EvMediaPlayerClass.html", "struct__EvMediaPlayerClass" ],
-    [ "PROP_0", "ev-media-player_8c.html#a2970898e8a43ce21e1cc510d49f1b89dac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_MEDIA", "ev-media-player_8c.html#a2970898e8a43ce21e1cc510d49f1b89da0ad2797ca4dcbfbbdd71d539efadf0f8", null ],
+    [ "PROP_0", "ev-media-player_8c.html#a84627a72058502328269676b81780f89ac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_MEDIA", "ev-media-player_8c.html#a84627a72058502328269676b81780f89a0ad2797ca4dcbfbbdd71d539efadf0f8", null ],
     [ "bus_message_handle", "ev-media-player_8c.html#aae4f83edf67f1d2e39b206e2c0e525f2", null ],
     [ "bus_sync_handle", "ev-media-player_8c.html#a1d0dbcc8ca91f38d5bb0ab870aa75d51", null ],
     [ "drawing_area_realize_cb", "ev-media-player_8c.html#ad91620927edcd5824179a775cccd744c", null ],

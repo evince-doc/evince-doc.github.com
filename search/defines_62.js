@@ -8,6 +8,7 @@ var searchData=
   ['bitmap_5fbits',['BITMAP_BITS',['../bitmap_8h.html#ae7685877d8718ffc890ca2b87266ecc0',1,'bitmap.h']]],
   ['bitmap_5fbytes',['BITMAP_BYTES',['../bitmap_8h.html#ac01a58ec1e26529e0b01fa21acec53ee',1,'bitmap.h']]],
   ['black',['BLACK',['../gf_8c.html#a7b3b25cba33b07c303f3060fe41887f6',1,'gf.c']]],
+  ['block_5fsize',['BLOCK_SIZE',['../comics-document_8c.html#ad51ded0bbd705f02f73fc60c0b721ced',1,'comics-document.c']]],
   ['bm_5fbytes_5fper_5fline',['BM_BYTES_PER_LINE',['../bitmap_8h.html#abce6636ce8e2631afb283467b73576ab',1,'bitmap.h']]],
   ['bm_5fclrpixel',['BM_CLRPIXEL',['../bitmap_8h.html#a1817196dcd072e519f773a6d7c17874a',1,'bitmap.h']]],
   ['bm_5fgetpixel',['BM_GETPIXEL',['../bitmap_8h.html#a7eb6576f6fe80ccc113ddd9f9163c9d3',1,'bitmap.h']]],
@@ -19,5 +20,5 @@ var searchData=
   ['bookmarks_5fsidebar_5fid',['BOOKMARKS_SIDEBAR_ID',['../ev-window_8c.html#aa03ce28f34fdb611325155eb2d424d0a',1,'ev-window.c']]],
   ['bool',['BOOL',['../afmparse_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa',1,'afmparse.h']]],
   ['boolean_5fto_5fnpvariant',['BOOLEAN_TO_NPVARIANT',['../npruntime_8h.html#aaa77ec2245aaf776f3e7a1e34b6607a0',1,'npruntime.h']]],
-  ['buffer_5fsize',['BUFFER_SIZE',['../ev-file-helpers_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'ev-file-helpers.c']]]
+  ['buffer_5fsize',['BUFFER_SIZE',['../ev-archive_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'BUFFER_SIZE():&#160;ev-archive.c'],['../ev-file-helpers_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'BUFFER_SIZE():&#160;ev-file-helpers.c']]]
 ];

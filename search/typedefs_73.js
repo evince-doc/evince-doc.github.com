@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['sizet',['SizeT',['../7zTypes_8h.html#a4f8e2163e01de507a0ac376e8ec2b796',1,'7zTypes.h']]],
+  ['sres',['SRes',['../7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367',1,'7zTypes.h']]],
   ['synctex_5fcharindex_5ft',['synctex_charindex_t',['../synctex__parser_8h.html#ae42e885da11dae77debff9284274cb01',1,'synctex_parser.h']]],
   ['synctex_5fclass_5ft',['synctex_class_t',['../synctex__parser_8c.html#a68d11a2cb22716e7abd35cffed7d54c5',1,'synctex_parser.c']]],
   ['synctex_5fdecoder_5ft',['synctex_decoder_t',['../synctex__parser_8c.html#a0c5002c2ed5d57b4d5b8ca2f94a3477a',1,'synctex_parser.c']]],

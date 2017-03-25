@@ -10,6 +10,8 @@ var searchData=
   ['ev_2dannotations_2dtoolbar_2eh',['ev-annotations-toolbar.h',['../ev-annotations-toolbar_8h.html',1,'']]],
   ['ev_2dapplication_2ec',['ev-application.c',['../ev-application_8c.html',1,'']]],
   ['ev_2dapplication_2eh',['ev-application.h',['../ev-application_8h.html',1,'']]],
+  ['ev_2darchive_2ec',['ev-archive.c',['../ev-archive_8c.html',1,'']]],
+  ['ev_2darchive_2eh',['ev-archive.h',['../ev-archive_8h.html',1,'']]],
   ['ev_2dasync_2drenderer_2ec',['ev-async-renderer.c',['../ev-async-renderer_8c.html',1,'']]],
   ['ev_2dasync_2drenderer_2eh',['ev-async-renderer.h',['../ev-async-renderer_8h.html',1,'']]],
   ['ev_2dattachment_2ec',['ev-attachment.c',['../ev-attachment_8c.html',1,'']]],

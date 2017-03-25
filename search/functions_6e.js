@@ -11,6 +11,7 @@ var searchData=
   ['new_5fselection_5fsurface_5fneeded',['new_selection_surface_needed',['../ev-pixbuf-cache_8c.html#a606e19d48e66beb0791b865b2f4e50ab',1,'ev-pixbuf-cache.c']]],
   ['newstream',['newStream',['../classEvBrowserPlugin.html#ad642f2e42b546124cec4d46800f6327a',1,'EvBrowserPlugin']]],
   ['next_5fclicked_5fcb',['next_clicked_cb',['../ev-search-box_8c.html#a6d163e53662d0cd1ee6e5f3bf1c59a14',1,'ev-search-box.c']]],
+  ['nextcontext',['NextContext',['../Ppmd7_8c.html#ada31d27d1e85d0a7aa0a252042281da1',1,'NextContext(CPpmd7 *p):&#160;Ppmd7.c'],['../Ppmd8_8c.html#acce6bcef28806bb3d265628216eb2581',1,'NextContext(CPpmd8 *p):&#160;Ppmd8.c']]],
   ['no_5fop',['no_op',['../dviread_8c.html#acde70860e30a57a7019914605e16c843',1,'dviread.c']]],
   ['np_5fgetmimedescription',['NP_GetMIMEDescription',['../EvBrowserPluginMain_8cpp.html#af876f4815285e3249ff6e546dd0740bd',1,'EvBrowserPluginMain.cpp']]],
   ['np_5fgetvalue',['NP_GetValue',['../EvBrowserPluginMain_8cpp.html#ac12a2cc870e8f28bd0b9a1be2a75cdfd',1,'EvBrowserPluginMain.cpp']]],
@@ -93,5 +94,6 @@ var searchData=
   ['npp_5fwrite',['NPP_Write',['../EvBrowserPluginMain_8cpp.html#a89d7d395a754317056aade43613c0697',1,'NPP_Write(NPP instance, NPStream *stream, int32_t offset, int32_t len, void *buffer):&#160;EvBrowserPluginMain.cpp'],['../npapi_8h.html#acddda12a97b75bf53f5a03c272f08783',1,'NPP_Write(NPP instance, NPStream *stream, int32_t offset, int32_t len, void *buffer):&#160;EvBrowserPluginMain.cpp']]],
   ['npp_5fwriteready',['NPP_WriteReady',['../EvBrowserPluginMain_8cpp.html#a34c891aa443c054d30d468fa0c7b9a33',1,'NPP_WriteReady(NPP instance, NPStream *stream):&#160;EvBrowserPluginMain.cpp'],['../npapi_8h.html#a40c243093541fd079ee2731697dddaa0',1,'NPP_WriteReady(NPP instance, NPStream *stream):&#160;EvBrowserPluginMain.cpp']]],
   ['number_5ffrom_5fminiexp',['number_from_miniexp',['../djvu-links_8c.html#a30d41e357df0a52be360ec19b93935df',1,'djvu-links.c']]],
-  ['number_5ffrom_5fstring_5f10',['number_from_string_10',['../djvu-links_8c.html#a24adea92c6aab096359e7919a40bf986',1,'djvu-links.c']]]
+  ['number_5ffrom_5fstring_5f10',['number_from_string_10',['../djvu-links_8c.html#a24adea92c6aab096359e7919a40bf986',1,'djvu-links.c']]],
+  ['numberofrarinstructionoperands',['NumberOfRARInstructionOperands',['../rarvm_8c.html#aa22f178176fc6a4ccc9b49875c725d19',1,'NumberOfRARInstructionOperands(uint8_t instruction):&#160;rarvm.c'],['../rarvm_8h.html#aa22f178176fc6a4ccc9b49875c725d19',1,'NumberOfRARInstructionOperands(uint8_t instruction):&#160;rarvm.c']]]
 ];

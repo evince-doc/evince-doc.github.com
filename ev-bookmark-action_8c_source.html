@@ -131,8 +131,8 @@ $(document).ready(function(){initNavTree('ev-bookmark-action_8c_source.html','')
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-bookmark-action_8h.html">ev-bookmark-action.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="ev-bookmark-action_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6ac37dda0da1a44e10c0504afeeb863f3c">   26</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="ev-bookmark-action_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a152797fe61abe42ebed64c158159bed4">   27</a></span>&#160;        <a class="code" href="ev-link-dest_8c.html#ae4d5251432e1a9e6803c0240cc492e18a152797fe61abe42ebed64c158159bed4">PROP_PAGE</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="ev-bookmark-action_8c.html#a9334a5b9057f32da96db9b5c6a045d67ac37dda0da1a44e10c0504afeeb863f3c">   26</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="ev-bookmark-action_8c.html#a9334a5b9057f32da96db9b5c6a045d67a152797fe61abe42ebed64c158159bed4">   27</a></span>&#160;        <a class="code" href="ev-link-dest_8c.html#a0944a4353780132eeab7b06e3e42291da152797fe61abe42ebed64c158159bed4">PROP_PAGE</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="struct__EvBookmarkAction.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvBookmarkAction.html">_EvBookmarkAction</a> {</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('ev-bookmark-action_8c_source.html','')
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="struct__EvBookmarkActionClass.html#aaa547eee66f403eb9da2332b0018fb98">   37</a></span>&#160;        GtkActionClass <a class="code" href="struct__EvBookmarkActionClass.html#aaa547eee66f403eb9da2332b0018fb98">base_class</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="gimpcellrenderertoggle_8c.html#a5147f916416de34ae15ae07402203071">G_DEFINE_TYPE</a> (<a class="code" href="struct__EvBookmarkAction.html">EvBookmarkAction</a>, ev_bookmark_action, GTK_TYPE_ACTION)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a> (<a class="code" href="struct__EvBookmarkAction.html">EvBookmarkAction</a>, ev_bookmark_action, GTK_TYPE_ACTION)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;static <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="ev-bookmark-action_8c.html#aab560c780a1e82093645300d509bb6c2">   43</a></span>&#160;<a class="code" href="ev-bookmark-action_8c.html#aab560c780a1e82093645300d509bb6c2">ev_bookmark_action_init</a> (<a class="code" href="struct__EvBookmarkAction.html">EvBookmarkAction</a> *action)</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('ev-bookmark-action_8c_source.html','')
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="struct__EvBookmarkAction.html">EvBookmarkAction</a> *action = <a class="code" href="ev-bookmark-action_8h.html#a94ad0f2263e044e8c1ac1cfeba2bd788">EV_BOOKMARK_ACTION</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-dest_8c.html#ae4d5251432e1a9e6803c0240cc492e18a152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-link-dest_8c.html#a0944a4353780132eeab7b06e3e42291da152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>:</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                action-&gt;<a class="code" href="struct__EvBookmarkAction.html#a9e243ea7f60180c31b5a00701788d1ae">page</a> = g_value_get_uint (value);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">default</span>:</div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('ev-bookmark-action_8c_source.html','')
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        gobject_class-&gt;set_property = <a class="code" href="ev-bookmark-action_8c.html#a08a058b98f07e2e626c638411d5ace54">ev_bookmark_action_set_property</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        g_object_class_install_property (gobject_class,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                         <a class="code" href="ev-link-dest_8c.html#ae4d5251432e1a9e6803c0240cc492e18a152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                         <a class="code" href="ev-link-dest_8c.html#a0944a4353780132eeab7b06e3e42291da152797fe61abe42ebed64c158159bed4">PROP_PAGE</a>,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                         g_param_spec_uint (<span class="stringliteral">&quot;page&quot;</span>,</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                            <span class="stringliteral">&quot;Page&quot;</span>,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                            <span class="stringliteral">&quot;The bookmark page&quot;</span>,</div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('ev-bookmark-action_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-bookmark-action_8c.html">ev-bookmark-action.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 10:37:51 for Evince by
+    <li class="footer">Generated on Sat Mar 25 2017 13:05:51 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

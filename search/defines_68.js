@@ -7,5 +7,7 @@ var searchData=
   ['hide_5fcursor_5ftimeout',['HIDE_CURSOR_TIMEOUT',['../ev-view-presentation_8c.html#a5f8fe76f1d8cf0f77883cfc1bdd744d8',1,'ev-view-presentation.c']]],
   ['hoff',['HOFF',['../sp-epsf_8c.html#a6556156866fcaa4a928a8882476002e0',1,'sp-epsf.c']]],
   ['hscale',['HSCALE',['../sp-epsf_8c.html#a20c11344ee0b81dc530d07448b17028b',1,'sp-epsf.c']]],
-  ['hsize',['HSIZE',['../sp-epsf_8c.html#accbc671b9a49dadd822cddd2ef6af38f',1,'sp-epsf.c']]]
+  ['hsize',['HSIZE',['../sp-epsf_8c.html#accbc671b9a49dadd822cddd2ef6af38f',1,'sp-epsf.c']]],
+  ['huffman_5ftable_5fsize',['HUFFMAN_TABLE_SIZE',['../rar_8h.html#a45271d6b28834e49c4e43ecbd7348ebd',1,'rar.h']]],
+  ['huffman_5ftable_5fsize_5f20',['HUFFMAN_TABLE_SIZE_20',['../rar_8h.html#a8ec63e3323418d5721c9b26d37ae10b9',1,'rar.h']]]
 ];

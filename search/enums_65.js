@@ -1,9 +1,15 @@
 var searchData=
 [
+  ['elzmadummy',['ELzmaDummy',['../LzmaDec_8c.html#ad1eccabdcb384e1f414519aad38b95e0',1,'LzmaDec.c']]],
+  ['elzmafinishmode',['ELzmaFinishMode',['../LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a',1,'LzmaDec.h']]],
+  ['elzmastatus',['ELzmaStatus',['../LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a',1,'LzmaDec.h']]],
+  ['entry_5fflags',['entry_flags',['../rar_8h.html#a9693c79997e251dda41a4cd9c4683d47',1,'rar.h']]],
+  ['eszseek',['ESzSeek',['../7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709',1,'7zTypes.h']]],
   ['evannotationssavemask',['EvAnnotationsSaveMask',['../ev-document-annotations_8h.html#a77cffccc0016a394d7e1a14b006fe2ba',1,'ev-document-annotations.h']]],
   ['evannotationtexticon',['EvAnnotationTextIcon',['../ev-annotation_8h.html#a25560e72664a83222e0b251b5f95efbd',1,'ev-annotation.h']]],
   ['evannotationtextmarkuptype',['EvAnnotationTextMarkupType',['../ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcf',1,'ev-annotation.h']]],
   ['evannotationtype',['EvAnnotationType',['../ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568',1,'ev-annotation.h']]],
+  ['evarchivetype',['EvArchiveType',['../ev-archive_8h.html#a91d4702afa755d52fcac7862cfca6314',1,'ev-archive.h']]],
   ['evchrome',['EvChrome',['../ev-window_8c.html#a84d7d18a061ad57bfa46e4ea379e1816',1,'ev-window.c']]],
   ['evcompressiontype',['EvCompressionType',['../ev-file-helpers_8h.html#af9ea4c2d0e68eb5029d1a2b445f0cd4c',1,'ev-file-helpers.h']]],
   ['evdestchange',['EvDestChange',['../ev-link-dest_8c.html#acc1126dc466e45fc5e9cdcc33fcdca9e',1,'ev-link-dest.c']]],

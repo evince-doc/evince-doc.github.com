@@ -132,9 +132,9 @@ $(document).ready(function(){initNavTree('ev-history-action_8c_source.html','');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;glib/gi18n.h&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="ev-history-action_8c.html#a9334a5b9057f32da96db9b5c6a045d67ac37dda0da1a44e10c0504afeeb863f3c">   27</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="ev-history-action_8c.html#a550cb4231d535863c55643bbd2d3c6baac37dda0da1a44e10c0504afeeb863f3c">   27</a></span>&#160;        <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-history-action_8c.html#a9334a5b9057f32da96db9b5c6a045d67a87d2abb28f74f689e11d537c7a0f8a12">   29</a></span>&#160;        <a class="code" href="ev-history-action_8c.html#a9334a5b9057f32da96db9b5c6a045d67a87d2abb28f74f689e11d537c7a0f8a12">PROP_HISTORY</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-history-action_8c.html#a550cb4231d535863c55643bbd2d3c6baa87d2abb28f74f689e11d537c7a0f8a12">   29</a></span>&#160;        <a class="code" href="ev-history-action_8c.html#a550cb4231d535863c55643bbd2d3c6baa87d2abb28f74f689e11d537c7a0f8a12">PROP_HISTORY</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="ev-history-action_8c.html#aa5c4045e941b5c4a890b02367c38f3de">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('ev-history-action_8c_source.html','');
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="struct__EvHistoryActionPrivate.html#a8e97096ae4296e574a5fb3e8a90f1264">   42</a></span>&#160;        gboolean   <a class="code" href="struct__EvHistoryActionPrivate.html#a8e97096ae4296e574a5fb3e8a90f1264">popup_shown</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="gimpcellrenderertoggle_8c.html#a5147f916416de34ae15ae07402203071">G_DEFINE_TYPE</a> (<a class="code" href="struct__EvHistoryAction.html">EvHistoryAction</a>, ev_history_action, GTK_TYPE_BOX)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a> (<a class="code" href="struct__EvHistoryAction.html">EvHistoryAction</a>, ev_history_action, GTK_TYPE_BOX)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;static <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="ev-history-action_8c.html#afa7886048257f9c27cf211694ca0d875">   48</a></span>&#160;<a class="code" href="ev-history-action_8c.html#afa7886048257f9c27cf211694ca0d875">history_menu_link_activated</a> (GtkMenuItem     *item,</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('ev-history-action_8c_source.html','');
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="struct__EvHistoryAction.html">EvHistoryAction</a> *history_action = <a class="code" href="ev-history-action_8h.html#ac6ee4dc749e7a9b5b5229c229dc89982">EV_HISTORY_ACTION</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-history-action_8c.html#a9334a5b9057f32da96db9b5c6a045d67a87d2abb28f74f689e11d537c7a0f8a12">PROP_HISTORY</a>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ev-history-action_8c.html#a550cb4231d535863c55643bbd2d3c6baa87d2abb28f74f689e11d537c7a0f8a12">PROP_HISTORY</a>:</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                history_action-&gt;<a class="code" href="struct__EvHistoryAction.html#a78f61fbb5c98b484a3c96c67b013daa5">priv</a>-&gt;<a class="code" href="struct__EvHistoryActionPrivate.html#ab1fba00a89ad883ce6df1cef51548ffd">history</a> = g_value_get_object (value);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">default</span>:</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('ev-history-action_8c_source.html','');
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        object_class-&gt;set_property = <a class="code" href="ev-history-action_8c.html#a90b97ea5fdbbae2e77013a6ea899f8e3">ev_history_action_set_property</a>;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        g_object_class_install_property (object_class,</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                         <a class="code" href="ev-history-action_8c.html#a9334a5b9057f32da96db9b5c6a045d67a87d2abb28f74f689e11d537c7a0f8a12">PROP_HISTORY</a>,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                         <a class="code" href="ev-history-action_8c.html#a550cb4231d535863c55643bbd2d3c6baa87d2abb28f74f689e11d537c7a0f8a12">PROP_HISTORY</a>,</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                         g_param_spec_object (<span class="stringliteral">&quot;history&quot;</span>,</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                                              <span class="stringliteral">&quot;History&quot;</span>,</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                              <span class="stringliteral">&quot;The History&quot;</span>,</div>
@@ -393,7 +393,7 @@ $(document).ready(function(){initNavTree('ev-history-action_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-history-action_8c.html">ev-history-action.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 10:37:51 for Evince by
+    <li class="footer">Generated on Sat Mar 25 2017 13:05:51 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

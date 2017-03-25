@@ -510,10 +510,10 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
 <div class="line"><a name="l00403"></a><span class="lineno"><a class="code" href="dviread_8c.html#a92bba4b264f815c7677f4a6b53239773">  403</a></span>&#160;<span class="keyword">static</span> <a class="code" href="struct__DviFontRef.html">DviFontRef</a> *<a class="code" href="dviread_8c.html#a92bba4b264f815c7677f4a6b53239773">define_font</a>(DviContext *dvi, <span class="keywordtype">int</span> op)</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;{</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    Int32   arg;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    Int32   scale;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    Int32   dsize;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    Int32   checksum;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   arg;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   scale;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   dsize;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   checksum;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">int</span> hdpi;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordtype">int</span> vdpi;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">int</span> n;</div>
@@ -775,7 +775,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l00667"></a><span class="lineno"><a class="code" href="dviread_8c.html#ad02e4c9dbd7fd0bb63fb4666678a28a5">  667</a></span>&#160;DviContext *<a class="code" href="dviread_8c.html#ad02e4c9dbd7fd0bb63fb4666678a28a5">mdvi_init_context</a>(<a class="code" href="struct__DviParams.html">DviParams</a> *par, <a class="code" href="struct__DviPageSpec.html">DviPageSpec</a> *spec, <span class="keyword">const</span> <span class="keywordtype">char</span> *file)</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;{</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    FILE    *p;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    Int32   arg;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   arg;</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keywordtype">int</span> op;</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keywordtype">long</span>    offset;</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="keywordtype">int</span> n;</div>
@@ -1406,7 +1406,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;</div>
 <div class="line"><a name="l01299"></a><span class="lineno"><a class="code" href="dviread_8c.html#a708166ca0bbb91d553e73c8361d5bb46"> 1299</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dviread_8c.html#a708166ca0bbb91d553e73c8361d5bb46">set_rule</a>(DviContext *dvi, <span class="keywordtype">int</span> opcode)</div>
 <div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;{</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    Int32   a, b;</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   a, b;</div>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    <span class="keywordtype">int</span> h, w;</div>
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;    </div>
 <div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    a = <a class="code" href="dviread_8c.html#a022618eee56e9abc91304e707542c45b">dsget4</a>(dvi);</div>
@@ -1478,7 +1478,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;</div>
 <div class="line"><a name="l01371"></a><span class="lineno"><a class="code" href="dviread_8c.html#a47bb0e20139a100bbbef73a065865633"> 1371</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dviread_8c.html#a47bb0e20139a100bbbef73a065865633">move_right</a>(DviContext *dvi, <span class="keywordtype">int</span> opcode)</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;{</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    Int32   arg;</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   arg;</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    <span class="keywordtype">int</span> h, hh;</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;    </div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    arg = <a class="code" href="dviread_8c.html#aaccc1c956c93a3d2b204ff1654a501fa">dsgetn</a>(dvi, opcode - <a class="code" href="dviopcodes_8h.html#a9d1f838b8fdd29ea54edce6e6adb693e">DVI_RIGHT1</a> + 1);</div>
@@ -1493,7 +1493,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;</div>
 <div class="line"><a name="l01386"></a><span class="lineno"><a class="code" href="dviread_8c.html#ab5e58133614fd972ab64675879b892be"> 1386</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dviread_8c.html#ab5e58133614fd972ab64675879b892be">move_down</a>(DviContext *dvi, <span class="keywordtype">int</span> opcode)</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;{</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    Int32   arg;</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   arg;</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    <span class="keywordtype">int</span> v, vv;</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    </div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    arg = <a class="code" href="dviread_8c.html#aaccc1c956c93a3d2b204ff1654a501fa">dsgetn</a>(dvi, opcode - <a class="code" href="dviopcodes_8h.html#a408ecce12d66ca5c38602d3a23acabd1">DVI_DOWN1</a> + 1);</div>
@@ -1590,7 +1590,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;</div>
 <div class="line"><a name="l01483"></a><span class="lineno"><a class="code" href="dviread_8c.html#a3a4e84de632580974ff33ad472f850d7"> 1483</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dviread_8c.html#a3a4e84de632580974ff33ad472f850d7">sel_fontn</a>(DviContext *dvi, <span class="keywordtype">int</span> opcode)</div>
 <div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;{</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;    Int32   arg;</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   arg;</div>
 <div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;    <a class="code" href="struct__DviFontRef.html">DviFontRef</a> *ref;</div>
 <div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;    </div>
 <div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;    arg = <a class="code" href="dviread_8c.html#a004611ccb20c3c85b7c8b230d8fd3c9e">dugetn</a>(dvi, opcode - <a class="code" href="dviopcodes_8h.html#afc6dbea3ff0c58133626939bdbdd0ec4">DVI_FNT1</a> + 1);</div>
@@ -1612,7 +1612,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l01504"></a><span class="lineno"><a class="code" href="dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150"> 1504</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150">special</a>(DviContext *dvi, <span class="keywordtype">int</span> opcode)</div>
 <div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;{</div>
 <div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;    <span class="keywordtype">char</span>    *s;</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    Int32   arg;</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   arg;</div>
 <div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;    </div>
 <div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;    arg = <a class="code" href="dviread_8c.html#a004611ccb20c3c85b7c8b230d8fd3c9e">dugetn</a>(dvi, opcode - <a class="code" href="dviopcodes_8h.html#a5616e9ae6a9adcdda455a302c1413c06">DVI_XXX1</a> + 1);</div>
 <div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;    <span class="keywordflow">if</span> (arg &lt;= 0) {</div>
@@ -1632,7 +1632,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div class="line"><a name="l01524"></a><span class="lineno"><a class="code" href="dviread_8c.html#a44c4eb36bd7620b12f522acf610fd465"> 1524</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dviread_8c.html#a44c4eb36bd7620b12f522acf610fd465">def_font</a>(DviContext *dvi, <span class="keywordtype">int</span> opcode)</div>
 <div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;{</div>
 <div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;    <a class="code" href="struct__DviFontRef.html">DviFontRef</a> *ref;</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    Int32   arg;</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    <a class="code" href="7zTypes_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>   arg;</div>
 <div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    </div>
 <div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;    arg = <a class="code" href="dviread_8c.html#a004611ccb20c3c85b7c8b230d8fd3c9e">dugetn</a>(dvi, opcode - <a class="code" href="dviopcodes_8h.html#a6740017932eb44abc7aa509996c00043">DVI_FNT_DEF1</a> + 1);</div>
 <div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;    <span class="keywordflow">if</span>(dvi-&gt;<a class="code" href="struct__DviContext.html#ac1432d77fb6d86b009d81b2aaf48e63b">depth</a>)</div>
@@ -1671,7 +1671,7 @@ $(document).ready(function(){initNavTree('dviread_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_df8aa77a9614fb61c4d7f3b0249f87b4.html">backend</a></li><li class="navelem"><a class="el" href="dir_86543262924fc2b5518a210f39a4df54.html">dvi</a></li><li class="navelem"><a class="el" href="dir_7d17c42a7e17eb64fd49723c0ded91db.html">mdvi-lib</a></li><li class="navelem"><a class="el" href="dviread_8c.html">dviread.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 10:37:50 for Evince by
+    <li class="footer">Generated on Sat Mar 25 2017 13:05:50 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
