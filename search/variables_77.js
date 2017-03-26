@@ -15,7 +15,7 @@ var searchData=
   ['window_5fhandle',['window_handle',['../struct__EvMediaPlayer.html#a634203689ec145d9863bfa0e64b8cbe1',1,'_EvMediaPlayer']]],
   ['window_5fmode',['window_mode',['../struct__EvWindowPrivate.html#ad433fee1bb6f530af91dbf610a6a66fa',1,'_EvWindowPrivate']]],
   ['word_5fsymbol',['word_symbol',['../struct__DjvuTextPage.html#a4a846e51f6e416f882ff909580024501',1,'_DjvuTextPage']]],
-  ['write',['write',['../struct__NPPluginFuncs.html#a4469cc48ef16ecb1f4f62aab97b977c4',1,'_NPPluginFuncs::write()'],['../struct__NPNetscapeFuncs.html#a518bb065983fb31dd5d2e9b9aefa9111',1,'_NPNetscapeFuncs::write()'],['../structIByteOut.html#a179e19dc8cfb53be334a776ab92adf04',1,'IByteOut::Write()'],['../structISeqOutStream.html#adaa5708b12db3b5ce1d62da3e85b30d9',1,'ISeqOutStream::Write()']]],
+  ['write',['Write',['../structIByteOut.html#a179e19dc8cfb53be334a776ab92adf04',1,'IByteOut::Write()'],['../structISeqOutStream.html#adaa5708b12db3b5ce1d62da3e85b30d9',1,'ISeqOutStream::Write()'],['../struct__NPPluginFuncs.html#a4469cc48ef16ecb1f4f62aab97b977c4',1,'_NPPluginFuncs::write()'],['../struct__NPNetscapeFuncs.html#a518bb065983fb31dd5d2e9b9aefa9111',1,'_NPNetscapeFuncs::write()']]],
   ['writeready',['writeready',['../struct__NPPluginFuncs.html#ac195e383405cb0f4f0483aaa9afcf59f',1,'_NPPluginFuncs']]],
   ['wx',['wx',['../structCharMetricInfo.html#ad520f770852e9c84f014f722d477e02f',1,'CharMetricInfo']]],
   ['wy',['wy',['../structCharMetricInfo.html#a1c464bfe3e2eafa71e7e0861caf82b40',1,'CharMetricInfo']]]

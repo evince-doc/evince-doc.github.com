@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cache',['Cache',['../structCPpmd7z__RangeEnc.html#aa2044f2b5f2a2b0fb388912ac5914873',1,'CPpmd7z_RangeEnc']]],
+  ['cache_5floaded',['cache_loaded',['../struct__EvDocumentPrivate.html#a361007a6e6a1881738c4b0d1237b9740',1,'_EvDocumentPrivate']]],
   ['cachejobinfo',['CacheJobInfo',['../ev-pixbuf-cache_8c.html#ae54fa05d9c02e5b7120e8eeb9a51e38a',1,'ev-pixbuf-cache.c']]],
   ['cachesize',['CacheSize',['../structCPpmd7z__RangeEnc.html#a81ddbbbe63ab76d8d05b0402ce706e31',1,'CPpmd7z_RangeEnc']]],
   ['cairo_2ddevice_2ec',['cairo-device.c',['../cairo-device_8c.html',1,'']]],

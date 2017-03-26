@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['range',['range',['../structCLzmaDec.html#aabb2c6e9b9c6722d813132d03c59ae34',1,'CLzmaDec::range()'],['../structCPpmd7z__RangeDec.html#a82b1c603dc75e032d5cc27c42be9838e',1,'CPpmd7z_RangeDec::Range()'],['../structCPpmd7z__RangeEnc.html#a7eb517c80438037129858ab42763b014',1,'CPpmd7z_RangeEnc::Range()'],['../structCPpmd8.html#ad01cbc8a24da5016fcfb40d9055dcb4c',1,'CPpmd8::Range()'],['../structCPpmdRAR__RangeDec.html#af5f54597e099c0a4673dc539727a80d9',1,'CPpmdRAR_RangeDec::Range()']]],
+  ['range',['Range',['../structCPpmd7z__RangeDec.html#a82b1c603dc75e032d5cc27c42be9838e',1,'CPpmd7z_RangeDec::Range()'],['../structCPpmd7z__RangeEnc.html#a7eb517c80438037129858ab42763b014',1,'CPpmd7z_RangeEnc::Range()'],['../structCPpmd8.html#ad01cbc8a24da5016fcfb40d9055dcb4c',1,'CPpmd8::Range()'],['../structCPpmdRAR__RangeDec.html#af5f54597e099c0a4673dc539727a80d9',1,'CPpmdRAR_RangeDec::Range()'],['../structCLzmaDec.html#aabb2c6e9b9c6722d813132d03c59ae34',1,'CLzmaDec::range()']]],
   ['range_5fdec',['range_dec',['../structar__archive__rar__uncomp__v3.html#a81154a365597987724274adb73576ea2',1,'ar_archive_rar_uncomp_v3']]],
   ['range_5fdecode',['Range_Decode',['../Ppmd7Dec_8c.html#a9f9f070df50cb3ff1ea9b28393dea5ca',1,'Ppmd7Dec.c']]],
   ['range_5fdecode_5frar',['Range_Decode_RAR',['../uncompress-rar_8c.html#a45bd15965152588d077bf860dc0aaac0',1,'uncompress-rar.c']]],

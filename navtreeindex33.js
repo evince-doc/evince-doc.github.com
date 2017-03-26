@@ -1,5 +1,10 @@
 var NAVTREEINDEX33 =
 {
+"structGetDocumentInfoAsyncData.html#a46e2a18b685d7ed27d2f3c395fa5ff86":[5,0,383,0],
+"structGetDocumentInfoAsyncData.html#a7c4a8cc57372bdd8fa67cc2a0a255743":[5,0,383,4],
+"structGetDocumentInfoAsyncData.html#a7f9a682038db3fffc77efce5c1d2bdd2":[5,0,383,5],
+"structGetDocumentInfoAsyncData.html#a9c385d842725a8f2f4a358eb59cf227f":[5,0,383,3],
+"structGetDocumentInfoAsyncData.html#acf02ba221feee38fa76642a459caebf5":[5,0,383,7],
 "structGlobalFontInfo.html":[5,0,384],
 "structGlobalFontInfo.html#a06ae98179cd0917834e0a629cff13d7b":[5,0,384,15],
 "structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff":[5,0,384,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX33 =
 "struct__DviContext.html#a55310101836c16a8dc48604616f3d233":[5,0,13,34],
 "struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363":[5,0,13,12],
 "struct__DviContext.html#a5c2f30ed6c2fbdce3c551b4a44e0e65f":[5,0,13,22],
-"struct__DviContext.html#a5d6a9b4b6f2149ebb91b2561d67a71da":[5,0,13,9],
-"struct__DviContext.html#a65df20fe8c148ffc1fee41dd6010eb9f":[5,0,13,31],
-"struct__DviContext.html#a6e5f8875b2a6ead3d849f8a9fc6db242":[5,0,13,4],
-"struct__DviContext.html#a87582ad9c3fc9fdc5883289abac499fe":[5,0,13,16],
-"struct__DviContext.html#aa1b2d54d6c6af15ccd7bdde9af11a678":[5,0,13,26],
-"struct__DviContext.html#aa9c40efae0a0e49945111c911688c070":[5,0,13,1]
+"struct__DviContext.html#a5d6a9b4b6f2149ebb91b2561d67a71da":[5,0,13,9]
 };

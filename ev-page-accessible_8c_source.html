@@ -595,9 +595,9 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    page_text = <a class="code" href="ev-page-cache_8c.html#a4ef8fb0e5ddc3fa51069705456e2cfa3">ev_page_cache_get_text</a> (view-&gt;<a class="code" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, self-&gt;priv-&gt;page);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    start_offset = MAX (0, start_offset);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordflow">if</span> (end_offset &lt; 0 || end_offset &gt; g_utf8_strlen (page_text, -1))</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        end_offset = strlen (page_text);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordflow">if</span> (end_offset &lt; 0 || end_offset &gt; g_utf8_strlen (page_text, -1))</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        end_offset = strlen (page_text);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    start_offset = CLAMP (start_offset, 0, end_offset);</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    substring = g_utf8_substring (page_text, start_offset, end_offset);</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    normalized = g_utf8_normalize (substring, -1, G_NORMALIZE_NFKC);</div>
@@ -1389,7 +1389,7 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-page-accessible_8c.html">ev-page-accessible.c</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 18:01:52 for Evince by
+    <li class="footer">Generated on Sun Mar 26 2017 11:15:51 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

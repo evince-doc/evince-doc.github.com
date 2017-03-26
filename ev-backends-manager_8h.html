@@ -182,10 +182,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00616">616</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;{</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <span class="keywordflow">return</span> g_list_copy (<a class="code" href="ev-document-factory_8c.html#ac21706aa5fbb4183a31117ffd12dd218">ev_backends_list</a>);</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00641">641</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;{</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keywordflow">return</span> g_list_copy (<a class="code" href="ev-document-factory_8c.html#ac21706aa5fbb4183a31117ffd12dd218">ev_backends_list</a>);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -215,10 +215,10 @@ Functions</h2></td></tr>
 <p>ev_backends_manager_get_document: : a mime type hint</p>
 <p>Returns: (transfer full): a new <a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> </p>
 
-<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00595">595</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;{</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-document-factory_8c.html#aec5e9fc6bbc52685ddd69e06e9d80ea5">ev_document_factory_new_document_for_mime_type</a> (mime_type, NULL);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00620">620</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;{</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ev-document-factory_8c.html#aec5e9fc6bbc52685ddd69e06e9d80ea5">ev_document_factory_new_document_for_mime_type</a> (mime_type, NULL);</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -246,14 +246,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00601">601</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;{</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <a class="code" href="ev-backend-info_8h.html#a88009840ec126eeb9bca3a130851563b">EvBackendInfo</a> *info = <a class="code" href="ev-document-factory_8c.html#ac477a66e54396e67f8c80718948ca2be">get_backend_info_for_document</a> (document);</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <span class="keywordflow">if</span> (info == NULL)</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <span class="keywordflow">return</span> info-&gt;module_name;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00626">626</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;{</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        <a class="code" href="ev-backend-info_8h.html#a88009840ec126eeb9bca3a130851563b">EvBackendInfo</a> *info = <a class="code" href="ev-document-factory_8c.html#ac477a66e54396e67f8c80718948ca2be">get_backend_info_for_document</a> (document);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordflow">if</span> (info == NULL)</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordflow">return</span> info-&gt;module_name;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -271,10 +271,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00610">610</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;{</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ev-backends-manager_8h.html#a4901e440c825d505d526325cfbdc5e56">EvTypeInfo</a> *) <a class="code" href="ev-document-factory_8c.html#ac477a66e54396e67f8c80718948ca2be">get_backend_info_for_document</a> (document);</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;}</div>
+<p>Definition at line <a class="el" href="ev-document-factory_8c_source.html#l00635">635</a> of file <a class="el" href="ev-document-factory_8c_source.html">ev-document-factory.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;{</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ev-backends-manager_8h.html#a4901e440c825d505d526325cfbdc5e56">EvTypeInfo</a> *) <a class="code" href="ev-document-factory_8c.html#ac477a66e54396e67f8c80718948ca2be">get_backend_info_for_document</a> (document);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-backends-manager_8h.html">ev-backends-manager.h</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 18:01:55 for Evince by
+    <li class="footer">Generated on Sun Mar 26 2017 11:15:54 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

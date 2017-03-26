@@ -1,5 +1,11 @@
 var NAVTREEINDEX38 =
 {
+"struct__EvPageClass.html#a7e19f5569ade2e994cba1567b306a54b":[5,0,203,0],
+"struct__EvPageSize.html":[5,0,204],
+"struct__EvPageSize.html#a2e21cdf590eb9bc4ebeedb184240b4fa":[5,0,204,0],
+"struct__EvPageSize.html#ac8b78befcd209102c0467a62dbf8cb41":[5,0,204,1],
+"struct__EvPasswordView.html":[5,0,205],
+"struct__EvPasswordView.html#a9206606a718c5f05432dc8e1077b0419":[5,0,205,1],
 "struct__EvPasswordView.html#a96997f7586debd8b3598805c08835e46":[5,0,205,0],
 "struct__EvPasswordViewClass.html":[5,0,206],
 "struct__EvPasswordViewClass.html#aa85e453d224f3f2e2590ced62b878e1e":[5,0,206,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX38 =
 "struct__EvSidebarPageInterface.html":[5,0,256],
 "struct__EvSidebarPageInterface.html#a5b21d8fe38496a2c10b6e0486a4434f8":[5,0,256,0],
 "struct__EvSidebarPageInterface.html#a9031bcf9d2fe7ca7946dd535c7ebd3b1":[5,0,256,3],
-"struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0":[5,0,256,2],
-"struct__EvSidebarPageInterface.html#ae9dfd4fff825d3b81a053e1ea12ffa58":[5,0,256,1],
-"struct__EvSidebarPrivate.html":[5,0,257],
-"struct__EvSidebarPrivate.html#a20e6a735e8c8bf3f08ebdebba70420a1":[5,0,257,0],
-"struct__EvSidebarPrivate.html#a418692e682bb8ab96c52631d6232adcf":[5,0,257,2],
-"struct__EvSidebarPrivate.html#a4aecf96cadb4a2cac05f47520e2ec858":[5,0,257,3],
-"struct__EvSidebarPrivate.html#a5e1bd86a0177b8a8e7d2b67935e80b51":[5,0,257,6]
+"struct__EvSidebarPageInterface.html#ab914d34e68822773582fd1df978528f0":[5,0,256,2]
 };

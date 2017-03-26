@@ -34,7 +34,8 @@ var ev_document_8h =
       [ "EV_DOCUMENT_ERROR_ENCRYPTED", "ev-document_8h.html#a29a831b439bb922d443986244f8c3247a7751d3c563e5ac0c325fc4387b38aa75", null ]
     ] ],
     [ "EvDocumentLoadFlags", "ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44", [
-      [ "EV_DOCUMENT_LOAD_FLAG_NONE", "ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44a59d8fbf05ea1887098ff9d5a3f137f0d", null ]
+      [ "EV_DOCUMENT_LOAD_FLAG_NONE", "ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44a59d8fbf05ea1887098ff9d5a3f137f0d", null ],
+      [ "EV_DOCUMENT_LOAD_FLAG_NO_CACHE", "ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44a748377b3c0070850798a2d39d6753d40", null ]
     ] ],
     [ "ev_document_check_dimensions", "ev-document_8h.html#a39210764079953ab5f370f26b2750202", null ],
     [ "ev_document_doc_mutex_lock", "ev-document_8h.html#aa7e208ba39b3be4715c7538faac3f224", null ],
@@ -66,6 +67,7 @@ var ev_document_8h =
     [ "ev_document_has_text_page_labels", "ev-document_8h.html#a4bd68a33d4e8d13f5dbf6f41c6ef58f9", null ],
     [ "ev_document_is_page_size_uniform", "ev-document_8h.html#afaeebc9a2dee44f42ac79819f175de28", null ],
     [ "ev_document_load", "ev-document_8h.html#aca4c4552f9d6890c29d20af9579b425e", null ],
+    [ "ev_document_load_full", "ev-document_8h.html#a577268d8ea3ea03f7f9c515f78c1b3cb", null ],
     [ "ev_document_load_gfile", "ev-document_8h.html#a9c76528ccc2a3203d24aff658d7ef425", null ],
     [ "ev_document_load_stream", "ev-document_8h.html#ab8943112e436c11a8650d7cb80d8cf61", null ],
     [ "ev_document_render", "ev-document_8h.html#a6d5150d56d708dbbe555d737de51d68c", null ],

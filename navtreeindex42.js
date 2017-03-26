@@ -1,5 +1,11 @@
 var NAVTREEINDEX42 =
 {
+"structhuffman__code.html#a6c18592c7ec18de51c7966553e5d9b23":[5,0,385,2],
+"structhuffman__code.html#a880b00730bcacdf87396ef96e847fc97":[5,0,385,4],
+"structhuffman__code.html#ac64a304cc771f518818679c90a124df9":[5,0,385,9],
+"structhuffman__code.html#adfac3b023e6bf6bc93832546d422bb58":[5,0,385,0],
+"structhuffman__code.html#ae7cb7facd64365e0e29717d8dec77c02":[5,0,385,3],
+"structhuffman__code.html#af8b638d76e89becc4dbaf61aaf478480":[5,0,385,7],
 "structpkread.html":[5,0,407],
 "structpkread.html#a8420ead44cb240069f2c38146a77d2ab":[5,0,407,2],
 "structpkread.html#a94dfb8b81d1082ea263eb7f7644d21f8":[5,0,407,0],
@@ -158,8 +164,8 @@ var NAVTREEINDEX42 =
 "synctex__parser_8c.html#a68b44db81f044e077838608b634440ed":[6,0,0,2,2,0,196],
 "synctex__parser_8c.html#a68d11a2cb22716e7abd35cffed7d54c5":[6,0,0,2,2,0,124],
 "synctex__parser_8c.html#a6b6dc9b8b0b48e947a9df8fcd4a6aff5":[6,0,0,2,2,0,18],
-"synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[6,0,0,2,2,0,55],
 "synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[6,0,0,2,2,0,54],
+"synctex__parser_8c.html#a6b7366e2c8ce573069245a5a010a63c8":[6,0,0,2,2,0,55],
 "synctex__parser_8c.html#a6c85cf5e084187eaea7fd439896dec66":[6,0,0,2,2,0,179],
 "synctex__parser_8c.html#a6e54f8b897b0065313e6100a2d0e407d":[6,0,0,2,2,0,225],
 "synctex__parser_8c.html#a6e6a7e16779fd7e7a03c73c9717bf116":[6,0,0,2,2,0,37],
@@ -243,11 +249,5 @@ var NAVTREEINDEX42 =
 "synctex__parser_8c.html#abf367a904d2161ccce967d83b408b9f7":[6,0,0,2,2,0,30],
 "synctex__parser_8c.html#abf415b16ee0d9432183b77e45bfa9fd6":[6,0,0,2,2,0,222],
 "synctex__parser_8c.html#abf429cea3ab8edc549b78175a4541dc7":[6,0,0,2,2,0,230],
-"synctex__parser_8c.html#abf4b00bb5ac77d692c61717d1b446a46":[6,0,0,2,2,0,79],
-"synctex__parser_8c.html#ac07a0405b66b1bf3305677b25522c58a":[6,0,0,2,2,0,167],
-"synctex__parser_8c.html#ac250cc345e5ab4bf92bc2a46b7654d85":[6,0,0,2,2,0,67],
-"synctex__parser_8c.html#ac4512a458f27df584aa7397e4ce14b15":[6,0,0,2,2,0,45],
-"synctex__parser_8c.html#ac730e561637f0ada2c925ce7f59de808":[6,0,0,2,2,0,180],
-"synctex__parser_8c.html#ac7b8ca5ad9ce7026a5d0be4b651a356f":[6,0,0,2,2,0,22],
-"synctex__parser_8c.html#ac8903dc05455e1bdc06ad7ade66eb4a4":[6,0,0,2,2,0,44]
+"synctex__parser_8c.html#abf4b00bb5ac77d692c61717d1b446a46":[6,0,0,2,2,0,79]
 };

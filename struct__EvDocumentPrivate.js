@@ -1,5 +1,6 @@
 var struct__EvDocumentPrivate =
 [
+    [ "cache_loaded", "struct__EvDocumentPrivate.html#a361007a6e6a1881738c4b0d1237b9740", null ],
     [ "file_size", "struct__EvDocumentPrivate.html#af1324ddfa6189f753467a8613327491b", null ],
     [ "info", "struct__EvDocumentPrivate.html#a2669e8725219c651f59c5ba9e4a21bb6", null ],
     [ "max_height", "struct__EvDocumentPrivate.html#aeb7c29ddd4cca2e7e41c450881a2837d", null ],

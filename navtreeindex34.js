@@ -1,5 +1,10 @@
 var NAVTREEINDEX34 =
 {
+"struct__DviContext.html#a65df20fe8c148ffc1fee41dd6010eb9f":[5,0,13,31],
+"struct__DviContext.html#a6e5f8875b2a6ead3d849f8a9fc6db242":[5,0,13,4],
+"struct__DviContext.html#a87582ad9c3fc9fdc5883289abac499fe":[5,0,13,16],
+"struct__DviContext.html#aa1b2d54d6c6af15ccd7bdde9af11a678":[5,0,13,26],
+"struct__DviContext.html#aa9c40efae0a0e49945111c911688c070":[5,0,13,1],
 "struct__DviContext.html#ab4f9515b62acec430c55dddf1744243f":[5,0,13,19],
 "struct__DviContext.html#ab920ca247f78f00dd39179ae73082e28":[5,0,13,29],
 "struct__DviContext.html#ac1432d77fb6d86b009d81b2aaf48e63b":[5,0,13,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX34 =
 "struct__EvAnnotationTextClass.html":[5,0,46],
 "struct__EvAnnotationTextClass.html#a319869f1b61b267504ee6bffe4e7a310":[5,0,46,0],
 "struct__EvAnnotationTextMarkup.html":[5,0,47],
-"struct__EvAnnotationTextMarkup.html#a39c758ab7ea08611c56f013e176fb83e":[5,0,47,0],
-"struct__EvAnnotationTextMarkup.html#ab67d4b972bdd2e09c89bf39286e216bd":[5,0,47,1],
-"struct__EvAnnotationTextMarkupClass.html":[5,0,48],
-"struct__EvAnnotationTextMarkupClass.html#a793fa7ce49d53535a1491ef47efbffff":[5,0,48,0],
-"struct__EvAnnotationWindow.html":[5,0,49],
-"struct__EvAnnotationWindow.html#a14a6dcf1a469978c950663944793dc26":[5,0,49,2]
+"struct__EvAnnotationTextMarkup.html#a39c758ab7ea08611c56f013e176fb83e":[5,0,47,0]
 };

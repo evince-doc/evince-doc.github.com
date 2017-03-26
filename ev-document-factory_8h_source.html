@@ -143,28 +143,31 @@ $(document).ready(function(){initNavTree('ev-document-factory_8h_source.html',''
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span>       <a class="code" href="ev-document-factory_8c.html#a43237071dcbe6d36aefb06f4297a5170">_ev_document_factory_shutdown</a>     (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="struct__EvDocument.html">EvDocument</a>* <a class="code" href="ev-document-factory_8c.html#af3895601021aead454ebfc697e66252a">ev_document_factory_get_document</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *uri, GError **error);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="struct__EvDocument.html">EvDocument</a>* <a class="code" href="ev-document-factory_8c.html#a8ca2d1ea82bdac59bbc1c790fba2176e">ev_document_factory_get_document_for_gfile</a> (GFile *file,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                        <a class="code" href="ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44">EvDocumentLoadFlags</a> flags,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                        GCancellable *cancellable,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                        GError **error);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="struct__EvDocument.html">EvDocument</a>* <a class="code" href="ev-document-factory_8c.html#a2665383bbea34471a5f55c972a8ee977">ev_document_factory_get_document_for_stream</a> (GInputStream *stream,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                         <span class="keyword">const</span> <span class="keywordtype">char</span> *mime_type,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                         <a class="code" href="ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44">EvDocumentLoadFlags</a> flags,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                         GCancellable *cancellable,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                         GError **error);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-document-factory_8c.html#a56ece238a098ed19abacb4fde8cebc1b">ev_document_factory_add_filters</a>  (GtkWidget *chooser, <a class="code" href="struct__EvDocument.html">EvDocument</a> *document);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;G_END_DECLS</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="struct__EvDocument.html">EvDocument</a> *<a class="code" href="ev-document-factory_8c.html#a3cd6d62168f8abdfe4251c26283c9c38">ev_document_factory_get_document_full</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>           *uri,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                           <a class="code" href="ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44">EvDocumentLoadFlags</a>   flags,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                           GError              **error);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="struct__EvDocument.html">EvDocument</a>* <a class="code" href="ev-document-factory_8c.html#a8ca2d1ea82bdac59bbc1c790fba2176e">ev_document_factory_get_document_for_gfile</a> (GFile *file,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                        <a class="code" href="ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44">EvDocumentLoadFlags</a> flags,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                        GCancellable *cancellable,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                        GError **error);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="struct__EvDocument.html">EvDocument</a>* <a class="code" href="ev-document-factory_8c.html#a2665383bbea34471a5f55c972a8ee977">ev_document_factory_get_document_for_stream</a> (GInputStream *stream,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                         <span class="keyword">const</span> <span class="keywordtype">char</span> *mime_type,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                         <a class="code" href="ev-document_8h.html#a1f7635db29a2084c10990387a6ca7a44">EvDocumentLoadFlags</a> flags,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                         GCancellable *cancellable,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                         GError **error);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span>        <a class="code" href="ev-document-factory_8c.html#a56ece238a098ed19abacb4fde8cebc1b">ev_document_factory_add_filters</a>  (GtkWidget *chooser, <a class="code" href="struct__EvDocument.html">EvDocument</a> *document);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;G_END_DECLS</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8afe8fb5d511b91003daab0546f13589.html">libdocument</a></li><li class="navelem"><a class="el" href="ev-document-factory_8h.html">ev-document-factory.h</a></li>
-    <li class="footer">Generated on Sat Mar 25 2017 18:01:51 for Evince by
+    <li class="footer">Generated on Sun Mar 26 2017 11:15:51 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

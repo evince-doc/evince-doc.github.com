@@ -54,6 +54,7 @@ var ev_document_8c =
     [ "ev_document_license_get_web_statement", "ev-document_8c.html#a0e806ffebee922acf8f2bf995450c236", null ],
     [ "ev_document_license_new", "ev-document_8c.html#a10d9a3ac4087a7d3da897b4270e2f9a3", null ],
     [ "ev_document_load", "ev-document_8c.html#aca4c4552f9d6890c29d20af9579b425e", null ],
+    [ "ev_document_load_full", "ev-document_8c.html#a577268d8ea3ea03f7f9c515f78c1b3cb", null ],
     [ "ev_document_load_gfile", "ev-document_8c.html#a9c76528ccc2a3203d24aff658d7ef425", null ],
     [ "ev_document_load_stream", "ev-document_8c.html#ab8943112e436c11a8650d7cb80d8cf61", null ],
     [ "ev_document_render", "ev-document_8c.html#a6d5150d56d708dbbe555d737de51d68c", null ],

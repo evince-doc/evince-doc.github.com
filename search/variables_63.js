@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cache',['Cache',['../structCPpmd7z__RangeEnc.html#aa2044f2b5f2a2b0fb388912ac5914873',1,'CPpmd7z_RangeEnc']]],
+  ['cache_5floaded',['cache_loaded',['../struct__EvDocumentPrivate.html#a361007a6e6a1881738c4b0d1237b9740',1,'_EvDocumentPrivate']]],
   ['cachesize',['CacheSize',['../structCPpmd7z__RangeEnc.html#a81ddbbbe63ab76d8d05b0402ce706e31',1,'CPpmd7z_RangeEnc']]],
   ['can_5fhave_5fpopup',['can_have_popup',['../structEvAnnotationMarkupProps.html#a70a0bb0460ce381d565d91feb492dd69',1,'EvAnnotationMarkupProps']]],
   ['can_5fzoom_5fin',['can_zoom_in',['../struct__EvView.html#a60f9d92e5cbc011d977c2f3cb9015f45',1,'_EvView']]],
