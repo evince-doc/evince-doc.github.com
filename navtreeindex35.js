@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"struct__EvAnnotationTextMarkup.html":[5,0,47],
+"struct__EvAnnotationTextMarkup.html#a39c758ab7ea08611c56f013e176fb83e":[5,0,47,0],
 "struct__EvAnnotationTextMarkup.html#ab67d4b972bdd2e09c89bf39286e216bd":[5,0,47,1],
 "struct__EvAnnotationTextMarkupClass.html":[5,0,48],
 "struct__EvAnnotationTextMarkupClass.html#a793fa7ce49d53535a1491ef47efbffff":[5,0,48,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "struct__EvDocumentPrivate.html#af1324ddfa6189f753467a8613327491b":[5,0,86,1],
 "struct__EvDocumentPrivate.html#af3876b2ce4abe50f9dd292e47076d148":[5,0,86,4],
 "struct__EvDocumentPrivate.html#af3b663076ef603c6fb30ce6a709a2f48":[5,0,86,6],
-"struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528":[5,0,86,8],
-"struct__EvDocumentSecurityInterface.html":[5,0,87],
-"struct__EvDocumentSecurityInterface.html#a3a12241a88d05d901bf2115991ee2aad":[5,0,87,2]
+"struct__EvDocumentPrivate.html#af9f24a9ec74a5ea3da5e6213b3553528":[5,0,86,8]
 };

@@ -7,6 +7,8 @@ var evince_thumbnailer_8c =
     [ "evince_thumbnail_pngenc_get", "evince-thumbnailer_8c.html#a638f5f8576c92621c95ed21261b9243a", null ],
     [ "evince_thumbnail_pngenc_get_async", "evince-thumbnailer_8c.html#ae5b98cb09afa471ed82b935a45a04b3d", null ],
     [ "evince_thumbnailer_get_document", "evince-thumbnailer_8c.html#a3c23f2f39e9337fb609bd7446619bc02", null ],
+    [ "get_local_path", "evince-thumbnailer_8c.html#ab0bdd9ae73b5de4e98fd646a5c6051ab", null ],
+    [ "get_target_uri", "evince-thumbnailer_8c.html#a9c27df0dae4869316d4ad19bfd3f1a31", null ],
     [ "main", "evince-thumbnailer_8c.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
     [ "print_usage", "evince-thumbnailer_8c.html#a3aab4c0e93ff5044dae1f659cf637a50", null ],
     [ "time_monitor", "evince-thumbnailer_8c.html#a3e07434131971aab108bac5d0545323f", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"structGetDocumentInfoAsyncData.html#a44090608eeaf44df258df81c77bc82a3":[5,0,383,6],
+"structGetDocumentInfoAsyncData.html#a467bc265ef280701750bdd932697e4b2":[5,0,383,2],
 "structGetDocumentInfoAsyncData.html#a46e2a18b685d7ed27d2f3c395fa5ff86":[5,0,383,0],
 "structGetDocumentInfoAsyncData.html#a7c4a8cc57372bdd8fa67cc2a0a255743":[5,0,383,4],
 "structGetDocumentInfoAsyncData.html#a7f9a682038db3fffc77efce5c1d2bdd2":[5,0,383,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "struct__DviContext.html#a442e6e5847fb8551df6fef23bd8b96f8":[5,0,13,14],
 "struct__DviContext.html#a52e0ca7e9256095716396831d37f0ca3":[5,0,13,8],
 "struct__DviContext.html#a55310101836c16a8dc48604616f3d233":[5,0,13,34],
-"struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363":[5,0,13,12],
-"struct__DviContext.html#a5c2f30ed6c2fbdce3c551b4a44e0e65f":[5,0,13,22],
-"struct__DviContext.html#a5d6a9b4b6f2149ebb91b2561d67a71da":[5,0,13,9]
+"struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363":[5,0,13,12]
 };
