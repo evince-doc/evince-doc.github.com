@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"structGetDocumentInfoAsyncData.html#a432baba3ee26fe0fbe7510e0358ef882":[5,0,383,1],
 "structGetDocumentInfoAsyncData.html#a44090608eeaf44df258df81c77bc82a3":[5,0,383,6],
 "structGetDocumentInfoAsyncData.html#a467bc265ef280701750bdd932697e4b2":[5,0,383,2],
 "structGetDocumentInfoAsyncData.html#a46e2a18b685d7ed27d2f3c395fa5ff86":[5,0,383,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "struct__DviContext.html#a428cc58e1d0bbb4b74181efd19cca031":[5,0,13,13],
 "struct__DviContext.html#a442e6e5847fb8551df6fef23bd8b96f8":[5,0,13,14],
 "struct__DviContext.html#a52e0ca7e9256095716396831d37f0ca3":[5,0,13,8],
-"struct__DviContext.html#a55310101836c16a8dc48604616f3d233":[5,0,13,34],
-"struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363":[5,0,13,12]
+"struct__DviContext.html#a55310101836c16a8dc48604616f3d233":[5,0,13,34]
 };

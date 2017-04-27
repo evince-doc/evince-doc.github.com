@@ -155,6 +155,7 @@ var ev_window_8c =
     [ "ev_window_hide_loading_message", "ev-window_8c.html#aeb99d9acc9b5aca1ecea50283511ce7b", null ],
     [ "ev_window_inhibit_screensaver", "ev-window_8c.html#a6c469ca7fa6d70309c3c6ed1f2246718", null ],
     [ "ev_window_init", "ev-window_8c.html#ae0b3f58d06ac06d49ccf65faa3ac7272", null ],
+    [ "ev_window_init_css", "ev-window_8c.html#ab945d1761f54a4dc57f79d4472a978e9", null ],
     [ "ev_window_init_metadata_with_default_values", "ev-window_8c.html#aabc3fa0b3c25c911abb19388fb651bb6", null ],
     [ "ev_window_inverted_colors_changed_cb", "ev-window_8c.html#a30e7536e7864bcfbffa1f9e922c19dd9", null ],
     [ "ev_window_is_empty", "ev-window_8c.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf", null ],

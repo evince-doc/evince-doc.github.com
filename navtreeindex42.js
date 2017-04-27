@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"structhuffman__code.html#a26e9306c75f339d73e2049992e8d28e1":[5,0,385,5],
 "structhuffman__code.html#a52efb9927f07d06e978bc99b2ebc0ad0":[5,0,385,6],
 "structhuffman__code.html#a5e207b9b6020fb9d0ab3e1f5d182523b":[5,0,385,8],
 "structhuffman__code.html#a6c18592c7ec18de51c7966553e5d9b23":[5,0,385,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "synctex__parser_8c.html#abe0c9578340f157640ae8b827f70b4e5":[6,0,0,2,2,0,50],
 "synctex__parser_8c.html#abe889e8d76a0059dd42e2de851025234":[6,0,0,2,2,0,11],
 "synctex__parser_8c.html#abeeeca0fddb595536ef45eb22dda6413":[6,0,0,2,2,0,247],
-"synctex__parser_8c.html#abf367a904d2161ccce967d83b408b9f7":[6,0,0,2,2,0,30],
-"synctex__parser_8c.html#abf415b16ee0d9432183b77e45bfa9fd6":[6,0,0,2,2,0,222]
+"synctex__parser_8c.html#abf367a904d2161ccce967d83b408b9f7":[6,0,0,2,2,0,30]
 };

@@ -1756,6 +1756,7 @@ var searchData=
   ['ev_5fwindow_5fhide_5floading_5fmessage',['ev_window_hide_loading_message',['../ev-window_8c.html#aeb99d9acc9b5aca1ecea50283511ce7b',1,'ev-window.c']]],
   ['ev_5fwindow_5finhibit_5fscreensaver',['ev_window_inhibit_screensaver',['../ev-window_8c.html#a6c469ca7fa6d70309c3c6ed1f2246718',1,'ev-window.c']]],
   ['ev_5fwindow_5finit',['ev_window_init',['../ev-window_8c.html#ae0b3f58d06ac06d49ccf65faa3ac7272',1,'ev-window.c']]],
+  ['ev_5fwindow_5finit_5fcss',['ev_window_init_css',['../ev-window_8c.html#ab945d1761f54a4dc57f79d4472a978e9',1,'ev-window.c']]],
   ['ev_5fwindow_5finit_5fmetadata_5fwith_5fdefault_5fvalues',['ev_window_init_metadata_with_default_values',['../ev-window_8c.html#aabc3fa0b3c25c911abb19388fb651bb6',1,'ev-window.c']]],
   ['ev_5fwindow_5finverted_5fcolors_5fchanged_5fcb',['ev_window_inverted_colors_changed_cb',['../ev-window_8c.html#a30e7536e7864bcfbffa1f9e922c19dd9',1,'ev-window.c']]],
   ['ev_5fwindow_5fis_5fempty',['ev_window_is_empty',['../ev-window_8c.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf',1,'ev_window_is_empty(const EvWindow *ev_window):&#160;ev-window.c'],['../ev-window_8h.html#a27acb374de7f1fcb44d9ae5ff5f3ebaf',1,'ev_window_is_empty(const EvWindow *ev_window):&#160;ev-window.c']]],
