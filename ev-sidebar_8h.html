@@ -283,4 +283,314 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a7e64dabbf6cbe8b9f36725f8381044b3"
+<a class="anchor" id="a7e64dabbf6cbe8b9f36725f8381044b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef typedefG_BEGIN_DECLS struct <a class="el" href="struct__EvSidebar.html">_EvSidebar</a> <a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8h_source.html#l00033">33</a> of file <a class="el" href="ev-sidebar_8h_source.html">ev-sidebar.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0513985da4e2bb978fb7d77be11f76b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__EvSidebarClass.html">_EvSidebarClass</a> <a class="el" href="ev-sidebar_8h.html#af0513985da4e2bb978fb7d77be11f76b">EvSidebarClass</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8h_source.html#l00034">34</a> of file <a class="el" href="ev-sidebar_8h_source.html">ev-sidebar.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40e5ab1300dbcc5ff1ffbfb0d4b37ece"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__EvSidebarPrivate.html">_EvSidebarPrivate</a> <a class="el" href="ev-sidebar_8h.html#a40e5ab1300dbcc5ff1ffbfb0d4b37ece">EvSidebarPrivate</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8h_source.html#l00035">35</a> of file <a class="el" href="ev-sidebar_8h_source.html">ev-sidebar.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a07e374f15b88269b906f04e88c7fa89a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_sidebar_add_page </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *&#160;</td>
+          <td class="paramname"><em>ev_sidebar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>main_widget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00432">432</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;{</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    GtkTreeIter iter;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    GtkWidget *menu_item;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    gchar *label_title;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">const</span> gchar *title;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;       </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (ev_sidebar));</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar-page_8h.html#a6cf32d4e5c7737ccaec465a71d07ef19">EV_IS_SIDEBAR_PAGE</a> (main_widget));</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    g_return_if_fail (GTK_IS_WIDGET (main_widget));</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <a class="code" href="ev-sidebar-page_8c.html#a36170d4668090f65bcd60630cc64c948">ev_sidebar_page_set_model</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (main_widget),</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                   ev_sidebar-&gt;priv-&gt;model);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    title = <a class="code" href="ev-sidebar-page_8c.html#a49310b7e3933e5dec9d0b96bab1244ba">ev_sidebar_page_get_label</a> (<a class="code" href="ev-sidebar-page_8h.html#acf33de2090f1773acbed80352cc969bd">EV_SIDEBAR_PAGE</a> (main_widget));</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;       </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    index = gtk_notebook_append_page (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook),</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                      main_widget, NULL);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;       </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    menu_item = gtk_image_menu_item_new_with_label (title);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    g_signal_connect (menu_item, <span class="stringliteral">&quot;activate&quot;</span>,</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#af44b036cbf37a292589f89adf2b9c390">ev_sidebar_menu_item_activate_cb</a>),</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;              ev_sidebar);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    gtk_widget_show (menu_item);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    gtk_menu_shell_append (GTK_MENU_SHELL (ev_sidebar-&gt;priv-&gt;menu),</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                   menu_item);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="comment">/* Insert and move to end */</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    gtk_list_store_insert_with_values (GTK_LIST_STORE (ev_sidebar-&gt;priv-&gt;page_model),</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                       &amp;iter, 0,</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, title,</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, menu_item,</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, main_widget,</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, index,</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                       -1);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    gtk_list_store_move_before(GTK_LIST_STORE(ev_sidebar-&gt;priv-&gt;page_model),</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                       &amp;iter, NULL);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="comment">/* Set the first item added as active */</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    gtk_tree_model_get_iter_first (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    gtk_tree_model_get (ev_sidebar-&gt;priv-&gt;page_model,</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                &amp;iter,</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, &amp;label_title,</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, &amp;index,</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                -1);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    gtk_menu_set_active (GTK_MENU (ev_sidebar-&gt;priv-&gt;menu), index);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    gtk_label_set_text (GTK_LABEL (ev_sidebar-&gt;priv-&gt;label), label_title);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    gtk_notebook_set_current_page (GTK_NOTEBOOK (ev_sidebar-&gt;priv-&gt;notebook),</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                       index);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    g_free (label_title);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8h_a07e374f15b88269b906f04e88c7fa89a_icgraph.svg" width="326" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a93a20d5a779799f82f53048eeb0662af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GType ev_sidebar_get_type </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4041892a870949922598e19858af1c73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWidget* ev_sidebar_new </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00420">420</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;{</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    GtkWidget *ev_sidebar;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    ev_sidebar = g_object_new (<a class="code" href="ev-sidebar_8h.html#a8219c0f4d0ca265e152fb6a6fdf39df0">EV_TYPE_SIDEBAR</a>,</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                   <span class="stringliteral">&quot;orientation&quot;</span>, GTK_ORIENTATION_VERTICAL,</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                   NULL);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">return</span> ev_sidebar;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8h_a4041892a870949922598e19858af1c73_icgraph.svg" width="291" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac386548b488f8327b419dd3e7ff17df6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_sidebar_set_model </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *&#160;</td>
+          <td class="paramname"><em>sidebar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00542">542</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;{</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    g_return_if_fail (<a class="code" href="ev-sidebar_8h.html#a2bf8cd36f5f7589085a30e7d9121eafb">EV_IS_SIDEBAR</a> (sidebar));</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    g_return_if_fail (<a class="code" href="ev-document-model_8h.html#a0ecb17d8d2f20aaabaac492f0f8d5bd4">EV_IS_DOCUMENT_MODEL</a> (model));</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">if</span> (model == sidebar-&gt;priv-&gt;model)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    sidebar-&gt;priv-&gt;model = model;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    g_signal_connect (model, <span class="stringliteral">&quot;notify::document&quot;</span>,</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;              G_CALLBACK (<a class="code" href="ev-sidebar_8c.html#a07c0e8dbddd906462c83106f2851deb5">ev_sidebar_document_changed_cb</a>),</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;              sidebar);</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8h_ac386548b488f8327b419dd3e7ff17df6_icgraph.svg" width="328" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5268901747270ea9f1a4733e5ac5543a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_sidebar_set_page </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-sidebar_8h.html#a7e64dabbf6cbe8b9f36725f8381044b3">EvSidebar</a> *&#160;</td>
+          <td class="paramname"><em>ev_sidebar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>main_widget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ev-sidebar_8c_source.html#l00103">103</a> of file <a class="el" href="ev-sidebar_8c_source.html">ev-sidebar.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    GtkTreeIter iter;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    gboolean valid;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    valid = gtk_tree_model_get_iter_first (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;       </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">while</span> (valid) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        GtkWidget *widget;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        gtk_tree_model_get (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, &amp;widget,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    -1);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;             </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (widget == main_widget) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="ev-sidebar_8c.html#aba6cb075ecbde7736335e2bf2f84d6fd">ev_sidebar_select_page</a> (ev_sidebar, &amp;iter);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            valid = <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            valid = gtk_tree_model_iter_next (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        g_object_unref (widget);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    g_object_notify (G_OBJECT (ev_sidebar), <span class="stringliteral">&quot;current-page&quot;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ev-sidebar_8h_a5268901747270ea9f1a4733e5ac5543a_icgraph.svg" width="4262" height="847"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar_8h.html">ev-sidebar.h</a></li>
+    <li class="footer">Generated on Wed May 3 2017 17:27:56 for Evince by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

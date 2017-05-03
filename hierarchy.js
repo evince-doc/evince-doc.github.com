@@ -375,6 +375,7 @@ var hierarchy =
     [ "EvBrowserPluginClass", "structEvBrowserPluginClass.html", null ],
     [ "EvDoc", "structEvDoc.html", null ],
     [ "EvPrintRange", "structEvPrintRange.html", null ],
+    [ "EvSidebarLinkPageSearch", "structEvSidebarLinkPageSearch.html", null ],
     [ "EvStockIcon", "structEvStockIcon.html", null ],
     [ "EvTimelinePriv", "structEvTimelinePriv.html", null ],
     [ "EvTransitionAnimationPriv", "structEvTransitionAnimationPriv.html", null ],

@@ -17,6 +17,7 @@ var searchData=
   ['begin',['begin',['../struct__EvFileExporterInterface.html#a5bbfb59331bf110055d496c3f7b1050f',1,'_EvFileExporterInterface']]],
   ['begin_5fpage',['begin_page',['../struct__EvFileExporterInterface.html#ab32d9439cadb74dd14a5660ad11a0a00',1,'_EvFileExporterInterface']]],
   ['begin_5fprint',['begin_print',['../struct__EvPrintOperationClass.html#a7405891d71c5ff77b8dc1dbf33d572e1',1,'_EvPrintOperationClass']]],
+  ['best_5fexisting',['best_existing',['../structEvSidebarLinkPageSearch.html#a5d00675bfc2e162f9998ecbf00d37461',1,'EvSidebarLinkPageSearch']]],
   ['bg',['bg',['../structDviCairoDevice.html#a9caf6ed5d06ed9826299a25cabfe1b11',1,'DviCairoDevice::bg()'],['../structColorCache.html#a3237323ce2df1f3e43f91c2edf29736a',1,'ColorCache::bg()'],['../struct__DviFontChar.html#adcaaa96292c1115adc34797ee36b272f',1,'_DviFontChar::bg()'],['../struct__DviParams.html#a51b1ebaf389ff390ccc363f56254ff8a',1,'_DviParams::bg()'],['../struct__DviColorPair.html#a66ec32154e4e74f53b6df392db0c1932',1,'_DviColorPair::bg()']]],
   ['bh',['bh',['../structEpsfBox.html#a045671ebcf269681973c5e09c3584986',1,'EpsfBox']]],
   ['binsumm',['BinSumm',['../structCPpmd7.html#a730903612969bab3ed4ea822cd8b4daa',1,'CPpmd7::BinSumm()'],['../structCPpmd8.html#a108246a43ff4268964bc709bd639e636',1,'CPpmd8::BinSumm()']]],

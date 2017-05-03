@@ -16,7 +16,7 @@ var searchData=
   ['update_5flayers_5fstate',['update_layers_state',['../ev-sidebar-layers_8c.html#ae1613266d70c79c1be41e024962a9200',1,'ev-sidebar-layers.c']]],
   ['update_5fmodel',['update_model',['../ev-page-action_8c.html#a648982e6491b702f583f2f66cd9d563b',1,'ev-page-action.c']]],
   ['update_5fpage_5fcallback',['update_page_callback',['../ev-sidebar-links_8c.html#a3c538d0a50342241fbca496b08635727',1,'ev-sidebar-links.c']]],
-  ['update_5fpage_5fcallback_5fforeach',['update_page_callback_foreach',['../ev-sidebar-links_8c.html#a945efeb4f8695b08989d378671651b69',1,'ev-sidebar-links.c']]],
+  ['update_5fpage_5flink_5ftree_5fforeach',['update_page_link_tree_foreach',['../ev-sidebar-links_8c.html#a6944fdfd1e64ed013d348edbcfddd584',1,'ev-sidebar-links.c']]],
   ['update_5fpages_5flabel',['update_pages_label',['../ev-page-action-widget_8c.html#ab47431f8b081b1447808178ccd6005b1',1,'ev-page-action-widget.c']]],
   ['update_5fprogress_5flabel',['update_progress_label',['../ev-properties-fonts_8c.html#aa6df9cd83ebfc9e2c118b2fc784f20a5',1,'ev-properties-fonts.c']]],
   ['update_5fsizing_5fbuttons',['update_sizing_buttons',['../ev-window_8c.html#a1f61ac20c7343129434afe80252fe739',1,'ev-window.c']]],

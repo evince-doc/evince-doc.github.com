@@ -240,6 +240,7 @@ var searchData=
   ['evsidebarlayers',['EvSidebarLayers',['../ev-sidebar-layers_8h.html#a62af72f0ecb212024272578326dd45ba',1,'ev-sidebar-layers.h']]],
   ['evsidebarlayersclass',['EvSidebarLayersClass',['../ev-sidebar-layers_8h.html#a5fd1ab946e25e116a7420372778c49c3',1,'ev-sidebar-layers.h']]],
   ['evsidebarlayersprivate',['EvSidebarLayersPrivate',['../ev-sidebar-layers_8h.html#a889e7f6bd6cdf16fad6b763d32c46dc4',1,'ev-sidebar-layers.h']]],
+  ['evsidebarlinkpagesearch',['EvSidebarLinkPageSearch',['../ev-sidebar-links_8c.html#a8ecf9a5ca944683a17749f49f705d4e1',1,'ev-sidebar-links.c']]],
   ['evsidebarlinks',['EvSidebarLinks',['../ev-sidebar-links_8h.html#a407c23b9e39b99e6319a7d17d8cd0d3b',1,'ev-sidebar-links.h']]],
   ['evsidebarlinksclass',['EvSidebarLinksClass',['../ev-sidebar-links_8h.html#aa334c010e896222413318f2e901c93c4',1,'ev-sidebar-links.h']]],
   ['evsidebarlinksprivate',['EvSidebarLinksPrivate',['../ev-sidebar-links_8h.html#a3b5eea48290a231d4401376a87ef6a2d',1,'ev-sidebar-links.h']]],

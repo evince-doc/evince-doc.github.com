@@ -1,5 +1,12 @@
 var NAVTREEINDEX44 =
 {
+"tiff-document_8c.html#a1b17118e84a9936f218041c9a3a17da1":[6,0,0,0,5,0,12],
+"tiff-document_8c.html#a25e9772edc9bb073df25b85eb20c81a1":[6,0,0,0,5,0,15],
+"tiff-document_8c.html#a35c7d4aa6452f06b7e8d40df6b3b713f":[6,0,0,0,5,0,3],
+"tiff-document_8c.html#a3aa28d71a48ab924fca63f9aa4cd5260":[6,0,0,0,5,0,14],
+"tiff-document_8c.html#a3f4d5a0e8b4094047e46feb88a3829ec":[6,0,0,0,5,0,8],
+"tiff-document_8c.html#a4d61b09838dcd60ddd0235aa645adc6d":[6,0,0,0,5,0,11],
+"tiff-document_8c.html#a64a1db5e58f10ed257faaf5d24da2948":[6,0,0,0,5,0,23],
 "tiff-document_8c.html#a668d2daffc97721c5150bc80a6bb34f2":[6,0,0,0,5,0,21],
 "tiff-document_8c.html#a6c2ac25668513605e8666572f7aabfd3":[6,0,0,0,5,0,5],
 "tiff-document_8c.html#a7c9609375ee513f3adb96c9d052a7aea":[6,0,0,0,5,0,18],
@@ -60,8 +67,8 @@ var NAVTREEINDEX44 =
 "tiff2ps_8c.html#ad2dcbbea6148cd90f071414a37c29449":[6,0,0,0,5,2,5],
 "tiff2ps_8c.html#addc0ecd98fa35f4ec67196a2d1cf5b76":[6,0,0,0,5,2,14],
 "tiff2ps_8c.html#ae33dcb84ffee66ad961471bd2417848d":[6,0,0,0,5,2,20],
-"tiff2ps_8c.html#ae3ce3f1f3093525937c720ff77ebf1b1":[6,0,0,0,5,2,4],
 "tiff2ps_8c.html#ae3ce3f1f3093525937c720ff77ebf1b1":[6,0,0,0,5,2,3],
+"tiff2ps_8c.html#ae3ce3f1f3093525937c720ff77ebf1b1":[6,0,0,0,5,2,4],
 "tiff2ps_8c.html#aee105c6d702b3adf4ea28e7969d19400":[6,0,0,0,5,2,40],
 "tiff2ps_8c.html#aef3505cbed594ff10c4a0294598a7340":[6,0,0,0,5,2,15],
 "tiff2ps_8c.html#af0eb8f58754e312b5916d5f7c54bd4cf":[6,0,0,0,5,2,43],
@@ -242,12 +249,5 @@ var NAVTREEINDEX44 =
 "xps-document_8c.html#ab373684ea3e0f08b96f091d809bdf31f":[6,0,0,0,6,0,3],
 "xps-document_8c.html#ab71bed1cb4a83c2194051ac756be80a9":[6,0,0,0,6,0,8],
 "xps-document_8c.html#abd241273bf9deec2f005761128903eea":[6,0,0,0,6,0,18],
-"xps-document_8c.html#ad9455419e0c27981691abe28383abe81":[6,0,0,0,6,0,13],
-"xps-document_8c.html#af26c3139ad350dc90fa03f17273473ff":[6,0,0,0,6,0,22],
-"xps-document_8c_source.html":[6,0,0,0,6,0],
-"xps-document_8h.html":[6,0,0,0,6,1],
-"xps-document_8h.html#a090b06ec25f2ac9acf31eb9d43285625":[6,0,0,0,6,1,7],
-"xps-document_8h.html#a11b2c2c6c58c537330b631a0f96fe2fb":[6,0,0,0,6,1,6],
-"xps-document_8h.html#a12fb74d61bbab846f8e84dede9283500":[6,0,0,0,6,1,1],
-"xps-document_8h.html#a591b07e7e472dcf55377198f41d67ca7":[6,0,0,0,6,1,0]
+"xps-document_8c.html#ad9455419e0c27981691abe28383abe81":[6,0,0,0,6,0,13]
 };

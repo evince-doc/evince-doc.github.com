@@ -1,7 +1,9 @@
 var ev_sidebar_links_8c =
 [
     [ "_EvSidebarLinksPrivate", "struct__EvSidebarLinksPrivate.html", "struct__EvSidebarLinksPrivate" ],
+    [ "EvSidebarLinkPageSearch", "structEvSidebarLinkPageSearch.html", "structEvSidebarLinkPageSearch" ],
     [ "EV_SIDEBAR_LINKS_GET_PRIVATE", "ev-sidebar-links_8c.html#a849feb1a04397df8051d1ff88404d9ca", null ],
+    [ "EvSidebarLinkPageSearch", "ev-sidebar-links_8c.html#a8ecf9a5ca944683a17749f49f705d4e1", null ],
     [ "PROP_0", "ev-sidebar-links_8c.html#a950bf8e3371138ceb9649d45e9a96340ac37dda0da1a44e10c0504afeeb863f3c", null ],
     [ "PROP_MODEL", "ev-sidebar-links_8c.html#a950bf8e3371138ceb9649d45e9a96340a9987134ccfd1f65ffdb5f41082d4929b", null ],
     [ "PROP_WIDGET", "ev-sidebar-links_8c.html#a950bf8e3371138ceb9649d45e9a96340abf7866167c9f740bdacaa103a372b335", null ],
@@ -27,11 +29,13 @@ var ev_sidebar_links_8c =
     [ "expand_open_links", "ev-sidebar-links_8c.html#a4c3b5038dc6e3c3d41ad13c2733842eb", null ],
     [ "G_DEFINE_TYPE_EXTENDED", "ev-sidebar-links_8c.html#a7a3ebfe170dc6d63344c943ecb540065", null ],
     [ "job_finished_callback", "ev-sidebar-links_8c.html#abcd783c1ce74d6bbc028ff94abf8d2b5", null ],
+    [ "page_link_tree_search_best_page", "ev-sidebar-links_8c.html#a0f2e2d28d6806292e1a330e7aff4e76c", null ],
+    [ "page_link_tree_sort", "ev-sidebar-links_8c.html#af5ac7be470419c6f4b387ffa78222a0f", null ],
     [ "popup_menu_cb", "ev-sidebar-links_8c.html#abe1a4034faf4b70391744d2ff4a820de", null ],
     [ "print_section_cb", "ev-sidebar-links_8c.html#ab43ad085b32adc60e0ea55d948157b57", null ],
     [ "row_activated_callback", "ev-sidebar-links_8c.html#a7c779a52b17ae313f0d1bdb4af0f4cb2", null ],
     [ "selection_changed_callback", "ev-sidebar-links_8c.html#a0c7b13c7dd851612c6d54cf2479ce073", null ],
     [ "update_page_callback", "ev-sidebar-links_8c.html#a3c538d0a50342241fbca496b08635727", null ],
-    [ "update_page_callback_foreach", "ev-sidebar-links_8c.html#a945efeb4f8695b08989d378671651b69", null ],
+    [ "update_page_link_tree_foreach", "ev-sidebar-links_8c.html#a6944fdfd1e64ed013d348edbcfddd584", null ],
     [ "signals", "ev-sidebar-links_8c.html#a0a1f3b4115443be584fb31149d06f84c", null ]
 ];

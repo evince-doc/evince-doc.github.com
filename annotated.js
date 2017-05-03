@@ -375,6 +375,7 @@ var annotated =
     [ "EvBrowserPluginClass", "structEvBrowserPluginClass.html", "structEvBrowserPluginClass" ],
     [ "EvDoc", "structEvDoc.html", "structEvDoc" ],
     [ "EvPrintRange", "structEvPrintRange.html", "structEvPrintRange" ],
+    [ "EvSidebarLinkPageSearch", "structEvSidebarLinkPageSearch.html", "structEvSidebarLinkPageSearch" ],
     [ "EvStockIcon", "structEvStockIcon.html", "structEvStockIcon" ],
     [ "EvTimelinePriv", "structEvTimelinePriv.html", "structEvTimelinePriv" ],
     [ "EvTransitionAnimationPriv", "structEvTransitionAnimationPriv.html", "structEvTransitionAnimationPriv" ],

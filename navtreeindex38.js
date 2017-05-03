@@ -1,5 +1,11 @@
 var NAVTREEINDEX38 =
 {
+"struct__EvPageCacheData.html#a648d18cdb83537e52646a18a8d2b34e5":[5,0,202,14],
+"struct__EvPageCacheData.html#a7556a2bdbba4828fe05aa10da37e4229":[5,0,202,15],
+"struct__EvPageCacheData.html#a88e9d75e52510f0e2e2082bd4a5a81b6":[5,0,202,9],
+"struct__EvPageCacheData.html#a918fa76894477ac5b1a274648e452400":[5,0,202,6],
+"struct__EvPageCacheData.html#aaf2b314678f907e2f9894eb7ab3a0f62":[5,0,202,3],
+"struct__EvPageCacheData.html#ac5d835b6dc82042eab5e7c6d40c41b87":[5,0,202,5],
 "struct__EvPageCacheData.html#acf4213cf0ebffadcf746cd11fbda1327":[5,0,202,10],
 "struct__EvPageCacheData.html#adaebef2573529388631e9e98a5ad3b16":[5,0,202,4],
 "struct__EvPageClass.html":[5,0,203],
@@ -241,13 +247,7 @@ var NAVTREEINDEX38 =
 "struct__EvSidebarLinksClass.html#a66ed44a76657dd2f8de8701b390542c4":[5,0,254,0],
 "struct__EvSidebarLinksClass.html#ada26748d74730dcfeb5fda32b8620521":[5,0,254,1],
 "struct__EvSidebarLinksPrivate.html":[5,0,255],
-"struct__EvSidebarLinksPrivate.html#a4faa4762616255c2be223d9cda0c1d46":[5,0,255,5],
-"struct__EvSidebarLinksPrivate.html#a5f4a2ead74e09c4758bf59fcba0d366d":[5,0,255,7],
-"struct__EvSidebarLinksPrivate.html#a7304adbdaf01c10a08d972513dc2650d":[5,0,255,4],
-"struct__EvSidebarLinksPrivate.html#a92d5abb02e47b877f446a1dca1b2c050":[5,0,255,2],
-"struct__EvSidebarLinksPrivate.html#a9fe956ba44bba7d247af95997de0b674":[5,0,255,0],
-"struct__EvSidebarLinksPrivate.html#aa230d783611dd99cfd2fd214ede39df3":[5,0,255,6],
-"struct__EvSidebarLinksPrivate.html#ad8604082bb9264eb5a57f4947dd4c3e7":[5,0,255,1],
-"struct__EvSidebarLinksPrivate.html#aff42dfbce5cc37c852a83fa2b0132148":[5,0,255,3],
-"struct__EvSidebarPageInterface.html":[5,0,256]
+"struct__EvSidebarLinksPrivate.html#a0e770311d3ec3556e485b5bac234dfc4":[5,0,255,5],
+"struct__EvSidebarLinksPrivate.html#a4faa4762616255c2be223d9cda0c1d46":[5,0,255,6],
+"struct__EvSidebarLinksPrivate.html#a5f4a2ead74e09c4758bf59fcba0d366d":[5,0,255,8]
 };
