@@ -1,7 +1,7 @@
 var searchData=
 [
   ['uchar',['Uchar',['../sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2',1,'sysdeps.h']]],
-  ['uint',['Uint',['../sysdeps_8h.html#a4840c4503b7d10cea5e08416eb3716f1',1,'Uint():&#160;sysdeps.h'],['../sysdeps_8h.html#a72f3b9c93d14360be2ab10b2cd7f55ec',1,'UINT():&#160;sysdeps.h']]],
+  ['uint',['UINT',['../sysdeps_8h.html#a72f3b9c93d14360be2ab10b2cd7f55ec',1,'UINT():&#160;sysdeps.h'],['../sysdeps_8h.html#a4840c4503b7d10cea5e08416eb3716f1',1,'Uint():&#160;sysdeps.h']]],
   ['uint16',['UInt16',['../7zTypes_8h.html#accc14a7c843716dfed734f3a03e8d2b6',1,'7zTypes.h']]],
   ['uint32',['UInt32',['../7zTypes_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86',1,'7zTypes.h']]],
   ['uint64',['UInt64',['../7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e',1,'7zTypes.h']]],

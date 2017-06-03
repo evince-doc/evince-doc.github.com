@@ -18,7 +18,7 @@ var ev_sidebar_thumbnails_8c =
     [ "PROP_WIDGET", "ev-sidebar-thumbnails_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bbabf7866167c9f740bdacaa103a372b335", null ],
     [ "add_range", "ev-sidebar-thumbnails_8c.html#a7033ac599561b3e3b2e61a9a10fc1b20", null ],
     [ "adjustment_changed_cb", "ev-sidebar-thumbnails_8c.html#ab1741c2ebac19c67519bbaecb153de0f", null ],
-    [ "clear_range", "ev-sidebar-thumbnails_8c.html#a6ad2170f4ed432f1a77f31ada788e207", null ],
+    [ "cancel_running_jobs", "ev-sidebar-thumbnails_8c.html#afccfb27891b72a3f3caf6b5963656d64", null ],
     [ "ev_sidebar_icon_selection_changed", "ev-sidebar-thumbnails_8c.html#ac1d7b20d500cac2d20efd6fae82eb90e", null ],
     [ "ev_sidebar_init_icon_view", "ev-sidebar-thumbnails_8c.html#a958fbbfae0dd0ff3e7cd636313ef2565", null ],
     [ "ev_sidebar_init_tree_view", "ev-sidebar-thumbnails_8c.html#ae447ab9a47060fe1fd156f941bc1dd03", null ],
