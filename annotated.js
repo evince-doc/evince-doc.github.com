@@ -347,7 +347,7 @@ var annotated =
     [ "Buffer", "structBuffer.html", "structBuffer" ],
     [ "ByteReader", "structByteReader.html", "structByteReader" ],
     [ "CharMetricInfo", "structCharMetricInfo.html", "structCharMetricInfo" ],
-    [ "CLookToRead", "structCLookToRead.html", "structCLookToRead" ],
+    [ "CLookToRead2", "structCLookToRead2.html", "structCLookToRead2" ],
     [ "CLzmaDec", "structCLzmaDec.html", "structCLzmaDec" ],
     [ "ColorCache", "structColorCache.html", "structColorCache" ],
     [ "CompCharData", "structCompCharData.html", "structCompCharData" ],

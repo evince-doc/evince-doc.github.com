@@ -1,5 +1,5 @@
 var structISzAlloc =
 [
-    [ "Alloc", "structISzAlloc.html#aa23d8aed7f6055493a4774bca8804f96", null ],
-    [ "Free", "structISzAlloc.html#a9d8d13ae38d826a88a58caabe52b4f1a", null ]
+    [ "Alloc", "structISzAlloc.html#a2f3b0c7de5da2ce3921cbd511ad7229f", null ],
+    [ "Free", "structISzAlloc.html#a6e0eac7ce75db69121d418d3c2dfbb25", null ]
 ];

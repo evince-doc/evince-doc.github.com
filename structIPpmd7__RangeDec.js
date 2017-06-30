@@ -1,6 +1,6 @@
 var structIPpmd7__RangeDec =
 [
-    [ "Decode", "structIPpmd7__RangeDec.html#a196393171fa7bd681d14804b79219011", null ],
-    [ "DecodeBit", "structIPpmd7__RangeDec.html#ae1ede33b33ea6b05114f1ce9f672b2a1", null ],
-    [ "GetThreshold", "structIPpmd7__RangeDec.html#a46876f907d503c08ae51acc1676028ee", null ]
+    [ "Decode", "structIPpmd7__RangeDec.html#aab6cdf4f61e30f46eceb7423e0fb8e3c", null ],
+    [ "DecodeBit", "structIPpmd7__RangeDec.html#ad5e3212ffe55267bd081be5059ee17dd", null ],
+    [ "GetThreshold", "structIPpmd7__RangeDec.html#a72f1c6c7b0b283e4f0c48cf98c827b26", null ]
 ];

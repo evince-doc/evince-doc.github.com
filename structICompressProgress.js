@@ -1,4 +1,4 @@
 var structICompressProgress =
 [
-    [ "Progress", "structICompressProgress.html#a6c9f049d784deacce9ba61bc7f42dd9f", null ]
+    [ "Progress", "structICompressProgress.html#a589e7d7e757c9d0d99403489cc77612d", null ]
 ];

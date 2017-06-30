@@ -106,8 +106,11 @@ var searchData=
   ['muget4',['muget4',['../common_8h.html#a47a7ef0ad87da53d79bb31cf631b1c41',1,'common.h']]],
   ['mugetn',['MUGETN',['../common_8h.html#ab5872508b6d4614549a2842be0171c0d',1,'common.h']]],
   ['my_5fcdecl',['MY_CDECL',['../7zTypes_8h.html#a959aa84c48968de4bf433c8ff1df79f1',1,'7zTypes.h']]],
+  ['my_5fcontainer_5fof',['MY_container_of',['../7zTypes_8h.html#ab8d03ff205b29c0c1bb61d92bf83333b',1,'7zTypes.h']]],
   ['my_5ffast_5fcall',['MY_FAST_CALL',['../7zTypes_8h.html#a110c47f40f3e25a133e3e7254be002d2',1,'7zTypes.h']]],
+  ['my_5fforce_5finline',['MY_FORCE_INLINE',['../7zTypes_8h.html#a7817ee68f62347effd6f8b72e0bb6d13',1,'7zTypes.h']]],
   ['my_5fno_5finline',['MY_NO_INLINE',['../7zTypes_8h.html#a28313a809627d7c1a2c304a58f7e5d2b',1,'7zTypes.h']]],
+  ['my_5foffsetof',['MY_offsetof',['../7zTypes_8h.html#aa66b293325162a4853930eac1abaff15',1,'7zTypes.h']]],
   ['my_5fstd_5fcall',['MY_STD_CALL',['../7zTypes_8h.html#a4385c51cc2072fe46ce660c3047f9432',1,'7zTypes.h']]],
   ['mymem12cpy',['MyMem12Cpy',['../Ppmd7_8c.html#a8a2996afe2d0916ea56b70bbbbf3e155',1,'MyMem12Cpy():&#160;Ppmd7.c'],['../Ppmd8_8c.html#a8a2996afe2d0916ea56b70bbbbf3e155',1,'MyMem12Cpy():&#160;Ppmd8.c']]]
 ];

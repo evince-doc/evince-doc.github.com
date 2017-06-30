@@ -146,7 +146,7 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structILookInStream.html">ILookInStream</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLookToRead.html">CLookToRead</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLookToRead2.html">CLookToRead2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCSecToLook.html">CSecToLook</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,16 +205,54 @@ Macros</h2></td></tr>
 <tr class="separator:a4385c51cc2072fe46ce660c3047f9432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28313a809627d7c1a2c304a58f7e5d2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a28313a809627d7c1a2c304a58f7e5d2b">MY_NO_INLINE</a></td></tr>
 <tr class="separator:a28313a809627d7c1a2c304a58f7e5d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7817ee68f62347effd6f8b72e0bb6d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a7817ee68f62347effd6f8b72e0bb6d13">MY_FORCE_INLINE</a></td></tr>
+<tr class="separator:a7817ee68f62347effd6f8b72e0bb6d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a959aa84c48968de4bf433c8ff1df79f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a959aa84c48968de4bf433c8ff1df79f1">MY_CDECL</a></td></tr>
 <tr class="separator:a959aa84c48968de4bf433c8ff1df79f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a110c47f40f3e25a133e3e7254be002d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a110c47f40f3e25a133e3e7254be002d2">MY_FAST_CALL</a></td></tr>
 <tr class="separator:a110c47f40f3e25a133e3e7254be002d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6746b15e9715cc139768a20c2cbd65c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a6746b15e9715cc139768a20c2cbd65c5">LookToRead_BUF_SIZE</a>&#160;&#160;&#160;(1 &lt;&lt; 14)</td></tr>
-<tr class="separator:a6746b15e9715cc139768a20c2cbd65c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3678ea20bd39ee401e7fad8d155f9ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#ad3678ea20bd39ee401e7fad8d155f9ea">IAlloc_Alloc</a>(p, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;(p)-&gt;Alloc((p), <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="memitem:aa57a04aebf21e2be4d93e48e4790754b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#aa57a04aebf21e2be4d93e48e4790754b">IByteIn_Read</a>(p)&#160;&#160;&#160;(p)-&gt;Read(p)</td></tr>
+<tr class="separator:aa57a04aebf21e2be4d93e48e4790754b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b3a6c539558850d241b49c09a0eb2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a96b3a6c539558850d241b49c09a0eb2a">IByteOut_Write</a>(p, b)&#160;&#160;&#160;(p)-&gt;Write(p, b)</td></tr>
+<tr class="separator:a96b3a6c539558850d241b49c09a0eb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259d1d377299e17c9322849dab81fd17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a259d1d377299e17c9322849dab81fd17">ISeqInStream_Read</a>(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;(p)-&gt;Read(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:a259d1d377299e17c9322849dab81fd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d13f62da5fdf0cc64d1e7f0a9e1a7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a36d13f62da5fdf0cc64d1e7f0a9e1a7b">ISeqOutStream_Write</a>(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;(p)-&gt;Write(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:a36d13f62da5fdf0cc64d1e7f0a9e1a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdc1d583c7dd3ebfdc13d1629462308"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#adfdc1d583c7dd3ebfdc13d1629462308">ISeekInStream_Read</a>(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;(p)-&gt;Read(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:adfdc1d583c7dd3ebfdc13d1629462308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568d66db34d14c958e9a6fd8bfca4658"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a568d66db34d14c958e9a6fd8bfca4658">ISeekInStream_Seek</a>(p, pos, origin)&#160;&#160;&#160;(p)-&gt;Seek(p, pos, origin)</td></tr>
+<tr class="separator:a568d66db34d14c958e9a6fd8bfca4658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd593ef4247198d0561a7996897b570"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a7fd593ef4247198d0561a7996897b570">ILookInStream_Look</a>(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;(p)-&gt;Look(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:a7fd593ef4247198d0561a7996897b570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dee6a5e10a70fec8759fad79e6e8bcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a0dee6a5e10a70fec8759fad79e6e8bcf">ILookInStream_Skip</a>(p, offset)&#160;&#160;&#160;(p)-&gt;Skip(p, offset)</td></tr>
+<tr class="separator:a0dee6a5e10a70fec8759fad79e6e8bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4434ef50f22dca6b1995e172ca69aa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#af4434ef50f22dca6b1995e172ca69aa7">ILookInStream_Read</a>(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;(p)-&gt;Read(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:af4434ef50f22dca6b1995e172ca69aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28393154565ac13cf2c37b4e7d9ccadd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a28393154565ac13cf2c37b4e7d9ccadd">ILookInStream_Seek</a>(p, pos, origin)&#160;&#160;&#160;(p)-&gt;Seek(p, pos, origin)</td></tr>
+<tr class="separator:a28393154565ac13cf2c37b4e7d9ccadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fc854431ba76edb2bd7f95bf30900d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#aa0fc854431ba76edb2bd7f95bf30900d">LookToRead2_Init</a>(p)&#160;&#160;&#160;{ (p)-&gt;pos = (p)-&gt;<a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a> = 0; }</td></tr>
+<tr class="separator:aa0fc854431ba76edb2bd7f95bf30900d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0355aa32fa5ac2571432046fb0e4ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#aaa0355aa32fa5ac2571432046fb0e4ed">ICompressProgress_Progress</a>(p, inSize, outSize)&#160;&#160;&#160;(p)-&gt;Progress(p, inSize, outSize)</td></tr>
+<tr class="separator:aaa0355aa32fa5ac2571432046fb0e4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9689de23ec9d710309f99527053a4097"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a9689de23ec9d710309f99527053a4097">ISzAlloc_Alloc</a>(p, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;(p)-&gt;Alloc(p, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:a9689de23ec9d710309f99527053a4097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63316e89578d43fcfc526678cdbb3b79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a63316e89578d43fcfc526678cdbb3b79">ISzAlloc_Free</a>(p, a)&#160;&#160;&#160;(p)-&gt;Free(p, a)</td></tr>
+<tr class="separator:a63316e89578d43fcfc526678cdbb3b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3678ea20bd39ee401e7fad8d155f9ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#ad3678ea20bd39ee401e7fad8d155f9ea">IAlloc_Alloc</a>(p, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#a9689de23ec9d710309f99527053a4097">ISzAlloc_Alloc</a>(p, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
 <tr class="separator:ad3678ea20bd39ee401e7fad8d155f9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af11f41042cd291603058f3f0d47febe3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#af11f41042cd291603058f3f0d47febe3">IAlloc_Free</a>(p, a)&#160;&#160;&#160;(p)-&gt;Free((p), a)</td></tr>
+<tr class="memitem:af11f41042cd291603058f3f0d47febe3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#af11f41042cd291603058f3f0d47febe3">IAlloc_Free</a>(p, a)&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#a63316e89578d43fcfc526678cdbb3b79">ISzAlloc_Free</a>(p, a)</td></tr>
 <tr class="separator:af11f41042cd291603058f3f0d47febe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66b293325162a4853930eac1abaff15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#aa66b293325162a4853930eac1abaff15">MY_offsetof</a>(type, m)&#160;&#160;&#160;((size_t)&amp;(((type *)0)-&gt;m))</td></tr>
+<tr class="separator:aa66b293325162a4853930eac1abaff15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d03ff205b29c0c1bb61d92bf83333b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#ab8d03ff205b29c0c1bb61d92bf83333b">MY_container_of</a>(ptr, type, m)&#160;&#160;&#160;((type *)((char *)(1 ? (ptr) : &amp;((type *)0)-&gt;m) - <a class="el" href="7zTypes_8h.html#aa66b293325162a4853930eac1abaff15">MY_offsetof</a>(type, m)))</td></tr>
+<tr class="separator:ab8d03ff205b29c0c1bb61d92bf83333b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0e19dc7c7b183b55f40afdb3929f63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a3c0e19dc7c7b183b55f40afdb3929f63">CONTAINER_FROM_VTBL_SIMPLE</a>(ptr, type, m)&#160;&#160;&#160;((type *)(ptr))</td></tr>
+<tr class="separator:a3c0e19dc7c7b183b55f40afdb3929f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb4b3245a3bfeda953ddd1a3f1b30a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#adfb4b3245a3bfeda953ddd1a3f1b30a9">CONTAINER_FROM_VTBL</a>(ptr, type, m)&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#ab8d03ff205b29c0c1bb61d92bf83333b">MY_container_of</a>(ptr, type, m)</td></tr>
+<tr class="separator:adfb4b3245a3bfeda953ddd1a3f1b30a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e0d9b88596e73240d842e48dffeb56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#af2e0d9b88596e73240d842e48dffeb56">CONTAINER_FROM_VTBL_CLS</a>(ptr, type, m)&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#a3c0e19dc7c7b183b55f40afdb3929f63">CONTAINER_FROM_VTBL_SIMPLE</a>(ptr, type, m)</td></tr>
+<tr class="separator:af2e0d9b88596e73240d842e48dffeb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6c667ad21477a940183563afc6d3419"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#af6c667ad21477a940183563afc6d3419">CHAR_PATH_SEPARATOR</a>&#160;&#160;&#160;'/'</td></tr>
 <tr class="separator:af6c667ad21477a940183563afc6d3419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c181fe5c3cf0c6c238002abe03d14a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a88c181fe5c3cf0c6c238002abe03d14a">WCHAR_PATH_SEPARATOR</a>&#160;&#160;&#160;L'/'</td></tr>
@@ -248,6 +286,24 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4f8e2163e01de507a0ac376e8ec2b796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdcfe6db5bea87bd493a3fe2c513d5ef"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#afdcfe6db5bea87bd493a3fe2c513d5ef">Bool</a></td></tr>
 <tr class="separator:afdcfe6db5bea87bd493a3fe2c513d5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac534585e73a37e9c76fc157eafa66f38"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structIByteIn.html">IByteIn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#ac534585e73a37e9c76fc157eafa66f38">IByteIn</a></td></tr>
+<tr class="separator:ac534585e73a37e9c76fc157eafa66f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ba07112f91a5d6dda4388b3bd8c0ba"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structIByteOut.html">IByteOut</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a33ba07112f91a5d6dda4388b3bd8c0ba">IByteOut</a></td></tr>
+<tr class="separator:a33ba07112f91a5d6dda4388b3bd8c0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49313db46cb805e8b3dac5d857e02fed"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structISeqInStream.html">ISeqInStream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a49313db46cb805e8b3dac5d857e02fed">ISeqInStream</a></td></tr>
+<tr class="separator:a49313db46cb805e8b3dac5d857e02fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2ed92b746a43cb10995d7931df0787"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structISeqOutStream.html">ISeqOutStream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a6c2ed92b746a43cb10995d7931df0787">ISeqOutStream</a></td></tr>
+<tr class="separator:a6c2ed92b746a43cb10995d7931df0787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53b15d8a5fdb82f990a324911e30977"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structISeekInStream.html">ISeekInStream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#ae53b15d8a5fdb82f990a324911e30977">ISeekInStream</a></td></tr>
+<tr class="separator:ae53b15d8a5fdb82f990a324911e30977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd926dbf7daf119746b1926c39e3c57a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structILookInStream.html">ILookInStream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#acd926dbf7daf119746b1926c39e3c57a">ILookInStream</a></td></tr>
+<tr class="separator:acd926dbf7daf119746b1926c39e3c57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6a36e9a9d0b1071de96f881940bdc7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structICompressProgress.html">ICompressProgress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a0d6a36e9a9d0b1071de96f881940bdc7">ICompressProgress</a></td></tr>
+<tr class="separator:a0d6a36e9a9d0b1071de96f881940bdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919219795bb46d5dc773160ffdd5854c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structISzAlloc.html">ISzAlloc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a919219795bb46d5dc773160ffdd5854c">ISzAlloc</a></td></tr>
+<tr class="separator:a919219795bb46d5dc773160ffdd5854c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4adfdfaac2d8d9a65f1d6c82ac9f1e"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="structISzAlloc.html">ISzAlloc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#ada4adfdfaac2d8d9a65f1d6c82ac9f1e">ISzAllocPtr</a></td></tr>
+<tr class="separator:ada4adfdfaac2d8d9a65f1d6c82ac9f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -259,24 +315,22 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a35a015a7aef8a42df451730645548a84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a35a015a7aef8a42df451730645548a84">SeqInStream_Read</a> (<a class="el" href="structISeqInStream.html">ISeqInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
-<tr class="separator:a35a015a7aef8a42df451730645548a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8f096a8c4ba6c59f1f5357f5b446f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#acd8f096a8c4ba6c59f1f5357f5b446f7">SeqInStream_Read2</a> (<a class="el" href="structISeqInStream.html">ISeqInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>, <a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType)</td></tr>
-<tr class="separator:acd8f096a8c4ba6c59f1f5357f5b446f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a186ee340b8bf96ed93d4a1cffd2cb04f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a186ee340b8bf96ed93d4a1cffd2cb04f">SeqInStream_ReadByte</a> (<a class="el" href="structISeqInStream.html">ISeqInStream</a> *stream, <a class="el" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *buf)</td></tr>
-<tr class="separator:a186ee340b8bf96ed93d4a1cffd2cb04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d4c3edc62081cb761d645672ef2f4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a96d4c3edc62081cb761d645672ef2f4a">LookInStream_LookRead</a> (<a class="el" href="structILookInStream.html">ILookInStream</a> *stream, void *buf, size_t *<a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
-<tr class="separator:a96d4c3edc62081cb761d645672ef2f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9ec8cb823226019d30fbc20dc213b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a3b9ec8cb823226019d30fbc20dc213b5">LookInStream_SeekTo</a> (<a class="el" href="structILookInStream.html">ILookInStream</a> *stream, <a class="el" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> offset)</td></tr>
-<tr class="separator:a3b9ec8cb823226019d30fbc20dc213b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb3bf469120ce53001f058e081f31e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a5cb3bf469120ce53001f058e081f31e4">LookInStream_Read2</a> (<a class="el" href="structILookInStream.html">ILookInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>, <a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType)</td></tr>
-<tr class="separator:a5cb3bf469120ce53001f058e081f31e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af07c1792f6af5d752a24a25eaf220972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#af07c1792f6af5d752a24a25eaf220972">LookInStream_Read</a> (<a class="el" href="structILookInStream.html">ILookInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
-<tr class="separator:af07c1792f6af5d752a24a25eaf220972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb2fee51aa9b3e4527fe3d24e7c08d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#abb2fee51aa9b3e4527fe3d24e7c08d11">LookToRead_CreateVTable</a> (<a class="el" href="structCLookToRead.html">CLookToRead</a> *p, int lookahead)</td></tr>
-<tr class="separator:abb2fee51aa9b3e4527fe3d24e7c08d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33b56910d83f1cac576a15f8115f247a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a33b56910d83f1cac576a15f8115f247a">LookToRead_Init</a> (<a class="el" href="structCLookToRead.html">CLookToRead</a> *p)</td></tr>
-<tr class="separator:a33b56910d83f1cac576a15f8115f247a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473a8233ca383575bc478adebef29e2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a473a8233ca383575bc478adebef29e2e">SeqInStream_Read</a> (const <a class="el" href="structISeqInStream.html">ISeqInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:a473a8233ca383575bc478adebef29e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88acc1b4ae1913be108189952214f1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#ab88acc1b4ae1913be108189952214f1e">SeqInStream_Read2</a> (const <a class="el" href="structISeqInStream.html">ISeqInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>, <a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType)</td></tr>
+<tr class="separator:ab88acc1b4ae1913be108189952214f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae480c4b4821323893c60c711977559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#abae480c4b4821323893c60c711977559">SeqInStream_ReadByte</a> (const <a class="el" href="structISeqInStream.html">ISeqInStream</a> *stream, <a class="el" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *buf)</td></tr>
+<tr class="separator:abae480c4b4821323893c60c711977559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40cb2f9912a5575321cd07ed1c2a885a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a40cb2f9912a5575321cd07ed1c2a885a">LookInStream_LookRead</a> (const <a class="el" href="structILookInStream.html">ILookInStream</a> *stream, void *buf, size_t *<a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:a40cb2f9912a5575321cd07ed1c2a885a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1459a09011e49bcc2a60aebe8ef89769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a1459a09011e49bcc2a60aebe8ef89769">LookInStream_SeekTo</a> (const <a class="el" href="structILookInStream.html">ILookInStream</a> *stream, <a class="el" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> offset)</td></tr>
+<tr class="separator:a1459a09011e49bcc2a60aebe8ef89769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ae8117c950fc674a0d3f24c7331cfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a52ae8117c950fc674a0d3f24c7331cfe">LookInStream_Read2</a> (const <a class="el" href="structILookInStream.html">ILookInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>, <a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType)</td></tr>
+<tr class="separator:a52ae8117c950fc674a0d3f24c7331cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a1cd76a4832f62c782cbc914b537ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a86a1cd76a4832f62c782cbc914b537ce">LookInStream_Read</a> (const <a class="el" href="structILookInStream.html">ILookInStream</a> *stream, void *buf, size_t <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td></tr>
+<tr class="separator:a86a1cd76a4832f62c782cbc914b537ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88c2dc09f22aa01270808f5f152c03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#aa88c2dc09f22aa01270808f5f152c03d">LookToRead2_CreateVTable</a> (<a class="el" href="structCLookToRead2.html">CLookToRead2</a> *p, int lookahead)</td></tr>
+<tr class="separator:aa88c2dc09f22aa01270808f5f152c03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc4b4a88d26e614ef152517e69a1f3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#aecc4b4a88d26e614ef152517e69a1f3e">SecToLook_CreateVTable</a> (<a class="el" href="structCSecToLook.html">CSecToLook</a> *p)</td></tr>
 <tr class="separator:aecc4b4a88d26e614ef152517e69a1f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf478ad3d8ef0cd66d7132ee6e9bae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="7zTypes_8h.html#a1cf478ad3d8ef0cd66d7132ee6e9bae8">SecToRead_CreateVTable</a> (<a class="el" href="structCSecToRead.html">CSecToRead</a> *p)</td></tr>
@@ -293,7 +347,109 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00247">247</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00355">355</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfb4b3245a3bfeda953ddd1a3f1b30a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONTAINER_FROM_VTBL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#ab8d03ff205b29c0c1bb61d92bf83333b">MY_container_of</a>(ptr, type, m)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00337">337</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2e0d9b88596e73240d842e48dffeb56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONTAINER_FROM_VTBL_CLS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#a3c0e19dc7c7b183b55f40afdb3929f63">CONTAINER_FROM_VTBL_SIMPLE</a>(ptr, type, m)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00339">339</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c0e19dc7c7b183b55f40afdb3929f63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONTAINER_FROM_VTBL_SIMPLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((type *)(ptr))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00332">332</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -358,12 +514,12 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(p)-&gt;Alloc((p), <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#a9689de23ec9d710309f99527053a4097">ISzAlloc_Alloc</a>(p, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00235">235</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00292">292</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -386,26 +542,432 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(p)-&gt;Free((p), a)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="7zTypes_8h.html#a63316e89578d43fcfc526678cdbb3b79">ISzAlloc_Free</a>(p, a)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00236">236</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00293">293</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6746b15e9715cc139768a20c2cbd65c5"></a>
+<a class="anchor" id="aa57a04aebf21e2be4d93e48e4790754b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LookToRead_BUF_SIZE&#160;&#160;&#160;(1 &lt;&lt; 14)</td>
+          <td class="memname">#define IByteIn_Read</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p)</td><td></td>
+          <td>&#160;&#160;&#160;(p)-&gt;Read(p)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00192">192</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00147">147</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a96b3a6c539558850d241b49c09a0eb2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IByteOut_Write</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Write(p, b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00155">155</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa0355aa32fa5ac2571432046fb0e4ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICompressProgress_Progress</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">inSize, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">outSize&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Progress(p, inSize, outSize)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00275">275</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7fd593ef4247198d0561a7996897b570"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ILookInStream_Look</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Look(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00215">215</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4434ef50f22dca6b1995e172ca69aa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ILookInStream_Read</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Read(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00217">217</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28393154565ac13cf2c37b4e7d9ccadd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ILookInStream_Seek</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pos, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">origin&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Seek(p, pos, origin)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00218">218</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dee6a5e10a70fec8759fad79e6e8bcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ILookInStream_Skip</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">offset&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Skip(p, offset)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00216">216</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfdc1d583c7dd3ebfdc13d1629462308"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ISeekInStream_Read</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Read(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00196">196</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a568d66db34d14c958e9a6fd8bfca4658"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ISeekInStream_Seek</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pos, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">origin&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Seek(p, pos, origin)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00197">197</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a259d1d377299e17c9322849dab81fd17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ISeqInStream_Read</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Read(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00165">165</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36d13f62da5fdf0cc64d1e7f0a9e1a7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ISeqOutStream_Write</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Write(p, buf, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00180">180</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9689de23ec9d710309f99527053a4097"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ISzAlloc_Alloc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Alloc(p, <a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00288">288</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63316e89578d43fcfc526678cdbb3b79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ISzAlloc_Free</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(p)-&gt;Free(p, a)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00289">289</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0fc854431ba76edb2bd7f95bf30900d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LookToRead2_Init</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p)</td><td></td>
+          <td>&#160;&#160;&#160;{ (p)-&gt;pos = (p)-&gt;<a class="el" href="evince-thumbnailer_8c.html#a5ac9da3169a3b9e0fa4ccdfd5e12ab9c">size</a> = 0; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00245">245</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +981,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00121">121</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00124">124</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8d03ff205b29c0c1bb61d92bf83333b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MY_container_of</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((type *)((char *)(1 ? (ptr) : &amp;((type *)0)-&gt;m) - <a class="el" href="7zTypes_8h.html#aa66b293325162a4853930eac1abaff15">MY_offsetof</a>(type, m)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00327">327</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +1029,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00122">122</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00125">125</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7817ee68f62347effd6f8b72e0bb6d13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MY_FORCE_INLINE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00123">123</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +1057,35 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00120">120</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00122">122</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa66b293325162a4853930eac1abaff15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MY_offsetof</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((size_t)&amp;(((type *)0)-&gt;m))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00306">306</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +1131,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00249">249</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00357">357</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +1387,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00248">248</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00356">356</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -763,7 +1401,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00250">250</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00358">358</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -793,6 +1431,62 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00056">56</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac534585e73a37e9c76fc157eafa66f38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structIByteIn.html">IByteIn</a> <a class="el" href="structIByteIn.html">IByteIn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00142">142</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33ba07112f91a5d6dda4388b3bd8c0ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structIByteOut.html">IByteOut</a> <a class="el" href="structIByteOut.html">IByteOut</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00150">150</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d6a36e9a9d0b1071de96f881940bdc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structICompressProgress.html">ICompressProgress</a> <a class="el" href="structICompressProgress.html">ICompressProgress</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00267">267</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd926dbf7daf119746b1926c39e3c57a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structILookInStream.html">ILookInStream</a> <a class="el" href="structILookInStream.html">ILookInStream</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00200">200</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -835,6 +1529,76 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00083">83</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae53b15d8a5fdb82f990a324911e30977"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structISeekInStream.html">ISeekInStream</a> <a class="el" href="structISeekInStream.html">ISeekInStream</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00190">190</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49313db46cb805e8b3dac5d857e02fed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structISeqInStream.html">ISeqInStream</a> <a class="el" href="structISeqInStream.html">ISeqInStream</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00158">158</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c2ed92b746a43cb10995d7931df0787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structISeqOutStream.html">ISeqOutStream</a> <a class="el" href="structISeqOutStream.html">ISeqOutStream</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00173">173</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a919219795bb46d5dc773160ffdd5854c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structISzAlloc.html">ISzAlloc</a> <a class="el" href="structISzAlloc.html">ISzAlloc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00279">279</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada4adfdfaac2d8d9a65f1d6c82ac9f1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const <a class="el" href="structISzAlloc.html">ISzAlloc</a>* <a class="el" href="7zTypes_8h.html#ada4adfdfaac2d8d9a65f1d6c82ac9f1e">ISzAllocPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00280">280</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
 
 </div>
 </div>
@@ -941,24 +1705,24 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00158">158</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">SZ_SEEK_SET</a> = 0,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">SZ_SEEK_CUR</a> = 1,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">SZ_SEEK_END</a> = 2</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;} <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a>;</div>
+<p>Definition at line <a class="el" href="7zTypes_8h_source.html#l00182">182</a> of file <a class="el" href="7zTypes_8h_source.html">7zTypes.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">SZ_SEEK_SET</a> = 0,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">SZ_SEEK_CUR</a> = 1,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">SZ_SEEK_END</a> = 2</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;} <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a96d4c3edc62081cb761d645672ef2f4a"></a>
+<a class="anchor" id="a40cb2f9912a5575321cd07ed1c2a885a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> LookInStream_LookRead </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
@@ -983,14 +1747,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af07c1792f6af5d752a24a25eaf220972"></a>
+<a class="anchor" id="a86a1cd76a4832f62c782cbc914b537ce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> LookInStream_Read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
@@ -1015,14 +1779,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5cb3bf469120ce53001f058e081f31e4"></a>
+<a class="anchor" id="a52ae8117c950fc674a0d3f24c7331cfe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> LookInStream_Read2 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
@@ -1053,14 +1817,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3b9ec8cb823226019d30fbc20dc213b5"></a>
+<a class="anchor" id="a1459a09011e49bcc2a60aebe8ef89769"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> LookInStream_SeekTo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structILookInStream.html">ILookInStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
@@ -1079,14 +1843,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb2fee51aa9b3e4527fe3d24e7c08d11"></a>
+<a class="anchor" id="aa88c2dc09f22aa01270808f5f152c03d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LookToRead_CreateVTable </td>
+          <td class="memname">void LookToRead2_CreateVTable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structCLookToRead.html">CLookToRead</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structCLookToRead2.html">CLookToRead2</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
@@ -1099,22 +1863,6 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a33b56910d83f1cac576a15f8115f247a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LookToRead_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structCLookToRead.html">CLookToRead</a> *&#160;</td>
-          <td class="paramname"><em>p</em>)</td><td></td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1153,14 +1901,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a35a015a7aef8a42df451730645548a84"></a>
+<a class="anchor" id="a473a8233ca383575bc478adebef29e2e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> SeqInStream_Read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structISeqInStream.html">ISeqInStream</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structISeqInStream.html">ISeqInStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
@@ -1185,14 +1933,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acd8f096a8c4ba6c59f1f5357f5b446f7"></a>
+<a class="anchor" id="ab88acc1b4ae1913be108189952214f1e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> SeqInStream_Read2 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structISeqInStream.html">ISeqInStream</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structISeqInStream.html">ISeqInStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
@@ -1223,14 +1971,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a186ee340b8bf96ed93d4a1cffd2cb04f"></a>
+<a class="anchor" id="abae480c4b4821323893c60c711977559"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> SeqInStream_ReadByte </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structISeqInStream.html">ISeqInStream</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structISeqInStream.html">ISeqInStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
@@ -1255,7 +2003,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_66798fc8659e7daf0e5247fc7505c5a3.html">cut-n-paste</a></li><li class="navelem"><a class="el" href="dir_f5dc2ce27f896424f4071c98a126e32d.html">unarr</a></li><li class="navelem"><a class="el" href="dir_9fcaf58857096e637f3736bf1328771e.html">lzmasdk</a></li><li class="navelem"><a class="el" href="7zTypes_8h.html">7zTypes.h</a></li>
-    <li class="footer">Generated on Sat Jun 17 2017 15:21:46 for Evince by
+    <li class="footer">Generated on Fri Jun 30 2017 18:13:44 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

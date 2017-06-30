@@ -130,6 +130,7 @@ var searchData=
   ['get_5fpage_5fy_5foffset',['get_page_y_offset',['../ev-view_8c.html#a129e13ab0395853f76a121acd367f3ff',1,'ev-view.c']]],
   ['get_5fpoppler_5fannot_5ftext_5ficon',['get_poppler_annot_text_icon',['../ev-poppler_8cc.html#aa0183100d4c6c0d5cfa0ae7cd03ca9ad',1,'ev-poppler.cc']]],
   ['get_5fpopup',['get_popup',['../ev-zoom-action_8c.html#afaea7cbc7577284aa1c01905a35df322',1,'ev-zoom-action.c']]],
+  ['get_5fppmd7z_5frangedec',['GET_Ppmd7z_RangeDec',['../Ppmd7Dec_8c.html#abfa8b51582066ebb51d1a7f10bf5bda5',1,'Ppmd7Dec.c']]],
   ['get_5fprint_5fpage_5fsetup',['get_print_page_setup',['../ev-window_8c.html#a36a8224ba9a7ab6fdd110c0829d7e8d4',1,'ev-window.c']]],
   ['get_5fprint_5fsettings',['get_print_settings',['../struct__EvPrintOperationClass.html#a86c0ec9d538bf04e5a131b511d94687b',1,'_EvPrintOperationClass::get_print_settings()'],['../ev-window_8c.html#a67cbe1687ef98f36179af60ae168c620',1,'get_print_settings():&#160;ev-window.c']]],
   ['get_5fprint_5fsettings_5ffile',['get_print_settings_file',['../ev-window_8c.html#a6324776b1a8ffdfe2885209bb6d95b87',1,'ev-window.c']]],
@@ -177,7 +178,7 @@ var searchData=
   ['getstring',['getstring',['../util_8c.html#a851bbe43ff1a2995af0aaa33e3e85944',1,'util.c']]],
   ['getstringidentifier',['getstringidentifier',['../struct__NPNetscapeFuncs.html#a04a70f5a3c611c3bffbd7aa7d040978b',1,'_NPNetscapeFuncs']]],
   ['getstringidentifiers',['getstringidentifiers',['../struct__NPNetscapeFuncs.html#a3084cc52b18ba1ec455475d11515d03c',1,'_NPNetscapeFuncs']]],
-  ['getthreshold',['GetThreshold',['../structIPpmd7__RangeDec.html#a46876f907d503c08ae51acc1676028ee',1,'IPpmd7_RangeDec']]],
+  ['getthreshold',['GetThreshold',['../structIPpmd7__RangeDec.html#a72f1c6c7b0b283e4f0c48cf98c827b26',1,'IPpmd7_RangeDec']]],
   ['getui16',['GetUi16',['../CpuArch_8h.html#a01fd3a05593b4a3294b52a211ec2c4b6',1,'CpuArch.h']]],
   ['getui32',['GetUi32',['../CpuArch_8h.html#a840d4c43628199670307473818ea02a3',1,'CpuArch.h']]],
   ['getui64',['GetUi64',['../CpuArch_8h.html#ac6fc6ac2cd957a9671186123916d5e2c',1,'CpuArch.h']]],
@@ -283,6 +284,6 @@ var searchData=
   ['gs_5fpage_5fcache_5fsize',['GS_PAGE_CACHE_SIZE',['../ev-window_8c.html#ab9b38275849832521919bd2a9a810ad3',1,'ev-window.c']]],
   ['gs_5fschema_5fname',['GS_SCHEMA_NAME',['../ev-window_8c.html#aef6d29df95c87a1c8ec3fdb6edf8fcab',1,'ev-window.c']]],
   ['gszalloc',['gSzAlloc',['../uncompress-rar_8c.html#a929b87d5aaba525d240aeaad3cb9f2a2',1,'uncompress-rar.c']]],
-  ['gszalloc_5falloc',['gSzAlloc_Alloc',['../uncompress-rar_8c.html#a050a46cce62d6f0066f3ddf21ba48600',1,'uncompress-rar.c']]],
-  ['gszalloc_5ffree',['gSzAlloc_Free',['../uncompress-rar_8c.html#a42c9a72987f300bfefb79f97b1deb39c',1,'uncompress-rar.c']]]
+  ['gszalloc_5falloc',['gSzAlloc_Alloc',['../uncompress-rar_8c.html#ad245510a224f641510c18ad68c6e635e',1,'uncompress-rar.c']]],
+  ['gszalloc_5ffree',['gSzAlloc_Free',['../uncompress-rar_8c.html#a213426e26e14e77d0f461585c7309753',1,'uncompress-rar.c']]]
 ];

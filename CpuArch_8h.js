@@ -6,7 +6,8 @@ var CpuArch_8h =
     [ "GetUi16", "CpuArch_8h.html#a01fd3a05593b4a3294b52a211ec2c4b6", null ],
     [ "GetUi32", "CpuArch_8h.html#a840d4c43628199670307473818ea02a3", null ],
     [ "GetUi64", "CpuArch_8h.html#ac6fc6ac2cd957a9671186123916d5e2c", null ],
-    [ "SetUi16", "CpuArch_8h.html#aa13433ba2f025dd5c28d83ad4869778f", null ],
-    [ "SetUi32", "CpuArch_8h.html#a132c88760583b34b04edadce45f2477d", null ],
-    [ "SetUi64", "CpuArch_8h.html#a8eb2db331c2db55578455dd03d2edac2", null ]
+    [ "SetBe32", "CpuArch_8h.html#a1312333333b8313024af00edae9e7496", null ],
+    [ "SetUi16", "CpuArch_8h.html#a52f1a71da3b378b11ed246af74495cf8", null ],
+    [ "SetUi32", "CpuArch_8h.html#ad4374a39f7a963327db7d6f81ccc873f", null ],
+    [ "SetUi64", "CpuArch_8h.html#afb70d34ee8dfb489388ea2977458420b", null ]
 ];

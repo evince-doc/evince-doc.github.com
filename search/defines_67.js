@@ -14,6 +14,7 @@ var searchData=
   ['get_5fbit_5fcheck',['GET_BIT_CHECK',['../LzmaDec_8c.html#a5bb01077944d35e7e25326104b03c5aa',1,'LzmaDec.c']]],
   ['get_5fdebug_5fmask',['get_debug_mask',['../common_8h.html#ad1a96e93924de751b68ccaa270459c36',1,'common.h']]],
   ['get_5fmetrics',['get_metrics',['../mdvi_8h.html#a84005eb55536a01dd981a0c1cfa32efc',1,'mdvi.h']]],
+  ['get_5fppmd7z_5frangedec',['GET_Ppmd7z_RangeDec',['../Ppmd7Dec_8c.html#abfa8b51582066ebb51d1a7f10bf5bda5',1,'Ppmd7Dec.c']]],
   ['getbe16',['GetBe16',['../CpuArch_8h.html#abe684bc198244c53530700b20b630b0e',1,'CpuArch.h']]],
   ['getbe32',['GetBe32',['../CpuArch_8h.html#a29361f5136b6361900d9d2acaa04d769',1,'CpuArch.h']]],
   ['getbe64',['GetBe64',['../CpuArch_8h.html#a1fd9f491ab9490d1a931baebfccdd895',1,'CpuArch.h']]],

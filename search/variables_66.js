@@ -80,7 +80,7 @@ var searchData=
   ['fprintf',['fprintf',['../struct____synctex__updater__t.html#a46b15c92f83b585176dc0b39bce363c3',1,'__synctex_updater_t']]],
   ['fps',['fps',['../structEvTimelinePriv.html#a6bab461ab5b5cc51003ab1cab49aa3d0',1,'EvTimelinePriv']]],
   ['frame',['frame',['../struct__EvTimelineClass.html#a054dc84a82629b3b8d34465aae00e83b',1,'_EvTimelineClass']]],
-  ['free',['free',['../struct____synctex__class__t.html#a251c015a17ed979c27cfc0934ab54f76',1,'__synctex_class_t::free()'],['../structISzAlloc.html#a9d8d13ae38d826a88a58caabe52b4f1a',1,'ISzAlloc::Free()']]],
+  ['free',['free',['../struct____synctex__class__t.html#a251c015a17ed979c27cfc0934ab54f76',1,'__synctex_class_t::free()'],['../structISzAlloc.html#a6e0eac7ce75db69121d418d3c2dfbb25',1,'ISzAlloc::Free()']]],
   ['free_5fimage',['free_image',['../struct__DviDevice.html#ad74035fdc3160c87369aaa793ac0b2a2',1,'_DviDevice']]],
   ['freedata',['freedata',['../struct__DviFontInfo.html#aee378b1ada9a8051f574e87c0eaa3d68',1,'_DviFontInfo']]],
   ['freelist',['FreeList',['../structCPpmd7.html#ad47786666caea9c849728c5e1d6cb156',1,'CPpmd7::FreeList()'],['../structCPpmd8.html#a446c0877b084420f9ba261e311e66253',1,'CPpmd8::FreeList()']]],

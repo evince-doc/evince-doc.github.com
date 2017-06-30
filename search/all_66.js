@@ -155,7 +155,7 @@ var searchData=
   ['fps',['fps',['../structEvTimelinePriv.html#a6bab461ab5b5cc51003ab1cab49aa3d0',1,'EvTimelinePriv']]],
   ['frame',['frame',['../struct__EvTimelineClass.html#a054dc84a82629b3b8d34465aae00e83b',1,'_EvTimelineClass::frame()'],['../ev-timeline_8c.html#aedcf2109f459315e1a7f2af73ec9b603a200c1bcf1eaa8635daa3cbb5fdd2ebb6',1,'FRAME():&#160;ev-timeline.c']]],
   ['frame_5finterval',['FRAME_INTERVAL',['../ev-timeline_8c.html#aa9bb361bbf2e3ea8388833c819efc7c7',1,'ev-timeline.c']]],
-  ['free',['free',['../struct____synctex__class__t.html#a251c015a17ed979c27cfc0934ab54f76',1,'__synctex_class_t::free()'],['../structISzAlloc.html#a9d8d13ae38d826a88a58caabe52b4f1a',1,'ISzAlloc::Free()']]],
+  ['free',['free',['../struct____synctex__class__t.html#a251c015a17ed979c27cfc0934ab54f76',1,'__synctex_class_t::free()'],['../structISzAlloc.html#a6e0eac7ce75db69121d418d3c2dfbb25',1,'ISzAlloc::Free()']]],
   ['free_5fent',['free_ent',['../fontmap_8c.html#a0902d5a25ec1639f9e2ce39e0593d084',1,'fontmap.c']]],
   ['free_5ffont_5fmetrics',['free_font_metrics',['../tfmfile_8c.html#ab34d2ee51e4b70582d4604d8687f04d9',1,'tfmfile.c']]],
   ['free_5fimage',['free_image',['../struct__DviDevice.html#ad74035fdc3160c87369aaa793ac0b2a2',1,'_DviDevice']]],

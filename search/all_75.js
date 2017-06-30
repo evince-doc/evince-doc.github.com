@@ -69,7 +69,7 @@ var searchData=
   ['uri_5fmtime',['uri_mtime',['../struct__EvWindowPrivate.html#a93c65c18b354c4b35359c73de5f083f6',1,'_EvWindowPrivate']]],
   ['uri_5fproperty',['URI_PROPERTY',['../ev-properties-view_8c.html#a80e3abfdceb5f0f2ef6e0e50ab2fd1aaafc5087380f8bd7fc9b2d1c4bd181992b',1,'ev-properties-view.c']]],
   ['url',['url',['../struct__NPStream.html#a9a7484e81a72b591f97bb176536c5a83',1,'_NPStream']]],
-  ['urlnotify',['urlNotify',['../classEvBrowserPlugin.html#a049160ba84500a30574f7b1f00fcf269',1,'EvBrowserPlugin::urlNotify()'],['../struct__NPPluginFuncs.html#a9a8a9425b6531d5b77f0bdc3ab779e7c',1,'_NPPluginFuncs::urlnotify()']]],
+  ['urlnotify',['urlnotify',['../struct__NPPluginFuncs.html#a9a8a9425b6531d5b77f0bdc3ab779e7c',1,'_NPPluginFuncs::urlnotify()'],['../classEvBrowserPlugin.html#a049160ba84500a30574f7b1f00fcf269',1,'EvBrowserPlugin::urlNotify()']]],
   ['urlredirectnotify',['urlredirectnotify',['../struct__NPPluginFuncs.html#af8907d04c6f098575a278950473ac0e0',1,'_NPPluginFuncs']]],
   ['urlredirectresponse',['urlredirectresponse',['../struct__NPNetscapeFuncs.html#a9fbc44c38e7381d354153088157dbe54',1,'_NPNetscapeFuncs']]],
   ['urx',['urx',['../structBBox.html#a92ba6be0c85c5b3e488f857cf43cd869',1,'BBox::urx()'],['../sp-epsf_8c.html#ae2728699e9d12c7aa8b00a6d23bbe5ef',1,'URX():&#160;sp-epsf.c']]],

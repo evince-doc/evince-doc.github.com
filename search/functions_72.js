@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['range_5fdecode',['Range_Decode',['../Ppmd7Dec_8c.html#a9f9f070df50cb3ff1ea9b28393dea5ca',1,'Ppmd7Dec.c']]],
-  ['range_5fdecode_5frar',['Range_Decode_RAR',['../uncompress-rar_8c.html#a45bd15965152588d077bf860dc0aaac0',1,'uncompress-rar.c']]],
-  ['range_5fdecodebit',['Range_DecodeBit',['../Ppmd7Dec_8c.html#a86e2adb5806d52c73a997e7e941f5a0d',1,'Ppmd7Dec.c']]],
-  ['range_5fdecodebit_5frar',['Range_DecodeBit_RAR',['../uncompress-rar_8c.html#ad158e6f7e8f4c9bae6cd05305717e5f2',1,'uncompress-rar.c']]],
-  ['range_5fgetthreshold',['Range_GetThreshold',['../Ppmd7Dec_8c.html#a3b43347da26ca2520bd1d24e99c5f78b',1,'Range_GetThreshold(void *pp, UInt32 total):&#160;Ppmd7Dec.c'],['../uncompress-rar_8c.html#a2ed8ea9b3c85039195585df07c92cae2',1,'Range_GetThreshold(void *p, UInt32 total):&#160;uncompress-rar.c']]],
+  ['range_5fdecode',['Range_Decode',['../Ppmd7Dec_8c.html#a2a92b1905699047035ced4387c34f48c',1,'Ppmd7Dec.c']]],
+  ['range_5fdecode_5frar',['Range_Decode_RAR',['../uncompress-rar_8c.html#ae3f8586809ddd76b4e78b1526a0367f8',1,'uncompress-rar.c']]],
+  ['range_5fdecodebit',['Range_DecodeBit',['../Ppmd7Dec_8c.html#a6cb2052b94c29aaf7a0c9db64088e9fe',1,'Ppmd7Dec.c']]],
+  ['range_5fdecodebit_5frar',['Range_DecodeBit_RAR',['../uncompress-rar_8c.html#a5ff268d0c3508da5e433a826bd28b0bf',1,'uncompress-rar.c']]],
+  ['range_5fgetthreshold',['Range_GetThreshold',['../Ppmd7Dec_8c.html#ae004c4c612732b3a6b6e2f8f9d7e83c3',1,'Range_GetThreshold(const IPpmd7_RangeDec *pp, UInt32 total):&#160;Ppmd7Dec.c'],['../uncompress-rar_8c.html#a30ed38537fa0c35801f34382f83a69a7',1,'Range_GetThreshold(const IPpmd7_RangeDec *p, UInt32 total):&#160;uncompress-rar.c']]],
   ['range_5fnormalize',['Range_Normalize',['../Ppmd7Dec_8c.html#aa95adb25c1d980cfedd853b68e0ef6e0',1,'Ppmd7Dec.c']]],
   ['rangedec_5fdecode',['RangeDec_Decode',['../Ppmd8Dec_8c.html#a0380f3bfb865559daa37e72ccc605b98',1,'Ppmd8Dec.c']]],
   ['rangedec_5fgetthreshold',['RangeDec_GetThreshold',['../Ppmd8Dec_8c.html#a358e7dea5b81f27484f6c992f1751c80',1,'Ppmd8Dec.c']]],

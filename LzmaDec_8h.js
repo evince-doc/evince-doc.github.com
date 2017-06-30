@@ -18,13 +18,13 @@ var LzmaDec_8h =
       [ "LZMA_STATUS_NEEDS_MORE_INPUT", "LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6aa2dc75ba007203e4bbfdd4147905d4be2", null ],
       [ "LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK", "LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6aa3e3e3de2e99cd66e7af024bd391050d6", null ]
     ] ],
-    [ "LzmaDec_Allocate", "LzmaDec_8h.html#a8580dca7a1a141ba1793006433a94bef", null ],
-    [ "LzmaDec_AllocateProbs", "LzmaDec_8h.html#a204698f079b0f30489b410641490aa31", null ],
+    [ "LzmaDec_Allocate", "LzmaDec_8h.html#a79cc443041c4be9c98b4057e5107d902", null ],
+    [ "LzmaDec_AllocateProbs", "LzmaDec_8h.html#a59eb05a682aad001c4dbd843b32fbccf", null ],
     [ "LzmaDec_DecodeToBuf", "LzmaDec_8h.html#a87067055dce3491aca982d1b98ff4db4", null ],
     [ "LzmaDec_DecodeToDic", "LzmaDec_8h.html#ab3474d4a12b60cff20299518f94677c7", null ],
-    [ "LzmaDec_Free", "LzmaDec_8h.html#ad0e72806c25f060c1327c7325f179a67", null ],
-    [ "LzmaDec_FreeProbs", "LzmaDec_8h.html#a1b158d14a209d1a349d9198f39a926b5", null ],
+    [ "LzmaDec_Free", "LzmaDec_8h.html#a6908d61b767a5b8f04fefc9d10d96c52", null ],
+    [ "LzmaDec_FreeProbs", "LzmaDec_8h.html#a2873f200cd9448962dd68519434ad619", null ],
     [ "LzmaDec_Init", "LzmaDec_8h.html#af78fa82d5ea8c08fdfbc5d8d7a73a127", null ],
-    [ "LzmaDecode", "LzmaDec_8h.html#ab8c63d6972edb0325afc6326936afab1", null ],
+    [ "LzmaDecode", "LzmaDec_8h.html#a52a3a67503881c081fead1ada69501e8", null ],
     [ "LzmaProps_Decode", "LzmaDec_8h.html#ae49727972cd1f8d5384dc4c29f42d97d", null ]
 ];

@@ -52,7 +52,7 @@ var searchData=
   ['align',['Align',['../LzmaDec_8c.html#a6a388c6c80405dae7fa5329eb38ae3f6',1,'LzmaDec.c']]],
   ['alignment',['alignment',['../structEvTransitionEffectPrivate.html#a603b1ce576078d5fb0dee0a93a5a8dbb',1,'EvTransitionEffectPrivate']]],
   ['alignoffset',['AlignOffset',['../structCPpmd7.html#adcfa798c932aceaf89dfc0794986297f',1,'CPpmd7::AlignOffset()'],['../structCPpmd8.html#a5f9a1a3c74c2a55c2078272f61d45b86',1,'CPpmd8::AlignOffset()']]],
-  ['alloc',['Alloc',['../structISzAlloc.html#aa23d8aed7f6055493a4774bca8804f96',1,'ISzAlloc']]],
+  ['alloc',['Alloc',['../structISzAlloc.html#a2f3b0c7de5da2ce3921cbd511ad7229f',1,'ISzAlloc']]],
   ['alloc_5fcolors',['alloc_colors',['../struct__DviDevice.html#aeafbb8c4e69807ee8b7055eaf03ba4ba',1,'_DviDevice']]],
   ['allocate',['allocate',['../structNPClass.html#aadb6db95a941e877d1bcdd16d4546464',1,'NPClass::allocate()'],['../classEvBrowserPlugin.html#a14943665274f8d18e5711dddc32a4c44',1,'EvBrowserPlugin::allocate()']]],
   ['allocator_2eh',['allocator.h',['../allocator_8h.html',1,'']]],

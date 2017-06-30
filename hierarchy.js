@@ -348,7 +348,7 @@ var hierarchy =
     [ "Buffer", "structBuffer.html", null ],
     [ "ByteReader", "structByteReader.html", null ],
     [ "CharMetricInfo", "structCharMetricInfo.html", null ],
-    [ "CLookToRead", "structCLookToRead.html", null ],
+    [ "CLookToRead2", "structCLookToRead2.html", null ],
     [ "CLzmaDec", "structCLzmaDec.html", null ],
     [ "ColorCache", "structColorCache.html", null ],
     [ "CompCharData", "structCompCharData.html", null ],

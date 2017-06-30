@@ -1,7 +1,7 @@
 var searchData=
 [
   ['charmetricinfo',['CharMetricInfo',['../structCharMetricInfo.html',1,'']]],
-  ['clooktoread',['CLookToRead',['../structCLookToRead.html',1,'']]],
+  ['clooktoread2',['CLookToRead2',['../structCLookToRead2.html',1,'']]],
   ['clzmadec',['CLzmaDec',['../structCLzmaDec.html',1,'']]],
   ['colorcache',['ColorCache',['../structColorCache.html',1,'']]],
   ['compchardata',['CompCharData',['../structCompCharData.html',1,'']]],

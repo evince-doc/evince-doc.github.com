@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('Ppmd_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="Ppmd_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Ppmd.h -- PPMD codec common code</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">2013-01-18 : Igor Pavlov : Public domain</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">2017-04-03 : Igor Pavlov : Public domain</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">This code is based on PPMd var.H (2001): Dmitry Shkarin : Public domain */</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __PPMD_H</span></div>
@@ -185,8 +185,8 @@ $(document).ready(function(){initNavTree('Ppmd_8h_source.html','');});
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="Ppmd_8h.html#acaa9b20ae2711871d54febfd0325bff2">   77</a></span>&#160;<span class="preprocessor"></span>  <a class="code" href="Ppmd_8h.html#acaa9b20ae2711871d54febfd0325bff2">CPpmd_Byte_Ref</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="Ppmd_8h.html#a9f72ee98ecc5dca929bc5b082ea74b49">   79</a></span>&#160;<span class="preprocessor">#define PPMD_SetAllBitsIn256Bytes(p) \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  { unsigned i; for (i = 0; i &lt; 256 / sizeof(p[0]); i += 8) { \</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">  p[i+7] = p[i+6] = p[i+5] = p[i+4] = p[i+3] = p[i+2] = p[i+1] = p[i+0] = ~(size_t)0; }}</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  { size_t z; for (z = 0; z &lt; 256 / sizeof(p[0]); z += 8) { \</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">  p[z+7] = p[z+6] = p[z+5] = p[z+4] = p[z+3] = p[z+2] = p[z+1] = p[z+0] = ~(size_t)0; }}</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="7zTypes_8h.html#ada1a24bb49d1a045f735dc027664ae57">EXTERN_C_END</a></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('Ppmd_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_66798fc8659e7daf0e5247fc7505c5a3.html">cut-n-paste</a></li><li class="navelem"><a class="el" href="dir_f5dc2ce27f896424f4071c98a126e32d.html">unarr</a></li><li class="navelem"><a class="el" href="dir_9fcaf58857096e637f3736bf1328771e.html">lzmasdk</a></li><li class="navelem"><a class="el" href="Ppmd_8h.html">Ppmd.h</a></li>
-    <li class="footer">Generated on Sat Jun 17 2017 15:21:43 for Evince by
+    <li class="footer">Generated on Fri Jun 30 2017 18:13:41 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

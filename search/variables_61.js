@@ -28,7 +28,7 @@ var searchData=
   ['afmversion',['afmVersion',['../structGlobalFontInfo.html#a35912b8bb401ef8e3beb3cbfb0b9f627',1,'GlobalFontInfo']]],
   ['alignment',['alignment',['../structEvTransitionEffectPrivate.html#a603b1ce576078d5fb0dee0a93a5a8dbb',1,'EvTransitionEffectPrivate']]],
   ['alignoffset',['AlignOffset',['../structCPpmd7.html#adcfa798c932aceaf89dfc0794986297f',1,'CPpmd7::AlignOffset()'],['../structCPpmd8.html#a5f9a1a3c74c2a55c2078272f61d45b86',1,'CPpmd8::AlignOffset()']]],
-  ['alloc',['Alloc',['../structISzAlloc.html#aa23d8aed7f6055493a4774bca8804f96',1,'ISzAlloc']]],
+  ['alloc',['Alloc',['../structISzAlloc.html#a2f3b0c7de5da2ce3921cbd511ad7229f',1,'ISzAlloc']]],
   ['alloc_5fcolors',['alloc_colors',['../struct__DviDevice.html#aeafbb8c4e69807ee8b7055eaf03ba4ba',1,'_DviDevice']]],
   ['allocate',['allocate',['../structNPClass.html#aadb6db95a941e877d1bcdd16d4546464',1,'NPClass']]],
   ['allow_5flinks_5fchange_5fzoom',['allow_links_change_zoom',['../struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e',1,'_EvView']]],

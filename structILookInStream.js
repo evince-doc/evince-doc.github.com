@@ -1,7 +1,7 @@
 var structILookInStream =
 [
-    [ "Look", "structILookInStream.html#a04739a0e42e4c15148d706d1954fc8bc", null ],
-    [ "Read", "structILookInStream.html#aab1a5882c3ec829fa16f5638a0e0fbb9", null ],
-    [ "Seek", "structILookInStream.html#acca0048f4e2046b815739ed9ab2fa8f8", null ],
-    [ "Skip", "structILookInStream.html#a1155c03993c63ea408046b7969eb9e32", null ]
+    [ "Look", "structILookInStream.html#a919a3d41aed28cdaf8eb0f9d6070648e", null ],
+    [ "Read", "structILookInStream.html#aef4fdbb128ec01e1ea6e3a007e9401da", null ],
+    [ "Seek", "structILookInStream.html#ad036eeaa9050d7d4584352dbc772b7c6", null ],
+    [ "Skip", "structILookInStream.html#a2c1db8d24c677379d3faf6ab37cbc383", null ]
 ];

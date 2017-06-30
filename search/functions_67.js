@@ -132,6 +132,6 @@ var searchData=
   ['gotonextpage',['goToNextPage',['../classEvBrowserPlugin.html#a2beddac257e6df4d302c5c844d733942',1,'EvBrowserPlugin::goToNextPage()'],['../EvBrowserPluginToolbar_8cpp.html#a687d55d04e4f7793c19fa61c909a15b0',1,'goToNextPage():&#160;EvBrowserPluginToolbar.cpp']]],
   ['gotopage',['goToPage',['../classEvBrowserPlugin.html#aa6ccc9ab517725c66809e895abacfd11',1,'EvBrowserPlugin::goToPage(unsigned page)'],['../classEvBrowserPlugin.html#a765970b756d9c7667c6151586b5588cc',1,'EvBrowserPlugin::goToPage(const char *pageLabel)']]],
   ['gotopreviouspage',['goToPreviousPage',['../classEvBrowserPlugin.html#a9f2752b769d57384867cf4837ecfb3bb',1,'EvBrowserPlugin::goToPreviousPage()'],['../EvBrowserPluginToolbar_8cpp.html#ab376685bc293e733707acdc7c93b54a4',1,'goToPreviousPage():&#160;EvBrowserPluginToolbar.cpp']]],
-  ['gszalloc_5falloc',['gSzAlloc_Alloc',['../uncompress-rar_8c.html#a050a46cce62d6f0066f3ddf21ba48600',1,'uncompress-rar.c']]],
-  ['gszalloc_5ffree',['gSzAlloc_Free',['../uncompress-rar_8c.html#a42c9a72987f300bfefb79f97b1deb39c',1,'uncompress-rar.c']]]
+  ['gszalloc_5falloc',['gSzAlloc_Alloc',['../uncompress-rar_8c.html#ad245510a224f641510c18ad68c6e635e',1,'uncompress-rar.c']]],
+  ['gszalloc_5ffree',['gSzAlloc_Free',['../uncompress-rar_8c.html#a213426e26e14e77d0f461585c7309753',1,'uncompress-rar.c']]]
 ];

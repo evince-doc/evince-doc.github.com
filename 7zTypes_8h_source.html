@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('7zTypes_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="7zTypes_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* 7zTypes.h -- Basic types</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">2013-11-12 : Igor Pavlov : Public domain */</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">2017-04-03 : Igor Pavlov : Public domain */</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef __7Z_TYPES_H</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __7Z_TYPES_H</span></div>
@@ -220,155 +220,263 @@ $(document).ready(function(){initNavTree('7zTypes_8h_source.html','');});
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_NO_INLINE</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#define MY_CDECL __cdecl</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_FAST_CALL __fastcall</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#define MY_FORCE_INLINE __forceinline</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#define MY_CDECL __cdecl</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_FAST_CALL __fastcall</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a28313a809627d7c1a2c304a58f7e5d2b">  120</a></span>&#160;<span class="preprocessor">#define MY_NO_INLINE</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a959aa84c48968de4bf433c8ff1df79f1">  121</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_CDECL</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a110c47f40f3e25a133e3e7254be002d2">  122</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_FAST_CALL</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">/* The following interfaces use first parameter as pointer to structure */</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a28313a809627d7c1a2c304a58f7e5d2b">  122</a></span>&#160;<span class="preprocessor">#define MY_NO_INLINE</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a7817ee68f62347effd6f8b72e0bb6d13">  123</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_FORCE_INLINE</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a959aa84c48968de4bf433c8ff1df79f1">  124</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_CDECL</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a110c47f40f3e25a133e3e7254be002d2">  125</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_FAST_CALL</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">/* inline keyword : for C++ / C99 */</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="code" href="structIByteIn.html">  129</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="code" href="structIByteIn.html#a5d45f52382bc284a5419d72f3f38bb17">  131</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> (*Read)(<span class="keywordtype">void</span> *p); <span class="comment">/* reads one byte, returns 0 in case of EOF or error */</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;} <a class="code" href="structIByteIn.html">IByteIn</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="structIByteOut.html">  134</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="code" href="structIByteOut.html#a179e19dc8cfb53be334a776ab92adf04">  136</a></span>&#160;  void (*Write)(<span class="keywordtype">void</span> *p, <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> b);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <a class="code" href="structIByteOut.html">IByteOut</a>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="structISeqInStream.html">  139</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="code" href="structISeqInStream.html#ace6946f7cee60181df098ee5371ff1e8">  141</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;} <a class="code" href="structISeqInStream.html">ISeqInStream</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">/* it can return SZ_ERROR_INPUT_EOF */</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a35a015a7aef8a42df451730645548a84">SeqInStream_Read</a>(<a class="code" href="structISeqInStream.html">ISeqInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#acd8f096a8c4ba6c59f1f5357f5b446f7">SeqInStream_Read2</a>(<a class="code" href="structISeqInStream.html">ISeqInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size, <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a186ee340b8bf96ed93d4a1cffd2cb04f">SeqInStream_ReadByte</a>(<a class="code" href="structISeqInStream.html">ISeqInStream</a> *stream, <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *buf);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="structISeqOutStream.html">  151</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/* GCC, clang: */</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">#if defined (__GNUC__) &amp;&amp; (__GNUC__ &gt;= 4)</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">#define MY_FORCE_INLINE __attribute__((always_inline))</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">#define MY_NO_INLINE __attribute__((noinline))</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">#endif</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">/* The following interfaces use first parameter as pointer to structure */</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ac534585e73a37e9c76fc157eafa66f38">  142</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structIByteIn.html">IByteIn</a> <a class="code" href="structIByteIn.html">IByteIn</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="structIByteIn.html">  143</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIByteIn.html">IByteIn</a></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="code" href="structIByteIn.html#ab3657b4cdf8558bd0848f151637619f9">  145</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> (*<a class="code" href="structIByteIn.html#ab3657b4cdf8558bd0848f151637619f9">Read</a>)(<span class="keyword">const</span> <a class="code" href="structIByteIn.html">IByteIn</a> *p); <span class="comment">/* reads one byte, returns 0 in case of EOF or error */</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;};</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#aa57a04aebf21e2be4d93e48e4790754b">  147</a></span>&#160;<span class="preprocessor">#define IByteIn_Read(p) (p)-&gt;Read(p)</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a33ba07112f91a5d6dda4388b3bd8c0ba">  150</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structIByteOut.html">IByteOut</a> <a class="code" href="structIByteOut.html">IByteOut</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="structIByteOut.html">  151</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIByteOut.html">IByteOut</a></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="code" href="structISeqOutStream.html#adaa5708b12db3b5ce1d62da3e85b30d9">  153</a></span>&#160;  size_t (*Write)(<span class="keywordtype">void</span> *p, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> <a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">/* Returns: result - the number of actually written bytes.</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">       (result &lt; size) means error */</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;} <a class="code" href="structISeqOutStream.html">ISeqOutStream</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="code" href="structIByteOut.html#aff0d5a6783c8f4547a5d632525e25249">  153</a></span>&#160;  void (*<a class="code" href="structIByteOut.html#aff0d5a6783c8f4547a5d632525e25249">Write</a>)(<span class="keyword">const</span> <a class="code" href="structIByteOut.html">IByteOut</a> *p, <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> b);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;};</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a96b3a6c539558850d241b49c09a0eb2a">  155</a></span>&#160;<span class="preprocessor">#define IByteOut_Write(p, b) (p)-&gt;Write(p, b)</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">  158</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">  160</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">SZ_SEEK_SET</a> = 0,</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">  161</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">SZ_SEEK_CUR</a> = 1,</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">  162</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">SZ_SEEK_END</a> = 2</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;} <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="code" href="structISeekInStream.html">  165</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="code" href="structISeekInStream.html#ad02737ba73b9aadf47dda6cad77bc8e2">  167</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);  <span class="comment">/* same as ISeqInStream::Read */</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="code" href="structISeekInStream.html#af7279dddc519e2ba62807f1fc310d32b">  168</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Seek)(<span class="keywordtype">void</span> *p, <a class="code" href="7zTypes_8h.html#ade5ca5eec203b16d15253b7c422808bf">Int64</a> *pos, <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;} <a class="code" href="structISeekInStream.html">ISeekInStream</a>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="code" href="structILookInStream.html">  171</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="structILookInStream.html#a04739a0e42e4c15148d706d1954fc8bc">  173</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Look)(<span class="keywordtype">void</span> *p, <span class="keyword">const</span> <span class="keywordtype">void</span> **buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">       (output(*size) &gt; input(*size)) is not allowed</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="code" href="structILookInStream.html#a1155c03993c63ea408046b7969eb9e32">  177</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Skip)(<span class="keywordtype">void</span> *p, <span class="keywordtype">size_t</span> offset);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">/* offset must be &lt;= output(*size) of Look */</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="code" href="structILookInStream.html#aab1a5882c3ec829fa16f5638a0e0fbb9">  180</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">/* reads directly (without buffer). It&#39;s same as ISeqInStream::Read */</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="structILookInStream.html#acca0048f4e2046b815739ed9ab2fa8f8">  182</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Seek)(<span class="keywordtype">void</span> *p, <a class="code" href="7zTypes_8h.html#ade5ca5eec203b16d15253b7c422808bf">Int64</a> *pos, <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;} <a class="code" href="structILookInStream.html">ILookInStream</a>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a96d4c3edc62081cb761d645672ef2f4a">LookInStream_LookRead</a>(<a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a3b9ec8cb823226019d30fbc20dc213b5">LookInStream_SeekTo</a>(<a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <a class="code" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> offset);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">/* reads via ILookInStream::Read */</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a5cb3bf469120ce53001f058e081f31e4">LookInStream_Read2</a>(<a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size, <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#af07c1792f6af5d752a24a25eaf220972">LookInStream_Read</a>(<a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a6746b15e9715cc139768a20c2cbd65c5">  192</a></span>&#160;<span class="preprocessor">#define LookToRead_BUF_SIZE (1 &lt;&lt; 14)</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="code" href="structCLookToRead.html">  194</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="code" href="structCLookToRead.html#a0075295e91095d2e49409cab74c8cd8f">  196</a></span>&#160;  <a class="code" href="structILookInStream.html">ILookInStream</a> <a class="code" href="structCLookToRead.html#a0075295e91095d2e49409cab74c8cd8f">s</a>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="code" href="structCLookToRead.html#a7a9274b338d9fc0b71925e94cbe132f1">  197</a></span>&#160;  <a class="code" href="structISeekInStream.html">ISeekInStream</a> *<a class="code" href="structCLookToRead.html#a7a9274b338d9fc0b71925e94cbe132f1">realStream</a>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="code" href="structCLookToRead.html#a311ffe1a85a9ab6e323e898970a5182f">  198</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structCLookToRead.html#a311ffe1a85a9ab6e323e898970a5182f">pos</a>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="code" href="structCLookToRead.html#a30c71248ab806066e737ab7d1673bfa4">  199</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structCLookToRead.html#a30c71248ab806066e737ab7d1673bfa4">size</a>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="code" href="structCLookToRead.html#aa1b864bacf3e478cbedaa4b5934da0fc">  200</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> buf[<a class="code" href="7zTypes_8h.html#a6746b15e9715cc139768a20c2cbd65c5">LookToRead_BUF_SIZE</a>];</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;} <a class="code" href="structCLookToRead.html">CLookToRead</a>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">void</span> <a class="code" href="7zTypes_8h.html#abb2fee51aa9b3e4527fe3d24e7c08d11">LookToRead_CreateVTable</a>(<a class="code" href="structCLookToRead.html">CLookToRead</a> *p, <span class="keywordtype">int</span> lookahead);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">void</span> <a class="code" href="7zTypes_8h.html#a33b56910d83f1cac576a15f8115f247a">LookToRead_Init</a>(<a class="code" href="structCLookToRead.html">CLookToRead</a> *p);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="code" href="structCSecToLook.html">  206</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno"><a class="code" href="structCSecToLook.html#a1aace1e477ec503429fd4f002cb78adb">  208</a></span>&#160;  <a class="code" href="structISeqInStream.html">ISeqInStream</a> <a class="code" href="structCSecToLook.html#a1aace1e477ec503429fd4f002cb78adb">s</a>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="code" href="structCSecToLook.html#afa52bbd0afb75958fda82dc76d37a7dd">  209</a></span>&#160;  <a class="code" href="structILookInStream.html">ILookInStream</a> *<a class="code" href="structCSecToLook.html#afa52bbd0afb75958fda82dc76d37a7dd">realStream</a>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;} <a class="code" href="structCSecToLook.html">CSecToLook</a>;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">void</span> <a class="code" href="7zTypes_8h.html#aecc4b4a88d26e614ef152517e69a1f3e">SecToLook_CreateVTable</a>(<a class="code" href="structCSecToLook.html">CSecToLook</a> *p);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno"><a class="code" href="structCSecToRead.html">  214</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="code" href="structCSecToRead.html#a8a9fdf9cc74a243980c04ff944f3e0c7">  216</a></span>&#160;  <a class="code" href="structISeqInStream.html">ISeqInStream</a> <a class="code" href="structCSecToRead.html#a8a9fdf9cc74a243980c04ff944f3e0c7">s</a>;</div>
-<div class="line"><a name="l00217"></a><span class="lineno"><a class="code" href="structCSecToRead.html#a01b29c2698c267f3689042fe95d217d5">  217</a></span>&#160;  <a class="code" href="structILookInStream.html">ILookInStream</a> *<a class="code" href="structCSecToRead.html#a01b29c2698c267f3689042fe95d217d5">realStream</a>;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;} <a class="code" href="structCSecToRead.html">CSecToRead</a>;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keywordtype">void</span> <a class="code" href="7zTypes_8h.html#a1cf478ad3d8ef0cd66d7132ee6e9bae8">SecToRead_CreateVTable</a>(<a class="code" href="structCSecToRead.html">CSecToRead</a> *p);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="code" href="structICompressProgress.html">  222</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="code" href="structICompressProgress.html#a6c9f049d784deacce9ba61bc7f42dd9f">  224</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Progress)(<span class="keywordtype">void</span> *p, <a class="code" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> inSize, <a class="code" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> outSize);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">/* Returns: result. (result != SZ_OK) means break.</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">       Value (UInt64)(Int64)-1 for size means unknown value. */</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;} <a class="code" href="structICompressProgress.html">ICompressProgress</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a49313db46cb805e8b3dac5d857e02fed">  158</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structISeqInStream.html">ISeqInStream</a> <a class="code" href="structISeqInStream.html">ISeqInStream</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="code" href="structISeqInStream.html">  159</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structISeqInStream.html">ISeqInStream</a></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="code" href="structISeqInStream.html#aac5fbf4bc3e1bbb8fef8a3a96fcdd9c9">  161</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structISeqInStream.html#aac5fbf4bc3e1bbb8fef8a3a96fcdd9c9">Read</a>)(<span class="keyword">const</span> <a class="code" href="structISeqInStream.html">ISeqInStream</a> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a259d1d377299e17c9322849dab81fd17">  165</a></span>&#160;<span class="preprocessor">#define ISeqInStream_Read(p, buf, size) (p)-&gt;Read(p, buf, size)</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">/* it can return SZ_ERROR_INPUT_EOF */</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a473a8233ca383575bc478adebef29e2e">SeqInStream_Read</a>(<span class="keyword">const</span> <a class="code" href="structISeqInStream.html">ISeqInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#ab88acc1b4ae1913be108189952214f1e">SeqInStream_Read2</a>(<span class="keyword">const</span> <a class="code" href="structISeqInStream.html">ISeqInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size, <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#abae480c4b4821323893c60c711977559">SeqInStream_ReadByte</a>(<span class="keyword">const</span> <a class="code" href="structISeqInStream.html">ISeqInStream</a> *stream, <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *buf);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a6c2ed92b746a43cb10995d7931df0787">  173</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structISeqOutStream.html">ISeqOutStream</a> <a class="code" href="structISeqOutStream.html">ISeqOutStream</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="code" href="structISeqOutStream.html">  174</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structISeqOutStream.html">ISeqOutStream</a></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="code" href="structISeqOutStream.html#a1a4d70dffc4368cb7531cc6488e8638b">  176</a></span>&#160;  size_t (*<a class="code" href="structISeqOutStream.html#a1a4d70dffc4368cb7531cc6488e8638b">Write</a>)(<span class="keyword">const</span> <a class="code" href="structISeqOutStream.html">ISeqOutStream</a> *p, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> <a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">/* Returns: result - the number of actually written bytes.</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">       (result &lt; size) means error */</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;};</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a36d13f62da5fdf0cc64d1e7f0a9e1a7b">  180</a></span>&#160;<span class="preprocessor">#define ISeqOutStream_Write(p, buf, size) (p)-&gt;Write(p, buf, size)</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">  182</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">  184</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">SZ_SEEK_SET</a> = 0,</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">  185</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">SZ_SEEK_CUR</a> = 1,</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">  186</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">SZ_SEEK_END</a> = 2</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;} <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ae53b15d8a5fdb82f990a324911e30977">  190</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structISeekInStream.html">ISeekInStream</a> <a class="code" href="structISeekInStream.html">ISeekInStream</a>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="code" href="structISeekInStream.html">  191</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structISeekInStream.html">ISeekInStream</a></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="code" href="structISeekInStream.html#a65572659637209ffddf1dbfea2aa5313">  193</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structISeekInStream.html#a65572659637209ffddf1dbfea2aa5313">Read</a>)(<span class="keyword">const</span> <a class="code" href="structISeekInStream.html">ISeekInStream</a> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);  <span class="comment">/* same as ISeqInStream::Read */</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="code" href="structISeekInStream.html#a08d14ab5051667b478be5719ff0bd883">  194</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structISeekInStream.html#a08d14ab5051667b478be5719ff0bd883">Seek</a>)(<span class="keyword">const</span> <a class="code" href="structISeekInStream.html">ISeekInStream</a> *p, <a class="code" href="7zTypes_8h.html#ade5ca5eec203b16d15253b7c422808bf">Int64</a> *pos, <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#adfdc1d583c7dd3ebfdc13d1629462308">  196</a></span>&#160;<span class="preprocessor">#define ISeekInStream_Read(p, buf, size)   (p)-&gt;Read(p, buf, size)</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a568d66db34d14c958e9a6fd8bfca4658">  197</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ISeekInStream_Seek(p, pos, origin) (p)-&gt;Seek(p, pos, origin)</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#acd926dbf7daf119746b1926c39e3c57a">  200</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structILookInStream.html">ILookInStream</a> <a class="code" href="structILookInStream.html">ILookInStream</a>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="structILookInStream.html">  201</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structILookInStream.html">ILookInStream</a></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="code" href="structILookInStream.html#a919a3d41aed28cdaf8eb0f9d6070648e">  203</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structILookInStream.html#a919a3d41aed28cdaf8eb0f9d6070648e">Look</a>)(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *p, <span class="keyword">const</span> <span class="keywordtype">void</span> **buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">       (output(*size) &gt; input(*size)) is not allowed</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="code" href="structILookInStream.html#a2c1db8d24c677379d3faf6ab37cbc383">  207</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structILookInStream.html#a2c1db8d24c677379d3faf6ab37cbc383">Skip</a>)(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *p, <span class="keywordtype">size_t</span> offset);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">/* offset must be &lt;= output(*size) of Look */</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="code" href="structILookInStream.html#aef4fdbb128ec01e1ea6e3a007e9401da">  210</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structILookInStream.html#aef4fdbb128ec01e1ea6e3a007e9401da">Read</a>)(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *<a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="comment">/* reads directly (without buffer). It&#39;s same as ISeqInStream::Read */</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="code" href="structILookInStream.html#ad036eeaa9050d7d4584352dbc772b7c6">  212</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structILookInStream.html#ad036eeaa9050d7d4584352dbc772b7c6">Seek</a>)(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *p, <a class="code" href="7zTypes_8h.html#ade5ca5eec203b16d15253b7c422808bf">Int64</a> *pos, <a class="code" href="7zTypes_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;};</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a7fd593ef4247198d0561a7996897b570">  215</a></span>&#160;<span class="preprocessor">#define ILookInStream_Look(p, buf, size)   (p)-&gt;Look(p, buf, size)</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a0dee6a5e10a70fec8759fad79e6e8bcf">  216</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ILookInStream_Skip(p, offset)      (p)-&gt;Skip(p, offset)</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#af4434ef50f22dca6b1995e172ca69aa7">  217</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ILookInStream_Read(p, buf, size)   (p)-&gt;Read(p, buf, size)</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a28393154565ac13cf2c37b4e7d9ccadd">  218</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ILookInStream_Seek(p, pos, origin) (p)-&gt;Seek(p, pos, origin)</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a40cb2f9912a5575321cd07ed1c2a885a">LookInStream_LookRead</a>(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a1459a09011e49bcc2a60aebe8ef89769">LookInStream_SeekTo</a>(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <a class="code" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> offset);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">/* reads via ILookInStream::Read */</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a52ae8117c950fc674a0d3f24c7331cfe">LookInStream_Read2</a>(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size, <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> errorType);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> <a class="code" href="7zTypes_8h.html#a86a1cd76a4832f62c782cbc914b537ce">LookInStream_Read</a>(<span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="code" href="structISzAlloc.html">  229</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;{</div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="code" href="structISzAlloc.html#aa23d8aed7f6055493a4774bca8804f96">  231</a></span>&#160;  <span class="keywordtype">void</span> *(*Alloc)(<span class="keywordtype">void</span> *p, <span class="keywordtype">size_t</span> <a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="code" href="structISzAlloc.html#a9d8d13ae38d826a88a58caabe52b4f1a">  232</a></span>&#160;  void (*Free)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *address); <span class="comment">/* address can be 0 */</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;} <a class="code" href="structISzAlloc.html">ISzAlloc</a>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ad3678ea20bd39ee401e7fad8d155f9ea">  235</a></span>&#160;<span class="preprocessor">#define IAlloc_Alloc(p, size) (p)-&gt;Alloc((p), size)</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#af11f41042cd291603058f3f0d47febe3">  236</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IAlloc_Free(p, a) (p)-&gt;Free((p), a)</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#define CHAR_PATH_SEPARATOR &#39;\\&#39;</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WCHAR_PATH_SEPARATOR L&#39;\\&#39;</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRING_PATH_SEPARATOR &quot;\\&quot;</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WSTRING_PATH_SEPARATOR L&quot;\\&quot;</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="code" href="structCLookToRead2.html">  230</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="code" href="structCLookToRead2.html#a2ab4e20e6a7bfb9d46323785fe41646e">  232</a></span>&#160;  <a class="code" href="structILookInStream.html">ILookInStream</a> <a class="code" href="structCLookToRead2.html#a2ab4e20e6a7bfb9d46323785fe41646e">vt</a>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="code" href="structCLookToRead2.html#a90c2381917b98b1fe490881dd2ba37e1">  233</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="structISeekInStream.html">ISeekInStream</a> *<a class="code" href="structCLookToRead2.html#a90c2381917b98b1fe490881dd2ba37e1">realStream</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="code" href="structCLookToRead2.html#af996b833f3e5e4b4b7f28a6bd11b603f">  235</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structCLookToRead2.html#af996b833f3e5e4b4b7f28a6bd11b603f">pos</a>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="code" href="structCLookToRead2.html#a2d9acb94a8a2941467d6409f26d79376">  236</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structCLookToRead2.html#a2d9acb94a8a2941467d6409f26d79376">size</a>; <span class="comment">/* it&#39;s data size */</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="comment">/* the following variables must be set outside */</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="code" href="structCLookToRead2.html#a0a987669508e63461a86c527529c8030">  239</a></span>&#160;  <a class="code" href="7zTypes_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *<a class="code" href="structCLookToRead2.html#a0a987669508e63461a86c527529c8030">buf</a>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="code" href="structCLookToRead2.html#acb8a6349ab0682704f7e9f8073b26cc9">  240</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structCLookToRead2.html#acb8a6349ab0682704f7e9f8073b26cc9">bufSize</a>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;} <a class="code" href="structCLookToRead2.html">CLookToRead2</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keywordtype">void</span> <a class="code" href="7zTypes_8h.html#aa88c2dc09f22aa01270808f5f152c03d">LookToRead2_CreateVTable</a>(<a class="code" href="structCLookToRead2.html">CLookToRead2</a> *p, <span class="keywordtype">int</span> lookahead);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#aa0fc854431ba76edb2bd7f95bf30900d">  245</a></span>&#160;<span class="preprocessor">#define LookToRead2_Init(p) { (p)-&gt;pos = (p)-&gt;size = 0; }</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#af6c667ad21477a940183563afc6d3419">  247</a></span>&#160;<span class="preprocessor">#define CHAR_PATH_SEPARATOR &#39;/&#39;</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a88c181fe5c3cf0c6c238002abe03d14a">  248</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WCHAR_PATH_SEPARATOR L&#39;/&#39;</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a98c7ca21eb664139a229dffa7c79d0e2">  249</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRING_PATH_SEPARATOR &quot;/&quot;</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a5ca9416e656f68d6e9d71202c2f7b9b7">  250</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WSTRING_PATH_SEPARATOR L&quot;/&quot;</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<a class="code" href="7zTypes_8h.html#ada1a24bb49d1a045f735dc027664ae57">EXTERN_C_END</a></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="code" href="structCSecToLook.html">  248</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="code" href="structCSecToLook.html#a5ec50d46fbc991c67154772257a20d1b">  250</a></span>&#160;  <a class="code" href="structISeqInStream.html">ISeqInStream</a> <a class="code" href="structCSecToLook.html#a5ec50d46fbc991c67154772257a20d1b">vt</a>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="code" href="structCSecToLook.html#a0c5bb70b76a3c4cc3f6a5b38263d7407">  251</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *<a class="code" href="structCSecToLook.html#a0c5bb70b76a3c4cc3f6a5b38263d7407">realStream</a>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;} <a class="code" href="structCSecToLook.html">CSecToLook</a>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keywordtype">void</span> <a class="code" href="7zTypes_8h.html#aecc4b4a88d26e614ef152517e69a1f3e">SecToLook_CreateVTable</a>(<a class="code" href="structCSecToLook.html">CSecToLook</a> *p);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="code" href="structCSecToRead.html">  258</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="code" href="structCSecToRead.html#ad4c0aab39ce198d4b6e501521f9c7e46">  260</a></span>&#160;  <a class="code" href="structISeqInStream.html">ISeqInStream</a> <a class="code" href="structCSecToRead.html#ad4c0aab39ce198d4b6e501521f9c7e46">vt</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="code" href="structCSecToRead.html#a0b0b298496fe78c04f500f15d6b2684f">  261</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="structILookInStream.html">ILookInStream</a> *<a class="code" href="structCSecToRead.html#a0b0b298496fe78c04f500f15d6b2684f">realStream</a>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;} <a class="code" href="structCSecToRead.html">CSecToRead</a>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">void</span> <a class="code" href="7zTypes_8h.html#a1cf478ad3d8ef0cd66d7132ee6e9bae8">SecToRead_CreateVTable</a>(<a class="code" href="structCSecToRead.html">CSecToRead</a> *p);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a0d6a36e9a9d0b1071de96f881940bdc7">  267</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structICompressProgress.html">ICompressProgress</a> <a class="code" href="structICompressProgress.html">ICompressProgress</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="code" href="structICompressProgress.html">  269</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structICompressProgress.html">ICompressProgress</a></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="code" href="structICompressProgress.html#a589e7d7e757c9d0d99403489cc77612d">  271</a></span>&#160;  <a class="code" href="7zTypes_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="structICompressProgress.html#a589e7d7e757c9d0d99403489cc77612d">Progress</a>)(<span class="keyword">const</span> <a class="code" href="structICompressProgress.html">ICompressProgress</a> *p, <a class="code" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> inSize, <a class="code" href="7zTypes_8h.html#aabaf3d1eda66282f591e56707437c48e">UInt64</a> outSize);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="comment">/* Returns: result. (result != SZ_OK) means break.</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">       Value (UInt64)(Int64)-1 for size means unknown value. */</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;};</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#aaa0355aa32fa5ac2571432046fb0e4ed">  275</a></span>&#160;<span class="preprocessor">#define ICompressProgress_Progress(p, inSize, outSize) (p)-&gt;Progress(p, inSize, outSize)</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a919219795bb46d5dc773160ffdd5854c">  279</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structISzAlloc.html">ISzAlloc</a> <a class="code" href="structISzAlloc.html">ISzAlloc</a>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ada4adfdfaac2d8d9a65f1d6c82ac9f1e">  280</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code" href="structISzAlloc.html">ISzAlloc</a> * <a class="code" href="7zTypes_8h.html#ada4adfdfaac2d8d9a65f1d6c82ac9f1e">ISzAllocPtr</a>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="code" href="structISzAlloc.html">  282</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structISzAlloc.html">ISzAlloc</a></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;{</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="code" href="structISzAlloc.html#a2f3b0c7de5da2ce3921cbd511ad7229f">  284</a></span>&#160;  <span class="keywordtype">void</span> *(*Alloc)(<a class="code" href="structISzAlloc.html">ISzAllocPtr</a> p, <span class="keywordtype">size_t</span> <a class="code" href="synctex__parser_8c.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="code" href="structISzAlloc.html#a6e0eac7ce75db69121d418d3c2dfbb25">  285</a></span>&#160;  void (*<a class="code" href="structISzAlloc.html#a6e0eac7ce75db69121d418d3c2dfbb25">Free</a>)(<a class="code" href="structISzAlloc.html">ISzAllocPtr</a> p, <span class="keywordtype">void</span> *address); <span class="comment">/* address can be 0 */</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;};</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a9689de23ec9d710309f99527053a4097">  288</a></span>&#160;<span class="preprocessor">#define ISzAlloc_Alloc(p, size) (p)-&gt;Alloc(p, size)</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a63316e89578d43fcfc526678cdbb3b79">  289</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ISzAlloc_Free(p, a) (p)-&gt;Free(p, a)</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">/* deprecated */</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ad3678ea20bd39ee401e7fad8d155f9ea">  292</a></span>&#160;<span class="preprocessor">#define IAlloc_Alloc(p, size) ISzAlloc_Alloc(p, size)</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#af11f41042cd291603058f3f0d47febe3">  293</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IAlloc_Free(p, a) ISzAlloc_Free(p, a)</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">#ifndef MY_offsetof</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #ifdef offsetof</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #define MY_offsetof(type, m) offsetof(type, m)</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span>    <span class="comment">/*</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">    #define MY_offsetof(type, m) FIELD_OFFSET(type, m)</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">  #else</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#aa66b293325162a4853930eac1abaff15">  306</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #define MY_offsetof(type, m) ((size_t)&amp;(((type *)0)-&gt;m))</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#ifndef MY_container_of</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">#define MY_container_of(ptr, type, m) container_of(ptr, type, m)</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">#define MY_container_of(ptr, type, m) CONTAINING_RECORD(ptr, type, m)</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">#define MY_container_of(ptr, type, m) ((type *)((char *)(ptr) - offsetof(type, m)))</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">#define MY_container_of(ptr, type, m) (&amp;((type *)0)-&gt;m == (ptr), ((type *)(((char *)(ptr)) - MY_offsetof(type, m))))</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">  GCC shows warning: &quot;perhaps the &#39;offsetof&#39; macro was used incorrectly&quot;</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">    GCC 3.4.4 : classes with constructor</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">    GCC 4.8.1 : classes with non-public variable members&quot;</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#ab8d03ff205b29c0c1bb61d92bf83333b">  327</a></span>&#160;<span class="preprocessor">#define MY_container_of(ptr, type, m) ((type *)((char *)(1 ? (ptr) : &amp;((type *)0)-&gt;m) - MY_offsetof(type, m)))</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a3c0e19dc7c7b183b55f40afdb3929f63">  332</a></span>&#160;<span class="preprocessor">#define CONTAINER_FROM_VTBL_SIMPLE(ptr, type, m) ((type *)(ptr))</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">#define CONTAINER_FROM_VTBL(ptr, type, m) CONTAINER_FROM_VTBL_SIMPLE(ptr, type, m)</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#adfb4b3245a3bfeda953ddd1a3f1b30a9">  337</a></span>&#160;<span class="preprocessor">#define CONTAINER_FROM_VTBL(ptr, type, m) MY_container_of(ptr, type, m)</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00339"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#af2e0d9b88596e73240d842e48dffeb56">  339</a></span>&#160;<span class="preprocessor">#define CONTAINER_FROM_VTBL_CLS(ptr, type, m) CONTAINER_FROM_VTBL_SIMPLE(ptr, type, m)</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor"></span><span class="comment">/*</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">#define CONTAINER_FROM_VTBL_CLS(ptr, type, m) CONTAINER_FROM_VTBL(ptr, type, m)</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#define CHAR_PATH_SEPARATOR &#39;\\&#39;</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WCHAR_PATH_SEPARATOR L&#39;\\&#39;</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRING_PATH_SEPARATOR &quot;\\&quot;</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WSTRING_PATH_SEPARATOR L&quot;\\&quot;</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#af6c667ad21477a940183563afc6d3419">  355</a></span>&#160;<span class="preprocessor">#define CHAR_PATH_SEPARATOR &#39;/&#39;</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a88c181fe5c3cf0c6c238002abe03d14a">  356</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WCHAR_PATH_SEPARATOR L&#39;/&#39;</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a98c7ca21eb664139a229dffa7c79d0e2">  357</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STRING_PATH_SEPARATOR &quot;/&quot;</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="code" href="7zTypes_8h.html#a5ca9416e656f68d6e9d71202c2f7b9b7">  358</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WSTRING_PATH_SEPARATOR L&quot;/&quot;</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<a class="code" href="7zTypes_8h.html#ada1a24bb49d1a045f735dc027664ae57">EXTERN_C_END</a></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_66798fc8659e7daf0e5247fc7505c5a3.html">cut-n-paste</a></li><li class="navelem"><a class="el" href="dir_f5dc2ce27f896424f4071c98a126e32d.html">unarr</a></li><li class="navelem"><a class="el" href="dir_9fcaf58857096e637f3736bf1328771e.html">lzmasdk</a></li><li class="navelem"><a class="el" href="7zTypes_8h.html">7zTypes.h</a></li>
-    <li class="footer">Generated on Sat Jun 17 2017 15:21:43 for Evince by
+    <li class="footer">Generated on Fri Jun 30 2017 18:13:41 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

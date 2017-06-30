@@ -65,7 +65,7 @@ var searchData=
   ['lockdown_5fsettings',['lockdown_settings',['../struct__EvWindowPrivate.html#aeaa5fcb4ffe464e6784fe1dde2e8bb99',1,'_EvWindowPrivate']]],
   ['log',['log',['../struct____synctex__class__t.html#a25c33b646d9ef2dfa10512fd57e319dd',1,'__synctex_class_t']]],
   ['logfile',['logfile',['../util_8c.html#ab25a3625a8efbaa3d81ef27bbb51c9c5',1,'util.c']]],
-  ['look',['Look',['../structILookInStream.html#a04739a0e42e4c15148d706d1954fc8bc',1,'ILookInStream']]],
+  ['look',['Look',['../structILookInStream.html#a919a3d41aed28cdaf8eb0f9d6070648e',1,'ILookInStream']]],
   ['lookup',['lookup',['../struct__DviFontInfo.html#af2a45a4268ed1726b55c3f8a2d39c9e7',1,'_DviFontInfo']]],
   ['loop',['loop',['../structEvTimelinePriv.html#afaa3738c243fcf5ed16e7c636324ff8d',1,'EvTimelinePriv']]],
   ['lostfocus',['lostfocus',['../struct__NPPluginFuncs.html#a2c55b0340e00a495963d64b4301a4cb0',1,'_NPPluginFuncs']]],

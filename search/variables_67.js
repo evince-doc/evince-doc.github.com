@@ -50,7 +50,7 @@ var searchData=
   ['getsiteswithdata',['getsiteswithdata',['../struct__NPPluginFuncs.html#af67d5a85ce501900c8f8c0a2bca7831e',1,'_NPPluginFuncs']]],
   ['getstringidentifier',['getstringidentifier',['../struct__NPNetscapeFuncs.html#a04a70f5a3c611c3bffbd7aa7d040978b',1,'_NPNetscapeFuncs']]],
   ['getstringidentifiers',['getstringidentifiers',['../struct__NPNetscapeFuncs.html#a3084cc52b18ba1ec455475d11515d03c',1,'_NPNetscapeFuncs']]],
-  ['getthreshold',['GetThreshold',['../structIPpmd7__RangeDec.html#a46876f907d503c08ae51acc1676028ee',1,'IPpmd7_RangeDec']]],
+  ['getthreshold',['GetThreshold',['../structIPpmd7__RangeDec.html#a72f1c6c7b0b283e4f0c48cf98c827b26',1,'IPpmd7_RangeDec']]],
   ['geturl',['geturl',['../struct__NPNetscapeFuncs.html#a3eb8d8bc2b46828db0b605d7e186c094',1,'_NPNetscapeFuncs']]],
   ['geturlnotify',['geturlnotify',['../struct__NPNetscapeFuncs.html#a8d506c5362f327e92164640da92d0e13',1,'_NPNetscapeFuncs']]],
   ['getvalue',['getvalue',['../struct__NPPluginFuncs.html#a0da6676c010699f0a6ef72d20aae2508',1,'_NPPluginFuncs::getvalue()'],['../struct__NPNetscapeFuncs.html#ac58c9b914bab8df89e7c38d4c56bab0b',1,'_NPNetscapeFuncs::getvalue()']]],
