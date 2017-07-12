@@ -60,7 +60,7 @@ var searchData=
   ['createmenubutton',['createMenuButton',['../EvBrowserPluginToolbar_8cpp.html#a409445858685873405ad4632b8f67c29',1,'EvBrowserPluginToolbar.cpp']]],
   ['createobject',['createObject',['../structEvBrowserPluginClass.html#aaf2df633b6bee2c15f0ec08d547c88c0',1,'EvBrowserPluginClass']]],
   ['createsizingmodemenu',['createSizingModeMenu',['../EvBrowserPluginToolbar_8cpp.html#ae0faeb816242bd89dac35a421e96657a',1,'EvBrowserPluginToolbar.cpp']]],
-  ['createsuccessors',['CreateSuccessors',['../Ppmd7_8c.html#ad0079ac445ba73c47ee6ec014aea667d',1,'CreateSuccessors(CPpmd7 *p, Bool skip):&#160;Ppmd7.c'],['../Ppmd8_8c.html#ac225fe7ee2da04bdbe5b05a113d73322',1,'CreateSuccessors(CPpmd8 *p, Bool skip, CPpmd_State *s1, CTX_PTR c):&#160;Ppmd8.c']]],
+  ['createsuccessors',['CreateSuccessors',['../Ppmd7_8c.html#ad0079ac445ba73c47ee6ec014aea667d',1,'Ppmd7.c']]],
   ['createtogglebutton',['createToggleButton',['../EvBrowserPluginToolbar_8cpp.html#a35226f80de2682481821882de1d5cd55',1,'EvBrowserPluginToolbar.cpp']]],
   ['current_5fevent_5fis_5fspace_5fkey_5fpress',['current_event_is_space_key_press',['../ev-view_8c.html#a86642cbac53d8c7c4e24073d76b58850',1,'ev-view.c']]],
   ['currentpage',['currentPage',['../classEvBrowserPlugin.html#a19e504be3843e71b629977cf0c238259',1,'EvBrowserPlugin']]],
@@ -80,6 +80,5 @@ var searchData=
   ['cursor_5fgo_5fto_5fpage_5fstart',['cursor_go_to_page_start',['../ev-view_8c.html#af8333e1d1568e329714bb9e3847ba560',1,'ev-view.c']]],
   ['cursor_5fgo_5fto_5fprevious_5fpage',['cursor_go_to_previous_page',['../ev-view_8c.html#ae257cb05be68b56eeae88ce23c4f2e6e',1,'ev-view.c']]],
   ['cursor_5fis_5fin_5fvisible_5fpage',['cursor_is_in_visible_page',['../ev-view_8c.html#a691f0db8c7f2b66ded75e4dcf7a727a8',1,'ev-view.c']]],
-  ['cursor_5fshould_5fblink',['cursor_should_blink',['../ev-view_8c.html#a9e2e01ff1630f50fdb89b8747e52a0de',1,'ev-view.c']]],
-  ['cutoff',['CutOff',['../Ppmd8_8c.html#a543424d029a6e99b48c3b73377d6640f',1,'Ppmd8.c']]]
+  ['cursor_5fshould_5fblink',['cursor_should_blink',['../ev-view_8c.html#a9e2e01ff1630f50fdb89b8747e52a0de',1,'ev-view.c']]]
 ];

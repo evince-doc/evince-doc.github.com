@@ -9,7 +9,7 @@ var searchData=
   ['initialize',['initialize',['../classEvBrowserPlugin.html#a98a82dbda07a3c4d2dab9907bedfb46e',1,'EvBrowserPlugin']]],
   ['initialize_5fchildren',['initialize_children',['../ev-view-accessible_8c.html#a81ce8f530707e0d083378ec2570ef82a',1,'ev-view-accessible.c']]],
   ['initializepluginfuncs',['initializePluginFuncs',['../EvBrowserPluginMain_8cpp.html#abde3fe97b93cef0a9279840ca677f999',1,'EvBrowserPluginMain.cpp']]],
-  ['insertnode',['InsertNode',['../Ppmd7_8c.html#a8e30dbf5d52db087eaae31c467c2f890',1,'InsertNode(CPpmd7 *p, void *node, unsigned indx):&#160;Ppmd7.c'],['../Ppmd8_8c.html#a1efeedc040e630a72bb259d3c40a4d90',1,'InsertNode(CPpmd8 *p, void *node, unsigned indx):&#160;Ppmd8.c']]],
+  ['insertnode',['InsertNode',['../Ppmd7_8c.html#a8e30dbf5d52db087eaae31c467c2f890',1,'Ppmd7.c']]],
   ['invalidate',['invalidate',['../classEvBrowserPlugin.html#a8b99bf160bbc3887037fed2b30049b9f',1,'EvBrowserPlugin']]],
   ['invoke',['invoke',['../classEvBrowserPlugin.html#a287bf9f279311c91d4c8c4472b7a8558',1,'EvBrowserPlugin']]],
   ['is_5fdual_5fpage',['is_dual_page',['../ev-view_8c.html#a65005e778131c498c92ab107d97eb4de',1,'ev-view.c']]],

@@ -2,7 +2,6 @@ var searchData=
 [
   ['kaligntablesize',['kAlignTableSize',['../LzmaDec_8c.html#a00c376a4176050181b189631741832d5',1,'LzmaDec.c']]],
   ['kbitmodeltotal',['kBitModelTotal',['../LzmaDec_8c.html#a42683bb56128d7ca273fcfe69e7c6c37',1,'LzmaDec.c']]],
-  ['kbot',['kBot',['../Ppmd8Dec_8c.html#a44837969a48f9d4fc92d766ff3dcfbb7',1,'Ppmd8Dec.c']]],
   ['kendposmodelindex',['kEndPosModelIndex',['../LzmaDec_8c.html#a50ec8b41912e25cc8214cdac468d591b',1,'LzmaDec.c']]],
   ['key_5fis_5fnumeric',['KEY_IS_NUMERIC',['../ev-view-presentation_8c.html#afff73d8c6ef41f0916eb67ea5c80d8c6',1,'ev-view-presentation.c']]],
   ['klennumhighbits',['kLenNumHighBits',['../LzmaDec_8c.html#a4b88ea31aca548400275c16cdd0fcd0f',1,'LzmaDec.c']]],
@@ -29,6 +28,5 @@ var searchData=
   ['knumstates',['kNumStates',['../LzmaDec_8c.html#adc6b4e5ae0ddf7ba672919edc06504b5',1,'LzmaDec.c']]],
   ['knumtopbits',['kNumTopBits',['../LzmaDec_8c.html#a32f13b5730b1236f259facf642d060ea',1,'LzmaDec.c']]],
   ['kstartposmodelindex',['kStartPosModelIndex',['../LzmaDec_8c.html#a547192da83ec82c29741856c83e95179',1,'LzmaDec.c']]],
-  ['ktop',['kTop',['../Ppmd8Dec_8c.html#a5879390786a2f6f7a9aefd4001362be5',1,'Ppmd8Dec.c']]],
   ['ktopvalue',['kTopValue',['../LzmaDec_8c.html#ae668f35d44d0e8b31daf6479d19a5e3f',1,'kTopValue():&#160;LzmaDec.c'],['../Ppmd7Dec_8c.html#ae668f35d44d0e8b31daf6479d19a5e3f',1,'kTopValue():&#160;Ppmd7Dec.c']]]
 ];

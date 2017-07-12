@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i2u',['I2U',['../Ppmd7_8c.html#aa0ea88c849308cd53123579d2689629a',1,'I2U():&#160;Ppmd7.c'],['../Ppmd8_8c.html#aa0ea88c849308cd53123579d2689629a',1,'I2U():&#160;Ppmd8.c']]],
+  ['i2u',['I2U',['../Ppmd7_8c.html#aa0ea88c849308cd53123579d2689629a',1,'Ppmd7.c']]],
   ['ialloc_5falloc',['IAlloc_Alloc',['../7zTypes_8h.html#ad3678ea20bd39ee401e7fad8d155f9ea',1,'7zTypes.h']]],
   ['ialloc_5ffree',['IAlloc_Free',['../7zTypes_8h.html#af11f41042cd291603058f3f0d47febe3',1,'7zTypes.h']]],
   ['ibytein_5fread',['IByteIn_Read',['../7zTypes_8h.html#aa57a04aebf21e2be4d93e48e4790754b',1,'7zTypes.h']]],

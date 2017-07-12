@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('ev-annotation-properties-dialog_8c_sou
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-annotation-properties-dialog_8h.html">ev-annotation-properties-dialog.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-annotation-properties-dialog_8c.html#a2f80701c36e79c0640d91c788feee0b3ac37dda0da1a44e10c0504afeeb863f3c">   28</a></span>&#160;    <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-annotation-properties-dialog_8c.html#a2f80701c36e79c0640d91c788feee0b3a6ab1d6794153d3426e66880932fd32da">   29</a></span>&#160;    <a class="code" href="ev-annotation-properties-dialog_8c.html#a2f80701c36e79c0640d91c788feee0b3a6ab1d6794153d3426e66880932fd32da">PROP_ANNOT_TYPE</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ev-annotation-properties-dialog_8c.html#aa156d1cebb38c8a65846c4d9c006012aac37dda0da1a44e10c0504afeeb863f3c">   28</a></span>&#160;    <a class="code" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-annotation-properties-dialog_8c.html#aa156d1cebb38c8a65846c4d9c006012aa6ab1d6794153d3426e66880932fd32da">   29</a></span>&#160;    <a class="code" href="ev-annotation-properties-dialog_8c.html#aa156d1cebb38c8a65846c4d9c006012aa6ab1d6794153d3426e66880932fd32da">PROP_ANNOT_TYPE</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="struct__EvAnnotationPropertiesDialog.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvAnnotationPropertiesDialog.html">_EvAnnotationPropertiesDialog</a> {</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('ev-annotation-properties-dialog_8c_sou
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="struct__EvAnnotationPropertiesDialog.html">EvAnnotationPropertiesDialog</a> *dialog = <a class="code" href="ev-annotation-properties-dialog_8h.html#ae65e90f3014732300d55fbc8748b8c26">EV_ANNOTATION_PROPERTIES_DIALOG</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-annotation-properties-dialog_8c.html#a2f80701c36e79c0640d91c788feee0b3a6ab1d6794153d3426e66880932fd32da">PROP_ANNOT_TYPE</a>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="ev-annotation-properties-dialog_8c.html#aa156d1cebb38c8a65846c4d9c006012aa6ab1d6794153d3426e66880932fd32da">PROP_ANNOT_TYPE</a>:</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        dialog-&gt;<a class="code" href="struct__EvAnnotationPropertiesDialog.html#a53c3197e43e26d1b1ee1c1591039f208">annot_type</a> = g_value_get_enum (value);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -333,7 +333,7 @@ $(document).ready(function(){initNavTree('ev-annotation-properties-dialog_8c_sou
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    object_class-&gt;set_property = <a class="code" href="ev-annotation-properties-dialog_8c.html#a59c1c059fbb09e7443020f89f9853b5c">ev_annotation_properties_dialog_set_property</a>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    g_object_class_install_property (object_class,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                     <a class="code" href="ev-annotation-properties-dialog_8c.html#a2f80701c36e79c0640d91c788feee0b3a6ab1d6794153d3426e66880932fd32da">PROP_ANNOT_TYPE</a>,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                     <a class="code" href="ev-annotation-properties-dialog_8c.html#aa156d1cebb38c8a65846c4d9c006012aa6ab1d6794153d3426e66880932fd32da">PROP_ANNOT_TYPE</a>,</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                     g_param_spec_enum (<span class="stringliteral">&quot;annot-type&quot;</span>,</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                <span class="stringliteral">&quot;AnnotType&quot;</span>,</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                <span class="stringliteral">&quot;The type of annotation&quot;</span>,</div>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('ev-annotation-properties-dialog_8c_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-annotation-properties-dialog_8c.html">ev-annotation-properties-dialog.c</a></li>
-    <li class="footer">Generated on Tue Jul 11 2017 17:02:38 for Evince by
+    <li class="footer">Generated on Wed Jul 12 2017 15:19:59 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

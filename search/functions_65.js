@@ -1870,6 +1870,5 @@ var searchData=
   ['evince_5fthumbnail_5fpngenc_5fget_5fasync',['evince_thumbnail_pngenc_get_async',['../evince-thumbnailer_8c.html#ae5b98cb09afa471ed82b935a45a04b3d',1,'evince-thumbnailer.c']]],
   ['evince_5fthumbnailer_5fget_5fdocument',['evince_thumbnailer_get_document',['../evince-thumbnailer_8c.html#a3c23f2f39e9337fb609bd7446619bc02',1,'evince-thumbnailer.c']]],
   ['expand_5fopen_5flinks',['expand_open_links',['../ev-sidebar-links_8c.html#a4c3b5038dc6e3c3d41ad13c2733842eb',1,'ev-sidebar-links.c']]],
-  ['expandtextarea',['ExpandTextArea',['../Ppmd8_8c.html#a3bed7e70ecc1a43aded87b3948c6d9b3',1,'Ppmd8.c']]],
   ['extend_5fselection',['extend_selection',['../ev-view_8c.html#afa236f661ae8a247fb2368bddac97bfd',1,'ev-view.c']]]
 ];

@@ -70,7 +70,7 @@ var searchData=
   ['dual_5fpage',['dual_page',['../struct__EvDocumentModel.html#a2f2cacb8083d4a910932ff2f3d15160c',1,'_EvDocumentModel']]],
   ['dual_5fpage_5fodd_5fleft',['dual_page_odd_left',['../struct__EvDocumentModel.html#a4920162a0d8782c368033c3ffe409057',1,'_EvDocumentModel']]],
   ['dualtogglebutton',['dualToggleButton',['../struct__EvBrowserPluginToolbarPrivate.html#ad040649d8993d9af6110cafcc3a3a3a4',1,'_EvBrowserPluginToolbarPrivate']]],
-  ['dummysee',['DummySee',['../structCPpmd7.html#a1d855d44e3e44a5a428e27deb8bcabc2',1,'CPpmd7::DummySee()'],['../structCPpmd8.html#a5bdaf5120aa0b929dd2494595f9fcd2b',1,'CPpmd8::DummySee()']]],
+  ['dummysee',['DummySee',['../structCPpmd7.html#a1d855d44e3e44a5a428e27deb8bcabc2',1,'CPpmd7']]],
   ['duplex',['duplex',['../struct__EvFileExporterContext.html#a0ccc2886da014756e23b60e680466236',1,'_EvFileExporterContext']]],
   ['duplexpreamble',['DuplexPreamble',['../tiff2ps_8c.html#aee105c6d702b3adf4ea28e7969d19400',1,'tiff2ps.c']]],
   ['duration',['duration',['../structEvTransitionEffectPrivate.html#a825bfc82da30a0b41e21620a24ccdb22',1,'EvTransitionEffectPrivate::duration()'],['../struct__EvMediaPlayer.html#a094b8b20530f384b6de67ad4fc4d9acd',1,'_EvMediaPlayer::duration()'],['../structEvTimelinePriv.html#abb715d2b9be4908dbe5c2175de4f4e01',1,'EvTimelinePriv::duration()']]],

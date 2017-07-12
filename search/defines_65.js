@@ -1,7 +1,6 @@
 var searchData=
 [
   ['earlyeof',['earlyEOF',['../afmparse_8h.html#a4bc7d2f21be24c21233808865a63a0c5',1,'afmparse.h']]],
-  ['empty_5fnode',['EMPTY_NODE',['../Ppmd8_8c.html#aefa63a937c01506d31bfee242f788aa7',1,'Ppmd8.c']]],
   ['enc_5fhash_5fsize',['ENC_HASH_SIZE',['../fontmap_8c.html#a754c14b8858accc4d7b53b79b5c85c05',1,'fontmap.c']]],
   ['encname_5fhash_5fsize',['ENCNAME_HASH_SIZE',['../fontmap_8c.html#ab30ea6848f1c067b29ae9654c964d53c',1,'fontmap.c']]],
   ['eol',['EOL',['../afmparse_8h.html#a4e67e9429d48a2ba8f833ee3b1dceb5d',1,'afmparse.h']]],

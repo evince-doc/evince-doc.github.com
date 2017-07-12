@@ -9,8 +9,5 @@ var dir_9fcaf58857096e637f3736bf1328771e =
     [ "Ppmd7.c", "Ppmd7_8c.html", "Ppmd7_8c" ],
     [ "Ppmd7.h", "Ppmd7_8h.html", "Ppmd7_8h" ],
     [ "Ppmd7Dec.c", "Ppmd7Dec_8c.html", "Ppmd7Dec_8c" ],
-    [ "Ppmd8.c", "Ppmd8_8c.html", "Ppmd8_8c" ],
-    [ "Ppmd8.h", "Ppmd8_8h.html", "Ppmd8_8h" ],
-    [ "Ppmd8Dec.c", "Ppmd8Dec_8c.html", "Ppmd8Dec_8c" ],
     [ "Precomp.h", "Precomp_8h.html", null ]
 ];

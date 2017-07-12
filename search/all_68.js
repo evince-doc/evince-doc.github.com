@@ -65,7 +65,7 @@ var searchData=
   ['history_5fchanged_5fcb',['history_changed_cb',['../ev-window_8c.html#a00d1186059de4936fc2b17c4667f2932',1,'ev-window.c']]],
   ['history_5fmenu_5flink_5factivated',['history_menu_link_activated',['../ev-history-action_8c.html#afa7886048257f9c27cf211694ca0d875',1,'ev-history-action.c']]],
   ['hits',['hits',['../structColorCache.html#a7aeaf8cda29cbe142fae19a8a446121b',1,'ColorCache']]],
-  ['hiunit',['HiUnit',['../structCPpmd7.html#a684b695acde1596fe9bf8e81c0350d58',1,'CPpmd7::HiUnit()'],['../structCPpmd8.html#acbd882b8c3d9c4ceb203939a2304065a',1,'CPpmd8::HiUnit()']]],
+  ['hiunit',['HiUnit',['../structCPpmd7.html#a684b695acde1596fe9bf8e81c0350d58',1,'CPpmd7']]],
   ['hoff',['HOFF',['../sp-epsf_8c.html#a6556156866fcaa4a928a8882476002e0',1,'sp-epsf.c']]],
   ['hpaned',['hpaned',['../struct__EvWindowPrivate.html#a5e259cb15febf660bda413779c075225',1,'_EvWindowPrivate']]],
   ['hsb2rgb',['hsb2rgb',['../dvi-document_8c.html#a894b57ec9fbb550fc3b7204d3037981f',1,'dvi-document.c']]],

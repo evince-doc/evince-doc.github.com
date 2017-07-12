@@ -380,10 +380,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="comment">/* Insert and move to end */</span></div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    gtk_list_store_insert_with_values (GTK_LIST_STORE (ev_sidebar-&gt;priv-&gt;page_model),</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                       &amp;iter, 0,</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, title,</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93a7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, menu_item,</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, main_widget,</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, index,</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bba1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, title,</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bba7735d940676f3435b95ddb3cf5bf47f2">PAGE_COLUMN_MENU_ITEM</a>, menu_item,</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bbac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, main_widget,</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                       <a class="code" href="ev-sidebar_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bbade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, index,</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                       -1);</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    gtk_list_store_move_before(GTK_LIST_STORE(ev_sidebar-&gt;priv-&gt;page_model),</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                       &amp;iter, NULL);</div>
@@ -393,8 +393,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    gtk_tree_model_get_iter_first (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter);</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    gtk_tree_model_get (ev_sidebar-&gt;priv-&gt;page_model,</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                &amp;iter,</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93a1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, &amp;label_title,</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, &amp;index,</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bba1aba6a96869acbeca4c6482366672f74">PAGE_COLUMN_TITLE</a>, &amp;label_title,</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                <a class="code" href="ev-sidebar_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bbade8fa87c9986c2060f46240d132d3017">PAGE_COLUMN_NOTEBOOK_INDEX</a>, &amp;index,</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                -1);</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    gtk_menu_set_active (GTK_MENU (ev_sidebar-&gt;priv-&gt;menu), index);</div>
@@ -554,7 +554,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        GtkWidget *widget;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        gtk_tree_model_get (ev_sidebar-&gt;priv-&gt;page_model, &amp;iter,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a7495a48740c9d555f7fbcb48246dbd93ac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, &amp;widget,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <a class="code" href="ev-sidebar_8c.html#a4f126a0a9b1d8c6a8f46a051ef8830bbac8b1c4dc17c37c48a4ffc7fbf115267b">PAGE_COLUMN_MAIN_WIDGET</a>, &amp;widget,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    -1);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;             </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (widget == main_widget) {</div>
@@ -587,7 +587,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-sidebar_8h.html">ev-sidebar.h</a></li>
-    <li class="footer">Generated on Tue Jul 11 2017 17:02:46 for Evince by
+    <li class="footer">Generated on Wed Jul 12 2017 15:20:10 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

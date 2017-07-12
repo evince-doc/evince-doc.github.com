@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['range',['range',['../structCLzmaDec.html#aabb2c6e9b9c6722d813132d03c59ae34',1,'CLzmaDec::range()'],['../structCPpmd7z__RangeDec.html#a82b1c603dc75e032d5cc27c42be9838e',1,'CPpmd7z_RangeDec::Range()'],['../structCPpmd7z__RangeEnc.html#a7eb517c80438037129858ab42763b014',1,'CPpmd7z_RangeEnc::Range()'],['../structCPpmd8.html#ad01cbc8a24da5016fcfb40d9055dcb4c',1,'CPpmd8::Range()'],['../structCPpmdRAR__RangeDec.html#af5f54597e099c0a4673dc539727a80d9',1,'CPpmdRAR_RangeDec::Range()']]],
+  ['range',['range',['../structCLzmaDec.html#aabb2c6e9b9c6722d813132d03c59ae34',1,'CLzmaDec::range()'],['../structCPpmd7z__RangeDec.html#a82b1c603dc75e032d5cc27c42be9838e',1,'CPpmd7z_RangeDec::Range()'],['../structCPpmd7z__RangeEnc.html#a7eb517c80438037129858ab42763b014',1,'CPpmd7z_RangeEnc::Range()'],['../structCPpmdRAR__RangeDec.html#af5f54597e099c0a4673dc539727a80d9',1,'CPpmdRAR_RangeDec::Range()']]],
   ['range_5fdec',['range_dec',['../structar__archive__rar__uncomp__v3.html#a81154a365597987724274adb73576ea2',1,'ar_archive_rar_uncomp_v3']]],
   ['ranges',['ranges',['../struct__DviPageSpec.html#a5e222c330e708deafd6d3e7efb2c5602',1,'_DviPageSpec']]],
   ['rar',['rar',['../structByteReader.html#a958ec3cfb54628ce69766bbe425d5041',1,'ByteReader']]],
@@ -30,7 +30,7 @@ var searchData=
   ['reloadplugins',['reloadplugins',['../struct__NPNetscapeFuncs.html#a8181873fe5447743593b347ad0687460',1,'_NPNetscapeFuncs']]],
   ['remainlen',['remainLen',['../structCLzmaDec.html#ab4b2b6f8e6e8e20b2ce45b9406b11739',1,'CLzmaDec']]],
   ['remove_5fannotation',['remove_annotation',['../struct__EvDocumentAnnotationsInterface.html#aef0185761dd7874e8bd7ad4ebe983c52',1,'_EvDocumentAnnotationsInterface']]],
-  ['removeproperty',['removeproperty',['../struct__NPNetscapeFuncs.html#affa8e64bd0fbf11ed26f0aacb51fabf2',1,'_NPNetscapeFuncs::removeproperty()'],['../structNPClass.html#abfd93f88c9a41e31be0f8419531ecf71',1,'NPClass::removeProperty()']]],
+  ['removeproperty',['removeProperty',['../structNPClass.html#abfd93f88c9a41e31be0f8419531ecf71',1,'NPClass::removeProperty()'],['../struct__NPNetscapeFuncs.html#affa8e64bd0fbf11ed26f0aacb51fabf2',1,'_NPNetscapeFuncs::removeproperty()']]],
   ['render',['render',['../struct__EvDocumentClass.html#af1fcfcca20a0a482acb8c9841c7080f7',1,'_EvDocumentClass']]],
   ['render_5ffinished',['render_finished',['../struct__EvAsyncRendererInterface.html#a4a42164dbdd0ce665ae5dbbacb5f675b',1,'_EvAsyncRendererInterface']]],
   ['render_5fpixbuf',['render_pixbuf',['../struct__EvAsyncRendererInterface.html#a3ca67cdef9363e99e669b89c262cae3a',1,'_EvAsyncRendererInterface']]],
@@ -45,7 +45,6 @@ var searchData=
   ['resize_5fse',['resize_se',['../struct__EvAnnotationWindow.html#aa78b9167d0190a7ba5ae533a9a91f5ac',1,'_EvAnnotationWindow']]],
   ['resize_5fsw',['resize_sw',['../struct__EvAnnotationWindow.html#ab6ad3e9c18dd73eb5dbaf50c8dcb5d31',1,'_EvAnnotationWindow']]],
   ['restart',['restart',['../structar__archive__rar__solid.html#a3cca15dc4acf52526e3d658c542dec21',1,'ar_archive_rar_solid']]],
-  ['restoremethod',['RestoreMethod',['../structCPpmd8.html#ad9d0c02742564d21cf945711951e9d39',1,'CPpmd8']]],
   ['results',['results',['../struct__DjvuTextPage.html#a42593faa99b95ffea631d0e990c28159',1,'_DjvuTextPage']]],
   ['retainobject',['retainobject',['../struct__NPNetscapeFuncs.html#aea7c9e9cbdb82dc6a222c64e7f9c4acb',1,'_NPNetscapeFuncs']]],
   ['rgba',['rgba',['../struct__EvAnnotation.html#a4be528f81760c74436c07afcc2730674',1,'_EvAnnotation']]],
@@ -57,6 +56,6 @@ var searchData=
   ['row_5factivated_5fid',['row_activated_id',['../struct__EvSidebarLinksPrivate.html#a4faa4762616255c2be223d9cda0c1d46',1,'_EvSidebarLinksPrivate']]],
   ['run',['run',['../struct__EvJobClass.html#a1d71270f4c411717b224f83dd6141027',1,'_EvJobClass::run()'],['../struct__EvPrintOperationClass.html#a34151c018ac48e9d52307a06a0d4cd31',1,'_EvPrintOperationClass::run()']]],
   ['run_5fmode',['run_mode',['../struct__EvJob.html#ab1c83fd5270289f99eb54b856e16a0c2',1,'_EvJob']]],
-  ['runlength',['RunLength',['../structCPpmd7.html#abd7a30aa7530aaa5360904641582114f',1,'CPpmd7::RunLength()'],['../structCPpmd8.html#a4bcf23ab924f260f5f253ff173a40690',1,'CPpmd8::RunLength()']]],
+  ['runlength',['RunLength',['../structCPpmd7.html#abd7a30aa7530aaa5360904641582114f',1,'CPpmd7']]],
   ['running_5fjob',['running_job',['../ev-job-scheduler_8c.html#aca5d42a7fc39e69a32bc5fc5a2c93ac7',1,'ev-job-scheduler.c']]]
 ];

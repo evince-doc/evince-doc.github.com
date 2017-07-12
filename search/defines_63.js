@@ -14,7 +14,7 @@ var searchData=
   ['container_5ffrom_5fvtbl',['CONTAINER_FROM_VTBL',['../7zTypes_8h.html#adfb4b3245a3bfeda953ddd1a3f1b30a9',1,'7zTypes.h']]],
   ['container_5ffrom_5fvtbl_5fcls',['CONTAINER_FROM_VTBL_CLS',['../7zTypes_8h.html#af2e0d9b88596e73240d842e48dffeb56',1,'7zTypes.h']]],
   ['container_5ffrom_5fvtbl_5fsimple',['CONTAINER_FROM_VTBL_SIMPLE',['../7zTypes_8h.html#a3c0e19dc7c7b183b55f40afdb3929f63',1,'7zTypes.h']]],
-  ['ctx',['CTX',['../Ppmd7_8c.html#a7e08d5d24d8ebe3e0395217cd8769db8',1,'CTX():&#160;Ppmd7.c'],['../Ppmd8_8c.html#a7e08d5d24d8ebe3e0395217cd8769db8',1,'CTX():&#160;Ppmd8.c']]],
+  ['ctx',['CTX',['../Ppmd7_8c.html#a7e08d5d24d8ebe3e0395217cd8769db8',1,'Ppmd7.c']]],
   ['cursor_5fdivider',['CURSOR_DIVIDER',['../ev-view_8c.html#a7b7ce94c62841b6a2ca044bc01f85cf8',1,'ev-view.c']]],
   ['cursor_5foff_5fmultiplier',['CURSOR_OFF_MULTIPLIER',['../ev-view_8c.html#a226485a540de86ba8676ec0aaa05e980',1,'ev-view.c']]],
   ['cursor_5fon_5fmultiplier',['CURSOR_ON_MULTIPLIER',['../ev-view_8c.html#a3cdddd7ddb5c37f953ffc494e4a75a40',1,'ev-view.c']]],

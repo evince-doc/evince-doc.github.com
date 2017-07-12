@@ -48,7 +48,6 @@ var searchData=
   ['free_5fent',['free_ent',['../fontmap_8c.html#a0902d5a25ec1639f9e2ce39e0593d084',1,'fontmap.c']]],
   ['free_5ffont_5fmetrics',['free_font_metrics',['../tfmfile_8c.html#ab34d2ee51e4b70582d4604d8687f04d9',1,'tfmfile.c']]],
   ['free_5funcompressed_5furi',['free_uncompressed_uri',['../ev-document-factory_8c.html#a4e5a61b57882a18144fa8d4072a28506',1,'ev-document-factory.c']]],
-  ['freeunits',['FreeUnits',['../Ppmd8_8c.html#aeff9ecfab993e390833104c1b4f16a6b',1,'Ppmd8.c']]],
   ['fsgetn',['fsgetn',['../common_8c.html#a0b31d294691c97e00a38d2c8e0335caa',1,'common.c']]],
   ['fugetn',['fugetn',['../common_8c.html#af37ba60dbe38330486f6f1b75e3744d9',1,'common.c']]],
   ['fullscreen_5ftoolbar_5ftimeout_5fcb',['fullscreen_toolbar_timeout_cb',['../ev-window_8c.html#a793641aed6795c8a5ec969f1ab303d36',1,'ev-window.c']]]

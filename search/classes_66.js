@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fontinfo',['FontInfo',['../structFontInfo.html',1,'FontInfo'],['../structfontinfo.html',1,'fontinfo']]]
+  ['fontinfo',['fontinfo',['../structfontinfo.html',1,'fontinfo'],['../structFontInfo.html',1,'FontInfo']]]
 ];

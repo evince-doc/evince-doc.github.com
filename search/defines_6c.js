@@ -21,7 +21,7 @@ var searchData=
   ['literal',['Literal',['../LzmaDec_8c.html#a29377c7edd57f915051c46873de7c720',1,'LzmaDec.c']]],
   ['llx',['LLX',['../sp-epsf_8c.html#a8f83188756efa6092294fca26269025c',1,'sp-epsf.c']]],
   ['lly',['LLY',['../sp-epsf_8c.html#ad239c4e1fbcba2095cd502de3fd18ed0',1,'sp-epsf.c']]],
-  ['log',['LOG',['../ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19',1,'LOG():&#160;ev-daemon.c'],['../unarr-imp_8h.html#a66726e5f1a55e7253ddd5aeec06f19c3',1,'log():&#160;unarr-imp.h']]],
+  ['log',['log',['../unarr-imp_8h.html#a66726e5f1a55e7253ddd5aeec06f19c3',1,'log():&#160;unarr-imp.h'],['../ev-daemon_8c.html#a159ca84d25a5487d8e81e4438725df19',1,'LOG():&#160;ev-daemon.c']]],
   ['log_5fdebug',['LOG_DEBUG',['../common_8h.html#a6ff63e8955665c4a58b1598f2b07c51a',1,'common.h']]],
   ['log_5ferror',['LOG_ERROR',['../common_8h.html#aced66975c154ea0e2a8ec3bc818b4e08',1,'common.h']]],
   ['log_5finfo',['LOG_INFO',['../common_8h.html#aeb4f36db01bd128c7afeac5889dac311',1,'common.h']]],

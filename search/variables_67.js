@@ -62,7 +62,7 @@ var searchData=
   ['globalbackuplen',['globalbackuplen',['../structRARProgramCode.html#a3dbb2836044eb4519cb39e5f5ae188fc',1,'RARProgramCode']]],
   ['globaldata',['globaldata',['../structRARFilter.html#a53cf8ba9c4db0b64c47c0e5b261fa633',1,'RARFilter']]],
   ['globaldatalen',['globaldatalen',['../structRARFilter.html#a514db9549b3a77c6b21dde0e839044aa',1,'RARFilter']]],
-  ['gluecount',['GlueCount',['../structCPpmd7.html#a6b609f5df921ac66553a86a51ac21b97',1,'CPpmd7::GlueCount()'],['../structCPpmd8.html#ae66c5db7f0c973f877015ac6b92b7608',1,'CPpmd8::GlueCount()']]],
+  ['gluecount',['GlueCount',['../structCPpmd7.html#a6b609f5df921ac66553a86a51ac21b97',1,'CPpmd7']]],
   ['glyph',['glyph',['../struct__DviFontChar.html#ab6a3abcc6d6166748fead9439b7d1996',1,'_DviFontChar']]],
   ['glyph_5fdata',['glyph_data',['../struct__DviFontChar.html#a6fbb916082516f15b2f3c85a196a5d75',1,'_DviFontChar']]],
   ['goption_5foptions',['goption_options',['../ev-previewer_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;ev-previewer.c'],['../main_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;main.c'],['../evince-thumbnailer_8c.html#af6319c3ff7dd10dd5dc1f9a7666ff227',1,'goption_options():&#160;evince-thumbnailer.c']]],

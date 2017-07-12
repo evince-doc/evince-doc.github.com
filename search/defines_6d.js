@@ -4,11 +4,11 @@ var searchData=
   ['maincode_5fsize_5f20',['MAINCODE_SIZE_20',['../rar_8h.html#a4da8cec7e0ab77072f93760faa0946a0',1,'rar.h']]],
   ['map_5fhash_5fsize',['MAP_HASH_SIZE',['../fontmap_8c.html#ad4b11d022f33415630c7429a0c80f3b5',1,'fontmap.c']]],
   ['margin',['MARGIN',['../ev-view_8c.html#ab05a798afd72aac947f417e1dab73c87',1,'ev-view.c']]],
-  ['mask',['MASK',['../Ppmd7Dec_8c.html#abef70980671ba4fd0d811f4076704189',1,'MASK():&#160;Ppmd7Dec.c'],['../Ppmd8Dec_8c.html#abef70980671ba4fd0d811f4076704189',1,'MASK():&#160;Ppmd8Dec.c']]],
+  ['mask',['MASK',['../Ppmd7Dec_8c.html#abef70980671ba4fd0d811f4076704189',1,'Ppmd7Dec.c']]],
   ['matched_5fliter_5fdec',['MATCHED_LITER_DEC',['../LzmaDec_8c.html#af39575d0e6f55c60f628e30d1a42d252',1,'LzmaDec.c']]],
   ['max',['Max',['../common_8h.html#a4886a8f966a69949cefc46a6a3468006',1,'common.h']]],
   ['max_5fclass',['MAX_CLASS',['../fontsrch_8c.html#ae808ffd5a3231a6418f13f415ed989d2',1,'fontsrch.c']]],
-  ['max_5ffreq',['MAX_FREQ',['../Ppmd7_8c.html#a9f1abe07c4d92ce70925be770153bb5d',1,'MAX_FREQ():&#160;Ppmd7.c'],['../Ppmd8_8c.html#a9f1abe07c4d92ce70925be770153bb5d',1,'MAX_FREQ():&#160;Ppmd8.c']]],
+  ['max_5ffreq',['MAX_FREQ',['../Ppmd7_8c.html#a9f1abe07c4d92ce70925be770153bb5d',1,'Ppmd7.c']]],
   ['max_5ficon_5fview_5fpage_5fcount',['MAX_ICON_VIEW_PAGE_COUNT',['../ev-sidebar-thumbnails_8c.html#a7947dad48df60aac17b5716a22505490',1,'ev-sidebar-thumbnails.c']]],
   ['max_5fname',['MAX_NAME',['../afmparse_8h.html#ac7c0207aa5a0e10d378be03b68041350',1,'afmparse.h']]],
   ['max_5fpreloaded_5fpages',['MAX_PRELOADED_PAGES',['../ev-pixbuf-cache_8c.html#af39eca278bdcab9ed18a88a9dbe7c02f',1,'ev-pixbuf-cache.c']]],
@@ -112,5 +112,5 @@ var searchData=
   ['my_5fno_5finline',['MY_NO_INLINE',['../7zTypes_8h.html#a28313a809627d7c1a2c304a58f7e5d2b',1,'7zTypes.h']]],
   ['my_5foffsetof',['MY_offsetof',['../7zTypes_8h.html#aa66b293325162a4853930eac1abaff15',1,'7zTypes.h']]],
   ['my_5fstd_5fcall',['MY_STD_CALL',['../7zTypes_8h.html#a4385c51cc2072fe46ce660c3047f9432',1,'7zTypes.h']]],
-  ['mymem12cpy',['MyMem12Cpy',['../Ppmd7_8c.html#a8a2996afe2d0916ea56b70bbbbf3e155',1,'MyMem12Cpy():&#160;Ppmd7.c'],['../Ppmd8_8c.html#a8a2996afe2d0916ea56b70bbbbf3e155',1,'MyMem12Cpy():&#160;Ppmd8.c']]]
+  ['mymem12cpy',['MyMem12Cpy',['../Ppmd7_8c.html#a8a2996afe2d0916ea56b70bbbbf3e155',1,'Ppmd7.c']]]
 ];

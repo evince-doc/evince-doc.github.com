@@ -69,8 +69,8 @@ var searchData=
   ['lookup',['lookup',['../struct__DviFontInfo.html#af2a45a4268ed1726b55c3f8a2d39c9e7',1,'_DviFontInfo']]],
   ['loop',['loop',['../structEvTimelinePriv.html#afaa3738c243fcf5ed16e7c636324ff8d',1,'EvTimelinePriv']]],
   ['lostfocus',['lostfocus',['../struct__NPPluginFuncs.html#a2c55b0340e00a495963d64b4301a4cb0',1,'_NPPluginFuncs']]],
-  ['lounit',['LoUnit',['../structCPpmd7.html#a8995020cb5afee165783dd455b8c2380',1,'CPpmd7::LoUnit()'],['../structCPpmd8.html#ae4cdb6f4f9ecf14a9529ca04d2580254',1,'CPpmd8::LoUnit()']]],
-  ['low',['Low',['../structCPpmd7z__RangeEnc.html#a8241212dbea58b7f948910e7305cfa28',1,'CPpmd7z_RangeEnc::Low()'],['../structCPpmd8.html#ac4f848be818a96f4a92401682d2b85da',1,'CPpmd8::Low()'],['../structCPpmdRAR__RangeDec.html#a12dab6ef08e88e58ce5903cf97ca651a',1,'CPpmdRAR_RangeDec::Low()']]],
+  ['lounit',['LoUnit',['../structCPpmd7.html#a8995020cb5afee165783dd455b8c2380',1,'CPpmd7']]],
+  ['low',['Low',['../structCPpmd7z__RangeEnc.html#a8241212dbea58b7f948910e7305cfa28',1,'CPpmd7z_RangeEnc::Low()'],['../structCPpmdRAR__RangeDec.html#a12dab6ef08e88e58ce5903cf97ca651a',1,'CPpmdRAR_RangeDec::Low()']]],
   ['lowoffsetcode',['lowoffsetcode',['../structar__archive__rar__uncomp__v3.html#af77dfcc7ca3a39d6e205c927f2c0b4db',1,'ar_archive_rar_uncomp_v3']]],
   ['lp',['lp',['../struct__CLzmaProps.html#a5bdd30bed21eba4615ccd24796e6a8a4',1,'_CLzmaProps']]],
   ['lzss',['lzss',['../structar__archive__rar__uncomp.html#aa0b6959d451c6ac0927a26df2c6cee3c',1,'ar_archive_rar_uncomp']]]

@@ -4,8 +4,8 @@ var ev_recent_view_8c =
     [ "GetDocumentInfoAsyncData", "structGetDocumentInfoAsyncData.html", "structGetDocumentInfoAsyncData" ],
     [ "ICON_VIEW_SIZE", "ev-recent-view_8c.html#a8ee19e1b3ea3ffd9122c9a20ba8a5d86", null ],
     [ "MAX_RECENT_VIEW_ITEMS", "ev-recent-view_8c.html#a061641febeddc4b00bdf7c3f033ee2c7", null ],
-    [ "ITEM_ACTIVATED", "ev-recent-view_8c.html#a79e9f285d34216706a748fd7ba8941b7af4adf678107ef39e690a65618cdc19ee", null ],
-    [ "NUM_SIGNALS", "ev-recent-view_8c.html#a79e9f285d34216706a748fd7ba8941b7a83a9065d3886a8f5086b1873410deb21", null ],
+    [ "ITEM_ACTIVATED", "ev-recent-view_8c.html#ad63240694c6dc2a28c24bfc2db90ad7aaf4adf678107ef39e690a65618cdc19ee", null ],
+    [ "NUM_SIGNALS", "ev-recent-view_8c.html#ad63240694c6dc2a28c24bfc2db90ad7aa83a9065d3886a8f5086b1873410deb21", null ],
     [ "EvRecentViewColumns", "ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747cc", [
       [ "EV_RECENT_VIEW_COLUMN_URI", "ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747ccafc4cc98501f5ea0ec586da13c7c2aff3", null ],
       [ "EV_RECENT_VIEW_COLUMN_PRIMARY_TEXT", "ev-recent-view_8c.html#ac6e305e358bfc0a431c4ac0af72747cca8516fd01251445db688907306f213b0c", null ],

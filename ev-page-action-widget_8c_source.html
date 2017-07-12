@@ -141,8 +141,8 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">enum</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea37258872c8add6d4d6f3dbe8a8045360">   36</a></span>&#160;    <a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>,</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea4c4742324734dd1fad749cd69206244e">   37</a></span>&#160;    <a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea4c4742324734dd1fad749cd69206244e">WIDGET_N_SIGNALS</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a37258872c8add6d4d6f3dbe8a8045360">   36</a></span>&#160;    <a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a4c4742324734dd1fad749cd69206244e">   37</a></span>&#160;    <a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a4c4742324734dd1fad749cd69206244e">WIDGET_N_SIGNALS</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidget.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvPageActionWidget.html">_EvPageActionWidget</a></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="struct__EvPageActionWidget.html#a8df30baf5212aa0338bbf0e0d8315c20">   51</a></span>&#160;    GtkTreeModel *<a class="code" href="struct__EvPageActionWidget.html#a8df30baf5212aa0338bbf0e0d8315c20">model</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">   54</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea4c4742324734dd1fad749cd69206244e">WIDGET_N_SIGNALS</a>] = {0, };</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">   54</a></span>&#160;<span class="keyword">static</span> guint <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a4c4742324734dd1fad749cd69206244e">WIDGET_N_SIGNALS</a>] = {0, };</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a> (<a class="code" href="struct__EvPageActionWidget.html">EvPageActionWidget</a>, ev_page_action_widget, GTK_TYPE_TOOL_ITEM)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    link_text = g_strdup_printf (<a class="code" href="private_8h.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Page %s&quot;</span>), text);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    link = <a class="code" href="ev-link_8c.html#a6690d4e0ffafb53cef0bbef77eab794e">ev_link_new</a> (link_text, link_action);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    g_signal_emit (action_widget, <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>], 0, link);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    g_signal_emit (action_widget, <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>], 0, link);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    g_object_unref (link_dest);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    g_object_unref (link_action);</div>
@@ -465,7 +465,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    object_class-&gt;finalize = <a class="code" href="ev-page-action-widget_8c.html#ac17d0f70dc933d30ae502347f738c6b9">ev_page_action_widget_finalize</a>;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        widget_class-&gt;get_preferred_width = <a class="code" href="ev-page-action-widget_8c.html#abec9c0866552e3b20da8f25b104f3afe">ev_page_action_widget_get_preferred_width</a>;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>] =</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>] =</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        g_signal_new (<span class="stringliteral">&quot;activate_link&quot;</span>,</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                  G_OBJECT_CLASS_TYPE (object_class),</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                  G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,</div>
@@ -490,10 +490,10 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                0, &amp;iter,</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                -1);</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    gtk_tree_model_get (proxy-&gt;<a class="code" href="struct__EvPageActionWidget.html#a8df30baf5212aa0338bbf0e0d8315c20">model</a>, iter,</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <a class="code" href="ev-document-links_8h.html#aac34dfe6c6b73b43a4656c9dce041034ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <a class="code" href="ev-document-links_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                -1);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    g_signal_emit (proxy, <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a96a58e29e8dbf2b5bdeb775cba46556ea37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>], 0, link);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    g_signal_emit (proxy, <a class="code" href="ev-page-action-widget_8c.html#a569b80480ab26c8a8ebbc95e9c17e67b">widget_signals</a>[<a class="code" href="ev-page-action-widget_8c.html#a4790f45dcc812c1b00184a2edccdddf5a37258872c8add6d4d6f3dbe8a8045360">WIDGET_ACTIVATE_LINK</a>], 0, link);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span> (link)</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        g_object_unref (link);</div>
@@ -518,7 +518,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                0, &amp;iter,</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                -1);</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    gtk_tree_model_get (proxy-&gt;<a class="code" href="struct__EvPageActionWidget.html#a8df30baf5212aa0338bbf0e0d8315c20">model</a>, iter,</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                <a class="code" href="ev-document-links_8h.html#aac34dfe6c6b73b43a4656c9dce041034ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                <a class="code" href="ev-document-links_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                -1);</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    g_object_set (renderer, <span class="stringliteral">&quot;text&quot;</span>, <a class="code" href="ev-link_8c.html#afa2976704cbb99e848648ac82837bd5d">ev_link_get_title</a> (link), NULL);</div>
@@ -544,7 +544,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                0, &amp;iter,</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                -1);</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    gtk_tree_model_get (proxy-&gt;<a class="code" href="struct__EvPageActionWidget.html#a8df30baf5212aa0338bbf0e0d8315c20">model</a>, iter,</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                <a class="code" href="ev-document-links_8h.html#aac34dfe6c6b73b43a4656c9dce041034ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                <a class="code" href="ev-document-links_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                -1);</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
@@ -596,7 +596,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <a class="code" href="ev-link-action_8h.html#a6e772e9f13cdb1a5bfd535860bbb6057">EvLinkActionType</a> type;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    gtk_tree_model_get (model, iter,</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                <a class="code" href="ev-document-links_8h.html#aac34dfe6c6b73b43a4656c9dce041034ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                <a class="code" href="ev-document-links_8h.html#aabfcbcb5ac86a1edac4035264bc7d2b8ac59637301414f6ccb72e603a569424b5">EV_DOCUMENT_LINKS_COLUMN_LINK</a>, &amp;link,</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                -1);</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordflow">if</span> (!link)</div>
@@ -697,7 +697,7 @@ $(document).ready(function(){initNavTree('ev-page-action-widget_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_08b887202959c421d24191eda7d5b732.html">libmisc</a></li><li class="navelem"><a class="el" href="ev-page-action-widget_8c.html">ev-page-action-widget.c</a></li>
-    <li class="footer">Generated on Tue Jul 11 2017 17:02:38 for Evince by
+    <li class="footer">Generated on Wed Jul 12 2017 15:19:59 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

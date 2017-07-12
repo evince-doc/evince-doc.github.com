@@ -340,13 +340,13 @@ Functions</h2></td></tr>
 <p>Emits the "clicked" signal from a <a class="el" href="gimpcellrenderertoggle_8h.html#a8fdcd82a04a659c71787df12121d9257">GimpCellRendererToggle</a>.</p>
 <p>Since: GIMP 2.2 </p>
 
-<p>Definition at line <a class="el" href="gimpcellrenderertoggle_8c_source.html#l00490">490</a> of file <a class="el" href="gimpcellrenderertoggle_8c_source.html">gimpcellrenderertoggle.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;{</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  g_return_if_fail (<a class="code" href="gimpcellrenderertoggle_8h.html#a7c6748224dffeced37b1f053044cf561">GIMP_IS_CELL_RENDERER_TOGGLE</a> (cell));</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  g_return_if_fail (path != NULL);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  g_signal_emit (cell, toggle_cell_signals[<a class="code" href="gimpcellrenderertoggle_8c.html#a385c44f6fb256e5716a2302a5b940388ad37324c719e7d564128110e054a550e4">CLICKED</a>], 0, path, state);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;}</div>
+<p>Definition at line <a class="el" href="gimpcellrenderertoggle_8c_source.html#l00489">489</a> of file <a class="el" href="gimpcellrenderertoggle_8c_source.html">gimpcellrenderertoggle.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;{</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  g_return_if_fail (<a class="code" href="gimpcellrenderertoggle_8h.html#a7c6748224dffeced37b1f053044cf561">GIMP_IS_CELL_RENDERER_TOGGLE</a> (cell));</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  g_return_if_fail (path != NULL);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  g_signal_emit (cell, toggle_cell_signals[<a class="code" href="gimpcellrenderertoggle_8c.html#a385c44f6fb256e5716a2302a5b940388ad37324c719e7d564128110e054a550e4">CLICKED</a>], 0, path, state);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -394,12 +394,12 @@ Functions</h2></td></tr>
 <p>Return value: a new <a class="el" href="gimpcellrenderertoggle_8h.html#a8fdcd82a04a659c71787df12121d9257">GimpCellRendererToggle</a></p>
 <p>Since: GIMP 2.2 </p>
 
-<p>Definition at line <a class="el" href="gimpcellrenderertoggle_8c_source.html#l00472">472</a> of file <a class="el" href="gimpcellrenderertoggle_8c_source.html">gimpcellrenderertoggle.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;{</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <span class="keywordflow">return</span> g_object_new (<a class="code" href="gimpcellrenderertoggle_8h.html#a5ee9e4914cff508669cd4e124baa6f4c">GIMP_TYPE_CELL_RENDERER_TOGGLE</a>,</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                       <span class="stringliteral">&quot;stock_id&quot;</span>, stock_id,</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                       NULL);</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;}</div>
+<p>Definition at line <a class="el" href="gimpcellrenderertoggle_8c_source.html#l00471">471</a> of file <a class="el" href="gimpcellrenderertoggle_8c_source.html">gimpcellrenderertoggle.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;{</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  <span class="keywordflow">return</span> g_object_new (<a class="code" href="gimpcellrenderertoggle_8h.html#a5ee9e4914cff508669cd4e124baa6f4c">GIMP_TYPE_CELL_RENDERER_TOGGLE</a>,</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                       <span class="stringliteral">&quot;stock_id&quot;</span>, stock_id,</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                       NULL);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -419,7 +419,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_66798fc8659e7daf0e5247fc7505c5a3.html">cut-n-paste</a></li><li class="navelem"><a class="el" href="dir_76ffd4dc0e831b112436fbc404ab1b1f.html">gimpcellrenderertoggle</a></li><li class="navelem"><a class="el" href="gimpcellrenderertoggle_8h.html">gimpcellrenderertoggle.h</a></li>
-    <li class="footer">Generated on Tue Jul 11 2017 17:02:40 for Evince by
+    <li class="footer">Generated on Wed Jul 12 2017 15:20:02 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -672,7 +672,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="keywordflow">if</span> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a> &amp;&amp;</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        <a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>)-&gt;page_ready) {</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        <a class="code" href="ev-pixbuf-cache_8c.html#a498c25a882da475ecc782ac79e3bc41f">copy_job_to_job_info</a> (<a class="code" href="ev-jobs_8h.html#a64181a6a37cb6729e7d9ea0f82da370b">EV_JOB_RENDER</a> (job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ac713af27a86f6ef2caa8ed2923909322">job</a>), job_info, pixbuf_cache);</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        g_signal_emit (pixbuf_cache, <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#af715e26dfffd1f8de1c18449e2770cffad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>], 0, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786">region</a>);</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        g_signal_emit (pixbuf_cache, <a class="code" href="ev-pixbuf-cache_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-pixbuf-cache_8c.html#af3520ff6d43011872bab77edd27d4de3ad1052010c1be02e582a503d9b823e825">JOB_FINISHED</a>], 0, job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#ab78990aa5d8c8ade64dec7842181f786">region</a>);</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    }</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keywordflow">return</span> job_info-&gt;<a class="code" href="struct__CacheJobInfo.html#a98ce8d293c753ac0ee41dc4e8919b80b">surface</a>;</div>
@@ -1209,7 +1209,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_8b322143158b2e883ee9175e4954824a.html">libview</a></li><li class="navelem"><a class="el" href="ev-pixbuf-cache_8h.html">ev-pixbuf-cache.h</a></li>
-    <li class="footer">Generated on Tue Jul 11 2017 17:02:43 for Evince by
+    <li class="footer">Generated on Wed Jul 12 2017 15:20:06 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

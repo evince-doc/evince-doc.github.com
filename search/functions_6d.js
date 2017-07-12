@@ -115,7 +115,6 @@ var searchData=
   ['move_5fx',['move_x',['../dviread_8c.html#a99c4e7134cbd4d1a84cd99920a25fedd',1,'dviread.c']]],
   ['move_5fy',['move_y',['../dviread_8c.html#a29f4997ac89ea58dfb27c3c6b612342c',1,'dviread.c']]],
   ['move_5fz',['move_z',['../dviread_8c.html#a3cb98ada90c16cab1fdb22ce14604e9a',1,'dviread.c']]],
-  ['moveunitsup',['MoveUnitsUp',['../Ppmd8_8c.html#a975bd2a7a36dac036e138cffd56da13d',1,'Ppmd8.c']]],
   ['msgetn',['msgetn',['../common_8c.html#aefefa3f7d6b18ee580459699f8f5772c',1,'common.c']]],
   ['mugetn',['mugetn',['../common_8c.html#a46591b6d2597df232456e0285559e34b',1,'common.c']]]
 ];

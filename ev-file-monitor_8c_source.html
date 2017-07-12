@@ -134,8 +134,8 @@ $(document).ready(function(){initNavTree('ev-file-monitor_8c_source.html','');})
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ev-file-monitor_8h.html">ev-file-monitor.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#a9e93d8eae633734dfeb29e24a1f3a7c0a02950f589a2addc8bff690a59d33cee7">   29</a></span>&#160;    <a class="code" href="ev-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a02950f589a2addc8bff690a59d33cee7">CHANGED</a>,</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#a9e93d8eae633734dfeb29e24a1f3a7c0a1e7365ab36b084beff81fb1b96df4b11">   30</a></span>&#160;    <a class="code" href="ev-page-action_8c.html#ab48899087cc647f0f791ed0c459adc53a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#a8628933cde20921c453a6d2607bdad62a02950f589a2addc8bff690a59d33cee7">   29</a></span>&#160;    <a class="code" href="ev-bookmarks_8c.html#a9334a5b9057f32da96db9b5c6a045d67a02950f589a2addc8bff690a59d33cee7">CHANGED</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#a8628933cde20921c453a6d2607bdad62a1e7365ab36b084beff81fb1b96df4b11">   30</a></span>&#160;    <a class="code" href="ev-page-action_8c.html#a4caf8d8f829279fba122163d961608a4a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="struct__EvFileMonitorPrivate.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__EvFileMonitorPrivate.html">_EvFileMonitorPrivate</a> {</div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('ev-file-monitor_8c_source.html','');})
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a> (<a class="code" href="ev-file-monitor_8h.html#a7075c20e988f8acf2a6b9c10dad57dfe">EvFileMonitor</a>, ev_file_monitor, G_TYPE_OBJECT)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">   52</a></span>&#160;static guint <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#ab48899087cc647f0f791ed0c459adc53a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>];</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">   52</a></span>&#160;static guint <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-page-action_8c.html#a4caf8d8f829279fba122163d961608a4a1e7365ab36b084beff81fb1b96df4b11">N_SIGNALS</a>];</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;static <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#a657f0f6a96ee106853f641ac060f4c11">   55</a></span>&#160;<a class="code" href="ev-file-monitor_8c.html#a657f0f6a96ee106853f641ac060f4c11">ev_file_monitor_init</a> (<a class="code" href="ev-file-monitor_8h.html#a7075c20e988f8acf2a6b9c10dad57dfe">EvFileMonitor</a> *ev_monitor)</div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('ev-file-monitor_8c_source.html','');})
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    g_object_class-&gt;finalize = <a class="code" href="ev-file-monitor_8c.html#abf3c2a4278341fdf0205ad27cbbc955d">ev_file_monitor_finalize</a>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">/* Signals */</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a02950f589a2addc8bff690a59d33cee7">CHANGED</a>] =</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#a9334a5b9057f32da96db9b5c6a045d67a02950f589a2addc8bff690a59d33cee7">CHANGED</a>] =</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        g_signal_new (<span class="stringliteral">&quot;changed&quot;</span>,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                  <a class="code" href="ev-file-monitor_8h.html#a4f652aa80208526d3dad3b988a83e51f">EV_TYPE_FILE_MONITOR</a>,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                  G_SIGNAL_RUN_LAST,</div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('ev-file-monitor_8c_source.html','');})
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">static</span> gboolean</div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="ev-file-monitor_8c.html#ae197b3fa774454485803b1acd0bd6f2f">   99</a></span>&#160;<a class="code" href="ev-file-monitor_8c.html#ae197b3fa774454485803b1acd0bd6f2f">timeout_cb</a> (<a class="code" href="ev-file-monitor_8h.html#a7075c20e988f8acf2a6b9c10dad57dfe">EvFileMonitor</a> *ev_monitor)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    g_signal_emit (ev_monitor, <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    g_signal_emit (ev_monitor, <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#a9334a5b9057f32da96db9b5c6a045d67a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ev_monitor-&gt;priv-&gt;timeout_id = 0;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="mdvi_8h.html#aec5282e04157f667c712f802075f125faa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>;</div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('ev-file-monitor_8c_source.html','');})
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">switch</span> (event_type) {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">case</span> G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT:</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="ev-file-monitor_8c.html#aa3f2e92cb2bf4eada5f7a97b0bc90efe">ev_file_monitor_timeout_stop</a> (ev_monitor);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        g_signal_emit (ev_monitor, <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#ade9ca5088d171ad20b4c237f1c2d6260a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        g_signal_emit (ev_monitor, <a class="code" href="ev-file-monitor_8c.html#a0a1f3b4115443be584fb31149d06f84c">signals</a>[<a class="code" href="ev-bookmarks_8c.html#a9334a5b9057f32da96db9b5c6a045d67a02950f589a2addc8bff690a59d33cee7">CHANGED</a>], 0);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">case</span> G_FILE_MONITOR_EVENT_CHANGED:</div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('ev-file-monitor_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3280676015dea8927551146fc343f431.html">evince-master</a></li><li class="navelem"><a class="el" href="dir_03d4a7bd78ff53a92be90255bc24db97.html">shell</a></li><li class="navelem"><a class="el" href="ev-file-monitor_8c.html">ev-file-monitor.c</a></li>
-    <li class="footer">Generated on Tue Jul 11 2017 17:02:38 for Evince by
+    <li class="footer">Generated on Wed Jul 12 2017 15:19:59 for Evince by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

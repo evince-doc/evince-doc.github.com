@@ -9,9 +9,6 @@ var searchData=
   ['ppmd7_2ec',['Ppmd7.c',['../Ppmd7_8c.html',1,'']]],
   ['ppmd7_2eh',['Ppmd7.h',['../Ppmd7_8h.html',1,'']]],
   ['ppmd7dec_2ec',['Ppmd7Dec.c',['../Ppmd7Dec_8c.html',1,'']]],
-  ['ppmd8_2ec',['Ppmd8.c',['../Ppmd8_8c.html',1,'']]],
-  ['ppmd8_2eh',['Ppmd8.h',['../Ppmd8_8h.html',1,'']]],
-  ['ppmd8dec_2ec',['Ppmd8Dec.c',['../Ppmd8Dec_8c.html',1,'']]],
   ['precomp_2eh',['Precomp.h',['../Precomp_8h.html',1,'']]],
   ['private_2eh',['private.h',['../private_8h.html',1,'']]]
 ];

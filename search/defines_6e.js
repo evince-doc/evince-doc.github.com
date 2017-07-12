@@ -7,7 +7,7 @@ var searchData=
   ['nextmask',['NEXTMASK',['../bitmap_8h.html#a9925f55091340a5b7d76f9ad13d3786e',1,'bitmap.h']]],
   ['nkeys',['NKEYS',['../sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23',1,'sp-epsf.c']]],
   ['nmsgs',['NMSGS',['../util_8c.html#adf7fb91a965006c31c357f78b6e8c242',1,'util.c']]],
-  ['node',['NODE',['../Ppmd7_8c.html#ac776c9a29ae98ac833030db990978fb8',1,'NODE():&#160;Ppmd7.c'],['../Ppmd8_8c.html#ac776c9a29ae98ac833030db990978fb8',1,'NODE():&#160;Ppmd8.c']]],
+  ['node',['NODE',['../Ppmd7_8c.html#ac776c9a29ae98ac833030db990978fb8',1,'Ppmd7.c']]],
   ['normal_5fliter_5fdec',['NORMAL_LITER_DEC',['../LzmaDec_8c.html#aab0017dc21873bc5ce0679f37d108067',1,'LzmaDec.c']]],
   ['normalize',['NORMALIZE',['../LzmaDec_8c.html#a29cf2d41341c861a02125541ee1c9368',1,'LzmaDec.c']]],
   ['normalize_5fcheck',['NORMALIZE_CHECK',['../LzmaDec_8c.html#a5b7f970f9c6ad7ac0e04c7704630c59e',1,'LzmaDec.c']]],

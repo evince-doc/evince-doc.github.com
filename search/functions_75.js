@@ -21,6 +21,6 @@ var searchData=
   ['update_5fprogress_5flabel',['update_progress_label',['../ev-properties-fonts_8c.html#aa6df9cd83ebfc9e2c118b2fc784f20a5',1,'ev-properties-fonts.c']]],
   ['update_5fsizing_5fbuttons',['update_sizing_buttons',['../ev-window_8c.html#a1f61ac20c7343129434afe80252fe739',1,'ev-window.c']]],
   ['update_5fvisible_5frange',['update_visible_range',['../ev-sidebar-thumbnails_8c.html#a2337ff91c0347bc5dc5423e02e2b3ece',1,'ev-sidebar-thumbnails.c']]],
-  ['updatemodel',['UpdateModel',['../Ppmd7_8c.html#a55a7f7dd28b92e75213cb6e37cd11f43',1,'UpdateModel(CPpmd7 *p):&#160;Ppmd7.c'],['../Ppmd8_8c.html#a8964f7075a1be43b75debf26beeb9c8d',1,'UpdateModel(CPpmd8 *p):&#160;Ppmd8.c']]],
+  ['updatemodel',['UpdateModel',['../Ppmd7_8c.html#a55a7f7dd28b92e75213cb6e37cd11f43',1,'Ppmd7.c']]],
   ['urlnotify',['urlNotify',['../classEvBrowserPlugin.html#a049160ba84500a30574f7b1f00fcf269',1,'EvBrowserPlugin']]]
 ];

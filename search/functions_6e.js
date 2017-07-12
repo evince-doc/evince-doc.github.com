@@ -11,7 +11,7 @@ var searchData=
   ['new_5fselection_5fsurface_5fneeded',['new_selection_surface_needed',['../ev-pixbuf-cache_8c.html#a606e19d48e66beb0791b865b2f4e50ab',1,'ev-pixbuf-cache.c']]],
   ['newstream',['newStream',['../classEvBrowserPlugin.html#ad642f2e42b546124cec4d46800f6327a',1,'EvBrowserPlugin']]],
   ['next_5fclicked_5fcb',['next_clicked_cb',['../ev-search-box_8c.html#a6d163e53662d0cd1ee6e5f3bf1c59a14',1,'ev-search-box.c']]],
-  ['nextcontext',['NextContext',['../Ppmd7_8c.html#ada31d27d1e85d0a7aa0a252042281da1',1,'NextContext(CPpmd7 *p):&#160;Ppmd7.c'],['../Ppmd8_8c.html#acce6bcef28806bb3d265628216eb2581',1,'NextContext(CPpmd8 *p):&#160;Ppmd8.c']]],
+  ['nextcontext',['NextContext',['../Ppmd7_8c.html#ada31d27d1e85d0a7aa0a252042281da1',1,'Ppmd7.c']]],
   ['no_5fop',['no_op',['../dviread_8c.html#acde70860e30a57a7019914605e16c843',1,'dviread.c']]],
   ['np_5fgetmimedescription',['NP_GetMIMEDescription',['../EvBrowserPluginMain_8cpp.html#af876f4815285e3249ff6e546dd0740bd',1,'EvBrowserPluginMain.cpp']]],
   ['np_5fgetvalue',['NP_GetValue',['../EvBrowserPluginMain_8cpp.html#ac12a2cc870e8f28bd0b9a1be2a75cdfd',1,'EvBrowserPluginMain.cpp']]],

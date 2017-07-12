@@ -2,9 +2,9 @@ var ev_annotations_toolbar_8c =
 [
     [ "_EvAnnotationsToolbar", "struct__EvAnnotationsToolbar.html", "struct__EvAnnotationsToolbar" ],
     [ "_EvAnnotationsToolbarClass", "struct__EvAnnotationsToolbarClass.html", "struct__EvAnnotationsToolbarClass" ],
-    [ "BEGIN_ADD_ANNOT", "ev-annotations-toolbar_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a8a2cefcb686afacdb281146d0d08c0e3", null ],
-    [ "CANCEL_ADD_ANNOT", "ev-annotations-toolbar_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a04fe930f7a8557a1c3be1aad756062ea", null ],
-    [ "N_SIGNALS", "ev-annotations-toolbar_8c.html#a531c35e38ede3ea4e5ba5afb24b29493a1e7365ab36b084beff81fb1b96df4b11", null ],
+    [ "BEGIN_ADD_ANNOT", "ev-annotations-toolbar_8c.html#af8654c714018c6241d9ebd01f3fb5a26a8a2cefcb686afacdb281146d0d08c0e3", null ],
+    [ "CANCEL_ADD_ANNOT", "ev-annotations-toolbar_8c.html#af8654c714018c6241d9ebd01f3fb5a26a04fe930f7a8557a1c3be1aad756062ea", null ],
+    [ "N_SIGNALS", "ev-annotations-toolbar_8c.html#af8654c714018c6241d9ebd01f3fb5a26a1e7365ab36b084beff81fb1b96df4b11", null ],
     [ "ev_annotations_toolbar_add_annot_finished", "ev-annotations-toolbar_8c.html#a306cbcf0424791995625a1405196395f", null ],
     [ "ev_annotations_toolbar_annot_button_toggled", "ev-annotations-toolbar_8c.html#a5a45241f1de651d25fff80c0a9f52006", null ],
     [ "ev_annotations_toolbar_class_init", "ev-annotations-toolbar_8c.html#a11112cbaa332fe17818d51efcf48d977", null ],

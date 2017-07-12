@@ -44,7 +44,7 @@ var searchData=
   ['history',['history',['../struct__EvHistoryActionPrivate.html#ab1fba00a89ad883ce6df1cef51548ffd',1,'_EvHistoryActionPrivate::history()'],['../struct__EvWindowPrivate.html#aa7b0b393d55556b8bc1e21fd0978fe0e',1,'_EvWindowPrivate::history()']]],
   ['history_5faction',['history_action',['../struct__EvToolbarPrivate.html#ad5568a4fe00398cb6e945b21f75c45b9',1,'_EvToolbarPrivate']]],
   ['hits',['hits',['../structColorCache.html#a7aeaf8cda29cbe142fae19a8a446121b',1,'ColorCache']]],
-  ['hiunit',['HiUnit',['../structCPpmd7.html#a684b695acde1596fe9bf8e81c0350d58',1,'CPpmd7::HiUnit()'],['../structCPpmd8.html#acbd882b8c3d9c4ceb203939a2304065a',1,'CPpmd8::HiUnit()']]],
+  ['hiunit',['HiUnit',['../structCPpmd7.html#a684b695acde1596fe9bf8e81c0350d58',1,'CPpmd7']]],
   ['hpaned',['hpaned',['../struct__EvWindowPrivate.html#a5e259cb15febf660bda413779c075225',1,'_EvWindowPrivate']]],
   ['hscroll_5fpolicy',['hscroll_policy',['../struct__EvView.html#a895ae143a9cbb881f473647b54434b0b',1,'_EvView']]],
   ['hshrink',['hshrink',['../struct__DviParams.html#a772fc274414e7728029835f41981a8dc',1,'_DviParams']]],

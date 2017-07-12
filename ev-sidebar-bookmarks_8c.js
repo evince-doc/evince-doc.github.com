@@ -1,11 +1,11 @@
 var ev_sidebar_bookmarks_8c =
 [
     [ "_EvSidebarBookmarksPrivate", "struct__EvSidebarBookmarksPrivate.html", "struct__EvSidebarBookmarksPrivate" ],
-    [ "PROP_0", "ev-sidebar-bookmarks_8c.html#aa57e16cd48de3b9a989056ff8df26f84ac37dda0da1a44e10c0504afeeb863f3c", null ],
-    [ "PROP_WIDGET", "ev-sidebar-bookmarks_8c.html#aa57e16cd48de3b9a989056ff8df26f84abf7866167c9f740bdacaa103a372b335", null ],
-    [ "COLUMN_MARKUP", "ev-sidebar-bookmarks_8c.html#a634f9f55e799f3052a34590f08100017acb73ea1ba6d1bb93eddef387620ad75a", null ],
-    [ "COLUMN_PAGE", "ev-sidebar-bookmarks_8c.html#a634f9f55e799f3052a34590f08100017a33e343af5a0f32026ffc44407dccae45", null ],
-    [ "N_COLUMNS", "ev-sidebar-bookmarks_8c.html#a634f9f55e799f3052a34590f08100017ac70d28409ca79aa291cc0e58244f1fe4", null ],
+    [ "PROP_0", "ev-sidebar-bookmarks_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9ac37dda0da1a44e10c0504afeeb863f3c", null ],
+    [ "PROP_WIDGET", "ev-sidebar-bookmarks_8c.html#aa491173a6b1628f4ff82067b2e1ceaa9abf7866167c9f740bdacaa103a372b335", null ],
+    [ "COLUMN_MARKUP", "ev-sidebar-bookmarks_8c.html#a3babbf89cae9b856a12864a41506efbdacb73ea1ba6d1bb93eddef387620ad75a", null ],
+    [ "COLUMN_PAGE", "ev-sidebar-bookmarks_8c.html#a3babbf89cae9b856a12864a41506efbda33e343af5a0f32026ffc44407dccae45", null ],
+    [ "N_COLUMNS", "ev-sidebar-bookmarks_8c.html#a3babbf89cae9b856a12864a41506efbdac70d28409ca79aa291cc0e58244f1fe4", null ],
     [ "compare_bookmarks", "ev-sidebar-bookmarks_8c.html#a642cb9ccf09d1db9ebfe0db3ebfb6170", null ],
     [ "ev_bookmarks_popup_cmd_open_bookmark", "ev-sidebar-bookmarks_8c.html#acf0b46a83de65a7fff117d5cda0aa062", null ],
     [ "ev_bookmarks_popup_cmd_remove_bookmark", "ev-sidebar-bookmarks_8c.html#a47286b002577f20b941f5ad2cd0736e3", null ],
